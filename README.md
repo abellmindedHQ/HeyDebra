@@ -1,5 +1,8 @@
 # 💁🏽‍♀️ HeyDebra: Your Dynamic Executive-Based Reasoning Assistant
-
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
+![Built with Sass](https://img.shields.io/badge/Made_with-Sass-%23ff69b4)
+![Status](https://img.shields.io/badge/Debra%27s_Attitude-100%25_Fabulous-fuchsia)
 > *“She listens. She speaks. She manages your damn life—flawlessly.”*
 
 HeyDebra is your retro-futuristic, voice-powered AI assistant with the sass of a 70s power secretary and the brain of a cutting-edge language model. Built on Python, ChatGPT, Whisper, and PyQt6, Debra isn’t just smart—she’s got style.

@@ -41,7 +41,7 @@ Debra is:
 
 ---
 
-## 🛠️ Repo Structure
+## 🗂️ Repo Structure
 
 ```bash
 HeyDebra/
@@ -52,3 +52,102 @@ HeyDebra/
 ├── tests/         # Unit and integration tests
 ├── .github/       # CI workflows
 └── README.md      # You are here
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- Virtualenv or Poetry
+- OpenAI API key
+- ElevenLabs API key (optional)
+- Neo4j (can run via Docker)
+- Mac, Linux, or Windows 10+
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/HeyDebra.git
+cd HeyDebra
+python -m venv venv
+source venv/bin/activate  # or 'venv\Scripts\activate' on Windows
+pip install -r requirements.txt
+```
+
+> Optional: Add your API keys to a `.env` file or configure them in the settings module.
+
+### Running Debra
+
+```bash
+python main.py
+```
+
+Debra should light up—animated, fabulous, and ready to listen. Speak after the wake word and let the conversation flow.
+
+---
+
+## 🧠 Roadmap
+
+- [ ] Wire up voice pipeline (STT → GPT → TTS)
+- [ ] Animate Debra’s face in GUI
+- [ ] Wake word listener integration
+- [ ] Neo4j memory + personality graph
+- [ ] Add custom voices & emotional tone control
+- [ ] Desktop daemon mode (background assistant)
+- [ ] Mobile controller via Notion or GitHub
+
+---
+
+## 💌 Credits
+
+Created by [Alex Abell](https://github.com/alexabell), with deep respect for brilliant executive assistants, sci-fi futurists, and everyone who ever said "I got this" and *meant it*.
+
+Debra is powered by:
+- [OpenAI ChatGPT](https://openai.com/)
+- [Whisper](https://github.com/openai/whisper)
+- [ElevenLabs](https://www.elevenlabs.io/)
+- [Pyttsx3](https://github.com/nateshmbhat/pyttsx3)
+- [Neo4j](https://neo4j.com/)
+- [PyQt6](https://www.riverbankcomputing.com/software/pyqt/)
+- [Porcupine Wake Word](https://github.com/Picovoice/porcupine)
+
+Shoutout to the open-source community and creative coders who inspire glam, grit, and geekery in equal measure.
+
+---
+
+## 🪪 License
+
+```text
+MIT License
+
+Copyright (c) 2025 Alex Abell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      
+copies of the Software, and to permit persons to whom the Software is         
+furnished to do so, subject to the following conditions:                       
+
+The above copyright notice and this permission notice shall be included in    
+all copies or substantial portions of the Software.                           
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR    
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,      
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE   
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER        
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING       
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS  
+IN THE SOFTWARE.
+```
+
+---
+
+## ✨ Final Word
+
+**HeyDebra** isn’t just a project. She’s a presence.  
+She doesn’t just assist. She *runs the damn show.*  
+Stay fabulous, and may your code always compile.

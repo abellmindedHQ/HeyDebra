@@ -1,6 +1,7 @@
 <p align="center">
   <img src="assets/banner.png" alt="HeyDebra - Dynamic Executive-Based Reasoning Assistant" width="100%">
 </p>
+
 # 💁🏽‍♀️ HeyDebra: Your Dynamic Executive-Based Reasoning Assistant
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)

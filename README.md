@@ -98,9 +98,9 @@ Debra should light up—animated, fabulous, and ready to listen. Speak after the
 
 ## 🧠 Roadmap
 
-- [ ] Wire up voice pipeline (STT → GPT → TTS)
-- [ ] Animate Debra’s face in GUI
-- [ ] Wake word listener integration
+- [x] Wire up voice pipeline (STT → GPT → TTS)
+- [x] Animate Debra’s face in GUI
+- [x] Wake word listener integration
 - [ ] Neo4j memory + personality graph
 - [ ] Add custom voices & emotional tone control
 - [ ] Desktop daemon mode (background assistant)

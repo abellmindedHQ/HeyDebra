@@ -1,4 +1,10 @@
 openai
-PyQt6
+python-dotenv
 whisper
+sounddevice
+soundfile
+numpy
+PyQt6
 pyttsx3
+pvporcupine
+elevenlabs

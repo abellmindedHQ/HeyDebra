@@ -1,0 +1,11 @@
+projects/mirror-pitch/
+projects/second-brain/
+projects/website/
+media/*.mp4
+media/*.mov
+media/in-the-stream-video.mov
+media/debra-cantaffordme.mov
+.DS_Store
+**/*.key
+**/*.pem
+**/secrets*

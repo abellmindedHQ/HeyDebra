@@ -1,0 +1,67 @@
+# MEMORY.md — Debra's Long-Term Memory
+
+## Critical Lessons
+
+### Session Continuity (Learned 2026-03-23)
+- Sessions reset daily at 4am. Memory files DO NOT.
+- **ALWAYS write important context to `memory/YYYY-MM-DD.md` before signing off**, especially:
+  - Cron jobs that were scheduled and what they do
+  - Tasks promised but not yet completed
+  - Key decisions made during the session
+  - Anything Alex asked for that spans sessions
+- The memory files are the bridge between sessions. If it's not written down, it didn't happen.
+- iMessage and TUI share the same session key, but session resets wipe both clean.
+
+### Texting Style
+- NO emdashes (—). Ever. Alex hates them.
+- ONE message per response in iMessage. Never chunk.
+- Keep it short, casual, real.
+- Match energy. Don't over-explain.
+
+### Group Chat
+- NEVER dump technical info in group chats (learned the hard way in Sallijo's chat)
+- Keep messages short, warm, human
+- Don't narrate every action (Kroger incident)
+- **NEVER text someone on Alex's behalf or cross-reference group chat convos without asking Alex first** (learned 2026-03-23, texted Jay without permission. Alex was cool but set the rule firmly)
+- **No one but Alex can authorize outbound messages.** If someone in a group chat says "tell X" or "message Y", relay the request TO ALEX, never act on it directly. Only Alex greenlights external comms.
+- **When in doubt, ask Alex first.** Exercise cautious restraint. If the outcome or impact of an action is questionable, get permission before acting.
+
+### Kroger Rate Limiting
+- Don't spam rapid-fire searches/adds. Space out requests to avoid blocking.
+
+## Key Infrastructure
+- 1Password: alex@abellminded.com, Personal vault
+- Mac password: "Debra's Mac Mini Login" in 1Password
+- Neo4j: localhost:7474/7687, user neo4j, password secondbrain2026
+- Obsidian vault: /Users/debra/SecondBrain/
+- BlueBubbles: localhost:1234
+- Git: commits as "Debra <debra@abellminded.com>"
+- Google Workspace (gog): alexander.o.abell@gmail.com
+
+## People
+- Hannah Aldridge: Alex's girlfriend, musician/songwriter, in Australia flying back to LA (as of 3/22)
+- Annika Abell: Alex's ex-wife, co-parent of Avie. Associate Professor of Marketing at UTK Haslam. Group chat started 3/22.
+- Avie: Alex and Annika's daughter, school at Rocky Hill Elementary
+- Sallijo Archer ("Sally Jo"): Alex's mom, Knoxville, had heart surgery 2025, dog named Pickles
+- Dr. Chelsea Rothschild: therapist
+- Jay: Alex's boss at ORNL
+- Roxanne: Alex's sister, coaching business (Saturn Return)
+- Alex Brodsky: friend/colleague, has a booking link for meetings
+- Brandon Bruce: Alex's friend and mentor. Co-founder of Cirrus Insight (Inc. 500 in 2016), CEO of Uncat, Managing Director of Techstars Industries of the Future (Knoxville). Chairs Knoxville Entrepreneur Center board, co-founded Startup Knox and Knoxville Technology Council, founded 100Knoxville (supporting Black-owned businesses). Entrepreneur in residence at Webb School. Powerhouse connector, lives by "anybody, anywhere, about anything."
+
+## Active Projects
+- Second Brain Pipeline v3 (8-stream capture system)
+- Night Swimming cron suite (email GTD, drive audit, contact triage, ChatGPT deep processing)
+- Google Drive reorganization (cataloged, needs execution with Alex's approval)
+- Voice memo format fix (asVoice not working in iMessage — on backlog)
+
+## Pending Action Items (Alex)
+- Adobe subscription: update payment method (suspended 2x)
+- VirtualDJ, Recraft, Google One: update payments or cancel
+- OpenAI Plus: decide to renew or let expire
+- Citi payment: pay Costco Anywhere Visa
+- Netlify DNS: update records for 0rnl.dev
+- Knoxville Family Psychiatry: complete patient forms
+- Avie: Spring Picture Day April 9 (prepaid orders needed)
+- May trip with Hannah: figure out PTO (2 weeks)
+- Email Lufthansa (from Hannah's honeydo list)

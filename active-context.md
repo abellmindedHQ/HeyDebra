@@ -2,30 +2,36 @@
 > Auto-loaded every session. Keep this SMALL (<50 lines). Update frequently.
 
 ## Last Updated
-2026-03-24 08:11 EDT
+2026-03-24 11:35 EDT
 
 ## What's Happening Right Now
-- Fresh session, March 24 (Tuesday)
-- Hannah should have landed in LA yesterday (~7am LA time Monday 3/23)
-- No active tasks running
+- Alex in 11:30 meeting (UX resources apology re: SEEK infographic)
+- Then Best Buy for unlocked Moto G Power 2025 (Debra's Android phone)
+- All subagents completed: Claude export, Instagram, Pools research, skills
 
-## Carry-Forward from March 23
-- Google Drive reorg: sub-agent was running, status unknown after reset. Check results.
-- Brad Greenfield: was supposed to deliver future-state vision doc to Alex by COB 3/23. Follow up.
-- WhatsApp setup still pending (Alex needs to scan QR)
-- Payment failures still unresolved (Adobe, VirtualDJ, Recraft, Google One, Citi)
-- Android messaging demo for Pooja and Brandon: not confirmed done
+## Completed Today
+- Tailscale set up (Mac mini + iPhone on tailnet)
+- BlueBubbles webhook fixed to localhost, Cloudflare tunnel disabled
+- Google Contacts synced to Mac mini, Chelsea + Hannah backfilled
+- WhatsApp installed (needs Android phone for registration)
+- 8 skills packaged (capture-agent, gsd-agent, + 6 Night Swimming)
+- Claude export processed (135 convos → SecondBrain + Neo4j)
+- Instagram processed (711 DMs, 1525 following, social graph)
+- Jessica DiPietro profiled (13K DMs, full relationship arc)
+- Pools/Pooli research downloaded from Google Drive
+- GTD file structure created in SecondBrain/GTD/
 
-## Pending Action Items (Alex)
-- Adobe subscription: update payment (suspended 2x)
-- VirtualDJ, Recraft, Google One: update or cancel
-- OpenAI Plus: renew or let expire
-- Citi payment: Costco Anywhere Visa
-- Netlify DNS: update for 0rnl.dev
-- Knoxville Family Psychiatry: complete patient forms
-- Avie: Spring Picture Day April 9 (prepaid orders)
-- May trip with Hannah: figure out PTO
+## Waiting On Alex
+- Create Notion page "Abellminded HQ" + share with Debra integration
+- Buy Android phone at Best Buy
+- Set up Tello eSIM on new phone
+- Confirm naming: Drops + Wrinkles + Pools + Ripples?
+- Payment failures still unresolved
 
-## Channel Context
-- iMessage: primary channel with Alex
-- Group chats: Hannah, Chelsea, Sallijo, Brandon, Annika, Jay, Brad
+## Next Up (when Alex is back)
+- Set up Android phone → WhatsApp + Google Messages
+- Scaffold abellminded.com
+- Build Notion documentation structure
+- Run first Capture Agent + GSD Agent
+- Process Pools Refactoring Spec (docx)
+- Start Mirror product doc

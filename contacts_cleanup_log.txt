@@ -1144,3 +1144,63 @@ Progress: 1100/7612 | Deleted this session: 838
   Could not get details for people/c2046716119731255567, skipping.
   Could not get details for people/c2053078759484867885, skipping.
   Could not get details for people/c2055505089552825661, skipping.
+  Could not get details for people/c2457027790960628422, skipping.
+  Could not get details for people/c2660232877148123468, skipping.
+  Could not get details for people/c2956696692674151319, skipping.
+  Could not get details for people/c3128268915178856421, skipping.
+  Could not get details for people/c3252271359818869069, skipping.
+  Could not get details for people/c3787509217847863770, skipping.
+  Could not get details for people/c3920190084177738306, skipping.
+  Could not get details for people/c4089725686909469646, skipping.
+  Could not get details for people/c5390574102853864253, skipping.
+  Could not get details for people/c5821599306214080445, skipping.
+  Could not get details for people/c6157660613523182008, skipping.
+  Could not get details for people/c6640463339660407853, skipping.
+  Could not get details for people/c6972125320604178288, skipping.
+  Could not get details for people/c6994230628263260378, skipping.
+  Could not get details for people/c7105471629915529708, skipping.
+  Could not get details for people/c7105770029162385585, skipping.
+  Could not get details for people/c7166481133447747665, skipping.
+  Could not get details for people/c7371305396555060659, skipping.
+  Could not get details for people/c7657773186792511071, skipping.
+  Could not get details for people/c7681449707336788461, skipping.
+  Could not get details for people/c7711192622151917458, skipping.
+  Could not get details for people/c7712054701476245382, skipping.
+  Could not get details for people/c8265848038097699831, skipping.
+  Could not get details for people/c8299607116691831641, skipping.
+  Could not get details for people/c8402551132673453651, skipping.
+  Could not get details for people/c8715335980670361978, skipping.
+  Could not get details for people/c9063364022519129922, skipping.
+  Could not get details for people/c3692285931761788537, skipping.
+
+Progress: 1150/7612 | Deleted this session: 838
+  Could not get details for people/c5105748547122972464, skipping.
+  Could not get details for people/c57657075767396593, skipping.
+  Could not get details for people/c243430766472459741, skipping.
+  Could not get details for people/c433959733374015725, skipping.
+  Could not get details for people/c634018891281513006, skipping.
+  Could not get details for people/c713881379329570444, skipping.
+  Could not get details for people/c1490740394416251010, skipping.
+  Could not get details for people/c1509184338965719496, skipping.
+  Could not get details for people/c1542719349232766289, skipping.
+  Could not get details for people/c1842385234686625020, skipping.
+  Could not get details for people/c1921230588620019609, skipping.
+  Could not get details for people/c2375868665193300699, skipping.
+  Could not get details for people/c2622379157084964743, skipping.
+  Could not get details for people/c2663156381936141914, skipping.
+  Could not get details for people/c2673149763644887339, skipping.
+  Could not get details for people/c2790075199499883411, skipping.
+  Could not get details for people/c3039093917953358755, skipping.
+  Could not get details for people/c3054932239130505582, skipping.
+  Could not get details for people/c3109858948112783604, skipping.
+  Could not get details for people/c3179320756127668429, skipping.
+  Could not get details for people/c3434139368377746262, skipping.
+  Could not get details for people/c3558091905563518116, skipping.
+  Could not get details for people/c3745588829509698480, skipping.
+  Could not get details for people/c4082560270551532134, skipping.
+  Could not get details for people/c4085164382224272151, skipping.
+  Could not get details for people/c4267446165824311548, skipping.
+  Could not get details for people/c4462624668854777618, skipping.
+  Could not get details for people/c4504811373179853449, skipping.
+  Could not get details for people/c4639461559222153384, skipping.
+  Could not get details for people/c4834927603923237661, skipping.

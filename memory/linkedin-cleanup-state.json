@@ -1,0 +1,260 @@
+{
+  "totalQueued": 40,
+  "totalArchived": 0,
+  "todayArchived": 0,
+  "todayDate": "2026-03-24",
+  "lastRunAt": "2026-03-24T16:45:51.082188-04:00",
+  "lastError": "Browser automation unavailable: Chrome is not running with an accessible remote debugging port for OpenClaw to attach to with profile=user. The OpenClaw browser uses an isolated profile that is not logged in to LinkedIn. Cannot proceed with UI automation until Chrome is launched with --remote-debugging-port accessible to OpenClaw, or until the user logs into LinkedIn in the OpenClaw browser.",
+  "queue": [
+    {
+      "name": "Andrea Doucette",
+      "category": "spam",
+      "dateDetected": "2023-03",
+      "addedAt": "2026-03-24T16:43:41.906390"
+    },
+    {
+      "name": "Elizaveta Novikova",
+      "category": "spam",
+      "dateDetected": "2023-04",
+      "addedAt": "2026-03-24T16:43:41.906388"
+    },
+    {
+      "name": "Diamond Hernandez",
+      "category": "spam",
+      "dateDetected": "2023-04",
+      "addedAt": "2026-03-24T16:43:41.906389"
+    },
+    {
+      "name": "Polly\t Adkins",
+      "category": "spam",
+      "dateDetected": "2023-05",
+      "addedAt": "2026-03-24T16:43:41.906387"
+    },
+    {
+      "name": "Jeff Neumeister",
+      "category": "spam",
+      "dateDetected": "2023-05",
+      "addedAt": "2026-03-24T16:43:41.906387"
+    },
+    {
+      "name": "Daria Yunusova",
+      "category": "spam",
+      "dateDetected": "2023-05",
+      "addedAt": "2026-03-24T16:43:41.906388"
+    },
+    {
+      "name": "Elodie Lebec",
+      "category": "spam",
+      "dateDetected": "2023-06",
+      "addedAt": "2026-03-24T16:43:41.906385"
+    },
+    {
+      "name": "Harry Wyborn",
+      "category": "spam",
+      "dateDetected": "2023-06",
+      "addedAt": "2026-03-24T16:43:41.906386"
+    },
+    {
+      "name": "LinkedIn Member",
+      "category": "spam",
+      "dateDetected": "2023-06",
+      "addedAt": "2026-03-24T16:43:41.906447"
+    },
+    {
+      "name": "LinkedIn Member",
+      "category": "spam",
+      "dateDetected": "2023-06",
+      "addedAt": "2026-03-24T16:43:41.906447"
+    },
+    {
+      "name": "Aidan Ramilo",
+      "category": "spam",
+      "dateDetected": "2023-07",
+      "addedAt": "2026-03-24T16:43:41.906384"
+    },
+    {
+      "name": "Krizzel Jane Camigla",
+      "category": "spam",
+      "dateDetected": "2023-07",
+      "addedAt": "2026-03-24T16:43:41.906385"
+    },
+    {
+      "name": "Joshua Relph-Smith",
+      "category": "spam",
+      "dateDetected": "2023-08",
+      "addedAt": "2026-03-24T16:43:41.906382"
+    },
+    {
+      "name": "Umair Qamar",
+      "category": "spam",
+      "dateDetected": "2023-08",
+      "addedAt": "2026-03-24T16:43:41.906383"
+    },
+    {
+      "name": "Daniel Hammond - Servant",
+      "category": "spam",
+      "dateDetected": "2023-08",
+      "addedAt": "2026-03-24T16:43:41.906384"
+    },
+    {
+      "name": "Gage Lignugaris",
+      "category": "spam",
+      "dateDetected": "2023-09",
+      "addedAt": "2026-03-24T16:43:41.906382"
+    },
+    {
+      "name": "LinkedIn Member",
+      "category": "spam",
+      "dateDetected": "2023-09",
+      "addedAt": "2026-03-24T16:43:41.906445"
+    },
+    {
+      "name": "Tarun Kumar",
+      "category": "spam",
+      "dateDetected": "2023-10",
+      "addedAt": "2026-03-24T16:43:41.906381"
+    },
+    {
+      "name": "George Murphy",
+      "category": "spam",
+      "dateDetected": "2023-12",
+      "addedAt": "2026-03-24T16:43:41.906381"
+    },
+    {
+      "name": "Danielle Perlin",
+      "category": "spam",
+      "dateDetected": "2024-02",
+      "addedAt": "2026-03-24T16:43:41.906380"
+    },
+    {
+      "name": "Brian Kopp",
+      "category": "spam",
+      "dateDetected": "2024-04",
+      "addedAt": "2026-03-24T16:43:41.906379"
+    },
+    {
+      "name": "Trevor Watkins",
+      "category": "spam",
+      "dateDetected": "2024-06",
+      "addedAt": "2026-03-24T16:43:41.906379"
+    },
+    {
+      "name": "Sumeria Kash",
+      "category": "spam",
+      "dateDetected": "2024-08",
+      "addedAt": "2026-03-24T16:43:41.906378"
+    },
+    {
+      "name": "Alexander Betit",
+      "category": "spam",
+      "dateDetected": "2024-08",
+      "addedAt": "2026-03-24T16:43:41.906378"
+    },
+    {
+      "name": "Ashish Mishra",
+      "category": "spam",
+      "dateDetected": "2024-09",
+      "addedAt": "2026-03-24T16:43:41.906376"
+    },
+    {
+      "name": "Maxime Bayen",
+      "category": "spam",
+      "dateDetected": "2024-09",
+      "addedAt": "2026-03-24T16:43:41.906376"
+    },
+    {
+      "name": "Edwin Silayo",
+      "category": "spam",
+      "dateDetected": "2024-09",
+      "addedAt": "2026-03-24T16:43:41.906377"
+    },
+    {
+      "name": "Chase Allen",
+      "category": "spam",
+      "dateDetected": "2024-10",
+      "addedAt": "2026-03-24T16:43:41.906375"
+    },
+    {
+      "name": "Emily Milsovic",
+      "category": "spam",
+      "dateDetected": "2024-11",
+      "addedAt": "2026-03-24T16:43:41.906375"
+    },
+    {
+      "name": "Mark Babbitt",
+      "category": "spam",
+      "dateDetected": "2025-01",
+      "addedAt": "2026-03-24T16:43:41.906374"
+    },
+    {
+      "name": "Julian Vichich",
+      "category": "spam",
+      "dateDetected": "2025-04",
+      "addedAt": "2026-03-24T16:43:41.906373"
+    },
+    {
+      "name": "Katie Windsor",
+      "category": "spam",
+      "dateDetected": "2025-05",
+      "addedAt": "2026-03-24T16:43:41.906373"
+    },
+    {
+      "name": "Christie Pierce",
+      "category": "spam",
+      "dateDetected": "2025-06",
+      "addedAt": "2026-03-24T16:43:41.906371"
+    },
+    {
+      "name": "Kurt W. Snyder",
+      "category": "spam",
+      "dateDetected": "2025-06",
+      "addedAt": "2026-03-24T16:43:41.906372"
+    },
+    {
+      "name": "Matt Labinski",
+      "category": "spam",
+      "dateDetected": "2025-07",
+      "addedAt": "2026-03-24T16:43:41.906370"
+    },
+    {
+      "name": "Sam Kasimalla",
+      "category": "spam",
+      "dateDetected": "2025-07",
+      "addedAt": "2026-03-24T16:43:41.906371"
+    },
+    {
+      "name": "Michael Praver",
+      "category": "spam",
+      "dateDetected": "2025-08",
+      "addedAt": "2026-03-24T16:43:41.906369"
+    },
+    {
+      "name": "Mathew Boyle",
+      "category": "spam",
+      "dateDetected": "2025-10",
+      "addedAt": "2026-03-24T16:43:41.906367"
+    },
+    {
+      "name": "Howard Wolpoff MBA",
+      "category": "spam",
+      "dateDetected": "2025-10",
+      "addedAt": "2026-03-24T16:43:41.906369"
+    },
+    {
+      "name": "Tetiana Danyliuk",
+      "category": "spam",
+      "dateDetected": "2025-12",
+      "addedAt": "2026-03-24T16:43:41.906362"
+    }
+  ],
+  "completed": [],
+  "paused": true,
+  "generatedAt": "2026-03-24T16:43:41.906464",
+  "breakdown": {
+    "spam": 40,
+    "oneTouch": 0,
+    "alreadyCompleted": 0,
+    "remainingInQueue": 40,
+    "note": "Queue built from 40 explicitly named spam contacts in analysis file. 9,527 one-touch convos not individually listed in file - will require live inbox approach."
+  }
+}

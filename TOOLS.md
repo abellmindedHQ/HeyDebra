@@ -13,11 +13,18 @@ Things like:
 - Device nicknames
 - Anything environment-specific
 
+### Debra's Android Phone (Samsung Galaxy A10e)
+- Number: (865) 287-0278 / +18652870278
+- Carrier: Mint Mobile (trial)
+- Use for: WhatsApp, Google Messages RCS/SMS, 2FA
+- Lives plugged in next to Mac mini on wifi
+- This is Debra's "real" phone number
+
 ### Google Voice
 - Number: (865) 309-5235 / +18653095235
 - Linked to Alex's phone (+18135343383)
 - Account: alexander.o.abell@gmail.com
-- Use for: WhatsApp registration, 2FA, Debra's "phone number"
+- Use for: backup number, 2FA overflow
 
 ### Tailscale
 - Account: alexander.o.abell@gmail.com

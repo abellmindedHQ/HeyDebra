@@ -60,12 +60,20 @@
 
 ## Product/Brand Architecture (Abellminded Umbrella)
 - **Abellminded** — umbrella brand. Alex's personal brand + company. Living brain map concept for the website.
-- **Mirror** — self-reflection/self-actualization app. "See yourself, know yourself, the world is your mirror." Needs brand/product architecture, positioning, value prop.
-- **SecondBrain** — personal knowledge capture system. Pitched to Pooja as a product concept. Currently the 8-stream pipeline architecture.
-- **HeyDebra** — the AI assistant framework (built on OpenClaw). Could be productized as a guide/playbook.
+- **Mirror** — "A consciousness expansion system." Full product with pitch site built (mirror-pitch repo).
+  - NOT just a journal app. It's biometric + conversational + reflective intelligence.
+  - Framework: Johari Window (Arena, Blind Spot, Facade, Unknown)
+  - HeartMath integration: HRV coherence, Depletion→Renewal grid, Chelsea's expertise is the clinical foundation
+  - Components: The Sentinel (ambient listener), The Silvering (stream fusion), Second Brain (knowledge graph), Mirror Mirror (debrief/reflection), The Looking Glass (dashboard), The Registry (voice profiles/people intel)
+  - SecondBrain is Mirror's brain. We're already building half of Mirror.
+  - Capture streams: meeting audio, typed notes, desktop activity, ambient conversation, browser context, calendar, Apple Watch HRV, HeartMath clinical coherence, human debrief
+  - Killer insight: show you patterns about yourself you can't see ("your coherence drops when you discuss timelines after 8pm on <6hrs sleep")
+- **SecondBrain** — the knowledge engine underneath Mirror. 8-stream capture, Neo4j graph, Obsidian vault.
+- **Pools/Pooli** — interest-based community platform. Lunchpool evolution. P.O.W.E.R. framework. DAO governance. "Communitism."
+- **HeyDebra** — the AI assistant playbook (built on OpenClaw).
 - **abellminded.com** — portfolio, demos, brain map
 - **abellminded.dev** — public/technical documentation
-- These all need to be thought through as a coherent brand architecture.
+- NEED: coherent product architecture mapping mission → vision → outcomes → capabilities across all of these.
 
 ## Active Projects
 - Second Brain Pipeline v3 (8-stream capture system)

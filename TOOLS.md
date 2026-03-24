@@ -63,6 +63,25 @@ Things like:
   - Jay (boss): chat_guid:any;+;91468caf20824cd696f30436e54c004a
   - Brad Greenfield: chat_guid:any;+;a6c108054d66442e81bf09d56a1205c6
 
+### Monarch
+- API docs: https://status.monarch.com/public-api
+- Needs: API key setup
+- Use for: transaction monitoring, budget alerts, financial summaries
+
+### YNAB
+- API docs: https://api.ynab.com/
+- Needs: API key (Personal Access Token from app.ynab.com/settings)
+- Use for: budget tracking, category monitoring, spending alerts
+
+### Vercel
+- abellminded.com deployed on Vercel
+- DNS pointed from Netlify to Vercel
+- Used with v0 for rapid prototyping
+
+### Suno
+- Music generation (manual, Alex generates tracks)
+- Debra voice profile saved in memory for Suno prompts
+
 ## Why Separate?
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.

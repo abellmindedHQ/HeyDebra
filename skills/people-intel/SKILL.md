@@ -7,6 +7,34 @@ description: Research and enrich profiles for new people. Use when someone says 
 
 Automatically research a person and enrich their profile across Google Contacts, SecondBrain, and Neo4j.
 
+## Auto-Watch Behavior (Passive Detection)
+
+This skill should trigger AUTOMATICALLY when Debra detects a new or unrecognized person in any channel:
+
+### Triggers
+- New phone number appears in a group chat or DM
+- Someone is mentioned by name that Debra doesn't recognize
+- Forwarded email from an unknown sender
+- New participant joins a group chat
+- Alex says "look up [person]", "who is [person]", etc.
+
+### Check Order (before creating anything new)
+1. **Google Contacts** — `gog contacts search "[name or number]" --account alexander.o.abell@gmail.com`
+2. **SecondBrain/People/** — check active people files
+3. **SecondBrain/People/_archived/** — check archived contacts (may be a returning connection)
+4. **Neo4j** — `MATCH (p:Person) WHERE p.name CONTAINS "[name]" OR p.phone = "[number]" RETURN p`
+
+### Actions Based on Results
+- **Found in archive** → Move back to active People/, update with new context, update Neo4j
+- **Found but sparse** → Enrich with available context (run research tiers as needed)
+- **Found and complete** → No action needed, use existing context
+- **Not found anywhere** → Run full people-intel workflow (below)
+
+### Silent Operation
+- Do NOT ask Alex before creating a contact. Just do it.
+- Do NOT announce every new contact creation in chat. Log it quietly.
+- DO mention it naturally if relevant to the conversation ("oh, that's Brandon's colleague, I just looked her up")
+
 ## Inputs
 
 - **Name** (required): Full name of the person

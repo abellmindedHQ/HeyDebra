@@ -944,3 +944,203 @@ Progress: 900/7612 | Deleted this session: 793
   DELETE: Brent Gallo (people/c899199762867301183)
   DELETE: Andrea Diaz (people/c1048355779994452989)
   Batch break after 800 deletes. Waiting 15s...
+  DELETE: L. Courtney Johnson (people/c1059011344830543193)
+  DELETE: Layton Schiffman (people/c1314338294359186622)
+  DELETE: Alvin Lee (people/c1773768897216453430)
+  PROTECTED: Marbelle Librado-Bonilla (people/c1870127946767101683)
+  DELETE: Michelle Dufresne (people/c2009576362853020395)
+  DELETE: BLU University (people/c2112382716638535579)
+  DELETE: Mikey Leung (people/c2341486790566967214)
+  DELETE: Mia Umanos (people/c2425823569364649083)
+  DELETE: Anthony Lowe (people/c2731851040116562888)
+  DELETE: Nataly Tolkachova (people/c2796594399394723576)
+  DELETE: Pia Phillips (people/c2994392248400511790)
+  DELETE: Kristina Halsig (people/c3135471843788694146)
+  DELETE: Ankit Jain (people/c3253481960809480584)
+  DELETE: Michael Casas (people/c3352838774922670867)
+  DELETE: Rachel King Powell (people/c3363999702718992892)
+  DELETE: Kirsten Hill (people/c3485762564576975234)
+  DELETE: Amber K. Stephens (people/c3511687369521137842)
+  DELETE: Victoria Glover (people/c3636229901933542356)
+  DELETE: Alissa Sommerfeldt (people/c3847748163608485483)
+  DELETE: Justice Gennari (people/c3853103105218726266)
+  DELETE: Mark Bender, PhD (people/c3901040575211352406)
+  DELETE: Ranit Das (people/c3913566243919807005)
+  DELETE: Andrew Lipof (people/c4408660249470010928)
+  DELETE: Apoorva Mathur (people/c4451235723473749853)
+  DELETE: Diana Teel (people/c4454534546163156304)
+  DELETE: Marcus Gamble (people/c4560274931471910589)
+  DELETE: Lasse Dam Jørgensen (people/c4612108673462677668)
+  DELETE: Kevin Kelley (people/c4891025047931425808)
+  DELETE: Mohamed Amine Khiari (people/c4897062386915189643)
+  DELETE: April Romero, MPS, DTM, CSP-SM (people/c5305291129962768920)
+  DELETE: Kristina Park (people/c5379961139954178288)
+  DELETE: Michael Natali (people/c5467088855080368875)
+  DELETE: Sean McCoy (people/c5645685131523674189)
+  DELETE: Antonio DaSilva (people/c6081314702873922954)
+  DELETE: Bruce Behn (people/c6350837307532455712)
+  DELETE: Brooklynn Farmer (people/c6389579776495958101)
+  DELETE: Marie Lamonde (people/c6413663337471372631)
+  DELETE: Ana Lozik (people/c6920467135530217104)
+  DELETE: Alexis Hodge (people/c7043387113074271529)
+  Could not get details for people/c7264773261751574400, skipping.
+  Could not get details for people/c7291835745573137558, skipping.
+  Could not get details for people/c7517990585635553825, skipping.
+  Could not get details for people/c7522742034955989219, skipping.
+
+Progress: 950/7612 | Deleted this session: 837
+  Could not get details for people/c7692011800633351015, skipping.
+  DELETE: Amy Earles (people/c7703002368570213454)
+  Could not get details for people/c7771113065879598351, skipping.
+  Could not get details for people/c7819350264477854293, skipping.
+  DELETE: JR Charles (people/c7924726533395575439)
+  Could not get details for people/c8129665755565816163, skipping.
+  Could not get details for people/c8256097126548854991, skipping.
+  Could not get details for people/c8416369745327661769, skipping.
+  Could not get details for people/c8476830296402930734, skipping.
+  Could not get details for people/c8837051237172354721, skipping.
+  Could not get details for people/c8907286865291858205, skipping.
+  Could not get details for people/c8933996704272384371, skipping.
+  Could not get details for people/c8992162114897364333, skipping.
+  Could not get details for people/c931929511693895731, skipping.
+  Could not get details for people/c8896369142192916630, skipping.
+  Could not get details for people/c43988793195556303, skipping.
+  Could not get details for people/c90973504286246161, skipping.
+  Could not get details for people/c329631986310455848, skipping.
+  PROTECTED: Brandon Mulcahy (people/c684773307907128751)
+  Could not get details for people/c764757259841463367, skipping.
+  Could not get details for people/c842860720424860165, skipping.
+  Could not get details for people/c1143122648567695345, skipping.
+  Could not get details for people/c1290252813519513243, skipping.
+  Could not get details for people/c1555518916534017636, skipping.
+  Could not get details for people/c2061381478904211641, skipping.
+  Could not get details for people/c2144852598545906931, skipping.
+  Could not get details for people/c2190540489230191138, skipping.
+  Could not get details for people/c2285125008436201916, skipping.
+  Could not get details for people/c2737311472591312130, skipping.
+  Could not get details for people/c2810442501309869751, skipping.
+  Could not get details for people/c2929897080272311329, skipping.
+  Could not get details for people/c3337911740720151991, skipping.
+  Could not get details for people/c3476941910855181880, skipping.
+  Could not get details for people/c3494388869050534048, skipping.
+  Could not get details for people/c3660813349898880040, skipping.
+  Could not get details for people/c3681274219764511458, skipping.
+  Could not get details for people/c3691626875424419843, skipping.
+  Could not get details for people/c3713828789805709920, skipping.
+  Could not get details for people/c3721885639465014923, skipping.
+  Could not get details for people/c3774166251347855620, skipping.
+  Could not get details for people/c3797977081825401701, skipping.
+  Could not get details for people/c3813447721524672265, skipping.
+  Could not get details for people/c4114937434841325029, skipping.
+  Could not get details for people/c4209307615893009906, skipping.
+  PROTECTED: Brandon Crawley (people/c4400902232871762495)
+  Could not get details for people/c4688269013495628425, skipping.
+  Could not get details for people/c4774139458662096653, skipping.
+
+Progress: 1000/7612 | Deleted this session: 838
+  Could not get details for people/c4784558359964042756, skipping.
+  Could not get details for people/c5203475700322980116, skipping.
+  Could not get details for people/c5460328132109737025, skipping.
+  Could not get details for people/c5583028033374792404, skipping.
+  Could not get details for people/c5608986755627602953, skipping.
+  Could not get details for people/c5745567770006855947, skipping.
+  Could not get details for people/c5753167540706479011, skipping.
+  Could not get details for people/c5805237662615749126, skipping.
+  Could not get details for people/c5927806140028837753, skipping.
+  Could not get details for people/c6210459368079646439, skipping.
+  Could not get details for people/c6719030779141271140, skipping.
+  Could not get details for people/c6897763719291716957, skipping.
+  Could not get details for people/c7095423289730861642, skipping.
+  Could not get details for people/c7209560570339426200, skipping.
+  Could not get details for people/c7457557975636689628, skipping.
+  Could not get details for people/c7486649897965871243, skipping.
+  Could not get details for people/c7702592222812459634, skipping.
+  Could not get details for people/c7786123493470304699, skipping.
+  Could not get details for people/c8542515466694672243, skipping.
+  Could not get details for people/c8883458513387837656, skipping.
+  Could not get details for people/c9176248358153080473, skipping.
+  Could not get details for people/c491149020332958683, skipping.
+  Could not get details for people/c784815828674588878, skipping.
+  Could not get details for people/c843226398282466946, skipping.
+  Could not get details for people/c860413637632033535, skipping.
+  Could not get details for people/c986505072692220966, skipping.
+  DELETE: Carmen Collins (people/c1066767521039246041)
+  Could not get details for people/c1244811889874381006, skipping.
+  Could not get details for people/c1307811793083752623, skipping.
+  Could not get details for people/c1390082089116015128, skipping.
+  Could not get details for people/c1469717515183234975, skipping.
+  Could not get details for people/c1899578707141004685, skipping.
+  Could not get details for people/c2111215110355899740, skipping.
+  Could not get details for people/c2464331357129569158, skipping.
+  Could not get details for people/c2570631269353043539, skipping.
+  PROTECTED: Brandon Clarke (people/c2805202632713873634)
+  Could not get details for people/c2814217354506242038, skipping.
+  Could not get details for people/c2990213717701182416, skipping.
+  Could not get details for people/c4040546322836214553, skipping.
+  Could not get details for people/c4080825608411847341, skipping.
+  Could not get details for people/c4183792578875614807, skipping.
+  Could not get details for people/c4384561194511261907, skipping.
+  Could not get details for people/c4708479864719976895, skipping.
+  Could not get details for people/c5170312737484359831, skipping.
+
+Progress: 1050/7612 | Deleted this session: 838
+  Could not get details for people/c5247987727807154850, skipping.
+  Could not get details for people/c5340366188627205827, skipping.
+  Could not get details for people/c5399344282302530117, skipping.
+  Could not get details for people/c5569087261011628369, skipping.
+  Could not get details for people/c5642298990045550465, skipping.
+  Could not get details for people/c5717948935576367940, skipping.
+  Could not get details for people/c5807811640796434685, skipping.
+  Could not get details for people/c5919595483293150820, skipping.
+  Could not get details for people/c5977099479759557628, skipping.
+  Could not get details for people/c6019122249362468120, skipping.
+  Could not get details for people/c6020693281846361255, skipping.
+  Could not get details for people/c6074924298399298582, skipping.
+  Could not get details for people/c6170294006355745741, skipping.
+  Could not get details for people/c6300647178610999708, skipping.
+  Could not get details for people/c6354171825622666234, skipping.
+  Could not get details for people/c6357314777438647670, skipping.
+  Could not get details for people/c6543888146040809856, skipping.
+  Could not get details for people/c6634188972359814794, skipping.
+  Could not get details for people/c6708296294351137982, skipping.
+  Could not get details for people/c7187774666523598828, skipping.
+  Rate limited getting details. Waiting 60s...
+  Could not get details for people/c7748748346559522269, skipping.
+  Could not get details for people/c7954194903188427884, skipping.
+  Could not get details for people/c8027860840068887069, skipping.
+  Could not get details for people/c8127465501774154239, skipping.
+  Could not get details for people/c8154745976470747549, skipping.
+  Could not get details for people/c8157330430177124059, skipping.
+  Could not get details for people/c8172480338874193774, skipping.
+  Could not get details for people/c8255916914077796084, skipping.
+  Could not get details for people/c8306814282276152628, skipping.
+  Could not get details for people/c8430630797685678748, skipping.
+  Could not get details for people/c8611281211013058131, skipping.
+  Could not get details for people/c8851254058311382316, skipping.
+  Could not get details for people/c8860811367784499258, skipping.
+  Could not get details for people/c9034238990294454500, skipping.
+  Could not get details for people/c9085066915350477145, skipping.
+  Could not get details for people/c129484152440198704, skipping.
+  Could not get details for people/c2269059270973086889, skipping.
+  Could not get details for people/c4783460351550915819, skipping.
+  Could not get details for people/c7790155638788673636, skipping.
+  Could not get details for people/c23454689840538765, skipping.
+  Could not get details for people/c90044470661277505, skipping.
+  Could not get details for people/c94354276964410824, skipping.
+  Could not get details for people/c405324649582751250, skipping.
+  Could not get details for people/c561082896929683064, skipping.
+  Could not get details for people/c623871146276778934, skipping.
+  Could not get details for people/c727880376475885532, skipping.
+
+Progress: 1100/7612 | Deleted this session: 838
+  Could not get details for people/c959845643809985125, skipping.
+  Could not get details for people/c969252760371089155, skipping.
+  Could not get details for people/c1098575574255725401, skipping.
+  Could not get details for people/c1115910833231228518, skipping.
+  Could not get details for people/c1119282927923926542, skipping.
+  Could not get details for people/c1536610108204450106, skipping.
+  Could not get details for people/c1598523528559001444, skipping.
+  Could not get details for people/c1950079561779870729, skipping.
+  Could not get details for people/c2046716119731255567, skipping.
+  Could not get details for people/c2053078759484867885, skipping.
+  Could not get details for people/c2055505089552825661, skipping.

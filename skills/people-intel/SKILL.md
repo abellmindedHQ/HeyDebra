@@ -80,12 +80,12 @@ gog contacts list --account alexander.o.abell@gmail.com --query "[Name]"
 Create or update:
 ```bash
 gog contacts create --account alexander.o.abell@gmail.com \
-  --name "[Full Name]" \
+  --given "[First Name]" --family "[Last Name]" \
   --phone "[phone]" \
   --email "[email]" \
   --org "[Organization]" \
   --title "[Title]" \
-  --notes "[brief context, relationship to Alex, source]"
+  --note "[brief context, relationship to Alex, source]"
 ```
 
 If photo found with high confidence, attach it. Use `gog contacts update` if contact already exists.

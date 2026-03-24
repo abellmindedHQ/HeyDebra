@@ -13,6 +13,18 @@ Things like:
 - Device nicknames
 - Anything environment-specific
 
+### Google Voice
+- Number: (865) 309-5235 / +18653095235
+- Linked to Alex's phone (+18135343383)
+- Account: alexander.o.abell@gmail.com
+- Use for: WhatsApp registration, 2FA, Debra's "phone number"
+
+### Tailscale
+- Account: alexander.o.abell@gmail.com
+- Mac mini: 100.69.97.27 (debras-mac-mini)
+- iPhone: 100.107.105.126 (iphone172)
+- OpenClaw accessible at: http://debras-mac-mini:18789 from any tailnet device
+
 ### 1Password / sudo
 
 - 1Password CLI (`op`) v2.33.0 installed, desktop app integration enabled

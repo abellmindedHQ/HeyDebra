@@ -100,10 +100,11 @@ Save to: `/Users/debra/SecondBrain/People/photos/[FirstLast].[ext]`
 
 ### 3. Google Contact
 
-Check if contact exists first:
+Check if contact exists first (THIS IS THE SOURCE OF TRUTH FOR PHONE/EMAIL):
 ```bash
-gog contacts list --account alexander.o.abell@gmail.com --query "[Name]"
+gog contacts search "[Name]" --account alexander.o.abell@gmail.com
 ```
+**CRITICAL: If Google Contacts has a phone number or email for this person, USE THAT. Do not overwrite with web research data. Google Contacts > web research for contact info.**
 
 Create or update:
 ```bash

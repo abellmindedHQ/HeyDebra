@@ -8,6 +8,18 @@ I'll sort it into the right place. That's my job.
 
 ---
 
+## New (2026-03-23)
+
+- [ ] Set up Find My location sharing (Debra's iCloud → browser, log in, bookmark)
+- [ ] Set up WhatsApp channel for Android users (Pooja, Brandon demos)
+- [ ] Google Drive reorg Phase 3 (folders built, files need moving)
+- [ ] Install Google Messages skill for RCS/SMS support
+- [ ] Set up 3:30 AM end-of-day task sweep (scan conversation for "tomorrow" "later" "backlog" "set up" and capture to INBOX)
+- [ ] Jason group chat fix (recreate with fresh participant mapping)
+- [ ] Brad's COB vision doc follow-up (did he deliver?)
+
+---
+
 ## Unsorted
 
 ### 1. LinkedIn Cleanup

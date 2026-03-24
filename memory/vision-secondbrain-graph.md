@@ -108,6 +108,16 @@ Alex wants GTD processing from ALL streams, not just email:
 - Social media DMs
 Need a universal "extract action items" layer across all streams.
 
+## Sanitize Locally, Process Externally Pattern
+- Sensitive/CUI files processed by LOCAL LLM (Ollama on Mac mini or lab VM)
+- Local LLM extracts knowledge, strips sensitive data (names → roles, specifics → patterns)
+- Sanitized version sent to Claude/Sonnet for deeper analysis
+- Results re-linked to original context locally
+- Defense contractor pattern for classified + AI
+- Mac mini M-series can run 7B-13B models (Llama 3, Mistral) for sanitization
+- Not for deep reasoning, just for "make this safe to send externally"
+- This is the defensible architecture for ORNL compliance
+
 ## ORNL Security/Compliance Constraints
 - Can't merge work + personal calendars
 - Multiple inboxes (ORNL + personal)

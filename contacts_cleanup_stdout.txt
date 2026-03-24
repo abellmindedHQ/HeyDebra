@@ -1204,3 +1204,234 @@ Progress: 1150/7612 | Deleted this session: 838
   Could not get details for people/c4504811373179853449, skipping.
   Could not get details for people/c4639461559222153384, skipping.
   Could not get details for people/c4834927603923237661, skipping.
+  Rate limited getting details. Waiting 60s...
+  Could not get details for people/c5204394241400226875, skipping.
+  Could not get details for people/c5419350534064677683, skipping.
+  Could not get details for people/c5455984998867325032, skipping.
+  Could not get details for people/c5469167501159305491, skipping.
+  Could not get details for people/c5797962241394514174, skipping.
+  Could not get details for people/c5924459087058042483, skipping.
+  Could not get details for people/c5981399624575214615, skipping.
+  Could not get details for people/c5986078284925500028, skipping.
+  Could not get details for people/c6772684539292624090, skipping.
+  Could not get details for people/c6801118113975718305, skipping.
+  Could not get details for people/c6931467848090692348, skipping.
+
+Progress: 1200/7612 | Deleted this session: 838
+  Could not get details for people/c7601075761690727725, skipping.
+  Could not get details for people/c7940122301086922761, skipping.
+  Could not get details for people/c7977931817357563247, skipping.
+  Could not get details for people/c8213463335630800571, skipping.
+  Could not get details for people/c8307055395230647198, skipping.
+  Could not get details for people/c8443969523083134151, skipping.
+  Could not get details for people/c8747047839500967665, skipping.
+  Could not get details for people/c8750064315253101301, skipping.
+  Could not get details for people/c8925635324234422167, skipping.
+  Could not get details for people/c9105376604547948556, skipping.
+  Could not get details for people/c9146797440981844853, skipping.
+  Could not get details for people/c788831195726907115, skipping.
+  Could not get details for people/c7656739179864437405, skipping.
+  Could not get details for people/c341010952401620231, skipping.
+  Could not get details for people/c495045202173248912, skipping.
+  Could not get details for people/c512100014773888715, skipping.
+  Could not get details for people/c895102649588348182, skipping.
+  Could not get details for people/c1135099763507744682, skipping.
+  Could not get details for people/c1401253573894851171, skipping.
+  Could not get details for people/c1495909851355710338, skipping.
+  Could not get details for people/c1623015933870012411, skipping.
+  Could not get details for people/c1806938762172145872, skipping.
+  Could not get details for people/c1809753458226592118, skipping.
+  Could not get details for people/c1898450597457838361, skipping.
+  Could not get details for people/c2154949959186471388, skipping.
+  Could not get details for people/c2170547536685689240, skipping.
+  Could not get details for people/c2268494431238144201, skipping.
+  Could not get details for people/c2344990659238616553, skipping.
+  Could not get details for people/c2393613902307028742, skipping.
+  Could not get details for people/c2402878673007612110, skipping.
+  Could not get details for people/c2427764533815660868, skipping.
+  Could not get details for people/c2465499311125144838, skipping.
+  Could not get details for people/c2675417212149715563, skipping.
+  Could not get details for people/c2681928180751889706, skipping.
+  Could not get details for people/c3240720592938220331, skipping.
+  Could not get details for people/c3351088681050718547, skipping.
+  Could not get details for people/c3701591326273071114, skipping.
+  Could not get details for people/c3913310042693686695, skipping.
+  Could not get details for people/c3926289629171131265, skipping.
+  Could not get details for people/c3950536420417598251, skipping.
+  DELETE: Jorge Chaparro (people/c4051325565350667050)
+  Could not get details for people/c4347111356038309439, skipping.
+  Could not get details for people/c4625121608296725197, skipping.
+  Could not get details for people/c4716390814495863076, skipping.
+
+Progress: 1250/7612 | Deleted this session: 839
+  Could not get details for people/c4879721819311234922, skipping.
+  Could not get details for people/c5202821346983376381, skipping.
+  Could not get details for people/c5816272655566027889, skipping.
+  Could not get details for people/c5865768002533370624, skipping.
+  Could not get details for people/c6126852624166978643, skipping.
+  Could not get details for people/c6177150773581251000, skipping.
+  Could not get details for people/c6400143695228268810, skipping.
+  Could not get details for people/c6820499888316280891, skipping.
+  Could not get details for people/c7404054762638488264, skipping.
+  Could not get details for people/c7920453186898190590, skipping.
+  Could not get details for people/c8291999668756362111, skipping.
+  Could not get details for people/c8553387180019667801, skipping.
+  Could not get details for people/c8619589816721578207, skipping.
+  Could not get details for people/c8729851857807273603, skipping.
+  Could not get details for people/c9140332398476447009, skipping.
+  Could not get details for people/c94860907081096550, skipping.
+  Could not get details for people/c121686321412156321, skipping.
+  Could not get details for people/c246623340260851615, skipping.
+  Could not get details for people/c539239054119193059, skipping.
+  Could not get details for people/c662735197233173001, skipping.
+  Could not get details for people/c854710475127253788, skipping.
+  Could not get details for people/c948958464300399159, skipping.
+  Could not get details for people/c1028434388147106864, skipping.
+  Could not get details for people/c1042513325328987225, skipping.
+  Could not get details for people/c1215327072582360669, skipping.
+  Could not get details for people/c1280867070877926211, skipping.
+  Could not get details for people/c1290862829801281218, skipping.
+  Could not get details for people/c1310832649713424138, skipping.
+  Could not get details for people/c1335998903191903069, skipping.
+  Could not get details for people/c1579013897319534283, skipping.
+  Could not get details for people/c1629373743869108227, skipping.
+  Could not get details for people/c1723442177746653887, skipping.
+  Could not get details for people/c1858004606903743887, skipping.
+  Could not get details for people/c1952600370490184582, skipping.
+  Could not get details for people/c2095017178092394528, skipping.
+  Could not get details for people/c2121157227408961571, skipping.
+  Could not get details for people/c2175886668518289125, skipping.
+  Could not get details for people/c2238333276766505285, skipping.
+  Could not get details for people/c2334492657444908572, skipping.
+  Could not get details for people/c2493766509585459661, skipping.
+  Could not get details for people/c2699974729200215603, skipping.
+  Could not get details for people/c2884276949095492580, skipping.
+  Could not get details for people/c3088362988906166731, skipping.
+  Could not get details for people/c3132204127385230543, skipping.
+  DELETE: Marta Falcó Ribera (people/c3239583616293016726)
+  DELETE: Moeed Ahmad 🇨🇦🇿🇦🇵🇰 (people/c3247797983823417926)
+  DELETE: Kimberly Weisgal (people/c3636543782447985199)
+
+Progress: 1300/7612 | Deleted this session: 842
+  DELETE: Nisarg Shah (people/c4173720356612568030)
+  DELETE: Paul Albano (people/c4189583178369204026)
+  DELETE: Mollie O'Brien (people/c4797565713546073220)
+  DELETE: Benjamin Turner 💡📜💻 (people/c4862237840656485128)
+  DELETE: Bhavik Sadhu (people/c5004306625050937234)
+  DELETE: Jonah Hanowitz (people/c5090711374812389312)
+  DELETE: Arthur Carmazzi - Global No One Ranked Culture Thought Leader (people/c5167367601071623353)
+  DELETE: Markus Renner (people/c5399088796145968976)
+  DELETE: Benita Lee (people/c5698260410392351198)
+  DELETE: Allyson Edwards (people/c5869165809165454139)
+  DELETE: Marko Djukic (people/c5950224202906768492)
+  DELETE: Olivia Sutton (people/c6504847406633319554)
+  DELETE: Lindsey Furr (people/c6707978224217788939)
+  DELETE: Betsy DeSimone (people/c6720694434740677964)
+  DELETE: Bill Cook (people/c6948159781153039357)
+  DELETE: Muhammad Kashif Shabbir (people/c7116443825992193451)
+  DELETE: Lisa Stinnett (people/c7169062189774746381)
+  DELETE: Biz Dev (people/c7847506502417876778)
+  DELETE: Joseph McGrail (people/c8114522390204861122)
+  DELETE: Kevin Coughlin, CCE (people/c8118389868677546522)
+  DELETE: Jordyn Lantz (people/c8206116332237999854)
+  DELETE: Anthony Ruben (people/c8233034631850227408)
+  DELETE: Nellie Weiss (people/c8382563316852593374)
+  DELETE: Josh Loebner, PhD (people/c8396174950929737954)
+  DELETE: Nachum Kligman (people/c8516687208424954680)
+  DELETE: Michael LaVilla (people/c8542376006978933634)
+  DELETE: Andy Kelly (people/c8825293313146872638)
+  DELETE: Nicole Dishman (people/c8871871494754092260)
+  DELETE: Leonardo Salina, MBA (people/c8905069098696087179)
+  DELETE: Patricia Arscott (people/c8930548494040766116)
+  DELETE: Matthew Gregoire (people/c9000853571818242827)
+  DELETE: Mark William (people/c9112554072614948823)
+  DELETE: Mary Holcomb (people/c536316872147298244)
+  DELETE: Nathan Hobson (people/c55494297632624327)
+  DELETE: Joshua Potter (people/c57276324750750720)
+  DELETE: Max Horenstein (people/c182964909072939550)
+  DELETE: Chad Davis (people/c276984760416588253)
+  DELETE: Kelsy Long (people/c341501390403868469)
+  DELETE: Julia Yanchek (people/c865731855058590894)
+  DELETE: Cristopher Ortega (people/c948796803951237291)
+  DELETE: Amanda Stewart, MBA, PMP (people/c992389429127334307)
+  DELETE: Atallah Yousef (people/c1046521841871905589)
+  DELETE: David Ubeda (people/c1123743779836332448)
+  DELETE: James Montgomery (people/c1164959196434606596)
+  DELETE: Beth Coleman (people/c1479924326644423334)
+  DELETE: Justin Goodbread, CFP®, CEPA, CVGA (people/c1514545746764624499)
+
+Progress: 1350/7612 | Deleted this session: 888
+  DELETE: Katie Fuller (people/c1602257865219760843)
+  DELETE: Shawn Harber (people/c1668496351888074239)
+  DELETE: Maggie Griffo (people/c1849187238763807025)
+  DELETE: Paul Garcia (people/c2149839220882996788)
+  DELETE: Barb Gettel (people/c2189740774862726416)
+  DELETE: Chris J. "Mohawk" Reed (people/c2727741160203796664)
+  DELETE: Mauricio Muniz (people/c2897429296453612929)
+  DELETE: Brian Nelson (people/c3075315973434707698)
+  DELETE: Christina Dills (people/c3131386726437513667)
+  DELETE: Lyle Ciardi (people/c3223159719362440521)
+  DELETE: Judith Mallory (people/c3447615884855953878)
+  DELETE: Alica Shamblin, MPS-HR, PHR, SHRM-CP (people/c3689291089699390793)
+  Batch break after 900 deletes. Waiting 15s...
+  DELETE: Leonard Mlodinow (people/c3828872602605437812)
+  DELETE: Jordanne LePre (people/c4122216502456266560)
+  DELETE: Matthew Richardson (people/c4159153697971707865)
+  DELETE: Chad Stewart (people/c4314219117686774885)
+  DELETE: John Grillos (people/c4396411034972136056)
+  DELETE: Malathy Munusamy (people/c4509069715163174984)
+  DELETE: Carol Malakasis (people/c4774852348001708384)
+  DELETE: Danielle Milligan (people/c4783931161568424865)
+  DELETE: Christina Stejskalova (people/c4906551633976842085)
+  DELETE: Poladas James 🚀 (people/c5090733281320430933)
+  DELETE: Bill Prater (people/c5154276106963322495)
+  DELETE: Bernard Jan (people/c5652844137634820177)
+  DELETE: Judith Underwood (people/c6040214309735482653)
+  DELETE: Carly McGowan (people/c6048602705188923549)
+  DELETE: Jonaed Iqbal (people/c6053047854551104898)
+  DELETE: Memorie Knipping (people/c6361856748366884819)
+  DELETE: Becca Boyd, SPHR, SHRM-SCP (people/c6388408360649726942)
+  DELETE: Maria Inês Filipe (people/c6467618859915213138)
+  DELETE: Chris P o s t i l l (people/c6592854677421979334)
+  DELETE: Bahar Arapkirli (people/c6671217197485167204)
+  DELETE: Joshua Milrad (people/c6676402404118672618)
+  DELETE: Michael Diaz (people/c6748266696673903449)
+  DELETE: Julie Scott (people/c7439255395573207390)
+  DELETE: Briana Anderson Martin (people/c7677646526608490532)
+  DELETE: Stu Sjouwerman (people/c7830691108483774235)
+  DELETE: Michael Praver (people/c7882212507529565398)
+  DELETE: Kacie Escobar (people/c8061180062463629941)
+  DELETE: Christopher Rudasill (people/c8092960275626712908)
+  DELETE: Chad Zbinden (people/c8149281251255485841)
+  DELETE: Ashikuzzaman Antor (people/c8233009581381652762)
+  DELETE: Keara McGraw (people/c8441313929778854769)
+  DELETE: Cathy Nelson (people/c8671996178661704860)
+  DELETE: David Mederrick (people/c8888578451627922786)
+
+Progress: 1400/7612 | Deleted this session: 933
+  DELETE: Charles James Apgar (people/c8996815168601098239)
+  DELETE: Scott Hudler (people/c284857061805025856)
+  DELETE: Ryan Ottino (people/c5982287108738998372)
+  DELETE: Kendra Longworth, M.A.M.L. (people/c19318947769640388)
+  DELETE: Andrew Jones (people/c84920067867138933)
+  DELETE: Race Skelton (people/c86685477548519779)
+  DELETE: Justin Ashurst (people/c89803273764984907)
+  DELETE: Alexandria Turnbow (people/c464990103292833650)
+  DELETE: Allison Amos (people/c465100181230647242)
+  DELETE: Zachary Conkey (people/c499668719398368217)
+  DELETE: Lauren Beck (people/c511982523703797676)
+  DELETE: Kerri VanMeveren, MBA, PMP, CHTS-IM (people/c808485580353832909)
+  DELETE: Kaitlin Mascaro (people/c929876901658517267)
+  DELETE: Louis Canger (people/c1392193647563613559)
+  DELETE: Bob Johnson (people/c1487104386714863389)
+  DELETE: Monifer Pitter (people/c1607130670987507601)
+  DELETE: Mike Sutton, CFRE (people/c1918638887141884323)
+  DELETE: McKenzie Dial-Fritscher (people/c1985083336912973822)
+  DELETE: Laqshay Gupta (people/c2128441178468316135)
+  DELETE: Marcus Williamson (people/c2269132502362456509)
+  DELETE: Osvaldo Medina (people/c2304443277461132893)
+  DELETE: Attila Muth (people/c2311063400421316563)
+  DELETE: Cara Beck (people/c2485410687174351836)
+  DELETE: Mitchell Eldridge (people/c2685448943695031801)
+  DELETE: Joshua Gross (people/c2805405853379114341)
+  DELETE: Kaiya Coursey (people/c3020091835895109797)

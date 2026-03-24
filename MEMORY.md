@@ -49,11 +49,22 @@
 - Alex Brodsky: friend/colleague, has a booking link for meetings
 - Brandon Bruce: Alex's friend and mentor. Co-founder of Cirrus Insight (Inc. 500 in 2016), CEO of Uncat, Managing Director of Techstars Industries of the Future (Knoxville). Chairs Knoxville Entrepreneur Center board, co-founded Startup Knox and Knoxville Technology Council, founded 100Knoxville (supporting Black-owned businesses). Entrepreneur in residence at Webb School. Powerhouse connector, lives by "anybody, anywhere, about anything."
 
+## Product/Brand Architecture (Abellminded Umbrella)
+- **Abellminded** — umbrella brand. Alex's personal brand + company. Living brain map concept for the website.
+- **Mirror** — self-reflection/self-actualization app. "See yourself, know yourself, the world is your mirror." Needs brand/product architecture, positioning, value prop.
+- **SecondBrain** — personal knowledge capture system. Pitched to Pooja as a product concept. Currently the 8-stream pipeline architecture.
+- **HeyDebra** — the AI assistant framework (built on OpenClaw). Could be productized as a guide/playbook.
+- **abellminded.com** — portfolio, demos, brain map
+- **abellminded.dev** — public/technical documentation
+- These all need to be thought through as a coherent brand architecture.
+
 ## Active Projects
 - Second Brain Pipeline v3 (8-stream capture system)
+- Mirror product (needs brand/product architecture work)
 - Night Swimming cron suite (email GTD, drive audit, contact triage, ChatGPT deep processing)
 - Google Drive reorganization (cataloged, needs execution with Alex's approval)
 - Voice memo format fix (asVoice not working in iMessage — on backlog)
+- iMazing text capture (Alex wants full private text history as SecondBrain stream)
 
 ## Pending Action Items (Alex)
 - Adobe subscription: update payment method (suspended 2x)

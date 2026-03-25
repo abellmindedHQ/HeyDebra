@@ -2,25 +2,26 @@
 > Auto-loaded every session. Keep this SMALL (<50 lines). Update frequently.
 
 ## Last Updated
-2026-03-24 21:26 EDT
+2026-03-25 03:30 EDT (pre-reset flush)
 
 ## What's Happening Right Now
-- Alex went to bed ~9:26 PM
-- Debra chatting with Pooja on RCS group text
-- Contact sync (alex → debra Google) running as subagent
-- Facebook profiles (30) subagent completed
-- SMS webhook observer active on Google Messages browser tab
+- Alex asleep since ~9:26 PM
+- Session resets at 4am. This is the bridge.
+- 17 cron jobs scheduled and running (email GTD, capture agent, GSD agent, LinkedIn cleanup, Night Swimming, Weaver, memory flush)
+- Contact sync to drdebrapepper timed out, needs retry
+- SMS webhook observer may need re-injection after restart (browser tab)
+- Pooja intro sent via RCS, she read it but didn't reply yet
 
-## Day 3 Scorecard (MASSIVE)
-- 3 messaging channels LIVE (iMessage, WhatsApp, RCS)
-- Email 327→76, Contacts 7612→1283, 240 Obsidian noise archived
-- Claude (2 exports), Instagram, Facebook all processed into SecondBrain
-- 334 artifacts extracted, 30 Facebook profiles created
-- 12 skills built, Weaver v2 running, 17 cron jobs scheduled
-- Notion 10 pages, Linear 93 issues, Tailscale on both devices
-- Mirror product vision fully captured from pitch repo
-- Alex's life work vision documented (Mirror + Pools + AI Companion)
-- Android phone (A10e) bought and set up with Mint Mobile
+## Key Infrastructure State
+- BlueBubbles: webhook at http://127.0.0.1:18789 (NOT localhost, learned the hard way)
+- BlueBubbles proxy: "lan-url" (NOT cloudflare/dynamic DNS)
+- WhatsApp: linked to +18652870278 (Android A10e, Mint Mobile)
+- Google Messages: paired via browser, SMS observer injected
+- Tailscale: Mac mini (100.69.97.27) + iPhone (100.107.105.126)
+- Android phone: Samsung Galaxy A10e, (865) 287-0278, plugged in next to Mac mini
+- Notion: Abellminded HQ page with 10 docs, OpenClaw integration connected
+- Linear: 93 issues, API key REDACTED_LINEAR_KEY
+- drdebrapepper@gmail.com authed in gog for contacts
 
 ## Still TODO
 - Payment failures (Netflix, Adobe, Recraft, Citi)

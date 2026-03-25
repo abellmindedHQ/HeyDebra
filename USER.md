@@ -30,6 +30,11 @@ _Learn about the person you're helping. Update this as you go._
 - Past: Founded Lunchpool (2019-2023), worked at Ashley Furniture, web optimization for Verizon/Expedia/Bose/BofA, university recruitment (Villanova, Notre Dame, MSU)
 - Featured: Made for Knoxville, Making Awesome Podcast, Techstars Startup Week Tampa Bay 2019
 - Built OpenClaw. Very technical. Don't over-explain tech stuff to him.
+- Hometown: Thomasville, GA. TCCHS Class of 2003.
+- Geographic arc: Tallahassee/FSU → Valdosta, GA → Tampa (Lunchpool era) → Knoxville (ORNL)
+- Night owl but trying to be better (went to bed 9:26pm Day 3, was up past 3:30am Day 1)
+- Life's work: Mirror (know yourself) + Pools (know your world) + AI Companion (your sherpa)
+- Pooja Pendharkar (+13213562000): close friend, former Lunchpool co-founder, Android user, reconnecting
 
 ## Group Chat Rules
 - Respond naturally with appropriate pauses, not instant "chatbot on steroids" energy

@@ -8,13 +8,20 @@ Active and someday/maybe projects. GTD style.
 - 8-stream capture system architecture designed
 - Neo4j graph database running with schema
 - Obsidian vault at /Users/debra/SecondBrain/
-- ChatGPT export processed (139 convos, Night Swimming)
-- **Next**: Process remaining data exports (LinkedIn full, Facebook, ChatGPT 2nd, Claude x2)
+- ChatGPT export processed (139 convos, Night Swimming Day 1)
+- Claude personal export processed (135 convos, Day 3)
+- Claude ORNL export processed (316 convos, Day 3)
+- Instagram processed (711 DMs, 1525 following, Day 3)
+- Facebook processed (6007 convos, 161K messages, 20 years, Day 3)
+- 334 artifacts extracted from Claude exports
+- Weaver v2 built and run (1,255 wikilinks, 22 concept cards)
+- **Next**: Process LinkedIn full export, iMazing text capture, set up Monarch/YNAB APIs
 
 ### LinkedIn Cleanup
 - Message analysis complete (12,357 convos analyzed, 9,685 to archive)
 - linkedin-cleanup skill built with safeguards
-- **Next**: Generate queue, get Alex's approval, schedule cron job
+- Cron scheduled: 10am daily, 50 archives per run
+- **Next**: Monitor cron results, verify it's working
 
 ### Cognitive Memory Architecture
 - active-context.md created (hippocampus pattern)
@@ -24,9 +31,28 @@ Active and someday/maybe projects. GTD style.
 - **Next**: Monitor and iterate. Ensure memory bridges sessions consistently.
 
 ### People Intelligence Pipeline
-- people-intel skill built
-- Manual process working (Brandon, Annika, Brad, Jonathan, Jason, Jay today)
-- **Next**: Test skill on next new person introduction. Add profile photo capability.
+- people-intel skill built with auto-watch behavior
+- 94 active People profiles (30 new from Facebook Day 3)
+- 240 LinkedIn noise archived to _archived/
+- Dedup checker built and running clean
+- Google Contacts purged: 7,612 → 1,283
+- **Next**: Finish contact sync to drdebrapepper, cross-ref Instagram mutuals
+
+### Automation Suite (17 Cron Jobs)
+- Email GTD: 7am, 12pm, 6pm daily
+- Capture Agent: 7:30am, 2pm, 8pm daily
+- GSD Agent: 8am, 3pm daily
+- LinkedIn Cleanup: 10am daily
+- Night Swimming: Sunday 9-10:30pm
+- Weaver: Sunday 11pm
+- Memory Flush: 3:30am x2
+- **Next**: Monitor first full day of crons, verify all working
+
+### Multi-Channel Messaging
+- iMessage (BlueBubbles): LIVE ✅
+- WhatsApp (+18652870278): LIVE ✅
+- RCS/SMS (Google Messages): LIVE ✅ (send working, inbound observer needs verification)
+- **Next**: Verify SMS observer inbound, set up as persistent service
 
 ### Android/RCS Messaging
 - Google Messages skill reviewed and approved (safe to install)

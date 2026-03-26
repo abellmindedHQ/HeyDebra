@@ -1,0 +1,46 @@
+--- a/src/tts/tts.ts	(original)
++++ b/src/tts/tts.ts	(patched)
+@@ -1,13 +1,22 @@
+ // ============================================================
+ // Change 1: Add BLUEBUBBLES_VOICE_OUTPUT constant
+ // Place alongside TELEGRAM_OUTPUT and DEFAULT_OUTPUT constants
+ // ============================================================
+
++/** MP3 output for BlueBubbles iMessage voice memos.
++ *  Uses MP3 (not opus) because iMessage handles MP3→CAF conversion
++ *  server-side when isAudioMessage=true is set.
++ *  voiceCompatible=true triggers audioAsVoice on the payload,
++ *  which signals BlueBubbles to send as a voice memo. */
++const BLUEBUBBLES_VOICE_OUTPUT = {
++	openai: "mp3" as const,
++	elevenlabs: "mp3_44100_128",
++	extension: ".mp3",
++	voiceCompatible: true
++};
++
+ // ============================================================
+ // Change 2: Add "bluebubbles" to VOICE_BUBBLE_CHANNELS
+ // ============================================================
+
+ const VOICE_BUBBLE_CHANNELS = new Set([
+ 	"telegram",
+ 	"feishu",
+ 	"whatsapp",
+-	"matrix"
++	"matrix",
++	"bluebubbles"
+ ]);
+
+ // ============================================================
+ // Change 3: Update resolveOutputFormat to return MP3 for BlueBubbles
+ // (not opus — iMessage doesn't support opus natively)
+ // ============================================================
+
+ function resolveOutputFormat(channelId?: string | null) {
+-	if (channelId && VOICE_BUBBLE_CHANNELS.has(channelId)) return TELEGRAM_OUTPUT;
++	if (channelId && VOICE_BUBBLE_CHANNELS.has(channelId)) {
++		if (channelId === "bluebubbles") return BLUEBUBBLES_VOICE_OUTPUT;
++		return TELEGRAM_OUTPUT;
++	}
+ 	return DEFAULT_OUTPUT;
+ }

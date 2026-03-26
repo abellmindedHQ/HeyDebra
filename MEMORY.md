@@ -73,6 +73,7 @@
 - Roxanne: Alex's sister, coaching business (Saturn Return)
 - Alex Brodsky: friend/colleague, has a booking link for meetings
 - Brandon Bruce: Alex's friend and mentor. Co-founder of Cirrus Insight (Inc. 500 in 2016), CEO of Uncat, Managing Director of Techstars Industries of the Future (Knoxville). Chairs Knoxville Entrepreneur Center board, co-founded Startup Knox and Knoxville Technology Council, founded 100Knoxville (supporting Black-owned businesses). Entrepreneur in residence at Webb School. Powerhouse connector, lives by "anybody, anywhere, about anything."
+- Jim Biggs: Executive Director of Knoxville Entrepreneur Center (KEC) since Jan 2014. Instrumental mentor for Alex during Lunchpool. Built KEC into a decade-long engine for Knoxville's startup ecosystem (100Knoxville, Maker City, "What's the Big Idea" pitch comp, "The Works" accelerator). Secret Deadhead. One of the coolest people in Knoxville per Alex.
 
 ## Product/Brand Architecture (Abellminded Umbrella)
 - **Abellminded** — umbrella brand. Alex's personal brand + company. Living brain map concept for the website.
@@ -98,6 +99,43 @@
 - Google Drive reorganization (cataloged, needs execution with Alex's approval)
 - Voice memo format fix (asVoice not working in iMessage — on backlog)
 - iMazing text capture (Alex wants full private text history as SecondBrain stream)
+
+### System Text Leak Prevention (Learned 2026-03-25)
+- Internal system notes CAN leak into outbound messages (happened with Jim Biggs)
+- NEVER include meta-commentary like "Note: I did not schedule..." in chat messages
+- Always review final message content before sending to external chats
+
+### Restaurant/Venue Verification (Learned 2026-03-25)
+- ALWAYS verify a restaurant still exists before recommending (OliBea closed 2023)
+- Check hours match the use case (Plaid Apron = brunch only, closed by 2pm)
+- Verify phone numbers from web search against Google Places API
+
+### Obsidian Sync (Learned 2026-03-25)
+- Files created programmatically may not trigger Obsidian Sync
+- Touch files after creation to force FSEvents
+- Obsidian Sync core plugin enabled but may need remote vault configured
+- Large imports (FB 12.2GB) can cause sync backlog
+
+### GSD Directive (Reinforced 2026-03-25)
+- "We don't wait for tonight" — Alex's words
+- Always create Linear issues for trackable work
+- Don't batch to later if it can be done now
+- Operationalize everything: task → Linear → agent → done
+
+## People (Updated 2026-03-25)
+- **Marshall Goldman**: KBUDDS founding member, Allan Jones Aquatic Center Director at UT Athletics, father of Hope, divorced from Talia ~3 years ago. +18652504862
+- **Everett Hirche**: KBUDDS founding member, master machinist/fabricator for Scruffy City Hall/Preservation Pub/Lunaverse, father of Eva. +18653060896
+- **Nick Hollensbe**: friend, Lead Motion Graphics at HBO/Max, former Scripps Networks, BS CS from University of Kansas, downtown Knoxville. +12392489353
+- **Jim Biggs**: mentor, Executive Director KEC since 2014, instrumental in Lunchpool success, secret Deadhead. +14153854794
+- **Anthony Caccese**: ORNL Principal Product Manager, reports to Brooks Herring. +19177976550
+- **Brooks Herring**: ORNL Head of UX, former HGTV/Food Network/WBD. Launched Coefficient design system.
+- **Herb Himes**: ORNL Task Lead → TL UX Design, former Scripps/Smartria. herbhimes.com
+- **Brandon Brown**: ORNL Sr. Scrum Master/BA, reports to Angie→Alex. +18658880880
+- **Angie**: TL Web Services at ORNL, reports to Alex. Waterfall management style. Alex considering rebranding her team to low-code/prototypers.
+- **Jason Patrick**: ORNL colleague. +18657769277
+- **Jason Shoemaker**: CMS tech lead at ORNL, reports to Brad Greenfield.
+- **Aaron Garvey**: Annika's boyfriend, buying Sterchi building (116 S Gay St) downtown together
+- **🤫 Hannah is pregnant** (found out in Australia, keeping secret, as of 2026-03-25)
 
 ## Pending Action Items (Alex)
 - Adobe subscription: update payment method (suspended 2x)

@@ -1,0 +1,53 @@
+--- a/packages/server/src/server/api/interfaces/messageInterface.ts	(original)
++++ b/packages/server/src/server/api/interfaces/messageInterface.ts	(patched)
+@@ -1,6 +1,8 @@
+ // ============================================================
+ // Bug: isAudioMessage=true + method=private-api on macOS Tahoe
+ // produces broken 0-second voice memos that cannot be played.
+ //
+ // Root cause: The private-api attachment send path (Server().privateApi.attachment.send)
+ // does not correctly handle the audio message lifecycle on macOS Tahoe.
+ // The CAF file is sent but iMessage reports a 0-second duration.
+ //
+ // Fix: Force apple-script method when isAudioMessage=true, regardless
+ // of what method was requested. AppleScript converts MP3→CAF correctly
+ // and iMessage plays the result as a proper voice memo.
+ //
+ // File: packages/server/src/server/api/interfaces/messageInterface.ts
+ // Method: sendAttachmentSync
+ // ============================================================
+
+     static async sendAttachmentSync({
+         chatGuid,
+         attachmentPath,
+         attachmentName = null,
+         attachmentGuid = null,
+-        method = "apple-script",
++        method: requestedMethod = "apple-script",
+         attributedBody = null,
+         subject = null,
+         effectId = null,
+         selectedMessageGuid = null,
+         partIndex = 0,
+         isAudioMessage = false
+     }: SendAttachmentParams): Promise<Message> {
+         if (!chatGuid) throw new Error("No chat GUID provided");
+ 
++        // On macOS Tahoe (and likely Sequoia), the private-api path for audio messages
++        // produces 0-second voice memos that fail to play. Force apple-script for
++        // isAudioMessage=true until the private-api bug is resolved.
++        // See: https://github.com/BlueBubblesApp/bluebubbles-server/issues/773
++        const method = (isAudioMessage && requestedMethod === "private-api")
++            ? "apple-script"
++            : requestedMethod;
++        if (isAudioMessage && requestedMethod === "private-api") {
++            Server().log(
++                "Audio message requested via private-api; falling back to apple-script " +
++                "to avoid 0-second voice memo bug on macOS Tahoe/Sequoia.",
++                "warn"
++            );
++        }
++
+         // Copy the attachment to a more permanent storage
+         const newPath = FileSystem.copyAttachment(attachmentPath, attachmentName, method);
+         // ... rest of method unchanged ...

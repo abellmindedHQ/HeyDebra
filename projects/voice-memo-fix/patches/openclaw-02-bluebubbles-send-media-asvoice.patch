@@ -1,0 +1,36 @@
+--- a/extensions/bluebubbles/src/channel.ts	(original)
++++ b/extensions/bluebubbles/src/channel.ts	(patched)
+@@ -1,6 +1,8 @@
+ // ============================================================
+ // In the outbound.attachedResults section of the BlueBubbles
+ // channel plugin, sendMedia currently ignores audioAsVoice.
+ //
+ // ROOT CAUSE: audioAsVoice is passed via the overrides/ctx object
+ // through the deliver pipeline (createNormalizedOutboundDeliverer),
+ // but BlueBubbles' sendMedia destructures only specific fields and
+ // discards audioAsVoice before calling sendBlueBubblesMedia.
+ // ============================================================
+
+ 		sendMedia: async (ctx) => {
+ 			const runtime = await loadBlueBubblesChannelRuntime();
+-			const { cfg, to, text, mediaUrl, accountId, replyToId } = ctx;
++			// audioAsVoice is set when TTS produces a voice-compatible payload
++			// (i.e., when VOICE_BUBBLE_CHANNELS includes "bluebubbles")
++			const { cfg, to, text, mediaUrl, accountId, replyToId, audioAsVoice } = ctx;
+ 			const { mediaPath, mediaBuffer, contentType, filename, caption } = ctx;
+ 			return await runtime.sendBlueBubblesMedia({
+ 				cfg,
+ 				to,
+ 				mediaUrl,
+ 				mediaPath,
+ 				mediaBuffer,
+ 				contentType,
+ 				filename,
+ 				caption: caption ?? text ?? void 0,
+ 				replyToId: replyToId ?? null,
+-				accountId: accountId ?? void 0
++				accountId: accountId ?? void 0,
++				// Forward voice flag → sendBlueBubblesAttachment → isAudioMessage=true
++				asVoice: audioAsVoice === true ? true : undefined
+ 			});
+ 		}

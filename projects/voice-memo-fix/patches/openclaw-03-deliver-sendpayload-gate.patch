@@ -1,0 +1,41 @@
+--- a/src/infra/outbound/deliver.ts	(original)
++++ b/src/infra/outbound/deliver.ts	(patched)
+@@ -1,6 +1,8 @@
+ // ============================================================
+ // Optional enhancement: also gate sendPayload on audioAsVoice.
+ //
+ // CONTEXT: The current sendPayload gate fires when payload has
+ // channelData or interactive content. This patch also fires it
+ // when audioAsVoice=true, allowing channels that implement
+ // sendPayload (e.g. BlueBubbles) to handle voice memos via
+ // their sendPayload method instead of the sendMedia path.
+ //
+ // NOTE: Patches 1 + 2 are sufficient for BlueBubbles because
+ // audioAsVoice IS already forwarded through sendOverrides to
+ // sendMedia (via resolveCtx in createNormalizedOutboundDeliverer).
+ // This patch is only needed if you want sendPayload to be the
+ // entry point for voice delivery (preferred for cleaner separation).
+ // ============================================================
+
+ // LOCATION: In the payload dispatch loop inside deliverPayloads()
+ // or equivalent function in src/infra/outbound/deliver.ts
+ //
+ // Search for: handler.sendPayload && hasReplyPayloadContent({
+ //
+ // BEFORE:
+-			if (handler.sendPayload && hasReplyPayloadContent({
+-				interactive: effectivePayload.interactive,
+-				channelData: effectivePayload.channelData
+-			})) {
++
++// AFTER:
++			if (handler.sendPayload && (
++				hasReplyPayloadContent({
++					interactive: effectivePayload.interactive,
++					channelData: effectivePayload.channelData
++				}) ||
++				// Also use sendPayload for voice audio — lets channel plugins
++				// handle isAudioMessage/asVoice delivery natively.
++				effectivePayload.audioAsVoice === true
++			)) {
+ 				const delivery = await handler.sendPayload(effectivePayload, sendOverrides);

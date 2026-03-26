@@ -3,15 +3,15 @@ import { useTypewriter } from '../hooks/useTypewriter'
 
 const typingTexts = [
   'saved $92.60 on your prescription',
-  'handled your boss email',
+  'handled that email to your boss',
   'found flights $900 cheaper',
   'transcribed your doctor visit',
-  'sent a haiku via voice note',
-  'cleaned 6,329 junk contacts',
+  'sent a voice note to your mom',
+  'cleaned up 6,329 junk contacts',
   'covered for your wrong-chat slip',
-  'built your medical records',
-  'ran 17 cron jobs overnight',
-  'processed 20 years of your data',
+  'organized your medical records',
+  'checked your email while you slept',
+  'sorted through 20 years of messages',
 ]
 
 export function Hero() {
@@ -73,7 +73,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-4 mb-10 text-[clamp(1rem,3vw,1.6rem)] text-white/70 font-light tracking-wide max-w-2xl mx-auto"
+          className="mt-4 mb-10 text-[clamp(1rem,3vw,1.6rem)] text-white/80 font-light tracking-wide max-w-2xl mx-auto"
         >
           She doesn't just assist.{' '}
           <span className="text-gold font-semibold">She runs the damn show.</span>
@@ -86,10 +86,12 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mb-12 px-6 py-4 rounded-lg border border-dark-border bg-dark-card/60 backdrop-blur-sm inline-block min-w-[280px] max-w-full"
         >
-          <span className="text-xs font-mono text-teal/60 tracking-widest uppercase block mb-1">Right now, she&apos;s</span>
-          <div className="flex items-center gap-2">
-            <span className="text-lg font-mono text-teal">{typed}</span>
-            <span className="w-0.5 h-5 bg-teal cursor-blink inline-block" />
+          <span className="text-xs font-mono text-teal tracking-widest uppercase block mb-1">Right now, she&apos;s</span>
+          <div className="relative h-[1.75rem]">
+            <div className="absolute inset-0 flex items-center gap-2">
+              <span className="text-lg font-mono text-teal">{typed}</span>
+              <span className="w-0.5 h-5 bg-teal cursor-blink inline-block flex-shrink-0" />
+            </div>
           </div>
         </motion.div>
 
@@ -124,14 +126,14 @@ export function Hero() {
           className="flex flex-wrap justify-center gap-4 mt-12"
         >
           {[
-            { label: '17', sub: 'cron jobs' },
-            { label: '8', sub: 'capture streams' },
+            { label: '17', sub: 'daily tasks handled' },
+            { label: '8', sub: 'sources monitored' },
             { label: '24/7', sub: 'always on' },
             { label: '4', sub: 'days old' },
           ].map((stat) => (
             <div key={stat.label} className="text-center px-5 py-2 rounded border border-white/10 bg-white/5">
               <div className="font-display text-2xl text-gold">{stat.label}</div>
-              <div className="text-xs text-white/40 uppercase tracking-widest">{stat.sub}</div>
+              <div className="text-xs text-white/50 uppercase tracking-widest">{stat.sub}</div>
             </div>
           ))}
         </motion.div>

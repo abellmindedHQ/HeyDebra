@@ -4,8 +4,8 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const stackItems = [
   {
     name: 'OpenClaw',
-    role: 'The Brain',
-    description: 'Open-source AI agent runtime. Debra\'s nervous system.',
+    role: 'Her Brain',
+    description: 'The open-source AI engine that makes Debra tick.',
     url: 'https://openclaw.ai',
     icon: '🦞',
     color: '#FF006E',
@@ -13,8 +13,8 @@ const stackItems = [
   },
   {
     name: 'ElevenLabs',
-    role: 'The Voice',
-    description: 'Custom-trained voice model. Real audio, real memos.',
+    role: 'Her Voice',
+    description: 'Custom-trained voice so she sounds like her, not a robot.',
     url: 'https://elevenlabs.io',
     icon: '🎙️',
     color: '#FFD700',
@@ -22,18 +22,17 @@ const stackItems = [
   },
   {
     name: 'Neo4j',
-    role: 'Knowledge Graph',
-    description: 'Graph database for people, relationships, and memory.',
+    role: 'Her Rolodex',
+    description: 'Remembers your people, relationships, and connections.',
     url: 'https://neo4j.com',
     icon: '🕸️',
     color: '#00F5FF',
     tier: 'core',
   },
   {
-    name: 'BlueBubbles',
-    role: 'iMessage Bridge',
-    description: 'Routes Apple Messages to and from Debra\'s stack.',
-    url: 'https://bluebubbles.app',
+    name: 'iMessage',
+    role: 'Apple Messages',
+    description: 'Texts you like a real person, right in your Messages app.',
     icon: '💬',
     color: '#5AC8FA',
     tier: 'channel',
@@ -41,31 +40,31 @@ const stackItems = [
   {
     name: 'WhatsApp',
     role: 'Messaging',
-    description: 'Global messaging. Full send and receive.',
+    description: 'Reaches you on WhatsApp when that\'s where you are.',
     icon: '📱',
     color: '#25D366',
     tier: 'channel',
   },
   {
-    name: 'Google Messages',
-    role: 'RCS / SMS',
-    description: 'RCS-enabled messaging via Android device.',
+    name: 'Text Messages',
+    role: 'SMS & RCS',
+    description: 'Good old text messages. She does those too.',
     icon: '💭',
     color: '#4285F4',
     tier: 'channel',
   },
   {
     name: 'Obsidian',
-    role: 'Second Brain',
-    description: 'Note-taking and knowledge base. The human-readable layer.',
+    role: 'Her Notebook',
+    description: 'Where she keeps notes, research, and everything she learns.',
     icon: '🔮',
     color: '#7B2FBE',
     tier: 'memory',
   },
   {
     name: 'Linear',
-    role: 'Project Management',
-    description: 'Issues, sprints, and action items — created in real time.',
+    role: 'Task Tracking',
+    description: 'Turns conversations into organized to-dos and projects.',
     url: 'https://linear.app',
     icon: '📋',
     color: '#5E6AD2',
@@ -73,8 +72,8 @@ const stackItems = [
   },
   {
     name: 'Google Workspace',
-    role: 'Email / Calendar / Drive',
-    description: 'Full Gmail, Calendar, Contacts, and Drive integration.',
+    role: 'Email, Calendar & Files',
+    description: 'Manages your Gmail, calendar, contacts, and documents.',
     icon: '🗂️',
     color: '#EA4335',
     tier: 'work',
@@ -82,10 +81,10 @@ const stackItems = [
 ]
 
 const tierLabels: Record<string, string> = {
-  core: 'Core Infrastructure',
-  channel: 'Messaging Channels',
-  memory: 'Memory & Knowledge',
-  work: 'Work & Productivity',
+  core: 'What Powers Her',
+  channel: 'How She Reaches You',
+  memory: 'How She Remembers',
+  work: 'How She Gets Things Done',
 }
 
 const tierOrder = ['core', 'channel', 'memory', 'work']
@@ -118,7 +117,7 @@ export function TheStack() {
           <h2 className="font-display text-[clamp(3rem,8vw,7rem)] leading-none mt-2">
             <span className="text-gradient-teal">THE STACK</span>
           </h2>
-          <p className="mt-4 text-white/50 text-lg max-w-xl mx-auto">
+          <p className="mt-4 text-white/70 text-lg max-w-xl mx-auto">
             Nine tools, one brain, zero excuses.
           </p>
         </motion.div>
@@ -156,7 +155,7 @@ export function TheStack() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="h-px flex-1 bg-dark-border" />
-                <span className="text-xs font-mono text-white/30 uppercase tracking-widest whitespace-nowrap">
+                <span className="text-xs font-mono text-white/50 uppercase tracking-widest whitespace-nowrap">
                   {group.label}
                 </span>
                 <div className="h-px flex-1 bg-dark-border" />
@@ -208,7 +207,7 @@ function StackCard({ item }: { item: typeof stackItems[0] }) {
           <div className="text-xs font-mono mt-0.5" style={{ color: item.color }}>{item.role}</div>
         </div>
       </div>
-      <p className="mt-3 text-xs text-white/40 leading-relaxed">{item.description}</p>
+      <p className="mt-3 text-xs text-white/60 leading-relaxed">{item.description}</p>
     </div>
   )
 }

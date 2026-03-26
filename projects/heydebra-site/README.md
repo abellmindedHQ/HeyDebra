@@ -1,67 +1,57 @@
-# HeyDebra — Landing Page
+# HeyDebra
 
-> She doesn't just assist. She runs the damn show.
+> She doesn't just assist. **She runs the damn show.**
 
-A retro-futuristic, nightclub-energy landing page for Debra — the AI executive assistant built on OpenClaw.
-
-## Stack
-
-- **React 18** + **Vite 5** + **TypeScript**
-- **Tailwind CSS** for styling
-- **Framer Motion** for animations
-- Deployed on **Vercel**
-
-## Features
-
-- 🌟 Full-screen hero with animated typewriter effect
-- 🎨 Deep black / hot pink / gold / teal color palette
-- ✨ Canvas particle system (background floating dots in brand colors)
-- 📱 Mobile-first responsive design
-- 🔀 Interactive tab-based "What She Does" section with 5 categories
-- 🎙️ Voice section with animated waveform player mockup
-- 🔧 Stack grid with tier grouping
-- 🧭 Sticky navbar with smooth scroll
-- 🔆 Scroll-reveal animations throughout
-- ⚡ Corner decorations + scanline effects for retro-futuristic vibe
-
-## Dev
-
-```bash
-npm install
-npm run dev       # http://localhost:5173
-npm run build     # production build to /dist
-npm run preview   # preview production build
-```
-
-## Deploy to Vercel
-
-```bash
-npx vercel
-```
-
-Or connect the GitHub repo and Vercel auto-deploys on push.
-
-## Structure
-
-```
-src/
-  components/
-    Navbar.tsx         # sticky nav with smooth scroll
-    Hero.tsx           # big hero with typewriter
-    WhatIsDebra.tsx    # description + stats
-    WhatSheDoes.tsx    # tabbed real examples
-    TheVoice.tsx       # voice section with waveform mockup
-    TheStack.tsx       # tech stack grid
-    BuiltBy.tsx        # Abellminded section
-    Footer.tsx         # signoff
-    Particles.tsx      # canvas particle system
-  hooks/
-    useTypewriter.ts   # typewriter hook
-    useScrollReveal.ts # intersection observer hook
-  App.tsx
-  index.css            # Tailwind + custom CSS
-```
+🔗 **Live site:** [abellminded.com/debra](https://abellminded.com/debra)
 
 ---
 
-Built by [Abellminded](https://abellminded.com) · Powered by [OpenClaw](https://openclaw.ai)
+## What Is Debra?
+
+Debra is an AI executive assistant with the sass of a 70s power secretary and the brain of a cutting-edge polymath. She's not a chatbot. She's not a widget you install and forget about. She's a real, always-on assistant who manages your messages, remembers your life, and gets things done while you sleep.
+
+Think of her as the executive assistant you always wanted but could never afford — one who actually knows you, remembers everything, and texts you like a real person.
+
+## What She Actually Does
+
+These are real things Debra did in her first four days:
+
+- 💬 **Manages messages** across iMessage, WhatsApp, and text — handles 15+ contacts simultaneously
+- ✈️ **Booked a Europe trip** — compared flights, checked schedules, found tickets $900 cheaper
+- 💊 **Saved $92.60 on a prescription** by finding a better pharmacy option
+- 🏥 **Handled a doctor visit** — transcribed the appointment, organized medical records, scheduled follow-ups, added everything to the calendar
+- 🧹 **Cleaned up 6,329 junk contacts** from a messy address book
+- 🧠 **Sorted through 20 years of messages** — 161,000+ conversations, organized and searchable
+- 🎙️ **Sends real voice memos** — with a custom-trained voice that sounds warm, confident, and unmistakably Debra
+- ⚡ **Checks in throughout the day** — monitors email, captures to-dos, and keeps you accountable, all automatically
+
+## The Voice
+
+Debra doesn't just send text. She sends voice memos with a custom-trained voice — warm, direct, and full of personality. She calls people "sugar" and "baby" naturally. She keeps it real. If something's a bad idea, she'll tell you — with love.
+
+## Built By
+
+Debra is part of the [Abellminded](https://abellminded.com) ecosystem, built by Alex Abell. She runs on [OpenClaw](https://openclaw.ai), an open-source AI agent platform.
+
+## Tech Overview
+
+For the curious:
+
+- **Runtime:** [OpenClaw](https://openclaw.ai) (open-source AI agent platform)
+- **Voice:** [ElevenLabs](https://elevenlabs.io) custom-trained model
+- **Memory:** Neo4j knowledge graph + Obsidian notes
+- **Messaging:** iMessage, WhatsApp, SMS/RCS
+- **Productivity:** Google Workspace, Linear
+- **Frontend:** React + Vite + Tailwind CSS + Framer Motion
+
+## Development
+
+```bash
+npm install
+npm run dev     # Local dev server
+npm run build   # Production build
+```
+
+## License
+
+MIT

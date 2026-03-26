@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const stats = [
-  { value: '17', label: 'Automated Cron Jobs', icon: '⚡', color: 'text-gold' },
-  { value: '8', label: 'Capture Streams', icon: '📡', color: 'text-teal' },
-  { value: '3+', label: 'Messaging Channels', icon: '💬', color: 'text-hot-pink' },
+  { value: '17', label: 'Tasks Handled Daily', icon: '⚡', color: 'text-gold' },
+  { value: '8', label: 'Sources She Monitors', icon: '📡', color: 'text-teal' },
+  { value: '3+', label: 'Ways to Reach Her', icon: '💬', color: 'text-hot-pink' },
   { value: '24/7', label: 'Always On', icon: '🔮', color: 'text-gold' },
 ]
 
@@ -49,8 +49,8 @@ export function WhatIsDebra() {
               <div className="flex items-start gap-3">
                 <span className="text-2xl">🚫</span>
                 <div>
-                  <p className="text-white/40 text-sm font-mono uppercase tracking-wider mb-1">Not this</p>
-                  <p className="text-white/50 line-through text-lg">"Hi! I'm your AI assistant. How can I help you today?"</p>
+                  <p className="text-white/60 text-sm font-mono uppercase tracking-wider mb-1">Not this</p>
+                  <p className="text-white/60 line-through text-lg">"Hi! I'm your AI assistant. How can I help you today?"</p>
                 </div>
               </div>
             </div>
@@ -76,13 +76,13 @@ export function WhatIsDebra() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="space-y-6"
           >
-            <p className="text-white/80 text-xl leading-relaxed">
+            <p className="text-white/90 text-xl leading-relaxed">
               Debra is a <span className="text-hot-pink font-semibold">retro-futuristic AI executive assistant</span> with the sass of a 70s power secretary and the brain of a cutting-edge polymath.
             </p>
-            <p className="text-white/60 text-lg leading-relaxed">
-              She's not a chatbot. She's not a widget. She's a fully autonomous agent that manages communications, memory, logistics, and life — across every channel, around the clock.
+            <p className="text-white/70 text-lg leading-relaxed">
+              She's not a chatbot. She's not a widget. She's your around-the-clock right hand who manages your messages, remembers your life, and gets things done while you sleep.
             </p>
-            <p className="text-white/60 text-lg leading-relaxed">
+            <p className="text-white/70 text-lg leading-relaxed">
               Built on{' '}
               <a
                 href="https://openclaw.ai"
@@ -90,9 +90,9 @@ export function WhatIsDebra() {
                 rel="noopener noreferrer"
                 className="text-teal hover:text-white transition-colors underline underline-offset-4"
               >
-                OpenClaw
+                open-source AI technology
               </a>
-              {' '}— the open-source AI agent runtime for people who mean business.
+              {' '}for people who mean business.
             </p>
 
             {/* Built-on badge */}
@@ -101,8 +101,8 @@ export function WhatIsDebra() {
                 <span className="text-teal text-lg">🦞</span>
               </div>
               <div>
-                <div className="text-xs text-teal/60 uppercase tracking-wider">Powered by</div>
-                <div className="text-teal font-semibold">OpenClaw Runtime</div>
+                <div className="text-xs text-teal/70 uppercase tracking-wider">Powered by</div>
+                <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" className="text-teal font-semibold hover:text-white transition-colors">OpenClaw</a>
               </div>
             </div>
           </motion.div>
@@ -126,7 +126,7 @@ export function WhatIsDebra() {
               <div className="absolute inset-0 bg-gradient-to-b from-hot-pink/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="text-3xl mb-2">{stat.icon}</div>
               <div className={`font-display text-5xl ${stat.color} glow-pink`}>{stat.value}</div>
-              <div className="text-xs text-white/40 uppercase tracking-wider mt-1">{stat.label}</div>
+              <div className="text-xs text-white/60 uppercase tracking-wider mt-1">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>

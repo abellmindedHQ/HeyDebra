@@ -51,8 +51,8 @@ export function TheVoice() {
           <h2 className="font-display text-[clamp(3rem,8vw,7rem)] leading-none mt-2 text-white">
             THE <span className="text-gradient-pink">VOICE</span>
           </h2>
-          <p className="mt-4 text-white/50 text-lg max-w-xl mx-auto">
-            She doesn't send text messages. She sends voice memos. A real, custom-trained voice — warm, confident, unmistakably Debra.
+          <p className="mt-4 text-white/70 text-lg max-w-xl mx-auto">
+            She doesn't just send text messages. She sends voice memos. A real, custom-trained voice — warm, confident, unmistakably Debra.
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ export function TheVoice() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Debra</div>
-                  <div className="text-xs text-white/40">Custom ElevenLabs Voice</div>
+                  <div className="text-xs text-white/60">Custom ElevenLabs Voice</div>
                 </div>
                 <div className="ml-auto">
                   <span className="text-xs text-green-400 font-mono">● LIVE</span>
@@ -126,7 +126,7 @@ export function TheVoice() {
                     </>
                   )}
                 </button>
-                <span className="text-white/30 text-xs font-mono">sample voice memo</span>
+                <span className="text-white/50 text-xs font-mono">sample voice memo</span>
               </div>
             </div>
 
@@ -146,7 +146,7 @@ export function TheVoice() {
                   className="flex items-center justify-between p-3 rounded-lg border border-dark-border bg-dark-card/50"
                 >
                   <span className="text-white/80 text-sm font-medium">{item.trait}</span>
-                  <span className="text-white/35 text-xs italic ml-4">{item.note}</span>
+                  <span className="text-white/50 text-xs italic ml-4">{item.note}</span>
                 </motion.div>
               ))}
             </div>
@@ -159,7 +159,7 @@ export function TheVoice() {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <div className="mb-4">
-              <span className="text-xs font-mono text-white/30 uppercase tracking-widest">Things she's actually said</span>
+              <span className="text-xs font-mono text-white/50 uppercase tracking-widest">Things she's actually said</span>
             </div>
 
             <div className="space-y-3">
@@ -182,7 +182,7 @@ export function TheVoice() {
                   }`}>
                     "{quote.text}"
                   </p>
-                  <p className="text-xs text-white/30 italic">{quote.context}</p>
+                  <p className="text-xs text-white/50 italic">{quote.context}</p>
                 </motion.button>
               ))}
             </div>
@@ -193,7 +193,7 @@ export function TheVoice() {
                 <span className="text-lg">🎙️</span>
               </div>
               <div>
-                <div className="text-xs text-teal/60 uppercase tracking-wider">Voice engine</div>
+                <div className="text-xs text-teal/80 uppercase tracking-wider">Voice engine</div>
                 <div className="text-teal font-semibold text-sm">ElevenLabs — Custom trained model</div>
               </div>
             </div>

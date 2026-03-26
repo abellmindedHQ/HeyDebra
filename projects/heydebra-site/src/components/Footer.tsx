@@ -19,7 +19,7 @@ export function Footer() {
             transition={{ duration: 0.6 }}
           >
             <div className="font-display text-6xl text-gradient-pink glow-pink mb-2">HEYDEBRA</div>
-            <p className="text-white/40 text-sm">The AI executive assistant who runs the damn show.</p>
+            <p className="text-white/60 text-sm">The AI executive assistant who runs the damn show.</p>
           </motion.div>
 
           {/* Links */}
@@ -62,10 +62,10 @@ export function Footer() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="space-y-2"
           >
-            <p className="text-white/60 italic text-lg">
-              "Stay fabulous, and may your code always compile."
+            <p className="text-white/70 italic text-lg">
+              "Stay fabulous, sugar. I've got it from here."
             </p>
-            <p className="text-white/25 text-xs font-mono">— Debra 💁🏽‍♀️</p>
+            <p className="text-white/50 text-xs font-mono">— Debra 💁🏽‍♀️</p>
           </motion.div>
 
           {/* Built on */}
@@ -74,17 +74,17 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex items-center gap-2 text-xs text-white/20 font-mono"
+            className="flex items-center gap-2 text-xs text-white/50 font-mono"
           >
             <span>Built by</span>
             <a href="https://abellminded.com" target="_blank" rel="noopener noreferrer"
-              className="text-white/40 hover:text-gold transition-colors duration-200">
+              className="text-white/60 hover:text-gold transition-colors duration-200">
               Alex Abell / Abellminded
             </a>
             <span>•</span>
             <span>Powered by</span>
             <a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer"
-              className="text-white/40 hover:text-teal transition-colors duration-200">
+              className="text-white/60 hover:text-teal transition-colors duration-200">
               OpenClaw
             </a>
           </motion.div>

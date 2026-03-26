@@ -5,7 +5,7 @@ const navLinks = [
   { label: 'Who Is She', href: '#what-is-debra' },
   { label: 'What She Does', href: '#what-she-does' },
   { label: 'The Voice', href: '#the-voice' },
-  { label: 'The Stack', href: '#the-stack' },
+  { label: 'How It Works', href: '#the-stack' },
 ]
 
 export function Navbar() {
@@ -50,7 +50,7 @@ export function Navbar() {
               key={link.href}
               onClick={() => handleNav(link.href)}
               role="listitem"
-              className="text-sm text-white/50 hover:text-white transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-hot-pink focus-visible:ring-offset-2 focus-visible:ring-offset-deep-black rounded px-1 py-0.5"
+              className="text-sm text-white/70 hover:text-white transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-hot-pink focus-visible:ring-offset-2 focus-visible:ring-offset-deep-black rounded px-1 py-0.5"
             >
               {link.label}
             </button>
@@ -97,7 +97,7 @@ export function Navbar() {
             <button
               key={link.href}
               onClick={() => handleNav(link.href)}
-              className="block w-full text-left py-3 text-white/60 hover:text-white transition-colors duration-200 border-b border-dark-border/50 last:border-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-hot-pink focus-visible:ring-offset-2 focus-visible:ring-offset-dark-surface rounded"
+              className="block w-full text-left py-3 text-white/70 hover:text-white transition-colors duration-200 border-b border-dark-border/50 last:border-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-hot-pink focus-visible:ring-offset-2 focus-visible:ring-offset-dark-surface rounded"
             >
               {link.label}
             </button>

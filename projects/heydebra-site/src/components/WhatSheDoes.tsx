@@ -35,11 +35,11 @@ const categories = [
     label: 'Knowledge & Memory',
     color: '#00F5FF',
     items: [
-      { text: 'Processed a 12.2GB Facebook export: 161,077 messages across 20 years of history', highlight: '20 years' },
-      { text: 'Extracted 334 code artifacts from Claude AI conversation exports', highlight: '334 artifacts' },
-      { text: 'Built 50+ people profiles: web research, Neo4j graph nodes, contact sync', highlight: '50+ profiles' },
-      { text: 'Cleaned 7,612 Google Contacts down to 1,283 — deleted 6,329 junk imports', highlight: '6,329 deleted' },
-      { text: 'Maintains a Second Brain: knowledge graph in Obsidian + Neo4j, always growing', highlight: 'Second Brain' },
+      { text: 'Sorted through 20 years of Facebook messages — 161,077 conversations organized and searchable', highlight: '20 years' },
+      { text: 'Pulled 334 useful snippets from past AI conversations so nothing gets lost', highlight: '334 snippets' },
+      { text: 'Built detailed profiles on 50+ people — researched backgrounds, connected the dots across contacts', highlight: '50+ profiles' },
+      { text: 'Cleaned 7,612 Google Contacts down to 1,283 — removed 6,329 duplicates and junk', highlight: '6,329 removed' },
+      { text: 'Keeps a growing knowledge base — remembers your people, your preferences, your history', highlight: 'knowledge base' },
     ],
   },
   {
@@ -48,21 +48,21 @@ const categories = [
     label: 'Work Intelligence',
     color: '#7B2FBE',
     items: [
-      { text: 'Analyzed a 37-minute recorded conversation between Alex and an employee — extracted strategic insights, management philosophy, and action items', highlight: '37 minutes' },
-      { text: 'Created Linear project management issues from conversations in real time', highlight: 'real time' },
-      { text: 'Researched colleagues before meetings and delivered personalized audio intros', highlight: null },
+      { text: 'Listened to a 37-minute recorded conversation and pulled out the key insights, decisions, and action items', highlight: '37 minutes' },
+      { text: 'Turned casual conversations into organized tasks and project updates — automatically', highlight: 'automatically' },
+      { text: 'Researched colleagues before meetings and delivered personalized audio briefings', highlight: null },
     ],
   },
   {
     id: 'infra',
     icon: '⚡',
-    label: 'Infrastructure',
+    label: 'Always Working',
     color: '#FF6B35',
     items: [
-      { text: '17 automated cron jobs: email triage 3×/day, action item capture 3×/day, accountability checks 2×/day', highlight: '17 cron jobs' },
-      { text: 'Multi-channel presence: iMessage via BlueBubbles, WhatsApp, Google Messages RCS', highlight: null },
-      { text: 'Custom ElevenLabs voice — sends actual voice memos, not text', highlight: 'ElevenLabs' },
-      { text: 'Running on a Mac Mini 24/7, built with OpenClaw on Day 1', highlight: 'Day 1' },
+      { text: '17 automated routines: checks your email 3× a day, captures your to-dos 3× a day, and keeps you accountable twice daily', highlight: '17 automated routines' },
+      { text: 'Reaches you everywhere: iMessage, WhatsApp, and text messages', highlight: null },
+      { text: 'Custom-trained voice — she sends actual voice memos, not walls of text', highlight: 'voice memos' },
+      { text: 'Running around the clock on dedicated hardware, built from day one on open-source AI', highlight: 'day one' },
     ],
   },
 ]
@@ -93,7 +93,7 @@ export function WhatSheDoes() {
             <span className="text-gradient-pink">ACTUALLY</span>
             <span className="text-white"> DOES</span>
           </h2>
-          <p className="mt-4 text-white/50 text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-white/70 text-lg max-w-2xl mx-auto">
             Not a demo. Not a pitch. These are real things Debra did in her first four days of existence.
           </p>
         </motion.div>
@@ -114,7 +114,7 @@ export function WhatSheDoes() {
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-deep-black ${
                 activeCategory === cat.id
                   ? 'border-transparent text-white'
-                  : 'border-dark-border text-white/40 hover:text-white/70 hover:border-white/20 bg-transparent'
+                  : 'border-dark-border text-white/60 hover:text-white/80 hover:border-white/20 bg-transparent'
               }`}
               style={activeCategory === cat.id ? {
                 background: `linear-gradient(135deg, ${cat.color}33, ${cat.color}22)`,
@@ -160,7 +160,7 @@ export function WhatSheDoes() {
                 >
                   <div className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
                     style={{ background: active.color, boxShadow: `0 0 8px ${active.color}` }} />
-                  <p className="text-white/75 leading-relaxed text-[15px] group-hover:text-white/95 transition-colors duration-200">
+                  <p className="text-white/80 leading-relaxed text-[15px] group-hover:text-white/95 transition-colors duration-200">
                     {item.highlight ? (
                       <>
                         {item.text.split(item.highlight)[0]}
@@ -182,7 +182,7 @@ export function WhatSheDoes() {
           initial={{ opacity: 0 }}
           animate={isVisible ? { opacity: 1 } : {}}
           transition={{ delay: 0.8 }}
-          className="text-center mt-8 text-white/30 text-sm font-mono"
+          className="text-center mt-8 text-white/50 text-sm font-mono"
         >
           ↑ All of the above happened in Debra's first 96 hours.
         </motion.p>

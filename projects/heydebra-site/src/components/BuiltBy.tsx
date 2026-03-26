@@ -37,13 +37,13 @@ export function BuiltBy() {
           >
             <div className="p-6 rounded-2xl border border-gold/20 bg-gold/5">
               <div className="text-4xl mb-4">🏗️</div>
-              <p className="text-white/80 text-lg leading-relaxed">
-                Debra is part of the <span className="text-gold font-semibold">Abellminded ecosystem</span> — a framework for AI companions that actually know you.
+              <p className="text-white/90 text-lg leading-relaxed">
+                Debra is part of the <span className="text-gold font-semibold">Abellminded ecosystem</span> — a vision for AI that actually knows you, not just answers your questions.
               </p>
             </div>
 
-            <p className="text-white/60 leading-relaxed">
-              Built by <span className="text-white font-semibold">Alex Abell</span> — transformation group lead, ex-founder, and the guy who thought "what if my executive assistant was also a 70s icon who never sleeps."
+            <p className="text-white/70 leading-relaxed">
+              Built by <span className="text-white font-semibold">Alex Abell</span> — team leader, ex-founder, and the guy who thought "what if my executive assistant was also a 70s icon who never sleeps."
             </p>
 
             <a
@@ -67,27 +67,27 @@ export function BuiltBy() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="space-y-4"
           >
-            <div className="text-xs font-mono text-white/30 uppercase tracking-widest mb-6">The ecosystem</div>
+            <div className="text-xs font-mono text-white/50 uppercase tracking-widest mb-6">The bigger picture</div>
 
             {[
               {
                 name: 'Mirror',
                 tagline: 'Know yourself',
-                desc: 'Deep self-knowledge and personal insight framework.',
+                desc: 'Tools for understanding who you are and what matters to you.',
                 icon: '🪞',
                 color: '#FF006E',
               },
               {
                 name: 'Pools',
                 tagline: 'Know your world',
-                desc: 'Network intelligence and relationship graph tools.',
+                desc: 'Understand your relationships and connections like never before.',
                 icon: '🌊',
                 color: '#00F5FF',
               },
               {
                 name: 'AI Companion',
                 tagline: 'Your sherpa',
-                desc: 'The framework that powers Debra — and agents like her.',
+                desc: 'The foundation that powers Debra — and assistants like her.',
                 icon: '🤖',
                 color: '#FFD700',
                 active: true,
@@ -116,7 +116,7 @@ export function BuiltBy() {
                     )}
                   </div>
                   <div className="text-xs mt-0.5" style={{ color: item.color }}>{item.tagline}</div>
-                  <div className="text-xs text-white/40 mt-1">{item.desc}</div>
+                  <div className="text-xs text-white/60 mt-1">{item.desc}</div>
                 </div>
               </motion.div>
             ))}

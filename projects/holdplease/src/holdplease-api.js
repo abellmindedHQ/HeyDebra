@@ -103,6 +103,72 @@ function buildCallPrompt(callData) {
   return prompt;
 }
 
+// ─── API: Look up a company phone number ──────────────────────────────────
+app.post('/api/lookup', async (req, res) => {
+  try {
+    const { company } = req.body;
+    if (!company) {
+      return res.status(400).json({ success: false, error: 'Company name required' });
+    }
+
+    log(`[HP] Looking up phone number for: ${company}`);
+
+    // Use Google Places API via goplaces CLI
+    const { execSync } = require('child_process');
+    try {
+      const result = execSync(
+        `goplaces search "${company.replace(/"/g, '\\"')}" --fields name,phone,address --json 2>/dev/null`,
+        { encoding: 'utf-8', timeout: 10000 }
+      ).trim();
+
+      if (result) {
+        const places = JSON.parse(result);
+        if (places && places.length > 0) {
+          const matches = places
+            .filter(p => p.phone)
+            .slice(0, 3)
+            .map(p => ({
+              name: p.name,
+              phone: p.phone,
+              address: p.address || ''
+            }));
+
+          if (matches.length > 0) {
+            return res.json({ success: true, results: matches });
+          }
+        }
+      }
+    } catch (e) {
+      log(`[HP] goplaces error: ${e.message}`);
+    }
+
+    // Fallback: web search
+    try {
+      const searchQuery = `${company} customer service phone number`;
+      const result = execSync(
+        `curl -s "https://www.google.com/search?q=${encodeURIComponent(searchQuery)}" -H "User-Agent: Mozilla/5.0" 2>/dev/null | grep -oP '\\+?1?[\\s.-]?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}' | head -3`,
+        { encoding: 'utf-8', timeout: 10000 }
+      ).trim();
+
+      if (result) {
+        const phones = result.split('\n').filter(Boolean).map(p => ({
+          name: company,
+          phone: p.trim(),
+          address: ''
+        }));
+        return res.json({ success: true, results: phones, source: 'web' });
+      }
+    } catch (e) {
+      log(`[HP] Web search fallback error: ${e.message}`);
+    }
+
+    res.json({ success: false, error: 'Could not find a phone number. Please enter it manually.' });
+  } catch (err) {
+    log(`[HP] Lookup error: ${err.message}`);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 // ─── API: Start a HoldPlease call ──────────────────────────────────────────
 app.post('/api/holdplease', async (req, res) => {
   try {

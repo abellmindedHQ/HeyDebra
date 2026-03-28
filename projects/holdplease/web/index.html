@@ -211,10 +211,25 @@
     <!-- Call Form -->
     <div class="card" id="callForm">
       <label>Who do I call?</label>
-      <input type="text" id="company" placeholder="e.g., Lufthansa Baggage Claims">
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1.2rem;">
+        <input type="text" id="company" placeholder="e.g., Lufthansa Baggage Claims" style="margin-bottom: 0; flex: 1;">
+        <button onclick="lookupNumber()" id="lookupBtn" style="
+          padding: 0 1rem;
+          background: #252525;
+          border: 1px solid #4dd9c0;
+          color: #4dd9c0;
+          border-radius: 10px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          cursor: pointer;
+          white-space: nowrap;
+          transition: background 0.2s;
+        ">🔍 Find #</button>
+      </div>
+      <div id="lookupResults" style="display: none; margin-bottom: 1.2rem;"></div>
 
       <label>Phone Number</label>
-      <input type="tel" id="phoneNumber" placeholder="+1-800-645-3880">
+      <input type="tel" id="phoneNumber" placeholder="Enter or use Find # above">
 
       <label>What do you need?</label>
       <textarea id="task" placeholder="e.g., Check status on lost baggage claim CPHLH52532. Passenger Alex Abell, flight Nov 29 MUC→CPH→TYS. Get estimated reimbursement timeline."></textarea>
@@ -263,6 +278,56 @@
 
     // Load history on start
     loadHistory();
+
+    async function lookupNumber() {
+      const company = document.getElementById('company').value.trim();
+      if (!company) { alert('Enter a company name first'); return; }
+
+      const btn = document.getElementById('lookupBtn');
+      btn.textContent = '...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(`${API_BASE}/api/lookup`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ company })
+        });
+        const data = await res.json();
+
+        const resultsDiv = document.getElementById('lookupResults');
+
+        if (data.success && data.results && data.results.length > 0) {
+          resultsDiv.innerHTML = data.results.map(r => `
+            <div onclick="selectNumber('${r.phone}', '${r.name.replace(/'/g, "\\'")}')" style="
+              background: #111; border: 1px solid #2a2a2a; border-radius: 8px;
+              padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; cursor: pointer;
+              transition: border-color 0.2s;
+            " onmouseover="this.style.borderColor='#4dd9c0'" onmouseout="this.style.borderColor='#2a2a2a'">
+              <div style="font-weight: 600; color: #fff; font-size: 0.9rem;">${r.name}</div>
+              <div style="color: #4dd9c0; font-size: 0.85rem;">${r.phone}</div>
+              ${r.address ? `<div style="color: #666; font-size: 0.75rem;">${r.address}</div>` : ''}
+            </div>
+          `).join('');
+          resultsDiv.style.display = 'block';
+        } else {
+          resultsDiv.innerHTML = '<p style="color: #e74c3c; font-size: 0.85rem;">No number found. Enter it manually below.</p>';
+          resultsDiv.style.display = 'block';
+          setTimeout(() => { resultsDiv.style.display = 'none'; }, 3000);
+        }
+      } catch (err) {
+        alert('Lookup failed: ' + err.message);
+      }
+
+      btn.textContent = '🔍 Find #';
+      btn.disabled = false;
+    }
+
+    function selectNumber(phone, name) {
+      document.getElementById('phoneNumber').value = phone;
+      if (name) document.getElementById('company').value = name;
+      document.getElementById('lookupResults').style.display = 'none';
+    }
 
     async function startCall() {
       const company = document.getElementById('company').value.trim();

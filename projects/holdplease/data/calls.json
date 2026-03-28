@@ -1,5 +1,20 @@
 [
   {
+    "callId": "hp_1774725144668_fqkz11",
+    "conversationId": "conv_2101kmtxs957exxa6tszjjkwszjb",
+    "callSid": "CA30bc076b71da60065e10b09d08b85e3a",
+    "company": "Lufthansa Customer Service",
+    "phoneNumber": "+18006453880",
+    "task": "Check status on baggage reimbursement claim. Case number C-130009-K8N5, Property Irregularity Report CPHLH52532. Passenger Alex Abell, flight November 29 2025 Munich to Copenhagen to Chicago to Knoxville, Lufthansa flight LH2440. Bags were delayed 6 days in Copenhagen, delivered December 5. All receipts were submitted March 1 2026 totaling over $550 in replacement clothing plus taxi and Uber costs. Lufthansa acknowledged the case March 18 but said it was still in line for processing. It has now been 4 months with no payment. I need a specific timeline for when reimbursement will be issued. If they cannot provide one, I will be filing a US DOT complaint and pursuing rights under EU Regulation EC 261/2004 and the Montreal Convention.",
+    "reference": "Case C-130009-K8N5 | PIR CPHLH52532 | Feedback ID 42383344 | Baggage Receipt 0220596739",
+    "callback": "+18135343383",
+    "status": "in-progress",
+    "statusMessage": "Calling...",
+    "startedAt": "2026-03-28T19:12:26.085Z",
+    "transcript": [],
+    "outcome": null
+  },
+  {
     "callId": "hp_1774724702772_kjwww8",
     "conversationId": "conv_5601kmtxbskgfgmvfb0a1kbv9vgj",
     "callSid": "CA529dbd6048c3bda019918bf542475839",

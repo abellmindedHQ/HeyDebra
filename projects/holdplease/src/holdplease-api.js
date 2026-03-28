@@ -270,6 +270,11 @@ app.post('/api/holdplease', async (req, res) => {
   }
 });
 
+// ─── API: Call history (MUST be before :callId route) ──────────────────────
+app.get('/api/holdplease/history', (req, res) => {
+  res.json({ calls: calls.slice(0, 20) });
+});
+
 // ─── API: Get call status ──────────────────────────────────────────────────
 app.get('/api/holdplease/:callId', (req, res) => {
   const call = calls.find(c => c.callId === req.params.callId);
@@ -277,11 +282,6 @@ app.get('/api/holdplease/:callId', (req, res) => {
     return res.status(404).json({ success: false, error: 'Call not found' });
   }
   res.json(call);
-});
-
-// ─── API: Call history ─────────────────────────────────────────────────────
-app.get('/api/holdplease/history', (req, res) => {
-  res.json({ calls: calls.slice(0, 20) });
 });
 
 // ─── Poll ElevenLabs conversation for updates ──────────────────────────────

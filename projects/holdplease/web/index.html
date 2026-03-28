@@ -414,6 +414,53 @@
 
     let lastCallData = null;
 
+    function viewCall(callId) {
+      document.getElementById('callForm').style.display = 'none';
+      const statusCard = document.getElementById('statusCard');
+      statusCard.classList.add('active');
+      document.getElementById('transcript').classList.add('active');
+      document.getElementById('statusText').textContent = 'Loading...';
+      document.getElementById('statusDot').className = 'status-dot';
+      document.getElementById('retryBtn').style.display = 'none';
+
+      // Fetch current state
+      fetch(`${API_BASE}/api/holdplease/${callId}`)
+        .then(r => r.json())
+        .then(data => {
+          lastCallData = { company: data.company, phoneNumber: data.phoneNumber, task: data.task, reference: data.reference, callback: data.callback };
+
+          const dot = document.getElementById('statusDot');
+          if (data.status === 'completed') {
+            dot.className = 'status-dot completed';
+            document.getElementById('statusText').textContent = `${data.company} — Call completed`;
+            document.getElementById('retryBtn').style.display = 'block';
+          } else if (data.status === 'failed') {
+            dot.className = 'status-dot error';
+            document.getElementById('statusText').textContent = `${data.company} — Call failed`;
+            document.getElementById('retryBtn').style.display = 'block';
+          } else {
+            dot.className = 'status-dot';
+            document.getElementById('statusText').textContent = `${data.company} — ${data.statusMessage || 'In progress...'}`;
+            // Start polling for live updates
+            if (pollInterval) clearInterval(pollInterval);
+            pollInterval = setInterval(() => pollStatus(callId), 3000);
+          }
+
+          // Show transcript
+          const box = document.getElementById('transcript');
+          if (data.transcript && data.transcript.length > 0) {
+            box.innerHTML = data.transcript.map(t => {
+              const cls = t.role === 'debra' ? 'speaker' : 'speaker them';
+              const name = t.role === 'debra' ? 'Debra' : 'Them';
+              return `<div class="transcript-line"><span class="${cls}">${name}:</span> ${t.text}</div>`;
+            }).join('');
+            box.scrollTop = box.scrollHeight;
+          } else {
+            box.innerHTML = '<div style="color: #666; text-align: center; padding: 1rem;">Waiting for transcript... I\'m probably on hold or navigating a phone menu.</div>';
+          }
+        });
+    }
+
     function retryCall() {
       if (!lastCallData) return;
       // Show retry options
@@ -462,7 +509,7 @@
               ? '<span class="outcome-badge failed">Failed</span>'
               : '<span class="outcome-badge pending">In Progress</span>';
 
-            return `<div class="history-item">
+            return `<div class="history-item" onclick="viewCall('${c.callId}')">
               <div class="hi-header">
                 <span class="hi-company">${c.company || c.phoneNumber}</span>
                 <span class="hi-time">${new Date(c.startedAt).toLocaleDateString()}</span>

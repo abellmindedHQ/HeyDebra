@@ -1,5 +1,20 @@
 [
   {
+    "callId": "hp_1774726377458_omg9s6",
+    "conversationId": "conv_9701kmtyyxf6fpjsybfqqyk1re8y",
+    "callSid": "CAbba70eef45d3d28d73465169af31f72b",
+    "company": "Lufthansa Customer Service",
+    "phoneNumber": "+18006453880",
+    "task": "Check status on baggage reimbursement claim. Case number C-130009-K8N5, Property Irregularity Report CPHLH52532. Passenger Alex Abell, flight November 29 2025 Munich to Copenhagen to Chicago to Knoxville, Lufthansa flight LH2440. Bags were delayed 6 days in Copenhagen, delivered December 5. All receipts were submitted March 1 2026 totaling over $550 in replacement clothing plus taxi and Uber costs. Lufthansa acknowledged the case March 18 but said it was still in line for processing. It has now been 4 months with no payment. I need a specific timeline for when reimbursement will be issued. If they cannot provide one, I will be filing a US DOT complaint and pursuing rights under EU Regulation EC 261/2004 and the Montreal Convention. IMPORTANT: When navigating the phone menu, just say the number you want to press (like two or four) rather than saying I will press. When on hold, stay silent and wait patiently. Do not keep asking if anyone is there.",
+    "reference": "Case C-130009-K8N5 | PIR CPHLH52532 | Feedback ID 42383344 | Baggage Receipt 0220596739",
+    "callback": "+18135343383",
+    "status": "completed",
+    "statusMessage": "Call ended (timeout)",
+    "startedAt": "2026-03-28T19:32:59.257Z",
+    "transcript": [],
+    "outcome": null
+  },
+  {
     "callId": "hp_1774725144668_fqkz11",
     "conversationId": "conv_2101kmtxs957exxa6tszjjkwszjb",
     "callSid": "CA30bc076b71da60065e10b09d08b85e3a",
@@ -8,8 +23,8 @@
     "task": "Check status on baggage reimbursement claim. Case number C-130009-K8N5, Property Irregularity Report CPHLH52532. Passenger Alex Abell, flight November 29 2025 Munich to Copenhagen to Chicago to Knoxville, Lufthansa flight LH2440. Bags were delayed 6 days in Copenhagen, delivered December 5. All receipts were submitted March 1 2026 totaling over $550 in replacement clothing plus taxi and Uber costs. Lufthansa acknowledged the case March 18 but said it was still in line for processing. It has now been 4 months with no payment. I need a specific timeline for when reimbursement will be issued. If they cannot provide one, I will be filing a US DOT complaint and pursuing rights under EU Regulation EC 261/2004 and the Montreal Convention.",
     "reference": "Case C-130009-K8N5 | PIR CPHLH52532 | Feedback ID 42383344 | Baggage Receipt 0220596739",
     "callback": "+18135343383",
-    "status": "in-progress",
-    "statusMessage": "Calling...",
+    "status": "completed",
+    "statusMessage": "Held for 30 min. Queue position went from 75 to 61. No human reached (Saturday).",
     "startedAt": "2026-03-28T19:12:26.085Z",
     "transcript": [],
     "outcome": null

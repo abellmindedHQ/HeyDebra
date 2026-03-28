@@ -1,0 +1,36 @@
+{
+  "lastRun": {
+    "instagram": "2026-03-26",
+    "facebook": "2026-03-26",
+    "twitter": null
+  },
+  "lastProcessed": {
+    "instagram": {
+      "exportDate": "2026-03-24",
+      "conversations": 732,
+      "uniquePeople": 732,
+      "following": 1525,
+      "followers": 991,
+      "mutual": 402,
+      "closeContacts": 60,
+      "regularContacts": 81,
+      "googleContactMatches": 78
+    },
+    "facebook": {
+      "exportDate": "2026-03-24",
+      "conversations": 5423,
+      "uniquePeople": 5423,
+      "closeContacts": 240,
+      "regularContacts": 680,
+      "googleContactMatches": 500
+    }
+  },
+  "neo4j": {
+    "nodesWritten": 6155,
+    "edgesWritten": 6061,
+    "linkedToPersonNodes": 98
+  },
+  "obsidian": {
+    "dmNotesWritten": 1012
+  }
+}

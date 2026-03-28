@@ -96,3 +96,19 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### Twilio
+- Account email: alexander.o.abell@gmail.com
+- Recovery code: REDACTED_TWILIO_RECOVERY
+- Password: stored in session (will save to 1Password)
+- Use for: HoldPlease phone agent, outbound calls
+
+### Home Assistant
+- URL: http://homeassistant.local:8123 (local IP: 192.168.4.189 — assign static IP)
+- Username: abellminded
+- API Token: stored in 1Password as "Home Assistant Access Token" (field: credential)
+- Token retrieval: `op item get "Home Assistant Access Token" --fields credential --reveal`
+- Devices: Philips Hue (49 lights), LG OLED 65" + projector (Nebula 4K), Nest speakers/hubs, SwitchBot (blinds/curtains/intercom — NOT YET in HA), Ecobee thermostat (NOT YET), Govee rooftop deck (NOT YET), robo vacuum w/ webcam (NOT YET)
+- Projector: Nebula 4K — bedroom primary, portable for rooftop movie nights
+- Missing/broken: SwitchBot blinds integration, Ecobee, Govee, several unavailable entities
+- Low batteries: bedroom dimmer 20%, living room dimmer knobs 20%, Hue switch 15%

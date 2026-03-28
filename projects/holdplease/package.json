@@ -1,0 +1,19 @@
+{
+  "name": "holdplease",
+  "version": "1.0.0",
+  "description": "AI phone agent that calls, navigates IVR menus, waits on hold, and alerts you when a human picks up",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test-call": "node test/test-call.js"
+  },
+  "keywords": ["twilio", "ivr", "hold", "phone", "ai", "whisper"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.77.0",
+    "twilio": "^5.4.3",
+    "ws": "^8.18.0"
+  }
+}

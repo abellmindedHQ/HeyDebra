@@ -1,0 +1,28 @@
+{
+  "lufthansa": {
+    "number": "+18005452200",
+    "steps": [
+      { "action": "wait", "seconds": 5 },
+      { "action": "dtmf", "digit": "1", "label": "English" },
+      { "action": "wait", "seconds": 3 },
+      { "action": "speech", "text": "existing claim", "label": "Existing claim" },
+      { "action": "wait", "seconds": 3 },
+      { "action": "speech", "text": "representative", "label": "Get human" }
+    ],
+    "context": "Calling about lost baggage claim C-130009-K8N5, FB ID 42383344"
+  },
+  "generic-human": {
+    "number": null,
+    "steps": [
+      { "action": "wait", "seconds": 5 },
+      { "action": "dtmf", "digit": "0", "label": "Try pressing 0" },
+      { "action": "wait", "seconds": 4 },
+      { "action": "speech", "text": "representative", "label": "Say representative" },
+      { "action": "wait", "seconds": 4 },
+      { "action": "speech", "text": "agent", "label": "Say agent" },
+      { "action": "wait", "seconds": 4 },
+      { "action": "dtmf", "digit": "0", "label": "Press 0 again" }
+    ],
+    "context": "Generic strategy to reach a human operator"
+  }
+}

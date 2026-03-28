@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-dark-900: #0a0e17;
+  --color-dark-800: #0f1520;
+  --color-dark-700: #151d2e;
+  --color-dark-600: #1c2640;
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reset handled by Tailwind v4 base layer */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0e17;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0; }
+  100% { transform: scale(0.8); opacity: 0; }
+}
+
+@keyframes wave-cancel {
+  0% { opacity: 1; transform: scaleY(1); }
+  50% { opacity: 0.3; transform: scaleY(0.3); }
+  100% { opacity: 1; transform: scaleY(1); }
+}
+
+.wave-bar {
+  animation: wave-cancel 1.5s ease-in-out infinite;
+}
+
+.wave-bar:nth-child(2) { animation-delay: 0.1s; }
+.wave-bar:nth-child(3) { animation-delay: 0.2s; }
+.wave-bar:nth-child(4) { animation-delay: 0.3s; }
+.wave-bar:nth-child(5) { animation-delay: 0.4s; }
+.wave-bar:nth-child(6) { animation-delay: 0.5s; }
+.wave-bar:nth-child(7) { animation-delay: 0.6s; }
+
+.wave-bar-cancelled {
+  animation: wave-cancel 1.5s ease-in-out infinite;
+  opacity: 0.15 !important;
+  transform: scaleY(0.1) !important;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2dd4bf, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-teal {
+  box-shadow: 0 0 40px rgba(20, 184, 166, 0.15), 0 0 80px rgba(20, 184, 166, 0.05);
+}
+
+.card-glass {
+  background: rgba(15, 21, 32, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

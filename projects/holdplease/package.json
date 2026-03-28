@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "start:realtime": "node src/realtime.js",
+    "start:convo": "node src/convo.js",
     "test-call": "node test/test-call.js"
   },
   "keywords": ["twilio", "ivr", "hold", "phone", "ai", "whisper"],

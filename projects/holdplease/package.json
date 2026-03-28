@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "start:realtime": "node src/realtime.js",
+    "start:holdplease": "node src/holdplease-api.js",
     "start:convo": "node src/convo.js",
     "test-call": "node test/test-call.js"
   },

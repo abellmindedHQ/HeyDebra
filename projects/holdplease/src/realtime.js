@@ -283,17 +283,14 @@ wss.on('connection', (twilioWs, req) => {
         audio: {
           input: {
             format: { type: 'audio/pcmu' },
-            turn_detection: { type: 'server_vad' },
-            transcription: { model: 'whisper-1' }
+            turn_detection: { type: 'server_vad' }
           },
           output: {
             format: { type: 'audio/pcmu' },
             voice: 'shimmer'
           }
         },
-        instructions: systemPrompt,
-        temperature: 0.8,
-        max_response_output_tokens: 512
+        instructions: systemPrompt
       }
     };
 

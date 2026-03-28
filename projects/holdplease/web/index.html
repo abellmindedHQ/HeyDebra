@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HoldPlease</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #4dd9c0, #2a9d8f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      color: #888;
+      margin-top: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .container {
+      width: 100%;
+      max-width: 520px;
+      padding: 1.5rem;
+    }
+    .card {
+      background: #161616;
+      border: 1px solid #252525;
+      border-radius: 16px;
+      padding: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #4dd9c0;
+      margin-bottom: 0.5rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: #0f0f0f;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      color: #e0e0e0;
+      font-size: 0.95rem;
+      font-family: inherit;
+      margin-bottom: 1.2rem;
+      transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #4dd9c0;
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    .field-hint {
+      font-size: 0.78rem;
+      color: #666;
+      margin-top: -0.9rem;
+      margin-bottom: 1.2rem;
+    }
+    button.primary {
+      width: 100%;
+      padding: 0.9rem;
+      background: linear-gradient(135deg, #4dd9c0, #2a9d8f);
+      color: #000;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+      letter-spacing: 0.3px;
+    }
+    button.primary:hover { opacity: 0.9; }
+    button.primary:active { transform: scale(0.98); }
+    button.primary:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .status-card {
+      display: none;
+      background: #161616;
+      border: 1px solid #252525;
+      border-radius: 16px;
+      padding: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .status-card.active { display: block; }
+    .status-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #4dd9c0;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    .status-dot.completed { background: #4dd9c0; animation: none; }
+    .status-dot.error { background: #e74c3c; animation: none; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .status-text {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .transcript-box {
+      background: #0f0f0f;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 1rem;
+      max-height: 300px;
+      overflow-y: auto;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .transcript-box.active { display: block; }
+    .transcript-line {
+      margin-bottom: 0.5rem;
+    }
+    .transcript-line .speaker {
+      font-weight: 700;
+      color: #4dd9c0;
+    }
+    .transcript-line .speaker.them {
+      color: #e0a030;
+    }
+    .history-section {
+      margin-top: 1rem;
+    }
+    .history-item {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 0.8rem;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .history-item:hover { border-color: #4dd9c0; }
+    .history-item .hi-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+    }
+    .history-item .hi-company {
+      font-weight: 600;
+      color: #fff;
+    }
+    .history-item .hi-time {
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .history-item .hi-outcome {
+      font-size: 0.85rem;
+      color: #999;
+    }
+    .outcome-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .outcome-badge.success { background: #1a3a2f; color: #4dd9c0; }
+    .outcome-badge.pending { background: #3a3520; color: #e0a030; }
+    .outcome-badge.failed { background: #3a1a1a; color: #e74c3c; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #444;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HoldPlease</h1>
+    <p>Debra makes the call. You get your life back.</p>
+  </header>
+
+  <div class="container">
+    <!-- Call Form -->
+    <div class="card" id="callForm">
+      <label>Who do I call?</label>
+      <input type="text" id="company" placeholder="e.g., Lufthansa Baggage Claims">
+
+      <label>Phone Number</label>
+      <input type="tel" id="phoneNumber" placeholder="+1-800-645-3880">
+
+      <label>What do you need?</label>
+      <textarea id="task" placeholder="e.g., Check status on lost baggage claim CPHLH52532. Passenger Alex Abell, flight Nov 29 MUC→CPH→TYS. Get estimated reimbursement timeline."></textarea>
+
+      <label>Reference Numbers / Account Info</label>
+      <input type="text" id="reference" placeholder="e.g., Claim #CPHLH52532, Feedback ID 42383344">
+      <p class="field-hint">Any case numbers, account numbers, confirmation codes</p>
+
+      <label>Your Callback Number</label>
+      <input type="tel" id="callback" placeholder="+1 (813) 534-3383" value="+18135343383">
+      <p class="field-hint">I'll call you if I need help or authorization</p>
+
+      <button class="primary" id="startCall" onclick="startCall()">
+        📞 Let Debra Handle It
+      </button>
+    </div>
+
+    <!-- Status Card -->
+    <div class="status-card" id="statusCard">
+      <div class="status-header">
+        <div class="status-dot" id="statusDot"></div>
+        <span class="status-text" id="statusText">Initiating call...</span>
+      </div>
+      <div class="transcript-box" id="transcript"></div>
+      <div style="margin-top: 1rem;">
+        <button class="primary" onclick="newCall()" style="background: #333; color: #e0e0e0;">
+          New Call
+        </button>
+      </div>
+    </div>
+
+    <!-- Call History -->
+    <div class="history-section" id="historySection">
+      <label style="margin-bottom: 1rem;">Recent Calls</label>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
+  <footer>
+    HoldPlease by Abellminded &middot; Powered by Debra
+  </footer>
+
+  <script>
+    const API_BASE = window.location.origin;
+    let pollInterval = null;
+
+    // Load history on start
+    loadHistory();
+
+    async function startCall() {
+      const company = document.getElementById('company').value.trim();
+      const phoneNumber = document.getElementById('phoneNumber').value.trim();
+      const task = document.getElementById('task').value.trim();
+      const reference = document.getElementById('reference').value.trim();
+      const callback = document.getElementById('callback').value.trim();
+
+      if (!phoneNumber || !task) {
+        alert('Need at least a phone number and what you need done.');
+        return;
+      }
+
+      const btn = document.getElementById('startCall');
+      btn.disabled = true;
+      btn.textContent = 'Starting...';
+
+      try {
+        const res = await fetch(`${API_BASE}/api/holdplease`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ company, phoneNumber, task, reference, callback })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          document.getElementById('callForm').style.display = 'none';
+          const statusCard = document.getElementById('statusCard');
+          statusCard.classList.add('active');
+          document.getElementById('statusText').textContent = `Calling ${company || phoneNumber}...`;
+          document.getElementById('transcript').classList.add('active');
+
+          // Poll for updates
+          pollInterval = setInterval(() => pollStatus(data.callId), 3000);
+        } else {
+          alert('Failed to start call: ' + (data.error || 'Unknown error'));
+          btn.disabled = false;
+          btn.textContent = '📞 Let Debra Handle It';
+        }
+      } catch (err) {
+        alert('Error: ' + err.message);
+        btn.disabled = false;
+        btn.textContent = '📞 Let Debra Handle It';
+      }
+    }
+
+    async function pollStatus(callId) {
+      try {
+        const res = await fetch(`${API_BASE}/api/holdplease/${callId}`);
+        const data = await res.json();
+
+        if (data.status === 'completed' || data.status === 'failed') {
+          clearInterval(pollInterval);
+          const dot = document.getElementById('statusDot');
+          dot.classList.add(data.status === 'completed' ? 'completed' : 'error');
+          document.getElementById('statusText').textContent =
+            data.status === 'completed' ? 'Call completed' : 'Call failed';
+        } else {
+          document.getElementById('statusText').textContent =
+            data.statusMessage || `In progress...`;
+        }
+
+        // Update transcript
+        if (data.transcript && data.transcript.length > 0) {
+          const box = document.getElementById('transcript');
+          box.innerHTML = data.transcript.map(t => {
+            const cls = t.role === 'debra' ? 'speaker' : 'speaker them';
+            const name = t.role === 'debra' ? 'Debra' : 'Them';
+            return `<div class="transcript-line"><span class="${cls}">${name}:</span> ${t.text}</div>`;
+          }).join('');
+          box.scrollTop = box.scrollHeight;
+        }
+      } catch (err) {
+        console.error('Poll error:', err);
+      }
+    }
+
+    function newCall() {
+      clearInterval(pollInterval);
+      document.getElementById('callForm').style.display = 'block';
+      document.getElementById('statusCard').classList.remove('active');
+      document.getElementById('startCall').disabled = false;
+      document.getElementById('startCall').textContent = '📞 Let Debra Handle It';
+      document.getElementById('company').value = '';
+      document.getElementById('phoneNumber').value = '';
+      document.getElementById('task').value = '';
+      document.getElementById('reference').value = '';
+      loadHistory();
+    }
+
+    async function loadHistory() {
+      try {
+        const res = await fetch(`${API_BASE}/api/holdplease/history`);
+        const data = await res.json();
+        const list = document.getElementById('historyList');
+
+        if (data.calls && data.calls.length > 0) {
+          list.innerHTML = data.calls.map(c => {
+            const badge = c.status === 'completed'
+              ? '<span class="outcome-badge success">Resolved</span>'
+              : c.status === 'failed'
+              ? '<span class="outcome-badge failed">Failed</span>'
+              : '<span class="outcome-badge pending">In Progress</span>';
+
+            return `<div class="history-item">
+              <div class="hi-header">
+                <span class="hi-company">${c.company || c.phoneNumber}</span>
+                <span class="hi-time">${new Date(c.startedAt).toLocaleDateString()}</span>
+              </div>
+              <div class="hi-outcome">${c.task?.substring(0, 80) || 'No details'}${c.task?.length > 80 ? '...' : ''}</div>
+              <div style="margin-top: 0.5rem">${badge}</div>
+            </div>`;
+          }).join('');
+        } else {
+          list.innerHTML = '<p style="color: #555; text-align: center; padding: 1rem;">No calls yet. Let Debra handle your first one.</p>';
+        }
+      } catch (err) {
+        console.log('No history available');
+      }
+    }
+  </script>
+</body>
+</html>

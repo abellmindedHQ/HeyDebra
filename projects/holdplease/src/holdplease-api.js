@@ -113,7 +113,63 @@ app.post('/api/lookup', async (req, res) => {
 
     log(`[HP] Looking up phone number for: ${company}`);
 
-    // Use Google Places API via goplaces CLI
+    // Use OpenAI to extract phone numbers from a web search query
+    const searchQuery = `${company} customer service phone number USA`;
+
+    // Hit OpenAI with a smart extraction prompt
+    const extractionResult = await new Promise((resolve, reject) => {
+      const data = JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages: [{
+          role: 'system',
+          content: 'You find customer service phone numbers. Return ONLY a JSON array of objects with "name", "phone", and "department" fields. No markdown, no explanation. If you know the number from training data, return it. Format phone as +1XXXXXXXXXX. Max 3 results, most relevant first.'
+        }, {
+          role: 'user',
+          content: `Find the customer service phone number(s) for: ${company}`
+        }],
+        max_tokens: 300,
+        temperature: 0
+      });
+
+      const options = {
+        hostname: 'api.openai.com',
+        path: '/v1/chat/completions',
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+          'Content-Type': 'application/json'
+        }
+      };
+
+      const req = https.request(options, (res) => {
+        let body = '';
+        res.on('data', d => body += d);
+        res.on('end', () => {
+          try {
+            const json = JSON.parse(body);
+            const content = json.choices[0].message.content.trim();
+            // Parse the JSON array from the response
+            const cleaned = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+            resolve(JSON.parse(cleaned));
+          } catch (e) { resolve(null); }
+        });
+      });
+      req.on('error', reject);
+      req.write(data);
+      req.end();
+    });
+
+    if (extractionResult && Array.isArray(extractionResult) && extractionResult.length > 0) {
+      const results = extractionResult.map(r => ({
+        name: r.name || company,
+        phone: r.phone,
+        address: r.department || ''
+      }));
+      log(`[HP] Found ${results.length} numbers for ${company}`);
+      return res.json({ success: true, results });
+    }
+
+    // Fallback: goplaces for local businesses
     const { execSync } = require('child_process');
     try {
       const result = execSync(
@@ -124,42 +180,16 @@ app.post('/api/lookup', async (req, res) => {
       if (result) {
         const places = JSON.parse(result);
         if (places && places.length > 0) {
-          const matches = places
-            .filter(p => p.phone)
-            .slice(0, 3)
-            .map(p => ({
-              name: p.name,
-              phone: p.phone,
-              address: p.address || ''
-            }));
-
+          const matches = places.filter(p => p.phone).slice(0, 3).map(p => ({
+            name: p.name, phone: p.phone, address: p.address || ''
+          }));
           if (matches.length > 0) {
             return res.json({ success: true, results: matches });
           }
         }
       }
     } catch (e) {
-      log(`[HP] goplaces error: ${e.message}`);
-    }
-
-    // Fallback: web search
-    try {
-      const searchQuery = `${company} customer service phone number`;
-      const result = execSync(
-        `curl -s "https://www.google.com/search?q=${encodeURIComponent(searchQuery)}" -H "User-Agent: Mozilla/5.0" 2>/dev/null | grep -oP '\\+?1?[\\s.-]?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}' | head -3`,
-        { encoding: 'utf-8', timeout: 10000 }
-      ).trim();
-
-      if (result) {
-        const phones = result.split('\n').filter(Boolean).map(p => ({
-          name: company,
-          phone: p.trim(),
-          address: ''
-        }));
-        return res.json({ success: true, results: phones, source: 'web' });
-      }
-    } catch (e) {
-      log(`[HP] Web search fallback error: ${e.message}`);
+      log(`[HP] goplaces fallback error: ${e.message}`);
     }
 
     res.json({ success: false, error: 'Could not find a phone number. Please enter it manually.' });

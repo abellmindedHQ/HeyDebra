@@ -254,8 +254,11 @@
         <span class="status-text" id="statusText">Initiating call...</span>
       </div>
       <div class="transcript-box" id="transcript"></div>
-      <div style="margin-top: 1rem;">
-        <button class="primary" onclick="newCall()" style="background: #333; color: #e0e0e0;">
+      <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+        <button class="primary" onclick="retryCall()" id="retryBtn" style="background: #3a3520; color: #e0a030; flex: 1; display: none;">
+          🔄 Try Again
+        </button>
+        <button class="primary" onclick="newCall()" style="background: #333; color: #e0e0e0; flex: 1;">
           New Call
         </button>
       </div>
@@ -355,11 +358,13 @@
         const data = await res.json();
 
         if (data.success) {
+          lastCallData = { company, phoneNumber, task, reference, callback };
           document.getElementById('callForm').style.display = 'none';
           const statusCard = document.getElementById('statusCard');
           statusCard.classList.add('active');
           document.getElementById('statusText').textContent = `Calling ${company || phoneNumber}...`;
           document.getElementById('transcript').classList.add('active');
+          document.getElementById('retryBtn').style.display = 'none';
 
           // Poll for updates
           pollInterval = setInterval(() => pollStatus(data.callId), 3000);
@@ -386,6 +391,7 @@
           dot.classList.add(data.status === 'completed' ? 'completed' : 'error');
           document.getElementById('statusText').textContent =
             data.status === 'completed' ? 'Call completed' : 'Call failed';
+          document.getElementById('retryBtn').style.display = 'block';
         } else {
           document.getElementById('statusText').textContent =
             data.statusMessage || `In progress...`;
@@ -404,6 +410,29 @@
       } catch (err) {
         console.error('Poll error:', err);
       }
+    }
+
+    let lastCallData = null;
+
+    function retryCall() {
+      if (!lastCallData) return;
+      // Show retry options
+      const note = prompt("What should Debra do differently? (e.g., 'Use the other number +18006453880' or 'Press 2 when asked about age')");
+      if (note === null) return;
+      lastCallData.task = lastCallData.task + `\n\nIMPORTANT RETRY NOTE: ${note}`;
+      document.getElementById('statusText').textContent = 'Retrying...';
+      document.getElementById('statusDot').className = 'status-dot';
+      document.getElementById('transcript').innerHTML = '';
+
+      fetch(`${API_BASE}/api/holdplease`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(lastCallData)
+      }).then(r => r.json()).then(data => {
+        if (data.success) {
+          pollInterval = setInterval(() => pollStatus(data.callId), 3000);
+        }
+      });
     }
 
     function newCall() {

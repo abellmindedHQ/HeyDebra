@@ -17,11 +17,13 @@ Active and someday/maybe projects. GTD style.
 - Weaver v2 built and run (1,255 wikilinks, 22 concept cards)
 - **Next**: Process LinkedIn full export, iMazing text capture, set up Monarch/YNAB APIs
 
-### LinkedIn Cleanup
-- Message analysis complete (12,357 convos analyzed, 9,685 to archive)
-- linkedin-cleanup skill built with safeguards
-- Cron scheduled: 10am daily, 50 archives per run
-- **Next**: Monitor cron results, verify it's working
+### LinkedIn Inbox Cleanup (Manual)
+- 52 spam/noise threads archived via browser automation (Mar 27-28 late night session)
+- 18 real conversations kept (see memory/2026-03-28.md for full list)
+- Cleaned through Jul 2025. Older messages (pre-Jul 2025) still need review.
+- Using openclaw managed browser profile, target ID: 9F3AE192EC7919605F65D11818930DF3
+- Pending replies: Angelo Nappi (Mar 23), Tom Harper (Mar 10), William Schilling (Feb 5), Cledon Pancham (Nov '25), Matthew Bruce (Oct '25), Mitch Lee (Dec '25), Michael Dimmitt (Jan '26)
+- **Next**: Resume cleanup from Jun 2025 and older in next session. Draft replies to key contacts.
 
 ### Cognitive Memory Architecture
 - active-context.md created (hippocampus pattern)
@@ -58,6 +60,25 @@ Active and someday/maybe projects. GTD style.
 - Google Messages skill reviewed and approved (safe to install)
 - WhatsApp also an option
 - **Next**: Set up Google Messages (need Alex's Android phone for QR pairing) or WhatsApp
+
+### Consulting Business Launch (abellminded.com)
+- Concept doc: /Users/debra/.openclaw/workspace/projects/abellminded/consulting-concept.md
+- Positioning: "You already have the superpower. I find it. Technology amplifies it."
+- 3-tier offer: Superpower Session ($500) → Amplify Retainer ($3k/mo) → Embedded Transformation ($8-15k/mo)
+- 90-day plan: 5 sessions at $250 for testimonials first
+- abellminded.com redesigned with D3 brain map, deployed to Vercel ✅
+- HeyDebra OG image + twitter card generated + deployed ✅
+- **BLOCKER**: ORNL IP/COI resolution required before taking paying clients
+  - Must read ORNL employment agreement re: IP assignment
+  - Must consult lawyer about IP carve-out
+  - Innovation Crossroads at ORNL may be path to fund startup
+- **Next**: Build /consulting page, resolve ORNL IP question
+
+### abellminded.com Site Architecture
+- Brain map hero (D3.js force-directed, 7 nodes) live on Vercel ✅
+- Planned pages: /products, /consulting, /work, /writing, /about
+- Local: /Users/debra/.openclaw/workspace/projects/abellminded/
+- **Next**: Build /consulting page
 
 ## 📅 Planned (committed but not started)
 

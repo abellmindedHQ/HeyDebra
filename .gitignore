@@ -9,3 +9,14 @@ media/debra-cantaffordme.mov
 **/*.key
 **/*.pem
 **/secrets*
+
+# Secrets
+.env
+*.env
+projects/holdplease/.env
+projects/*/.env
+
+# Sensitive data
+*.key
+*.pem
+*.secret

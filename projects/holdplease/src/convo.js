@@ -16,7 +16,7 @@ app.use('/audio', express.static(path.join(__dirname, '..', 'public')));
 const VoiceResponse = twilio.twiml.VoiceResponse;
 
 const OPENAI_KEY = process.env.OPENAI_API_KEY;
-const ELEVEN_KEY = process.env.ELEVEN_LABS_API_KEY || 'REDACTED_ELEVENLABS_KEY';
+const ELEVEN_KEY = process.env.ELEVEN_LABS_API_KEY;
 const ELEVEN_VOICE = 'w6INrsHCejnExFzTH8Nm';
 const BASE_URL = process.env.BASE_URL || 'https://cuddly-paths-learn.loca.lt';
 

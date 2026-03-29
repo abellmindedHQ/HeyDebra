@@ -1,22 +1,42 @@
-projects/mirror-pitch/
-projects/second-brain/
-projects/website/
+# === Secrets & Credentials ===
+.env
+*.env
+.env.*
+**/.env
+**/*.env
+*.key
+*.pem
+*.secret
+**/secrets*
+
+# === OS / Editor ===
+.DS_Store
+**/.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# === Dependencies ===
+**/node_modules/
+**/package-lock.json
+
+# === Media (large files) ===
 media/*.mp4
 media/*.mov
 media/in-the-stream-video.mov
 media/debra-cantaffordme.mov
-.DS_Store
-**/*.key
-**/*.pem
-**/secrets*
 
-# Secrets
-.env
-*.env
-projects/holdplease/.env
-projects/*/.env
+# === Subprojects (tracked separately or private) ===
+projects/mirror-pitch/
+projects/second-brain/
+projects/website/
 
-# Sensitive data
-*.key
-*.pem
-*.secret
+# === Build artifacts ===
+**/dist/
+**/build/
+**/*.log
+
+# === Data files (may contain PII) ===
+projects/holdplease/data/

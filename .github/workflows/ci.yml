@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  # Scan for accidentally committed secrets
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan for secrets
+        run: |
+          echo "Scanning for common secret patterns..."
+          FOUND=0
+
+          # Twilio SIDs
+          if git log --all -p | grep -qE 'AC[a-f0-9]{32}'; then
+            echo "❌ Found Twilio SID pattern"
+            FOUND=1
+          fi
+
+          # API keys
+          if git log --all -p | grep -qE 'sk-proj-[a-zA-Z0-9_-]{20,}'; then
+            echo "❌ Found OpenAI API key pattern"
+            FOUND=1
+          fi
+
+          if git log --all -p | grep -qE 'sk_[a-f0-9]{40,}'; then
+            echo "❌ Found ElevenLabs API key pattern"
+            FOUND=1
+          fi
+
+          if git log --all -p | grep -qE 'lin_api_[a-zA-Z0-9]{30,}'; then
+            echo "❌ Found Linear API key pattern"
+            FOUND=1
+          fi
+
+          if [ $FOUND -eq 0 ]; then
+            echo "✅ No secrets found in git history"
+          else
+            echo "⚠️ Secrets detected! Run git-filter-repo to clean."
+            exit 1
+          fi
+
+  # Validate key files exist and aren't empty
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check workspace structure
+        run: |
+          echo "Checking workspace structure..."
+          for f in AGENTS.md SOUL.md USER.md IDENTITY.md MEMORY.md TOOLS.md; do
+            if [ -f "$f" ]; then
+              echo "✅ $f exists ($(wc -l < $f) lines)"
+            else
+              echo "⚠️ $f missing"
+            fi
+          done
+
+      - name: Check no .env files committed
+        run: |
+          if find . -name ".env" -not -path "./.git/*" | grep -q .; then
+            echo "❌ .env file found in repo!"
+            find . -name ".env" -not -path "./.git/*"
+            exit 1
+          fi
+          echo "✅ No .env files in repo"
+
+      - name: Check skills have SKILL.md
+        run: |
+          for dir in skills/*/; do
+            if [ -f "$dir/SKILL.md" ]; then
+              echo "✅ $dir has SKILL.md"
+            else
+              echo "⚠️ $dir missing SKILL.md"
+            fi
+          done

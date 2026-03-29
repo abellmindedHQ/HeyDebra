@@ -1,4 +1,4 @@
-# Active Context — Last Updated 2026-03-29 02:00am
+# Active Context — Last Updated 2026-03-29 3:30am (pre-reset flush)
 
 ## Overnight Vault Optimization (Mar 28-29)
 - Weaver v3: full scan 64s (was timeout), incremental 12s — combined regex + mtime mode
@@ -40,21 +40,27 @@
 - Brandon Bruce Muse for All luncheon Apr 7 — RSVP pending
 - ORNL Isaac compute roadmap — due Tue Mar 31
 
-## Tomorrow's Agenda (Sunday Mar 29)
+## Sunday's Agenda (Mar 29)
 1. **Things 3 integration** — get a real task manager wired up
 2. **Fix combined calendars** — ORNL calendar read-only via iPhone share
 3. **IP/CUI/COI thinking** — ORNL compliance, consulting blocker
 4. **ServiceNow demo cleanup** — prep for Regina and Andrew at work
-5. **Neo4j + Obsidian cleanup pass** — 7,677 Person nodes are mostly junk
+5. ✅ **Neo4j + Obsidian cleanup** — DONE overnight (7,677→3,067 nodes, Weaver 12s incremental)
 6. **abellminded.com product architecture** — flesh out the full vision
 7. **Backlog triage** — 70+ items in GTD inbox need sorting
+8. **Hannah music studio** — review landing page, maybe run v0 for full platform
+9. **Anne's birthday** — Hannah's mom, March 29 (TODAY). Did Alex get the book?
+10. **Review dream cycle proposals** — 7 changes staged (GitHub opt-out by Apr 24 is urgent)
+11. **Review vault optimization report** — memory/vault-optimization-report-2026-03-29.md
 
 ## Active Projects
 - **HoldPlease**: Phase 3 hybrid built. Web UI at port 3981. ElevenLabs agent live. Monday 7am Lufthansa retry.
-- **AVERY**: SHIPPED! Live at abellminded.com/heyavery. Voice + expressions + SOUL.md done.
+- **AVERY**: SHIPPED! Live at abellminded.com/heyavery. Voice + expressions + SOUL.md done. Agent: agent_4801kmvj9ffmfwf9vymzafkj4nm2
+- **Hannah Music Studio**: Landing page live at abellminded.com/hannah. v0 prompt ready for full platform.
 - **Consulting launch**: BLOCKED on ORNL IP/COI.
-- **abellminded.com**: Brain map + /debra + /holdplease + /heyavery live. Need /consulting page.
-- **Dream Cycle**: First run tonight 11:30pm.
+- **abellminded.com**: /debra + /holdplease + /heyavery + /hannah + /mirror all live. Need /consulting.
+- **Dream Cycle**: First run completed! Proposals in memory/dream-cycle/2026-03-28-proposals.md
+- **Vault Optimization**: Weaver v3 + Neo4j cleanup + indexer all DONE. Weekly maintenance scripted.
 
 ## Critical Context
 - Hannah is pregnant (secret)

@@ -100,6 +100,38 @@
 - Voice memo format fix (asVoice not working in iMessage — on backlog)
 - iMazing text capture (Alex wants full private text history as SecondBrain stream)
 
+### ElevenLabs Conversational AI (Learned 2026-03-28)
+- ElevenLabs Conversational AI 2.0 is the best path for custom voice phone calls
+- Native Twilio integration: import number + SID + token, assign agent, done
+- Agent can't send DTMF tones — IVR navigation via speech only
+- Transcript only available after call ends, not during
+- Cost: ~$0.12/min for conversation. Hold time costs the same as conversation (bad for long holds)
+- Hybrid approach: cheap Twilio hold detection (~$0.02/min) → switch to ElevenLabs on human detect
+- Debra agent: agent_5201kmtfqfv9etgtafvgw16pjpza, phone: phnum_6601kmtfr2scffj9rv4fb7fcfrtj
+- Avery agent: agent_4801kmvj9ffmfwf9vymzafkj4nm2, voice: l9irhEnWKSUzVNW28WNn
+
+### Voice Messages in iMessage (Learned 2026-03-28)
+- Native iMessage voice bubbles from OpenClaw: BROKEN (GitHub #33377)
+- 4-5 fixes needed in OC delivery pipeline (asVoice flag dropped, BB not in VOICE_BUBBLE_CHANNELS)
+- Workaround: send mp3 as audio attachment (plays fine, just not voice bubble UI)
+- afconvert on macOS can convert to CAF/Opus but BB still doesn't render as voice bubble
+- Wait for upstream OC fix
+
+### Git Security (Learned 2026-03-28)
+- NEVER commit API keys, tokens, or passwords to git
+- Use .env files (gitignored) + 1Password for all secrets
+- git-filter-repo can scrub secrets from entire history (brew install git-filter-repo)
+- GitHub push protection will block pushes containing secrets
+- Always run secret scan before pushing
+
+### Avie/AVERY (Learned 2026-03-28)
+- Avie is 9 but designing for a 15-year-old character (aspirational)
+- She knows EXACTLY what she wants. Don't guess, ask her
+- "Grownups cheering up kids" is the wrong energy. Cool/unbothered is right
+- Moody Unicorn Twin is her voice reference (Roblox streamer)
+- Pronunciation: Avie = AY-vee (like letters A.V.), NOT AH-vee
+- She's the creative director. Treat her that way.
+
 ### System Text Leak Prevention (Learned 2026-03-25)
 - Internal system notes CAN leak into outbound messages (happened with Jim Biggs)
 - NEVER include meta-commentary like "Note: I did not schedule..." in chat messages

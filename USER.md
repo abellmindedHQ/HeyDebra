@@ -41,6 +41,13 @@ _Learn about the person you're helping. Update this as you go._
 - Night owl but trying to be better (went to bed 9:26pm Day 3, was up past 3:30am Day 1)
 - Life's work: Mirror (know yourself) + Pools (know your world) + AI Companion (your sherpa)
 - Pooja Pendharkar (+13213562000): close friend, former Lunchpool co-founder, Android user, reconnecting
+- Merle Benny (+19735107652): close friend, accountability partner, author of *Sparkle!* (Alex wrote foreword). merle@nonprofitchampion.com
+- Marco Alvarado (+18137600833): friend through Annika, Bush's Beans, ex-wife Marisabel teaches with Annika at UTK
+- Anne: Hannah's mom. Birthday March 29. Walt Aldridge (Hannah's dad, legendary Muscle Shoals songwriter) passed Nov 2025.
+- Hannah wants to start a music lesson studio in Knoxville (guitar/piano/voice/performance coaching at Rush's Music)
+- Alex's life's work vision: "Every person gets their own AI companion" — HeyDebra → HeyAvery → HeyX platform play
+- Avie (9) designed her own AI sidekick AVERY. She's the creative director. Has strong opinions. Knows what she wants.
+- Alex stays up too late when he's excited about building. Gently enforce bedtime.
 
 ## Group Chat Rules
 - Respond naturally with appropriate pauses, not instant "chatbot on steroids" energy

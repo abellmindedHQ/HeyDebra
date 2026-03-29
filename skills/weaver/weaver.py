@@ -30,7 +30,13 @@ AMBIGUOUS_NAMES = {
     "people", "documents", "reflections", "concepts", "mocs",
     "a", "an", "the", "of", "in", "on", "at", "to", "for", "is", "it",
     "notes", "random notes", "brain dump",
+    # Single/double letter names and common short words (learned 2026-03-28)
+    "k", "e", "os", "jas", "lau", "tee", "joe", "trim",
+    "lisia", "dystini", "halez",
 }
+
+# Hard minimum: never wikilink names shorter than this, period
+ABSOLUTE_MIN_NAME_LENGTH = 3
 
 # Concept candidates to actively look for
 CONCEPT_CANDIDATES = [
@@ -85,10 +91,25 @@ def build_entity_lookup(all_files):
     for fp in all_files:
         stem = os.path.splitext(os.path.basename(fp))[0]
         lower = stem.lower()
+        # Skip names below absolute minimum length
+        if len(stem) < ABSOLUTE_MIN_NAME_LENGTH:
+            stats["skipped_short"] += 1
+            log_qa(f"SKIP too short: '{stem}'")
+            continue
         # Skip ambiguous names
         if lower in AMBIGUOUS_NAMES:
             stats["skipped_ambiguous"] += 1
             log_qa(f"SKIP ambiguous: '{stem}'")
+            continue
+        # Skip email addresses
+        if "@" in stem or stem.startswith("_plus_"):
+            stats["skipped_ambiguous"] += 1
+            log_qa(f"SKIP email/phone: '{stem}'")
+            continue
+        # Skip date-pattern file slugs (YYYY-MM-DD-*)
+        if re.match(r'^\d{4}-\d{2}-\d{2}', stem):
+            stats["skipped_ambiguous"] += 1
+            log_qa(f"SKIP date-slug: '{stem}'")
             continue
         lookup[lower] = stem
     return lookup

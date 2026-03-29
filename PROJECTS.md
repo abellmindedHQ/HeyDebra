@@ -6,7 +6,7 @@ Active and someday/maybe projects. GTD style.
 
 ### Second Brain Pipeline v3
 - 8-stream capture system architecture designed
-- Neo4j graph database running with schema
+- Neo4j graph database running with schema — **3,067 clean Person nodes** (down from 7,677)
 - Obsidian vault at /Users/debra/SecondBrain/
 - ChatGPT export processed (139 convos, Night Swimming Day 1)
 - Claude personal export processed (135 convos, Day 3)
@@ -14,7 +14,9 @@ Active and someday/maybe projects. GTD style.
 - Instagram processed (711 DMs, 1525 following, Day 3)
 - Facebook processed (6007 convos, 161K messages, 20 years, Day 3)
 - 334 artifacts extracted from Claude exports
-- Weaver v2 built and run (1,255 wikilinks, 22 concept cards)
+- Weaver v3 built (combined regex + incremental, 12s vs timeout)
+- vault_indexer.py built (0.6s searchable index)
+- Weekly maintenance scripted: neo4j_weekly_cleanup.py
 - **Next**: Process LinkedIn full export, iMazing text capture, set up Monarch/YNAB APIs
 
 ### LinkedIn Inbox Cleanup (Manual)
@@ -76,9 +78,50 @@ Active and someday/maybe projects. GTD style.
 
 ### abellminded.com Site Architecture
 - Brain map hero (D3.js force-directed, 7 nodes) live on Vercel ✅
-- Planned pages: /products, /consulting, /work, /writing, /about
+- Live pages: /debra, /holdplease, /heyavery, /hannah, /mirror
+- Planned: /products, /consulting, /work, /writing, /about
 - Local: /Users/debra/.openclaw/workspace/projects/abellminded/
 - **Next**: Build /consulting page
+
+### HoldPlease (AI Phone Agent)
+- Phase 1: Twilio outbound calling ✅
+- Phase 2: OpenAI Realtime (built, had audio issues, not primary path)
+- Phase 3: ElevenLabs Conversational AI 2.0 hybrid ✅ SHIPPED
+- ElevenLabs agent: agent_5201kmtfqfv9etgtafvgw16pjpza (Debra's voice)
+- Twilio phone: +18653915873 (phnum_6601kmtfr2scffj9rv4fb7fcfrtj)
+- Web UI: port 3981 (dark theme, live transcripts, call history)
+- Hybrid mode: Twilio hold-detection (~$0.02/min) → ElevenLabs on human detect (~$0.13/min)
+- Lufthansa test calls: 3x (queue 75→61, no human Saturdays)
+- Monday 7am cron for Lufthansa retry: c616beb3
+- **Next**: Verify Monday call, tune IVR navigation, track success rates
+
+### AVERY (Avie's AI Sidekick)
+- SHIPPED ✅ Live at abellminded.com/heyavery
+- Character: cool/unbothered teen, Carly x Phoebe x Bluey energy
+- Voice: ElevenLabs voice_id l9irhEnWKSUzVNW28WNn, speed 1.15x
+- Agent: agent_4801kmvj9ffmfwf9vymzafkj4nm2
+- 6 expression sprites (happy/thinking/excited/silly/caring/laughing)
+- Interactive prototype: talk.html with avatar reactions
+- Avie is Creative Director (went through 5 voice rounds to get it right)
+- Avery pronunciation: "AY-vee" (A.V. like the letters)
+- **Next**: Build out full product, parental controls, age-appropriate guardrails, HeyX platform
+
+### Hannah Aldridge Music Studio
+- Landing page LIVE at abellminded.com/hannah ✅
+- Business plan extracted from Dec 2025 Claude convo
+- Pricing: $40/$60/$85 single lessons; $150/$240/$330 monthly packages
+- Location: Rush's Music, Knoxville (Mon-Thu afternoons/evenings)
+- Press photos from hannahaldridge.com (Michelle Fredericks + Amanda Chapman)
+- v0 prompt written for full platform (booking, Stripe, dashboards)
+- **Next**: Run v0 for full platform, integrate Stripe, launch booking
+
+### Dream Cycle
+- Nightly self-improvement pipeline (11:30pm ET cron)
+- 4 phases: Research Scan → Self-Reflection → Deep Research → Proposals
+- First run: 7 proposals generated (memory/dream-cycle/2026-03-28-proposals.md)
+- 🚨 TOP PRIORITY: GitHub private repo opt-out by April 24
+- All proposals staged for human review — nothing auto-applies
+- **Next**: Alex review proposals, implement approved changes
 
 ## 📅 Planned (committed but not started)
 

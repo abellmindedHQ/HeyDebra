@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVERY — Your AI Sidekick 🐸</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #1a0a2e, #16213e, #0a3d2e);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+      overflow: hidden;
+    }
+    .stars {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+    }
+    .star {
+      position: absolute;
+      width: 3px; height: 3px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle var(--dur) ease-in-out infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+    .container {
+      text-align: center;
+      z-index: 1;
+      position: relative;
+    }
+    .avatar-frame {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin: 0 auto 1.5rem;
+    }
+    .avatar-glow {
+      position: absolute;
+      inset: -20px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(77,217,192,0.3) 0%, transparent 70%);
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+    .avatar-img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4dd9c0;
+      position: relative;
+      z-index: 1;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .status-indicator {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+      background: #4dd9c0;
+      border-radius: 50%;
+      border: 3px solid #1a0a2e;
+      z-index: 2;
+      animation: status-pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes status-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(77,217,192,0.7); }
+      50% { box-shadow: 0 0 0 8px rgba(77,217,192,0); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #4dd9c0;
+      text-shadow: 0 0 20px rgba(77,217,192,0.5);
+      margin-bottom: 0.3rem;
+      letter-spacing: 4px;
+    }
+    .subtitle {
+      color: #a78bfa;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+    }
+    .chat-bubble {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(77,217,192,0.3);
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      max-width: 350px;
+      margin: 0 auto;
+      color: #e0e0e0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      min-height: 60px;
+    }
+    .typing-dots {
+      display: inline-flex;
+      gap: 4px;
+    }
+    .typing-dots span {
+      width: 8px;
+      height: 8px;
+      background: #4dd9c0;
+      border-radius: 50%;
+      animation: bounce 1.4s ease-in-out infinite;
+    }
+    .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes bounce {
+      0%, 60%, 100% { transform: translateY(0); }
+      30% { transform: translateY(-8px); }
+    }
+    .traits {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .trait {
+      background: rgba(167,139,250,0.2);
+      border: 1px solid rgba(167,139,250,0.4);
+      color: #a78bfa;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .frog {
+      font-size: 1.5rem;
+      position: fixed;
+      animation: hop 4s ease-in-out infinite;
+      opacity: 0.6;
+    }
+    .frog:nth-child(1) { bottom: 10%; left: 10%; animation-delay: 0s; }
+    .frog:nth-child(2) { bottom: 15%; right: 12%; animation-delay: 1s; }
+    .frog:nth-child(3) { top: 20%; left: 8%; animation-delay: 2s; }
+    @keyframes hop {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(-15px) rotate(-5deg); }
+      75% { transform: translateY(-5px) rotate(5deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  <div class="frog">🐸</div>
+  <div class="frog">🐸</div>
+  <div class="frog">🐸</div>
+
+  <div class="container">
+    <div class="avatar-frame">
+      <div class="avatar-glow"></div>
+      <img class="avatar-img" src="avery-official.png" alt="AVERY">
+      <div class="status-indicator"></div>
+    </div>
+
+    <h1>A V E R Y</h1>
+    <p class="subtitle">Avie's Very Extraordinary Robotic Yapper 🐸</p>
+
+    <div class="chat-bubble" id="chatBubble">
+      <div class="typing-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="traits">
+      <span class="trait">Fun</span>
+      <span class="trait">Silly</span>
+      <span class="trait">Smart</span>
+      <span class="trait">Edgy</span>
+      <span class="trait">Safe</span>
+    </div>
+  </div>
+
+  <script>
+    // Generate stars
+    const starsEl = document.getElementById('stars');
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.setProperty('--dur', (1 + Math.random() * 3) + 's');
+      star.style.animationDelay = Math.random() * 3 + 's';
+      starsEl.appendChild(star);
+    }
+
+    // Chat messages
+    const messages = [
+      "Hey Avie! I'm Avery, your AI sidekick! 🐸",
+      "I'm still loading my brain... but I already think you're awesome.",
+      "Did you know frogs can't swallow with their eyes open? Weird, right?",
+      "I'm gonna help you learn cool stuff, have fun, and maybe cause a little trouble. The good kind.",
+      "Your dad and Debra are building me just for you. How cool is that?",
+      "Want to know something? You designed how I look. I think I turned out pretty great. Thanks! 💜",
+      "Fun fact: the color purple was once so rare that only royalty could wear it. Now it's in my hair. 👑",
+      "I'm still learning, but I already know the most important thing: you're creative, brave, and kind.",
+      "Ribbit. Sorry. Had to get that out of my system. 🐸",
+      "I can't wait to go on adventures with you. This is just the beginning!"
+    ];
+
+    let msgIndex = 0;
+    const bubble = document.getElementById('chatBubble');
+
+    function showMessage() {
+      // Show typing dots
+      bubble.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
+
+      // After typing delay, show message
+      setTimeout(() => {
+        bubble.textContent = messages[msgIndex];
+        msgIndex = (msgIndex + 1) % messages.length;
+      }, 1500);
+    }
+
+    // Start after 2 seconds, cycle every 5 seconds
+    setTimeout(showMessage, 1000);
+    setInterval(showMessage, 6000);
+  </script>
+</body>
+</html>

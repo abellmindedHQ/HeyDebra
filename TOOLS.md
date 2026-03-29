@@ -57,6 +57,25 @@ Things like:
 - Workspace: Abellminded (linear.app/abellminded)
 - GraphQL API endpoint: https://api.linear.app/graphql
 
+### ⚠️ Alex BB Account — DISABLED (DO NOT ENABLE)
+- Alex BB account (localhost:1235) was enabled briefly on 3/29
+- PROBLEM: OpenClaw treated incoming messages as conversations and REPLIED through Alex's iMessage, leaking internal commentary to Alex's contacts (Omar Shaheen incident)
+- There is NO read-only/sendPolicy option in BB account config
+- DO NOT re-enable until OpenClaw adds a sendPolicy:disabled feature or we build a polling-based scanner instead
+- The correct approach for scanning Alex's iMessages: poll the BB API directly on a schedule, don't use the webhook/session model
+
+### Contact Sync Rule
+- ALWAYS create/update contacts on BOTH accounts:
+  - alexander.o.abell@gmail.com (Alex's primary)
+  - drdebrapepper@gmail.com (Debra's address book)
+- When enriching a contact, mirror changes to both
+
+### Google Contacts Lookup
+- **ALWAYS search by NAME first**, not phone number
+- `gog contacts search` does NOT fuzzy-match phone numbers (formatting differences like "+1 (229) 834-9204" vs "2298349204" will miss)
+- If you have a phone number but no name, search for partial area code or use `gog contacts list --max 500 --json` and grep
+- For incoming unknown numbers: check area code context (229=Valdosta/South GA, 865=Knoxville, 813=Tampa, 615=Nashville)
+
 ### BlueBubbles
 
 - Server: localhost:1234 (same machine)

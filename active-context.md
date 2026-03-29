@@ -1,4 +1,14 @@
-# Active Context — Last Updated 2026-03-28 10:10pm
+# Active Context — Last Updated 2026-03-29 02:00am
+
+## Overnight Vault Optimization (Mar 28-29)
+- Weaver v3: full scan 64s (was timeout), incremental 12s — combined regex + mtime mode
+- Neo4j: 7677 → 3067 Person nodes (-60%), all junk/null/concept nodes cleaned
+- New scripts: neo4j_weekly_cleanup.py, vault_indexer.py
+- New indexes: SocialProfile.platform/.username, Person.phone/.email
+- Vault index: .vault-index.json + MOCs/VAULT-INDEX.md
+- Scale plan documented: memory/vault-scale-architecture-2026.md
+- 5 git commits pushed to origin master
+- Full report: memory/vault-optimization-report-2026-03-29.md
 
 ## What Just Happened (Sat Mar 28 — MASSIVE build day)
 - Dream cycle skill, HoldPlease Phase 2+3, ElevenLabs voice agent, web UI

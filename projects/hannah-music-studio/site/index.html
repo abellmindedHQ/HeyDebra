@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Aldridge Music Studio — Private Music Instruction | Knoxville, TN</title>
+  <meta name="description" content="Private music lessons in guitar, piano, voice, and performance coaching from touring musician Hannah Aldridge. Knoxville, TN.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0d0d0d;
+      --fg: #e8e4df;
+      --accent: #c9a96e;
+      --accent-soft: rgba(201,169,110,0.15);
+      --muted: #8a8278;
+      --card: #161514;
+      --border: #2a2724;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+    /* Hero */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 30%, rgba(201,169,110,0.08) 0%, transparent 60%);
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    .hero .tagline {
+      font-size: 1.05rem;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 0.8rem;
+    }
+    .hero .sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+    }
+    .hero .cta {
+      display: inline-block;
+      padding: 0.9rem 2.5rem;
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .hero .cta:hover {
+      background: #d4b67a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(201,169,110,0.2);
+    }
+
+    /* Sections */
+    section { padding: 5rem 1.5rem; max-width: 900px; margin: 0 auto; }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .section-line {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin: 0 auto 3rem;
+    }
+
+    /* About */
+    .about p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+    .about p em { color: var(--fg); font-style: normal; font-weight: 400; }
+
+    /* What I Teach */
+    .instruments {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .instrument-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .instrument-card .icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .instrument-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    .instrument-card p { color: var(--muted); font-size: 0.85rem; }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .price-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .price-card.featured {
+      border-color: var(--accent);
+    }
+    .price-card .badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--bg);
+      padding: 0.2rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .price-card .duration {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .price-card .price {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+    .price-card .per { color: var(--muted); font-size: 0.8rem; margin-bottom: 1.5rem; }
+    .price-card .monthly {
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .price-card .monthly strong { color: var(--fg); }
+
+    /* Who */
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .who-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2rem;
+    }
+    .who-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .who-card p { color: var(--muted); font-size: 0.9rem; }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      background: var(--accent-soft);
+    }
+    .cta-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .cta-section p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-section .cta {
+      display: inline-block;
+      padding: 0.9rem 2.5rem;
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .cta-section .cta:hover {
+      background: #d4b67a;
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      section { padding: 3rem 1.2rem; }
+      .instruments, .pricing-grid, .who-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Hannah Aldridge</h1>
+    <p class="tagline">Music Studio</p>
+    <p class="sub">Private instruction in guitar, piano, voice, and performance coaching. Knoxville, TN.</p>
+    <a href="#book" class="cta">Book a Lesson</a>
+  </div>
+
+  <!-- About -->
+  <section class="about">
+    <h2 class="section-title">The Approach</h2>
+    <div class="section-line"></div>
+    <p>Most music teachers either baby you or intimidate you. <em>This isn't that.</em></p>
+    <p>Lessons for people who want to feel capable and confident — not stressed or judged. Whether you're learning for fun, getting serious about performing, or finding your way back to music after years away.</p>
+    <p>Honest, clear, grounded. From a <em>working, touring musician</em> out of Muscle Shoals, Alabama with a decade of international touring, recording, and artist development experience.</p>
+  </section>
+
+  <!-- What I Teach -->
+  <section>
+    <h2 class="section-title">What I Teach</h2>
+    <div class="section-line"></div>
+    <div class="instruments">
+      <div class="instrument-card">
+        <div class="icon">🎸</div>
+        <h3>Guitar</h3>
+        <p>Beginner to intermediate. Acoustic and electric. Real songs, not just scales.</p>
+      </div>
+      <div class="instrument-card">
+        <div class="icon">🎹</div>
+        <h3>Piano</h3>
+        <p>Beginner level. Build a foundation that actually sticks.</p>
+      </div>
+      <div class="instrument-card">
+        <div class="icon">🎤</div>
+        <h3>Voice</h3>
+        <p>All levels. Vocal screening required to protect your voice. Ethical, safe approach.</p>
+      </div>
+      <div class="instrument-card">
+        <div class="icon">🎭</div>
+        <h3>Performance</h3>
+        <p>Stage presence, confidence, handling nerves. For all levels and instruments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section>
+    <h2 class="section-title">Who This Is For</h2>
+    <div class="section-line"></div>
+    <div class="who-grid">
+      <div class="who-card">
+        <h3>Adult Beginners</h3>
+        <p>You always wanted to learn but felt intimidated or "too old." You're not. Let's start.</p>
+      </div>
+      <div class="who-card">
+        <h3>Vocalists</h3>
+        <p>You've had bad instruction or need to rebuild confidence. Safe, ethical vocal coaching from someone who sings for a living.</p>
+      </div>
+      <div class="who-card">
+        <h3>Performing Artists</h3>
+        <p>Good technique, shaky stage presence. You know the notes — now let's make people feel them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section>
+    <h2 class="section-title">Pricing</h2>
+    <div class="section-line"></div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="duration">30 Minutes</div>
+        <div class="price">$40</div>
+        <div class="per">per lesson</div>
+        <div class="monthly">Monthly package: <strong>$150/mo</strong></div>
+      </div>
+      <div class="price-card featured">
+        <div class="badge">Most Popular</div>
+        <div class="duration">45 Minutes</div>
+        <div class="price">$60</div>
+        <div class="per">per lesson</div>
+        <div class="monthly">Monthly package: <strong>$240/mo</strong></div>
+      </div>
+      <div class="price-card">
+        <div class="duration">60 Minutes</div>
+        <div class="price">$85</div>
+        <div class="per">per lesson</div>
+        <div class="monthly">Monthly package: <strong>$330/mo</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book -->
+  <section class="cta-section" id="book">
+    <h2>Ready to Start?</h2>
+    <p>Monday–Thursday afternoons and evenings at Rush's Music in Knoxville. No commitment required for your first lesson.</p>
+    <a href="mailto:hannah@hannahaldridge.com?subject=Music%20Lesson%20Inquiry" class="cta">Get in Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Hannah Aldridge Music Studio · Knoxville, TN</p>
+    <p style="margin-top: 0.5rem;"><a href="https://hannahaldridge.com" target="_blank">hannahaldridge.com</a> · <a href="https://instagram.com/hannahaldridgemusic" target="_blank">@hannahaldridgemusic</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talk to AVERY 🐸</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #1a0a2e, #16213e, #0a3d2e);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', -apple-system, sans-serif;
+      overflow-x: hidden;
+      color: #e0e0e0;
+    }
+    .stars {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .star {
+      position: absolute;
+      width: 2px; height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle var(--dur) ease-in-out infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+    .content {
+      z-index: 1;
+      text-align: center;
+      padding: 2rem 1rem;
+      max-width: 500px;
+      width: 100%;
+    }
+    .avatar-section {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .avatar-glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(77,217,192,0.3) 0%, transparent 70%);
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+      50% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.8; }
+    }
+    .avatar-img {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #4dd9c0;
+      position: relative;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    h1 {
+      font-size: 2rem;
+      color: #4dd9c0;
+      text-shadow: 0 0 20px rgba(77,217,192,0.5);
+      letter-spacing: 3px;
+      margin-bottom: 0.2rem;
+    }
+    .subtitle {
+      color: #a78bfa;
+      font-size: 0.8rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .talk-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #4dd9c0, #2a9d8f);
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-family: inherit;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 20px rgba(77,217,192,0.3);
+      margin-bottom: 1rem;
+    }
+    .talk-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 30px rgba(77,217,192,0.5);
+    }
+    .talk-btn:active { transform: scale(0.98); }
+    .talk-btn.active {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      animation: recording-pulse 1s ease-in-out infinite;
+    }
+    @keyframes recording-pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(231,76,60,0.3); }
+      50% { box-shadow: 0 6px 30px rgba(231,76,60,0.6); }
+    }
+    .status {
+      font-size: 0.85rem;
+      color: #888;
+      min-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .chat-area {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(77,217,192,0.2);
+      border-radius: 16px;
+      padding: 1rem;
+      max-height: 300px;
+      overflow-y: auto;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    .msg {
+      margin-bottom: 0.8rem;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      max-width: 85%;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .msg.avery {
+      background: rgba(77,217,192,0.15);
+      border: 1px solid rgba(77,217,192,0.3);
+      margin-right: auto;
+    }
+    .msg.user {
+      background: rgba(167,139,250,0.15);
+      border: 1px solid rgba(167,139,250,0.3);
+      margin-left: auto;
+      text-align: right;
+    }
+    .msg .name {
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .msg.avery .name { color: #4dd9c0; }
+    .msg.user .name { color: #a78bfa; }
+    .frog-float {
+      position: fixed;
+      font-size: 1.5rem;
+      opacity: 0.4;
+      animation: hop 4s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes hop {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  <div class="frog-float" style="bottom:8%;left:5%;animation-delay:0s">🐸</div>
+  <div class="frog-float" style="bottom:12%;right:8%;animation-delay:1.5s">🐸</div>
+  <div class="frog-float" style="top:15%;right:5%;animation-delay:0.8s">🐸</div>
+
+  <div class="content">
+    <div class="avatar-section">
+      <div class="avatar-glow"></div>
+      <img class="avatar-img" id="avatarImg" src="avery-official.png" alt="AVERY">
+    </div>
+
+    <h1>A V E R Y</h1>
+    <p class="subtitle">Avie's Very Extraordinary Robotic Yapper 🐸</p>
+
+    <button class="talk-btn" id="talkBtn" onclick="toggleConversation()">
+      🎤 Talk to Avery
+    </button>
+
+    <p class="status" id="status">Tap the button to start talking</p>
+
+    <div class="chat-area" id="chatArea">
+      <div class="msg avery">
+        <div class="name">Avery 🐸</div>
+        Hey. Its Avery. Whats up.
+      </div>
+    </div>
+  </div>
+
+  <!-- ElevenLabs Conversational AI Widget -->
+  <script src="https://elevenlabs.io/convai-widget/index.js" async></script>
+
+  <script>
+    // Stars
+    const starsEl = document.getElementById('stars');
+    for (let i = 0; i < 60; i++) {
+      const s = document.createElement('div');
+      s.className = 'star';
+      s.style.left = Math.random()*100+'%';
+      s.style.top = Math.random()*100+'%';
+      s.style.setProperty('--dur', (1+Math.random()*3)+'s');
+      s.style.animationDelay = Math.random()*3+'s';
+      starsEl.appendChild(s);
+    }
+
+    const AGENT_ID = 'agent_4801kmvj9ffmfwf9vymzafkj4nm2';
+    let conversation = null;
+    let isActive = false;
+
+    async function toggleConversation() {
+      const btn = document.getElementById('talkBtn');
+      const status = document.getElementById('status');
+
+      if (!isActive) {
+        try {
+          status.textContent = 'Connecting to Avery...';
+          btn.innerHTML = '⏳ Connecting...';
+
+          // Use ElevenLabs Conversational AI
+          if (window.ElevenLabsConvai) {
+            conversation = await window.ElevenLabsConvai.startSession({
+              agentId: AGENT_ID,
+              onConnect: () => {
+                status.textContent = 'Connected! Start talking...';
+                btn.innerHTML = '🔴 End Chat';
+                btn.classList.add('active');
+                isActive = true;
+              },
+              onDisconnect: () => {
+                status.textContent = 'Chat ended. Tap to talk again!';
+                btn.innerHTML = '🎤 Talk to Avery';
+                btn.classList.remove('active');
+                isActive = false;
+              },
+              onMessage: (msg) => {
+                if (msg.source === 'ai') {
+                  addMessage('avery', msg.message);
+                }
+              },
+              onUserTranscript: (transcript) => {
+                if (transcript.trim()) {
+                  addMessage('user', transcript);
+                }
+              },
+              onError: (err) => {
+                status.textContent = 'Oops! ' + (err.message || 'Something went wrong');
+                btn.innerHTML = '🎤 Talk to Avery';
+                btn.classList.remove('active');
+                isActive = false;
+              }
+            });
+          } else {
+            // Fallback: open ElevenLabs widget directly
+            status.textContent = 'Loading voice chat...';
+            const widget = document.createElement('elevenlabs-convai');
+            widget.setAttribute('agent-id', AGENT_ID);
+            document.body.appendChild(widget);
+            btn.innerHTML = '🎤 Voice chat loaded below!';
+            status.textContent = 'Use the chat widget that appeared!';
+          }
+        } catch (err) {
+          status.textContent = 'Error: ' + err.message;
+          btn.innerHTML = '🎤 Talk to Avery';
+        }
+      } else {
+        if (conversation) {
+          await conversation.endSession();
+        }
+        btn.innerHTML = '🎤 Talk to Avery';
+        btn.classList.remove('active');
+        status.textContent = 'Chat ended. Tap to talk again!';
+        isActive = false;
+      }
+    }
+
+    function addMessage(role, text) {
+      const area = document.getElementById('chatArea');
+      const div = document.createElement('div');
+      div.className = `msg ${role}`;
+      div.innerHTML = `<div class="name">${role === 'avery' ? 'Avery 🐸' : 'You'}</div>${text}`;
+      area.appendChild(div);
+      area.scrollTop = area.scrollHeight;
+    }
+  </script>
+</body>
+</html>

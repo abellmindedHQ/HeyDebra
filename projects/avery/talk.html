@@ -64,10 +64,43 @@
       border: 3px solid #4dd9c0;
       position: relative;
       animation: float 3s ease-in-out infinite;
+      transition: transform 0.15s, border-color 0.3s;
     }
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-8px) scale(1); }
+    }
+    .avatar-img.speaking {
+      animation: speak-bounce 0.3s ease-in-out infinite alternate;
+      border-color: #a78bfa;
+      filter: brightness(1.1);
+    }
+    @keyframes speak-bounce {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.06); }
+    }
+    .avatar-img.listening {
+      animation: listen-pulse 1.5s ease-in-out infinite;
+      border-color: #e0a030;
+    }
+    @keyframes listen-pulse {
+      0%, 100% { transform: scale(1); border-color: #e0a030; }
+      50% { transform: scale(1.03); border-color: #f0c040; }
+    }
+    .speaking-ring {
+      display: none;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      border: 2px solid rgba(167,139,250,0.6);
+      animation: ring-expand 0.8s ease-out infinite;
+    }
+    .speaking-ring.active { display: block; }
+    @keyframes ring-expand {
+      0% { width: 180px; height: 180px; opacity: 1; }
+      100% { width: 240px; height: 240px; opacity: 0; }
     }
     h1 {
       font-size: 2rem;
@@ -180,6 +213,7 @@
   <div class="content">
     <div class="avatar-section">
       <div class="avatar-glow"></div>
+      <div class="speaking-ring" id="speakRing"></div>
       <img class="avatar-img" id="avatarImg" src="avery-official.png" alt="AVERY">
     </div>
 
@@ -219,6 +253,19 @@
     const AGENT_ID = 'agent_4801kmvj9ffmfwf9vymzafkj4nm2';
     let conversation = null;
     let isActive = false;
+    const avatar = document.getElementById('avatarImg');
+    const speakRing = document.getElementById('speakRing');
+
+    function setAvatarMode(mode) {
+      avatar.classList.remove('speaking', 'listening');
+      speakRing.classList.remove('active');
+      if (mode === 'speaking') {
+        avatar.classList.add('speaking');
+        speakRing.classList.add('active');
+      } else if (mode === 'listening') {
+        avatar.classList.add('listening');
+      }
+    }
 
     async function toggleConversation() {
       const btn = document.getElementById('talkBtn');
@@ -238,21 +285,34 @@
                 btn.innerHTML = '🔴 End Chat';
                 btn.classList.add('active');
                 isActive = true;
+                setAvatarMode('listening');
               },
               onDisconnect: () => {
                 status.textContent = 'Chat ended. Tap to talk again!';
                 btn.innerHTML = '🎤 Talk to Avery';
                 btn.classList.remove('active');
                 isActive = false;
+                setAvatarMode('idle');
               },
               onMessage: (msg) => {
                 if (msg.source === 'ai') {
                   addMessage('avery', msg.message);
+                  setAvatarMode('speaking');
+                }
+              },
+              onModeChange: (mode) => {
+                if (mode.mode === 'speaking') {
+                  setAvatarMode('speaking');
+                  status.textContent = 'Avery is talking...';
+                } else if (mode.mode === 'listening') {
+                  setAvatarMode('listening');
+                  status.textContent = 'Listening...';
                 }
               },
               onUserTranscript: (transcript) => {
                 if (transcript.trim()) {
                   addMessage('user', transcript);
+                  setAvatarMode('listening');
                 }
               },
               onError: (err) => {
@@ -260,6 +320,7 @@
                 btn.innerHTML = '🎤 Talk to Avery';
                 btn.classList.remove('active');
                 isActive = false;
+                setAvatarMode('idle');
               }
             });
           } else {

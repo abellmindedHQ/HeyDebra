@@ -256,6 +256,38 @@
     const avatar = document.getElementById('avatarImg');
     const speakRing = document.getElementById('speakRing');
 
+    const expressions = {
+      idle: 'avery-official.png',
+      happy: 'sprites/avery-happy.png',
+      thinking: 'sprites/avery-thinking.png',
+      excited: 'sprites/avery-excited.png',
+      silly: 'sprites/avery-silly.png',
+      caring: 'sprites/avery-caring.png',
+      laughing: 'sprites/avery-laughing.png'
+    };
+
+    // Preload all sprites
+    Object.values(expressions).forEach(src => { const img = new Image(); img.src = src; });
+
+    // Pick expression based on message content
+    function pickExpression(text) {
+      const t = text.toLowerCase();
+      if (t.includes('haha') || t.includes('lol') || t.includes('😂') || t.includes('funny') || t.includes('ribbit')) return 'laughing';
+      if (t.includes('hmm') || t.includes('think') || t.includes('wonder') || t.includes('maybe') || t.includes('let me')) return 'thinking';
+      if (t.includes('!') && (t.includes('cool') || t.includes('awesome') || t.includes('sick') || t.includes('slay') || t.includes('wait'))) return 'excited';
+      if (t.includes('sorry') || t.includes('aw') || t.includes('thats hard') || t.includes('valid') || t.includes('feel')) return 'caring';
+      if (t.includes('tongue') || t.includes('jk') || t.includes('kidding') || t.includes('whatever') || t.includes('bruh')) return 'silly';
+      // Random between happy/silly/excited for variety
+      const fun = ['happy', 'happy', 'silly', 'excited'];
+      return fun[Math.floor(Math.random() * fun.length)];
+    }
+
+    function setExpression(expr) {
+      if (expressions[expr]) {
+        avatar.src = expressions[expr];
+      }
+    }
+
     function setAvatarMode(mode) {
       avatar.classList.remove('speaking', 'listening');
       speakRing.classList.remove('active');
@@ -264,6 +296,9 @@
         speakRing.classList.add('active');
       } else if (mode === 'listening') {
         avatar.classList.add('listening');
+        setExpression('idle');
+      } else if (mode === 'idle') {
+        setExpression('idle');
       }
     }
 
@@ -297,6 +332,7 @@
               onMessage: (msg) => {
                 if (msg.source === 'ai') {
                   addMessage('avery', msg.message);
+                  setExpression(pickExpression(msg.message));
                   setAvatarMode('speaking');
                 }
               },

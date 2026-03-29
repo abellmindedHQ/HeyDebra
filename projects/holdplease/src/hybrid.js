@@ -29,7 +29,10 @@ const twilio = require('twilio');
 const path = require('path');
 const fs = require('fs');
 const { HoldDetector } = require('./hold-detector');
+const { Recorder } = require('./recorder');
 const { log } = require('./utils');
+
+const recorder = new Recorder();
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -199,73 +202,284 @@ app.post('/voice/hybrid-status', (req, res) => {
       if (session.holdDetector) session.holdDetector.shutdown();
       holdSessions.delete(CallSid);
     }
+    // Auto-fetch and save recording after call completes
+    if (CallStatus === 'completed') {
+      fetchAndSaveRecording(CallSid);
+    }
   }
   res.sendStatus(200);
 });
 
 // ─── Phase 2: Switch to CONVERSATION MODE (ElevenLabs) ────────────────────
+// Instead of hanging up + redialing, we bridge the ElevenLabs agent INTO
+// the existing Twilio call using the register-call API. The call to the
+// company never drops — we just swap who's talking on our end.
 async function switchToConversationMode(callSid, session) {
   log(`[HYBRID] 🚨 HUMAN DETECTED! Switching to conversation mode for ${callSid}`);
 
   const callRecord = calls.find(c => c.callId === session.callId);
   if (callRecord) {
     callRecord.status = 'conversation-mode';
-    callRecord.statusMessage = 'Human detected! Switching to Debra voice...';
+    callRecord.statusMessage = 'Human detected! Bridging Debra into the call...';
     callRecord.humanDetectedAt = new Date().toISOString();
     callRecord.mode = 'conversation';
     saveCalls();
   }
 
-  // Update ElevenLabs agent with this call's context
+  // Update ElevenLabs agent with this call's context + end_call system tool
   const prompt = buildCallPrompt(session.callData);
-  await elevenLabsRequest('PATCH', `/v1/convai/agents/${ELEVEN_AGENT_ID}`, {
-    conversation_config: {
-      agent: {
-        prompt: { prompt },
-        first_message: `Hi, this is Debra calling on behalf of Alex Abell. ${session.callData.task.split('.')[0]}.`
-      }
-    }
-  });
-
-  // Hang up the Twilio hold call
   try {
-    await twilioClient.calls(callSid).update({ status: 'completed' });
+    await elevenLabsRequest('PATCH', `/v1/convai/agents/${ELEVEN_AGENT_ID}`, {
+      conversation_config: {
+        agent: {
+          prompt: {
+            prompt: prompt + `\n\nIMPORTANT: When the conversation is complete and you've said goodbye, use the end_call tool to disconnect the call. Do not just say goodbye and wait.`,
+            tools: [
+              {
+                type: 'system',
+                name: 'end_call',
+                description: 'End the phone call when the conversation is complete, task is done, or the other party says goodbye.'
+              }
+            ]
+          },
+          first_message: `Hi, this is Debra calling on behalf of Alex Abell. ${session.callData.task.split('.')[0]}.`
+        }
+      }
+    });
+    log(`[HYBRID] Agent updated with call context and end_call tool`);
   } catch (e) {
-    log(`[HYBRID] Error ending hold call: ${e.message}`);
+    log(`[HYBRID] Error updating agent config: ${e.message}`);
   }
 
-  // Immediately call back on ElevenLabs (the human is waiting!)
-  const result = await elevenLabsRequest('POST', '/v1/convai/twilio/outbound-call', {
-    agent_id: ELEVEN_AGENT_ID,
-    agent_phone_number_id: ELEVEN_PHONE_ID,
-    to_number: session.callData.phoneNumber
-  });
+  // Register the call with ElevenLabs to get TwiML for WebSocket connection
+  // This returns TwiML with <Connect><Stream> pointing to ElevenLabs' WebSocket
+  try {
+    const registerResult = await elevenLabsRequest('POST', '/v1/convai/twilio/register-call', {
+      agent_id: ELEVEN_AGENT_ID,
+      from_number: TWILIO_PHONE_NUMBER,
+      to_number: session.callData.phoneNumber,
+      direction: 'outbound'
+    });
 
-  if (result.success) {
-    log(`[HYBRID] ElevenLabs conversation started: ${result.conversation_id}`);
-    if (callRecord) {
-      callRecord.conversationId = result.conversation_id;
-      saveCalls();
+    log(`[HYBRID] Register-call response type: ${typeof registerResult}`);
+
+    // registerResult should be TwiML (XML string) or an object with twiml
+    let twiml = null;
+    if (typeof registerResult === 'string' && registerResult.includes('<')) {
+      twiml = registerResult;
+    } else if (registerResult && registerResult.twiml) {
+      twiml = registerResult.twiml;
+    } else if (registerResult && registerResult.conversation_id) {
+      // Some versions return conversation_id; build TwiML ourselves
+      log(`[HYBRID] Got conversation_id: ${registerResult.conversation_id}, building TwiML`);
+      if (callRecord) {
+        callRecord.conversationId = registerResult.conversation_id;
+        saveCalls();
+      }
     }
 
-    // Poll for conversation completion
-    pollElevenLabsConversation(session.callId, result.conversation_id);
-  } else {
-    log(`[HYBRID] Failed to start ElevenLabs conversation: ${JSON.stringify(result)}`);
-    // Fallback: call Alex to take over
-    if (session.callData.callback) {
-      log(`[HYBRID] Calling Alex as fallback...`);
+    if (twiml) {
+      log(`[HYBRID] Got TwiML from register-call, redirecting existing call`);
+
+      // Redirect the EXISTING Twilio call to use the ElevenLabs TwiML
+      // This swaps the audio stream from our hold-detector to the ElevenLabs agent
+      // WITHOUT dropping the connection to the company
+      await twilioClient.calls(callSid).update({ twiml });
+
+      log(`[HYBRID] Call ${callSid} redirected to ElevenLabs conversation mode`);
+
+      // Extract conversation_id from TwiML if present (it's usually in a parameter)
+      const convoIdMatch = twiml.match(/conversation[_-]id[^>]*value="([^"]+)"/i) ||
+                           twiml.match(/conversationId[^>]*value="([^"]+)"/i);
+      if (convoIdMatch && callRecord) {
+        callRecord.conversationId = convoIdMatch[1];
+        saveCalls();
+      }
+
+      // Track the active call for cleanup when conversation ends
+      activeConversationCalls.set(callSid, {
+        callId: session.callId,
+        startedAt: Date.now()
+      });
+
+      // Poll for conversation completion
+      if (callRecord?.conversationId) {
+        pollElevenLabsConversation(session.callId, callRecord.conversationId, callSid);
+      } else {
+        // Poll via call status instead
+        pollCallCompletion(session.callId, callSid);
+      }
+
+      return;
+    }
+
+    // Fallback: If register-call didn't return usable TwiML,
+    // try the redirect-to-TwiML-endpoint approach
+    log(`[HYBRID] Register-call didn't return TwiML directly, using redirect endpoint`);
+    await useRedirectFallback(callSid, session, callRecord);
+
+  } catch (err) {
+    log(`[HYBRID] Register-call failed: ${err.message}`);
+    // Ultimate fallback: call Alex
+    await fallbackCallAlex(session, callRecord);
+  }
+}
+
+// Track active conversation calls (callSid -> { callId, startedAt })
+const activeConversationCalls = new Map();
+
+// Fallback: redirect to our own TwiML endpoint that does the register-call
+async function useRedirectFallback(callSid, session, callRecord) {
+  try {
+    // Store session data for the redirect endpoint
+    pendingRedirects.set(callSid, {
+      callId: session.callId,
+      callData: session.callData
+    });
+
+    // Redirect existing call to our bridge endpoint
+    await twilioClient.calls(callSid).update({
+      url: `${BASE_URL}/voice/hybrid-bridge`,
+      method: 'POST'
+    });
+
+    log(`[HYBRID] Call ${callSid} redirected to bridge endpoint`);
+
+    activeConversationCalls.set(callSid, {
+      callId: session.callId,
+      startedAt: Date.now()
+    });
+
+    pollCallCompletion(session.callId, callSid);
+  } catch (e) {
+    log(`[HYBRID] Redirect fallback failed: ${e.message}`);
+    await fallbackCallAlex(session, callRecord);
+  }
+}
+
+// Store pending redirects for the bridge endpoint
+const pendingRedirects = new Map();
+
+// TwiML endpoint: bridges existing call to ElevenLabs via register-call
+app.post('/voice/hybrid-bridge', async (req, res) => {
+  const callSid = req.body.CallSid;
+  log(`[HYBRID] Bridge endpoint hit for call ${callSid}`);
+
+  const pending = pendingRedirects.get(callSid);
+  pendingRedirects.delete(callSid);
+
+  try {
+    // Register with ElevenLabs to get TwiML
+    const registerResult = await elevenLabsRequest('POST', '/v1/convai/twilio/register-call', {
+      agent_id: ELEVEN_AGENT_ID,
+      from_number: TWILIO_PHONE_NUMBER,
+      to_number: pending?.callData?.phoneNumber || req.body.To,
+      direction: 'outbound'
+    });
+
+    let twiml = null;
+    if (typeof registerResult === 'string' && registerResult.includes('<')) {
+      twiml = registerResult;
+    } else if (registerResult?.twiml) {
+      twiml = registerResult.twiml;
+    }
+
+    if (twiml) {
+      log(`[HYBRID] Bridge: returning ElevenLabs TwiML`);
+
+      // Track conversation_id
+      if (pending) {
+        const convoIdMatch = twiml.match(/conversation[_-]id[^>]*value="([^"]+)"/i);
+        if (convoIdMatch) {
+          const callRecord = calls.find(c => c.callId === pending.callId);
+          if (callRecord) {
+            callRecord.conversationId = convoIdMatch[1];
+            saveCalls();
+            pollElevenLabsConversation(pending.callId, convoIdMatch[1], callSid);
+          }
+        }
+      }
+
+      res.type('text/xml').send(twiml);
+    } else {
+      // Last resort: connect the call to ElevenLabs phone number via <Dial>
+      log(`[HYBRID] Bridge: register-call failed, using Dial fallback`);
+      const dialTwiml = `<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Dial callerId="${TWILIO_PHONE_NUMBER}" timeout="10">
+    <Number>${TWILIO_PHONE_NUMBER}</Number>
+  </Dial>
+</Response>`;
+      res.type('text/xml').send(dialTwiml);
+    }
+  } catch (err) {
+    log(`[HYBRID] Bridge error: ${err.message}`);
+    // Emergency: just play a message
+    res.type('text/xml').send(`<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="Google.en-US-Chirp3-HD-Aoede">I'm sorry, I'm having trouble connecting. Please hold while I get Alex on the line.</Say>
+  <Pause length="7200"/>
+</Response>`);
+  }
+});
+
+// Poll call completion via Twilio status (when we don't have a conversation_id)
+function pollCallCompletion(callId, callSid) {
+  let pollCount = 0;
+  const maxPolls = 360; // 30 min
+
+  const interval = setInterval(async () => {
+    pollCount++;
+    if (pollCount > maxPolls) {
+      clearInterval(interval);
+      updateCall(callId, { status: 'completed', statusMessage: 'Conversation ended (timeout)' });
+      activeConversationCalls.delete(callSid);
+      resetAgentPrompt();
+      return;
+    }
+
+    try {
+      const call = await twilioClient.calls(callSid).fetch();
+      if (['completed', 'failed', 'canceled', 'busy', 'no-answer'].includes(call.status)) {
+        clearInterval(interval);
+        log(`[HYBRID] Call ${callSid} ended with status: ${call.status}`);
+        updateCall(callId, {
+          status: 'completed',
+          statusMessage: `Conversation completed (${call.status})`,
+          completedAt: new Date().toISOString()
+        });
+        activeConversationCalls.delete(callSid);
+        resetAgentPrompt();
+      }
+    } catch (err) {
+      log(`[HYBRID] Poll call status error: ${err.message}`);
+    }
+  }, 5000);
+}
+
+// Fallback: call Alex when everything else fails
+async function fallbackCallAlex(session, callRecord) {
+  if (session.callData.callback) {
+    log(`[HYBRID] Calling Alex as fallback...`);
+    try {
       await twilioClient.calls.create({
         to: session.callData.callback,
         from: TWILIO_PHONE_NUMBER,
         twiml: `<Response><Say voice="Google.en-US-Chirp3-HD-Aoede">Hey, this is Debra. A human picked up at ${session.callData.company} but I couldn't switch to conversation mode. You may want to call them back right now. The number is ${session.callData.phoneNumber}.</Say></Response>`
       });
+    } catch (e) {
+      log(`[HYBRID] Fallback call to Alex failed: ${e.message}`);
     }
+  }
+  if (callRecord) {
+    callRecord.status = 'error';
+    callRecord.statusMessage = 'Failed to bridge to conversation mode. Alex notified.';
+    saveCalls();
   }
 }
 
 // ─── Poll ElevenLabs conversation ──────────────────────────────────────────
-async function pollElevenLabsConversation(callId, conversationId) {
+async function pollElevenLabsConversation(callId, conversationId, callSid) {
   const maxPolls = 360; // 30 min
   let pollCount = 0;
 
@@ -274,6 +488,7 @@ async function pollElevenLabsConversation(callId, conversationId) {
     if (pollCount > maxPolls) {
       clearInterval(interval);
       updateCall(callId, { status: 'completed', statusMessage: 'Conversation ended (timeout)' });
+      if (callSid) activeConversationCalls.delete(callSid);
       resetAgentPrompt();
       return;
     }
@@ -296,7 +511,21 @@ async function pollElevenLabsConversation(callId, conversationId) {
         });
 
         log(`[HYBRID] Conversation completed. ${transcript.length} entries.`);
+        if (callSid) activeConversationCalls.delete(callSid);
         resetAgentPrompt();
+
+        // End the Twilio call if still active (belt & suspenders with end_call tool)
+        if (callSid) {
+          try {
+            const call = await twilioClient.calls(callSid).fetch();
+            if (!['completed', 'failed', 'canceled'].includes(call.status)) {
+              log(`[HYBRID] Ending Twilio call ${callSid} after conversation done`);
+              await twilioClient.calls(callSid).update({ status: 'completed' });
+            }
+          } catch (e) {
+            // Call may already be ended, that's fine
+          }
+        }
       }
     } catch (err) {
       log(`[HYBRID] Poll error: ${err.message}`);
@@ -360,6 +589,14 @@ wss.on('connection', (ws) => {
 
               log(`[HYBRID] 🚨 HUMAN DETECTED: ${info.reason}`);
               log(`[HYBRID] Transcript: "${info.transcript}"`);
+
+              // Cleanly shut down the hold detector — audio routing is about to change
+              if (holdDetector) {
+                log(`[HYBRID] Shutting down hold detector before mode switch`);
+                holdDetector.shutdown();
+                holdDetector = null;
+                session.holdDetector = null;
+              }
 
               // Add to call transcript
               const call = calls.find(c => c.callId === session.callId);
@@ -464,6 +701,182 @@ app.get('/api/holdplease/:callId', (req, res) => {
   const call = calls.find(c => c.callId === req.params.callId);
   if (!call) return res.status(404).json({ success: false, error: 'Call not found' });
   res.json(call);
+});
+
+// ─── Recording endpoints ───────────────────────────────────────────────────
+
+const RECORDINGS_DIR = path.join(__dirname, '..', 'recordings');
+
+// Serve a recording by callSid (stream from local file or proxy from Twilio)
+app.get('/api/recordings/:callSid', async (req, res) => {
+  await serveRecording(req, res, false);
+});
+
+// Download a recording by callSid
+app.get('/api/recordings/:callSid/download', async (req, res) => {
+  await serveRecording(req, res, true);
+});
+
+async function serveRecording(req, res, asDownload) {
+  const { callSid } = req.params;
+
+  // Check local recordings directory first
+  const localFile = findLocalRecording(callSid);
+  if (localFile) {
+    if (asDownload) {
+      res.setHeader('Content-Disposition', `attachment; filename="${path.basename(localFile)}"`);
+    }
+    res.setHeader('Content-Type', 'audio/wav');
+    return fs.createReadStream(localFile).pipe(res);
+  }
+
+  // Fetch from Twilio
+  try {
+    const recordings = await twilioClient.recordings.list({ callSid, limit: 1 });
+    if (!recordings || recordings.length === 0) {
+      return res.status(404).json({ error: 'No recording found for this call' });
+    }
+
+    const recording = recordings[0];
+    const twilioUrl = `https://api.twilio.com${recording.uri.replace('.json', '.wav')}`;
+
+    if (asDownload) {
+      res.setHeader('Content-Disposition', `attachment; filename="${callSid}.wav"`);
+    }
+    res.setHeader('Content-Type', 'audio/wav');
+
+    // Proxy the Twilio recording
+    const authString = Buffer.from(`${TWILIO_ACCOUNT_SID}:${TWILIO_AUTH_TOKEN}`).toString('base64');
+    https.get(twilioUrl, { headers: { 'Authorization': `Basic ${authString}` } }, (twilioRes) => {
+      if (twilioRes.statusCode === 301 || twilioRes.statusCode === 302) {
+        https.get(twilioRes.headers.location, (redirected) => {
+          redirected.pipe(res);
+        }).on('error', (err) => {
+          log(`[HYBRID] Recording redirect error: ${err.message}`);
+          if (!res.headersSent) res.status(500).json({ error: 'Failed to fetch recording' });
+        });
+        return;
+      }
+      if (twilioRes.statusCode !== 200) {
+        log(`[HYBRID] Twilio recording fetch returned ${twilioRes.statusCode}`);
+        if (!res.headersSent) res.status(502).json({ error: `Twilio returned ${twilioRes.statusCode}` });
+        return;
+      }
+      twilioRes.pipe(res);
+    }).on('error', (err) => {
+      log(`[HYBRID] Recording fetch error: ${err.message}`);
+      if (!res.headersSent) res.status(500).json({ error: 'Failed to fetch recording' });
+    });
+  } catch (err) {
+    log(`[HYBRID] Recording endpoint error: ${err.message}`);
+    res.status(500).json({ error: err.message });
+  }
+}
+
+// Check if a recording has been downloaded (exists locally or on Twilio)
+app.get('/api/recordings/:callSid/status', async (req, res) => {
+  const { callSid } = req.params;
+
+  // Check local
+  if (findLocalRecording(callSid)) {
+    return res.json({ available: true, source: 'local' });
+  }
+
+  // Check Twilio
+  try {
+    const recordings = await twilioClient.recordings.list({ callSid, limit: 1 });
+    if (recordings && recordings.length > 0) {
+      return res.json({ available: true, source: 'twilio' });
+    }
+  } catch (err) {
+    log(`[HYBRID] Recording status check error: ${err.message}`);
+  }
+
+  res.json({ available: false });
+});
+
+function findLocalRecording(callSid) {
+  if (!fs.existsSync(RECORDINGS_DIR)) return null;
+  const files = fs.readdirSync(RECORDINGS_DIR);
+  const match = files.find(f => f.startsWith(callSid) && f.endsWith('.wav'));
+  return match ? path.join(RECORDINGS_DIR, match) : null;
+}
+
+// Auto-fetch recording after call completes
+async function fetchAndSaveRecording(callSid) {
+  try {
+    // Wait a bit for Twilio to process the recording
+    await new Promise(resolve => setTimeout(resolve, 5000));
+
+    const recordings = await twilioClient.recordings.list({ callSid, limit: 1 });
+    if (!recordings || recordings.length === 0) {
+      log(`[HYBRID] No recording available yet for ${callSid}`);
+      return null;
+    }
+
+    const recording = recordings[0];
+    const recordingUrl = `https://api.twilio.com${recording.uri.replace('.json', '')}`;
+    log(`[HYBRID] Auto-fetching recording for ${callSid}`);
+
+    const result = await recorder.transcribeRecording(recordingUrl, callSid);
+    log(`[HYBRID] Recording saved: ${result.audioPath}`);
+
+    // Update the call record with recording info
+    const call = calls.find(c => c.callSid === callSid);
+    if (call) {
+      call.recordingPath = result.audioPath;
+      call.hasRecording = true;
+      saveCalls();
+    }
+
+    return result;
+  } catch (err) {
+    log(`[HYBRID] Auto-fetch recording error: ${err.message}`);
+    return null;
+  }
+}
+
+// ─── End Call webhook (server-side fallback for ending calls) ───────────────
+// This can be called by ElevenLabs server tool or manually to terminate a call
+app.post('/api/end-call', async (req, res) => {
+  const { callSid, callId, conversation_id } = req.body;
+  log(`[HYBRID] End-call webhook received: callSid=${callSid}, callId=${callId}, conversation_id=${conversation_id}`);
+
+  let targetCallSid = callSid;
+
+  // Find the call by various identifiers
+  if (!targetCallSid && callId) {
+    const call = calls.find(c => c.callId === callId);
+    if (call) targetCallSid = call.callSid;
+  }
+  if (!targetCallSid && conversation_id) {
+    const call = calls.find(c => c.conversationId === conversation_id);
+    if (call) targetCallSid = call.callSid;
+  }
+
+  // Also check active conversation calls
+  if (!targetCallSid) {
+    // End the most recent active conversation
+    for (const [sid, info] of activeConversationCalls) {
+      targetCallSid = sid;
+      break;
+    }
+  }
+
+  if (targetCallSid) {
+    try {
+      await twilioClient.calls(targetCallSid).update({ status: 'completed' });
+      log(`[HYBRID] Call ${targetCallSid} terminated via end-call webhook`);
+      activeConversationCalls.delete(targetCallSid);
+      res.json({ success: true, message: 'Call ended' });
+    } catch (e) {
+      log(`[HYBRID] End-call error: ${e.message}`);
+      res.json({ success: true, message: 'Call may have already ended' });
+    }
+  } else {
+    log(`[HYBRID] End-call: no active call found to end`);
+    res.json({ success: false, error: 'No active call found' });
+  }
 });
 
 // Health

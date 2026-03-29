@@ -1,19 +1,35 @@
 {
   "name": "holdplease",
-  "version": "1.0.0",
-  "description": "AI phone agent that calls, navigates IVR menus, waits on hold, and alerts you when a human picks up",
+  "version": "2.0.0",
+  "description": "AI phone agent — Next.js app + phone engine",
   "main": "src/index.js",
   "scripts": {
+    "dev": "npx concurrently --kill-others-on-fail -n \"app,engine\" -c \"cyan,yellow\" \"npm run dev:app\" \"npm run dev:engine\"",
+    "dev:app": "cd app && npm run dev",
+    "dev:engine": "node src/hybrid.js",
+    "build": "cd app && npm run build",
     "start": "node src/index.js",
     "start:realtime": "node src/realtime.js",
     "start:holdplease": "node src/holdplease-api.js",
     "start:hybrid": "node src/hybrid.js",
     "start:convo": "node src/convo.js",
-    "test-call": "node test/test-call.js"
+    "test-call": "node test/test-call.js",
+    "db:migrate": "cd app && npm run db:migrate",
+    "db:seed": "cd app && npm run db:seed",
+    "db:generate": "cd app && npm run db:generate"
   },
-  "keywords": ["twilio", "ivr", "hold", "phone", "ai", "whisper"],
+  "keywords": [
+    "twilio",
+    "ivr",
+    "hold",
+    "phone",
+    "ai",
+    "whisper",
+    "nextjs"
+  ],
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^9.2.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "openai": "^4.77.0",

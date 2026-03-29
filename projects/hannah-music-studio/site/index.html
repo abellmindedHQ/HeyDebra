@@ -5,241 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hannah Aldridge Music Studio — Private Music Instruction | Knoxville, TN</title>
   <meta name="description" content="Private music lessons in guitar, piano, voice, and performance coaching from touring musician Hannah Aldridge. Knoxville, TN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
       --bg: #0d0d0d;
       --fg: #e8e4df;
       --accent: #c9a96e;
-      --accent-soft: rgba(201,169,110,0.15);
+      --accent-soft: rgba(201,169,110,0.12);
       --muted: #8a8278;
-      --card: #161514;
+      --card: #141312;
       --border: #2a2724;
     }
-
-    body {
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.7;
-      font-weight: 300;
-    }
-
-    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; font-weight: 300; }
+    img { max-width: 100%; display: block; }
 
     /* Hero */
     .hero {
-      min-height: 90vh;
+      position: relative;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      position: relative;
+      overflow: hidden;
     }
-    .hero::before {
-      content: '';
+    .hero-bg {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 50% 30%, rgba(201,169,110,0.08) 0%, transparent 60%);
+      background: url('images/hero.jpg') center/cover;
+      filter: brightness(0.3);
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      padding: 2rem;
+      max-width: 700px;
     }
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: 400;
-      letter-spacing: 2px;
-      margin-bottom: 0.5rem;
-      position: relative;
+      font-size: clamp(3rem, 7vw, 5rem);
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-bottom: 0.3rem;
     }
     .hero .tagline {
-      font-size: 1.05rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      font-style: italic;
       color: var(--accent);
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 400;
       margin-bottom: 0.8rem;
     }
-    .hero .sub {
+    .hero .location {
       color: var(--muted);
-      font-size: 0.95rem;
-      max-width: 500px;
-      margin: 0 auto 2.5rem;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
     }
-    .hero .cta {
+    .btn {
       display: inline-block;
-      padding: 0.9rem 2.5rem;
+      padding: 0.85rem 2.5rem;
       background: var(--accent);
       color: var(--bg);
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
       text-transform: uppercase;
       transition: all 0.3s;
+      border: none;
+      cursor: pointer;
     }
-    .hero .cta:hover {
-      background: #d4b67a;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(201,169,110,0.2);
-    }
+    .btn:hover { background: #d4b67a; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,169,110,0.25); }
+    .btn-outline { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline:hover { background: var(--accent); color: var(--bg); }
 
     /* Sections */
-    section { padding: 5rem 1.5rem; max-width: 900px; margin: 0 auto; }
-
+    section { padding: 6rem 1.5rem; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .section-label {
+      color: var(--accent);
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
     .section-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem;
-      font-weight: 400;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 300;
       text-align: center;
       margin-bottom: 0.5rem;
     }
-    .section-line {
-      width: 40px;
-      height: 1px;
-      background: var(--accent);
-      margin: 0 auto 3rem;
-    }
+    .section-line { width: 40px; height: 1px; background: var(--accent); margin: 0 auto 3rem; }
 
-    /* About */
-    .about p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: 0 auto 1.5rem;
-      text-align: center;
-      font-size: 1.05rem;
+    /* Split section */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
     }
-    .about p em { color: var(--fg); font-style: normal; font-weight: 400; }
+    .split.reverse { direction: rtl; }
+    .split.reverse > * { direction: ltr; }
+    .split-img { overflow: hidden; }
+    .split-img img { width: 100%; height: 400px; object-fit: cover; filter: brightness(0.9); }
+    .split-text h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+    .split-text p { color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem; }
+    .split-text p em { color: var(--fg); font-style: normal; }
 
-    /* What I Teach */
+    /* Instruments */
     .instruments {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
-      margin-top: 2rem;
     }
-    .instrument-card {
+    .inst-card {
       background: var(--card);
       border: 1px solid var(--border);
-      padding: 2rem 1.5rem;
+      padding: 2.5rem 1.5rem;
       text-align: center;
+      transition: border-color 0.3s;
     }
-    .instrument-card .icon { font-size: 2rem; margin-bottom: 0.8rem; }
-    .instrument-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      font-weight: 400;
-      margin-bottom: 0.5rem;
-    }
-    .instrument-card p { color: var(--muted); font-size: 0.85rem; }
+    .inst-card:hover { border-color: var(--accent); }
+    .inst-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .inst-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 0.5rem; }
+    .inst-card p { color: var(--muted); font-size: 0.82rem; line-height: 1.6; }
+
+    /* Who */
+    .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .who-card { background: var(--card); border: 1px solid var(--border); padding: 2.5rem 2rem; }
+    .who-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--accent); margin-bottom: 0.8rem; }
+    .who-card p { color: var(--muted); font-size: 0.9rem; }
 
     /* Pricing */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .price-card {
       background: var(--card);
       border: 1px solid var(--border);
-      padding: 2.5rem 2rem;
+      padding: 3rem 2rem;
       text-align: center;
       position: relative;
+      transition: border-color 0.3s, transform 0.3s;
     }
-    .price-card.featured {
-      border-color: var(--accent);
-    }
+    .price-card:hover { transform: translateY(-4px); }
+    .price-card.featured { border-color: var(--accent); }
     .price-card .badge {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--accent);
-      color: var(--bg);
-      padding: 0.2rem 1rem;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--accent); color: var(--bg);
+      padding: 0.2rem 1rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
     }
-    .price-card .duration {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .price-card .price {
-      font-size: 2.2rem;
-      font-weight: 600;
-      color: var(--accent);
-      margin-bottom: 0.3rem;
-    }
+    .price-card .duration { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .price-card .price { font-size: 2.5rem; font-weight: 600; color: var(--accent); }
     .price-card .per { color: var(--muted); font-size: 0.8rem; margin-bottom: 1.5rem; }
-    .price-card .monthly {
-      border-top: 1px solid var(--border);
-      padding-top: 1rem;
-      margin-top: 1rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
+    .price-card .monthly { border-top: 1px solid var(--border); padding-top: 1rem; color: var(--muted); font-size: 0.85rem; }
     .price-card .monthly strong { color: var(--fg); }
 
-    /* Who */
-    .who-grid {
+    /* Photo strip */
+    .photo-strip {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
     }
-    .who-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      padding: 2rem;
-    }
-    .who-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: var(--accent);
-    }
-    .who-card p { color: var(--muted); font-size: 0.9rem; }
+    .photo-strip img { width: 100%; height: 300px; object-fit: cover; filter: brightness(0.7); transition: filter 0.3s; }
+    .photo-strip img:hover { filter: brightness(0.9); }
 
-    /* CTA Section */
+    /* CTA */
     .cta-section {
       text-align: center;
-      padding: 5rem 1.5rem;
-      background: var(--accent-soft);
+      padding: 6rem 1.5rem;
+      background: linear-gradient(to bottom, var(--accent-soft), transparent);
     }
-    .cta-section h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.2rem;
-      font-weight: 400;
-      margin-bottom: 1rem;
-    }
-    .cta-section p {
-      color: var(--muted);
-      margin-bottom: 2rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .cta-section .cta {
-      display: inline-block;
-      padding: 0.9rem 2.5rem;
-      background: var(--accent);
-      color: var(--bg);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      transition: all 0.3s;
-    }
-    .cta-section .cta:hover {
-      background: #d4b67a;
-      transform: translateY(-2px);
-    }
+    .cta-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 0.5rem; }
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
 
     /* Footer */
     footer {
@@ -250,11 +196,19 @@
       border-top: 1px solid var(--border);
     }
     footer a { color: var(--accent); text-decoration: none; }
+    .social-links { margin-top: 1rem; display: flex; gap: 1.5rem; justify-content: center; }
+    .social-links a { color: var(--muted); transition: color 0.3s; }
+    .social-links a:hover { color: var(--accent); }
 
     /* Responsive */
-    @media (max-width: 600px) {
-      section { padding: 3rem 1.2rem; }
-      .instruments, .pricing-grid, .who-grid { grid-template-columns: 1fr; }
+    @media (max-width: 768px) {
+      .split { grid-template-columns: 1fr; gap: 2rem; }
+      .split.reverse { direction: ltr; }
+      .instruments { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid, .who-grid { grid-template-columns: 1fr; }
+      .photo-strip { grid-template-columns: 1fr; }
+      .photo-strip img { height: 200px; }
+      .split-img img { height: 280px; }
     }
   </style>
 </head>
@@ -262,107 +216,160 @@
 
   <!-- Hero -->
   <div class="hero">
-    <h1>Hannah Aldridge</h1>
-    <p class="tagline">Music Studio</p>
-    <p class="sub">Private instruction in guitar, piano, voice, and performance coaching. Knoxville, TN.</p>
-    <a href="#book" class="cta">Book a Lesson</a>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Hannah Aldridge</h1>
+      <p class="tagline">Music Studio</p>
+      <p class="location">Private Instruction · Knoxville, TN</p>
+      <a href="#book" class="btn">Book a Lesson</a>
+    </div>
   </div>
 
-  <!-- About -->
-  <section class="about">
-    <h2 class="section-title">The Approach</h2>
-    <div class="section-line"></div>
-    <p>Most music teachers either baby you or intimidate you. <em>This isn't that.</em></p>
-    <p>Lessons for people who want to feel capable and confident — not stressed or judged. Whether you're learning for fun, getting serious about performing, or finding your way back to music after years away.</p>
-    <p>Honest, clear, grounded. From a <em>working, touring musician</em> out of Muscle Shoals, Alabama with a decade of international touring, recording, and artist development experience.</p>
-  </section>
-
-  <!-- What I Teach -->
+  <!-- The Approach -->
   <section>
-    <h2 class="section-title">What I Teach</h2>
-    <div class="section-line"></div>
-    <div class="instruments">
-      <div class="instrument-card">
-        <div class="icon">🎸</div>
-        <h3>Guitar</h3>
-        <p>Beginner to intermediate. Acoustic and electric. Real songs, not just scales.</p>
-      </div>
-      <div class="instrument-card">
-        <div class="icon">🎹</div>
-        <h3>Piano</h3>
-        <p>Beginner level. Build a foundation that actually sticks.</p>
-      </div>
-      <div class="instrument-card">
-        <div class="icon">🎤</div>
-        <h3>Voice</h3>
-        <p>All levels. Vocal screening required to protect your voice. Ethical, safe approach.</p>
-      </div>
-      <div class="instrument-card">
-        <div class="icon">🎭</div>
-        <h3>Performance</h3>
-        <p>Stage presence, confidence, handling nerves. For all levels and instruments.</p>
+    <div class="container">
+      <div class="split">
+        <div class="split-img">
+          <img src="images/guitar.jpg" alt="Hannah Aldridge performing">
+        </div>
+        <div class="split-text">
+          <h2>The Approach</h2>
+          <p>Most music teachers either baby you or intimidate you. <em>This isn't that.</em></p>
+          <p>Lessons for people who want to feel capable and confident — not stressed or judged. Whether you're learning for fun, getting serious about performing, or finding your way back to music after years away.</p>
+          <p><em>Honest, clear, grounded.</em> From a working, touring musician out of Muscle Shoals, Alabama.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- What I Teach -->
+  <section style="background: var(--card);">
+    <div class="container">
+      <p class="section-label">Lessons</p>
+      <h2 class="section-title">What I Teach</h2>
+      <div class="section-line"></div>
+      <div class="instruments">
+        <div class="inst-card">
+          <div class="icon">🎸</div>
+          <h3>Guitar</h3>
+          <p>Beginner to intermediate. Acoustic and electric. Real songs, not just scales.</p>
+        </div>
+        <div class="inst-card">
+          <div class="icon">🎹</div>
+          <h3>Piano</h3>
+          <p>Beginner level. Build a foundation that actually sticks.</p>
+        </div>
+        <div class="inst-card">
+          <div class="icon">🎤</div>
+          <h3>Voice</h3>
+          <p>All levels. Vocal screening required. Safe, ethical approach to protect your instrument.</p>
+        </div>
+        <div class="inst-card">
+          <div class="icon">🎭</div>
+          <h3>Performance</h3>
+          <p>Stage presence, confidence, handling nerves. For all levels and instruments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo strip -->
+  <div class="photo-strip">
+    <img src="images/performing.jpg" alt="Hannah performing">
+    <img src="images/moody.jpg" alt="Hannah Aldridge">
+    <img src="images/portrait.jpg" alt="Hannah portrait">
+  </div>
+
   <!-- Who It's For -->
   <section>
-    <h2 class="section-title">Who This Is For</h2>
-    <div class="section-line"></div>
-    <div class="who-grid">
-      <div class="who-card">
-        <h3>Adult Beginners</h3>
-        <p>You always wanted to learn but felt intimidated or "too old." You're not. Let's start.</p>
+    <div class="container">
+      <p class="section-label">Students</p>
+      <h2 class="section-title">Who This Is For</h2>
+      <div class="section-line"></div>
+      <div class="who-grid">
+        <div class="who-card">
+          <h3>Adult Beginners</h3>
+          <p>You always wanted to learn but felt intimidated or "too old." You're not. Let's start.</p>
+        </div>
+        <div class="who-card">
+          <h3>Vocalists</h3>
+          <p>You've had bad instruction or need to rebuild confidence. Safe, ethical vocal coaching from someone who sings for a living.</p>
+        </div>
+        <div class="who-card">
+          <h3>Performing Artists</h3>
+          <p>Good technique, shaky stage presence. You know the notes — now let's make people <em>feel</em> them.</p>
+        </div>
       </div>
-      <div class="who-card">
-        <h3>Vocalists</h3>
-        <p>You've had bad instruction or need to rebuild confidence. Safe, ethical vocal coaching from someone who sings for a living.</p>
-      </div>
-      <div class="who-card">
-        <h3>Performing Artists</h3>
-        <p>Good technique, shaky stage presence. You know the notes — now let's make people feel them.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section style="background: var(--card);">
+    <div class="container">
+      <div class="split reverse">
+        <div class="split-img">
+          <img src="images/about.jpg" alt="Hannah Aldridge">
+        </div>
+        <div class="split-text">
+          <h2>About Hannah</h2>
+          <p>A singer-songwriter out of <em>Muscle Shoals, Alabama</em> — the small town that shaped the sound of American music. B.S. in Music Business from MTSU.</p>
+          <p>A decade of <em>international touring</em>, multiple records, publishing and record deals across three continents. Real experience on real stages in front of real audiences.</p>
+          <p>Now sharing everything she's learned with the next generation of musicians in Knoxville, Tennessee.</p>
+          <a href="https://hannahaldridge.com" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">hannahaldridge.com</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
   <section>
-    <h2 class="section-title">Pricing</h2>
-    <div class="section-line"></div>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <div class="duration">30 Minutes</div>
-        <div class="price">$40</div>
-        <div class="per">per lesson</div>
-        <div class="monthly">Monthly package: <strong>$150/mo</strong></div>
+    <div class="container">
+      <p class="section-label">Investment</p>
+      <h2 class="section-title">Pricing</h2>
+      <div class="section-line"></div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="duration">30 Minutes</div>
+          <div class="price">$40</div>
+          <div class="per">per lesson</div>
+          <div class="monthly">Monthly: <strong>$150/mo</strong></div>
+        </div>
+        <div class="price-card featured">
+          <div class="badge">Most Popular</div>
+          <div class="duration">45 Minutes</div>
+          <div class="price">$60</div>
+          <div class="per">per lesson</div>
+          <div class="monthly">Monthly: <strong>$240/mo</strong></div>
+        </div>
+        <div class="price-card">
+          <div class="duration">60 Minutes</div>
+          <div class="price">$85</div>
+          <div class="per">per lesson</div>
+          <div class="monthly">Monthly: <strong>$330/mo</strong></div>
+        </div>
       </div>
-      <div class="price-card featured">
-        <div class="badge">Most Popular</div>
-        <div class="duration">45 Minutes</div>
-        <div class="price">$60</div>
-        <div class="per">per lesson</div>
-        <div class="monthly">Monthly package: <strong>$240/mo</strong></div>
-      </div>
-      <div class="price-card">
-        <div class="duration">60 Minutes</div>
-        <div class="price">$85</div>
-        <div class="per">per lesson</div>
-        <div class="monthly">Monthly package: <strong>$330/mo</strong></div>
-      </div>
+      <p style="text-align: center; color: var(--muted); margin-top: 2rem; font-size: 0.85rem;">
+        Monthly packages keep you consistent and save money. No long-term contracts.
+      </p>
     </div>
   </section>
 
-  <!-- Book -->
+  <!-- CTA -->
   <section class="cta-section" id="book">
     <h2>Ready to Start?</h2>
     <p>Monday–Thursday afternoons and evenings at Rush's Music in Knoxville. No commitment required for your first lesson.</p>
-    <a href="mailto:hannah@hannahaldridge.com?subject=Music%20Lesson%20Inquiry" class="cta">Get in Touch</a>
+    <a href="mailto:hannahaldridgemusic@gmail.com?subject=Music%20Lesson%20Inquiry" class="btn">Get in Touch</a>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>Hannah Aldridge Music Studio · Knoxville, TN</p>
-    <p style="margin-top: 0.5rem;"><a href="https://hannahaldridge.com" target="_blank">hannahaldridge.com</a> · <a href="https://instagram.com/hannahaldridgemusic" target="_blank">@hannahaldridgemusic</a></p>
+    <div class="social-links">
+      <a href="https://hannahaldridge.com" target="_blank">Website</a>
+      <a href="https://instagram.com/hannahaldridgemusic" target="_blank">Instagram</a>
+      <a href="https://open.spotify.com/artist/6JdFElAvZJOAhMLMOGjdjf" target="_blank">Spotify</a>
+    </div>
+    <p style="margin-top: 1.5rem; font-size: 0.7rem; color: #555;">Photos: Michelle Fredericks · Amanda Chapman Photography</p>
   </footer>
 
 </body>

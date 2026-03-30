@@ -92,6 +92,13 @@
 - **abellminded.dev** — public/technical documentation
 - NEED: coherent product architecture mapping mission → vision → outcomes → capabilities across all of these.
 
+### Weaver Concept Card Quality (Learned 2026-03-29)
+- Weaver auto-generates STUB cards when it finds new wikilinks
+- These stubs have placeholder text like "Define this concept here" and sometimes garbage refs (phone numbers, emails)
+- 20 out of 21 concept cards were empty stubs before we fixed them
+- Future: Weaver should either generate real content or flag stubs for human/agent review
+- Don't leave stubs in the vault. They look terrible and mislead.
+
 ## Active Projects
 - Second Brain Pipeline v3 (8-stream capture system)
 - Mirror product (needs brand/product architecture work)
@@ -131,6 +138,37 @@
 - Moody Unicorn Twin is her voice reference (Roblox streamer)
 - Pronunciation: Avie = AY-vee (like letters A.V.), NOT AH-vee
 - She's the creative director. Treat her that way.
+
+### Things 3 Integration (Learned 2026-03-29)
+- Things 3 syncs via **Things Cloud**, NOT iCloud
+- CLI: `things` installed via go install, reads/writes local DB
+- Can read inbox, today, completed, search, projects
+- Can add tasks via URL scheme
+- Full Disk Access may be needed for Terminal reads
+- **Architecture: Linear for dev tasks, Things 3 for life tasks**
+
+### OpenHue / Hue Lights (Learned 2026-03-29)
+- openhue CLI paired to bridge at 192.168.4.48
+- **CRITICAL: `--color orange` DOES NOT WORK. Use `--rgb "#FF8C00"` instead**
+- 49 lights across 8 rooms
+- Wall switches must be ON for bulbs to respond (no power = no control)
+- Config: /Users/debra/.openhue/config.yaml
+
+### v0 API (Learned 2026-03-29)
+- v0 SDK + REST API both work for programmatic design generation
+- API key in 1Password as "v0 API Key"
+- v0 credits are SEPARATE from Vercel Pro subscription
+- Can create chats, send messages, get files + demo URLs back
+- Use node v0-sdk for reliable results (curl timeouts on large prompts)
+
+### AI Image Consistency (Learned 2026-03-29)
+- Basic Flux text-to-image has ZERO character memory between generations
+- "dark night" in prompt → Flux may generate dark-skinned people (literal interpretation)
+- For consistent characters across frames, MUST use one of:
+  1. **Flux Kontext** (fal.ai) — feed 1-3 reference images, locks character
+  2. **LoRA fine-tuning** (fal.ai flux-lora-fast-training) — train on 10-20 images
+  3. **Instant Character** (fal.ai) — dedicated character consistency API
+- Never brute-force character consistency with prompts alone. It doesn't work.
 
 ### System Text Leak Prevention (Learned 2026-03-25)
 - Internal system notes CAN leak into outbound messages (happened with Jim Biggs)

@@ -1,63 +1,55 @@
-# Active Context — Last Updated 2026-03-29 1:06pm
+# Active Context — Updated 2026-03-30 3:30am
 
-## What Just Happened (Sunday 3/29 Morning/Afternoon — HUGE day)
-- Lufthansa HoldPlease SUCCESS! Called baggage support center, Charlotte sending follow-up to customer relations
-- 3 HoldPlease fixes deployed: conference bridge, end_call tool, warmer voice
-- Batman Killed the Ghost animated short: v1→v2→v3 done, v4 comedy cut shot list written (42 frames, pure stick figure comedy)
-- HoldPlease v2 product: GAN analysis + full architecture doc done. Coding agent building Day 1 NOW.
-- People enrichment: Marshall Goldman, Angelo Nappi, Marco Alvarado — all contacts created/updated with photos via Google People API
-- fal.ai API key set up (Flux images + Kling video)
-- Google People API photo upload pattern established (automated contact photo updates)
+## What's Happening RIGHT NOW
+- Session resets at 4am. This is the last flush.
+- Batman v5 delivered but still has issues (dark night frame, character consistency). v6 needs Flux Kontext/LoRA.
+- 20 concept cards fixed. Weaver ran clean.
+- All night swimming crons completed successfully.
+- Dream cycle #2 delivered 8 proposals (15 total pending review).
 
-## Monday Schedule
-- **7am ET:** Lufthansa HoldPlease hybrid call (cron c616beb3) — MAY WANT TO CANCEL since Charlotte is sending email
-- **10am ET:** Budget meeting / V&V Discussion (ORNL)
-- **2:30pm ET:** Call with Merle Benny (invite sent)
-- **11:30pm ET:** Dream Cycle second run (cron 135acf6e)
+## Monday March 30 Schedule
+- **7am**: Lufthansa HoldPlease call (cron c616beb3, one-shot, auto-deletes)
+- **2:30pm**: Call with Merle Benny (accountability partner, author of Sparkle!)
+- **3:45pm**: Pick up Avie reminder (cron faae0d15)
 
-## Time-Sensitive (Don't Forget!)
-- 🚨 **Boston trip Apr 2-5: HOTEL NOT BOOKED.** Flight G4 1426 departs TYS 7:30am Apr 2. THREE DAYS AWAY.
-- 🚨 **Costco Citi card PAST DUE** — pay ASAP
-- ⚠️ **GitHub private repo opt-out deadline: April 24** (Dream Cycle flagged this)
-- ⚠️ **ORNL Isaac compute roadmap: due Tue Mar 31** (TOMORROW)
-- ⚠️ **Lufthansa:** Charlotte sending follow-up email to customer relations. Watch inbox.
-
-## Pending Actions
-- Text Leigh re: Avie can't do Charlotte's Apr 3 party (Boston trip)
+## Things 3 Today (from Alex's list)
+- Netflix payment review
+- HoldPlease v0 design pass
+- Text Leigh re: Avie can't do Charlotte's Apr 3 party
+- Pick up Finasteride from Walgreens
 - Pay KUB bill
-- Fix Adobe billing
-- Fix Apple Pay Lost Mode (iCloud.com)
-- Reconnect Capital One to Venmo
-- Labcorp lab results review
-- Roxanne NDA/app email (32 days, Alex needs to process)
-- SwitchBot API token from Alex
-- Brandon Bruce Muse for All luncheon Apr 7 — RSVP pending
-- Avie Spring Picture Day April 9 — PREPAID ✅, added to calendar ✅
-- Enable Alex BB account (awaiting green light)
-- Find out who Omar Shaheen is
-- Cancel Monday 7am Lufthansa cron? (Charlotte already handling it)
 
-## Active Projects
-- **HoldPlease v2**: Architecture + GAN analysis done. Coding agent building Next.js app NOW. Port 3978.
-- **Batman Killed the Ghost**: v4 comedy cut shot list awaiting Alex approval (42 frames, stick figure comedy). Full project at projects/batman-killed-the-ghost/
-- **AVERY**: SHIPPED! abellminded.com/heyavery
-- **Hannah Music Studio**: Landing page live
-- **Dream Cycle**: 7 proposals pending review
-- **Second Brain**: 3,067 clean nodes, Weaver v3, weekly maintenance scripted
+## Alex Said He'd Do Tomorrow (Monday)
+- Pay Egerton McAfee $100 (BMack@emlaw.com, (865) 546-0500)
 
-## Critical Context
-- Hannah is pregnant (SECRET)
-- ORNL IP claim is a REAL blocker for consulting
-- Hue Bridge Pro may have arrived (was out for delivery Sat)
-- 1Password CLI auth timing out — needs troubleshooting
-- iMessage voice bubbles not working (GitHub #33377, waiting for OC fix)
-- SwitchBot blinds not in HA yet
+## Active Infrastructure
+- ✅ OpenClaw gateway running (Opus model)
+- ✅ BlueBubbles Debra (1234) + Alex (1235) both up
+- ✅ Things 3 CLI working (Things Cloud sync)
+- ✅ Hue Bridge paired (openhue CLI, use --rgb not --color)
+- ✅ obsidian-cli installed (SecondBrain default)
+- ✅ v0 API working (needs credit upgrade for more generations)
+- ✅ poppler installed (pdftotext)
+- ❌ Neo4j DOWN — needs `brew services start neo4j`
+- ❌ HoldPlease dev server not running (was on :3000, killed)
+- ⚠️ Alex account on Mac mini: 237 processes, disable iCloud except Contacts
 
-## Sunday Remaining (Mar 29)
-- 🚨 Boston hotel BOOK IT (trip is WEDNESDAY)
-- Alex's errands: Costco rewards, Whole Foods Amazon return, Walgreens Finasteride
-- Batman v4: awaiting shot list approval, then generate 42 frames
-- HoldPlease v2: coding agent building, check on progress
-- Vertical Batman cut: subagent running in background
-- Enable Alex BB account when approved
-- Review dream cycle proposals (backlog)
+## Batman Killed the Ghost
+- v5 delivered but not good enough. "dark night" = wrong interpretation, character drift
+- Research done: need Flux Kontext or LoRA for character consistency
+- v6 plan: character reference sheet → Flux Kontext API → scene generation with locked characters
+- Don't start v6 without proper tools. No more brute-force prompting.
+
+## Pending Decisions (need Alex)
+- v0 upgrade (ran out of credits)
+- Platform naming (Hey___?)
+- Batman v6 approach approval
+- 15 dream cycle proposals need review
+- ORNL Isaac compute roadmap — real or hallucinated?
+
+## Key Lessons Reinforced Today
+- openhue: use --rgb hex, not --color names
+- Things 3: uses Things Cloud, NOT iCloud sync
+- v0 API: works but credits are separate from Vercel Pro
+- Flux: text-to-image has NO character memory. Use Kontext/LoRA for consistency.
+- ALWAYS verify output before sending to Alex. Title card incident was preventable.

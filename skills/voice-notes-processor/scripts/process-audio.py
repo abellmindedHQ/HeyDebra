@@ -113,9 +113,10 @@ def transcribe(audio_path: Path) -> dict:
     print(f"[voice-notes] Upload complete. Submitting transcription...", flush=True)
 
     # Step 2: Submit transcription request
+    # Use speech_models with fallback list for reliability
     transcript_req = {
         "audio_url": upload_url,
-        "speech_models": ["universal-3-pro"],
+        "speech_models": ["universal-3-pro", "universal-2"],
         "speaker_labels": True,
         "auto_chapters": True,
         "entity_detection": True,
@@ -134,8 +135,10 @@ def transcribe(audio_path: Path) -> dict:
     transcript_id = submit_resp.json()["id"]
     print(f"[voice-notes] Transcription queued: {transcript_id}", flush=True)
 
-    # Step 3: Poll until complete
+    # Step 3: Poll until complete (with timeout)
     poll_url = f"{ASSEMBLYAI_BASE}/transcript/{transcript_id}"
+    MAX_POLL_SECONDS = 600  # 10 minute timeout per file
+    poll_start = time.time()
     while True:
         poll_resp = requests.get(poll_url, headers=headers)
         poll_resp.raise_for_status()
@@ -150,7 +153,11 @@ def transcribe(audio_path: Path) -> dict:
             print(f"[voice-notes] Transcription failed: {data.get('error')}", file=sys.stderr)
             sys.exit(1)
         else:
-            print(f"[voice-notes] Status: {status} — waiting...", flush=True)
+            elapsed = time.time() - poll_start
+            if elapsed > MAX_POLL_SECONDS:
+                print(f"[voice-notes] Transcription timed out after {int(elapsed)}s (transcript_id={transcript_id})", file=sys.stderr)
+                sys.exit(1)
+            print(f"[voice-notes] Status: {status} — waiting... ({int(elapsed)}s)", flush=True)
             time.sleep(5)
 
 

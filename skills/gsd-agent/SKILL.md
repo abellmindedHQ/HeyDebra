@@ -1,17 +1,20 @@
 ---
 name: gsd-agent
-description: Accountability enforcement engine. Reviews the GTD inbox and backlog, checks completion status, surfaces overdue and stale items, and generates a prioritized GSD Report. The anti-procrastination engine. Use when asked to "check my todos", "what do I owe people", "run GSD report", "what's overdue", "accountability check", or automatically via cron (2-3x daily). Can send the report via iMessage to Alex or post in session. Celebrates wins. Nags about stale items. Escalates when something overdue was promised to a real person.
+description: Accountability enforcement engine. Reviews the GTD inbox and backlog, checks completion status via Things 3, runs completion debrief, surfaces overdue and stale items, and generates a prioritized GSD Report. The anti-procrastination engine. Use when asked to "check my todos", "what do I owe people", "run GSD report", "what's overdue", "accountability check", or automatically via cron (2-3x daily). Can send the report via iMessage to Alex or post in session. Celebrates wins. Nags about stale items. Escalates when something overdue was promised to a real person.
 ---
 
 # gsd-agent
 
-Read every GTD file. Figure out what's stale, what's overdue, what's blocking. Generate a clear, no-bullshit report with a concrete TOP 3 action list. Celebrate what's done. Escalate what's critical.
+Read Things 3, the GTD files, and the completion journal. Run debrief first (celebrate wins). Then figure out what's stale, what's overdue, what's blocking. Generate a clear, no-bullshit report with a concrete TOP 3 action list.
+
+**Things 3 is the source of truth for active tasks.** inbox.md is the staging buffer. done.md is the completion journal.
 
 ## Inputs
 
 - **report_style** (optional): `full` (all items) | `summary` (just the highlights, default) | `top3` (just the three most critical things right now)
 - **notify** (optional): `session` (default) | `imessage` (send report to Alex via BlueBubbles)
 - **scope** (optional): `all` | `overdue` | `stale` | `promised` — filter what to analyze
+- **skip_debrief** (optional): skip the completion debrief step (for quick checks)
 
 ## Quick Invocation
 
@@ -29,149 +32,177 @@ Just the urgent list:
 Run gsd-agent — top3 only
 ```
 
-## GTD File Map
+## Source of Truth Hierarchy
 
-| File | Purpose | Written by |
-|------|---------|------------|
-| `/Users/debra/SecondBrain/GTD/inbox.md` | Raw captures, untriaged | capture-agent |
-| `/Users/debra/SecondBrain/GTD/backlog.md` | Triaged, prioritized items | Manual triage |
-| `/Users/debra/SecondBrain/GTD/done.md` | Completed items archive | Manual / gsd-agent |
-| `/Users/debra/SecondBrain/GTD/waiting.md` | Waiting on someone else | Manual triage |
-| `/Users/debra/SecondBrain/GTD/someday.md` | Not now, don't forget | Manual |
-| `/Users/debra/.openclaw/workspace/PROJECTS.md` | Project-level tracking | Manual |
-| `/Users/debra/.openclaw/workspace/active-context.md` | Current working state | Every session |
+| Source | Role | Tool |
+|--------|------|------|
+| **Things 3** | Active tasks, completed tasks, areas | `things` CLI |
+| **inbox.md** | Staging buffer (capture agent writes here) | File read |
+| **done.md** | Completion journal (append-only) | File read |
+| **backlog.md** | Legacy triaged items | File read |
+| **waiting.md** | Waiting on someone else | File read |
+| **active-context.md** | Current working state | File read |
 
 ## Workflow
 
-### 1. Read All GTD Files
+### 0. 🎉 COMPLETION DEBRIEF (Run First!)
+
+Before anything else, check for new completions:
+
+```bash
+python3 ~/.openclaw/workspace/skills/gsd-agent/scripts/completion-debrief.py
+```
+
+This script:
+1. Reads completed tasks from Things 3 (`things logtoday --json`)
+2. Compares against state file at `~/.openclaw/workspace/memory/debrief-state.json`
+3. For newly completed tasks:
+   - Logs them to `/Users/debra/SecondBrain/GTD/done.md`
+   - Returns a summary with velocity metrics
+4. Updates the state file
+
+Parse the JSON output. If `count > 0`:
+- **Celebrate first!** Lead the report with wins.
+- If `notify: imessage`: Send the `summary_text` from the debrief output to Alex via BlueBubbles
+- The debrief text asks: "nice work on these. anything spawn from them or any context worth noting?"
+- If Alex replies with follow-ups, the capture-agent will pick them up on next run
+
+If the debrief script fails or isn't available, fall back to reading done.md directly for recent `- [x]` entries.
+
+### 1. Pull Active Tasks from Things 3
+
+Things 3 is the source of truth. Pull from multiple views:
+
+```bash
+things today --json 2>/dev/null
+things upcoming --json --limit 20 2>/dev/null
+things inbox --json 2>/dev/null
+```
+
+Parse each task for: `uuid`, `title`, `status`, `start_date`, `stop_date`, `created`, `area_title`, `tags`, `notes`, `deadline`.
+
+### 2. Cross-Reference inbox.md
+
+Read the inbox staging buffer:
 
 ```bash
 cat /Users/debra/SecondBrain/GTD/inbox.md
-cat /Users/debra/SecondBrain/GTD/backlog.md
-cat /Users/debra/SecondBrain/GTD/done.md
-cat /Users/debra/SecondBrain/GTD/waiting.md
-cat /Users/debra/.openclaw/workspace/PROJECTS.md 2>/dev/null
+```
+
+Compare inbox items against Things 3 tasks (by title similarity). Flag any inbox items NOT yet in Things 3:
+
+```
+⚠️ UNPROMOTED: [N] items in inbox.md not yet in Things 3
+[list them]
+```
+
+These should be reviewed. Either:
+- Promote to Things 3 (if actionable)
+- Archive to meeting-insights (if not actionable)
+- Delete from inbox (if stale/irrelevant)
+
+### 3. Read Supporting GTD Files
+
+```bash
+cat /Users/debra/SecondBrain/GTD/backlog.md 2>/dev/null
+cat /Users/debra/SecondBrain/GTD/waiting.md 2>/dev/null
 cat /Users/debra/.openclaw/workspace/active-context.md 2>/dev/null
 ```
 
-Parse all `- [ ]` (open) and `- [x]` (done) items.
+### 4. Classify Each Open Task
 
-For each open item, extract:
-- Action text
-- Due date (from `due:` field)
-- Assigned to (from `assigned to:` field)
-- Captured date (from `captured:` field)
-- Priority (from `priority:` field)
-- Source (from `source:` field)
-- Last modified — infer from `captured:` or explicit `updated:` if present
-
-### 2. Classify Each Open Item
-
-Run each open item through these checks (in order of severity):
+Run each open task (from Things 3 + any unmatched inbox items) through these checks:
 
 **🔴 OVERDUE**
-- Has a `due:` date AND that date is in the past
-- OR is marked `priority: urgent` and was captured > 48 hours ago with no progress signal
+- Has a `deadline` AND that date is in the past
+- OR is tagged `urgent` and was created > 48 hours ago with no progress
 
 **🟡 STALE**
-- No progress in > 3 days (captured date is > 3 days ago, still open)
-- Has no due date but has been in inbox > 7 days (should have been triaged)
-- In backlog with no due date and captured > 5 days ago
+- No progress in > 3 days (created > 3 days ago, still open, no modification)
+- In inbox (either Things 3 inbox or inbox.md) > 7 days without triage
 
 **🟢 ON TRACK**
-- Has a future due date
-- OR was captured < 3 days ago
-- OR is in backlog with a due date that's still in the future
+- Has a future deadline
+- OR was created < 3 days ago
+- OR has recent activity
 
 **👥 PROMISED TO SOMEONE** (flag regardless of other status)
-- `assigned to:` references a real person (not "Alex" or "me")
-- OR source contains a person's name + a commitment phrase
-- These get an extra escalation flag if also overdue
+- Notes or title reference a real person's name + a commitment
+- These get extra escalation if also overdue
 
 **⏳ WAITING**
-- Items in waiting.md — check if they've been waiting > 5 days
+- Items in waiting.md or tagged as "waiting" in Things 3
 
-### 3. Stats Calculation
+### 5. Velocity Stats from done.md
 
-From `done.md`:
-- Count `- [x]` items with `completed:` date in the last 7 days → **completed this week**
-- Count `- [x]` items with `completed:` date in the last 24h → **completed today**
+Read the completion journal:
 
-From `inbox.md` + `backlog.md`:
-- Count `- [ ]` items with `captured:` in the last 7 days → **added this week**
-- Total open items → **open count**
+```bash
+cat /Users/debra/SecondBrain/GTD/done.md
+```
 
-**Velocity** = completed this week / added this week (express as a ratio or %)
-- If < 0.5: "you're falling behind — more coming in than going out"
-- If > 1.0: "crushing it — clearing faster than new stuff arrives"
-- If 0.5–1.0: "keeping pace"
+Calculate:
+- **Completed today**: entries with today's date
+- **Completed this week**: entries within last 7 days
+- **Average velocity**: mean days from creation to completion (from `velocity:` field)
+- **By area**: count completions per area
+- **Completion rate**: completed this week vs. open items (items out / items in)
 
-### 4. Parkinson's Law Check
+Velocity verdicts:
+- Rate < 0.5: "falling behind. more coming in than going out"
+- Rate 0.5-1.0: "keeping pace"
+- Rate > 1.0: "crushing it. clearing faster than new stuff arrives"
 
-For any open-ended task (no due date, in backlog > 3 days):
-- Suggest a chunked deadline: "This has been sitting since [date]. Want to time-box it? Suggest: [task] → done by [3 days from now]."
-- Include 1-3 of these suggestions in the report under a "Set a Deadline?" section.
+### 6. Parkinson's Law Check
 
-### 5. Top 3 Right Now
+For any open-ended task (no deadline, open > 3 days):
+- Suggest a chunked deadline: "This has been sitting since [date]. Time-box it? Suggest done by [3 days from now]."
+- Include 1-3 of these in the report
+
+### 7. Top 3 Right Now
 
 Rank all open items by:
 1. Overdue AND promised to someone → top priority
 2. Overdue → high priority
-3. Urgent priority + promised → high priority
+3. Urgent + promised → high priority
 4. Stale AND promised → medium-high
 5. Stale → medium
 6. On track + urgent → medium
 
-Pick the top 3 and make them concrete:
-- Lead with the action verb
-- Include the who/what/when
-- Keep it one line each
+Pick the top 3. Lead with action verb. Include who/what/when. One line each.
 
-### 6. Win Celebration
-
-If any items were completed in the last 24h (check done.md), lead the report with a shoutout:
-
-```
-🎉 WINS TODAY: [list completed items]
-```
-
-If nothing in 24h but wins in the last week:
-```
-✅ WINS THIS WEEK: [N] items shipped — [list if ≤ 3, or "see done.md" if more]
-```
-
-If the done.md has zero entries ever: skip the section, don't shame.
-
-### 7. Generate the Report
+### 8. Generate the Report
 
 ```markdown
 # 🗂 GSD Report — [Day, Date Time]
 
 ## 🎉 WINS
-[wins or "Nothing completed yet — let's fix that."]
+[debrief results — completed tasks with velocity]
+[or "Nothing completed yet. let's fix that."]
+
+---
+
+## 📊 VELOCITY
+- Completed today: [N]
+- Completed this week: [N]
+- Avg velocity: [N] days creation-to-done
+- By area: [area breakdown]
+- Rate: [verdict]
 
 ---
 
 ## 🔴 OVERDUE ([N] items)
-[list each overdue item, one per line, with due date]
-[⚠️ ESCALATE if promised to someone: "PROMISED TO [name] — flag this!"]
+[list each overdue item with deadline]
+[⚠️ ESCALATE if promised to someone: "PROMISED TO [name]. flag this!"]
 
 ## 🟡 STALE ([N] items)
-[list each stale item with how many days it's been sitting]
+[list with days sitting]
 
 ## 🟢 ON TRACK ([N] items)
-[brief list — next due date first]
+[brief list, next deadline first]
 
 ## ⏳ WAITING ([N] items)
-[items waiting on someone — with how long they've been waiting]
-
----
-
-## 📊 STATS
-- Open items: [N]
-- Completed this week: [N]
-- Added this week: [N]
-- Velocity: [ratio + verdict]
+[items waiting on someone, how long]
 
 ---
 
@@ -183,37 +214,31 @@ If the done.md has zero entries ever: skip the section, don't shame.
 ---
 
 ## ⏰ SET A DEADLINE?
-[1-3 Parkinson's Law nudges for open-ended items]
+[1-3 Parkinson's Law nudges]
+
+## ⚠️ UNPROMOTED ([N] inbox items not in Things 3)
+[list or "All inbox items synced to Things 3"]
 ```
 
-### 8. Escalation Protocol
+### 9. Escalation Protocol
 
-If ANY item is both:
-- Overdue (past due date or urgent + >48h old)
-- AND has `assigned to:` referencing a real named person (not Alex himself)
+If ANY item is both overdue AND has a named person referenced:
+1. Flag loudly with ⚠️
+2. If `notify: imessage`: prepend "⚠️ ESCALATION: [item]. you owe [person] this and it's overdue"
 
-Then:
-1. Flag it loudly in the report with ⚠️
-2. If `notify: imessage` mode: prepend the iMessage with "⚠️ ESCALATION: [item] — you owe [person] this and it's overdue"
+### 10. Deliver the Report
 
-### 9. Deliver the Report
+**Session mode** (default): Post formatted report in chat.
 
-**Session mode** (default): Post the formatted report directly in the chat.
-
-**iMessage mode**: Send a compressed version via BlueBubbles:
-
-```bash
-# Use the message tool with channel=bluebubbles, target=Alex's phone
-```
-
-iMessage format (compressed — texts, not essays):
+**iMessage mode**: Compressed version via BlueBubbles:
 
 ```
 GSD check [time] 🗂
 
-🔴 Overdue: [N] — [most critical one]
+🎉 Wins: [N completed] — [top win]
+🔴 Overdue: [N] — [most critical]
 🟡 Stale: [N] items sitting
-📊 [N] done this week, [N] open
+📊 velocity: [avg]d, [verdict]
 
 🎯 Top 3:
 1. [action]
@@ -227,55 +252,48 @@ Use the `message` tool:
 ```
 action: send
 channel: bluebubbles
-target: Alex  (or use phone +18135343383)
+target: Alex
 message: [compressed report]
 ```
 
-### 10. Triage Prompt (if inbox has untriaged items)
+### 11. Triage Prompt
 
-If `inbox.md` has > 5 uncaptured items that have been there > 24 hours, append to the report:
+If inbox.md has > 5 items sitting > 24 hours:
 
 ```
-📥 INBOX NEEDS TRIAGE: [N] raw items sitting in inbox.md for >24h. 
+📥 INBOX NEEDS TRIAGE: [N] raw items in inbox.md for >24h.
 Run: "triage my inbox" to move items to backlog/waiting/someday.
 ```
 
 ## Output Summary
 
-At the end of the run (for cron logs):
-
 ```
 GSD Report generated — [timestamp]
+- Wins: [N] (debrief)
 - Overdue: [N]
 - Stale: [N]
 - On track: [N]
 - Waiting: [N]
-- Wins today: [N]
-- Velocity: [ratio]
+- Velocity: [avg days], [rate verdict]
+- Unpromoted inbox items: [N]
 - Delivered: [session|imessage]
 ```
 
 ## Cron Setup
 
-Recommended: 3x daily — morning briefing, midday nudge, EOD wrap.
-
 ```
-# GSD Report — morning briefing
+# GSD Report — morning briefing (includes debrief of yesterday's completions)
 0 9 * * *   openclaw run gsd-agent --notify imessage --report_style summary
 
-# Midday nudge (session only)
-0 13 * * *  openclaw run gsd-agent --report_style top3
+# Midday nudge (session only, skip debrief)
+0 13 * * *  openclaw run gsd-agent --report_style top3 --skip_debrief
 
-# EOD accountability check
+# EOD accountability check (includes debrief)
 0 17 * * *  openclaw run gsd-agent --notify imessage --report_style summary
-```
-
-Or set up via OpenClaw:
-```
-Schedule gsd-agent to run at 9am, 1pm, and 5pm daily, send summary to Alex via iMessage
 ```
 
 ## Reference Files
 
-- **`references/gtd-triage-guide.md`**: Decision tree for triaging inbox items into backlog / waiting / someday. What makes something "urgent" vs. "normal" vs. parking-lot material.
-- **`references/escalation-patterns.md`**: Examples of "promised to someone" patterns — phrasing that signals a commitment to a named person vs. a general task.
+- **`scripts/completion-debrief.py`**: Completion debrief script. Reads Things 3, updates done.md, returns summary.
+- **`references/gtd-triage-guide.md`**: Decision tree for triaging inbox items.
+- **`references/escalation-patterns.md`**: Patterns for "promised to someone" detection.

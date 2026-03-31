@@ -1,17 +1,18 @@
 ---
 name: capture-agent
-description: Universal action item extractor. Scans ALL communication streams (email, iMessage, calendar, LLM exports, drop-folder text files) and writes extracted commitments, todos, follow-ups, and deadlines to the unified GTD inbox at /Users/debra/SecondBrain/GTD/inbox.md. Use when asked to "scan for action items", "capture todos", "check for commitments", "run capture agent", or automatically via cron (multiple times per day). Never overwrites — appends only. Deduplicates before writing.
+description: Universal action item extractor. Scans ALL communication streams (email, iMessage, calendar, LLM exports, drop-folder text files), classifies candidates through an LLM gate, writes verified action items to the GTD inbox at /Users/debra/SecondBrain/GTD/inbox.md, and auto-promotes actionable tasks to Things 3. Use when asked to "scan for action items", "capture todos", "check for commitments", "run capture agent", or automatically via cron (multiple times per day). Never overwrites — appends only. Deduplicates before writing.
 ---
 
 # capture-agent
 
-Scan every communication stream Alex touches, extract anything that looks like a commitment or action item, and drop it in the GTD inbox. The inbox is the catch-all; triage happens separately via gsd-agent.
+Scan every communication stream Alex touches, extract anything that looks like a commitment or action item, **classify it through an LLM gate**, and route verified items to both the GTD inbox AND Things 3. The inbox is the staging buffer; Things 3 is the source of truth for active tasks.
 
 ## Inputs
 
 - **sources** (optional): comma-separated list — `email`, `imessage`, `calendar`, `llm`, `scanfolder`, `all` (default: `all`)
 - **lookback** (optional): how many hours back to scan (default: `12` for cron, `48` for manual runs)
 - **keywords** (optional): extra trigger words to watch for (always includes defaults — see Config)
+- **dry_run** (optional): if true, classify but don't write to inbox or Things 3
 
 ## Quick Invocation
 
@@ -26,32 +27,75 @@ Run capture-agent — sources: all, lookback: 48 hours
 
 ## Config
 
-Defaults baked in. Edit this file to change them.
-
 | Setting | Default | Notes |
 |---------|---------|-------|
 | `lookback_hours` | 12 | Hours back to scan in cron mode |
 | `lookback_manual` | 48 | Hours back on manual invocation |
-| `inbox_file` | `/Users/debra/SecondBrain/GTD/inbox.md` | Append target |
+| `inbox_file` | `/Users/debra/SecondBrain/GTD/inbox.md` | Staging area (append target) |
 | `scan_folder` | `/Users/debra/SecondBrain/GTD/scan/` | Drop files here to auto-scan |
-| `model` | `claude-haiku-3-5` or `gemini-flash` | Cheap model — skim, don't deep-read |
+| `meeting_insights` | `/Users/debra/SecondBrain/GTD/meeting-insights-archive.md` | Non-actionable items route here |
+| `classifier_script` | `scripts/classify-item.py` | LLM classification gate |
+| `model` | `gemini` (via gemini CLI) | Cheap model for classification |
 | `email_max_messages` | 30 | Cap on emails pulled per run |
 | `imessage_max_chats` | 10 | Cap on chat threads scanned |
 
 **Default trigger keywords** (always active):
 `todo`, `action item`, `follow up`, `follow-up`, `remind me`, `don't forget`, `please`, `can you`, `could you`, `will you`, `I'll`, `I will`, `we need to`, `need to`, `deadline`, `by [date]`, `EOD`, `EOW`, `ASAP`, `urgent`, `committed`, `promised`, `owe you`
 
+## Architecture: The Three-Gate Pipeline
+
+```
+Source Scan → Keyword Extraction → HEURISTIC GATE → LLM GATE → inbox.md + Things 3
+                                        ↓                ↓
+                                    (discard)     (discard or archive)
+```
+
+**Gate 1 — Keyword Match** (existing): Scan sources for trigger keywords. This produces CANDIDATES.
+
+**Gate 2 — Heuristic Pre-Filter** (NEW): Fast, no-API-call filter. Rejects:
+- Text < 20 characters
+- Pure greetings ("hey", "thanks", "ok", "lol", etc.)
+- Pure questions under 80 chars
+- Social filler ("I'll talk to you later", "I'll see you", "love you")
+
+**Gate 3 — LLM Classification** (NEW): Remaining candidates go to `scripts/classify-item.py` in batches. The LLM determines:
+- Is this a concrete, actionable task with a clear owner and outcome? (yes/no)
+- Priority: urgent / normal / low
+- Assignee: who's responsible
+- Due date: if mentioned
+- Clean title: concise task description
+
+Items that fail Gate 3 are either discarded or routed to `meeting-insights-archive.md`.
+
+### Classification Examples
+
+| Candidate | Actionable? | Why |
+|-----------|------------|-----|
+| "I'll talk to you later" | ❌ No | Social filler, no concrete outcome |
+| "Yeah that's fair" | ❌ No | Agreement, not a task |
+| "We should get together sometime" | ❌ No | Vague, no timeline or outcome |
+| "Can you send me the link?" | ❌ No | Simple request, not a tracked task |
+| "I'll get those quotes together and send them to you by Friday" | ✅ Yes | Concrete deliverable, deadline, clear owner |
+| "Need to schedule Avie's dentist appointment" | ✅ Yes | Concrete task, clear outcome |
+| "Follow up with Jay about the budget review" | ✅ Yes | Named person, specific action |
+| "ASAP: review the security audit report" | ✅ Yes | Urgent, specific deliverable |
+
 ## Workflow
 
-### 1. Check the Inbox for Existing Items (Deduplication Prep)
+### 1. Dedup Prep
 
-Before scanning, read the last 100 lines of the inbox to build a dedup fingerprint list:
+Read the last 100 lines of inbox to build dedup fingerprints:
 
 ```bash
 tail -100 /Users/debra/SecondBrain/GTD/inbox.md
 ```
 
-Extract the core action phrase from each line. Hold in memory for dedup comparison during extraction.
+Also check recent Things 3 tasks to avoid duplicating existing items:
+
+```bash
+things today --json 2>/dev/null | python3 -c "import sys,json; [print(t['title']) for t in json.load(sys.stdin)]"
+things inbox --json 2>/dev/null | python3 -c "import sys,json; [print(t['title']) for t in json.load(sys.stdin)]"
+```
 
 ### 2. Scan: Email
 
@@ -60,13 +104,10 @@ gog gmail list --account alexander.o.abell@gmail.com --max-results 30 --unread
 ```
 
 For each email:
-- Check sender, subject, snippet
-- Flag if subject or body contains trigger keywords
+- Check sender, subject, snippet for trigger keywords
 - For flagged emails, fetch full body: `gog gmail get --account ... --id [message_id]`
-- Extract action items using the extraction prompt (see §Extraction Prompt)
+- Extract candidate action items using extraction prompt (see §Extraction Prompt)
 - Source tag: `email:[subject]:[sender]`
-
-Don't read every email deeply. Skim subject + snippet first. Only pull full body if keywords hit.
 
 ### 3. Scan: iMessage
 
@@ -80,17 +121,14 @@ curl -s "http://localhost:1234/api/v1/chat/[chat_guid]/message?limit=20&after=[l
   | jq '.data[] | {text: .text, handle: .handle.id, date: .date_created}'
 ```
 
-Focus on:
-- Messages FROM Alex (his commitments)
-- Messages directed TO Alex asking him to do something
-- Any message containing trigger keywords
+Focus on messages FROM Alex (his commitments) and messages directed TO Alex with requests.
 
-Source tag: `imessage:[contact_name]:[chat_guid_short]`
-
-Known chats to prioritize (from TOOLS.md):
+Known priority chats (from TOOLS.md):
 - Jay (boss): `91468caf20824cd696f30436e54c004a`
 - Annika (co-parent): `9a04d0b72baf4d03b88b9fddaead4dc3`
 - Hannah (girlfriend): `chat284576019517930648`
+
+Source tag: `imessage:[contact_name]:[chat_guid_short]`
 
 ### 4. Scan: Calendar
 
@@ -98,11 +136,7 @@ Known chats to prioritize (from TOOLS.md):
 gog calendar list --account alexander.o.abell@gmail.com --days-ahead 3 --days-behind 1
 ```
 
-For each event in the past 24h (recently completed meetings):
-- Extract the event description and attendees
-- Look for embedded action items in the description
-- For future events: extract any prep tasks mentioned
-
+Extract action items from recently completed meetings and prep tasks for upcoming events.
 Source tag: `calendar:[event_title]:[date]`
 
 ### 5. Scan: Drop Folder
@@ -111,70 +145,132 @@ Source tag: `calendar:[event_title]:[date]`
 ls /Users/debra/SecondBrain/GTD/scan/ 2>/dev/null
 ```
 
-If files exist, read each one:
-```bash
-cat /Users/debra/SecondBrain/GTD/scan/[filename]
-```
-
-Extract action items from the full text (these are intentionally dropped for processing, so read fully).
-After successful extraction, move file to `/Users/debra/SecondBrain/GTD/scan/processed/[filename]`.
-
+Read each file, extract candidates, move processed files to `scan/processed/`.
 Source tag: `file:[filename]`
 
-### 6. Scan: LLM Export (if present)
+### 6. Scan: LLM Exports (if present)
 
-Look for recent LLM export files:
 ```bash
 ls -t ~/Downloads/*.json ~/Downloads/*.md 2>/dev/null | head -5
-ls -t /Users/debra/SecondBrain/GTD/scan/*.json 2>/dev/null
-```
-
-If `conversations.json` or similar is present, run a targeted grep before deep-reading:
-```bash
-grep -i "action item\|todo\|follow up\|remind\|deadline\|I'll\|we need" [file] | head -50
 ```
 
 Source tag: `llm:[filename]`
 
-### 7. Extraction Prompt
+### 6b. Classification Gate (Heuristic Pre-Filter)
 
-Use a cheap model (Haiku or Gemini Flash). Feed it each source chunk with this prompt:
+After extracting candidates from any source, run them through the local heuristic classifier before writing to inbox or sending to the LLM gate:
+
+```bash
+echo '[{"text": "candidate text", "source": "email:subject:sender"}]' | python3 scripts/classify-item.py --actionable-only
+```
+
+The classifier (`scripts/classify-item.py`) runs **locally with zero API calls**:
+1. **Length filter**: Rejects items < 20 characters
+2. **Greeting filter**: Rejects pure greetings, reactions, filler
+3. **Question filter**: Rejects pure questions under 80 chars
+4. **Social filler filter**: Rejects "I'll talk to you later", "love you", etc.
+5. **Action verb detection**: Looks for concrete verbs (send, call, schedule, buy, fix, review...)
+6. **Commitment pattern matching**: Detects "I'll", "I need to", "we need to", "promised", etc.
+7. **Area mapping**: Keywords to Things 3 areas (ORNL, Health & Money, Build, People, Life Ops)
+
+**Only write items where `is_actionable: true` to inbox.md.**
+
+For each actionable item, also auto-promote to Things 3:
+```bash
+things add --title "[action]" --notes "Source: [source_tag]" --when today --area "[area from classifier]"
+```
+
+Items where `is_actionable: false` can be:
+- Discarded (greetings, filler, too short)
+- Routed to meeting-insights-archive.md (if they had some content but no action verb)
+
+This gate runs BEFORE the LLM gate (step 8) and eliminates 60-80% of noise at zero cost.
+
+### 7. Extraction Prompt (Pre-Classification)
+
+Use a cheap model to extract CANDIDATES from each source chunk:
 
 ```
-You are extracting action items from a conversation/email/text.
+You are extracting potential action items from a conversation/email/text.
 
 Rules:
-- Extract ONLY concrete commitments, todos, follow-ups, and deadlines
-- Ignore small talk, observations, and general discussion
-- For each item, identify: WHO is responsible, WHAT needs to happen, WHEN (if mentioned), ASSIGNED BY (if applicable)
-- Priority: urgent = explicit deadline <48h or "ASAP"; low = vague future; normal = everything else
-- Return JSON array, each item: {"action": "...", "assignee": "...", "due": "...", "assigned_by": "...", "priority": "urgent|normal|low"}
-- If nothing actionable, return []
+- Extract anything that MIGHT be a commitment, todo, follow-up, or deadline
+- Include the full context phrase (not just keywords)
+- For each item: {"text": "full phrase", "source": "source_tag"}
+- Cast a wide net here — the classifier will filter downstream
+- Return JSON array. If nothing found, return []
 
 TEXT:
 [paste chunk here]
 ```
 
-Keep chunks small (< 2000 chars). Skim, don't dump entire inboxes.
+### 8. 🚦 CLASSIFICATION GATE (The Key Step)
 
-### 8. Write to Inbox
+Collect ALL candidates from all sources into a single batch. Run through the classifier:
 
-For each extracted item:
+```bash
+echo '[candidates_json]' | python3 scripts/classify-item.py
+```
 
-1. **Dedup check**: Does the action text closely match anything already in the inbox tail? If yes, skip.
+The classifier script (`scripts/classify-item.py`) runs:
+1. **Heuristic pre-filter**: Rejects greetings, short text, questions, social filler (zero API cost)
+2. **LLM classification**: Batches remaining candidates to gemini CLI for yes/no actionability + metadata
+3. **Area mapping**: Maps each actionable item to a Things 3 area
+
+Output: JSON array of only actionable items with `priority`, `assignee`, `due`, `area`, `clean_title`.
+
+**If the classifier script is not available**, fall back to inline classification: use the extraction prompt but with stricter rules asking the model to determine actionability. Never skip classification entirely.
+
+### 9. Write to Inbox (Staging)
+
+For each classified actionable item:
+
+1. **Dedup check**: Skip if title closely matches existing inbox or Things 3 items
 2. **Format the line**:
 
 ```markdown
-- [ ] [action text] — assigned to: [assignee], due: [due or "not specified"], assigned by: [who], priority: [urgent/normal/low], source: [source_tag], captured: [YYYY-MM-DD HH:MM]
+- [ ] [clean_title] // assigned to: [assignee], due: [due or "not specified"], priority: [priority], source: [source_tag], area: [area], captured: [YYYY-MM-DD HH:MM]
 ```
 
-3. **Append** to `/Users/debra/SecondBrain/GTD/inbox.md` — never overwrite, always append.
+3. **Append** to `/Users/debra/SecondBrain/GTD/inbox.md`
+
+### 10. 🎯 Auto-Promote to Things 3
+
+For each actionable item, also create in Things 3:
 
 ```bash
-echo "- [ ] [formatted line]" >> /Users/debra/SecondBrain/GTD/inbox.md
+things add --title "[clean_title]" --notes "Source: [source_tag]. Captured: [timestamp]" --when today --list "[area]" --tags "[priority]"
 ```
 
-### 9. Create Scan Folder if Missing
+**Area mapping for `--list` flag:**
+| Context Keywords | Things 3 Area |
+|-----------------|---------------|
+| ORNL, work, meeting, oak ridge | 🏢 ORNL |
+| finance, money, insurance, health, doctor, budget, tax | 💊 Health & Money |
+| hannah, annika, avie, sallijo, chelsea, merle, birthday | 👨‍👧 People |
+| code, build, openclaw, deploy, github, linear, api, skill | 🚀 Build |
+| everything else | 🏠 Life Ops |
+
+**Priority tag mapping:**
+- `urgent` → `--tags "urgent"`
+- `normal` → `--tags "normal"`
+- `low` → `--tags "low"`
+
+If `--when` has a specific due date from classification, use that instead of "today".
+
+### 11. Route Non-Actionable Items
+
+Items that fail LLM classification but contain potentially useful context (meeting notes, observations, discussion points) get appended to:
+
+```
+/Users/debra/SecondBrain/GTD/meeting-insights-archive.md
+```
+
+Format: `- [context snippet] // source: [source_tag], captured: [timestamp]`
+
+This prevents total information loss while keeping the inbox clean.
+
+### 12. Create Folders if Missing
 
 ```bash
 mkdir -p /Users/debra/SecondBrain/GTD/scan/processed
@@ -182,24 +278,28 @@ mkdir -p /Users/debra/SecondBrain/GTD/scan/processed
 
 ## Output Summary
 
-After each run, report:
-
 ```
 📥 Capture complete — [timestamp]
-- Email: [N] messages scanned, [N] items extracted
-- iMessage: [N] chats scanned, [N] items extracted
-- Calendar: [N] events scanned, [N] items extracted
+- Email: [N] messages scanned, [N] candidates found
+- iMessage: [N] chats scanned, [N] candidates found
+- Calendar: [N] events scanned, [N] candidates found
 - Drop folder: [N] files processed
-- Total new items added to inbox: [N]
+
+Classification results:
+- Heuristic rejected: [N] (greetings, filler, too short)
+- LLM rejected: [N] (not actionable)
+- Actionable items: [N]
 - Dupes skipped: [N]
-- Inbox: /Users/debra/SecondBrain/GTD/inbox.md
+
+Routed:
+- inbox.md: [N] new items
+- Things 3: [N] tasks created
+- Meeting insights archive: [N] items
 ```
 
-If zero items extracted from everything: "All clear — no new action items captured."
+If zero actionable items: "All clear. Scanned [N] candidates, nothing actionable."
 
 ## Cron Setup
-
-Recommended schedule (3x daily + overnight catch-up):
 
 ```
 # Capture agent — 3x daily
@@ -208,12 +308,8 @@ Recommended schedule (3x daily + overnight catch-up):
 0 4 * * *        openclaw run capture-agent --lookback 12
 ```
 
-Or set up via OpenClaw:
-```
-Schedule capture-agent to run every 6 hours
-```
-
 ## Reference Files
 
-- **`references/extraction-examples.md`**: Sample extractions showing good vs. bad captures, edge cases, and tricky patterns (promises vs. observations, questions vs. commitments).
-- **`references/source-guide.md`**: API shapes for each source — BlueBubbles response format, gog gmail output, calendar event fields.
+- **`scripts/classify-item.py`**: The LLM classification gate script. Heuristic + LLM pipeline.
+- **`references/extraction-examples.md`**: Sample extractions showing good vs. bad captures.
+- **`references/source-guide.md`**: API shapes for each source (BlueBubbles, gog gmail, calendar).

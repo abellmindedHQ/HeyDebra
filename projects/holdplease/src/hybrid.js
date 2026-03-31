@@ -174,9 +174,21 @@ app.post('/voice/hybrid-connect', (req, res) => {
   log(`[HYBRID] Call answered, starting media stream: ${callSid}`);
 
   const host = new URL(BASE_URL).host;
+  const session = holdSessions.get(callSid);
+
+  // Check if call has IVR digits to navigate before streaming
+  let ivrTwiml = '';
+  if (session && session.callData && session.callData.ivrDigits) {
+    const digits = session.callData.ivrDigits;
+    log(`[HYBRID] Pre-navigating IVR with digits: ${JSON.stringify(digits)}`);
+    for (const step of digits) {
+      ivrTwiml += `  <Pause length="${step.pause || 12}" />\n  <Play digits="${step.digit}" />\n`;
+    }
+  }
+
   const twiml = `<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Start>
+${ivrTwiml}  <Start>
     <Stream url="wss://${host}/hybrid-stream" track="inbound_track">
       <Parameter name="callSid" value="${callSid}" />
     </Stream>
@@ -680,10 +692,10 @@ app.post('/api/lookup', async (req, res) => {
 // Start call (uses hybrid mode)
 app.post('/api/holdplease', async (req, res) => {
   try {
-    const { company, phoneNumber, task, reference, callback } = req.body;
+    const { company, phoneNumber, task, reference, callback, ivrDigits } = req.body;
     if (!phoneNumber || !task) return res.status(400).json({ success: false, error: 'Phone number and task required' });
 
-    const result = await startHoldModeCall({ company, phoneNumber, task, reference, callback });
+    const result = await startHoldModeCall({ company, phoneNumber, task, reference, callback, ivrDigits });
     res.json({ success: true, callId: result.callId });
   } catch (err) {
     log(`[HYBRID] Error: ${err.message}`);

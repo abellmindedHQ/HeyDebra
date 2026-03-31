@@ -1,0 +1,4411 @@
+{
+  "imported": {
+    "#1 The Law Of The Architect.txt": {
+      "status": "imported",
+      "output": "otter-1-the-law-of-the-architect.md",
+      "speakers": [
+        "Speaker 1"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.243843"
+    },
+    "#2 The Law Of Exchange.txt": {
+      "status": "imported",
+      "output": "otter-2-the-law-of-exchange.md",
+      "speakers": [
+        "Speaker 1"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.244481"
+    },
+    "#3 The Law Of Open Cycles.txt": {
+      "status": "imported",
+      "output": "otter-3-the-law-of-open-cycles.md",
+      "speakers": [
+        "Speaker 1"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.245118"
+    },
+    "#LunchBreak - John from This L...le Pig @ Sunday\u2019s Delicatessen.txt": {
+      "status": "imported",
+      "output": "otter-lunchbreak-john-from-this-lle-pig-sundays-delicatessen.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 22,
+      "date": "2026-03-31T07:17:44.245867"
+    },
+    "1-on-1 with Jay #restructure #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-1-on-1-with-jay-restructure-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 39,
+      "date": "2026-03-31T07:17:44.246684"
+    },
+    "36_86 Conference Student Pitch #2 Me Mo Ma.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-student-pitch-2-me-mo-ma.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 29,
+      "date": "2026-03-31T07:17:44.247151"
+    },
+    "36_86 Conference Student Pitch...etition_ #1 Intelligent System.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-student-pitchetition-1-intelligent-system.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 17,
+      "date": "2026-03-31T07:17:44.247586"
+    },
+    "36_86 Conference.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1"
+      ],
+      "segments": 7,
+      "date": "2026-03-31T07:17:44.247955"
+    },
+    "36_86 Conference_ ARMS Cyber.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-arms-cyber.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 18,
+      "date": "2026-03-31T07:17:44.248382"
+    },
+    "36_86 Conference_ Cogentis Therapeutics.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-cogentis-therapeutics.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 67,
+      "date": "2026-03-31T07:17:44.248939"
+    },
+    "36_86 Conference_ Compass.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-compass.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 14,
+      "date": "2026-03-31T07:17:44.249307"
+    },
+    "36_86 Conference_ ELI Repairs.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-eli-repairs.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 12,
+      "date": "2026-03-31T07:17:44.249587"
+    },
+    "36_86 Conference_ Herowear.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-herowear.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 8,
+      "date": "2026-03-31T07:17:44.250043"
+    },
+    "36_86 Conference_ Kyto Armor.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-kyto-armor.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 13,
+      "date": "2026-03-31T07:17:44.250463"
+    },
+    "36_86 Conference_ Quantum Lock.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-quantum-lock.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 12,
+      "date": "2026-03-31T07:17:44.250882"
+    },
+    "36_86 Conference_ Quick Fix.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-quick-fix.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 16,
+      "date": "2026-03-31T07:17:44.251283"
+    },
+    "36_86 Conference_ Winter Innovations.txt": {
+      "status": "imported",
+      "output": "otter-36-86-conference-winter-innovations.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 14,
+      "date": "2026-03-31T07:17:44.251884"
+    },
+    "9_3_2024 AppDev Leadership Meeting.txt": {
+      "status": "imported",
+      "output": "otter-9-3-2024-appdev-leadership-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 210,
+      "date": "2026-03-31T07:17:44.252870"
+    },
+    "AI 4 Ops Jam.txt": {
+      "status": "imported",
+      "output": "otter-ai-4-ops-jam.md",
+      "speakers": [
+        "Alex Abell",
+        "Jason Patrick",
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 11",
+        "Speaker 12",
+        "Speaker 13",
+        "Speaker 14",
+        "Speaker 15",
+        "Speaker 16",
+        "Speaker 17",
+        "Speaker 18",
+        "Speaker 19",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 239,
+      "date": "2026-03-31T07:17:44.254356"
+    },
+    "AI4Ops SBMS Access Sync.txt": {
+      "status": "imported",
+      "output": "otter-ai4ops-sbms-access-sync.md",
+      "speakers": [
+        "Alex Abell",
+        "Angelique Diedrick",
+        "Mike Shell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 69,
+      "date": "2026-03-31T07:17:44.255106"
+    },
+    "ASAP Biz Planning Session.txt": {
+      "status": "imported",
+      "output": "otter-asap-biz-planning-session.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 377,
+      "date": "2026-03-31T07:17:44.256209"
+    },
+    "ASAP _ Delaware Library Friends Intro Call.txt": {
+      "status": "imported",
+      "output": "otter-asap-delaware-library-friends-intro-call.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 110,
+      "date": "2026-03-31T07:17:44.257303"
+    },
+    "Access Controls (Privileged Accounts) .txt": {
+      "status": "imported",
+      "output": "otter-access-controls-privileged-accounts.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.257657"
+    },
+    "Alex & Hannah Couples Therapy Session with Jared.txt": {
+      "status": "imported",
+      "output": "otter-alex-hannah-couples-therapy-session-with-jared.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Jared Fuson"
+      ],
+      "segments": 83,
+      "date": "2026-03-31T07:17:44.258800"
+    },
+    "Alex Catchup Meeting with TLs.txt": {
+      "status": "imported",
+      "output": "otter-alex-catchup-meeting-with-tls.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 120,
+      "date": "2026-03-31T07:17:44.259670"
+    },
+    "Alex _ Jay 1-on-1 Reorg Discussion #reset2026 #reorg.txt": {
+      "status": "imported",
+      "output": "otter-alex-jay-1-on-1-reorg-discussion-reset2026-reorg.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Unknown Speaker"
+      ],
+      "segments": 80,
+      "date": "2026-03-31T07:17:44.262759"
+    },
+    "Alex __ Brandon Reorg discussion #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-alex-brandon-reorg-discussion-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Brandon Brown",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 100,
+      "date": "2026-03-31T07:17:44.263621"
+    },
+    "Alex and Jay Weekly 1_1(1).txt": {
+      "status": "imported",
+      "output": "otter-alex-and-jay-weekly-1-11.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 116,
+      "date": "2026-03-31T07:17:44.264431"
+    },
+    "Alex and Jay Weekly 1_1(2).txt": {
+      "status": "imported",
+      "output": "otter-alex-and-jay-weekly-1-12.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 77,
+      "date": "2026-03-31T07:17:44.265067"
+    },
+    "Alex and Jay Weekly 1_1.txt": {
+      "status": "imported",
+      "output": "otter-alex-and-jay-weekly-1-1.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 23,
+      "date": "2026-03-31T07:17:44.265709"
+    },
+    "Alex and Roxanne Discussion Before Windshield Incident.txt": {
+      "status": "imported",
+      "output": "otter-alex-and-roxanne-discussion-before-windshield-incident.md",
+      "speakers": [
+        "Alex Abell",
+        "Roxanne Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 342,
+      "date": "2026-03-31T07:17:44.267193"
+    },
+    "Alex_Chuck Executive Coaching(1).txt": {
+      "status": "imported",
+      "output": "otter-alex-chuck-executive-coaching1.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 49,
+      "date": "2026-03-31T07:17:44.267721"
+    },
+    "Alex_Chuck Executive Coaching.txt": {
+      "status": "imported",
+      "output": "otter-alex-chuck-executive-coaching.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 44,
+      "date": "2026-03-31T07:17:44.268461"
+    },
+    "Alex_Pam IT Strategy and Reorganization #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-alex-pam-it-strategy-and-reorganization-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Pam DeGraffenreid",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 212,
+      "date": "2026-03-31T07:17:44.269854"
+    },
+    "Amy_Alex meet about AI and ORNL web systems.txt": {
+      "status": "imported",
+      "output": "otter-amy-alex-meet-about-ai-and-ornl-web-systems.md",
+      "speakers": [
+        "Alex Abell",
+        "Amy Elliott"
+      ],
+      "segments": 39,
+      "date": "2026-03-31T07:17:44.270547"
+    },
+    "Angelique One-on-One.txt": {
+      "status": "imported",
+      "output": "otter-angelique-one-on-one.md",
+      "speakers": [
+        "Alex Abell",
+        "Angelique Diedrick",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 70,
+      "date": "2026-03-31T07:17:44.271246"
+    },
+    "Annika _ Alex Tax and Parenting Plan Discussion.txt": {
+      "status": "imported",
+      "output": "otter-annika-alex-tax-and-parenting-plan-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Annika Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 257,
+      "date": "2026-03-31T07:17:44.272542"
+    },
+    "App Scorecard Initiative.txt": {
+      "status": "imported",
+      "output": "otter-app-scorecard-initiative.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 50,
+      "date": "2026-03-31T07:17:44.273217"
+    },
+    "AppDev Division Calibration Meeting.txt": {
+      "status": "imported",
+      "output": "otter-appdev-division-calibration-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Brooks Herring",
+        "Jay Eckles",
+        "Sarah Glei",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 336,
+      "date": "2026-03-31T07:17:44.274505"
+    },
+    "AppDev Leadership Meeting (In Person)(2).txt": {
+      "status": "imported",
+      "output": "otter-appdev-leadership-meeting-in-person2.md",
+      "speakers": [
+        "Alex Abell",
+        "Brooks Herring",
+        "Jay Eckles",
+        "Kevin Sellars",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 266,
+      "date": "2026-03-31T07:17:44.276307"
+    },
+    "AppDev Leadership Meeting (In Person)(3).txt": {
+      "status": "imported",
+      "output": "otter-appdev-leadership-meeting-in-person3.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Kevin Sellars",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 165,
+      "date": "2026-03-31T07:17:44.277111"
+    },
+    "AppDev Leadership Meeting (In Person)(4).txt": {
+      "status": "imported",
+      "output": "otter-appdev-leadership-meeting-in-person4.md",
+      "speakers": [
+        "Alex Abell",
+        "Heather Bort",
+        "Jay Eckles",
+        "Kevin Sellars",
+        "Pam DeGraffenreid",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 255,
+      "date": "2026-03-31T07:17:44.278440"
+    },
+    "AppDev Leadership Meeting (In Person).txt": {
+      "status": "imported",
+      "output": "otter-appdev-leadership-meeting-in-person.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 377,
+      "date": "2026-03-31T07:17:44.279878"
+    },
+    "AppDev Management Reorg Review (Onsite Meeting) (1).txt": {
+      "status": "imported",
+      "output": "otter-appdev-management-reorg-review-onsite-meeting-1.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Jay Eckles",
+        "Kevin Sellars",
+        "Rachael Jackson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 61,
+      "date": "2026-03-31T07:17:44.280606"
+    },
+    "AppDev Management Reorg Review (Onsite Meeting) .txt": {
+      "status": "imported",
+      "output": "otter-appdev-management-reorg-review-onsite-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Brad Greenfield",
+        "Jay Eckles",
+        "Kevin Sellars",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 31,
+      "date": "2026-03-31T07:17:44.280989"
+    },
+    "Application Development Division All Hands, May 1, 2025.txt": {
+      "status": "imported",
+      "output": "otter-application-development-division-all-hands-may-1-2025.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 11",
+        "Speaker 12",
+        "Speaker 13",
+        "Speaker 14",
+        "Speaker 15",
+        "Speaker 16",
+        "Speaker 17",
+        "Speaker 18",
+        "Speaker 19",
+        "Speaker 2",
+        "Speaker 20",
+        "Speaker 21",
+        "Speaker 22",
+        "Speaker 23",
+        "Speaker 24",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 484,
+      "date": "2026-03-31T07:17:44.282718"
+    },
+    "Application Portfolio Planning.txt": {
+      "status": "imported",
+      "output": "otter-application-portfolio-planning.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 49,
+      "date": "2026-03-31T07:17:44.283197"
+    },
+    "Architecture _ transformation discussion with Pam.txt": {
+      "status": "imported",
+      "output": "otter-architecture-transformation-discussion-with-pam.md",
+      "speakers": [
+        "Alex Abell",
+        "Pam DeGraffenreid",
+        "Unknown Speaker"
+      ],
+      "segments": 66,
+      "date": "2026-03-31T07:17:44.284791"
+    },
+    "Aron Fejes Interview - Sr. AI Developer for BI @ ORNL.txt": {
+      "status": "imported",
+      "output": "otter-aron-fejes-interview-sr-ai-developer-for-bi-ornl.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 33,
+      "date": "2026-03-31T07:17:44.285464"
+    },
+    "Atlassian Touchbase.txt": {
+      "status": "imported",
+      "output": "otter-atlassian-touchbase.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 39,
+      "date": "2026-03-31T07:17:44.286065"
+    },
+    "Award Selection Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-award-selection-strategy-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 99,
+      "date": "2026-03-31T07:17:44.286969"
+    },
+    "Brandon Brown catch up with Alex.txt": {
+      "status": "imported",
+      "output": "otter-brandon-brown-catch-up-with-alex.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1"
+      ],
+      "segments": 102,
+      "date": "2026-03-31T07:17:44.287905"
+    },
+    "Break Tampa Bay Info Session.txt": {
+      "status": "imported",
+      "output": "otter-break-tampa-bay-info-session.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 212,
+      "date": "2026-03-31T07:17:44.288737"
+    },
+    "Brooks _ Alex Meeting #transformation #reorg.txt": {
+      "status": "imported",
+      "output": "otter-brooks-alex-meeting-transformation-reorg.md",
+      "speakers": [
+        "Alex Abell",
+        "Brooks Herring",
+        "Unknown Speaker"
+      ],
+      "segments": 58,
+      "date": "2026-03-31T07:17:44.291209"
+    },
+    "Brooks and Alex (reorg deck review_refine).txt": {
+      "status": "imported",
+      "output": "otter-brooks-and-alex-reorg-deck-review-refine.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 200,
+      "date": "2026-03-31T07:17:44.293940"
+    },
+    "Budget meeting - Web Services .txt": {
+      "status": "imported",
+      "output": "otter-budget-meeting-web-services.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Josh Hill"
+      ],
+      "segments": 7,
+      "date": "2026-03-31T07:17:44.294257"
+    },
+    "Budgeting Process Improvement Meeting.txt": {
+      "status": "imported",
+      "output": "otter-budgeting-process-improvement-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Sara Wood",
+        "Unknown Speaker"
+      ],
+      "segments": 59,
+      "date": "2026-03-31T07:17:44.294799"
+    },
+    "BugCrowd Full Report Readout.txt": {
+      "status": "imported",
+      "output": "otter-bugcrowd-full-report-readout.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 123,
+      "date": "2026-03-31T07:17:44.295564"
+    },
+    "Career Development Consultation.txt": {
+      "status": "imported",
+      "output": "otter-career-development-consultation.md",
+      "speakers": [
+        "Alex Abell",
+        "Dave Mandeville",
+        "Pam DeGraffenreid",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 77,
+      "date": "2026-03-31T07:17:44.298732"
+    },
+    "Career and Financial Planning.txt": {
+      "status": "imported",
+      "output": "otter-career-and-financial-planning.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 43,
+      "date": "2026-03-31T07:17:44.299428"
+    },
+    "Casual Family Gathering.txt": {
+      "status": "imported",
+      "output": "otter-casual-family-gathering.md",
+      "speakers": [
+        "Alexander Abell",
+        "Sallijo Archer",
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 306,
+      "date": "2026-03-31T07:17:44.300245"
+    },
+    "Causal Analysis Review Meeting...point page Access Denied error.txt": {
+      "status": "imported",
+      "output": "otter-causal-analysis-review-meetingpoint-page-access-denied-error.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 21,
+      "date": "2026-03-31T07:17:44.300759"
+    },
+    "Change Management Strategy Review #PIT.txt": {
+      "status": "imported",
+      "output": "otter-change-management-strategy-review-pit.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Unknown Speaker"
+      ],
+      "segments": 35,
+      "date": "2026-03-31T07:17:44.301408"
+    },
+    "Chaperone Training.txt": {
+      "status": "imported",
+      "output": "otter-chaperone-training.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 135,
+      "date": "2026-03-31T07:17:44.323642"
+    },
+    "Charge Code Management Meeting.txt": {
+      "status": "imported",
+      "output": "otter-charge-code-management-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 125,
+      "date": "2026-03-31T07:17:44.334104"
+    },
+    "Chat with Billy and Cruz about #40characterlimit #SAP.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-billy-and-cruz-about-40characterlimit-sap.md",
+      "speakers": [
+        "Alex Abell",
+        "Billy Matthews III",
+        "Cruz Arce",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 33,
+      "date": "2026-03-31T07:17:44.334563"
+    },
+    "Chat with Brad and chat with Jason.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-brad-and-chat-with-jason.md",
+      "speakers": [
+        "Alexander Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 113,
+      "date": "2026-03-31T07:17:44.337426"
+    },
+    "Chat with David Wantland about...evices.ORNL.gov #webgovernance.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-david-wantland-aboutevicesornlgov-webgovernance.md",
+      "speakers": [
+        "Alex Abell",
+        "David Wantland"
+      ],
+      "segments": 33,
+      "date": "2026-03-31T07:17:44.337987"
+    },
+    "Chat with Jason About Reorganization #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-jason-about-reorganization-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Jason Patrick",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 152,
+      "date": "2026-03-31T07:17:44.339503"
+    },
+    "Chat with Jimmy from Canny.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-jimmy-from-canny.md",
+      "speakers": [
+        "Alex Abell",
+        "Jimmy (Canny)",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 80,
+      "date": "2026-03-31T07:17:44.342099"
+    },
+    "Chat with Patrick Martin about...election rule #ServiceNow #APM.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-patrick-martin-aboutelection-rule-servicenow-apm.md",
+      "speakers": [
+        "Alex Abell",
+        "Patrick Martin",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 34,
+      "date": "2026-03-31T07:17:44.342759"
+    },
+    "Chat with Rachael about #40cha...n ServiceNow #needsdemand #APM.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-rachael-about-40chan-servicenow-needsdemand-apm.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Patrick Martin",
+        "Rachael Jackson",
+        "Unknown Speaker"
+      ],
+      "segments": 99,
+      "date": "2026-03-31T07:17:44.346290"
+    },
+    "Chat with Sarah about SAP #40char limit.txt": {
+      "status": "imported",
+      "output": "otter-chat-with-sarah-about-sap-40char-limit.md",
+      "speakers": [
+        "Alex Abell",
+        "Sarah Glei",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 21,
+      "date": "2026-03-31T07:17:44.346960"
+    },
+    "Coaching Session with Chuck.txt": {
+      "status": "imported",
+      "output": "otter-coaching-session-with-chuck.md",
+      "speakers": [
+        "Chuck Carringer",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 16,
+      "date": "2026-03-31T07:17:44.347672"
+    },
+    "Coefficient Context Options.txt": {
+      "status": "imported",
+      "output": "otter-coefficient-context-options.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 178,
+      "date": "2026-03-31T07:17:44.349072"
+    },
+    "Community Building Platform Strategy.txt": {
+      "status": "imported",
+      "output": "otter-community-building-platform-strategy.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1"
+      ],
+      "segments": 76,
+      "date": "2026-03-31T07:17:44.349976"
+    },
+    "Conflict Resolution Attempt(1).txt": {
+      "status": "imported",
+      "output": "otter-conflict-resolution-attempt1.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge"
+      ],
+      "segments": 11,
+      "date": "2026-03-31T07:17:44.350365"
+    },
+    "Conflict Resolution Attempt.txt": {
+      "status": "imported",
+      "output": "otter-conflict-resolution-attempt.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 32,
+      "date": "2026-03-31T07:17:44.350794"
+    },
+    "Conflict Resolution Meeting(1).txt": {
+      "status": "imported",
+      "output": "otter-conflict-resolution-meeting1.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge"
+      ],
+      "segments": 38,
+      "date": "2026-03-31T07:17:44.351141"
+    },
+    "Conflict Resolution Meeting(2).txt": {
+      "status": "imported",
+      "output": "otter-conflict-resolution-meeting2.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 5,
+      "date": "2026-03-31T07:17:44.351390"
+    },
+    "Conflict Resolution Meeting.txt": {
+      "status": "imported",
+      "output": "otter-conflict-resolution-meeting.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 2,
+      "date": "2026-03-31T07:17:44.351695"
+    },
+    "Convo with Kevin About Budgeting and Reorg and visibility.txt": {
+      "status": "imported",
+      "output": "otter-convo-with-kevin-about-budgeting-and-reorg-and-visibility.md",
+      "speakers": [
+        "Alexander Abell",
+        "Kevin Sellars",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 151,
+      "date": "2026-03-31T07:17:44.353127"
+    },
+    "Core University Updates.txt": {
+      "status": "imported",
+      "output": "otter-core-university-updates.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 57,
+      "date": "2026-03-31T07:17:44.354913"
+    },
+    "Cost Object Categorization Meeting.txt": {
+      "status": "imported",
+      "output": "otter-cost-object-categorization-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Kevin Sellars",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 137,
+      "date": "2026-03-31T07:17:44.356274"
+    },
+    "Creative Role-Playing Session.txt": {
+      "status": "imported",
+      "output": "otter-creative-role-playing-session.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 123,
+      "date": "2026-03-31T07:17:44.357165"
+    },
+    "Data Call Process Overview.txt": {
+      "status": "imported",
+      "output": "otter-data-call-process-overview.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 62,
+      "date": "2026-03-31T07:17:44.357988"
+    },
+    "Design Adk Follow-up - Claudia __ Alex .txt": {
+      "status": "imported",
+      "output": "otter-design-adk-follow-up-claudia-alex.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 37,
+      "date": "2026-03-31T07:17:44.358890"
+    },
+    "DevOps and Such.txt": {
+      "status": "imported",
+      "output": "otter-devops-and-such.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 271,
+      "date": "2026-03-31T07:17:44.361329"
+    },
+    "Dietitian appointment with Lorin Grimsley.txt": {
+      "status": "imported",
+      "output": "otter-dietitian-appointment-with-lorin-grimsley.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 426,
+      "date": "2026-03-31T07:17:44.364651"
+    },
+    "Digital Transformation Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-digital-transformation-strategy-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 17,
+      "date": "2026-03-31T07:17:44.371625"
+    },
+    "Digital Transformation Strategy.txt": {
+      "status": "imported",
+      "output": "otter-digital-transformation-strategy.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 4,
+      "date": "2026-03-31T07:17:44.371929"
+    },
+    "Discuss APM_EA Workspace Pilot Project.txt": {
+      "status": "imported",
+      "output": "otter-discuss-apm-ea-workspace-pilot-project.md",
+      "speakers": [
+        "Alex Abell",
+        "Heather Bort",
+        "Speaker 1"
+      ],
+      "segments": 27,
+      "date": "2026-03-31T07:17:44.372550"
+    },
+    "Discuss Reclassification.txt": {
+      "status": "imported",
+      "output": "otter-discuss-reclassification.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Sarah Glei",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 22,
+      "date": "2026-03-31T07:17:44.372853"
+    },
+    "Discussion about external site spin up and spin down.txt": {
+      "status": "imported",
+      "output": "otter-discussion-about-external-site-spin-up-and-spin-down.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 35,
+      "date": "2026-03-31T07:17:44.373314"
+    },
+    "Discussion about surgery part 1.txt": {
+      "status": "imported",
+      "output": "otter-discussion-about-surgery-part-1.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 137,
+      "date": "2026-03-31T07:17:44.373968"
+    },
+    "Discussion about surgery part 2.txt": {
+      "status": "imported",
+      "output": "otter-discussion-about-surgery-part-2.md",
+      "speakers": [
+        "Alex Abell",
+        "Roxanne Abell",
+        "Sallijo Archer"
+      ],
+      "segments": 16,
+      "date": "2026-03-31T07:17:44.374206"
+    },
+    "Discussion_ Automation.txt": {
+      "status": "imported",
+      "output": "otter-discussion-automation.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 65,
+      "date": "2026-03-31T07:17:44.374910"
+    },
+    "Discussion_ ITSD Communication SharePoint Requests.txt": {
+      "status": "imported",
+      "output": "otter-discussion-itsd-communication-sharepoint-requests.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Gerhard Schneibel",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 47,
+      "date": "2026-03-31T07:17:44.375628"
+    },
+    "Discussion_ PRA_PTA.txt": {
+      "status": "imported",
+      "output": "otter-discussion-pra-pta.md",
+      "speakers": [
+        "Angie Jones",
+        "Jay Eckles"
+      ],
+      "segments": 3,
+      "date": "2026-03-31T07:17:44.375868"
+    },
+    "Discussion_ SQA vs InfoSec Focus.txt": {
+      "status": "imported",
+      "output": "otter-discussion-sqa-vs-infosec-focus.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 83,
+      "date": "2026-03-31T07:17:44.376594"
+    },
+    "Domain Renewal Process Review.txt": {
+      "status": "imported",
+      "output": "otter-domain-renewal-process-review.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 45,
+      "date": "2026-03-31T07:17:44.377254"
+    },
+    "Dr. Ray ENT for Avie(2).txt": {
+      "status": "imported",
+      "output": "otter-dr-ray-ent-for-avie2.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 15,
+      "date": "2026-03-31T07:17:44.377490"
+    },
+    "Dr. Ray ENT for Avie.txt": {
+      "status": "imported",
+      "output": "otter-dr-ray-ent-for-avie.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 51,
+      "date": "2026-03-31T07:17:44.377835"
+    },
+    "Dream Analysis and Family History.txt": {
+      "status": "imported",
+      "output": "otter-dream-analysis-and-family-history.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 59,
+      "date": "2026-03-31T07:17:44.378528"
+    },
+    "Drupal Scrum Field Observation 9-11-2025.txt": {
+      "status": "imported",
+      "output": "otter-drupal-scrum-field-observation-9-11-2025.md",
+      "speakers": [
+        "Alex Abell",
+        "Brittany Cramer",
+        "Cindy Latham",
+        "Dave Mandeville",
+        "Jesse Wolfe",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 204,
+      "date": "2026-03-31T07:17:44.379538"
+    },
+    "Drupal Site Management Meeting.txt": {
+      "status": "imported",
+      "output": "otter-drupal-site-management-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 36,
+      "date": "2026-03-31T07:17:44.380743"
+    },
+    "Drupal Time with the GL.txt": {
+      "status": "imported",
+      "output": "otter-drupal-time-with-the-gl.md",
+      "speakers": [
+        "Alex Abell",
+        "Cindy Latham",
+        "Dave Mandeville",
+        "Jesse Wolfe",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 59,
+      "date": "2026-03-31T07:17:44.381515"
+    },
+    "EA _ Application Management Project Alignment(1).txt": {
+      "status": "imported",
+      "output": "otter-ea-application-management-project-alignment1.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 46,
+      "date": "2026-03-31T07:17:44.382143"
+    },
+    "EA _ Application Management Project Alignment.txt": {
+      "status": "imported",
+      "output": "otter-ea-application-management-project-alignment.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.382461"
+    },
+    "Emotional Communication Challenges.txt": {
+      "status": "imported",
+      "output": "otter-emotional-communication-challenges.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 70,
+      "date": "2026-03-31T07:17:44.382943"
+    },
+    "Emotional Confrontation Resolution.txt": {
+      "status": "imported",
+      "output": "otter-emotional-confrontation-resolution.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 9,
+      "date": "2026-03-31T07:17:44.383201"
+    },
+    "Emotional Safety Discussion.txt": {
+      "status": "imported",
+      "output": "otter-emotional-safety-discussion.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 7,
+      "date": "2026-03-31T07:17:44.383423"
+    },
+    "Employee Disciplinary Process Review.txt": {
+      "status": "imported",
+      "output": "otter-employee-disciplinary-process-review.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1"
+      ],
+      "segments": 10,
+      "date": "2026-03-31T07:17:44.383682"
+    },
+    "Estate Legal Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-estate-legal-strategy-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 15,
+      "date": "2026-03-31T07:17:44.384273"
+    },
+    "Event Solution Pre-Meeting.txt": {
+      "status": "imported",
+      "output": "otter-event-solution-pre-meeting.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 71,
+      "date": "2026-03-31T07:17:44.384983"
+    },
+    "F&O Forms - SharePoint Modernization.txt": {
+      "status": "imported",
+      "output": "otter-fo-forms-sharepoint-modernization.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 50,
+      "date": "2026-03-31T07:17:44.385474"
+    },
+    "F&O Forms Rebuild.txt": {
+      "status": "imported",
+      "output": "otter-fo-forms-rebuild.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 27,
+      "date": "2026-03-31T07:17:44.385833"
+    },
+    "FY26 Budget_Spend Review.txt": {
+      "status": "imported",
+      "output": "otter-fy26-budget-spend-review.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 29,
+      "date": "2026-03-31T07:17:44.386442"
+    },
+    "FY26 Web Modernization Proposal.txt": {
+      "status": "imported",
+      "output": "otter-fy26-web-modernization-proposal.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 64,
+      "date": "2026-03-31T07:17:44.387008"
+    },
+    "Family Boundary Setting Meeting.txt": {
+      "status": "imported",
+      "output": "otter-family-boundary-setting-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Sallijo Archer",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 216,
+      "date": "2026-03-31T07:17:44.387950"
+    },
+    "Family Planning Calendar & Database in Notion.txt": {
+      "status": "imported",
+      "output": "otter-family-planning-calendar-database-in-notion.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1"
+      ],
+      "segments": 45,
+      "date": "2026-03-31T07:17:44.388427"
+    },
+    "FeatureOS Discussion with Jamie #PIT.txt": {
+      "status": "imported",
+      "output": "otter-featureos-discussion-with-jamie-pit.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 162,
+      "date": "2026-03-31T07:17:44.389477"
+    },
+    "Figma -_ CSS_SASS.txt": {
+      "status": "imported",
+      "output": "otter-figma-css-sass.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 113,
+      "date": "2026-03-31T07:17:44.390540"
+    },
+    "Finance 1_1 with Josh and Jay (Monthly) .txt": {
+      "status": "imported",
+      "output": "otter-finance-1-1-with-josh-and-jay-monthly.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Josh Hill",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 109,
+      "date": "2026-03-31T07:17:44.391166"
+    },
+    "Financial Agreement Planning.txt": {
+      "status": "imported",
+      "output": "otter-financial-agreement-planning.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 84,
+      "date": "2026-03-31T07:17:44.391836"
+    },
+    "Financial Communication Challenges.txt": {
+      "status": "imported",
+      "output": "otter-financial-communication-challenges.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 201,
+      "date": "2026-03-31T07:17:44.393153"
+    },
+    "Financial Conflict Resolution.txt": {
+      "status": "imported",
+      "output": "otter-financial-conflict-resolution.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 24,
+      "date": "2026-03-31T07:17:44.393611"
+    },
+    "Financial Obligations Resolution.txt": {
+      "status": "imported",
+      "output": "otter-financial-obligations-resolution.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 118,
+      "date": "2026-03-31T07:17:44.394418"
+    },
+    "Financial Planning Meeting(1).txt": {
+      "status": "imported",
+      "output": "otter-financial-planning-meeting1.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 71,
+      "date": "2026-03-31T07:17:44.394925"
+    },
+    "Financial Planning Meeting(2).txt": {
+      "status": "imported",
+      "output": "otter-financial-planning-meeting2.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Unknown Speaker"
+      ],
+      "segments": 48,
+      "date": "2026-03-31T07:17:44.395381"
+    },
+    "Financial Planning Meeting(3).txt": {
+      "status": "imported",
+      "output": "otter-financial-planning-meeting3.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 322,
+      "date": "2026-03-31T07:17:44.396680"
+    },
+    "Financial Planning Meeting.txt": {
+      "status": "imported",
+      "output": "otter-financial-planning-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 21,
+      "date": "2026-03-31T07:17:44.397409"
+    },
+    "Financial Planning Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-financial-planning-strategy-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 80,
+      "date": "2026-03-31T07:17:44.398248"
+    },
+    "Financial Relationship Counseling.txt": {
+      "status": "imported",
+      "output": "otter-financial-relationship-counseling.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 349,
+      "date": "2026-03-31T07:17:44.415623"
+    },
+    "Financial Relationship Dynamics.txt": {
+      "status": "imported",
+      "output": "otter-financial-relationship-dynamics.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 525,
+      "date": "2026-03-31T07:17:44.418535"
+    },
+    "Financial Strain Resolution Meeting.txt": {
+      "status": "imported",
+      "output": "otter-financial-strain-resolution-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Unknown Speaker"
+      ],
+      "segments": 65,
+      "date": "2026-03-31T07:17:44.436361"
+    },
+    "Financial Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-financial-strategy-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 59,
+      "date": "2026-03-31T07:17:44.437012"
+    },
+    "Financial and Relationship Challenges.txt": {
+      "status": "imported",
+      "output": "otter-financial-and-relationship-challenges.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 86,
+      "date": "2026-03-31T07:17:44.437818"
+    },
+    "Focus time(1).txt": {
+      "status": "imported",
+      "output": "otter-focus-time1.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge"
+      ],
+      "segments": 26,
+      "date": "2026-03-31T07:17:44.438195"
+    },
+    "Focus time(3).txt": {
+      "status": "imported",
+      "output": "otter-focus-time3.md",
+      "speakers": [
+        "Alexander Abell",
+        "Brooks Herring"
+      ],
+      "segments": 21,
+      "date": "2026-03-31T07:17:44.438528"
+    },
+    "Focus time(4).txt": {
+      "status": "imported",
+      "output": "otter-focus-time4.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 6,
+      "date": "2026-03-31T07:17:44.438776"
+    },
+    "Focus time(5).txt": {
+      "status": "imported",
+      "output": "otter-focus-time5.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1"
+      ],
+      "segments": 8,
+      "date": "2026-03-31T07:17:44.439086"
+    },
+    "Focus time(6).txt": {
+      "status": "imported",
+      "output": "otter-focus-time6.md",
+      "speakers": [
+        "Alexander Abell",
+        "Brooks Herring"
+      ],
+      "segments": 50,
+      "date": "2026-03-31T07:17:44.439520"
+    },
+    "Focus time.txt": {
+      "status": "imported",
+      "output": "otter-focus-time.md",
+      "speakers": [
+        "Alexander Abell",
+        "Mike Shell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 20,
+      "date": "2026-03-31T07:17:44.439802"
+    },
+    "Follow up - SNow changes - Intake.txt": {
+      "status": "imported",
+      "output": "otter-follow-up-snow-changes-intake.md",
+      "speakers": [
+        "Alex Abell",
+        "Andrew Ramkisson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 84,
+      "date": "2026-03-31T07:17:44.440364"
+    },
+    "GI Consultation.txt": {
+      "status": "imported",
+      "output": "otter-gi-consultation.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 52,
+      "date": "2026-03-31T07:17:44.440820"
+    },
+    "Goals.txt": {
+      "status": "imported",
+      "output": "otter-goals.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 100,
+      "date": "2026-03-31T07:17:44.441977"
+    },
+    "Google Analytics Configuration.txt": {
+      "status": "imported",
+      "output": "otter-google-analytics-configuration.md",
+      "speakers": [
+        "Speaker 1"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.442314"
+    },
+    "Governance Modernization_ CSPP Rewrite Interview.txt": {
+      "status": "imported",
+      "output": "otter-governance-modernization-cspp-rewrite-interview.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 147,
+      "date": "2026-03-31T07:17:44.443281"
+    },
+    "Hannah & Alex\u2019s Last Conversation in Denver.txt": {
+      "status": "imported",
+      "output": "otter-hannah-alexs-last-conversation-in-denver.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 64,
+      "date": "2026-03-31T07:17:44.443752"
+    },
+    "Hannah Finance and Job Discussion.txt": {
+      "status": "imported",
+      "output": "otter-hannah-finance-and-job-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 144,
+      "date": "2026-03-31T07:17:44.444912"
+    },
+    "Hannah Job Prospects Discussion.txt": {
+      "status": "imported",
+      "output": "otter-hannah-job-prospects-discussion.md",
+      "speakers": [
+        "Hannah Aldridge"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.445243"
+    },
+    "Hannah Thinks I\u2019m Not Okay - Thursday Before Holland.txt": {
+      "status": "imported",
+      "output": "otter-hannah-thinks-im-not-okay-thursday-before-holland.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 10,
+      "date": "2026-03-31T07:17:44.445491"
+    },
+    "Hannah Touring _ Finances Overview.txt": {
+      "status": "imported",
+      "output": "otter-hannah-touring-finances-overview.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 116,
+      "date": "2026-03-31T07:17:44.446224"
+    },
+    "Hannah _ Alex Finances Discussion.txt": {
+      "status": "imported",
+      "output": "otter-hannah-alex-finances-discussion.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 187,
+      "date": "2026-03-31T07:17:44.446901"
+    },
+    "Hannah and Alex Finance Discussion.txt": {
+      "status": "imported",
+      "output": "otter-hannah-and-alex-finance-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 309,
+      "date": "2026-03-31T07:17:44.448288"
+    },
+    "Hannah and Alex Finance Talks.txt": {
+      "status": "imported",
+      "output": "otter-hannah-and-alex-finance-talks.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 101,
+      "date": "2026-03-31T07:17:44.449098"
+    },
+    "Hannah and Alex Moving Decisions.txt": {
+      "status": "imported",
+      "output": "otter-hannah-and-alex-moving-decisions.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Unknown Speaker"
+      ],
+      "segments": 232,
+      "date": "2026-03-31T07:17:44.458887"
+    },
+    "Hannah and AlexBig Disxussion Part 2.txt": {
+      "status": "imported",
+      "output": "otter-hannah-and-alexbig-disxussion-part-2.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 223,
+      "date": "2026-03-31T07:17:44.460351"
+    },
+    "Hannah and AlexMood Tracking Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-hannah-and-alexmood-tracking-strategy-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 296,
+      "date": "2026-03-31T07:17:44.462598"
+    },
+    "Hannah being upset with me for god knows what.txt": {
+      "status": "imported",
+      "output": "otter-hannah-being-upset-with-me-for-god-knows-what.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 54,
+      "date": "2026-03-31T07:17:44.463441"
+    },
+    "Hannah discussing being frustrated with driving situation.txt": {
+      "status": "imported",
+      "output": "otter-hannah-discussing-being-frustrated-with-driving-situation.md",
+      "speakers": [
+        "Hannah Aldridge"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.463775"
+    },
+    "Hannah_Alex - Household Budgeting _ Cohabitation Plan.txt": {
+      "status": "imported",
+      "output": "otter-hannah-alex-household-budgeting-cohabitation-plan.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 191,
+      "date": "2026-03-31T07:17:44.465253"
+    },
+    "Healthcare Update Discussion.txt": {
+      "status": "imported",
+      "output": "otter-healthcare-update-discussion.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 13,
+      "date": "2026-03-31T07:17:44.465511"
+    },
+    "Household finances.txt": {
+      "status": "imported",
+      "output": "otter-household-finances.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 16,
+      "date": "2026-03-31T07:17:44.465800"
+    },
+    "Human Centered Design COI.txt": {
+      "status": "imported",
+      "output": "otter-human-centered-design-coi.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 27,
+      "date": "2026-03-31T07:17:44.466422"
+    },
+    "Hydrosource Discussion.txt": {
+      "status": "imported",
+      "output": "otter-hydrosource-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Rachael Jackson",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 132,
+      "date": "2026-03-31T07:17:44.467551"
+    },
+    "Hydrosource.txt": {
+      "status": "imported",
+      "output": "otter-hydrosource.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Unknown Speaker"
+      ],
+      "segments": 37,
+      "date": "2026-03-31T07:17:44.468099"
+    },
+    "IT Strategy and Alignment Meeting.txt": {
+      "status": "imported",
+      "output": "otter-it-strategy-and-alignment-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 72,
+      "date": "2026-03-31T07:17:44.468955"
+    },
+    "IT Strategy and Governance Review.txt": {
+      "status": "imported",
+      "output": "otter-it-strategy-and-governance-review.md",
+      "speakers": [
+        "Alexander Abell",
+        "Pam DeGraffenreid",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 55,
+      "date": "2026-03-31T07:17:44.469532"
+    },
+    "IT Strategy and Planning Meeting.txt": {
+      "status": "imported",
+      "output": "otter-it-strategy-and-planning-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 64,
+      "date": "2026-03-31T07:17:44.470172"
+    },
+    "ITSD All Hands Q2.txt": {
+      "status": "imported",
+      "output": "otter-itsd-all-hands-q2.md",
+      "speakers": [
+        "Alex Abell",
+        "Brooks Herring",
+        "Kris Torgerson",
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 11",
+        "Speaker 12",
+        "Speaker 13",
+        "Speaker 14",
+        "Speaker 15",
+        "Speaker 16",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 78,
+      "date": "2026-03-31T07:17:44.471514"
+    },
+    "ITSD Budgeting Reform Transfor...tion Analysis Planning Meeting.txt": {
+      "status": "imported",
+      "output": "otter-itsd-budgeting-reform-transfortion-analysis-planning-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Sara Wood",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3"
+      ],
+      "segments": 77,
+      "date": "2026-03-31T07:17:44.472126"
+    },
+    "ITSD CAS Workshop.txt": {
+      "status": "imported",
+      "output": "otter-itsd-cas-workshop.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 208,
+      "date": "2026-03-31T07:17:44.474774"
+    },
+    "ITSD Lunch & Learn - Strategic Stacks FY26 Priorities.txt": {
+      "status": "imported",
+      "output": "otter-itsd-lunch-learn-strategic-stacks-fy26-priorities.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Kris Torgerson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4"
+      ],
+      "segments": 48,
+      "date": "2026-03-31T07:17:44.475856"
+    },
+    "ITSD Lunch & Learn - Strategic... FY26 Priorities & Focus Areas.txt": {
+      "status": "imported",
+      "output": "otter-itsd-lunch-learn-strategic-fy26-priorities-focus-areas.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 48,
+      "date": "2026-03-31T07:17:44.476497"
+    },
+    "ITSD Risk Management Program Touchbase.txt": {
+      "status": "imported",
+      "output": "otter-itsd-risk-management-program-touchbase.md",
+      "speakers": [
+        "Alex Abell",
+        "Andrew Ramkisson",
+        "Dionne Harper",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 114,
+      "date": "2026-03-31T07:17:44.477128"
+    },
+    "Ignite Speech Pass 1.txt": {
+      "status": "imported",
+      "output": "otter-ignite-speech-pass-1.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 7,
+      "date": "2026-03-31T07:17:44.477485"
+    },
+    "Ignite Tampa Bay - Practice #1.txt": {
+      "status": "imported",
+      "output": "otter-ignite-tampa-bay-practice-1.md",
+      "speakers": [
+        "Alexander Abell"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.477778"
+    },
+    "Ignite Tampa Bay Script with Story (best).txt": {
+      "status": "imported",
+      "output": "otter-ignite-tampa-bay-script-with-story-best.md",
+      "speakers": [
+        "Alexander Abell"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.478037"
+    },
+    "Image Consulting Session Liz Lopez.txt": {
+      "status": "imported",
+      "output": "otter-image-consulting-session-liz-lopez.md",
+      "speakers": [
+        "Alexander Abell",
+        "Liz Lopez",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 78,
+      "date": "2026-03-31T07:17:44.478631"
+    },
+    "Initiative Pipeline Prioritization for Steering Committee.txt": {
+      "status": "imported",
+      "output": "otter-initiative-pipeline-prioritization-for-steering-committee.md",
+      "speakers": [
+        "Alex Abell",
+        "Dionne Harper",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 150,
+      "date": "2026-03-31T07:17:44.479275"
+    },
+    "Internal webpage with limited access.txt": {
+      "status": "imported",
+      "output": "otter-internal-webpage-with-limited-access.md",
+      "speakers": [
+        "Alexander Abell",
+        "Angie Jones",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 106,
+      "date": "2026-03-31T07:17:44.479950"
+    },
+    "Intranet Homepage Enhancement Meeting.txt": {
+      "status": "imported",
+      "output": "otter-intranet-homepage-enhancement-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 53,
+      "date": "2026-03-31T07:17:44.480481"
+    },
+    "Iteright_ Alex Abell & Alex Brodsky.txt": {
+      "status": "imported",
+      "output": "otter-iteright-alex-abell-alex-brodsky.md",
+      "speakers": [
+        "Alex Abell",
+        "Alex Brodsky",
+        "Speaker 1"
+      ],
+      "segments": 199,
+      "date": "2026-03-31T07:17:44.481670"
+    },
+    "Jay _ Alex 1-on-1 8_13 #FixItOnce #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-jay-alex-1-on-1-8-13-fixitonce-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Unknown Speaker"
+      ],
+      "segments": 33,
+      "date": "2026-03-31T07:17:44.482261"
+    },
+    "Jay_Alex Reorg #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-jay-alex-reorg-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 41,
+      "date": "2026-03-31T07:17:44.514297"
+    },
+    "Jay\u2019s Concerns and Constraints...PIT _ Restructuring #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-jays-concerns-and-constraintspit-restructuring-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 67,
+      "date": "2026-03-31T07:17:44.517868"
+    },
+    "KDF check-in.txt": {
+      "status": "imported",
+      "output": "otter-kdf-check-in.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 205,
+      "date": "2026-03-31T07:17:44.520437"
+    },
+    "Kim and Alex GL Catchup - #Reset2026.txt": {
+      "status": "imported",
+      "output": "otter-kim-and-alex-gl-catchup-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Kim Smithson",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 65,
+      "date": "2026-03-31T07:17:44.521165"
+    },
+    "Lab Website Integration Planning.txt": {
+      "status": "imported",
+      "output": "otter-lab-website-integration-planning.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 52,
+      "date": "2026-03-31T07:17:44.528160"
+    },
+    "Leadership and Team Dynamics.txt": {
+      "status": "imported",
+      "output": "otter-leadership-and-team-dynamics.md",
+      "speakers": [
+        "Alex Abell",
+        "DJ Edwardson",
+        "Speaker 1"
+      ],
+      "segments": 16,
+      "date": "2026-03-31T07:17:44.532286"
+    },
+    "Learn how to use Otter.txt": {
+      "status": "imported",
+      "output": "otter-learn-how-to-use-otter.md",
+      "speakers": [
+        "Charlie",
+        "Lisa"
+      ],
+      "segments": 18,
+      "date": "2026-03-31T07:17:44.534272"
+    },
+    "Legal Process Clarification.txt": {
+      "status": "imported",
+      "output": "otter-legal-process-clarification.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 10,
+      "date": "2026-03-31T07:17:44.534591"
+    },
+    "Legal Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-legal-strategy-meeting.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 454,
+      "date": "2026-03-31T07:17:44.536148"
+    },
+    "Licensing Impact Meeting.txt": {
+      "status": "imported",
+      "output": "otter-licensing-impact-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Martinez",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 71,
+      "date": "2026-03-31T07:17:44.538701"
+    },
+    "Long convo with Hannah about Roxanne and rest year and etc.txt": {
+      "status": "imported",
+      "output": "otter-long-convo-with-hannah-about-roxanne-and-rest-year-and-etc.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 203,
+      "date": "2026-03-31T07:17:44.540326"
+    },
+    "Lunchpool pitch.txt": {
+      "status": "imported",
+      "output": "otter-lunchpool-pitch.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 5,
+      "date": "2026-03-31T07:17:44.543410"
+    },
+    "Manger Central Feedback Session 2.txt": {
+      "status": "imported",
+      "output": "otter-manger-central-feedback-session-2.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 42,
+      "date": "2026-03-31T07:17:44.543994"
+    },
+    "Meet & Greet and Vision Swap(1).txt": {
+      "status": "imported",
+      "output": "otter-meet-greet-and-vision-swap1.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 167,
+      "date": "2026-03-31T07:17:44.546506"
+    },
+    "Meeting with Betsy Sonewald #fixitonce.txt": {
+      "status": "imported",
+      "output": "otter-meeting-with-betsy-sonewald-fixitonce.md",
+      "speakers": [
+        "Alex Abell",
+        "Betsy Sonewald"
+      ],
+      "segments": 26,
+      "date": "2026-03-31T07:17:44.549728"
+    },
+    "Meeting with Brad about Web Go... from the top down #PIT #Canny.txt": {
+      "status": "imported",
+      "output": "otter-meeting-with-brad-about-web-go-from-the-top-down-pit-canny.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 23,
+      "date": "2026-03-31T07:17:44.550232"
+    },
+    "Meeting with Lawyer.txt": {
+      "status": "imported",
+      "output": "otter-meeting-with-lawyer.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 368,
+      "date": "2026-03-31T07:17:44.551139"
+    },
+    "Mom\u2019s Medication Discussion.txt": {
+      "status": "imported",
+      "output": "otter-moms-medication-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Sallijo Archer",
+        "Sarah Voyles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 282,
+      "date": "2026-03-31T07:17:44.565246"
+    },
+    "Mom\u2019s Post-Surgery Cardiologist Visit.txt": {
+      "status": "imported",
+      "output": "otter-moms-post-surgery-cardiologist-visit.md",
+      "speakers": [
+        "Luke Camp",
+        "Sallijo Archer",
+        "Unknown Speaker"
+      ],
+      "segments": 13,
+      "date": "2026-03-31T07:17:44.566409"
+    },
+    "Mortgage Pre-Approval Consultation.txt": {
+      "status": "imported",
+      "output": "otter-mortgage-pre-approval-consultation.md",
+      "speakers": [
+        "Alexander Abell",
+        "Crysta Johnson"
+      ],
+      "segments": 11,
+      "date": "2026-03-31T07:17:44.566678"
+    },
+    "Neutrons pre-meeting.txt": {
+      "status": "imported",
+      "output": "otter-neutrons-pre-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 45,
+      "date": "2026-03-31T07:17:44.567191"
+    },
+    "Neutrons....what if.txt": {
+      "status": "imported",
+      "output": "otter-neutronswhat-if.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 118,
+      "date": "2026-03-31T07:17:44.568141"
+    },
+    "Note(10).txt": {
+      "status": "imported",
+      "output": "otter-note10.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 62,
+      "date": "2026-03-31T07:17:44.570706"
+    },
+    "Note(11).txt": {
+      "status": "imported",
+      "output": "otter-note11.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.572398"
+    },
+    "Note(12).txt": {
+      "status": "imported",
+      "output": "otter-note12.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 51,
+      "date": "2026-03-31T07:17:44.573118"
+    },
+    "Note(13).txt": {
+      "status": "imported",
+      "output": "otter-note13.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 3,
+      "date": "2026-03-31T07:17:44.573324"
+    },
+    "Note(14).txt": {
+      "status": "imported",
+      "output": "otter-note14.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1"
+      ],
+      "segments": 3,
+      "date": "2026-03-31T07:17:44.573596"
+    },
+    "Note(15).txt": {
+      "status": "imported",
+      "output": "otter-note15.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 46,
+      "date": "2026-03-31T07:17:44.574168"
+    },
+    "Note(16).txt": {
+      "status": "imported",
+      "output": "otter-note16.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 2,
+      "date": "2026-03-31T07:17:44.574352"
+    },
+    "Note(17).txt": {
+      "status": "imported",
+      "output": "otter-note17.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 48,
+      "date": "2026-03-31T07:17:44.574973"
+    },
+    "Note(18).txt": {
+      "status": "imported",
+      "output": "otter-note18.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 57,
+      "date": "2026-03-31T07:17:44.575533"
+    },
+    "Note(19).txt": {
+      "status": "imported",
+      "output": "otter-note19.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1"
+      ],
+      "segments": 4,
+      "date": "2026-03-31T07:17:44.575781"
+    },
+    "Note(2).txt": {
+      "status": "imported",
+      "output": "otter-note2.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 73,
+      "date": "2026-03-31T07:17:44.576392"
+    },
+    "Note(20).txt": {
+      "status": "imported",
+      "output": "otter-note20.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 81,
+      "date": "2026-03-31T07:17:44.577101"
+    },
+    "Note(21).txt": {
+      "status": "imported",
+      "output": "otter-note21.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 10,
+      "date": "2026-03-31T07:17:44.577327"
+    },
+    "Note(22).txt": {
+      "status": "imported",
+      "output": "otter-note22.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 6,
+      "date": "2026-03-31T07:17:44.577549"
+    },
+    "Note(23).txt": {
+      "status": "imported",
+      "output": "otter-note23.md",
+      "speakers": [
+        "Kris Torgeson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 31,
+      "date": "2026-03-31T07:17:44.578187"
+    },
+    "Note(24).txt": {
+      "status": "imported",
+      "output": "otter-note24.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 62,
+      "date": "2026-03-31T07:17:44.578806"
+    },
+    "Note(25).txt": {
+      "status": "imported",
+      "output": "otter-note25.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Brittany Cramer",
+        "Morgan McCorkle"
+      ],
+      "segments": 61,
+      "date": "2026-03-31T07:17:44.579308"
+    },
+    "Note(26).txt": {
+      "status": "imported",
+      "output": "otter-note26.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.579531"
+    },
+    "Note(27).txt": {
+      "status": "imported",
+      "output": "otter-note27.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.579760"
+    },
+    "Note(28).txt": {
+      "status": "imported",
+      "output": "otter-note28.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 340,
+      "date": "2026-03-31T07:17:44.583659"
+    },
+    "Note(29).txt": {
+      "status": "imported",
+      "output": "otter-note29.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.583935"
+    },
+    "Note(3).txt": {
+      "status": "imported",
+      "output": "otter-note3.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 3,
+      "date": "2026-03-31T07:17:44.584139"
+    },
+    "Note(30).txt": {
+      "status": "imported",
+      "output": "otter-note30.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 4,
+      "date": "2026-03-31T07:17:44.584337"
+    },
+    "Note(31).txt": {
+      "status": "imported",
+      "output": "otter-note31.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 327,
+      "date": "2026-03-31T07:17:44.585507"
+    },
+    "Note(32).txt": {
+      "status": "imported",
+      "output": "otter-note32.md",
+      "speakers": [
+        "Alexander Abell"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.587337"
+    },
+    "Note(34).txt": {
+      "status": "imported",
+      "output": "otter-note34.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 9,
+      "date": "2026-03-31T07:17:44.587676"
+    },
+    "Note(35).txt": {
+      "status": "imported",
+      "output": "otter-note35.md",
+      "speakers": [
+        "Alex Abell",
+        "Kris Torgeson",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 47,
+      "date": "2026-03-31T07:17:44.588252"
+    },
+    "Note(36).txt": {
+      "status": "imported",
+      "output": "otter-note36.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 26,
+      "date": "2026-03-31T07:17:44.588498"
+    },
+    "Note(37).txt": {
+      "status": "imported",
+      "output": "otter-note37.md",
+      "speakers": [
+        "Abby Bowman",
+        "Alex Abell",
+        "Speaker 1"
+      ],
+      "segments": 68,
+      "date": "2026-03-31T07:17:44.589119"
+    },
+    "Note(38).txt": {
+      "status": "imported",
+      "output": "otter-note38.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 100,
+      "date": "2026-03-31T07:17:44.589711"
+    },
+    "Note(4).txt": {
+      "status": "imported",
+      "output": "otter-note4.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 3,
+      "date": "2026-03-31T07:17:44.589943"
+    },
+    "Note(40).txt": {
+      "status": "imported",
+      "output": "otter-note40.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 2,
+      "date": "2026-03-31T07:17:44.590116"
+    },
+    "Note(43).txt": {
+      "status": "imported",
+      "output": "otter-note43.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 11,
+      "date": "2026-03-31T07:17:44.590339"
+    },
+    "Note(44).txt": {
+      "status": "imported",
+      "output": "otter-note44.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Unknown Speaker"
+      ],
+      "segments": 46,
+      "date": "2026-03-31T07:17:44.590790"
+    },
+    "Note(45).txt": {
+      "status": "imported",
+      "output": "otter-note45.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.590983"
+    },
+    "Note(6).txt": {
+      "status": "imported",
+      "output": "otter-note6.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 3,
+      "date": "2026-03-31T07:17:44.591163"
+    },
+    "Note(8).txt": {
+      "status": "imported",
+      "output": "otter-note8.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.591358"
+    },
+    "Note(9).txt": {
+      "status": "imported",
+      "output": "otter-note9.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.591591"
+    },
+    "Note.txt": {
+      "status": "imported",
+      "output": "otter-note.md",
+      "speakers": [
+        "Unknown Speaker"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.591785"
+    },
+    "OAS Administrative Associate P...m - Role Fit & Hiring Insights.txt": {
+      "status": "imported",
+      "output": "otter-oas-administrative-associate-pm-role-fit-hiring-insights.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 16,
+      "date": "2026-03-31T07:17:44.592050"
+    },
+    "ORNL - Skedda Security Discussion.txt": {
+      "status": "imported",
+      "output": "otter-ornl-skedda-security-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 119,
+      "date": "2026-03-31T07:17:44.592741"
+    },
+    "ORNL __ Siteimprove Contract.txt": {
+      "status": "imported",
+      "output": "otter-ornl-siteimprove-contract.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 235,
+      "date": "2026-03-31T07:17:44.594296"
+    },
+    "ORNL.Gov Modernization.txt": {
+      "status": "imported",
+      "output": "otter-ornlgov-modernization.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Jason Patrick",
+        "Jay Eckles",
+        "Jess Hohenstein",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 102,
+      "date": "2026-03-31T07:17:44.595195"
+    },
+    "ORNL.gov Web Modernization Update.txt": {
+      "status": "imported",
+      "output": "otter-ornlgov-web-modernization-update.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Brittany Cramer",
+        "David Keim",
+        "Morgan McCorkle",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 201,
+      "date": "2026-03-31T07:17:44.596393"
+    },
+    "One on One.txt": {
+      "status": "imported",
+      "output": "otter-one-on-one.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 57,
+      "date": "2026-03-31T07:17:44.596890"
+    },
+    "One-on-One_ Katy __ Alex.txt": {
+      "status": "imported",
+      "output": "otter-one-on-one-katy-alex.md",
+      "speakers": [
+        "Alex Abell",
+        "Katy Campen",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 43,
+      "date": "2026-03-31T07:17:44.597648"
+    },
+    "One-on-one - Jay _ Alex - #reorg #transformation.txt": {
+      "status": "imported",
+      "output": "otter-one-on-one-jay-alex-reorg-transformation.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles"
+      ],
+      "segments": 15,
+      "date": "2026-03-31T07:17:44.598032"
+    },
+    "Org Structure Discussion .txt": {
+      "status": "imported",
+      "output": "otter-org-structure-discussion.md",
+      "speakers": [
+        "Jay Eckles",
+        "Speaker 1",
+        "Unknown Speaker",
+        "brooks Herring"
+      ],
+      "segments": 101,
+      "date": "2026-03-31T07:17:44.598602"
+    },
+    "Organizational Leadership Workshop.txt": {
+      "status": "imported",
+      "output": "otter-organizational-leadership-workshop.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 20,
+      "date": "2026-03-31T07:17:44.599520"
+    },
+    "Organizational Restructuring Planning #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-organizational-restructuring-planning-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Brooks Herring",
+        "Speaker 1"
+      ],
+      "segments": 86,
+      "date": "2026-03-31T07:17:44.600426"
+    },
+    "Overcoming Shame and Emotions.txt": {
+      "status": "imported",
+      "output": "otter-overcoming-shame-and-emotions.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 84,
+      "date": "2026-03-31T07:17:44.625799"
+    },
+    "Parenting Support Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-parenting-support-strategy-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 59,
+      "date": "2026-03-31T07:17:44.631521"
+    },
+    "Permission Management Meeting.txt": {
+      "status": "imported",
+      "output": "otter-permission-management-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Mike Shell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 9,
+      "date": "2026-03-31T07:17:44.634514"
+    },
+    "Personal Development Coaching.txt": {
+      "status": "imported",
+      "output": "otter-personal-development-coaching.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 7,
+      "date": "2026-03-31T07:17:44.636289"
+    },
+    "Personal Finance Planning.txt": {
+      "status": "imported",
+      "output": "otter-personal-finance-planning.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 61,
+      "date": "2026-03-31T07:17:44.639524"
+    },
+    "Planning - Looking forward.txt": {
+      "status": "imported",
+      "output": "otter-planning-looking-forward.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 191,
+      "date": "2026-03-31T07:17:44.640577"
+    },
+    "Pooja\u2019s Ignite Script (good).txt": {
+      "status": "imported",
+      "output": "otter-poojas-ignite-script-good.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 2,
+      "date": "2026-03-31T07:17:44.640858"
+    },
+    "Probate Legal Advice Session.txt": {
+      "status": "imported",
+      "output": "otter-probate-legal-advice-session.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 23,
+      "date": "2026-03-31T07:17:44.641281"
+    },
+    "Process Improvement Strategy Meeting #FixItOnce.txt": {
+      "status": "imported",
+      "output": "otter-process-improvement-strategy-meeting-fixitonce.md",
+      "speakers": [
+        "Alex Abell",
+        "Diane Byrd",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 72,
+      "date": "2026-03-31T07:17:44.642133"
+    },
+    "Product owner.txt": {
+      "status": "imported",
+      "output": "otter-product-owner.md",
+      "speakers": [
+        "Alexander Abell",
+        "Jason Patrick",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 25,
+      "date": "2026-03-31T07:17:44.642613"
+    },
+    "Project Management Challenges Meeting.txt": {
+      "status": "imported",
+      "output": "otter-project-management-challenges-meeting.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 51,
+      "date": "2026-03-31T07:17:44.643062"
+    },
+    "Project Management Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-project-management-strategy-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 50,
+      "date": "2026-03-31T07:17:44.643527"
+    },
+    "Project Management Update Meeting.txt": {
+      "status": "imported",
+      "output": "otter-project-management-update-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Unknown Speaker"
+      ],
+      "segments": 46,
+      "date": "2026-03-31T07:17:44.644143"
+    },
+    "Project Modernization Planning.txt": {
+      "status": "imported",
+      "output": "otter-project-modernization-planning.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 54,
+      "date": "2026-03-31T07:17:44.644659"
+    },
+    "Promotion and Adjustment Proce... Information Session- Option 2.txt": {
+      "status": "imported",
+      "output": "otter-promotion-and-adjustment-proce-information-session-option-2.md",
+      "speakers": [
+        "Jay Eckles",
+        "Sarah Glei",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 26,
+      "date": "2026-03-31T07:17:44.645104"
+    },
+    "QMarkets Product Demo Meeting.txt": {
+      "status": "imported",
+      "output": "otter-qmarkets-product-demo-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Don Naab",
+        "Rebekah Ellis",
+        "Speaker 1",
+        "Speaker 2",
+        "Steve Reed (QMarkets)"
+      ],
+      "segments": 54,
+      "date": "2026-03-31T07:17:44.666608"
+    },
+    "Quick Catchup.txt": {
+      "status": "imported",
+      "output": "otter-quick-catchup.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 27,
+      "date": "2026-03-31T07:17:44.671761"
+    },
+    "Relationship Boundaries Discussion.txt": {
+      "status": "imported",
+      "output": "otter-relationship-boundaries-discussion.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 112,
+      "date": "2026-03-31T07:17:44.672324"
+    },
+    "Relationship Conflict Resolution(1).txt": {
+      "status": "imported",
+      "output": "otter-relationship-conflict-resolution1.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Unknown Speaker"
+      ],
+      "segments": 60,
+      "date": "2026-03-31T07:17:44.672729"
+    },
+    "Relationship Conflict Resolution(2).txt": {
+      "status": "imported",
+      "output": "otter-relationship-conflict-resolution2.md",
+      "speakers": [
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 96,
+      "date": "2026-03-31T07:17:44.673193"
+    },
+    "Relationship Conflict Resolution.txt": {
+      "status": "imported",
+      "output": "otter-relationship-conflict-resolution.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 40,
+      "date": "2026-03-31T07:17:44.673544"
+    },
+    "Relationship Financial Struggles.txt": {
+      "status": "imported",
+      "output": "otter-relationship-financial-struggles.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 137,
+      "date": "2026-03-31T07:17:44.674100"
+    },
+    "Relationship Trust and Boundaries.txt": {
+      "status": "imported",
+      "output": "otter-relationship-trust-and-boundaries.md",
+      "speakers": [
+        "Alex Abell",
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 232,
+      "date": "2026-03-31T07:17:44.675866"
+    },
+    "Relationship Trust and Honesty.txt": {
+      "status": "imported",
+      "output": "otter-relationship-trust-and-honesty.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 10",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Speaker 9",
+        "Unknown Speaker"
+      ],
+      "segments": 483,
+      "date": "2026-03-31T07:17:44.679208"
+    },
+    "Relationship Trust and Stability.txt": {
+      "status": "imported",
+      "output": "otter-relationship-trust-and-stability.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Unknown Speaker"
+      ],
+      "segments": 273,
+      "date": "2026-03-31T07:17:44.681098"
+    },
+    "Reorg #reset2026 Discussion with Kevin and Kim.txt": {
+      "status": "imported",
+      "output": "otter-reorg-reset2026-discussion-with-kevin-and-kim.md",
+      "speakers": [
+        "Alex Abell",
+        "Kevin Sellars",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 160,
+      "date": "2026-03-31T07:17:44.685290"
+    },
+    "Reorg Discussion.txt": {
+      "status": "imported",
+      "output": "otter-reorg-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Kevin Sellars",
+        "Kim Smithson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4"
+      ],
+      "segments": 224,
+      "date": "2026-03-31T07:17:44.686726"
+    },
+    "Reorg meeting with Jason.txt": {
+      "status": "imported",
+      "output": "otter-reorg-meeting-with-jason.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Martinez",
+        "Jason Patrick",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 91,
+      "date": "2026-03-31T07:17:44.687945"
+    },
+    "Reorg.txt": {
+      "status": "imported",
+      "output": "otter-reorg.md",
+      "speakers": [
+        "Alex Abell",
+        "Brooks Herring",
+        "Jay Eckles",
+        "Kevin Sellars",
+        "Kim Smithson",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 168,
+      "date": "2026-03-31T07:17:44.689051"
+    },
+    "Reorganization Meeting with Jay and GLs #reset2026.txt": {
+      "status": "imported",
+      "output": "otter-reorganization-meeting-with-jay-and-gls-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 446,
+      "date": "2026-03-31T07:17:44.690784"
+    },
+    "Reorganization session with Kim and Kevin - #reset #reorg.txt": {
+      "status": "imported",
+      "output": "otter-reorganization-session-with-kim-and-kevin-reset-reorg.md",
+      "speakers": [
+        "Alex Abell",
+        "Kevin Sellars",
+        "Kim Smithson",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 410,
+      "date": "2026-03-31T07:17:44.694445"
+    },
+    "Rescheduled_ Website Kickoff_ Voice Your Choice '25.txt": {
+      "status": "imported",
+      "output": "otter-rescheduled-website-kickoff-voice-your-choice-25.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 50,
+      "date": "2026-03-31T07:17:44.694990"
+    },
+    "SEEK - Agent Strategy.txt": {
+      "status": "imported",
+      "output": "otter-seek-agent-strategy.md",
+      "speakers": [
+        "Alex Abell",
+        "Jason Patrick",
+        "Jay Eckles",
+        "Mike Shell"
+      ],
+      "segments": 35,
+      "date": "2026-03-31T07:17:44.700702"
+    },
+    "SEEK Project Discussion.txt": {
+      "status": "imported",
+      "output": "otter-seek-project-discussion.md",
+      "speakers": [
+        "Jason Patrick",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 14,
+      "date": "2026-03-31T07:17:44.704142"
+    },
+    "SEEK Roadmap.txt": {
+      "status": "imported",
+      "output": "otter-seek-roadmap.md",
+      "speakers": [
+        "Alex Abell",
+        "Jason Patrick",
+        "Mike Shell"
+      ],
+      "segments": 87,
+      "date": "2026-03-31T07:17:44.705212"
+    },
+    "SEEK_SharePoint Permissions.txt": {
+      "status": "imported",
+      "output": "otter-seek-sharepoint-permissions.md",
+      "speakers": [
+        "Alex Abell",
+        "Dionne Harper",
+        "Jason Patrick",
+        "Mike Shell",
+        "Speaker 1"
+      ],
+      "segments": 33,
+      "date": "2026-03-31T07:17:44.706648"
+    },
+    "SHIELD (Software Hygiene, Inve...ment and Lifecycle Discipline).txt": {
+      "status": "imported",
+      "output": "otter-shield-software-hygiene-invement-and-lifecycle-discipline.md",
+      "speakers": [
+        "Alex Abell",
+        "Rachael Jackson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 112,
+      "date": "2026-03-31T07:17:44.707545"
+    },
+    "SLA and DIVI Conversation.txt": {
+      "status": "imported",
+      "output": "otter-sla-and-divi-conversation.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Dionne Harper",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 88,
+      "date": "2026-03-31T07:17:44.708544"
+    },
+    "SP Cut off Date Discussion.txt": {
+      "status": "imported",
+      "output": "otter-sp-cut-off-date-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Jay Eckles",
+        "Kris Torgeson",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 71,
+      "date": "2026-03-31T07:17:44.709192"
+    },
+    "SQA Strategy and Performance Review.txt": {
+      "status": "imported",
+      "output": "otter-sqa-strategy-and-performance-review.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 64,
+      "date": "2026-03-31T07:17:44.709900"
+    },
+    "Security Awareness Briefing.txt": {
+      "status": "imported",
+      "output": "otter-security-awareness-briefing.md",
+      "speakers": [
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 7,
+      "date": "2026-03-31T07:17:44.710464"
+    },
+    "Seek Launch Preview- In Person.txt": {
+      "status": "imported",
+      "output": "otter-seek-launch-preview-in-person.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 342,
+      "date": "2026-03-31T07:17:44.711728"
+    },
+    "Self-Care and Project Updates.txt": {
+      "status": "imported",
+      "output": "otter-self-care-and-project-updates.md",
+      "speakers": [
+        "Alexander Abell",
+        "Angie Jones",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 147,
+      "date": "2026-03-31T07:17:44.713497"
+    },
+    "Service Monitoring Tool Proposal.txt": {
+      "status": "imported",
+      "output": "otter-service-monitoring-tool-proposal.md",
+      "speakers": [
+        "Speaker 1"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.713892"
+    },
+    "ServiceNow PPM Module.txt": {
+      "status": "imported",
+      "output": "otter-servicenow-ppm-module.md",
+      "speakers": [
+        "Alex Abell",
+        "Andrew Ramkisson",
+        "Jason Patrick",
+        "Unknown Speaker"
+      ],
+      "segments": 100,
+      "date": "2026-03-31T07:17:44.718791"
+    },
+    "SharePoint Access Resolution.txt": {
+      "status": "imported",
+      "output": "otter-sharepoint-access-resolution.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1"
+      ],
+      "segments": 8,
+      "date": "2026-03-31T07:17:44.722524"
+    },
+    "SharePoint Modernization Contractor Discussion.txt": {
+      "status": "imported",
+      "output": "otter-sharepoint-modernization-contractor-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Jason Patrick"
+      ],
+      "segments": 90,
+      "date": "2026-03-31T07:17:44.723475"
+    },
+    "SharePoint Search Integration Meeting.txt": {
+      "status": "imported",
+      "output": "otter-sharepoint-search-integration-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 146,
+      "date": "2026-03-31T07:17:44.724410"
+    },
+    "Skin Treatment Consultation.txt": {
+      "status": "imported",
+      "output": "otter-skin-treatment-consultation.md",
+      "speakers": [
+        "Alexander Abell",
+        "Blake Childress, PA",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5"
+      ],
+      "segments": 21,
+      "date": "2026-03-31T07:17:44.727422"
+    },
+    "Social Calendar Concept Meeting.txt": {
+      "status": "imported",
+      "output": "otter-social-calendar-concept-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Unknown Speaker"
+      ],
+      "segments": 50,
+      "date": "2026-03-31T07:17:44.727930"
+    },
+    "Social Networking Platform Concept.txt": {
+      "status": "imported",
+      "output": "otter-social-networking-platform-concept.md",
+      "speakers": [
+        "Alexander Abell",
+        "Hannah Aldridge",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Speaker 8",
+        "Unknown Speaker"
+      ],
+      "segments": 141,
+      "date": "2026-03-31T07:17:44.731580"
+    },
+    "Strategic Planning and IT Updates.txt": {
+      "status": "imported",
+      "output": "otter-strategic-planning-and-it-updates.md",
+      "speakers": [
+        "Alexander Abell",
+        "Jay Eckles",
+        "Unknown Speaker"
+      ],
+      "segments": 44,
+      "date": "2026-03-31T07:17:44.735428"
+    },
+    "Supportive Group Therapy Session.txt": {
+      "status": "imported",
+      "output": "otter-supportive-group-therapy-session.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Unknown Speaker"
+      ],
+      "segments": 29,
+      "date": "2026-03-31T07:17:44.735937"
+    },
+    "Taking a break from the work day to get my thoughts out.txt": {
+      "status": "imported",
+      "output": "otter-taking-a-break-from-the-work-day-to-get-my-thoughts-out.md",
+      "speakers": [
+        "Alex Abell"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.737156"
+    },
+    "Team Communication Improvement Meeting.txt": {
+      "status": "imported",
+      "output": "otter-team-communication-improvement-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Brad Greenfield",
+        "Unknown Speaker"
+      ],
+      "segments": 32,
+      "date": "2026-03-31T07:17:44.737927"
+    },
+    "Team Development Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-team-development-strategy-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 126,
+      "date": "2026-03-31T07:17:44.739693"
+    },
+    "Team Dynamics and Performance.txt": {
+      "status": "imported",
+      "output": "otter-team-dynamics-and-performance.md",
+      "speakers": [
+        "Alexander Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 36,
+      "date": "2026-03-31T07:17:44.740483"
+    },
+    "Team Objectives Setting Meeting.txt": {
+      "status": "imported",
+      "output": "otter-team-objectives-setting-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1"
+      ],
+      "segments": 35,
+      "date": "2026-03-31T07:17:44.745849"
+    },
+    "Team Restructuring Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-team-restructuring-strategy-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Jay Eckles",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 203,
+      "date": "2026-03-31T07:17:44.747458"
+    },
+    "Team Strategy and Governance #Reset2026.txt": {
+      "status": "imported",
+      "output": "otter-team-strategy-and-governance-reset2026.md",
+      "speakers": [
+        "Alex Abell",
+        "Angie Jones",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 93,
+      "date": "2026-03-31T07:17:44.754119"
+    },
+    "Tech Fee Discussion.txt": {
+      "status": "imported",
+      "output": "otter-tech-fee-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Josh Hill",
+        "Unknown Speaker"
+      ],
+      "segments": 37,
+      "date": "2026-03-31T07:17:44.754838"
+    },
+    "Tech Score Evaluation Meeting.txt": {
+      "status": "imported",
+      "output": "otter-tech-score-evaluation-meeting.md",
+      "speakers": [
+        "Alex Abell",
+        "Pam DeGraffenreid",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 75,
+      "date": "2026-03-31T07:17:44.758397"
+    },
+    "The end.txt": {
+      "status": "imported",
+      "output": "otter-the-end.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 48,
+      "date": "2026-03-31T07:17:44.762019"
+    },
+    "The nest.txt": {
+      "status": "imported",
+      "output": "otter-the-nest.md",
+      "speakers": [
+        "Alex Abell",
+        "Hannah",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 145,
+      "date": "2026-03-31T07:17:44.763148"
+    },
+    "Therapy and Family Dynamics.txt": {
+      "status": "imported",
+      "output": "otter-therapy-and-family-dynamics.md",
+      "speakers": [
+        "Alexander Abell",
+        "Chelsea",
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      "segments": 187,
+      "date": "2026-03-31T07:17:44.765947"
+    },
+    "Transformation Project Strategy #Reset2026 #FixItOnce.txt": {
+      "status": "imported",
+      "output": "otter-transformation-project-strategy-reset2026-fixitonce.md",
+      "speakers": [
+        "Alex Abell",
+        "Mike Shell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Unknown Speaker"
+      ],
+      "segments": 321,
+      "date": "2026-03-31T07:17:44.767057"
+    },
+    "USITER Document Sharing Solution Strategy.txt": {
+      "status": "imported",
+      "output": "otter-usiter-document-sharing-solution-strategy.md",
+      "speakers": [
+        "Alex Abell",
+        "Imad Mir",
+        "Pam DeGraffenreid",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 29,
+      "date": "2026-03-31T07:17:44.767514"
+    },
+    "UX Team\u2019s Isotopes.ornl.gov Estimate.txt": {
+      "status": "imported",
+      "output": "otter-ux-teams-isotopesornlgov-estimate.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 92,
+      "date": "2026-03-31T07:17:44.768257"
+    },
+    "Unmanaged External Facing Websites .txt": {
+      "status": "imported",
+      "output": "otter-unmanaged-external-facing-websites.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 96,
+      "date": "2026-03-31T07:17:44.768890"
+    },
+    "Updates Meeting - Alex_Angie.txt": {
+      "status": "imported",
+      "output": "otter-updates-meeting-alex-angie.md",
+      "speakers": [
+        "Alex Abell",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 82,
+      "date": "2026-03-31T07:17:44.769533"
+    },
+    "Web CMS Product Discussion.txt": {
+      "status": "imported",
+      "output": "otter-web-cms-product-discussion.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Jason Patrick",
+        "Speaker 1",
+        "Unknown Speaker"
+      ],
+      "segments": 49,
+      "date": "2026-03-31T07:17:44.770014"
+    },
+    "Web Services Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-web-services-strategy-meeting.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 37,
+      "date": "2026-03-31T07:17:44.770489"
+    },
+    "Why it\u2019s okay to shoot for the moon - Paul Scherffius.txt": {
+      "status": "imported",
+      "output": "otter-why-its-okay-to-shoot-for-the-moon-paul-scherffius.md",
+      "speakers": [
+        "Alexander Abell",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 31,
+      "date": "2026-03-31T07:17:44.770857"
+    },
+    "Will Contest Strategy Meeting.txt": {
+      "status": "imported",
+      "output": "otter-will-contest-strategy-meeting.md",
+      "speakers": [
+        "Speaker 1",
+        "Speaker 2",
+        "Speaker 3",
+        "Speaker 4",
+        "Speaker 5",
+        "Speaker 6",
+        "Speaker 7",
+        "Unknown Speaker"
+      ],
+      "segments": 116,
+      "date": "2026-03-31T07:17:44.771632"
+    },
+    "WordPress Product Roadmap.txt": {
+      "status": "imported",
+      "output": "otter-wordpress-product-roadmap.md",
+      "speakers": [
+        "Alex Abell",
+        "Brad Greenfield",
+        "Jason Patrick",
+        "Jason Shoemaker",
+        "Seneca Pressley",
+        "Speaker 1",
+        "Speaker 2",
+        "Unknown Speaker"
+      ],
+      "segments": 342,
+      "date": "2026-03-31T07:17:44.773345"
+    },
+    "WordPress Time with the GL.txt": {
+      "status": "imported",
+      "output": "otter-wordpress-time-with-the-gl.md",
+      "speakers": [
+        "Alex Abell",
+        "DJ Edwardson",
+        "Jason Shoemaker",
+        "Katy Campen"
+      ],
+      "segments": 29,
+      "date": "2026-03-31T07:17:44.773871"
+    },
+    "iOS Printing App Test.txt": {
+      "status": "imported",
+      "output": "otter-ios-printing-app-test.md",
+      "speakers": [
+        "Alex Abell"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.774172"
+    },
+    "\u200eAudio Message from Hannah Aldridge 3.txt": {
+      "status": "imported",
+      "output": "otter-audio-message-from-hannah-aldridge-3.md",
+      "speakers": [
+        "Speaker 1"
+      ],
+      "segments": 1,
+      "date": "2026-03-31T07:17:44.776472"
+    }
+  },
+  "errors": [],
+  "last_run": "2026-03-31T07:17:44.776498"
+}

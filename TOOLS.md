@@ -32,6 +32,13 @@ Things like:
 - iPhone: 100.107.105.126 (iphone172)
 - OpenClaw accessible at: http://debras-mac-mini:18789 from any tailnet device
 
+### Chrome Remote Debugging (Learned 2026-03-30)
+- Chrome 136+ BLOCKS `--remote-debugging-port` on the default user data dir
+- `profile=user` will NEVER work for browser automation. Use `profile=openclaw` instead
+- OpenClaw browser has its own data dir at ~/.openclaw/browser/openclaw/user-data
+- LinkedIn is logged in on the openclaw profile
+- LaunchAgent installed: com.openclaw.browser.plist (auto-starts OpenClaw Chrome on boot)
+
 ### 1Password / sudo
 
 - 1Password CLI (`op`) v2.33.0 installed, desktop app integration enabled
@@ -87,6 +94,7 @@ Things like:
   - Brandon Bruce: chat_guid:any;+;2e9da308ff6d4eaaa3d5377dc45c2270
   - Annika: chat_guid:any;+;9a04d0b72baf4d03b88b9fddaead4dc3
   - Jay (boss): chat_guid:any;+;91468caf20824cd696f30436e54c004a
+  - Angie (ORNL, Alex+Angie): chat_guid:any;+;d4333767f9534f77ab1356e31263b030
   - Brad Greenfield: chat_guid:any;+;a6c108054d66442e81bf09d56a1205c6
 
 ### Monarch

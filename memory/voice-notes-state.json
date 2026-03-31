@@ -1,0 +1,261 @@
+{
+  "processed": [
+    "/Users/debra/SecondBrain/Imports/voice-notes/164_unknown-date_Call-with-Jay-Eckles_1_Call with Jay Eckles.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/269_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/91_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/284_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/344_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/356_unknown-date_Global-games-and-online-browser-based-games_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/224_unknown-date_New-Recording_2_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/51_unknown-date_Call-Recording_1_Call Recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/324_unknown-date_Meeting-name_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/340_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/226_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/223_unknown-date_New-Recording_3_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/197_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/342_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/299_unknown-date_SPFx-Containerizarion-Discussion_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/230_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/253_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/288_unknown-date_KB-Article-Discussion_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/346_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/214_unknown-date_New-Recording_1_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/312_unknown-date_New-Recording_1_recording.m4a"
+  ],
+  "last_run": "2026-03-31T02:40:30.677276",
+  "notes_created": [
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-164_unknown-date_call-with-jay-eckles_1_call-with-jay-eckles.md",
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-269_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-91_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-284_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-344_unknown-date_needs-meeting-name_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-356_unknown-date_global-games-and-online-browser-based-games_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2026-03-30-224_unknown-date_new-recording_2_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2025-12-24-call-recording-1-call-recording.md",
+    "/Users/debra/SecondBrain/Meetings/2024-10-31-324_unknown-date_meeting-name_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2024-10-29-340_unknown-date_needs-meeting-name_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2025-01-30-226_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2025-02-04-223_unknown-date_new-recording_3_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2025-02-19-197_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2024-10-28-342_unknown-date_needs-meeting-name_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2024-11-20-spfx-containerizarion-discussion.md",
+    "/Users/debra/SecondBrain/Meetings/2025-01-27-230_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2025-01-08-253_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2024-11-26-kb-article-discussion.md",
+    "/Users/debra/SecondBrain/Meetings/2024-10-24-346_unknown-date_needs-meeting-name_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2025-02-10-214_unknown-date_new-recording_1_recording.md",
+    "/Users/debra/SecondBrain/Meetings/2024-11-12-312_unknown-date_new-recording_1_recording.md"
+  ],
+  "errors": [
+    {
+      "file": "215_unknown-date_Testing_1_recording.m4a",
+      "error": "215_unknown-date_Testing_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T18:20:58.029355"
+    },
+    {
+      "file": "161_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a",
+      "error": "161_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a: exit code 1",
+      "timestamp": "2026-03-30T19:09:21.586908"
+    },
+    {
+      "file": "196_unknown-date_New-Recording_1_recording.m4a",
+      "error": "196_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T20:07:25.035879"
+    },
+    {
+      "file": "239_unknown-date_House-stuff-Hannahs-idea_1_recording.m4a",
+      "error": "239_unknown-date_House-stuff-Hannahs-idea_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T20:50:21.990225"
+    },
+    {
+      "file": "227_unknown-date_New-Recording_1_New Recording.m4a",
+      "error": "227_unknown-date_New-Recording_1_New Recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T20:50:22.075259"
+    },
+    {
+      "file": "291_unknown-date_New-Recording_2_recording.m4a",
+      "error": "291_unknown-date_New-Recording_2_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T20:50:22.142348"
+    },
+    {
+      "file": "338_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+      "error": "338_unknown-date_Needs-Meeting-Name_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T21:43:51.548028"
+    },
+    {
+      "file": "335_unknown-date_Design-System-Website-Discussion_1_recording.m4a",
+      "error": "335_unknown-date_Design-System-Website-Discussion_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T22:41:14.832926"
+    },
+    {
+      "file": "329_unknown-date_SEEK-Workshop-Day-1_4_recording.m4a",
+      "error": "329_unknown-date_SEEK-Workshop-Day-1_4_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T22:41:15.373611"
+    },
+    {
+      "file": "189_unknown-date_New-Recording_1_recording.m4a",
+      "error": "189_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T22:41:15.468008"
+    },
+    {
+      "file": "304_unknown-date_DJ-1-on-1_1_New Recording.m4a",
+      "error": "304_unknown-date_DJ-1-on-1_1_New Recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T22:41:15.547328"
+    },
+    {
+      "file": "341_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+      "error": "341_unknown-date_Needs-Meeting-Name_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T22:41:15.629236"
+    },
+    {
+      "file": "329_unknown-date_SEEK-Workshop-Day-1_3_recording.m4a",
+      "error": "329_unknown-date_SEEK-Workshop-Day-1_3_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.087780"
+    },
+    {
+      "file": "321_unknown-date_Setting-Objectives-and-Managing-Performance-Information-Sess_1_recording.m4a",
+      "error": "321_unknown-date_Setting-Objectives-and-Managing-Performance-Information-Sess_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.176395"
+    },
+    {
+      "file": "258_unknown-date_New-Recording_1_recording.m4a",
+      "error": "258_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.243692"
+    },
+    {
+      "file": "345_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+      "error": "345_unknown-date_Needs-Meeting-Name_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.312462"
+    },
+    {
+      "file": "311_unknown-date_New-Recording_1_recording.m4a",
+      "error": "311_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.381003"
+    },
+    {
+      "file": "217_unknown-date_New-Recording_1_recording.m4a",
+      "error": "217_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.451031"
+    },
+    {
+      "file": "291_unknown-date_New-Recording_1_recording.m4a",
+      "error": "291_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.520550"
+    },
+    {
+      "file": "329_unknown-date_SEEK-Workshop-Day-1_7_recording.m4a",
+      "error": "329_unknown-date_SEEK-Workshop-Day-1_7_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.589065"
+    },
+    {
+      "file": "286_unknown-date_New-Recording_1_recording.m4a",
+      "error": "286_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:23:05.658493"
+    },
+    {
+      "file": "320_unknown-date_Meeting_1_recording.m4a",
+      "error": "320_unknown-date_Meeting_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:26:24.663038"
+    },
+    {
+      "file": "306_unknown-date_New-Recording_1_recording.m4a",
+      "error": "306_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-30T23:29:45.128686"
+    },
+    {
+      "file": "339_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+      "error": "339_unknown-date_Needs-Meeting-Name_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:23:39.906641"
+    },
+    {
+      "file": "194_unknown-date_New-Recording_1_recording.m4a",
+      "error": "194_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:23:40.057140"
+    },
+    {
+      "file": "208_unknown-date_New-Recording_1_recording.m4a",
+      "error": "208_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:23:40.125426"
+    },
+    {
+      "file": "224_unknown-date_New-Recording_1_recording.m4a",
+      "error": "224_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:48:19.117237"
+    },
+    {
+      "file": "90_unknown-date_New-Recording_1_recording.m4a",
+      "error": "90_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:48:19.185042"
+    },
+    {
+      "file": "33_unknown-date_New-Recording_1_New Recording.m4a",
+      "error": "33_unknown-date_New-Recording_1_New Recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:48:19.254230"
+    },
+    {
+      "file": "32_unknown-date_New-Recording_5_recording.m4a",
+      "error": "32_unknown-date_New-Recording_5_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:48:19.322742"
+    },
+    {
+      "file": "268_unknown-date_New-Recording_1_recording.m4a",
+      "error": "268_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:49:53.063796"
+    },
+    {
+      "file": "160_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a",
+      "error": "160_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a: exit code 1",
+      "timestamp": "2026-03-31T00:50:01.220769"
+    },
+    {
+      "file": "252_unknown-date_New-Recording_1_New Recording.m4a",
+      "error": "252_unknown-date_New-Recording_1_New Recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T01:32:58.866527"
+    },
+    {
+      "file": "270_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a",
+      "error": "270_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a: exit code 1",
+      "timestamp": "2026-03-31T01:34:46.913173"
+    },
+    {
+      "file": "330_unknown-date_Meeting-Recap-FaCT-EFRC-Website-Review--Improvement-Discussi_1_recording.m4a",
+      "error": "330_unknown-date_Meeting-Recap-FaCT-EFRC-Website-Review--Improvement-Discussi_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T02:39:57.761370"
+    },
+    {
+      "file": "243_unknown-date_Acts-Item-Meeting_1_recording.m4a",
+      "error": "243_unknown-date_Acts-Item-Meeting_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:20:22.948546"
+    },
+    {
+      "file": "310_unknown-date_New-Recording_1_recording.m4a",
+      "error": "310_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:20:23.505992"
+    },
+    {
+      "file": "307_unknown-date_New-Recording_1_recording.m4a",
+      "error": "307_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:20:23.594638"
+    },
+    {
+      "file": "208_unknown-date_New-Recording_2_New Recording 2.m4a",
+      "error": "208_unknown-date_New-Recording_2_New Recording 2.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:23:13.696249"
+    },
+    {
+      "file": "118_unknown-date_ASAP--Library-Intro-Call_1_ASAP  Library Intro Call.m4a",
+      "error": "118_unknown-date_ASAP--Library-Intro-Call_1_ASAP  Library Intro Call.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:27:44.234185"
+    },
+    {
+      "file": "225_unknown-date_New-Recording_1_New Recording.m4a",
+      "error": "225_unknown-date_New-Recording_1_New Recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:29:43.467804"
+    },
+    {
+      "file": "287_unknown-date_New-Recording_1_recording.m4a",
+      "error": "287_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T03:29:43.540315"
+    }
+  ]
+}

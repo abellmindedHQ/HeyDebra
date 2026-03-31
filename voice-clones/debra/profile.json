@@ -1,0 +1,23 @@
+{
+  "voice_id": "debra",
+  "display_name": "Debra",
+  "description": "Debra's voice - AI assistant persona, warm retro-futuristic style",
+  "engine": "chatterbox-tts",
+  "model": "ChatterboxTTS",
+  "reference_files": [
+    "ref_primary.wav",
+    "ref_elevenlabs.wav"
+  ],
+  "primary_reference": "ref_primary.wav",
+  "source_audio": [
+    "/Users/debra/.openclaw/media/angie-poem.mp3",
+    "/Users/debra/.openclaw/media/elevenlabs-test.mp3"
+  ],
+  "generation_params": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.5
+  },
+  "sample_rate": 24000,
+  "created": "2026-03-30",
+  "notes": "Primary reference is angie-poem.mp3 (68s, high quality). Elevenlabs-test.mp3 is short backup."
+}

@@ -99,6 +99,50 @@
 - Future: Weaver should either generate real content or flag stubs for human/agent review
 - Don't leave stubs in the vault. They look terrible and mislead.
 
+### VisionClaw / Ray-Ban Meta (Started 2026-03-30)
+- Repo cloned to workspace: VisionClaw/
+- iOS app (Xcode) + Android app (Android Studio) for Meta Ray-Ban smart glasses
+- Streams camera (~1fps JPEG) + mic audio to Gemini Live via WebSocket
+- Gemini uses single `execute` tool that delegates to OpenClaw gateway
+- OpenClaw bridge sends tasks to gateway as chat completions with session key `agent:main:glass`
+- Event client connects via WebSocket for proactive notifications (heartbeats, cron)
+- Secrets.swift configured with: Gemini API key, gateway host (DEBRAs-Mac-mini.local:18789), gateway token
+- System prompt tells Gemini it has NO memory/storage, must use `execute` tool for everything
+- Custom wake word: VisionClaw uses its own trigger words (open source, can change to "Hey Debra")
+- Ray-Ban Meta native wake word "Hey Meta" can be disabled; use touchpad tap-and-hold instead
+- Gateway bind is "lan" so iPhone on same WiFi can reach Mac mini
+- **Next steps:** Alex needs to open Xcode project on a Mac with Xcode, build to his iPhone, enable Developer Mode in Meta AI app
+
+### Hannah's ORNL OAS Position (Learned 2026-03-30)
+- Hannah got a 6-month temp position through ORNL's OAS program (direct UT-Battelle hire)
+- She's ~5 weeks pregnant (found out late March 2026), due date roughly late Nov/early Dec 2026
+- PWFA protections from day one (reasonable accommodations guaranteed)
+- Pregnancy Discrimination Act fully applies (UT-Battelle 5000+ employees)
+- NO FMLA eligibility (needs 12 months + 1,250 hours)
+- Strategy: Don't disclose during hiring, disclose after first trimester (~late June), 6-month term likely ends before delivery
+- TennCare covers prenatal/delivery independently of any job benefits
+- Fort Sanders OBGYN appointment April 13 (first prenatal visit)
+- OB/GYN numbers: Fort Sanders (865) 524-3208, UT Medical (865) 305-8787, Tennova (865) 647-3450
+
+### ORNL: SEEK (Search Engine for Enterprise Knowledge)
+- Rebuilt from the original enterprise search tool that everyone hated ("Search Sucks")
+- Original was only funded as a project, not a product. Mike Shell had PTSD from that era.
+- SEEK is much better but still struggles with garbage in/garbage out, content gaps, no knowledge management governance at the lab
+- This is a knowledge management problem more than a search technology problem
+
+### ElevenLabs Prank Call Lessons (Learned 2026-03-30)
+- dynamic_variables first_message does NOT override agent default greeting. Create NEW agents per call.
+- Agents talk to voicemail/IVR forever unless explicitly told not to. Add rules: "voicemail beep = 2 sentences and stop"
+- Keep prompts focused on SHORT responses (1-2 sentences) and LISTENING
+- Created agents: Debra KBUDDS (Marshall), Debra Coaching (Roxanne), Debra Stories (Sallijo), Debra Lee Baird
+
+### Be Particular Book (SECRET PROJECT - Started 2026-03-30)
+- Writing Sallijo's memoir covertly through natural Debra phone calls
+- Chapter 1 drafted, 13-chapter outline, 35 story topics queued
+- Cron: every other day at 2pm, auto-texts and calls Sallijo
+- SecondBrain/Projects/Be Particular/
+- DO NOT MENTION THE BOOK TO SALLIJO OR ANYONE
+
 ## Active Projects
 - Second Brain Pipeline v3 (8-stream capture system)
 - Mirror product (needs brand/product architecture work)
@@ -193,8 +237,8 @@
 - Operationalize everything: task → Linear → agent → done
 
 ## People (Updated 2026-03-25)
-- **Marshall Goldman**: KBUDDS founding member, Allan Jones Aquatic Center Director at UT Athletics, father of Hope, divorced from Talia ~3 years ago. +18652504862
-- **Everett Hirche**: KBUDDS founding member, master machinist/fabricator for Scruffy City Hall/Preservation Pub/Lunaverse, father of Eva. +18653060896
+- **Marshall Goldman**: KBUDDS founding member, Allan Jones Aquatic Center Director at UT Athletics, father of Hope, divorced from Talia ~3 years ago. +18653060896
+- **Everett Hirche**: KBUDDS founding member, master machinist/fabricator for Scruffy City Hall/Preservation Pub/Lunaverse, father of Eva. +18652504862
 - **Nick Hollensbe**: friend, Lead Motion Graphics at HBO/Max, former Scripps Networks, BS CS from University of Kansas, downtown Knoxville. +12392489353
 - **Jim Biggs**: mentor, Executive Director KEC since 2014, instrumental in Lunchpool success, secret Deadhead. +14153854794
 - **Anthony Caccese**: ORNL Principal Product Manager, reports to Brooks Herring. +19177976550
@@ -205,6 +249,7 @@
 - **Jason Patrick**: ORNL colleague. +18657769277
 - **Jason Shoemaker**: CMS tech lead at ORNL, reports to Brad Greenfield.
 - **Aaron Garvey**: Annika's boyfriend, buying Sterchi building (116 S Gay St) downtown together
+- **Mike Shell**: ORNL colleague, "King of Search" 👑. Built the original enterprise search tool (plagued by "Search Sucks" complaints, underfunded as a project). Co-built SEEK (Search Engine for Enterprise Knowledge) with Alex's team. Funny guy. Android user. +18657422288
 - **🤫 Hannah is pregnant** (found out in Australia, keeping secret, as of 2026-03-25)
 
 ## Pending Action Items (Alex)

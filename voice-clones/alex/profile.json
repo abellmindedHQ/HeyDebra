@@ -1,0 +1,25 @@
+{
+  "voice_id": "alex",
+  "display_name": "Alex",
+  "description": "Alex Abell's voice - natural male voice from personal voice memos",
+  "engine": "chatterbox-tts",
+  "model": "ChatterboxTTS",
+  "reference_files": [
+    "ref_30s.wav",
+    "ref_voice_memos.wav"
+  ],
+  "primary_reference": "ref_30s.wav",
+  "source_audio": [
+    "/Users/debra/SecondBrain/Imports/voice-notes/32_unknown-date_New-Recording_2_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/32_unknown-date_New-Recording_5_recording.m4a",
+    "/Users/debra/SecondBrain/Imports/voice-notes/214_unknown-date_New-Recording_1_recording.m4a"
+  ],
+  "generation_params": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.5
+  },
+  "sample_rate": 24000,
+  "created": "2026-03-30",
+  "notes": "Built from 3 personal voice memo recordings (32_2=51s, 32_5=46s, 214=116s). ref_30s.wav is optimal clip for voice conditioning. ref_voice_memos.wav is full combined 213s version.",
+  "reference_audio": "/Users/debra/.openclaw/workspace/voice-clones/alex/ref_new.wav"
+}

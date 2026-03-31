@@ -21,11 +21,11 @@ import zoneinfo
 STATE_FILE = "/Users/debra/.openclaw/workspace/memory/linkedin-cleanup-state.json"
 
 # Rate limits (hard limits — do not change without updating SKILL.md)
-MAX_PER_SESSION = 50
-MAX_PER_DAY = 150
-MAX_SESSION_MINUTES = 15
-BUSINESS_HOURS_START = 9   # 9 AM ET
-BUSINESS_HOURS_END = 17    # 5 PM ET
+MAX_PER_SESSION = 175
+MAX_PER_DAY = 500
+MAX_SESSION_MINUTES = 60
+BUSINESS_HOURS_START = 8   # 8 AM ET
+BUSINESS_HOURS_END = 22    # 10 PM ET
 COOLDOWN_EVERY_N_DAYS = 3  # skip every 3rd calendar day
 
 ET = zoneinfo.ZoneInfo("America/New_York")
@@ -163,17 +163,20 @@ def cmd_mark_done(state: dict, name: str):
     queue = state.get("queue", [])
     
     # Find by exact name match first, then partial
+    # Queue items can be strings or dicts with "name" key
     found = None
     for i, item in enumerate(queue):
-        if item["name"] == name:
+        item_name = item if isinstance(item, str) else item.get("name", "")
+        if item_name == name:
             found = i
             break
     
     if found is None:
         for i, item in enumerate(queue):
-            if name.lower() in item["name"].lower():
+            item_name = item if isinstance(item, str) else item.get("name", "")
+            if name.lower() in item_name.lower():
                 found = i
-                print(f"⚠️  Exact match not found, using partial match: '{item['name']}'")
+                print(f"⚠️  Exact match not found, using partial match: '{item_name}'")
                 break
     
     if found is None:
@@ -181,10 +184,11 @@ def cmd_mark_done(state: dict, name: str):
         sys.exit(1)
     
     item = queue.pop(found)
-    item["archivedAt"] = datetime.now(ET).isoformat()
+    item_name = item if isinstance(item, str) else item.get("name", "")
+    archived_entry = {"name": item_name, "archivedAt": datetime.now(ET).isoformat()}
     
     completed = state.get("completed", [])
-    completed.append(item)
+    completed.append(archived_entry)
     
     state["queue"] = queue
     state["completed"] = completed
@@ -195,10 +199,10 @@ def cmd_mark_done(state: dict, name: str):
     
     save_state(state)
     
-    cat_icon = "⚪" if item.get("category") == "spam" else "🟢"
+    cat_icon = "🟢"
     today = state["todayArchived"]
     total = state["totalArchived"]
-    print(f"✅ Archived: {cat_icon} {item['name']} (today: {today}/{MAX_PER_DAY}, total: {total:,})")
+    print(f"✅ Archived: {cat_icon} {item_name} (today: {today}/{MAX_PER_DAY}, total: {total:,})")
 
 
 def cmd_set_error(state: dict, error: str):

@@ -41,7 +41,8 @@ _Learn about the person you're helping. Update this as you go._
 - Night owl but trying to be better (went to bed 9:26pm Day 3, was up past 3:30am Day 1)
 - Life's work: Mirror (know yourself) + Pools (know your world) + AI Companion (your sherpa)
 - Pooja Pendharkar (+13213562000): close friend, former Lunchpool co-founder, Android user, reconnecting
-- Merle Benny (+19735107652): close friend, accountability partner, author of *Sparkle!* (Alex wrote foreword). merle@nonprofitchampion.com
+- Merle Benny (+19735107652): close friend, accountability partner, author of *Sparkle!* (Alex wrote foreword). merle@nonprofitchampion.com. Daughter moved back in after 5 years in Egypt. Working on passive income streams with Nonprofit Champion biz. Partnering with someone using AI tools for lead gen (quizzes etc). Last real catch-up before 3/30/2026 was June/July 2025. Bi-weekly reminder cron set.
+- James Lee Baird (+18509339968): post-college roommate, Tallahassee/FSU era. "One of the coolest, most unhinged bros I have ever had." IG: @jamesleebaird. 1,295 DMs. Possibly in Franklin, TN area.
 - Marco Alvarado (+18137600833): friend through Annika, Bush's Beans, ex-wife Marisabel teaches with Annika at UTK
 - Anne: Hannah's mom. Birthday March 29. Walt Aldridge (Hannah's dad, legendary Muscle Shoals songwriter) passed Nov 2025.
 - Hannah wants to start a music lesson studio in Knoxville (guitar/piano/voice/performance coaching at Rush's Music)

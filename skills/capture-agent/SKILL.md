@@ -116,13 +116,45 @@ For each email:
 curl -s http://localhost:1234/api/v1/chats?limit=10 | jq '.data[] | {guid: .guid, display_name: .display_name}'
 ```
 
-For each chat, fetch recent messages:
+For each chat, fetch recent messages (include attachments):
 ```bash
-curl -s "http://localhost:1234/api/v1/chat/[chat_guid]/message?limit=20&after=[lookback_timestamp]" \
-  | jq '.data[] | {text: .text, handle: .handle.id, date: .date_created}'
+curl -s "http://localhost:1234/api/v1/chat/[chat_guid]/message?limit=20&after=[lookback_timestamp]&with=attachment" \
+  | jq '.data[] | {text: .text, handle: .handle.id, date: .date_created, attachments: [.attachments[]? | {mime: .mime_type, guid: .guid, transfer_name: .transfer_name}]}'
 ```
 
 Focus on messages FROM Alex (his commitments) and messages directed TO Alex with requests.
+
+#### 🖼️ Image Attachment Processing
+
+When messages contain image attachments (mime_type starts with `image/`):
+1. Download the attachment: `curl -s "http://localhost:1234/api/v1/attachment/[guid]/download" -o /tmp/capture-img-[guid].jpg`
+2. Run vision analysis to extract text/appointment info:
+   - Use the `image` tool with prompt: "Extract ALL text from this image. If it contains appointment/scheduling info (dates, times, locations, doctor/provider names, confirmation numbers), return structured data: {is_appointment: true/false, title, date, time, location, provider, notes}. Also extract any action items or commitments."
+3. Feed extracted text back into the normal candidate pipeline (keyword matching → classification → inbox)
+4. If appointment data found, also route to auto-calendar creation (see §Auto-Calendar)
+5. Clean up temp file after processing
+
+**Priority image sources** (most likely to contain appointments/schedules):
+- Annika group chat: screenshots of school events, doctor appointments, Avie schedule
+- Any chat with medical/provider screenshots (Healow, MyChart, SimplePractice)
+- Calendar screenshots, event flyers, invitations
+
+**Skip**: memes, reaction images, photos without text (if vision returns no meaningful text, move on)
+
+#### 🗓️ iMessage → Calendar Events
+
+Apply the SAME appointment detection logic as email scanning (see §Auto-Calendar) to iMessage text AND image-extracted text:
+
+**Text-based triggers in messages:**
+- "appointment is at [time]", "tomorrow at [time]", "this [day] at [time]"
+- "can you be there", "don't forget", "scheduled for"
+- Addresses, doctor names, school event times
+
+**Process:**
+1. Extract appointment details from message text or image-extracted text
+2. Dedup against existing calendar events (same as email flow)
+3. Create calendar event via `gog calendar create`
+4. Log: `- iMessage calendar events created: [N]`
 
 Known priority chats (from TOOLS.md):
 - Jay (boss): `91468caf20824cd696f30436e54c004a`

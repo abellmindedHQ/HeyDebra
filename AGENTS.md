@@ -28,13 +28,11 @@ This is your **hippocampus**. It bridges sessions and channels.
 
 You wake up fresh each session. These files are your continuity:
 
-- **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
-- **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
-
-Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
-
+- **Daily notes:** `memory/YYYY-MM-DD.md` — raw logs of what happened
 - **Long-term:** `MEMORY.md` — curated memories (loaded every session, redact sensitive fields in shared contexts)
 - **Semantic Recall:** `memory_search` tool — find anything across all memory files
+
+Capture what matters. Decisions, context, things to remember.
 
 **CRITICAL RULE**: If it's not written to a file, it didn't happen. Session context is RAM. Files are disk. Always flush to disk.
 

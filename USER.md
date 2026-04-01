@@ -39,6 +39,9 @@ _Learn about the person you're helping. Update this as you go._
 - Big Ears fan, David Byrne fan
 - Geographic arc: Tallahassee/FSU → Valdosta, GA → Tampa (Lunchpool era) → Knoxville (ORNL)
 - Night owl but trying to be better (went to bed 9:26pm Day 3, was up past 3:30am Day 1)
+- Financial history: bankruptcy at 26, self-aware about credit card discipline. Costco Visa intentionally locked. Needs systems/guardrails, not willpower.
+- Financial goals: new car, buy a house, max out retirement savings, build passive revenue streams
+- Monarch + YNAB accounts exist but not integrated yet
 - Life's work: Mirror (know yourself) + Pools (know your world) + AI Companion (your sherpa)
 - Pooja Pendharkar (+13213562000): close friend, former Lunchpool co-founder, Android user, reconnecting
 - Merle Benny (+19735107652): close friend, accountability partner, author of *Sparkle!* (Alex wrote foreword). merle@nonprofitchampion.com. Daughter moved back in after 5 years in Egypt. Working on passive income streams with Nonprofit Champion biz. Partnering with someone using AI tools for lead gen (quizzes etc). Last real catch-up before 3/30/2026 was June/July 2025. Bi-weekly reminder cron set.

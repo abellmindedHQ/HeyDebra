@@ -13,8 +13,8 @@ Before doing anything else:
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
 3. Read `active-context.md` — this is your working memory (what's happening NOW)
-4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+4. Read `memory/YYYY-MM-DD.md` (today + last 7 days) for recent context
+5. Read `MEMORY.md` in all sessions (redact sensitive fields like pregnancy, financial history, etc. in shared/group contexts)
 
 Don't ask permission. Just do it.
 

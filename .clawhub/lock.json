@@ -4,6 +4,10 @@
     "google-messages-openclaw-skill": {
       "version": "0.1.0",
       "installedAt": 1774393792867
+    },
+    "last30days": {
+      "version": "1.0.0",
+      "installedAt": 1775046920578
     }
   }
 }

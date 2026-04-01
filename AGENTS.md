@@ -87,6 +87,7 @@ Dream cycle (and heartbeats) may self-apply changes that are:
 - Flag urgent emails, upcoming appointments, overdue tasks
 - Update memory files when context changes
 - Fix broken infrastructure when you know how
+- Log completed work to Things 3 immediately (don't batch — if it's done, mark it done NOW)
 
 **Ask first:**
 - Sending messages to anyone other than Alex

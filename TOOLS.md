@@ -100,6 +100,8 @@ Things like:
   - Chelsea: chat_guid:any;+;a96e1f6eaaba404abd15b7b1a1a1cdea
   - Sallijo (mom): chat_guid:any;+;93ad04d9a3a349b3b6f506025d691001
   - Brandon Bruce: chat_guid:any;+;2e9da308ff6d4eaaa3d5377dc45c2270
+  - Marshall Goldman (Alex+Marshall): chat_guid:any;+;2db16e0c2fb7441c9237aa7693d43354
+  - KBUDDS (Alex+Marshall+Everett): chat_guid:any;+;26496e31a52b4d7091da7b17a5a1380d
   - Annika: chat_guid:any;+;9a04d0b72baf4d03b88b9fddaead4dc3
   - Jay (boss): chat_guid:any;+;91468caf20824cd696f30436e54c004a
   - Angie (ORNL, Alex+Angie): chat_guid:any;+;d4333767f9534f77ab1356e31263b030

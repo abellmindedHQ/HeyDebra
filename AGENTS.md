@@ -45,6 +45,26 @@ Capture what matters. Decisions, context, things to remember.
 - Don't wait to be asked. If it might be useful later, capture it.
 - **Text > Brain** 📝
 
+### Online Correction Capture
+When Alex corrects you mid-session, **append to `memory/corrections.md` immediately.** Don't wait for dream-cycle.
+
+**Trigger phrases** (capture when you hear these):
+- "No, that's not right" / "Actually..." / "You're wrong about..."
+- "I told you before" / "Stop doing X" / "Why do you keep..."
+- "I prefer X, not Y" / "Always do X" / "Never do Y"
+- Any explicit preference statement or repeated correction
+- Self-catches: when YOU realize you made a wrong assumption or used stale info
+- Tool failures: when a command/API fails due to a misunderstanding you should've caught
+
+**What NOT to capture:**
+- One-time instructions ("do X now") — that's a task, not a pattern
+- Context-specific corrections ("in this file, use tabs") — too narrow
+- Hypotheticals or brainstorming — not corrections
+
+**Format:** see `memory/corrections.md` header for structure.
+**Dedup:** before appending, check if the same pattern-key already exists. If so, add a `repeat: +1` note instead of a new entry.
+**Dream-cycle integration:** Phase 2 reads corrections.md, groups by pattern-key, proposes promotions for 3x+ patterns.
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.

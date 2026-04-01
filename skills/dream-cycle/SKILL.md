@@ -65,17 +65,32 @@ Review recent performance and identify improvement opportunities.
 1. Read `memory/YYYY-MM-DD.md` for last 3 days
 2. Read `active-context.md`
 3. Read `MEMORY.md` critical lessons section
-4. Search session transcripts (via `memory_search`) for:
+4. **Read `memory/corrections.md`** — online corrections captured during sessions
+5. Search session transcripts (via `memory_search`) for:
    - "mistake", "wrong", "fix", "oops", "sorry"
    - "slow", "took too long", "repeated"
    - "should have", "next time", "lesson"
-5. Review any error logs or failed cron runs
+6. Review any error logs or failed cron runs
+
+### Corrections Analysis (NEW)
+
+After reading `memory/corrections.md`:
+1. Group entries by `pattern-key`
+2. Count occurrences per pattern in the last 7 days
+3. For any pattern with **3+ occurrences**: propose promotion to MEMORY.md, AGENTS.md, SOUL.md, or TOOLS.md (whichever is most appropriate)
+4. For any pattern with **2 occurrences**: flag as "watch" in proposals
+5. Use `memory_search` to find related corrections (semantic similarity) — patterns may use different keys but describe the same issue
+6. Include a "Corrections Summary" section in the reflection output:
+   - Total corrections since last cycle
+   - Top 3 pattern-keys by frequency
+   - Promotion candidates (3x+)
+   - Watch list (2x)
 
 ### Reflection Questions
 
 - What did I do well this week?
 - What mistakes did I make? (be specific, not vague)
-- What did Alex have to repeat or correct?
+- What did Alex have to repeat or correct? (cross-reference corrections.md)
 - What tasks took too long? Why?
 - What knowledge gaps did I hit?
 - Are there patterns in my failures?

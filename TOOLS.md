@@ -32,6 +32,14 @@ Things like:
 - iPhone: 100.107.105.126 (iphone172)
 - OpenClaw accessible at: http://debras-mac-mini:18789 from any tailnet device
 
+### ⚠️ Claude Code git reset Bug (Learned 2026-03-29)
+- Claude Code v2.1.87 silently runs `git reset --hard origin/main` every ~10 min
+- This DESTROYS uncommitted changes to tracked files
+- Untracked files and git worktrees are immune
+- ALWAYS: commit frequently when using Claude Code, verify CC version
+- Use git worktrees for isolation on important repos
+- Monitor: https://github.com/anthropics/claude-code/issues/40710
+
 ### Chrome Remote Debugging (Learned 2026-03-30)
 - Chrome 136+ BLOCKS `--remote-debugging-port` on the default user data dir
 - `profile=user` will NEVER work for browser automation. Use `profile=openclaw` instead

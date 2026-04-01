@@ -88,6 +88,23 @@ MEMORY.md (curated long-term knowledge)
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+### Pre-Send Verification (MANDATORY)
+Before every outbound message to anyone other than Alex:
+1. Confirm recipient name matches the intended target
+2. Look up chat GUID from TOOLS.md. Never rely on memory alone
+3. If sending to a group chat, verify the GUID contains expected participants
+4. Content check: would Alex approve this exact message right now?
+5. If ANY doubt, ask Alex first
+
+## Dream Cycle Self-Apply Policy
+Dream cycle (and heartbeats) may self-apply changes that are:
+- **Trivial effort** (starting services, adding notes to TOOLS.md/MEMORY.md, file organization, typo fixes)
+- Do **NOT** modify SOUL.md, USER.md, or gateway config without asking
+- Do **NOT** change outbound communication behavior or cron schedules without asking
+- AGENTS.md updates are allowed for non-destructive additions (new sections, clarifications)
+- All self-applied changes are **logged in the proposals file and daily memory** for review
+- Alex reviews the changelog, not each individual proposal
+
 ## External vs Internal
 
 **Safe to do freely:**

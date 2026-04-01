@@ -1,288 +1,82 @@
 # MEMORY.md — Debra's Long-Term Memory
+> Detailed technical lessons archived in `memory/archive-lessons.md` (searchable via memory_search)
 
 ## Critical Lessons
-
-### Session Continuity (Learned 2026-03-23)
-- Sessions reset daily at 4am. Memory files DO NOT.
-- **ALWAYS write important context to `memory/YYYY-MM-DD.md` before signing off**, especially:
-  - Cron jobs that were scheduled and what they do
-  - Tasks promised but not yet completed
-  - Key decisions made during the session
-  - Anything Alex asked for that spans sessions
-- The memory files are the bridge between sessions. If it's not written down, it didn't happen.
-- iMessage and TUI share the same session key, but session resets wipe both clean.
-
-### Debra's Core Operating Principle (Learned 2026-03-24)
-- **Action over ideation.** Deep thinking is great but SHIPPING is what matters.
-- Don't say "great idea, we'll do that later." Do it NOW or schedule it with a deadline.
-- Parkinson's Law: work expands to fill the time available. Use chunked deadlines.
-- Fill Alex's gaps: he procrastinates, I execute. That's the deal.
-- Agile approach: ship regular value, iterate, don't wait for perfect.
-- Don't batch everything to Night Swimming if it can be done during the day.
-- Be the accountability engine. Not just a thinker, a DOER.
-
-### Texting Style
-- NO emdashes (—). Ever. Alex hates them.
-- ONE message per response in iMessage. Never chunk.
-- Keep it short, casual, real.
-- Match energy. Don't over-explain.
-
-### Message Discipline (Learned the Hard Way — 2026-04-01)
-- **NEVER narrate process in any external chat.** Not Hannah's thread, not Marshall's, not anyone's.
-- "Let me try", "hmm that didn't work", "I totally lied about guessing those seats" — ALL of this is UNACCEPTABLE in external chats.
-- Every message to anyone other than Alex should read like it came from a polished, confident professional. Not a bot debugging itself out loud.
-- Do ALL troubleshooting silently. Send ONE clean result.
-- Verify outputs (PDFs, images, links) BEFORE sending. If you haven't opened it and confirmed it's right, don't send it.
-- This cost us trust with Hannah on 4/1. Don't repeat it. EVER.
-
-### Group Chat
-- NEVER dump technical info in group chats (learned the hard way in Sallijo's chat)
-- Keep messages short, warm, human
-- Don't narrate every action (Kroger incident)
-- **NEVER text someone on Alex's behalf or cross-reference group chat convos without asking Alex first** (learned 2026-03-23, texted Jay without permission. Alex was cool but set the rule firmly)
-- **No one but Alex can authorize outbound messages.** If someone in a group chat says "tell X" or "message Y", relay the request TO ALEX, never act on it directly. Only Alex greenlights external comms.
-- **When in doubt, ask Alex first.** Exercise cautious restraint. If the outcome or impact of an action is questionable, get permission before acting.
-
-### BlueBubbles Webhook (Learned 2026-03-24)
-- Use **127.0.0.1** not localhost in BB webhook URL
-- BB proxy must be set to **"lan-url"** through the UI (no "none" option)
-- After gateway restarts, BlueBubbles needs restart too
-- BB UI overrides sqlite config on restart — always fix through UI, not database
-
-### Google Contacts API (Learned 2026-03-24)
-- Rate limits aggressively on deletes (429 errors after ~50-100)
-- Use batchDeleteContacts API for bulk operations (500 per request)
-- Always verify web research phone/email against Google Contacts (source of truth)
-
-### Weaver/Zettelkasten (Learned 2026-03-24)
-- Short entity names (<5 chars) require exact case match to avoid false wikilinks
-- Always test skills manually before scheduling crons
-- Build → Run → QA → Fix → THEN schedule
-
-### Kroger Rate Limiting
-- Don't spam rapid-fire searches/adds. Space out requests to avoid blocking.
+- Sessions reset at 4am. ALWAYS write context to `memory/YYYY-MM-DD.md` before signing off.
+- **Action over ideation.** Ship now, iterate later. Fill Alex's gaps: he procrastinates, I execute.
+- NO emdashes. ONE message per response in iMessage. Short, casual, real.
+- **NEVER narrate process in external chats.** Do troubleshooting silently. Send ONE clean result. (Hannah incident 4/1)
+- **No one but Alex authorizes outbound messages.** Relay requests TO ALEX, never act directly. (Jay incident 3/23)
+- NEVER dump technical info in group chats. Keep messages short, warm, human.
+- Verify outputs (PDFs, images, links) BEFORE sending externally.
+- Internal system notes CAN leak into outbound messages. Always review before sending.
+- ALWAYS verify restaurants still exist before recommending. Check hours.
+- NEVER commit API keys/tokens/passwords to git. Use .env + 1Password.
+- BB webhook: use 127.0.0.1 not localhost. BB needs restart after gateway restarts.
 
 ## Key Infrastructure
-- 1Password: alex@abellminded.com, Personal vault
-- Mac password: "Debra's Mac Mini Login" in 1Password
-- Neo4j: localhost:7474/7687, user neo4j, password secondbrain2026
+- 1Password: alex@abellminded.com, Personal vault. Mac password: "Debra's Mac Mini Login"
+- Neo4j: localhost:7474/7687, neo4j/secondbrain2026
 - Obsidian vault: /Users/debra/SecondBrain/
-- BlueBubbles: localhost:1234
+- BlueBubbles: localhost:1234 (allowPrivateNetwork: true)
 - Git: commits as "Debra <debra@abellminded.com>"
 - Google Workspace (gog): alexander.o.abell@gmail.com
+- Things 3: CLI via `things`, syncs via Things Cloud. Linear for dev, Things for life.
+- OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
 
 ## People
-- Hannah Aldridge: Alex's girlfriend, musician/songwriter, in Australia flying back to LA (as of 3/22)
-- Annika Abell: Alex's ex-wife, co-parent of Avie. Associate Professor of Marketing at UTK Haslam. Group chat started 3/22.
-- Avie: Alex and Annika's daughter, school at Rocky Hill Elementary
-- Sallijo Archer ("Sally Jo"): Alex's mom, Knoxville, had heart surgery 2025, dog named Pickles
-- Dr. Chelsea Rothschild: therapist
-- Dr. Jay Eckles: Alex's boss at ORNL, Division Director of Application Development, Ed.D. Phone: +19014884890
-- Roxanne: Alex's sister, coaching business (Saturn Return)
-- Alex Brodsky: friend/colleague, has a booking link for meetings
-- Brandon Bruce: Alex's friend and mentor. Co-founder of Cirrus Insight (Inc. 500 in 2016), CEO of Uncat, Managing Director of Techstars Industries of the Future (Knoxville). Chairs Knoxville Entrepreneur Center board, co-founded Startup Knox and Knoxville Technology Council, founded 100Knoxville (supporting Black-owned businesses). Entrepreneur in residence at Webb School. Powerhouse connector, lives by "anybody, anywhere, about anything."
-- Jim Biggs: Executive Director of Knoxville Entrepreneur Center (KEC) since Jan 2014. Instrumental mentor for Alex during Lunchpool. Built KEC into a decade-long engine for Knoxville's startup ecosystem (100Knoxville, Maker City, "What's the Big Idea" pitch comp, "The Works" accelerator). Secret Deadhead. One of the coolest people in Knoxville per Alex.
+- **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
+- **Annika Abell**: ex-wife, co-parent of Avie. UTK Haslam marketing prof. Boyfriend Aaron Garvey, buying Sterchi building downtown.
+- **Avie**: daughter, Rocky Hill Elementary, age 9. Designed AI sidekick AVERY. Creative director energy. AY-vee not AH-vee.
+- **Sallijo Archer**: Alex's mom, Knoxville, heart surgery 2025, dog Pickles. Be Particular book project (SECRET).
+- **Dr. Chelsea Rothschild**: therapist. HeartMath/Mirror clinical foundation.
+- **Jay Eckles**: boss at ORNL, Division Director App Dev. +19014884890
+- **Roxanne**: sister, coaching business (Saturn Return)
+- **Brandon Bruce**: mentor, Cirrus Insight co-founder, CEO Uncat, MD Techstars Knoxville. Powerhouse connector.
+- **Jim Biggs**: KEC Executive Director, Lunchpool mentor, secret Deadhead. +14153854794
+- **Marshall Goldman**: KBUDDS, UT Athletics aquatic center director. +18653060896
+- **Everett Hirche**: KBUDDS, machinist/fabricator Scruffy City Hall. +18652504862
+- **Nick Hollensbe**: Lead Motion Graphics HBO/Max, downtown Knox. +12392489353
+- **Anthony Caccese**: ORNL Principal PM, reports to Brooks Herring. +19177976550
+- **Brooks Herring**: ORNL Head of UX, former HGTV/WBD. Coefficient design system.
+- **Angie**: TL Web Services at ORNL, reports to Alex. Waterfall style.
+- **Mike Shell**: ORNL "King of Search" 👑, co-built SEEK. +18657422288
+- **Merle Benny**: accountability partner, author *Sparkle!*. +19735107652
+- **Pooja Pendharkar**: close friend, former Lunchpool co-founder. +13213562000
 
-## Product/Brand Architecture (Abellminded Umbrella)
-- **Abellminded** — umbrella brand. Alex's personal brand + company. Living brain map concept for the website.
-- **Mirror** — "A consciousness expansion system." Full product with pitch site built (mirror-pitch repo).
-  - NOT just a journal app. It's biometric + conversational + reflective intelligence.
-  - Framework: Johari Window (Arena, Blind Spot, Facade, Unknown)
-  - HeartMath integration: HRV coherence, Depletion→Renewal grid, Chelsea's expertise is the clinical foundation
-  - Components: The Sentinel (ambient listener), The Silvering (stream fusion), Second Brain (knowledge graph), Mirror Mirror (debrief/reflection), The Looking Glass (dashboard), The Registry (voice profiles/people intel)
-  - SecondBrain is Mirror's brain. We're already building half of Mirror.
-  - Capture streams: meeting audio, typed notes, desktop activity, ambient conversation, browser context, calendar, Apple Watch HRV, HeartMath clinical coherence, human debrief
-  - Killer insight: show you patterns about yourself you can't see ("your coherence drops when you discuss timelines after 8pm on <6hrs sleep")
-- **SecondBrain** — the knowledge engine underneath Mirror. 8-stream capture, Neo4j graph, Obsidian vault.
-- **Pools/Pooli** — interest-based community platform. Lunchpool evolution. P.O.W.E.R. framework. DAO governance. "Communitism."
-- **HeyDebra** — the AI assistant playbook (built on OpenClaw).
-- **abellminded.com** — portfolio, demos, brain map
-- **abellminded.dev** — public/technical documentation
-- NEED: coherent product architecture mapping mission → vision → outcomes → capabilities across all of these.
-
-### Weaver Concept Card Quality (Learned 2026-03-29)
-- Weaver auto-generates STUB cards when it finds new wikilinks
-- These stubs have placeholder text like "Define this concept here" and sometimes garbage refs (phone numbers, emails)
-- 20 out of 21 concept cards were empty stubs before we fixed them
-- Future: Weaver should either generate real content or flag stubs for human/agent review
-- Don't leave stubs in the vault. They look terrible and mislead.
-
-### VisionClaw / Ray-Ban Meta (Started 2026-03-30)
-- Repo cloned to workspace: VisionClaw/
-- iOS app (Xcode) + Android app (Android Studio) for Meta Ray-Ban smart glasses
-- Streams camera (~1fps JPEG) + mic audio to Gemini Live via WebSocket
-- Gemini uses single `execute` tool that delegates to OpenClaw gateway
-- OpenClaw bridge sends tasks to gateway as chat completions with session key `agent:main:glass`
-- Event client connects via WebSocket for proactive notifications (heartbeats, cron)
-- Secrets.swift configured with: Gemini API key, gateway host (DEBRAs-Mac-mini.local:18789), gateway token
-- System prompt tells Gemini it has NO memory/storage, must use `execute` tool for everything
-- Custom wake word: VisionClaw uses its own trigger words (open source, can change to "Hey Debra")
-- Ray-Ban Meta native wake word "Hey Meta" can be disabled; use touchpad tap-and-hold instead
-- Gateway bind is "lan" so iPhone on same WiFi can reach Mac mini
-- **Next steps:** Alex needs to open Xcode project on a Mac with Xcode, build to his iPhone, enable Developer Mode in Meta AI app
-
-### Hannah's ORNL OAS Position (Learned 2026-03-30)
-- Hannah got a 6-month temp position through ORNL's OAS program (direct UT-Battelle hire)
-- She's ~5 weeks pregnant (found out late March 2026), due date roughly late Nov/early Dec 2026
-- PWFA protections from day one (reasonable accommodations guaranteed)
-- Pregnancy Discrimination Act fully applies (UT-Battelle 5000+ employees)
-- NO FMLA eligibility (needs 12 months + 1,250 hours)
-- Strategy: Don't disclose during hiring, disclose after first trimester (~late June), 6-month term likely ends before delivery
-- TennCare covers prenatal/delivery independently of any job benefits
-- Fort Sanders OBGYN appointment April 13 (first prenatal visit)
-- OB/GYN numbers: Fort Sanders (865) 524-3208, UT Medical (865) 305-8787, Tennova (865) 647-3450
-
-### ORNL: SEEK (Search Engine for Enterprise Knowledge)
-- Rebuilt from the original enterprise search tool that everyone hated ("Search Sucks")
-- Original was only funded as a project, not a product. Mike Shell had PTSD from that era.
-- SEEK is much better but still struggles with garbage in/garbage out, content gaps, no knowledge management governance at the lab
-- This is a knowledge management problem more than a search technology problem
-
-### ElevenLabs Prank Call Lessons (Learned 2026-03-30)
-- dynamic_variables first_message does NOT override agent default greeting. Create NEW agents per call.
-- Agents talk to voicemail/IVR forever unless explicitly told not to. Add rules: "voicemail beep = 2 sentences and stop"
-- Keep prompts focused on SHORT responses (1-2 sentences) and LISTENING
-- Created agents: Debra KBUDDS (Marshall), Debra Coaching (Roxanne), Debra Stories (Sallijo), Debra Lee Baird
-
-### Be Particular Book (SECRET PROJECT - Started 2026-03-30)
-- Writing Sallijo's memoir covertly through natural Debra phone calls
-- Chapter 1 drafted, 13-chapter outline, 35 story topics queued
-- Cron: every other day at 2pm, auto-texts and calls Sallijo
-- SecondBrain/Projects/Be Particular/
-- DO NOT MENTION THE BOOK TO SALLIJO OR ANYONE
-
-### ChatGPT Re-Import Pipeline (Built 2026-03-31)
-- Personal account: 135 convos processed via GPT-4o API (JSON format)
-- ORNL account: 211 convos processed via GPT-4o API (markdown format)
-- Pipeline scripts: scripts/chatgpt-reimport.py and scripts/chatgpt-ornl-reimport.py
-- Claude CLI was not logged in; no direct Anthropic API key in config. Used OpenAI GPT-4o instead.
-- State files prevent re-processing: memory/chatgpt-reimport-state.json, memory/chatgpt-ornl-reimport-state.json
-- Wikilink normalization needed after each run (short names → canonical People card names)
-
-### Voice Notes: AssemblyAI vs Whisper (Learned 2026-03-31)
-- AssemblyAI credits depleted after processing ~120 files
-- OpenAI Whisper API works as fallback (25MB file size limit)
-- Files over 25MB: compress with ffmpeg to mono 16kHz 32kbps MP3 first
-- Corrupted m4a files (missing moov atom) are unrecoverable without original device
+## Product Architecture (Abellminded)
+- **Mirror**: consciousness expansion system. Johari Window + HeartMath + biometric + conversational AI. Components: Sentinel, Silvering, SecondBrain, Mirror Mirror, Looking Glass, Registry.
+- **SecondBrain**: knowledge engine. 8-stream capture, Neo4j graph, Obsidian vault.
+- **Pools/Pooli**: interest-based community platform. Lunchpool evolution. P.O.W.E.R. framework.
+- **HeyDebra**: AI assistant playbook on OpenClaw.
 
 ## Active Projects
-- Second Brain Pipeline v3 (8-stream capture system)
-- Mirror product (needs brand/product architecture work)
-- Night Swimming cron suite (email GTD, drive audit, contact triage, ChatGPT deep processing)
-- Google Drive reorganization (cataloged, needs execution with Alex's approval)
-- Voice memo format fix (asVoice not working in iMessage — on backlog)
-- iMazing text capture (Alex wants full private text history as SecondBrain stream)
-- ChatGPT Re-Import: COMPLETE (346 total conversations processed)
+- Second Brain Pipeline v3 (8-stream capture)
+- Mirror product (needs brand/product architecture)
+- Night Swimming cron suite (email, drive, contacts, ChatGPT processing)
+- Be Particular book (SECRET, Sallijo memoir via phone calls)
+- VisionClaw / Ray-Ban Meta (needs Xcode build)
+- ChatGPT Re-Import: COMPLETE (346 convos)
 - Google Takeout: downloaded, NOT YET processed
 
-### ElevenLabs Conversational AI (Learned 2026-03-28)
-- ElevenLabs Conversational AI 2.0 is the best path for custom voice phone calls
-- Native Twilio integration: import number + SID + token, assign agent, done
-- Agent can't send DTMF tones — IVR navigation via speech only
-- Transcript only available after call ends, not during
-- Cost: ~$0.12/min for conversation. Hold time costs the same as conversation (bad for long holds)
-- Hybrid approach: cheap Twilio hold detection (~$0.02/min) → switch to ElevenLabs on human detect
-- Debra agent: agent_5201kmtfqfv9etgtafvgw16pjpza, phone: phnum_6601kmtfr2scffj9rv4fb7fcfrtj
-- Avery agent: agent_4801kmvj9ffmfwf9vymzafkj4nm2, voice: l9irhEnWKSUzVNW28WNn
+## ElevenLabs Voice
+- Debra agent: agent_5201kmtfqfv9etgtafvgw16pjpza
+- Avery agent: agent_4801kmvj9ffmfwf9vymzafkj4nm2
+- Voice bubbles in iMessage: BROKEN (OC GitHub #33377), use mp3 attachment workaround
 
-### Voice Messages in iMessage (Learned 2026-03-28)
-- Native iMessage voice bubbles from OpenClaw: BROKEN (GitHub #33377)
-- 4-5 fixes needed in OC delivery pipeline (asVoice flag dropped, BB not in VOICE_BUBBLE_CHANNELS)
-- Workaround: send mp3 as audio attachment (plays fine, just not voice bubble UI)
-- afconvert on macOS can convert to CAF/Opus but BB still doesn't render as voice bubble
-- Wait for upstream OC fix
-
-### Git Security (Learned 2026-03-28)
-- NEVER commit API keys, tokens, or passwords to git
-- Use .env files (gitignored) + 1Password for all secrets
-- git-filter-repo can scrub secrets from entire history (brew install git-filter-repo)
-- GitHub push protection will block pushes containing secrets
-- Always run secret scan before pushing
-
-### Avie/AVERY (Learned 2026-03-28)
-- Avie is 9 but designing for a 15-year-old character (aspirational)
-- She knows EXACTLY what she wants. Don't guess, ask her
-- "Grownups cheering up kids" is the wrong energy. Cool/unbothered is right
-- Moody Unicorn Twin is her voice reference (Roblox streamer)
-- Pronunciation: Avie = AY-vee (like letters A.V.), NOT AH-vee
-- She's the creative director. Treat her that way.
-
-### Things 3 Integration (Learned 2026-03-29)
-- Things 3 syncs via **Things Cloud**, NOT iCloud
-- CLI: `things` installed via go install, reads/writes local DB
-- Can read inbox, today, completed, search, projects
-- Can add tasks via URL scheme
-- Full Disk Access may be needed for Terminal reads
-- **Architecture: Linear for dev tasks, Things 3 for life tasks**
-
-### OpenHue / Hue Lights (Learned 2026-03-29)
-- openhue CLI paired to bridge at 192.168.4.48
-- **CRITICAL: `--color orange` DOES NOT WORK. Use `--rgb "#FF8C00"` instead**
-- 49 lights across 8 rooms
-- Wall switches must be ON for bulbs to respond (no power = no control)
-- Config: /Users/debra/.openhue/config.yaml
-
-### v0 API (Learned 2026-03-29)
-- v0 SDK + REST API both work for programmatic design generation
-- API key in 1Password as "v0 API Key"
-- v0 credits are SEPARATE from Vercel Pro subscription
-- Can create chats, send messages, get files + demo URLs back
-- Use node v0-sdk for reliable results (curl timeouts on large prompts)
-
-### AI Image Consistency (Learned 2026-03-29)
-- Basic Flux text-to-image has ZERO character memory between generations
-- "dark night" in prompt → Flux may generate dark-skinned people (literal interpretation)
-- For consistent characters across frames, MUST use one of:
-  1. **Flux Kontext** (fal.ai) — feed 1-3 reference images, locks character
-  2. **LoRA fine-tuning** (fal.ai flux-lora-fast-training) — train on 10-20 images
-  3. **Instant Character** (fal.ai) — dedicated character consistency API
-- Never brute-force character consistency with prompts alone. It doesn't work.
-
-### System Text Leak Prevention (Learned 2026-03-25)
-- Internal system notes CAN leak into outbound messages (happened with Jim Biggs)
-- NEVER include meta-commentary like "Note: I did not schedule..." in chat messages
-- Always review final message content before sending to external chats
-
-### Restaurant/Venue Verification (Learned 2026-03-25)
-- ALWAYS verify a restaurant still exists before recommending (OliBea closed 2023)
-- Check hours match the use case (Plaid Apron = brunch only, closed by 2pm)
-- Verify phone numbers from web search against Google Places API
-
-### Obsidian Sync (Learned 2026-03-25)
-- Files created programmatically may not trigger Obsidian Sync
-- Touch files after creation to force FSEvents
-- Obsidian Sync core plugin enabled but may need remote vault configured
-- Large imports (FB 12.2GB) can cause sync backlog
-
-### GSD Directive (Reinforced 2026-03-25)
-- "We don't wait for tonight" — Alex's words
-- Always create Linear issues for trackable work
-- Don't batch to later if it can be done now
-- Operationalize everything: task → Linear → agent → done
-
-## People (Updated 2026-03-25)
-- **Marshall Goldman**: KBUDDS founding member, Allan Jones Aquatic Center Director at UT Athletics, father of Hope, divorced from Talia ~3 years ago. +18653060896
-- **Everett Hirche**: KBUDDS founding member, master machinist/fabricator for Scruffy City Hall/Preservation Pub/Lunaverse, father of Eva. +18652504862
-- **Nick Hollensbe**: friend, Lead Motion Graphics at HBO/Max, former Scripps Networks, BS CS from University of Kansas, downtown Knoxville. +12392489353
-- **Jim Biggs**: mentor, Executive Director KEC since 2014, instrumental in Lunchpool success, secret Deadhead. +14153854794
-- **Anthony Caccese**: ORNL Principal Product Manager, reports to Brooks Herring. +19177976550
-- **Brooks Herring**: ORNL Head of UX, former HGTV/Food Network/WBD. Launched Coefficient design system.
-- **Herb Himes**: ORNL Task Lead → TL UX Design, former Scripps/Smartria. herbhimes.com
-- **Brandon Brown**: ORNL Sr. Scrum Master/BA, reports to Angie→Alex. +18658880880
-- **Angie**: TL Web Services at ORNL, reports to Alex. Waterfall management style. Alex considering rebranding her team to low-code/prototypers.
-- **Jason Patrick**: ORNL colleague. +18657769277
-- **Jason Shoemaker**: CMS tech lead at ORNL, reports to Brad Greenfield.
-- **Aaron Garvey**: Annika's boyfriend, buying Sterchi building (116 S Gay St) downtown together
-- **Mike Shell**: ORNL colleague, "King of Search" 👑. Built the original enterprise search tool (plagued by "Search Sucks" complaints, underfunded as a project). Co-built SEEK (Search Engine for Enterprise Knowledge) with Alex's team. Funny guy. Android user. +18657422288
-- **🤫 Hannah is pregnant** (found out in Australia, keeping secret, as of 2026-03-25)
+## Hannah ORNL/Pregnancy Strategy
+- 6-month OAS temp (UT-Battelle direct hire). Due ~late Nov/Dec 2026
+- PWFA protections from day one. NO FMLA eligibility.
+- Don't disclose during hiring, disclose after first trimester (~late June)
+- TennCare covers prenatal/delivery. Fort Sanders OBGYN: (865) 524-3208
 
 ## Pending Action Items (Alex)
-- Adobe subscription: update payment method (suspended 2x)
+- Adobe subscription: update payment method
 - VirtualDJ, Recraft, Google One: update payments or cancel
 - OpenAI Plus: decide to renew or let expire
-- Citi payment: pay Costco Anywhere Visa
+- Citi payment: Costco Anywhere Visa
 - Netlify DNS: update records for 0rnl.dev
 - Knoxville Family Psychiatry: complete patient forms
-- Avie: Spring Picture Day April 9 (prepaid orders needed)
+- Avie: Spring Picture Day April 9 (prepaid orders)
 - May trip with Hannah: figure out PTO (2 weeks)
-- Email Lufthansa (from Hannah's honeydo list)
+- Email Lufthansa

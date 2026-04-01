@@ -81,6 +81,18 @@ things inbox --json 2>/dev/null
 
 Parse each task for: `uuid`, `title`, `status`, `start_date`, `stop_date`, `created`, `area_title`, `tags`, `notes`, `deadline`.
 
+### 1.5 🔍 Oracle Validation (Prevent False Flags)
+
+Before composing the report, cross-reference multiple sources to avoid flagging resolved items:
+
+1. Read `active-context.md` for latest status updates
+2. Run `things completed --since yesterday --json` for recently completed tasks
+3. Cross-reference: if an item appears in BOTH pending sources (inbox.md, backlog.md) AND completed/resolved sources (Things 3 completed, active-context.md marked done), **mark it resolved and skip it**
+4. If `active-context.md` contradicts a memory file or inbox.md, **active-context.md wins** (it's more recent)
+5. Check for items manually completed outside Things 3 (e.g., "Annika filled the form" in recent iMessage/session context)
+
+**Why this matters:** Without validation, the report flags already-resolved items (e.g., Boston hotel after it was booked, ORNL Isaac after it was verified). Stale flags erode trust in the report.
+
 ### 2. Cross-Reference inbox.md
 
 Read the inbox staging buffer:

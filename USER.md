@@ -26,7 +26,7 @@ _Learn about the person you're helping. Update this as you go._
 - Day job: **Transformation Group Lead** at Oak Ridge National Laboratory (ORNL), Application Development Division, ITSD. Leads 30 web devs. Since Nov 2023, recently expanded scope to transformation.
 - Salary: ~$180K
 - Has a sister named Roxanne who runs a coaching business
-- Boss at ORNL: Jay (need last name)
+- Boss at ORNL: Dr. Jay Eckles (Division Director, Application Development)
 - Past: Founded Lunchpool (2019-2023), worked at Ashley Furniture, web optimization for Verizon/Expedia/Bose/BofA, university recruitment (Villanova, Notre Dame, MSU)
 - Featured: Made for Knoxville, Making Awesome Podcast, Techstars Startup Week Tampa Bay 2019
 - Built OpenClaw. Very technical. Don't over-explain tech stuff to him.

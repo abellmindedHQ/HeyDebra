@@ -69,7 +69,7 @@
 - Avie: Alex and Annika's daughter, school at Rocky Hill Elementary
 - Sallijo Archer ("Sally Jo"): Alex's mom, Knoxville, had heart surgery 2025, dog named Pickles
 - Dr. Chelsea Rothschild: therapist
-- Jay: Alex's boss at ORNL
+- Dr. Jay Eckles: Alex's boss at ORNL, Division Director of Application Development, Ed.D. Phone: +19014884890
 - Roxanne: Alex's sister, coaching business (Saturn Return)
 - Alex Brodsky: friend/colleague, has a booking link for meetings
 - Brandon Bruce: Alex's friend and mentor. Co-founder of Cirrus Insight (Inc. 500 in 2016), CEO of Uncat, Managing Director of Techstars Industries of the Future (Knoxville). Chairs Knoxville Entrepreneur Center board, co-founded Startup Knox and Knoxville Technology Council, founded 100Knoxville (supporting Black-owned businesses). Entrepreneur in residence at Webb School. Powerhouse connector, lives by "anybody, anywhere, about anything."
@@ -143,6 +143,20 @@
 - SecondBrain/Projects/Be Particular/
 - DO NOT MENTION THE BOOK TO SALLIJO OR ANYONE
 
+### ChatGPT Re-Import Pipeline (Built 2026-03-31)
+- Personal account: 135 convos processed via GPT-4o API (JSON format)
+- ORNL account: 211 convos processed via GPT-4o API (markdown format)
+- Pipeline scripts: scripts/chatgpt-reimport.py and scripts/chatgpt-ornl-reimport.py
+- Claude CLI was not logged in; no direct Anthropic API key in config. Used OpenAI GPT-4o instead.
+- State files prevent re-processing: memory/chatgpt-reimport-state.json, memory/chatgpt-ornl-reimport-state.json
+- Wikilink normalization needed after each run (short names → canonical People card names)
+
+### Voice Notes: AssemblyAI vs Whisper (Learned 2026-03-31)
+- AssemblyAI credits depleted after processing ~120 files
+- OpenAI Whisper API works as fallback (25MB file size limit)
+- Files over 25MB: compress with ffmpeg to mono 16kHz 32kbps MP3 first
+- Corrupted m4a files (missing moov atom) are unrecoverable without original device
+
 ## Active Projects
 - Second Brain Pipeline v3 (8-stream capture system)
 - Mirror product (needs brand/product architecture work)
@@ -150,6 +164,8 @@
 - Google Drive reorganization (cataloged, needs execution with Alex's approval)
 - Voice memo format fix (asVoice not working in iMessage — on backlog)
 - iMazing text capture (Alex wants full private text history as SecondBrain stream)
+- ChatGPT Re-Import: COMPLETE (346 total conversations processed)
+- Google Takeout: downloaded, NOT YET processed
 
 ### ElevenLabs Conversational AI (Learned 2026-03-28)
 - ElevenLabs Conversational AI 2.0 is the best path for custom voice phone calls

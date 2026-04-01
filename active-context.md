@@ -1,83 +1,67 @@
-# Active Context — Updated 2026-03-31 3:30am (pre-reset flush)
+# Active Context — Updated 2026-04-01 3:30am (pre-reset flush)
 
-## Tuesday March 31 Schedule
-- **7am**: Lufthansa baggage retry (1-877-234-3449) — DTMF FIX STILL NEEDED
-- **Avie**: Little Entrepreneurs Shop at school 11:35am (Rebecca Henderson's class)
-- Pack for Boston (flight Thu Apr 2 at 7:30am)
-
-## Wednesday April 1
-- Lipoma consult 2:30pm
-- Patti appointment 3:30pm
+## Wednesday April 1 Schedule
+- **2:30pm**: Lipoma consult
+- **3:30pm**: Patti appointment
 - Chelsea therapy (video, Heart Connected Healing)
 - Avie pickup (Sallijo handling)
 
+## Thursday April 2
+- **7:30am**: Flight to Boston
+
 ## Active Projects
 
-### Voice Notes Pipeline
-- 12 of 126 Apple Notes voice memos processed (batch running overnight)
-- 336 Otter transcripts extracted (2.3GB), not yet imported to Obsidian
-- AssemblyAI API key configured from DEBRA vault
-- Voice embedding extraction added (resemblyzer)
-- Speaker labeling tool built (label-speaker.py)
+### ChatGPT Re-Import (Wikipedia of Alex) ✅ COMPLETE
+- Personal account: 135/135 conversations processed via GPT-4o
+- 135 Obsidian notes in SecondBrain/Reflections/LLM-Processing/ChatGPT/
+- 54 people card enrichments, 120 action items captured
+- Wikilinks normalized (96 fixes across 48 files)
+
+### ChatGPT ORNL Re-Import ✅ COMPLETE
+- ORNL account: 211 conversations processed (3 markdown export batches)
+- 207 Obsidian notes in SecondBrain/Reflections/LLM-Processing/ChatGPT-ORNL/
+- 72 high importance, 225 action items captured
+- Key domains: Work/ORNL (138), ServiceNow (25), AppDev (10), Transformation (7)
+- New people surfaced: Kevin, Kris, Jesse Wolfe, David Wantland, Mike Force, Kim Smithson, Heather Bort, Brock Kale
+- ORNL wikilinks still need normalization pass
+
+### Voice Notes Pipeline ✅ COMPLETE
+- 125 of 126 Apple Notes voice memos processed
+- 1 corrupted file (319, Meeting recording, 77MB) in corrupt/ folder
+- Used OpenAI Whisper API after AssemblyAI credits ran out
+- 336 Otter transcripts imported to SecondBrain/Meetings/ (491 total meeting notes)
+
+### Google Takeout
+- Downloaded to ~/Downloads/google-takeout/ (2GB zip + 62KB + 19.6MB data export)
+- NOT YET PROCESSED - needs unzipping and pipeline
 
 ### Be Particular Book (SECRET)
-- Session 1 complete (10 min call with Sallijo)
-- Chapter 1 drafted ("Two Words")
-- 13-chapter outline written
-- 35 topics queued for future sessions
-- Cron: every other day at 2pm, texts Sallijo, calls if she responds
+- Session 1 complete, Chapter 1 drafted, 13-chapter outline, 35 topics queued
+- Cron: every other day at 2pm
 - DO NOT mention book to Sallijo or anyone
 
-### SecondBrain People Cards
-- 116 people cards rewritten in Wikipedia style
-- 7 concept cards extracted
-- Relationship map built (eras, tiers, themes)
-- Migrated from SecondBrain-OLD to new SecondBrain
-
-### Voice Clones
-- Debra clone: working (Chatterbox-TTS, reference from Angie poem)
-- Alex clone v2: generated from Otter meeting audio, sent for review
-- Voxtral TTS: installed (MLX 4-bit), preset voices only (no clone on Mac)
-- Alex wants better clone — needs clean 30s solo recording
-
-### LinkedIn Cleanup
-- PAUSED — was archiving real convos (Angelo Nappi incident)
-- Smart classifier built (classify-conversations.py)
-- Need to run classifier before resuming
-- 4,957 conversations in queue, cron DISABLED
-- Profile=openclaw (NOT user), Chrome LaunchAgent installed
-
-### Prank Calls
-- Marshall Goldman KBUDDS call: SUCCESS (4m43s, hilarious)
-- Roxanne coaching call: voicemail (Cloaked AI screener), text sent awaiting reply
-- Sallijo stories call: SUCCESS (10m2s, book material)
-- Lee Baird call: voicemail, need to text via RCS tomorrow
-- ElevenLabs agents created for each
-
-### Contacts
-- Marshall Goldman: (865) 306-0896 ✅ FIXED
-- Everett Hirche: (865) 250-4862 ✅ FIXED
-- Mike Shell: (865) 742-2288 ✅ ADDED
-- James Lee Baird: (850) 933-9968 ✅ ADDED
-- Jay contacts merged (deleted "Jay ORNL Boss" stub)
-- Marshall duplicate deleted
-- Merle + Marco SecondBrain files created
-- 27 "stub" contacts are NOT empty — gog CLI limitation, data exists on phone
+### Night Swimming Suite (ran tonight)
+- Capture Agent: 4 new items (Supabase pause warning, return flight, family therapy, Muse luncheon)
+- Contacts Triage: 1,187 contacts, Neo4j offline so graph cross-ref skipped
+- Drive Audit: 9,200 items, 26.91 GB, identified ~15 GB savings
+- LLM Export: processed the 211 ORNL ChatGPT convos
+- Social Data: no new exports found
+- Weaver: 598 files modified, 6,357 new wikilinks, 965 back-links
+- Dream Cycle #4: 8 findings, 8 proposals (30 total pending)
 
 ## Infrastructure
-- ✅ 1Password DEBRA vault operational
-- ✅ Google Messages/RCS bridge (needs restart, tab died)
-- ✅ Chrome LaunchAgent for auto-start
-- ✅ AssemblyAI pipeline
-- ✅ Chatterbox-TTS voice cloning
-- ✅ Voxtral TTS (MLX)
-- ❌ Neo4j still DOWN
-- ❌ Lufthansa DTMF approach broken
-- ⚠️ Gemini search quota hitting 429s (3rd dream cycle in a row)
+- ❌ Neo4j still DOWN (4+ days)
+- ❌ AssemblyAI credits depleted
+- ⚠️ Gemini search quota hitting 429s (4th cycle in a row)
+- ✅ Google Takeout downloaded but not processed
+- ✅ All ChatGPT exports processed
 
 ## Pending Decisions (Need Alex)
+- ORNL ChatGPT export: wikilink normalization (Jay→Dr. Jay Eckles etc)
+- Google Takeout: process when ready
+- 30 dream cycle proposals pending review
 - Batman v6 frame selection (contact sheets sent)
-- Apple Notes export approach for iCloud contacts (gog CLI limitation)
-- 22 dream cycle proposals pending review
 - LinkedIn classifier: run it?
 - Voice clone quality: Alex needs to send 30s recording
+- Neo4j: needs restart
+- 491 Otter meeting notes: run through Wikipedia extraction pipeline?

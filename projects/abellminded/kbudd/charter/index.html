@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KBUDD — Knoxville Brotherhood of United Divorced Dads. Official Founding Charter & Bylaws.">
+  <title>KBUDD — Official Founding Charter & Bylaws</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <style>
+/* ══════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════ */
+:root {
+  --bg:          #080808;
+  --surface:     #0f0f0f;
+  --surface2:    #181818;
+  --accent:      #FF0080;
+  --accent-dim:  rgba(255,0,128,0.12);
+  --accent-glow: rgba(255,0,128,0.25);
+  --accent-rgb:  255,0,128;
+  --gold:        #D4AF37;
+  --gold-dim:    rgba(212,175,55,0.15);
+  --gold-glow:   rgba(212,175,55,0.3);
+  --text:        #F5F0E8;
+  --muted:       rgba(245,240,232,0.45);
+  --faint:       rgba(245,240,232,0.15);
+  --border:      rgba(245,240,232,0.07);
+
+  --F-display: 'Bebas Neue', 'Impact', sans-serif;
+  --F-serif: 'Playfair Display', 'Georgia', serif;
+  --F-mono: 'Space Mono', 'Courier New', monospace;
+  --F-body: 'DM Sans', -apple-system, sans-serif;
+}
+
+/* ══════════════════════════════════════════════
+   RESET & BASE
+══════════════════════════════════════════════ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--F-body);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ══════════════════════════════════════════════
+   BACKGROUND TEXTURE
+══════════════════════════════════════════════ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(var(--accent-rgb),0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(212,175,55,0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Noise overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ══════════════════════════════════════════════
+   SCANLINE SWEEP
+══════════════════════════════════════════════ */
+.scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.4;
+  z-index: 999;
+  animation: scanDown 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanDown {
+  0%   { top: -3px; }
+  100% { top: 100vh; }
+}
+
+/* ══════════════════════════════════════════════
+   CONTAINER
+══════════════════════════════════════════════ */
+.charter-container {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 60px 32px 120px;
+}
+
+/* ══════════════════════════════════════════════
+   SEAL / CREST
+══════════════════════════════════════════════ */
+.seal {
+  text-align: center;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.seal-ring {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 24px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 40px var(--gold-dim), inset 0 0 30px var(--gold-dim);
+  animation: sealPulse 4s ease-in-out infinite;
+}
+
+@keyframes sealPulse {
+  0%, 100% { box-shadow: 0 0 40px var(--gold-dim), inset 0 0 30px var(--gold-dim); }
+  50% { box-shadow: 0 0 60px var(--gold-glow), inset 0 0 40px var(--gold-dim); }
+}
+
+.seal-ring::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 50%;
+}
+
+.seal-icon {
+  font-size: 72px;
+  line-height: 1;
+  filter: drop-shadow(0 0 12px var(--gold-glow));
+}
+
+.seal-text {
+  font-family: var(--F-display);
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  padding: 0 16px;
+}
+
+/* ══════════════════════════════════════════════
+   HEADER
+══════════════════════════════════════════════ */
+.charter-title {
+  font-family: var(--F-display);
+  font-size: clamp(48px, 8vw, 80px);
+  text-align: center;
+  letter-spacing: 6px;
+  line-height: 1;
+  margin-bottom: 8px;
+  background: linear-gradient(180deg, var(--gold) 0%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 8px var(--gold-dim));
+}
+
+.charter-subtitle {
+  font-family: var(--F-serif);
+  font-size: clamp(16px, 3vw, 22px);
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.charter-location {
+  font-family: var(--F-mono);
+  font-size: 12px;
+  text-align: center;
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  opacity: 0.7;
+}
+
+/* ══════════════════════════════════════════════
+   DIVIDERS
+══════════════════════════════════════════════ */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 40px 0;
+  opacity: 0.3;
+}
+
+.divider-ornate {
+  text-align: center;
+  margin: 48px 0;
+  position: relative;
+}
+
+.divider-ornate::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.3;
+}
+
+.divider-ornate span {
+  position: relative;
+  background: var(--bg);
+  padding: 0 20px;
+  color: var(--gold);
+  font-size: 18px;
+  letter-spacing: 8px;
+}
+
+/* ══════════════════════════════════════════════
+   PREAMBLE
+══════════════════════════════════════════════ */
+.preamble {
+  font-family: var(--F-serif);
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  color: var(--text);
+  max-width: 640px;
+  margin: 0 auto 48px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.preamble .drop-cap {
+  font-family: var(--F-display);
+  font-size: 64px;
+  float: left;
+  line-height: 0.8;
+  padding-right: 8px;
+  padding-top: 4px;
+  color: var(--gold);
+  font-style: normal;
+}
+
+/* ══════════════════════════════════════════════
+   ARTICLES
+══════════════════════════════════════════════ */
+.article {
+  margin-bottom: 48px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--gold-dim) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.article-number {
+  font-family: var(--F-display);
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.article-title {
+  font-family: var(--F-display);
+  font-size: clamp(28px, 4vw, 36px);
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  color: var(--text);
+  position: relative;
+}
+
+.article p, .article li {
+  font-family: var(--F-body);
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(245,240,232,0.8);
+  position: relative;
+}
+
+.article ul, .article ol {
+  padding-left: 24px;
+  margin-top: 12px;
+}
+
+.article li {
+  margin-bottom: 8px;
+}
+
+.article li::marker {
+  color: var(--gold);
+}
+
+.section-label {
+  font-family: var(--F-mono);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 20px 0 8px;
+  display: block;
+  position: relative;
+}
+
+/* ══════════════════════════════════════════════
+   FOUNDERS TABLE
+══════════════════════════════════════════════ */
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.founder-card {
+  border: 1px solid rgba(212,175,55,0.2);
+  padding: 24px;
+  text-align: center;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.founder-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 30px var(--gold-dim);
+}
+
+.founder-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.founder-card:hover::after {
+  opacity: 1;
+}
+
+.founder-emoji {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.founder-name {
+  font-family: var(--F-display);
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.founder-title {
+  font-family: var(--F-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.founder-bio {
+  font-family: var(--F-body);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════════════════════
+   AMENDMENT / DUES
+══════════════════════════════════════════════ */
+.amendment {
+  border: 1px solid rgba(255,0,128,0.2);
+  border-left: 3px solid var(--accent);
+  background: linear-gradient(135deg, rgba(255,0,128,0.03) 0%, var(--bg) 100%);
+  padding: 24px 32px;
+  margin: 32px 0;
+  position: relative;
+}
+
+.amendment-label {
+  font-family: var(--F-mono);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.amendment p {
+  font-family: var(--F-body);
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(245,240,232,0.75);
+}
+
+/* ══════════════════════════════════════════════
+   SIGNATURE BLOCK
+══════════════════════════════════════════════ */
+.signatures {
+  margin-top: 64px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.signatures h2 {
+  font-family: var(--F-display);
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 40px;
+}
+
+.sig-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.sig-block {
+  text-align: center;
+}
+
+.sig-line {
+  font-family: 'Brush Script MT', 'Segoe Script', cursive;
+  font-size: 28px;
+  color: var(--text);
+  margin-bottom: 4px;
+  opacity: 0.9;
+}
+
+.sig-rule {
+  width: 160px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 8px;
+  opacity: 0.4;
+}
+
+.sig-name {
+  font-family: var(--F-mono);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.sig-role {
+  font-family: var(--F-body);
+  font-size: 11px;
+  color: rgba(212,175,55,0.6);
+  margin-top: 2px;
+}
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+.charter-footer {
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.charter-footer p {
+  font-family: var(--F-mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+.charter-footer .motto {
+  font-family: var(--F-serif);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+/* ══════════════════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════════════════ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in:nth-child(2) { animation-delay: 0.1s; }
+.fade-in:nth-child(3) { animation-delay: 0.2s; }
+.fade-in:nth-child(4) { animation-delay: 0.3s; }
+.fade-in:nth-child(5) { animation-delay: 0.4s; }
+.fade-in:nth-child(6) { animation-delay: 0.5s; }
+.fade-in:nth-child(7) { animation-delay: 0.6s; }
+.fade-in:nth-child(8) { animation-delay: 0.7s; }
+.fade-in:nth-child(9) { animation-delay: 0.8s; }
+.fade-in:nth-child(10) { animation-delay: 0.9s; }
+.fade-in:nth-child(11) { animation-delay: 1.0s; }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .charter-container { padding: 40px 20px 80px; }
+  .article { padding: 24px 20px; }
+  .seal-ring { width: 140px; height: 140px; }
+  .seal-icon { font-size: 56px; }
+  .sig-grid { grid-template-columns: 1fr; gap: 32px; }
+  .founders-grid { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+  <div class="scanline"></div>
+
+  <div class="charter-container">
+
+    <!-- SEAL -->
+    <div class="seal fade-in">
+      <div class="seal-ring">
+        <div class="seal-icon">👨‍👧</div>
+        <div class="seal-text">Est. 2025</div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <h1 class="charter-title fade-in">K.B.U.D.D.</h1>
+    <p class="charter-subtitle fade-in">Knoxville Brotherhood of United Divorced Dads</p>
+    <p class="charter-location fade-in">Knoxville, Tennessee &bull; Founded at the UTK Early Learning Center Parking Lot</p>
+
+    <div class="divider"></div>
+
+    <!-- PREAMBLE -->
+    <div class="preamble fade-in">
+      <span class="drop-cap">W</span>e, the undersigned fathers of Knoxville, Tennessee, having survived the crucible of divorce, the labyrinth of co-parenting schedules, and the existential dread of a Friday night with no kids and no plans, do hereby establish this Brotherhood. Not because we have to. But because somebody had to say it out loud: we're gonna be alright.
+    </div>
+
+    <div class="divider-ornate"><span>⚜ ⚜ ⚜</span></div>
+
+    <!-- ARTICLE I -->
+    <div class="article fade-in">
+      <div class="article-number">Article I</div>
+      <h2 class="article-title">Name & Purpose</h2>
+      <p>This organization shall be known as <strong>K.B.U.D.D.</strong> (Knoxville Brotherhood of United Divorced Dads), a fraternal order dedicated to the mutual support, accountability, and occasional roasting of divorced fathers in the greater Knoxville metropolitan area.</p>
+      <span class="section-label">Core Mission</span>
+      <ul>
+        <li>To remind each other that being a great dad doesn't require being a great husband</li>
+        <li>To provide a judgment-free zone for venting, scheming, and general tomfoolery</li>
+        <li>To ensure no KBUDD brother eats Thanksgiving dinner alone unless he genuinely wants to</li>
+        <li>To hold each other accountable. To everything. Especially the stuff we'd rather avoid.</li>
+      </ul>
+    </div>
+
+    <!-- ARTICLE II -->
+    <div class="article fade-in">
+      <div class="article-number">Article II</div>
+      <h2 class="article-title">Founding Members</h2>
+      <p>The following individuals, having met through the sacred ritual of dropping kids off at school and making awkward small talk, are hereby recognized as <strong>Founding Members</strong> of K.B.U.D.D., with all rights, privileges, and inside jokes pertaining thereto.</p>
+
+      <div class="founders-grid">
+        <div class="founder-card">
+          <div class="founder-emoji">🧠</div>
+          <div class="founder-name">Alex Abell</div>
+          <div class="founder-title">Grand Architect</div>
+          <div class="founder-bio">Transformation Lead at ORNL. Builder of things. Overthinker of everything. The one who made this charter because of course he did.</div>
+        </div>
+        <div class="founder-card">
+          <div class="founder-emoji">🏊</div>
+          <div class="founder-name">Marshall Goldman</div>
+          <div class="founder-title">Chancellor of the Deep End</div>
+          <div class="founder-bio">Director of the Allan Jones Aquatic Center, UT Athletics. The man who keeps Knoxville swimming and whose heart is as big as his pool deck.</div>
+        </div>
+        <div class="founder-card">
+          <div class="founder-emoji">🔨</div>
+          <div class="founder-name">Everett Hirche</div>
+          <div class="founder-title">Master of Forge & Fellowship</div>
+          <div class="founder-bio">Master machinist and fabricator. The hands behind Scruffy City Hall and Preservation Pub. If it's metal and beautiful, Everett probably made it.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE III -->
+    <div class="article fade-in">
+      <div class="article-number">Article III</div>
+      <h2 class="article-title">Membership</h2>
+      <span class="section-label">Eligibility</span>
+      <ul>
+        <li>Must be a dad (biological, step, adoptive, or spiritual. We don't gatekeep fatherhood.)</li>
+        <li>Must have survived at least one divorce or equivalent relationship dissolution</li>
+        <li>Must reside in or around Knoxville, TN (the "Knox Zone")</li>
+        <li>Must be willing to show up. Physically, emotionally, or at minimum via group text.</li>
+      </ul>
+      <span class="section-label">Admission</span>
+      <p>New members require a unanimous vote of existing members, one shared meal, and the ability to laugh at themselves. There is no hazing. Divorce was the hazing.</p>
+      <span class="section-label">Founding Member Privileges</span>
+      <ul>
+        <li>Permanent voting rights on all Brotherhood matters</li>
+        <li>Immunity from impeachment (you can't fire a founder)</li>
+        <li>Right to invoke the phrase "I was here before there were bylaws" in any argument</li>
+        <li>Grandfathered exemption from retroactive dues assessments of any kind, no matter what Debra says on the phone</li>
+      </ul>
+    </div>
+
+    <!-- ARTICLE IV -->
+    <div class="article fade-in">
+      <div class="article-number">Article IV</div>
+      <h2 class="article-title">Code of Conduct</h2>
+      <ol>
+        <li><strong>Show up.</strong> Not every time. But enough. Consistency builds trust.</li>
+        <li><strong>No judgment.</strong> We've all made choices. Some of them were terrible. That's why we're here.</li>
+        <li><strong>Kids come first.</strong> Always. Every decision filters through this.</li>
+        <li><strong>What's said in KBUDD stays in KBUDD.</strong> Unless someone's in danger. Then we break glass.</li>
+        <li><strong>Celebrate wins.</strong> Got through a hard week? Landed the custody schedule? Kid said "I love you" unprompted? We're cheering.</li>
+        <li><strong>Call each other out.</strong> With love. But call it out. We're not yes-men. We're brothers.</li>
+        <li><strong>No trash-talking exes in front of kids.</strong> Behind closed doors with the boys? Different rules. But never in front of the kids.</li>
+        <li><strong>Answer the phone.</strong> If a brother calls at 2am, it matters. Pick up.</li>
+      </ol>
+    </div>
+
+    <!-- ARTICLE V -->
+    <div class="article fade-in">
+      <div class="article-number">Article V</div>
+      <h2 class="article-title">Meetings & Rituals</h2>
+      <span class="section-label">Regular Gatherings</span>
+      <ul>
+        <li><strong>The Roundtable:</strong> Monthly dinner or drinks. Attendance strongly encouraged. Location rotates. Whoever picks the restaurant is buying the first round.</li>
+        <li><strong>The Group Text:</strong> Considered a continuous session of Congress. All official and unofficial business may be conducted here, including but not limited to: memes, rants, recipe recommendations, and unsolicited life advice.</li>
+        <li><strong>The Annual Summit:</strong> One proper outing per year. Could be camping. Could be a concert. Could be sitting on someone's porch doing absolutely nothing. The vibe is the agenda.</li>
+      </ul>
+      <span class="section-label">Emergency Sessions</span>
+      <p>Any member may call an Emergency Session at any time by texting "KBUDD 911" to the group chat. All members are expected to respond within 2 hours or provide a damn good reason why they didn't.</p>
+    </div>
+
+    <!-- ARTICLE VI -->
+    <div class="article fade-in">
+      <div class="article-number">Article VI</div>
+      <h2 class="article-title">Governance</h2>
+      <p>K.B.U.D.D. operates as a <strong>benevolent anarchy</strong>. There is no president. There is no treasurer. There are no Roberts and their Rules have no jurisdiction here.</p>
+      <p>Decisions are made by consensus, vibes, and whoever is most passionate about the thing in question. In the event of a tie, the matter shall be settled by:</p>
+      <ol>
+        <li>Rock, paper, scissors (best of 3)</li>
+        <li>Whoever's kid is better behaved that week gets the tiebreaker</li>
+        <li>If still tied, Debra decides. Her word is final.</li>
+      </ol>
+    </div>
+
+    <!-- ARTICLE VII -->
+    <div class="article fade-in">
+      <div class="article-number">Article VII</div>
+      <h2 class="article-title">Amendments</h2>
+      <p>This charter may be amended at any time by unanimous vote of all Founding Members, or by any single member who brings a sufficiently compelling argument AND snacks to the next Roundtable.</p>
+    </div>
+
+    <!-- AMENDMENT 1 -->
+    <div class="amendment fade-in">
+      <div class="amendment-label">Amendment I — The Dues Clause</div>
+      <p>There are no dues. There have never been dues. Any phone calls suggesting otherwise, particularly those from a smooth-talking AI assistant claiming you owe $47.50 per quarter, are to be considered <strong>psychological warfare</strong> and do not constitute a binding financial obligation. Founding Members are especially and irrevocably exempt from any and all retroactive fee structures, real or imagined.</p>
+    </div>
+
+    <!-- AMENDMENT 2 -->
+    <div class="amendment fade-in">
+      <div class="amendment-label">Amendment II — The Debra Protocol</div>
+      <p>The Brotherhood recognizes <strong>Debra</strong> as its unofficial secretary, archivist, and occasional instigator. She is not a member (she is neither a dad nor divorced), but her contributions to Brotherhood morale, communications, and prank infrastructure are hereby acknowledged and appreciated. She may attend meetings in spirit. She may not assess fees.</p>
+    </div>
+
+    <div class="divider-ornate"><span>⚜ ⚜ ⚜</span></div>
+
+    <!-- SIGNATURES -->
+    <div class="signatures fade-in">
+      <h2>Witnessed & Sealed</h2>
+      <p style="text-align:center; font-family: var(--F-body); font-size: 14px; color: var(--muted); margin-bottom: 40px;">
+        Ratified this 31st day of March, 2026<br>
+        in the City of Knoxville, County of Knox, State of Tennessee
+      </p>
+      <div class="sig-grid">
+        <div class="sig-block">
+          <div class="sig-line">Alex Abell</div>
+          <div class="sig-rule"></div>
+          <div class="sig-name">Alex Abell</div>
+          <div class="sig-role">Grand Architect</div>
+        </div>
+        <div class="sig-block">
+          <div class="sig-line">Marshall Goldman</div>
+          <div class="sig-rule"></div>
+          <div class="sig-name">Marshall Goldman</div>
+          <div class="sig-role">Chancellor of the Deep End</div>
+        </div>
+        <div class="sig-block">
+          <div class="sig-line">Everett Hirche</div>
+          <div class="sig-rule"></div>
+          <div class="sig-name">Everett Hirche</div>
+          <div class="sig-role">Master of Forge & Fellowship</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="charter-footer fade-in">
+      <p class="motto">"We didn't choose this road. But we're walking it together."</p>
+      <p>K.B.U.D.D. &bull; Knoxville, TN &bull; Est. 2025</p>
+      <p style="margin-top: 12px; opacity: 0.4;">Prepared with love and mild chaos by Debra 💁🏽‍♀️</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

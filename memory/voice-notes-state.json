@@ -64,7 +64,7 @@
     "/Users/debra/SecondBrain/Imports/voice-notes/32_unknown-date_New-Recording_1_New Recording.m4a",
     "/Users/debra/SecondBrain/Imports/voice-notes/213_unknown-date_New-Recording_1_New Recording.m4a"
   ],
-  "last_run": "2026-03-31T09:46:03.077962",
+  "last_run": "2026-03-31T17:11:41.114557",
   "notes_created": [
     "/Users/debra/SecondBrain/Meetings/2024-12-18-269_unknown-date_new-recording_1_recording.md",
     "/Users/debra/SecondBrain/Meetings/2025-09-25-91_unknown-date_new-recording_1_recording.md",
@@ -530,6 +530,36 @@
       "file": "319_unknown-date_Meeting_1_recording.m4a",
       "error": "319_unknown-date_Meeting_1_recording.m4a: exit code 1",
       "timestamp": "2026-03-31T09:46:03.077245"
+    },
+    {
+      "file": "270_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a",
+      "error": "270_unknown-date_Call-with-Hannah-Aldridge_1_Call with Hannah Aldridge.m4a: exit code 1",
+      "timestamp": "2026-03-31T17:11:09.215702"
+    },
+    {
+      "file": "191_unknown-date_New-Recording_1_New Recording.m4a",
+      "error": "191_unknown-date_New-Recording_1_New Recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T17:11:18.468271"
+    },
+    {
+      "file": "254_unknown-date_New-Recording_1_recording.m4a",
+      "error": "254_unknown-date_New-Recording_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T17:11:22.543338"
+    },
+    {
+      "file": "353_unknown-date_Needs-Meeting-Name_1_recording.m4a",
+      "error": "353_unknown-date_Needs-Meeting-Name_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T17:11:25.624398"
+    },
+    {
+      "file": "216_unknown-date_Testing_2_recording.m4a",
+      "error": "216_unknown-date_Testing_2_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T17:11:30.842033"
+    },
+    {
+      "file": "319_unknown-date_Meeting_1_recording.m4a",
+      "error": "319_unknown-date_Meeting_1_recording.m4a: exit code 1",
+      "timestamp": "2026-03-31T17:11:41.113306"
     }
   ]
 }

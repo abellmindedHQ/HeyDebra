@@ -90,6 +90,42 @@ Be honest and specific. "I was slow at X because Y" not "I could improve."
 
 ---
 
+## Phase 2.5: Memory Verification (~3 min)
+
+Verify memory accuracy by probing recent facts against stored memory.
+
+### Process
+
+1. Read the last 3 days of `memory/YYYY-MM-DD.md` files
+2. Generate 5-10 factual QA pairs from those files, e.g.:
+   - "What is Neo4j's current status?" → expected: "down since Mar 28"
+   - "When is Alex's Boston flight?" → expected: "Apr 2, 7:30am"
+   - "Who is Avie's co-parent?" → expected: "Annika Abell"
+3. Query `memory_search` for each answer
+4. Compare search results against expected answers
+5. Flag:
+   - **Contradictions**: memory says X, daily notes say Y
+   - **Stale info**: memory has outdated status (e.g., project marked active but completed)
+   - **Missing info**: important facts from recent days not findable via search
+   - **Wrong associations**: people/project connections that are incorrect
+
+### Output
+
+Append to: `memory/dream-cycle/YYYY-MM-DD-reflection.md` under a `## Memory Verification` section
+
+Format:
+```markdown
+## Memory Verification
+- Probes: X total, Y passed, Z flagged
+- Contradictions: [list specific ones]
+- Stale entries: [list with suggested fixes]
+- Missing from memory: [facts that should be searchable but aren't]
+```
+
+If issues are found, include memory fix proposals in Phase 4.
+
+---
+
 ## Phase 3: Deep Research (~10 min)
 
 Take the top 3-5 findings from Phase 1 and research them deeply.

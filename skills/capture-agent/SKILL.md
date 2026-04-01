@@ -112,13 +112,18 @@ For each email:
 
 ### 3. Scan: iMessage
 
+**Authentication:** BlueBubbles API requires the server password as a query parameter on every request.
+Read it from the OpenClaw config: `grep -m1 '"password"' /Users/debra/.openclaw/openclaw.json | sed 's/.*"password": "//;s/".*//'`
+Store in a variable and append `?password=<BB_PASSWORD>` (or `&password=<BB_PASSWORD>` if other params exist) to ALL BB API calls.
+
 ```bash
-curl -s http://localhost:1234/api/v1/chats?limit=10 | jq '.data[] | {guid: .guid, display_name: .display_name}'
+BB_PASS=$(grep -m1 '"password"' /Users/debra/.openclaw/openclaw.json | sed 's/.*"password": "//;s/".*//')
+curl -s "http://localhost:1234/api/v1/chats?limit=10&password=$BB_PASS" | jq '.data[] | {guid: .guid, display_name: .display_name}'
 ```
 
 For each chat, fetch recent messages (include attachments):
 ```bash
-curl -s "http://localhost:1234/api/v1/chat/[chat_guid]/message?limit=20&after=[lookback_timestamp]&with=attachment" \
+curl -s "http://localhost:1234/api/v1/chat/[chat_guid]/message?limit=20&after=[lookback_timestamp]&with=attachment&password=$BB_PASS" \
   | jq '.data[] | {text: .text, handle: .handle.id, date: .date_created, attachments: [.attachments[]? | {mime: .mime_type, guid: .guid, transfer_name: .transfer_name}]}'
 ```
 
@@ -127,7 +132,7 @@ Focus on messages FROM Alex (his commitments) and messages directed TO Alex with
 #### 🖼️ Image Attachment Processing
 
 When messages contain image attachments (mime_type starts with `image/`):
-1. Download the attachment: `curl -s "http://localhost:1234/api/v1/attachment/[guid]/download" -o /tmp/capture-img-[guid].jpg`
+1. Download the attachment: `curl -s "http://localhost:1234/api/v1/attachment/[guid]/download?password=$BB_PASS" -o /tmp/capture-img-[guid].jpg`
 2. Run vision analysis to extract text/appointment info:
    - Use the `image` tool with prompt: "Extract ALL text from this image. If it contains appointment/scheduling info (dates, times, locations, doctor/provider names, confirmation numbers), return structured data: {is_appointment: true/false, title, date, time, location, provider, notes}. Also extract any action items or commitments."
 3. Feed extracted text back into the normal candidate pipeline (keyword matching → classification → inbox)

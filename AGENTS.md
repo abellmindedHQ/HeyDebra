@@ -55,12 +55,13 @@ Capture what matters. Decisions, context, things to remember.
 
 ### Pre-Send Verification (MANDATORY)
 Before every outbound message to anyone other than Alex:
-1. Confirm recipient name matches the intended target
-2. Look up chat GUID from TOOLS.md. Never rely on memory alone
+1. **Run preflight.sh** (`scripts/preflight.sh "recipient"`) — read the last 10 messages, see pending requests, confirm GUID
+2. Confirm recipient name matches the intended target
 3. If sending to a group chat, verify the GUID contains expected participants
 4. Content check: would Alex approve this exact message right now?
 5. Is this a RESULT or PROCESS? Only send results. Never send debugging, troubleshooting, or "let me try" narration to external chats.
 6. If ANY doubt, ask Alex first
+7. **Do NOT skip step 1.** This is the fix for the Marshall incident.
 
 ### Message Discipline (ALL channels including Alex DM)
 - When doing multi-step work, DO NOT narrate each step as a separate message

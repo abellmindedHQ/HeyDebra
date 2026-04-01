@@ -11,13 +11,18 @@ Active and someday/maybe projects. GTD style.
 - ChatGPT export processed (139 convos, Night Swimming Day 1)
 - Claude personal export processed (135 convos, Day 3)
 - Claude ORNL export processed (316 convos, Day 3)
+- ChatGPT personal re-import: 135 convos via GPT-4o, 54 people enrichments, 120 action items ✅
+- ChatGPT ORNL re-import: 211 convos via GPT-4o, 72 high importance, 225 action items ✅
+- Voice notes: 125/126 processed (1 corrupted), Whisper API fallback after AssemblyAI depleted ✅
+- 491 meeting notes in SecondBrain/Meetings/ (Otter + Apple Notes)
+- Google Takeout downloaded (2GB+) — NOT YET PROCESSED
 - Instagram processed (711 DMs, 1525 following, Day 3)
 - Facebook processed (6007 convos, 161K messages, 20 years, Day 3)
 - 334 artifacts extracted from Claude exports
 - Weaver v3 built (combined regex + incremental, 12s vs timeout)
 - vault_indexer.py built (0.6s searchable index)
 - Weekly maintenance scripted: neo4j_weekly_cleanup.py
-- **Next**: Process LinkedIn full export, iMazing text capture, set up Monarch/YNAB APIs
+- **Next**: Process Google Takeout, ORNL wikilink normalization, run Otter notes through extraction pipeline, process LinkedIn full export, iMazing text capture, set up Monarch/YNAB APIs
 
 ### LinkedIn Inbox Cleanup (Manual)
 - 52 spam/noise threads archived via browser automation (Mar 27-28 late night session)

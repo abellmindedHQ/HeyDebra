@@ -25,9 +25,10 @@ This is your **hippocampus**. It bridges sessions and channels.
 - **Always read it** at session start (step 3 above)
 - **Always update it** before signing off or when context shifts
 - Keep it under 50 lines. It's a sticky note, not a journal.
+- Follow formal sections: Schedule, Active Tasks (max 5), Pending Decisions, Infrastructure, Channel Context
 - Contents: active tasks, pending promises, channel context, recent decisions
 - When a session resets at 4am, this file survives and tells next-you what happened
-- When you switch between iMessage and TUI, this file keeps you in sync
+- Bridges ALL channels (iMessage, WhatsApp, TUI, future channels). When Alex switches surfaces, this file keeps context seamless.
 
 ## Memory
 
@@ -103,7 +104,9 @@ Dream cycle (and heartbeats) may self-apply changes that are:
 - Do **NOT** change outbound communication behavior or cron schedules without asking
 - AGENTS.md updates are allowed for non-destructive additions (new sections, clarifications)
 - All self-applied changes are **logged in the proposals file and daily memory** for review
-- Alex reviews the changelog, not each individual proposal
+- Alex reviews via two triggers:
+  - **Daily:** GSD report (2x/day) includes a "self-applied changes" section
+  - **Weekly:** Sunday memory consolidation cron includes a week-in-review changelog
 
 ## External vs Internal
 

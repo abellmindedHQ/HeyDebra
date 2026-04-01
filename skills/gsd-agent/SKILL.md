@@ -93,6 +93,21 @@ Before composing the report, cross-reference multiple sources to avoid flagging 
 
 **Why this matters:** Without validation, the report flags already-resolved items (e.g., Boston hotel after it was booked, ORNL Isaac after it was verified). Stale flags erode trust in the report.
 
+### 1.6 📋 Self-Applied Changes Report
+
+Check for any self-applied changes since last GSD report:
+
+```bash
+cd /Users/debra/.openclaw/workspace && git log --since="12 hours ago" --oneline --no-merges
+```
+
+If any commits exist from dream cycle or heartbeat self-apply:
+- List each change (one line per commit)
+- Flag anything that modified AGENTS.md or skills
+- Format as: `🔧 Self-applied: [commit message]`
+
+This gives Alex visibility into what changed overnight or during the day without having to check git.
+
 ### 2. Cross-Reference inbox.md
 
 Read the inbox staging buffer:

@@ -103,6 +103,23 @@ Skip archiving if:
 - Any uncertainty about classification
 - Message is < 24 hours old and from a real person
 
+### Step 3.5 — Auto-Archive Resolved Action Items
+
+After classifying, check if any "action" or "urgent" emails have already been resolved:
+
+1. Cross-reference against:
+   - Things 3 completed tasks (`things completed --since yesterday --json`)
+   - active-context.md for recent status updates
+   - Recent session context (did Alex say he handled it?)
+2. If the action is confirmed complete, archive the email AND search for related older notifications:
+```bash
+gog gmail search "from:[same sender] subject:[related keywords]" --account alexander.o.abell@gmail.com --max 10
+# Archive any that are about the same resolved issue
+```
+3. Log: `- Auto-archived resolved: [N] emails ([subjects])`
+
+**Safety:** Only archive if resolution is CONFIRMED. When in doubt, keep it.
+
 ### Step 4 — Generate Report
 
 Save to `/Users/debra/SecondBrain/Reflections/Daily/YYYY-MM-DD-email-triage.md`:

@@ -353,6 +353,27 @@ gog calendar create primary --account alexander.o.abell@gmail.com \
 mkdir -p /Users/debra/SecondBrain/GTD/scan/processed
 ```
 
+### 14. 🗑️ Auto-Archive Resolved Emails
+
+After processing, check if any flagged emails have already been resolved (Alex completed the action, payment updated, form submitted, etc.):
+
+1. Cross-reference email action items against:
+   - Things 3 completed tasks (`things completed --since yesterday --json`)
+   - Recent session context (did Alex say he handled it?)
+   - active-context.md for status updates
+2. If the action is confirmed complete, archive the email AND any related past notifications:
+```bash
+gog gmail archive --account alexander.o.abell@gmail.com --id [message_id]
+```
+3. Search for related older notifications on the same topic and archive those too:
+```bash
+gog gmail list --account alexander.o.abell@gmail.com --query "from:[sender] subject:[related keywords]" --max-results 10
+# Archive any that are clearly about the same resolved issue
+```
+4. Log: `- Auto-archived: [N] resolved emails ([list subjects])`
+
+**Safety:** Only archive if resolution is CONFIRMED (completed task, Alex explicitly said he did it, or payment confirmation email exists). When in doubt, keep it.
+
 ## Output Summary
 
 ```

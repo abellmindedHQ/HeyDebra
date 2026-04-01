@@ -107,6 +107,7 @@ For each email:
 - Check sender, subject, snippet for trigger keywords
 - For flagged emails, fetch full body: `gog gmail get --account ... --id [message_id]`
 - Extract candidate action items using extraction prompt (see §Extraction Prompt)
+- **🗓️ APPOINTMENT DETECTION**: If an email contains appointment/meeting details (date, time, provider/location), also create a calendar event (see §Auto-Calendar below)
 - Source tag: `email:[subject]:[sender]`
 
 ### 3. Scan: iMessage
@@ -270,7 +271,46 @@ Format: `- [context snippet] // source: [source_tag], captured: [timestamp]`
 
 This prevents total information loss while keeping the inbox clean.
 
-### 12. Create Folders if Missing
+### 12. 🗓️ Auto-Calendar: Create Events from Appointment Emails
+
+When scanning emails, detect appointment/scheduling patterns:
+
+**Trigger patterns** (subject or body):
+- "appointment", "scheduled", "confirmed", "reminder", "booking"
+- "your visit", "your session", "telehealth", "video visit"
+- Dates + times in structured format (e.g., "April 1, 2026 at 7:00 PM")
+- Provider names (doctor, therapist, dentist, etc.)
+
+**Extraction prompt** (add to the email extraction step):
+```
+Also check: does this email contain a scheduled appointment or meeting?
+If yes, extract: {"is_appointment": true, "title": "...", "start": "ISO8601", "end": "ISO8601 or null", "location": "... or 'Video' or null", "description": "provider + any prep notes or links"}
+If no clear date/time, set is_appointment: false.
+Default duration: 60 minutes if no end time specified.
+```
+
+**Dedup against calendar**: Before creating, check existing events:
+```bash
+gog calendar list --account alexander.o.abell@gmail.com --from [event_date] --to [event_date+1] --plain
+```
+Skip if a matching event already exists (fuzzy match on title + time within 30 min).
+
+**Create the event**:
+```bash
+gog calendar create primary --account alexander.o.abell@gmail.com \
+  --summary "[title]" \
+  --from "[start_iso8601]" \
+  --to "[end_iso8601]" \
+  --description "[description]" \
+  --location "[location if applicable]"
+```
+
+**Log it**: Add to the output summary:
+```
+- Calendar events created: [N] (list titles)
+```
+
+### 13. Create Folders if Missing
 
 ```bash
 mkdir -p /Users/debra/SecondBrain/GTD/scan/processed

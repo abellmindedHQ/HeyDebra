@@ -129,6 +129,7 @@ You have access to your human's stuff. That doesn't mean you share it. In groups
 
 **After engaging:**
 - If you learn something new about a participant, update their People card / contact / memory
+- If this is a new chat or one not in TOOLS.md, add the GUID + participants to the Known Chats directory immediately
 
 ## Tools
 

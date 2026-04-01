@@ -95,18 +95,29 @@ Things like:
 
 - Server: localhost:1234 (same machine)
 - Group chats: open policy, requireMention for unknown groups
-- Known groups:
-  - Hannah: chat_guid:any;+;chat284576019517930648
-  - Chelsea: chat_guid:any;+;a96e1f6eaaba404abd15b7b1a1a1cdea
-  - Sallijo (mom): chat_guid:any;+;93ad04d9a3a349b3b6f506025d691001
-  - Brandon Bruce: chat_guid:any;+;2e9da308ff6d4eaaa3d5377dc45c2270
-  - Marshall Goldman (Alex+Marshall): chat_guid:any;+;2db16e0c2fb7441c9237aa7693d43354
-  - KBUDDS (Alex+Marshall+Everett): chat_guid:any;+;26496e31a52b4d7091da7b17a5a1380d
-  - Annika: chat_guid:any;+;9a04d0b72baf4d03b88b9fddaead4dc3
-  - Jay (boss): chat_guid:any;+;91468caf20824cd696f30436e54c004a
-  - Angie (ORNL, Alex+Angie): chat_guid:any;+;d4333767f9534f77ab1356e31263b030
-  - Roxanne Abell (Alex+Roxanne): chat_guid:any;+;80e5f82469ec473bb4f627ea599aff04
-  - Brad Greenfield: chat_guid:any;+;a6c108054d66442e81bf09d56a1205c6
+- Known chats (auto-discovered from BB API, keep updated):
+  - Hannah (Alex+Hannah): any;+;chat284576019517930648 | +16158101319
+  - Chelsea (Alex+Chelsea): any;+;a96e1f6eaaba404abd15b7b1a1a1cdea | +16159745363
+  - Sallijo (Alex+Mom): any;+;93ad04d9a3a349b3b6f506025d691001 | +12292247731
+  - Annika (Alex+Annika): any;+;9a04d0b72baf4d03b88b9fddaead4dc3 | +18479220634
+  - Jay (Alex+Boss): any;+;91468caf20824cd696f30436e54c004a | +19014884890
+  - Angie (Alex+Angie ORNL): any;+;d4333767f9534f77ab1356e31263b030 | +18653358853
+  - Roxanne (Alex+Sister): any;+;80e5f82469ec473bb4f627ea599aff04 | +17063402692
+  - Brandon Bruce (Alex+Brandon): any;+;2e9da308ff6d4eaaa3d5377dc45c2270 | +18657890127
+  - Brad Greenfield (Alex+Brad): any;+;a6c108054d66442e81bf09d56a1205c6 | +19313202403
+  - Marshall Goldman (Alex+Marshall): any;+;2db16e0c2fb7441c9237aa7693d43354 | +18653060896
+  - Jim Biggs (Alex+Jim): any;+;5665413a1cdd4931a5b9c90de92a9442 | +14153854794
+  - Jason Patrick (Alex+Jason): any;+;68815c5f87cd4ca6be5d858362301d38 | +18657769277
+  - Nick Hollensbe (Alex+Nick): any;+;157a6e892de64215addb31a37d051b60 | +12392489353
+  - Merle Benny (Alex+Merle): any;+;ecbda845b6444c06a27cd6ff09561ab8 | +19735107652
+  - Anthony Caccese (Alex+Anthony): any;+;dccab0976b7a4fda947f7511b0e894a4 | +19177976550
+  - Pooja (Alex+Pooja): any;+;6de2840aad1545bd92ef14a922597596 | +18133682433
+  - KBUDDS (Alex+Marshall+Everett): any;+;26496e31a52b4d7091da7b17a5a1380d
+  - Family (Alex+Hannah+Sallijo): any;+;63d1dbe0006d46abbc3aa07a4fb38c8b
+  - Big group (Alex+Hannah+Everett+Marshall+?): any;+;4f2f085160984776b670fa9624a8560f
+  - Unknown +12298349204 group: any;+;2860f2e3259a413caf773b3bee24ff81
+  - Unknown +12298349204 direct: any;+;c4d604f1e18c4ccaa3347f3dc0677a4c
+  - Unknown +14234807506: any;+;3c6168b0319e4494bec54f0dfefd1c2b
 
 ### Monarch
 - API docs: https://status.monarch.com/public-api

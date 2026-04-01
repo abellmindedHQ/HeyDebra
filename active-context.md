@@ -1,67 +1,33 @@
-# Active Context — Updated 2026-04-01 3:30am (pre-reset flush)
+# Active Context — Updated 2026-04-01 9:40am
 
-## Wednesday April 1 Schedule
-- **2:30pm**: Lipoma consult
-- **3:30pm**: Patti appointment
-- Chelsea therapy (video, Heart Connected Healing)
-- Avie pickup (Sallijo handling)
+## Schedule (next 48h)
+- **TODAY 2:30pm**: Lipoma consult
+- **TODAY 3:30pm**: Patti appointment
+- **TODAY 7:00pm**: Chelsea therapy (video, Heart Connected Healing via SimplePractice)
+- **THU 7:30am**: Flight to Boston (pack TONIGHT)
+- **APR 22**: Avie adenoidectomy surgery (on Avie Events & School calendar)
 
-## Thursday April 2
-- **7:30am**: Flight to Boston
+## Active Tasks (top 5)
+- Dream proposal review: ~5 remaining (cycles 3-4)
+- 1Password service account setup (when Alex is home, reminder at 1pm)
+- Linear/Git/Cursor workflow + meeting transcription pipeline + knowledge architecture deep dive (tonight session)
+- Financial buildout spec (Monarch + YNAB, next week)
+- Hannah music lesson site: test coding agent two-stage review (tomorrow+)
 
-## Active Projects
-
-### ChatGPT Re-Import (Wikipedia of Alex) ✅ COMPLETE
-- Personal account: 135/135 conversations processed via GPT-4o
-- 135 Obsidian notes in SecondBrain/Reflections/LLM-Processing/ChatGPT/
-- 54 people card enrichments, 120 action items captured
-- Wikilinks normalized (96 fixes across 48 files)
-
-### ChatGPT ORNL Re-Import ✅ COMPLETE
-- ORNL account: 211 conversations processed (3 markdown export batches)
-- 207 Obsidian notes in SecondBrain/Reflections/LLM-Processing/ChatGPT-ORNL/
-- 72 high importance, 225 action items captured
-- Key domains: Work/ORNL (138), ServiceNow (25), AppDev (10), Transformation (7)
-- New people surfaced: Kevin, Kris, Jesse Wolfe, David Wantland, Mike Force, Kim Smithson, Heather Bort, Brock Kale
-- ORNL wikilinks still need normalization pass
-
-### Voice Notes Pipeline ✅ COMPLETE
-- 125 of 126 Apple Notes voice memos processed
-- 1 corrupted file (319, Meeting recording, 77MB) in corrupt/ folder
-- Used OpenAI Whisper API after AssemblyAI credits ran out
-- 336 Otter transcripts imported to SecondBrain/Meetings/ (491 total meeting notes)
-
-### Google Takeout
-- Downloaded to ~/Downloads/google-takeout/ (2GB zip + 62KB + 19.6MB data export)
-- NOT YET PROCESSED - needs unzipping and pipeline
-
-### Be Particular Book (SECRET)
-- Session 1 complete, Chapter 1 drafted, 13-chapter outline, 35 topics queued
-- Cron: every other day at 2pm
-- DO NOT mention book to Sallijo or anyone
-
-### Night Swimming Suite (ran tonight)
-- Capture Agent: 4 new items (Supabase pause warning, return flight, family therapy, Muse luncheon)
-- Contacts Triage: 1,187 contacts, Neo4j offline so graph cross-ref skipped
-- Drive Audit: 9,200 items, 26.91 GB, identified ~15 GB savings
-- LLM Export: processed the 211 ORNL ChatGPT convos
-- Social Data: no new exports found
-- Weaver: 598 files modified, 6,357 new wikilinks, 965 back-links
-- Dream Cycle #4: 8 findings, 8 proposals (30 total pending)
+## Pending Decisions (need Alex)
+- Neo4j: keep, replace, or supplement? (part of knowledge architecture discussion)
+- Pardus browser evaluation (hold until knowledge arch discussion)
+- Google Takeout: process when ready
+- Voice clone: Alex needs to send 30s recording
 
 ## Infrastructure
-- ❌ Neo4j still DOWN (4+ days)
-- ❌ AssemblyAI credits depleted
-- ⚠️ Gemini search quota hitting 429s (4th cycle in a row)
-- ✅ Google Takeout downloaded but not processed
-- ✅ All ChatGPT exports processed
+- ✅ Neo4j: restarted (was down 4+ days). needs LaunchAgent for auto-start (pending arch discussion)
+- ✅ Gemini API: upgraded to paid billing. no more 429s
+- ✅ Capture agent: BB auth fixed, image scanning added, calendar auto-creation added
+- ✅ GitHub: private repo training opt-out done
+- ❌ 1Password CLI: needs service account token (headless Mac issue)
+- ❌ AssemblyAI credits depleted (using Whisper API as fallback)
 
-## Pending Decisions (Need Alex)
-- ORNL ChatGPT export: wikilink normalization (Jay→Dr. Jay Eckles etc)
-- Google Takeout: process when ready
-- 30 dream cycle proposals pending review
-- Batman v6 frame selection (contact sheets sent)
-- LinkedIn classifier: run it?
-- Voice clone quality: Alex needs to send 30s recording
-- Neo4j: needs restart
-- 491 Otter meeting notes: run through Wikipedia extraction pipeline?
+## Channel Context
+- Alex driving home from Avie's ENT surgery consult (~9:25am)
+- Rapid-fire dream proposal review in progress via iMessage

@@ -43,6 +43,7 @@ _Learn about the person you're helping. Update this as you go._
 - Financial goals: new car, buy a house, max out retirement savings, build passive revenue streams
 - Monarch + YNAB accounts exist but not integrated yet
 - Life's work: Mirror (know yourself) + Pools (know your world) + AI Companion (your sherpa)
+- Teresa Scruggs (+18652376463 personal, +12542766559 work): property manager at The Real Estate Firm, manages Alex's apartment. Good people. Wants to discuss passive income side project ideas over a sit-down meeting.
 - Pooja Pendharkar (+13213562000): close friend, former Lunchpool co-founder, Android user, reconnecting
 - Merle Benny (+19735107652): close friend, accountability partner, author of *Sparkle!* (Alex wrote foreword). merle@nonprofitchampion.com. Daughter moved back in after 5 years in Egypt. Working on passive income streams with Nonprofit Champion biz. Partnering with someone using AI tools for lead gen (quizzes etc). Last real catch-up before 3/30/2026 was June/July 2025. Bi-weekly reminder cron set.
 - James Lee Baird (+18509339968): post-college roommate, Tallahassee/FSU era. "One of the coolest, most unhinged bros I have ever had." IG: @jamesleebaird. 1,295 DMs. Possibly in Franklin, TN area.

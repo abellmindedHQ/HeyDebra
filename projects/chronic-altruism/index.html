@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Altruism: A Diagnostic Map</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0f;
+    color: #e0e0e8;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 60px 24px 40px;
+    background: linear-gradient(180deg, #12121a 0%, #0a0a0f 100%);
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #7c5cfc, #c084fc, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+  }
+
+  .hero .subtitle {
+    font-size: 1.1rem;
+    color: #9898b0;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Spectrum Bar */
+  .spectrum-section {
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .spectrum-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #c084fc;
+  }
+
+  .spectrum-section .desc {
+    color: #8888a0;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .spectrum-bar {
+    position: relative;
+    height: 64px;
+    border-radius: 32px;
+    background: linear-gradient(90deg, #22c55e 0%, #84cc16 20%, #eab308 40%, #f97316 60%, #ef4444 80%, #991b1b 100%);
+    margin-bottom: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(124, 92, 252, 0.15);
+  }
+
+  .spectrum-bar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 50%, rgba(0,0,0,0.15) 100%);
+    border-radius: 32px;
+    pointer-events: none;
+  }
+
+  .spectrum-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #6b6b80;
+    padding: 0 8px;
+  }
+
+  .spectrum-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: grab;
+    z-index: 2;
+    transition: left 0.3s ease;
+  }
+
+  .spectrum-tooltip {
+    background: #1a1a2e;
+    border: 1px solid #2a2a40;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 24px;
+    min-height: 100px;
+    transition: all 0.3s ease;
+  }
+
+  .spectrum-tooltip h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .spectrum-tooltip p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #a0a0b8;
+  }
+
+  /* Archetype Cards */
+  .archetypes-section {
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .archetypes-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #c084fc;
+  }
+
+  .archetypes-section .desc {
+    color: #8888a0;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+  }
+
+  .archetype-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+
+  .archetype-card {
+    background: #12121e;
+    border: 1px solid #1e1e30;
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .archetype-card:hover {
+    border-color: #7c5cfc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(124, 92, 252, 0.15);
+  }
+
+  .archetype-card.active {
+    border-color: #c084fc;
+    box-shadow: 0 8px 32px rgba(192, 132, 252, 0.2);
+  }
+
+  .archetype-card .icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .archetype-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .archetype-card .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .tag-genuine { background: #22c55e22; color: #4ade80; }
+  .tag-vulnerable { background: #eab30822; color: #fbbf24; }
+  .tag-dark { background: #ef444422; color: #f87171; }
+  .tag-clinical { background: #7c5cfc22; color: #a78bfa; }
+
+  .archetype-card .summary {
+    font-size: 0.85rem;
+    color: #8888a0;
+    line-height: 1.5;
+  }
+
+  .archetype-detail {
+    display: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a40;
+  }
+
+  .archetype-detail.show { display: block; }
+
+  .archetype-detail h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #c084fc;
+    margin: 12px 0 6px;
+  }
+
+  .archetype-detail ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .archetype-detail li {
+    font-size: 0.8rem;
+    color: #9898b0;
+    padding: 3px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .archetype-detail li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #6b6b80;
+  }
+
+  .archetype-detail .dsm-ref {
+    font-size: 0.75rem;
+    color: #7c5cfc;
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  /* Connection Map */
+  .connections-section {
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .connections-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #c084fc;
+  }
+
+  .connections-section .desc {
+    color: #8888a0;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+  }
+
+  .connection-map {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .conn-column h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .conn-left h3 { background: #7c5cfc22; color: #a78bfa; }
+  .conn-right h3 { background: #ef444422; color: #f87171; }
+
+  .conn-item {
+    background: #12121e;
+    border: 1px solid #1e1e30;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .conn-item:hover {
+    border-color: #7c5cfc;
+  }
+
+  .conn-item.highlighted {
+    border-color: #f472b6;
+    box-shadow: 0 0 12px rgba(244, 114, 182, 0.2);
+  }
+
+  .conn-item .conn-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .conn-item .conn-desc {
+    color: #8888a0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .conn-bridge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 12px;
+  }
+
+  .bridge-line {
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(180deg, #7c5cfc, #f472b6);
+    border-radius: 1px;
+    opacity: 0.4;
+  }
+
+  .bridge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f472b6;
+    box-shadow: 0 0 8px rgba(244, 114, 182, 0.5);
+  }
+
+  /* DSM Overlay */
+  .dsm-section {
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .dsm-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #c084fc;
+  }
+
+  .dsm-section .desc {
+    color: #8888a0;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .dsm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+  }
+
+  .dsm-card {
+    background: #12121e;
+    border: 1px solid #1e1e30;
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .dsm-card:hover {
+    border-color: #7c5cfc;
+    transform: translateY(-2px);
+  }
+
+  .dsm-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .dsm-card .dsm-code {
+    font-size: 0.75rem;
+    color: #7c5cfc;
+    margin-bottom: 10px;
+  }
+
+  .dsm-card .dsm-overlap {
+    font-size: 0.85rem;
+    color: #a0a0b8;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .dsm-card .criteria-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #2a2a40;
+    padding-top: 12px;
+  }
+
+  .dsm-card.expanded .criteria-list { display: block; }
+
+  .criteria-list li {
+    font-size: 0.8rem;
+    color: #8888a0;
+    padding: 4px 0 4px 16px;
+    position: relative;
+  }
+
+  .criteria-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #c084fc;
+  }
+
+  .criteria-list li.overlap-highlight {
+    color: #f472b6;
+    font-weight: 500;
+  }
+
+  /* References */
+  .references-section {
+    padding: 40px 24px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .references-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #c084fc;
+  }
+
+  .ref-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .ref-list li {
+    font-size: 0.8rem;
+    color: #6b6b80;
+    line-height: 1.6;
+    padding: 6px 0;
+    border-bottom: 1px solid #1a1a2e;
+  }
+
+  .ref-list li em { color: #9898b0; }
+
+  .expand-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #7c5cfc;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 1.8rem; }
+    .connection-map { grid-template-columns: 1fr; }
+    .conn-bridge { display: none; }
+    .archetype-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Chronic Altruism</h1>
+  <p class="subtitle">When giving becomes pathology. An interactive diagnostic map of how selflessness manifests across personality types, clinical disorders, and the dark triad — grounded in peer-reviewed research and DSM-5 criteria.</p>
+</div>
+
+<!-- SPECTRUM -->
+<div class="spectrum-section">
+  <h2>The Altruism Spectrum</h2>
+  <p class="desc">Click along the bar to explore how altruism shifts from healthy to pathological. Not all excessive giving is the same — motivation, awareness, and harm determine where behavior falls.</p>
+
+  <div class="spectrum-bar" id="spectrumBar">
+    <div class="spectrum-marker" id="spectrumMarker" style="left: 10%;"></div>
+  </div>
+  <div class="spectrum-labels">
+    <span>Healthy Altruism</span>
+    <span>Self-Neglecting</span>
+    <span>Codependent</span>
+    <span>Compulsive</span>
+    <span>Pathological</span>
+  </div>
+
+  <div class="spectrum-tooltip" id="spectrumTooltip">
+    <h3 id="tooltipTitle">Healthy Altruism</h3>
+    <p id="tooltipText">Genuine concern for others balanced with self-care. Motivated by empathy, personal growth, and openness. The giver maintains boundaries, can say no, and doesn't expect reciprocation. Positive outcomes for both parties. This is the baseline — where most people live.</p>
+  </div>
+</div>
+
+<!-- ARCHETYPES -->
+<div class="archetypes-section">
+  <h2>Archetype Profiles</h2>
+  <p class="desc">Click a profile to explore how chronic altruism manifests differently depending on personality structure and underlying motivation.</p>
+
+  <div class="archetype-grid">
+
+    <div class="archetype-card" onclick="toggleArchetype(this)">
+      <div class="icon">🕊️</div>
+      <h3>The Genuine Giver</h3>
+      <span class="tag tag-genuine">Healthy → At-Risk</span>
+      <p class="summary">Authentically empathic, but at risk of burnout. Their giving comes from real compassion, not ego. The danger is depletion, not manipulation.</p>
+      <div class="archetype-detail">
+        <h4>Core Motivation</h4>
+        <ul>
+          <li>Authentic empathy and compassion</li>
+          <li>Values-driven (personal growth, openness)</li>
+          <li>Derives meaning from reducing others' suffering</li>
+        </ul>
+        <h4>When It Becomes Pathological</h4>
+        <ul>
+          <li>Burnout and compassion fatigue (common in healthcare workers)</li>
+          <li>Self-neglect — skipping meals, sleep, own medical care</li>
+          <li>Inability to set boundaries without guilt</li>
+          <li>Identity becomes fused with the "helper" role</li>
+        </ul>
+        <h4>Research</h4>
+        <ul>
+          <li>Oakley (2012): burnout and depression as pathological altruism in caregivers</li>
+          <li>Linked to "unmitigated communion" (Fritz & Helgeson, 1998) — focus on others to exclusion of self</li>
+        </ul>
+        <p class="dsm-ref">DSM-5 Adjacent: Dependent Personality Disorder features (need to be needed); Adjustment Disorders with burnout presentation</p>
+      </div>
+    </div>
+
+    <div class="archetype-card" onclick="toggleArchetype(this)">
+      <div class="icon">🔗</div>
+      <h3>The Codependent</h3>
+      <span class="tag tag-vulnerable">Vulnerable</span>
+      <p class="summary">Gives compulsively to maintain relationships. Confuses being needed with being loved. Their altruism is a survival strategy rooted in attachment wounds.</p>
+      <div class="archetype-detail">
+        <h4>Core Motivation</h4>
+        <ul>
+          <li>Fear of abandonment and rejection</li>
+          <li>Self-worth contingent on being needed</li>
+          <li>Enmeshment — blurred self/other boundaries</li>
+        </ul>
+        <h4>When It Becomes Pathological</h4>
+        <ul>
+          <li>Enabling addictive or abusive behavior in others</li>
+          <li>Complete loss of identity outside the relationship</li>
+          <li>Chronic anxiety when not actively helping someone</li>
+          <li>Resentment cycle: over-give → feel unappreciated → guilt → over-give more</li>
+        </ul>
+        <h4>Research</h4>
+        <ul>
+          <li>Oakley (2012): codependency as canonical pathological altruism</li>
+          <li>Dear (2004): codependency linked to low self-esteem, external locus of control</li>
+          <li>High overlap with anxious attachment style (Bowlby)</li>
+        </ul>
+        <p class="dsm-ref">DSM-5 Adjacent: Dependent Personality Disorder (301.6); features of Borderline PD (fear of abandonment, identity disturbance)</p>
+      </div>
+    </div>
+
+    <div class="archetype-card" onclick="toggleArchetype(this)">
+      <div class="icon">🎭</div>
+      <h3>The Communal Narcissist</h3>
+      <span class="tag tag-dark">Dark Triad</span>
+      <p class="summary">Uses generosity as a stage. "I am the most giving person you'll ever meet." The altruism is real in action but hollow in motive — it serves grandiosity.</p>
+      <div class="archetype-detail">
+        <h4>Core Motivation</h4>
+        <ul>
+          <li>Grandiose self-image maintained through communal domain</li>
+          <li>"I am the most caring, the most selfless, the most needed"</li>
+          <li>Seeks admiration for virtue, not for achievement</li>
+        </ul>
+        <h4>Key Behaviors</h4>
+        <ul>
+          <li>Public displays of generosity; less generous when unobserved</li>
+          <li>Keeps score — expects gratitude, recognition, reciprocity</li>
+          <li>Punishes perceived ingratitude (withdrawal, guilt-tripping)</li>
+          <li>Claims moral superiority in conflicts</li>
+        </ul>
+        <h4>Research</h4>
+        <ul>
+          <li>Gebauer et al. (2012): Communal Narcissism Inventory (CNI) — narcissistic self-motives satisfied through communal means</li>
+          <li>High subjective prosociality, low objective prosociality</li>
+          <li>Related to "self-sacrificing self-enhancement" (Pathological Narcissism Inventory)</li>
+        </ul>
+        <p class="dsm-ref">DSM-5: Narcissistic Personality Disorder (301.81) — grandiosity, need for admiration, lack of empathy. Communal presentation is a less-studied but validated subtype.</p>
+      </div>
+    </div>
+
+    <div class="archetype-card" onclick="toggleArchetype(this)">
+      <div class="icon">🐍</div>
+      <h3>The Covert Narcissist</h3>
+      <span class="tag tag-dark">Dark Triad</span>
+      <p class="summary">Disguises control as care. Appears humble and self-sacrificing but weaponizes vulnerability. Their giving creates obligation and dependency in others.</p>
+      <div class="archetype-detail">
+        <h4>Core Motivation</h4>
+        <ul>
+          <li>Control through obligation ("After everything I've done for you...")</li>
+          <li>Validation through victimhood ("I give and give and nobody appreciates me")</li>
+          <li>Maintains supply through dependency, not admiration</li>
+        </ul>
+        <h4>Key Behaviors</h4>
+        <ul>
+          <li>Unsolicited help that creates indebtedness</li>
+          <li>Martyr complex — suffering is performed, not private</li>
+          <li>Passive-aggressive withdrawal when not sufficiently appreciated</li>
+          <li>Conditional love disguised as unconditional sacrifice</li>
+        </ul>
+        <h4>Research</h4>
+        <ul>
+          <li>Wink (1991): covert/vulnerable narcissism — hypersensitivity, anxiety, defensiveness</li>
+          <li>Lower affective empathy despite outward displays of caring</li>
+          <li>"Altruistic narcissism" — prosocial facade concealing egoistic motivation</li>
+        </ul>
+        <p class="dsm-ref">DSM-5: NPD (301.81) — "vulnerable" presentation not separately coded but clinically recognized. Overlaps with Passive-Aggressive (Negativistic) PD traits.</p>
+      </div>
+    </div>
+
+    <div class="archetype-card" onclick="toggleArchetype(this)">
+      <div class="icon">⚡</div>
+      <h3>The Manic Altruist</h3>
+      <span class="tag tag-clinical">Clinical — Bipolar</span>
+      <p class="summary">Explosive generosity during manic/hypomanic episodes. Gives away money, possessions, time recklessly. The altruism is genuine in the moment but driven by disinhibition.</p>
+      <div class="archetype-detail">
+        <h4>Core Mechanism</h4>
+        <ul>
+          <li>Elevated mood + grandiosity + impulsivity = reckless generosity</li>
+          <li>Genuine desire to help, amplified by disinhibition</li>
+          <li>Poor judgment about consequences (financial ruin, relationship damage)</li>
+        </ul>
+        <h4>DSM-5 Manic Episode Criteria (Overlap)</h4>
+        <ul>
+          <li>Inflated self-esteem or grandiosity → "I can fix everyone's problems"</li>
+          <li>Excessive involvement in activities with painful consequences → buying sprees, giving away possessions</li>
+          <li>Increased goal-directed activity → taking on everyone's burdens simultaneously</li>
+          <li>Decreased need for sleep → staying up all night helping someone</li>
+        </ul>
+        <h4>Research</h4>
+        <ul>
+          <li>DSM-5: Bipolar I (296.xx) — "giving away possessions" listed as manic criterion example</li>
+          <li>Studies show manic patients exhibit impulsive generosity but also higher rejection of unfairness (altered social decision-making)</li>
+          <li>Zahn-Waxler (1984): children of bipolar parents show heightened distress at others' suffering</li>
+        </ul>
+        <p class="dsm-ref">DSM-5: Bipolar I Disorder (296.xx), Bipolar II (296.89) — Criterion B7: "Excessive involvement in activities that have a high potential for painful consequences"</p>
+      </div>
+    </div>
+
+    <div class="archetype-card" onclick="toggleArchetype(this)">
+      <div class="icon">♟️</div>
+      <h3>The Machiavellian Helper</h3>
+      <span class="tag tag-dark">Dark Triad</span>
+      <p class="summary">Strategic generosity. Every act of kindness is a chess move. They give to create leverage, build alliances, or position for future extraction.</p>
+      <div class="archetype-detail">
+        <h4>Core Motivation</h4>
+        <ul>
+          <li>Power accumulation through social capital</li>
+          <li>Calculated reciprocity — always tracking the ledger</li>
+          <li>Long-game manipulation disguised as friendship</li>
+        </ul>
+        <h4>Key Behaviors</h4>
+        <ul>
+          <li>Targeted generosity — helps the "right" people strategically</li>
+          <li>Collects favors, calls them in at optimal moments</li>
+          <li>Appears warm and prosocial to observers</li>
+          <li>Zero genuine altruism when no audience or strategic value exists</li>
+        </ul>
+        <h4>Research</h4>
+        <ul>
+          <li>Machiavellianism negatively correlated with general altruism (Bereczkei et al., 2010)</li>
+          <li>Uses prosocial behavior as "social camouflage" (Jonason & McCain, 2012)</li>
+          <li>Instrumental helping: prosocial acts serve reputation management</li>
+        </ul>
+        <p class="dsm-ref">DSM-5: No direct diagnosis. Overlaps with Antisocial PD (301.7) features — deceitfulness, exploitation. Not all Machiavellians meet ASPD threshold.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONNECTIONS MAP -->
+<div class="connections-section">
+  <h2>The Bipolar ↔ Dark Triad Bridge</h2>
+  <p class="desc">Click items to see shared mechanisms. Bipolar mania and dark triad personalities can produce similar altruistic behaviors through completely different pathways — but the overlap zone is where misdiagnosis lives.</p>
+
+  <div class="connection-map">
+    <div class="conn-column conn-left">
+      <h3>Bipolar Spectrum</h3>
+
+      <div class="conn-item" data-connects="grandiosity,control" onclick="highlightConnections(this)">
+        <div class="conn-title">Grandiose Self-Image</div>
+        <div class="conn-desc">Inflated sense of ability to help. "I alone can save them." Temporary in mania, persistent in NPD.</div>
+      </div>
+
+      <div class="conn-item" data-connects="impulsive-giving,public-display" onclick="highlightConnections(this)">
+        <div class="conn-title">Impulsive Generosity</div>
+        <div class="conn-desc">Giving away money, possessions, time without considering consequences. DSM-5 Criterion B7.</div>
+      </div>
+
+      <div class="conn-item" data-connects="boundary-loss" onclick="highlightConnections(this)">
+        <div class="conn-title">Boundary Dissolution</div>
+        <div class="conn-desc">Taking on others' problems as your own. Enmeshment accelerated by elevated mood states.</div>
+      </div>
+
+      <div class="conn-item" data-connects="identity-shift" onclick="highlightConnections(this)">
+        <div class="conn-title">Identity Inflation</div>
+        <div class="conn-desc">The "savior" identity feels real during episodes. Depressive crash brings guilt about overpromising.</div>
+      </div>
+
+      <div class="conn-item" data-connects="cycle" onclick="highlightConnections(this)">
+        <div class="conn-title">Cycle of Overcommitment</div>
+        <div class="conn-desc">Mania: promise everything. Depression: can't deliver. Guilt → compensatory hyper-giving on next cycle.</div>
+      </div>
+    </div>
+
+    <div class="conn-bridge">
+      <div class="bridge-line"></div>
+      <div class="bridge-dot"></div>
+      <div style="font-size:0.7rem; color:#f472b6; writing-mode:vertical-lr; text-orientation:mixed;">OVERLAP ZONE</div>
+      <div class="bridge-dot"></div>
+      <div class="bridge-line"></div>
+      <div class="bridge-dot"></div>
+      <div class="bridge-line"></div>
+    </div>
+
+    <div class="conn-column conn-right">
+      <h3>Dark Triad</h3>
+
+      <div class="conn-item" data-connects="grandiosity,identity-shift" onclick="highlightConnections(this)">
+        <div class="conn-title" id="grandiosity">Narcissistic Grandiosity</div>
+        <div class="conn-desc">Stable (not episodic) inflated self-worth. "I am extraordinary at caring for others." Communal narcissism.</div>
+      </div>
+
+      <div class="conn-item" data-connects="public-display,impulsive-giving" onclick="highlightConnections(this)">
+        <div class="conn-title" id="public-display">Performative Generosity</div>
+        <div class="conn-desc">Giving is a stage. Diminishes in anonymous contexts. Expects audience and applause.</div>
+      </div>
+
+      <div class="conn-item" data-connects="control,boundary-loss" onclick="highlightConnections(this)">
+        <div class="conn-title" id="control">Control Through Obligation</div>
+        <div class="conn-desc">Creates dependency. "After everything I've done..." Weaponizes the recipient's gratitude.</div>
+      </div>
+
+      <div class="conn-item" data-connects="cycle" onclick="highlightConnections(this)">
+        <div class="conn-title">Idealize → Devalue Cycle</div>
+        <div class="conn-desc">Shower with generosity → withdraw when supply dries up. Mimics bipolar cycling but is relational, not neurochemical.</div>
+      </div>
+
+      <div class="conn-item" data-connects="identity-shift,grandiosity" onclick="highlightConnections(this)">
+        <div class="conn-title" id="identity-shift">Moral Self-Image</div>
+        <div class="conn-desc">Core identity built around being "the good one." Threats to this image trigger narcissistic rage or collapse.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DSM-5 OVERLAY -->
+<div class="dsm-section">
+  <h2>DSM-5 Diagnostic Intersections</h2>
+  <p class="desc">Pathological altruism isn't a standalone DSM-5 diagnosis — but it overlaps with features of several. Click to expand criteria with altruism-relevant items highlighted.</p>
+
+  <div class="dsm-grid">
+
+    <div class="dsm-card" onclick="this.classList.toggle('expanded')">
+      <h3>Narcissistic Personality Disorder</h3>
+      <div class="dsm-code">301.81 (F60.81)</div>
+      <div class="dsm-overlap">Communal narcissism satisfies grandiosity through prosocial means. "I am the most giving person alive" is NPD expressed through altruism rather than achievement.</div>
+      <ul class="criteria-list">
+        <li class="overlap-highlight">Grandiose sense of self-importance → "No one helps like I do"</li>
+        <li class="overlap-highlight">Preoccupied with fantasies of unlimited power → savior fantasies</li>
+        <li>Believes they are "special" and unique</li>
+        <li class="overlap-highlight">Requires excessive admiration → for their generosity specifically</li>
+        <li class="overlap-highlight">Sense of entitlement → expects gratitude and reciprocity</li>
+        <li class="overlap-highlight">Interpersonally exploitative → creates obligation through giving</li>
+        <li class="overlap-highlight">Lacks empathy → performs empathy, doesn't feel it deeply</li>
+        <li>Often envious or believes others are envious</li>
+        <li>Arrogant, haughty behaviors → moral superiority</li>
+      </ul>
+    </div>
+
+    <div class="dsm-card" onclick="this.classList.toggle('expanded')">
+      <h3>Bipolar I Disorder — Manic Episode</h3>
+      <div class="dsm-code">296.xx (F31.x)</div>
+      <div class="dsm-overlap">Manic episodes produce altruistic behavior through grandiosity and impulsivity. "Giving away possessions" is explicitly listed as a criterion example.</div>
+      <ul class="criteria-list">
+        <li class="overlap-highlight">Inflated self-esteem or grandiosity → "I can solve everyone's problems"</li>
+        <li>Decreased need for sleep → staying up to help others</li>
+        <li>More talkative than usual → compulsive advice-giving</li>
+        <li>Flight of ideas → jumping between people's problems</li>
+        <li class="overlap-highlight">Increase in goal-directed activity → taking on multiple causes simultaneously</li>
+        <li>Distractibility</li>
+        <li class="overlap-highlight">Excessive involvement in activities with painful consequences → buying sprees, giving away possessions, reckless financial generosity</li>
+      </ul>
+    </div>
+
+    <div class="dsm-card" onclick="this.classList.toggle('expanded')">
+      <h3>Dependent Personality Disorder</h3>
+      <div class="dsm-code">301.6 (F60.7)</div>
+      <div class="dsm-overlap">The codependent altruist: gives compulsively to maintain attachment. Their generosity is a survival strategy against abandonment.</div>
+      <ul class="criteria-list">
+        <li class="overlap-highlight">Difficulty making everyday decisions without advice/reassurance</li>
+        <li class="overlap-highlight">Needs others to assume responsibility for major areas of life</li>
+        <li class="overlap-highlight">Difficulty expressing disagreement due to fear of loss of support → can't say no to requests</li>
+        <li>Difficulty initiating projects due to lack of self-confidence</li>
+        <li class="overlap-highlight">Goes to excessive lengths to obtain nurturance and support → over-gives to be needed</li>
+        <li>Feels uncomfortable or helpless when alone</li>
+        <li class="overlap-highlight">Urgently seeks another relationship when one ends</li>
+        <li class="overlap-highlight">Unrealistically preoccupied with fears of being left to take care of themselves</li>
+      </ul>
+    </div>
+
+    <div class="dsm-card" onclick="this.classList.toggle('expanded')">
+      <h3>Antisocial Personality Disorder</h3>
+      <div class="dsm-code">301.7 (F60.2)</div>
+      <div class="dsm-overlap">The Machiavellian helper: strategic prosociality as manipulation. Not all instrumental helping meets ASPD threshold, but the mechanism is the same — people as tools.</div>
+      <ul class="criteria-list">
+        <li>Failure to conform to social norms</li>
+        <li class="overlap-highlight">Deceitfulness — using aliases, conning for personal profit/pleasure → prosocial facade</li>
+        <li>Impulsivity or failure to plan ahead</li>
+        <li>Irritability and aggressiveness</li>
+        <li>Reckless disregard for safety of others</li>
+        <li class="overlap-highlight">Consistent irresponsibility</li>
+        <li class="overlap-highlight">Lack of remorse → no guilt about using generosity as leverage</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- REFERENCES -->
+<div class="references-section">
+  <h2>References</h2>
+  <ul class="ref-list">
+    <li>Oakley, B., Knafo, A., Madhavan, G., & Wilson, D. S. (Eds.). (2012). <em>Pathological Altruism.</em> Oxford University Press.</li>
+    <li>Oakley, B. (2013). Concepts and implications of altruism bias and pathological altruism. <em>Proceedings of the National Academy of Sciences, 110</em>(Supplement 2), 10408-10415.</li>
+    <li>Gebauer, J. E., Sedikides, C., Verplanken, B., & Maio, G. R. (2012). Communal narcissism. <em>Journal of Personality and Social Psychology, 103</em>(5), 854-878.</li>
+    <li>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). Arlington, VA: APA.</li>
+    <li>Wink, P. (1991). Two faces of narcissism. <em>Journal of Personality and Social Psychology, 61</em>(4), 590-597.</li>
+    <li>Zahn-Waxler, C., Cummings, E. M., McKnew, D. H., & Radke-Yarrow, M. (1984). Altruism, aggression, and social interactions in young children with a manic-depressive parent. <em>Child Development, 55</em>(1), 112-122.</li>
+    <li>Fritz, H. L., & Helgeson, V. S. (1998). Distinctions of unmitigated communion from communion: Self-neglect and overinvolvement with others. <em>Journal of Personality and Social Psychology, 75</em>(1), 121-140.</li>
+    <li>Bereczkei, T., Birkas, B., & Kerekes, Z. (2010). The presence of others, prosocial traits, Machiavellianism. <em>Social Psychology, 41</em>(4), 238-245.</li>
+    <li>Jonason, P. K., & McCain, J. (2012). Using the HEXACO model to test the validity of the Dirty Dozen measure of the Dark Triad. <em>Personality and Individual Differences, 53</em>(7), 935-938.</li>
+    <li>Latzer, Y., & Stein, D. (2013). A review of the psychological and familial perspectives of childhood obesity. <em>In: Pathological Altruism</em> (Oakley et al., Eds.). Oxford University Press. Ch. 16: Selflessness and eating disorders.</li>
+  </ul>
+</div>
+
+<script>
+// Spectrum interaction
+const spectrumData = [
+  {
+    range: [0, 20],
+    title: "Healthy Altruism",
+    text: "Genuine concern for others balanced with self-care. Motivated by empathy, personal growth, and openness (Oakley, 2012). The giver maintains boundaries, can say no, and doesn't expect reciprocation. Positive outcomes for both parties. Associated with secure attachment, high self-esteem, and internal locus of control."
+  },
+  {
+    range: [20, 40],
+    title: "Self-Neglecting Altruism",
+    text: "The giver consistently prioritizes others over themselves but hasn't yet caused significant harm. Warning signs: skipping self-care, difficulty saying no, guilt when resting. Common in healthcare workers, parents, and caregivers. Fritz & Helgeson (1998) termed this 'unmitigated communion' — a focus on others to the complete exclusion of self. The person may not recognize the pattern."
+  },
+  {
+    range: [40, 60],
+    title: "Codependent Altruism",
+    text: "Giving has become a survival strategy. Self-worth is entirely contingent on being needed. The person enables others' dysfunction to maintain the relationship. Classic codependency pattern: over-give → feel resentful → feel guilty for resentment → over-give more. Oakley (2012) identifies this as the canonical form of pathological altruism. Often rooted in childhood attachment disruption."
+  },
+  {
+    range: [60, 80],
+    title: "Compulsive Altruism",
+    text: "The giving is no longer volitional — it's driven by anxiety, guilt, or personality structure. May include: animal hoarding disguised as rescue, helicopter parenting, compulsive volunteering that damages family relationships. The person cannot stop even when shown the harm. Overlaps with OCD features (intrusive thoughts about others' welfare) and personality disorders (Dependent PD, Borderline PD)."
+  },
+  {
+    range: [80, 100],
+    title: "Pathological Altruism",
+    text: "Altruism that produces foreseeable, significant harm to the giver, recipient, or both (Oakley, 2012). Examples: a therapist who violates boundaries to 'save' a patient; manic episodes producing financial ruin through giving; social programs that entrench dependency; 'altruistic' control in narcissistic relationships. At this extreme, the behavior may be clinically indistinguishable from personality disorder features or mood episode symptoms."
+  }
+];
+
+const spectrumBar = document.getElementById('spectrumBar');
+const spectrumMarker = document.getElementById('spectrumMarker');
+const tooltipTitle = document.getElementById('tooltipTitle');
+const tooltipText = document.getElementById('tooltipText');
+
+spectrumBar.addEventListener('click', (e) => {
+  const rect = spectrumBar.getBoundingClientRect();
+  const pct = ((e.clientX - rect.left) / rect.width) * 100;
+  spectrumMarker.style.left = pct + '%';
+
+  const zone = spectrumData.find(d => pct >= d.range[0] && pct < d.range[1]) || spectrumData[spectrumData.length - 1];
+  tooltipTitle.textContent = zone.title;
+  tooltipText.textContent = zone.text;
+});
+
+// Archetype toggle
+function toggleArchetype(card) {
+  const detail = card.querySelector('.archetype-detail');
+  const wasActive = card.classList.contains('active');
+
+  document.querySelectorAll('.archetype-card').forEach(c => {
+    c.classList.remove('active');
+    c.querySelector('.archetype-detail').classList.remove('show');
+  });
+
+  if (!wasActive) {
+    card.classList.add('active');
+    detail.classList.add('show');
+  }
+}
+
+// Connection highlighting
+function highlightConnections(item) {
+  const connects = item.dataset.connects.split(',');
+
+  document.querySelectorAll('.conn-item').forEach(el => el.classList.remove('highlighted'));
+
+  item.classList.add('highlighted');
+
+  document.querySelectorAll('.conn-item').forEach(el => {
+    if (el === item) return;
+    const elConnects = el.dataset.connects.split(',');
+    if (connects.some(c => elConnects.includes(c))) {
+      el.classList.add('highlighted');
+    }
+  });
+}
+</script>
+
+</body>
+</html>

@@ -98,7 +98,16 @@ For each contact, assign tier 1–5 based on:
 6. Source = "CONTACT" (manually added) vs "DIRECTORY" (auto-sync)? (+1 if manual)
 7. Name is in Alex's known people list (from USER.md / MEMORY.md context)? → Tier 1
 
-Score → Tier:
+**MANDATORY FIRST STEP — Known People Override:**
+Before scoring, read USER.md and MEMORY.md People sections. Build an explicit list of known names. ANY contact matching a known person is AUTOMATICALLY Tier 1, regardless of score. This list includes but is not limited to:
+- Hannah Aldridge, Annika Abell, Sallijo Archer, Chelsea Rothschild
+- Jay Eckles, Brandon Bruce, Jim Biggs, Marshall Goldman, Everett Hirche
+- Nick Hollensbe, Anthony Caccese, Merle Benny, Pooja Pendharkar
+- Roxanne (sister), Teresa Scruggs, Brad Greenfield, Jason Patrick
+- Angie (ORNL), Mike Shell, Brooks Herring, Herb Himes
+Match on first name + last name. Also check partial matches (first name only if uncommon).
+
+Score → Tier (for contacts NOT in the known people list):
 - 4+ signals → Tier 1 or 2 (use relationship context to decide)
 - 2-3 signals → Tier 2 or 3
 - 1 signal → Tier 3 or 4

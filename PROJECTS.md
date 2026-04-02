@@ -47,7 +47,14 @@ Active and someday/maybe projects. GTD style.
 - Google Contacts purged: 7,612 → 1,283
 - **Next**: Finish contact sync to drdebrapepper, cross-ref Instagram mutuals
 
-### Automation Suite (17 Cron Jobs)
+### Knowledge Architecture Deep Dive
+- Opus research sub-agent completed full GAN analysis (6 web searches, 3,067 Neo4j nodes audited, latest memory framework research)
+- Report saved: memory/knowledge-architecture-report.md
+- **Key recommendation:** Hibernate Neo4j → migrate to knowledge.sqlite, reorganize vault with _raw/ prefix, extend memory_search, bring Neo4j back for Mirror dev
+- Covers: Neo4j vs Obsidian vs vector DB, staging layer design, voice embeddings, RAG improvements, cost/complexity, Mirror product connections
+- **Next**: Alex reviews report, makes architectural decisions
+
+### Automation Suite (18 Cron Jobs)
 - Email GTD: 7am, 12pm, 6pm daily
 - Capture Agent: 7:30am, 2pm, 8pm daily
 - GSD Agent: 8am, 3pm daily
@@ -56,6 +63,7 @@ Active and someday/maybe projects. GTD style.
 - Weaver: Sunday 11pm
 - Memory Flush: 3:30am x2
 - **Next**: Monitor first full day of crons, verify all working
+- Includes: Capture Agent (3x), Email GTD (3x), GSD Agent (2x), Night Swimming suite (Sun), Dream Cycle (daily 11:30pm), Memory Consolidation (Sun), Sallijo Story Time (every other day 2pm), LinkedIn Cleanup (daily 10am), various reminders
 
 ### Multi-Channel Messaging
 - iMessage (BlueBubbles): LIVE ✅
@@ -87,6 +95,14 @@ Active and someday/maybe projects. GTD style.
 - Planned: /products, /consulting, /work, /writing, /about
 - Local: /Users/debra/.openclaw/workspace/projects/abellminded/
 - **Next**: Build /consulting page
+
+### CAD Framework Interactive Site
+- Chelsea Rothschild's Chronic Altruistic Dysregulation clinical framework
+- Integrated into Mirror pitch site with interactive components
+- Features: animated 4-stage cycle, breathing circle, reflection cards, population cards
+- Deployed to abellminded.vercel.app/CAD-Framework/ (custom domain routing pending)
+- Full credit to Dr. Chelsea Rothschild with heartconnectedhealing.com link
+- **Next**: Fix custom domain routing (abellminded.com/CAD-Framework 404)
 
 ### HoldPlease (AI Phone Agent)
 - Phase 1: Twilio outbound calling ✅

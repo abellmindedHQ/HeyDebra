@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <title>FIRST in Tennessee — Connecting K-12 Kids to the World of Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { color-scheme: light only !important; }
+
+    :root {
+      --blue-900: #0a1628;
+      --blue-800: #0d2137;
+      --blue-700: #0f3460;
+      --blue-600: #1a56db;
+      --blue-500: #2563eb;
+      --blue-400: #60a5fa;
+      --blue-100: #dbeafe;
+      --red-600: #dc2626;
+      --red-500: #ef4444;
+      --red-400: #f87171;
+      --orange-500: #f97316;
+      --white: #ffffff;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gray-800);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10, 22, 40, 0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    nav .container {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+      font-size: 1.25rem; color: var(--white); text-decoration: none;
+    }
+    .nav-logo .logo-mark {
+      width: 40px; height: 40px; background: var(--blue-500);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1.1rem; color: white;
+    }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: var(--gray-300); text-decoration: none; font-size: 0.9rem;
+      font-weight: 500; letter-spacing: 0.02em; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--blue-500); color: white !important; padding: 10px 22px;
+      border-radius: 8px; font-weight: 600 !important; transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--blue-600); transform: translateY(-1px); }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 100vh; display: flex; align-items: center;
+      background: linear-gradient(135deg, var(--blue-900) 0%, #0f2847 40%, #162d50 100%);
+      overflow: hidden; padding-top: 72px;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 30% 80%, rgba(239, 68, 68, 0.08) 0%, transparent 50%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero .container { position: relative; z-index: 2; }
+    .hero-content { max-width: 720px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(37, 99, 235, 0.15); border: 1px solid rgba(37, 99, 235, 0.3);
+      padding: 8px 16px; border-radius: 100px; margin-bottom: 28px;
+      color: var(--blue-400); font-size: 0.85rem; font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .hero-badge .pulse {
+      width: 8px; height: 8px; background: var(--blue-400); border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 800;
+      color: var(--white); margin-bottom: 24px;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--blue-400), var(--red-400));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: 1.25rem; color: var(--gray-400); max-width: 560px;
+      margin-bottom: 40px; line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue-500); color: white; padding: 16px 32px;
+      border-radius: 12px; font-weight: 600; font-size: 1rem;
+      text-decoration: none; transition: all 0.2s; border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--blue-600); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,99,235,0.3); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      color: white; padding: 16px 32px; border-radius: 12px;
+      font-weight: 600; font-size: 1rem; text-decoration: none;
+      transition: all 0.2s; cursor: pointer;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+    .hero-visual {
+      position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
+      width: 580px; height: 580px; opacity: 0.18;
+    }
+    .hero-visual svg { width: 100%; height: 100%; }
+
+    /* ─── STATS ─── */
+    .stats {
+      position: relative; z-index: 3; margin-top: -60px; padding-bottom: 80px;
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .stat-card {
+      background: var(--white); border-radius: 16px;
+      padding: 32px 28px; text-align: center;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid var(--gray-100);
+      transition: transform 0.2s;
+    }
+    .stat-card:hover { transform: translateY(-4px); }
+    .stat-number {
+      font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--blue-600), var(--blue-500));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+    }
+    .stat-label { font-size: 0.9rem; color: var(--gray-500); font-weight: 500; }
+
+    /* ─── PROGRAMS ─── */
+    .programs { padding: 100px 0; background: var(--gray-50); }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--blue-500); margin-bottom: 12px;
+    }
+    .section-label::before {
+      content: ''; width: 24px; height: 2px; background: var(--blue-500); border-radius: 2px;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem); font-weight: 800;
+      color: var(--gray-900); margin-bottom: 16px; letter-spacing: -0.02em;
+    }
+    .section-subtitle {
+      font-size: 1.1rem; color: var(--gray-500); max-width: 600px; margin-bottom: 56px;
+    }
+    .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .program-card {
+      background: var(--white); border-radius: 20px;
+      overflow: hidden; border: 1px solid var(--gray-200);
+      transition: all 0.3s; position: relative;
+    }
+    .program-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); border-color: transparent; }
+    .program-header {
+      padding: 36px 32px 28px; position: relative;
+    }
+    .program-icon {
+      width: 64px; height: 64px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; margin-bottom: 20px;
+    }
+    .program-card:nth-child(1) .program-icon { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+    .program-card:nth-child(2) .program-icon { background: linear-gradient(135deg, #dbeafe, #93c5fd); }
+    .program-card:nth-child(3) .program-icon { background: linear-gradient(135deg, #fce7f3, #f9a8d4); }
+    .program-card h3 { font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 4px; }
+    .program-ages {
+      display: inline-block; font-size: 0.8rem; font-weight: 600;
+      color: var(--blue-500); background: var(--blue-100);
+      padding: 4px 12px; border-radius: 100px; margin-bottom: 16px;
+    }
+    .program-card p { font-size: 0.95rem; color: var(--gray-600); line-height: 1.7; padding: 0 32px 32px; }
+    .program-link {
+      display: flex; align-items: center; gap: 6px;
+      padding: 20px 32px; border-top: 1px solid var(--gray-100);
+      font-weight: 600; font-size: 0.9rem; color: var(--blue-500);
+      text-decoration: none; transition: all 0.2s;
+    }
+    .program-link:hover { color: var(--blue-600); gap: 10px; }
+
+    /* ─── MISSION ─── */
+    .mission { padding: 100px 0; }
+    .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .mission-visual {
+      position: relative; aspect-ratio: 1; background: linear-gradient(135deg, var(--blue-900), var(--blue-700));
+      border-radius: 24px; overflow: hidden; display: flex; align-items: center; justify-content: center;
+    }
+    .mission-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 40%, rgba(37,99,235,0.3), transparent 60%);
+    }
+    .mission-quote {
+      position: relative; z-index: 2; padding: 48px; color: white;
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 600;
+      line-height: 1.5;
+    }
+    .mission-quote .attr {
+      display: block; margin-top: 20px; font-family: 'Inter', sans-serif;
+      font-size: 0.9rem; font-weight: 500; color: var(--blue-400);
+    }
+    .mission-content h2 { font-size: 2.5rem; font-weight: 800; color: var(--gray-900); margin-bottom: 24px; letter-spacing: -0.02em; }
+    .mission-content p { font-size: 1.05rem; color: var(--gray-600); margin-bottom: 20px; line-height: 1.8; }
+    .mission-values { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+    .value-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 16px; background: var(--gray-50); border-radius: 12px;
+    }
+    .value-icon {
+      width: 36px; height: 36px; background: var(--blue-100); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      font-size: 1rem;
+    }
+    .value-item strong { display: block; font-size: 0.9rem; color: var(--gray-800); }
+    .value-item span { font-size: 0.82rem; color: var(--gray-500); }
+
+    /* ─── PARTNERS ─── */
+    .partners {
+      padding: 80px 0; background: var(--gray-50); border-top: 1px solid var(--gray-200);
+    }
+    .partners-header { text-align: center; margin-bottom: 48px; }
+    .partners-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .partner-card {
+      background: white; border-radius: 16px; padding: 28px;
+      border: 1px solid var(--gray-200); text-align: center;
+      transition: all 0.2s;
+    }
+    .partner-card:hover { border-color: var(--blue-200); transform: translateY(-2px); }
+    .partner-card h4 { font-size: 1rem; font-weight: 700; color: var(--gray-800); margin-bottom: 6px; }
+    .partner-card p { font-size: 0.82rem; color: var(--gray-500); }
+
+    /* ─── BOARD ─── */
+    .board { padding: 100px 0; }
+    .board-header { text-align: center; margin-bottom: 56px; }
+    .board-header .section-subtitle { margin-left: auto; margin-right: auto; }
+    .board-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .board-member {
+      padding: 28px; border-radius: 16px; border: 1px solid var(--gray-200);
+      transition: all 0.2s; background: white;
+    }
+    .board-member:hover { border-color: var(--blue-200); background: var(--blue-100); }
+    .board-avatar {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue-100), var(--blue-200));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--blue-600); font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    .board-member h4 { font-size: 1rem; font-weight: 700; color: var(--gray-800); }
+    .board-member p { font-size: 0.82rem; color: var(--gray-500); }
+
+    /* ─── CTA ─── */
+    .cta {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--blue-900), #0f2847);
+      position: relative; overflow: hidden;
+    }
+    .cta::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 100%, rgba(37,99,235,0.2), transparent 60%);
+    }
+    .cta .container { position: relative; z-index: 2; text-align: center; }
+    .cta h2 {
+      font-size: clamp(2rem, 4vw, 3rem); font-weight: 800;
+      color: white; margin-bottom: 16px; letter-spacing: -0.02em;
+    }
+    .cta p { font-size: 1.1rem; color: var(--gray-400); max-width: 600px; margin: 0 auto 40px; }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; color: var(--blue-900); padding: 16px 32px;
+      border-radius: 12px; font-weight: 700; font-size: 1rem;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,255,255,0.15); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 2px solid rgba(255,255,255,0.2);
+      color: white; padding: 14px 30px; border-radius: 12px;
+      font-weight: 600; font-size: 1rem; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.05); }
+
+    /* ─── CONTACT ─── */
+    .contact { padding: 100px 0; background: var(--gray-50); }
+    .contact-header { text-align: center; margin-bottom: 56px; }
+    .contact-header .section-subtitle { margin-left: auto; margin-right: auto; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .contact-card {
+      background: white; border-radius: 16px; padding: 28px;
+      border: 1px solid var(--gray-200); transition: all 0.2s;
+    }
+    .contact-card:hover { border-color: var(--blue-200); }
+    .contact-card h4 { font-size: 0.82rem; font-weight: 700; color: var(--blue-500); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+    .contact-card .name { font-weight: 700; color: var(--gray-800); font-size: 1rem; }
+    .contact-card .email { font-size: 0.85rem; color: var(--gray-500); word-break: break-all; }
+    .contact-card a { color: var(--blue-500); text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--gray-900); color: var(--gray-400); padding: 60px 0 40px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-top: 12px; max-width: 300px; }
+    .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+    .footer-col a { display: block; color: var(--gray-400); text-decoration: none; font-size: 0.9rem; padding: 4px 0; transition: color 0.2s; }
+    .footer-col a:hover { color: white; }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.82rem;
+    }
+    .social-links { display: flex; gap: 16px; }
+    .social-links a {
+      color: var(--gray-400); text-decoration: none; font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .social-links a:hover { color: white; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .programs-grid { grid-template-columns: 1fr; max-width: 480px; }
+      .mission-grid { grid-template-columns: 1fr; gap: 40px; }
+      .board-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 2.5rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .partners-grid { grid-template-columns: repeat(2, 1fr); }
+      .mission-values { grid-template-columns: 1fr; }
+      .board-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">F</div>
+        FIRST in Tennessee
+      </a>
+      <ul class="nav-links">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#mission">About</a></li>
+        <li><a href="#board">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#donate" class="nav-cta">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Inspiring the Next Generation
+        </div>
+        <h1>Building <span class="highlight">Future Innovators</span> Across Tennessee</h1>
+        <p>Connecting K-12 students to the world of competitive robotics. From LEGO League to the Robotics Competition, we're sparking a lifelong love of science, technology, and teamwork.</p>
+        <div class="hero-actions">
+          <a href="#programs" class="btn-primary">Explore Programs →</a>
+          <a href="#donate" class="btn-secondary">Support Our Mission</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="250" r="200" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+        <circle cx="250" cy="250" r="150" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+        <circle cx="250" cy="250" r="100" stroke="rgba(96,165,250,0.15)" stroke-width="1"/>
+        <path d="M250 50 L350 200 L250 350 L150 200 Z" stroke="rgba(239,68,68,0.2)" stroke-width="1" fill="none"/>
+        <circle cx="250" cy="50" r="6" fill="rgba(96,165,250,0.5)"/>
+        <circle cx="350" cy="200" r="6" fill="rgba(239,68,68,0.5)"/>
+        <circle cx="250" cy="350" r="6" fill="rgba(96,165,250,0.5)"/>
+        <circle cx="150" cy="200" r="6" fill="rgba(239,68,68,0.5)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">FIRST Programs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6-18</div>
+          <div class="stat-label">Student Age Range</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">K-12</div>
+          <div class="stat-label">Grade Coverage</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">501(c)3</div>
+          <div class="stat-label">Nonprofit Organization</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <div class="section-label">Programs</div>
+      <h2 class="section-title">Three Pathways to Innovation</h2>
+      <p class="section-subtitle">The FIRST progression of programs builds on itself, guiding students from playful discovery to real-world engineering.</p>
+
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-header">
+            <div class="program-icon">🧱</div>
+            <h3>FIRST LEGO League</h3>
+            <span class="program-ages">Grades PreK-8</span>
+          </div>
+          <p>Introduces STEM to children ages 4-16 through hands-on learning. Three divisions inspire youth to experiment and grow their critical thinking, coding, and design skills through guided robotics challenges.</p>
+          <a href="https://www.firstinspires.org/robotics/fll" class="program-link" target="_blank">Learn More →</a>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header">
+            <div class="program-icon">⚙️</div>
+            <h3>FIRST Tech Challenge</h3>
+            <span class="program-ages">Grades 7-12</span>
+          </div>
+          <p>Students think like engineers. Teams design, build, and program robots to compete in alliance format. Built on a reusable platform with Android technology and Java-based programming.</p>
+          <a href="https://www.firstinspires.org/robotics/ftc" class="program-link" target="_blank">Learn More →</a>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header">
+            <div class="program-icon">🤖</div>
+            <h3>FIRST Robotics Competition</h3>
+            <span class="program-ages">Grades 9-12</span>
+          </div>
+          <p>The ultimate challenge. Teams design, program, and build robots for head-to-head competition. Students also build a brand, develop community partnerships, and promote STEM locally.</p>
+          <a href="https://www.firstinspires.org/robotics/frc" class="program-link" target="_blank">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission" id="mission">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-visual">
+          <div class="mission-quote">
+            "To transform our culture by creating a world where science and technology are celebrated and where young people dream of becoming science and technology leaders."
+            <span class="attr">— Dean Kamen, FIRST Founder</span>
+          </div>
+        </div>
+        <div class="mission-content">
+          <div class="section-label">About TNFIRST</div>
+          <h2>Our Mission</h2>
+          <p>TNFIRST, Inc. is a tax-exempt nonprofit focused on connecting K-12 students to the world of FIRST robotics. We believe students achieve their best when exposed to business, manufacturing, and technology during their formative years.</p>
+          <p>Using competitive robotics programs, we give ALL students the opportunity to solve problems, work in teams, and engage with every aspect of business and technology.</p>
+
+          <div class="mission-values">
+            <div class="value-item">
+              <div class="value-icon">🔬</div>
+              <div>
+                <strong>Science & Tech</strong>
+                <span>Productive career paths</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🤝</div>
+              <div>
+                <strong>Team Building</strong>
+                <span>Collaborative leadership</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🏗️</div>
+              <div>
+                <strong>Engineering</strong>
+                <span>Real-world problem solving</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🌍</div>
+              <div>
+                <strong>Community</strong>
+                <span>Local engagement & impact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners">
+    <div class="container">
+      <div class="partners-header">
+        <div class="section-label" style="justify-content:center;">Network</div>
+        <h2 class="section-title">FIRST in Tennessee Partners</h2>
+        <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">A distributed matrix of organizations providing operational support and access across the state.</p>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <h4>Tennessee Tech University</h4>
+          <p>East TN Partner for FLL</p>
+        </div>
+        <div class="partner-card">
+          <h4>NoBox</h4>
+          <p>West TN Partner for FLL Explore</p>
+        </div>
+        <div class="partner-card">
+          <h4>Tennessee Valley Robotics</h4>
+          <p>Chattanooga Partner for FLL</p>
+        </div>
+        <div class="partner-card">
+          <h4>TNFIRST, Inc.</h4>
+          <p>TN Partner for FTC + FRC Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOARD -->
+  <section class="board" id="board">
+    <div class="container">
+      <div class="board-header">
+        <div class="section-label" style="justify-content:center;">Leadership</div>
+        <h2 class="section-title">Board of Directors</h2>
+        <p class="section-subtitle">Dedicated volunteers guiding FIRST programs across Tennessee.</p>
+      </div>
+      <div class="board-grid">
+        <div class="board-member">
+          <div class="board-avatar">CB</div>
+          <h4>Cary Busby</h4>
+          <p>Chair</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">KT</div>
+          <h4>Kris Torgerson</h4>
+          <p>Treasurer</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">MW</div>
+          <h4>Michael Wehrenberg</h4>
+          <p>Secretary</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">CC</div>
+          <h4>Christy Crouse</h4>
+          <p>TN Regional Director</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">MB</div>
+          <h4>Mark Buckner</h4>
+          <p>Board Member</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">NP</div>
+          <h4>Nick Pasquerilla</h4>
+          <p>Board Member</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">JS</div>
+          <h4>Josh Seay</h4>
+          <p>Board Member</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">RM</div>
+          <h4>Richard Manning</h4>
+          <p>FIRST Senior Mentor</p>
+        </div>
+        <div class="board-member">
+          <div class="board-avatar">RM</div>
+          <h4>Robin Marsh</h4>
+          <p>FIRST Senior Mentor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / DONATE -->
+  <section class="cta" id="donate">
+    <div class="container">
+      <h2>Help Build Tennessee's Future Innovators</h2>
+      <p>Team fees cover only a fraction of program costs. Your donation directly supports robotics competitions, training workshops, and mentorship programs across the state.</p>
+      <div class="cta-actions">
+        <a href="https://www.paypal.com/fundraiser/charity/1507569" class="btn-white" target="_blank">Donate via PayPal (No Fees) →</a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=PLACEHOLDER" class="btn-outline" target="_blank">Donate with Card</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header">
+        <div class="section-label" style="justify-content:center;">Get in Touch</div>
+        <h2 class="section-title">Program Contacts</h2>
+        <p class="section-subtitle">Reach out to the right person for your program of interest.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>FLL Explore & Challenge</h4>
+          <div class="name">Charley Spencer</div>
+          <div class="email"><a href="mailto:cwspencer@tnvrobotics.org">cwspencer@tnvrobotics.org</a></div>
+        </div>
+        <div class="contact-card">
+          <h4>FIRST Tech Challenge</h4>
+          <div class="name">Nick Pasquerilla</div>
+          <div class="email"><a href="mailto:npasquerilla@firstpartners.org">npasquerilla@firstpartners.org</a></div>
+        </div>
+        <div class="contact-card">
+          <h4>Robotics Competition</h4>
+          <div class="name">Christy Crouse</div>
+          <div class="email"><a href="mailto:ccrouse@firstinspires.org">ccrouse@firstinspires.org</a></div>
+        </div>
+        <div class="contact-card">
+          <h4>FIRST Senior Mentor</h4>
+          <div class="name">Richard Manning</div>
+          <div class="email"><a href="mailto:rmanning@firstinspires.org">rmanning@firstinspires.org</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="margin-bottom: 4px;">
+            <div class="logo-mark">F</div>
+            FIRST in Tennessee
+          </a>
+          <p>Connecting K-12 students across Tennessee to the world of competitive robotics, building tomorrow's engineers, leaders, and innovators.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <a href="https://www.firstinspires.org/robotics/fll">LEGO League</a>
+          <a href="https://www.firstinspires.org/robotics/ftc">Tech Challenge</a>
+          <a href="https://www.firstinspires.org/robotics/frc">Robotics Competition</a>
+        </div>
+        <div class="footer-col">
+          <h4>Organization</h4>
+          <a href="#mission">About Us</a>
+          <a href="#board">Leadership</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <a href="#donate">Donate</a>
+          <a href="#">Volunteer</a>
+          <a href="#">Start a Team</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 TNFIRST Inc., a nonprofit 501(c)(3) corporation.</span>
+        <div class="social-links">
+          <a href="https://www.instagram.com/firstintenn/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/firstintennessee" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

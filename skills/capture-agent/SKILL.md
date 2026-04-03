@@ -1,15 +1,22 @@
 ---
 name: capture-agent
-description: Universal action item extractor. Scans ALL communication streams (email, iMessage, calendar, LLM exports, drop-folder text files), classifies candidates through an LLM gate, writes verified action items to the GTD inbox at /Users/debra/SecondBrain/GTD/inbox.md, and auto-promotes actionable tasks to Things 3. Use when asked to "scan for action items", "capture todos", "check for commitments", "run capture agent", or automatically via cron (multiple times per day). Never overwrites — appends only. Deduplicates before writing.
+description: Universal action item extractor. Scans email, iMessage, and calendar for concrete action items. Uses context-aware classification (strict mode for conversational sources, blocks stale LLM exports). Hash-based dedup prevents duplicates across runs. Writes verified items to GTD inbox and auto-promotes to Things 3. Use when asked to "scan for action items", "capture todos", "check for commitments", "run capture agent", or automatically via cron (2x daily). Never overwrites — appends only.
 ---
 
 # capture-agent
 
-Scan every communication stream Alex touches, extract anything that looks like a commitment or action item, **classify it through an LLM gate**, and route verified items to both the GTD inbox AND Things 3. The inbox is the staging buffer; Things 3 is the source of truth for active tasks.
+Scan email, iMessage, and calendar for concrete commitments and action items. Uses a **context-aware classification pipeline** with strict filtering for conversational sources (voice notes, meeting transcripts) and automatic blocking of stale LLM export artifacts. Hash-based dedup prevents the same item from appearing twice across runs. Routes verified items to both the GTD inbox AND Things 3.
+
+## Critical Rules (v2)
+
+1. **Voice notes / meeting transcripts**: STRICT mode. Requires action verb + concrete deliverable noun + (deadline OR named person). "I'll send the report to Jay by Friday" passes. "I'll tell you what I think" does not.
+2. **LLM exports (ChatGPT, Claude, Gemini)**: BLOCKED from inbox entirely. These are archived for knowledge in SecondBrain, not routed as live tasks. Old conversations are not action items.
+3. **Hash-based dedup**: Every item gets fingerprinted. State file at `memory/capture-dedup-state.json` tracks last 2000 items. Same item never appears twice.
+4. **Quality over quantity**: 5 real action items > 50 noise items. When in doubt, DON'T add it.
 
 ## Inputs
 
-- **sources** (optional): comma-separated list — `email`, `imessage`, `calendar`, `llm`, `scanfolder`, `all` (default: `all`)
+- **sources** (optional): comma-separated list — `email`, `imessage`, `calendar`, `scanfolder`, `all` (default: `all`). NOTE: `llm` source is DISABLED — LLM exports go to SecondBrain archive only, not inbox.
 - **lookback** (optional): how many hours back to scan (default: `12` for cron, `48` for manual runs)
 - **keywords** (optional): extra trigger words to watch for (always includes defaults — see Config)
 - **dry_run** (optional): if true, classify but don't write to inbox or Things 3
@@ -31,6 +38,7 @@ Run capture-agent — sources: all, lookback: 48 hours
 |---------|---------|-------|
 | `lookback_hours` | 12 | Hours back to scan in cron mode |
 | `lookback_manual` | 48 | Hours back on manual invocation |
+| `dedup_state` | `memory/capture-dedup-state.json` | Hash fingerprints for dedup |
 | `inbox_file` | `/Users/debra/SecondBrain/GTD/inbox.md` | Staging area (append target) |
 | `scan_folder` | `/Users/debra/SecondBrain/GTD/scan/` | Drop files here to auto-scan |
 | `meeting_insights` | `/Users/debra/SecondBrain/GTD/meeting-insights-archive.md` | Non-actionable items route here |
@@ -186,13 +194,9 @@ ls /Users/debra/SecondBrain/GTD/scan/ 2>/dev/null
 Read each file, extract candidates, move processed files to `scan/processed/`.
 Source tag: `file:[filename]`
 
-### 6. Scan: LLM Exports (if present)
+### 6. LLM Exports — BLOCKED
 
-```bash
-ls -t ~/Downloads/*.json ~/Downloads/*.md 2>/dev/null | head -5
-```
-
-Source tag: `llm:[filename]`
+**DO NOT scan LLM exports for inbox routing.** The LLM export processor (`night-swimming-llm`) archives these to SecondBrain for knowledge retrieval. Old ChatGPT/Claude/Gemini conversations contain stale "action items" from months ago that pollute the inbox. If source contains `chatgpt`, `claude-export`, `gemini-export`, or `llm-export`, skip entirely.
 
 ### 6b. Classification Gate (Heuristic Pre-Filter)
 
@@ -400,11 +404,12 @@ If zero actionable items: "All clear. Scanned [N] candidates, nothing actionable
 ## Cron Setup
 
 ```
-# Capture agent — 3x daily
-0 8,13,18 * * *  openclaw run capture-agent
-# Overnight full sweep
-0 4 * * *        openclaw run capture-agent --lookback 12
+# Capture agent — 2x daily (morning + evening)
+30 7 * * *   capture-agent (morning sweep)
+0 18 * * *   capture-agent (evening sweep)
 ```
+
+Reduced from 3x to 2x daily. Morning catch catches overnight, evening catches the workday.
 
 ## Reference Files
 

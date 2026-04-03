@@ -19,7 +19,6 @@
 ## Pending Decisions (need Alex)
 - Dream Cycle #5 + #6 proposals (8 total) — review post-Boston
 - Roxanne NDA/app email: 33+ days unanswered (ESCALATING — probably need a nudge)
-- FIFA World Cup Atlanta tickets — monitoring active, he'll need to decide on budget/tier
 
 ## Infrastructure
 - ✅ Neo4j: running

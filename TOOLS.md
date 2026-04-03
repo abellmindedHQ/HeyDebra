@@ -138,6 +138,30 @@ Things like:
 - Music generation (manual, Alex generates tracks)
 - Debra voice profile saved in memory for Suno prompts
 
+### QMD (Quick Markdown Search)
+- Version: 2.0.1
+- Index: ~/.cache/qmd/index.sqlite (46MB)
+- 1,321 files indexed, 9,634 vectors embedded
+- Models: embeddinggemma-300M (328MB), qmd-query-expansion-1.7B (1.2GB)
+- Reranker model (Qwen3 0.6B, 639MB): still downloading, use `vsearch` until complete
+- Collections:
+  - `people` → ~/SecondBrain/People (116 files)
+  - `projects` → ~/SecondBrain/Projects (22)
+  - `concepts` → ~/SecondBrain/Concepts (31)
+  - `areas` → ~/SecondBrain/Areas (7)
+  - `gtd` → ~/SecondBrain/GTD (4)
+  - `journal` → ~/SecondBrain/Journal (11)
+  - `reflections` → ~/SecondBrain/Reflections (369)
+  - `meetings` → ~/SecondBrain/Meetings (492)
+  - `conversations` → ~/SecondBrain/Conversations (211)
+  - `debra-memory` → ~/.openclaw/workspace/memory (50)
+  - `health` → ~/SecondBrain/Health (3)
+  - `resources` → ~/SecondBrain/Resources (5)
+- Search hierarchy: memory_search (workspace, fast) → qmd (vault-wide, semantic) → Neo4j (graph/relationships)
+- Commands: `qmd search` (BM25 keyword), `qmd vsearch` (semantic), `qmd query` (hybrid+rerank, needs reranker model)
+- Cron: daily re-index at 4am ET
+- Use `-c <collection>` to scope searches to specific collections
+
 ## Why Separate?
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.

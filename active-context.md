@@ -1,36 +1,39 @@
-# Active Context — Updated 2026-04-02 3:30am
+# Active Context — Updated 2026-04-03 3:31am
 
 ## Schedule (next 48h)
-- **THU 5:45am**: Leave for TYS airport
-- **THU 6:45am**: Boarding (Flight G4 1426 TYS→BOS)
-- **THU 7:30am**: Takeoff to Boston (arrives 9:46am)
-- **THU-SUN**: Boston trip with Hannah and Avie
-- **APR 20 (Mon)**: Lipoma removal procedure 9:30am (Premier Surgical, 90 min, mark lipomas with Sharpie X beforehand)
-- **APR 22 (Wed)**: Avie adenoidectomy surgery (Children's ENT Northshore, hospital calls Apr 21 with time)
+- **TODAY 10am**: Sallijo call attempt #3 (cron b865b517) — Be Particular Session 2. MORNING ONLY.
+- **APR 5 (Sun)**: Alex returns from Boston
+- **APR 6 (Mon)**: Teresa Scruggs passive income reminder
+- **APR 13 (Mon)**: Hannah OBGYN appointment
+- **APR 20 (Mon)**: Alex lipoma removal 9:30am, Premier Surgical. Mark lipomas with Sharpie X first.
+- **APR 21 (Tue)**: Hospital calls with Avie's adenoidectomy time
+- **APR 22 (Wed)**: Avie adenoidectomy, Children's ENT Northshore
 
 ## Active Tasks (top 5)
-- Knowledge architecture report ready for review (Opus deep dive complete, saved to memory/)
-- Financial buildout (Monarch + YNAB + spending system) — queued for next week
-- Linear/Git/Cursor workflow setup — queued
-- Meeting transcription pipeline spec (live + post-meeting + voice vectors) — queued
-- Inbox.md cleanup: 300+ old ChatGPT items need triage
+- Sallijo Story Time call — 10am today, first morning slot, 3rd attempt
+- Dream Cycle proposals review: 8 staged (#5 + #6) — queue for Alex post-Boston
+- Knowledge Architecture report — Alex reads when back, makes DB decisions
+- Avie yearbook order — OVERDUE (deadline was Apr 2, check if still fixable)
+- VirtualDJ Pro + Video: subscriptions overdue — cancel or update
 
 ## Pending Decisions (need Alex)
-- None immediate. Boston trip is priority. Everything queued for post-trip.
+- Dream Cycle #5 + #6 proposals (8 total) — review post-Boston
+- Roxanne NDA/app email: 33+ days unanswered (ESCALATING — probably need a nudge)
+- FIFA World Cup Atlanta tickets — monitoring active, he'll need to decide on budget/tier
 
 ## Infrastructure
-- ✅ 1Password CLI: working headless via service account token (persisted in ~/.zshrc)
-- ✅ Things 3: full read/write/update via auth token (persisted in ~/.zshrc)
-- ✅ Neo4j: running. Contacts triage skill fixed to properly detect inner circle.
-- ✅ Gemini API: paid billing, no more 429s
-- ✅ GitHub: private repo training opt-out done
-- ✅ Capture agent: BB auth fixed, image scanning, iMessage→calendar, auto-archive resolved emails
-- ✅ GSD agent: oracle validation, self-applied changes reporting
-- ✅ task.sh script: enforces Things 3 discipline (dedup, categorize, complete immediately)
-- ✅ preflight.sh script: mandatory pre-send context check for external messages
-- ⚠️ abellminded.com/CAD-Framework: deployed to vercel.app but custom domain 404 (routing issue)
+- ✅ Neo4j: running
+- ✅ 1Password CLI: service account token working
+- ✅ Things 3: auth token working
+- ✅ Gemini API: paid billing, no 429s
+- ✅ 18 cron jobs active
+- ⚠️ AssemblyAI: depleted (Whisper fallback working)
+- ⚠️ abellminded.com/CAD-Framework: custom domain 404
 
 ## Channel Context
-- Alex went to bed ~9pm for Boston flight
-- Night Swimming suite ran while he slept: Drive audit (2GB dupes found), LLM export scan (clean), social data (clean), contacts triage (fixed inner circle bug), Weaver (404 wikilinks), Dream Cycle #5 (3 proposals)
-- Sallijo call rescheduled to Apr 2 at 6:15pm (she was driving, will be with Avie until 7:15)
+- Alex in Boston (Day 2) with Hannah, Avie, Marshall, Everett, Teal
+- Boston group chat: `any;+;4f2f085160984776b670fa9624a8560f`
+- Returns Sunday Apr 5
+- Alex shaved his mustache for the trip
+- Hannah is 🤫 pregnant (secret — do not mention to anyone)
+- Sallijo confirmed: evening calls don't work. ONLY do morning calls.

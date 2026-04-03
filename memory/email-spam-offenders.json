@@ -1,0 +1,29 @@
+{
+  "tracked_senders": {
+    "auto-reply@usps.com": { "count": 2, "last_seen": "2026-04-02", "subjects": ["Expected Delivery", "Expected Delivery on Thursday"] },
+    "USPSInformeddelivery@email.informeddelivery.usps.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Daily Digest"] },
+    "email@email.monarch.com": { "count": 2, "last_seen": "2026-04-02", "subjects": ["Transactions need review", "You have 2 new updates"] },
+    "noreply@alerts.parkmobile.io": { "count": 5, "last_seen": "2026-04-02", "subjects": ["parking session started", "parking receipt", "parking session expiring", "about to expire", "Your parking session is about to expire"] },
+    "no-reply@otter.ai": { "count": 6, "last_seen": "2026-04-02", "subjects": ["Meeting Summary for Catch-up Chat", "Meeting Summary for Focus time"] },
+    "donotreply@parentsquare.com": { "count": 6, "last_seen": "2026-04-02", "subjects": ["Attendance Note Confirmation", "Attendance Report", "Community Budget Meeting", "Yearbook Deadline", "Hall Pass Newsletter", "Rebecca Henderson message"] },
+    "patientcommunications@premiersurgical.com": { "count": 2, "last_seen": "2026-04-02", "subjects": ["Patient Satisfaction Survey", "Pre-checkin Notification"] },
+    "play@piano.hellosimply.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Weekly highlights from Simply Piano"] },
+    "do-not-reply@audible.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["You've got 2 credits"] },
+    "hello@tailscale.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Should you adopt Tailscale?"] },
+    "no-reply@mailings.ticketmaster.dk": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Din LIVE-guide"] },
+    "globyrecruiterr@gmail.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Globy opportunity"] },
+    "no-reply@kalshi.com": { "count": 2, "last_seen": "2026-04-02", "subjects": ["Welcome to Kalshi", "Application Approved"] },
+    "email@email.metropolis.io": { "count": 1, "last_seen": "2026-04-02", "subjects": ["It's handled: parking promo"] },
+    "events@deeplearning.ai": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Agenda announced: AI Dev 26"] },
+    "ericsimons@stackblitz.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["The bet that changed everything"] },
+    "no-reply@picovoice.ai": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Inactive account deletion warning"] },
+    "notification@facebookmail.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Your Meta information is ready"] },
+    "notifications@link.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Verification code"] }
+  },
+  "unsubscribe_candidates": [
+    "noreply@alerts.parkmobile.io",
+    "no-reply@otter.ai",
+    "donotreply@parentsquare.com"
+  ],
+  "last_updated": "2026-04-02"
+}

@@ -38,7 +38,8 @@
 - **Brandon Bruce**: mentor, Cirrus Insight co-founder, CEO Uncat, MD Techstars Knoxville. Powerhouse connector.
 - **Jim Biggs**: KEC Executive Director, Lunchpool mentor, secret Deadhead. +14153854794
 - **Marshall Goldman**: KBUDDS, UT Athletics aquatic center director. +18653060896
-- **Everett Hirche**: KBUDDS, machinist/fabricator Scruffy City Hall. +18652504862
+- **Everett Hirche**: KBUDDS, machinist/fabricator Scruffy City Hall. +18652504862. Girlfriend: Teal Olson (+19896191599)
+- **Teal Olson**: Everett's girlfriend. +19896191599
 - **Nick Hollensbe**: Lead Motion Graphics HBO/Max, downtown Knox. +12392489353
 - **Anthony Caccese**: ORNL Principal PM, reports to Brooks Herring. +19177976550
 - **Brooks Herring**: ORNL Head of UX, former HGTV/WBD. Coefficient design system.

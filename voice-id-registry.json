@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-04-06",
+  "speakers": {
+    "alex-abell": {
+      "full_name": "Alex Abell",
+      "confirmed_in": [
+        {
+          "meeting": "ornl-appdev-reorg/2026-04-06",
+          "speakers": [
+            "A",
+            "B",
+            "C (partial, ~90%)"
+          ],
+          "confirmed_by": "Alex Abell",
+          "confirmed_at": "2026-04-06T17:55:00-04:00",
+          "note": "Speaker A + B both Alex. Speaker C mostly Alex except utterance at 46.4s (Sarah Glei)."
+        }
+      ],
+      "voice_characteristics": "Single speaker split across A+B due to acoustic differences in call recording. Short affirmations also captured as C."
+    },
+    "jay-eckles": {
+      "full_name": "Jay Eckles",
+      "confirmed_in": [
+        {
+          "meeting": "ornl-appdev-reorg/2026-04-06",
+          "speakers": [
+            "D"
+          ],
+          "confirmed_by": "Alex Abell",
+          "confirmed_at": "2026-04-06T17:55:00-04:00",
+          "confidence": 95
+        }
+      ],
+      "voice_characteristics": "Dominant speaker (40 utterances). Authority voice, makes org decisions. Starts with 'Right-o', 'Let's see, let me get arranged here'."
+    },
+    "sarah-glei": {
+      "full_name": "Sarah Glei",
+      "confirmed_in": [
+        {
+          "meeting": "ornl-appdev-reorg/2026-04-06",
+          "speakers": [
+            "C (partial, ~10%)"
+          ],
+          "confirmed_by": "Alex Abell (voice clip verification)",
+          "confirmed_at": "2026-04-06T17:58:00-04:00",
+          "note": "Only confirmed utterance: 46.4s-68.4s ('Oh, that's fun. Yeah. Let's see.'). Very limited sample.",
+          "confirmed_utterances": [
+            "46.4s-68.4s: 'Oh, that's fun. Yeah. Let's see.' (confirmed via voice clip)",
+            "242.3s: 'So if you have someone else that could fill in for the first part...' (confirmed by Alex)",
+            "All Speaker A utterances from ~242s onward: HR process guidance, posting timing, wait recommendations"
+          ]
+        }
+      ],
+      "voice_characteristics": "Voice bleeds into Alex's mic track on conference calls (appears as Speaker A in diarization). Identified by HR-specific language: system/process knowledge, 'I would recommend', 'from a system standpoint', posting guidance, wait recommendations. Confirmed utterances: 46.4s clip + 242s onwards in this meeting."
+    }
+  }
+}

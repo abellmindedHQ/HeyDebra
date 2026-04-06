@@ -30,7 +30,10 @@ Output fields: `id`, `subject`, `from`, `to`, `date`, `body` (plain text)
 
 ### List recent chats
 ```bash
-curl -s "http://localhost:1234/api/v1/chats?limit=10" \
+# NOTE: Use POST /chat/query — GET /chats returns 404 on BB 1.9.9+
+curl -s -X POST "http://localhost:1234/api/v1/chat/query?password=$BB_PASS" \
+  -H "Content-Type: application/json" \
+  -d '{"limit":10,"offset":0}' \
   -H "Content-Type: application/json"
 ```
 

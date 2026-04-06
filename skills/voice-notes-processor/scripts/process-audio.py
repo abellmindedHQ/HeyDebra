@@ -113,12 +113,12 @@ def transcribe(audio_path: Path) -> dict:
     print(f"[voice-notes] Upload complete. Submitting transcription...", flush=True)
 
     # Step 2: Submit transcription request
-    # Use speech_models with fallback list for reliability
+    # Use speech_models with universal-3-pro (best available as of 2026-04)
     transcript_req = {
         "audio_url": upload_url,
-        "speech_models": ["universal-2"],
+        "speech_models": ["universal-3-pro"],
         "speaker_labels": True,
-        "auto_chapters": True,
+        "auto_chapters": False,   # Disabled — we generate chapters via LLM post-processing
         "entity_detection": True,
         "sentiment_analysis": True,
         "auto_highlights": True,
@@ -374,6 +374,87 @@ def clean_title(audio_path: Path) -> str:
     return stem.title()
 
 
+def generate_llm_chapters(utterances: list, title: str) -> str:
+    """Generate curated chapters from transcript using Claude API.
+    Returns markdown string of chapters, or empty string if generation fails."""
+    if not utterances:
+        return ""
+
+    # Build a compact transcript for the LLM (speaker + text, no timestamps)
+    compact_lines = []
+    prev_speaker = None
+    for u in utterances:
+        speaker = u.get("speaker", "?")
+        text = u.get("text", "").strip()
+        start_ms = u.get("start", 0)
+        start_min = start_ms // 1000 // 60
+        start_sec = (start_ms // 1000) % 60
+        if speaker != prev_speaker:
+            compact_lines.append(f"[{start_min:02d}:{start_sec:02d}] Speaker {speaker}: {text}")
+            prev_speaker = speaker
+        else:
+            compact_lines.append(text)
+    compact_transcript = "\n".join(compact_lines)
+
+    # Truncate if very long (keep first 6000 chars for chapter generation)
+    if len(compact_transcript) > 6000:
+        compact_transcript = compact_transcript[:6000] + "\n...[truncated]"
+
+    prompt = f"""You are analyzing a meeting transcript titled "{title}".
+
+Generate 3-6 curated chapters that represent the MAJOR topic shifts in this meeting.
+Each chapter should be substantive (not a sub-question or tiny aside).
+Do NOT include a chapter just for small talk or sign-offs unless they contain useful info.
+
+For each chapter output:
+### N. [Clear, descriptive title] `MM:SS`
+[2-3 sentence summary of what was discussed and decided in this section]
+
+Only output the chapter markdown. No intro text, no commentary.
+
+Transcript:
+{compact_transcript}"""
+
+    # Try Claude API first (via OpenClaw's Anthropic key)
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not anthropic_key:
+        # Try OpenAI as fallback
+        openai_key = os.environ.get("OPENAI_API_KEY", "")
+        if not openai_key:
+            print("[voice-notes] No LLM API key for chapter generation, skipping", flush=True)
+            return ""
+        try:
+            resp = requests.post(
+                "https://api.openai.com/v1/chat/completions",
+                headers={"Authorization": f"Bearer {openai_key}", "Content-Type": "application/json"},
+                json={"model": "gpt-4o-mini", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1000},
+                timeout=30
+            )
+            return resp.json()["choices"][0]["message"]["content"].strip()
+        except Exception as e:
+            print(f"[voice-notes] OpenAI chapter generation failed: {e}", flush=True)
+            return ""
+    try:
+        resp = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": anthropic_key,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json"
+            },
+            json={
+                "model": "claude-haiku-4-5",
+                "max_tokens": 1000,
+                "messages": [{"role": "user", "content": prompt}]
+            },
+            timeout=30
+        )
+        return resp.json()["content"][0]["text"].strip()
+    except Exception as e:
+        print(f"[voice-notes] Anthropic chapter generation failed: {e}", flush=True)
+        return ""
+
+
 def build_obsidian_note(transcript: dict, audio_path: Path, now: datetime,
                         speaker_fingerprints: dict = None) -> str:
     # Try to get real date from audio metadata
@@ -439,18 +520,12 @@ def build_obsidian_note(transcript: dict, audio_path: Path, now: datetime,
         "",
     ]
 
-    # ── Chapters / Sections ───────────────────────────────────────────────────
-    if chapters:
+    # ── Chapters / Sections — LLM-generated ─────────────────────────────────
+    llm_chapters = generate_llm_chapters(utterances, title)
+    if llm_chapters:
         lines += ["## 📑 Chapters", ""]
-        for i, ch in enumerate(chapters, 1):
-            start_ms = ch.get("start") or 0
-            start_min = int(start_ms / 1000 / 60)
-            start_sec = int((start_ms / 1000) % 60)
-            headline = ch.get("headline") or ""
-            summary  = ch.get("summary") or ""
-            lines.append(f"### {i}. {headline}")
-            lines.append(f"*{start_min:02d}:{start_sec:02d}* — {summary}")
-            lines.append("")
+        lines.append(llm_chapters)
+        lines.append("")
 
     # ── Full Transcript ───────────────────────────────────────────────────────
     lines += ["## 📝 Transcript", ""]

@@ -50,3 +50,4 @@ Items completed in Things 3, logged by the GSD completion debrief system.
 - [x] Google One — update payment or cancel — completed: 2026-04-01 18:55:40, area: No Area, project: Subscription Audit, created: 2026-03-29 19:32:03, velocity: 3d
 - [x] Pack for Boston — completed: 2026-04-01 18:59:00, area: No Area, project: Boston Apr 2-5, created: 2026-03-29 19:41:11, velocity: 3d
 - [x] Netflix payment - update card — completed: 2026-04-01 18:51:00, area: No Area, created: 2026-04-01 18:51:00, velocity: 0d
+- [x] Boston Trip Apr 2-5 — completed: 2026-04-06 09:14:28, area: No Area, project: Boston Apr 2-5, created: 2026-03-29 19:30:58, velocity: 8d

@@ -126,7 +126,11 @@ Store in a variable and append `?password=<BB_PASSWORD>` (or `&password=<BB_PASS
 
 ```bash
 BB_PASS=$(grep -m1 '"password"' /Users/debra/.openclaw/openclaw.json | sed 's/.*"password": "//;s/".*//')
-curl -s "http://localhost:1234/api/v1/chats?limit=10&password=$BB_PASS" | jq '.data[] | {guid: .guid, display_name: .display_name}'
+# NOTE: BlueBubbles uses POST /chat/query — GET /chats returns 404
+curl -s -X POST "http://localhost:1234/api/v1/chat/query?password=$BB_PASS" \
+  -H "Content-Type: application/json" \
+  -d '{"limit":20,"offset":0,"with":["lastMessage","participants"]}' \
+  | jq '.data[] | {guid: .guid, display_name: .displayName}'
 ```
 
 For each chat, fetch recent messages (include attachments):

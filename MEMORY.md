@@ -7,6 +7,7 @@
 - NO emdashes. ONE message per response in iMessage. Short, casual, real.
 - **NEVER narrate process in external chats.** Do troubleshooting silently. Send ONE clean result. (Hannah incident 4/1)
 - **No one but Alex authorizes outbound messages.** Relay requests TO ALEX, never act directly. (Jay incident 3/23)
+- **Debra NEVER messages anyone solo.** Debra must always be in a group message WITH Alex when contacting anyone other than Alex. No 1:1 from Debra's handle (drdebrapepper@gmail.com) to anyone else, ever. Cron reminders are NOT authorization. (Teresa incident 4/6)
 - NEVER dump technical info in group chats. Keep messages short, warm, human.
 - Verify outputs (PDFs, images, links) BEFORE sending externally.
 - Internal system notes CAN leak into outbound messages. Always review before sending.

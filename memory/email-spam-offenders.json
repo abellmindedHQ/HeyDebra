@@ -1,13 +1,13 @@
 {
   "tracked_senders": {
-    "auto-reply@usps.com": { "count": 3, "last_seen": "2026-04-03", "subjects": ["Expected Delivery", "Expected Delivery on Thursday", "Expected Delivery by Monday"] },
+    "auto-reply@usps.com": { "count": 4, "last_seen": "2026-04-04", "subjects": ["Expected Delivery", "Expected Delivery on Thursday", "Expected Delivery by Monday", "Expected Delivery by Tuesday"] },
     "USPSInformeddelivery@email.informeddelivery.usps.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Daily Digest"] },
-    "email@email.monarch.com": { "count": 5, "last_seen": "2026-04-03", "subjects": ["Transactions need review", "You have 2 new updates", "Transactions need review in Monarch"] },
+    "email@email.monarch.com": { "count": 6, "last_seen": "2026-04-04", "subjects": ["Transactions need review", "You have 2 new updates", "Transactions need review in Monarch"] },
     "noreply@alerts.parkmobile.io": { "count": 11, "last_seen": "2026-04-03", "subjects": ["parking session started", "parking receipt", "parking session expiring", "about to expire"] },
     "no-reply@otter.ai": { "count": 10, "last_seen": "2026-04-03", "subjects": ["Meeting Summary for Catch-up Chat", "Meeting Summary for Focus time", "Meeting Summary for Catch-up Chat: Brandon <> Alex"] },
     "donotreply@parentsquare.com": { "count": 7, "last_seen": "2026-04-03", "subjects": ["Attendance Note Confirmation", "Attendance Report", "Community Budget Meeting", "Yearbook Deadline"] },
     "patientcommunications@premiersurgical.com": { "count": 2, "last_seen": "2026-04-02", "subjects": ["Patient Satisfaction Survey", "Pre-checkin Notification"] },
-    "play@piano.hellosimply.com": { "count": 2, "last_seen": "2026-04-03", "subjects": ["Weekly highlights from Simply Piano", "New sheet music in PLAY"] },
+    "play@piano.hellosimply.com": { "count": 3, "last_seen": "2026-04-04", "subjects": ["Weekly highlights from Simply Piano", "New sheet music in PLAY", "Last days to be epic"] },
     "do-not-reply@audible.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["You've got 2 credits"] },
     "hello@tailscale.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Should you adopt Tailscale?"] },
     "no-reply@mailings.ticketmaster.dk": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Din LIVE-guide"] },
@@ -34,7 +34,12 @@
     "hello@gamma.app": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Free access to Gamma Imagine ends"] },
     "news@info.ornlfcu.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Smokies debit cards"] },
     "xfinity@account.xfinity.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Bill statement ready"] },
-    "melizajones1969@gmail.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Fresh Ideas for Spring"] }
+    "melizajones1969@gmail.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Fresh Ideas for Spring"] },
+    "kevin@app.getdex.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Dex Premium canceled"] },
+    "no_reply@email.apple.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Subscription Confirmed"] },
+    "no-reply@email.claude.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Credit + discounts on extra usage"] },
+    "partners@iemail.moneylion.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Loan offers available"] },
+    "no-reply@wellnessliving.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Drop in to Bliss"] }
   },
   "unsubscribe_candidates": [
     "noreply@alerts.parkmobile.io",
@@ -43,5 +48,5 @@
     "email@email.monarch.com",
     "no-reply@kalshi.com"
   ],
-  "last_updated": "2026-04-03"
+  "last_updated": "2026-04-04"
 }

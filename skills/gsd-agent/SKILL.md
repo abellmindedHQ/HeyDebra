@@ -57,7 +57,7 @@ This script:
 1. Reads completed tasks from Things 3 (`things logtoday --json`)
 2. Compares against state file at `~/.openclaw/workspace/memory/debrief-state.json`
 3. For newly completed tasks:
-   - Logs them to `/Users/debra/SecondBrain/GTD/done.md`
+   - Logs them to `/Users/debra/.openclaw/workspace/inbox/done.md`
    - Returns a summary with velocity metrics
 4. Updates the state file
 
@@ -113,7 +113,7 @@ This gives Alex visibility into what changed overnight or during the day without
 Read the inbox staging buffer:
 
 ```bash
-cat /Users/debra/SecondBrain/GTD/inbox.md
+cat /Users/debra/.openclaw/workspace/inbox/inbox.md
 ```
 
 Compare inbox items against Things 3 tasks (by title similarity). Flag any inbox items NOT yet in Things 3:
@@ -131,8 +131,8 @@ These should be reviewed. Either:
 ### 3. Read Supporting GTD Files
 
 ```bash
-cat /Users/debra/SecondBrain/GTD/backlog.md 2>/dev/null
-cat /Users/debra/SecondBrain/GTD/waiting.md 2>/dev/null
+cat /Users/debra/.openclaw/workspace/inbox/backlog.md 2>/dev/null
+cat /Users/debra/.openclaw/workspace/inbox/waiting.md 2>/dev/null
 cat /Users/debra/.openclaw/workspace/active-context.md 2>/dev/null
 ```
 
@@ -165,7 +165,7 @@ Run each open task (from Things 3 + any unmatched inbox items) through these che
 Read the completion journal:
 
 ```bash
-cat /Users/debra/SecondBrain/GTD/done.md
+cat /Users/debra/.openclaw/workspace/inbox/done.md
 ```
 
 Calculate:

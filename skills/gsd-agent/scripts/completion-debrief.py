@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 from typing import Optional, List, Dict, Any
 
 STATE_FILE = os.path.expanduser("~/.openclaw/workspace/memory/debrief-state.json")
-DONE_FILE = os.path.expanduser("~/SecondBrain/GTD/done.md")
+DONE_FILE = os.path.expanduser("~/.openclaw/workspace/inbox/done.md")
 
 
 def load_state() -> Dict[str, Any]:

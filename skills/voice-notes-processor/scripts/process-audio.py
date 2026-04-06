@@ -10,7 +10,7 @@ Environment:
 
 Outputs:
     - Obsidian note in ~/SecondBrain/Meetings/
-    - Action items appended to ~/SecondBrain/GTD/inbox.md
+    - Action items appended to ~/.openclaw/workspace/inbox/inbox.md
     - State updated in ~/.openclaw/workspace/memory/voice-notes-state.json
     - Audio moved to ~/SecondBrain/Imports/voice-notes/processed/
 """

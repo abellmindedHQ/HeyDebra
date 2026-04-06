@@ -39,9 +39,9 @@ Run capture-agent — sources: all, lookback: 48 hours
 | `lookback_hours` | 12 | Hours back to scan in cron mode |
 | `lookback_manual` | 48 | Hours back on manual invocation |
 | `dedup_state` | `memory/capture-dedup-state.json` | Hash fingerprints for dedup |
-| `inbox_file` | `/Users/debra/SecondBrain/GTD/inbox.md` | Staging area (append target) |
-| `scan_folder` | `/Users/debra/SecondBrain/GTD/scan/` | Drop files here to auto-scan |
-| `meeting_insights` | `/Users/debra/SecondBrain/GTD/meeting-insights-archive.md` | Non-actionable items route here |
+| `inbox_file` | `/Users/debra/.openclaw/workspace/inbox/inbox.md` | Staging area (append target) |
+| `scan_folder` | `/Users/debra/.openclaw/workspace/inbox/scan/` | Drop files here to auto-scan |
+| `meeting_insights` | `/Users/debra/.openclaw/workspace/inbox/meeting-insights-archive.md` | Non-actionable items route here |
 | `classifier_script` | `scripts/classify-item.py` | LLM classification gate |
 | `model` | `gemini` (via gemini CLI) | Cheap model for classification |
 | `email_max_messages` | 30 | Cap on emails pulled per run |
@@ -95,7 +95,7 @@ Items that fail Gate 3 are either discarded or routed to `meeting-insights-archi
 Read the last 100 lines of inbox to build dedup fingerprints:
 
 ```bash
-tail -100 /Users/debra/SecondBrain/GTD/inbox.md
+tail -100 /Users/debra/.openclaw/workspace/inbox/inbox.md
 ```
 
 Also check recent Things 3 tasks to avoid duplicating existing items:
@@ -188,7 +188,7 @@ Source tag: `calendar:[event_title]:[date]`
 ### 5. Scan: Drop Folder
 
 ```bash
-ls /Users/debra/SecondBrain/GTD/scan/ 2>/dev/null
+ls /Users/debra/.openclaw/workspace/inbox/scan/ 2>/dev/null
 ```
 
 Read each file, extract candidates, move processed files to `scan/processed/`.
@@ -274,7 +274,7 @@ For each classified actionable item:
 - [ ] [clean_title] // assigned to: [assignee], due: [due or "not specified"], priority: [priority], source: [source_tag], area: [area], captured: [YYYY-MM-DD HH:MM]
 ```
 
-3. **Append** to `/Users/debra/SecondBrain/GTD/inbox.md`
+3. **Append** to `/Users/debra/.openclaw/workspace/inbox/inbox.md`
 
 ### 10. 🎯 Auto-Promote to Things 3
 
@@ -305,7 +305,7 @@ If `--when` has a specific due date from classification, use that instead of "to
 Items that fail LLM classification but contain potentially useful context (meeting notes, observations, discussion points) get appended to:
 
 ```
-/Users/debra/SecondBrain/GTD/meeting-insights-archive.md
+/Users/debra/.openclaw/workspace/inbox/meeting-insights-archive.md
 ```
 
 Format: `- [context snippet] // source: [source_tag], captured: [timestamp]`
@@ -354,7 +354,7 @@ gog calendar create primary --account alexander.o.abell@gmail.com \
 ### 13. Create Folders if Missing
 
 ```bash
-mkdir -p /Users/debra/SecondBrain/GTD/scan/processed
+mkdir -p /Users/debra/.openclaw/workspace/inbox/scan/processed
 ```
 
 ### 14. 🗑️ Auto-Archive Resolved Emails

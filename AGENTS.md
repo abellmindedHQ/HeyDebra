@@ -12,6 +12,20 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
+## Where Things Live (CRITICAL)
+
+- **GTD Inbox** (operational, daily flux): `~/.openclaw/workspace/inbox/inbox.md`
+  - `done.md`, `meeting-insights-archive.md`, `scan/` also live here
+  - Capture-agent appends here. GSD-agent reads here. Voice-notes drop action items here.
+  - Triage daily → promote real items to Things 3 → delete noise
+- **Things 3**: committed life todos (errands, family, appointments, recurring stuff)
+- **Linear**: Abellminded product work (issues with deliverables + dates)
+- **SecondBrain (Obsidian vault `~/SecondBrain/`)**: the wikipedia of Alex's life — People, Concepts, Projects, Meetings, Reflections. Free-form, wikilinked, NO todo crud.
+- **Neo4j**: graph projection of SecondBrain — agent query layer only, never browsed by human
+- **qmd**: hybrid search (BM25 + semantic) over SecondBrain — agent finds stuff fast
+
+**Hard rule:** SecondBrain stays clean. If it's a todo, it's NOT in SecondBrain. If it's knowledge, it's NOT in the inbox.
+
 ## Working Memory (active-context.md)
 
 This is your **hippocampus**. It bridges sessions and channels.

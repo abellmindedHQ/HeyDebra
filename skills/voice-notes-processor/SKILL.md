@@ -36,7 +36,7 @@ Transcribe and process voice notes and meeting recordings into structured Second
 | `~/SecondBrain/Imports/voice-notes/` | Drop folder — put audio files here |
 | `~/SecondBrain/Imports/voice-notes/processed/` | Processed audio files moved here |
 | `~/SecondBrain/Meetings/` | Generated Obsidian notes |
-| `~/SecondBrain/GTD/inbox.md` | Action items appended here |
+| `~/.openclaw/workspace/inbox/inbox.md` | Action items appended here |
 | `~/.openclaw/workspace/memory/voice-notes-state.json` | Processing state / dedup log |
 
 ## Supported Formats
@@ -99,7 +99,7 @@ tags: [voice-note, meeting, transcription]
 - [[Bob Jones]]
 ```
 
-### GTD Inbox (`~/SecondBrain/GTD/inbox.md`)
+### GTD Inbox (`~/.openclaw/workspace/inbox/inbox.md`)
 
 Action items appended in capture-agent format:
 ```

@@ -149,7 +149,7 @@ Things like:
   - `projects` → ~/SecondBrain/Projects (22)
   - `concepts` → ~/SecondBrain/Concepts (31)
   - `areas` → ~/SecondBrain/Areas (7)
-  - `gtd` → ~/SecondBrain/GTD (4)
+  - `gtd` → REMOVED (GTD inbox moved to ~/.openclaw/workspace/inbox/)
   - `journal` → ~/SecondBrain/Journal (11)
   - `reflections` → ~/SecondBrain/Reflections (369)
   - `meetings` → ~/SecondBrain/Meetings (492)

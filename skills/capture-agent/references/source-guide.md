@@ -118,8 +118,8 @@ Output fields: `id`, `summary` (title), `description`, `start`, `end`, `attendee
 
 ## Drop Folder
 
-**Path:** `/Users/debra/SecondBrain/GTD/scan/`
-**Processed:** `/Users/debra/SecondBrain/GTD/scan/processed/`
+**Path:** `/Users/debra/.openclaw/workspace/inbox/scan/`
+**Processed:** `/Users/debra/.openclaw/workspace/inbox/scan/processed/`
 
 Accepted file types: `.md`, `.txt`, `.json` (for LLM exports)
 
@@ -128,7 +128,7 @@ For `.md` / `.txt`: read full text, run extraction prompt on the whole thing.
 
 After processing:
 ```bash
-mv /Users/debra/SecondBrain/GTD/scan/[filename] /Users/debra/SecondBrain/GTD/scan/processed/[filename]
+mv /Users/debra/.openclaw/workspace/inbox/scan/[filename] /Users/debra/.openclaw/workspace/inbox/scan/processed/[filename]
 ```
 
 **Source tag format:** `file:[filename]`

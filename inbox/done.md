@@ -1,0 +1,52 @@
+# Done — Completion Journal
+
+Items completed in Things 3, logged by the GSD completion debrief system.
+
+---
+- [x] Verify Ticketmaster password change — intentional? — completed: 2026-03-29 21:14:21, area: 🏠 Life Ops, created: 2026-03-29 19:32:03, velocity: 0d
+- [x] Change GitLab password — security alert — completed: 2026-03-29 21:14:25, area: 🏠 Life Ops, created: 2026-03-29 19:32:03, velocity: 0d
+- [x] Get Costco cash rewards — completed: 2026-03-29 21:14:18, area: 🏠 Life Ops, created: 2026-03-29 19:31:21, velocity: 0d
+- [x] Return air freshener at Whole Foods (Amazon) — completed: 2026-03-29 21:14:27, area: 🏠 Life Ops, created: 2026-03-29 19:31:21, velocity: 0d
+- [x] Pay Costco Citi card — PAST DUE — completed: 2026-03-29 21:14:32, area: 💊 Health & Money, created: 2026-03-29 19:30:59, velocity: 0d
+- [x] Press Hue Bridge button to pair with OpenHue CLI — completed: 2026-03-29 18:44:46, area: No Area, created: 2026-03-29 18:44:40, velocity: 0d
+- [x] Set up Things 3 GTD system — completed: 2026-03-29 19:40:43, area: No Area, created: 2026-03-29 19:30:39, velocity: 0d
+- [x] Check in for Boston flight (all 3 passengers) — completed: 2026-04-01 16:16:30, area: 🏠 Life Ops, created: 2026-04-01 16:16:30, velocity: 0d
+- [x] Avie surgery on calendar (Apr 22) — completed: 2026-04-01 12:30:22, area: 🏠 Life Ops, created: 2026-04-01 12:30:22, velocity: 0d
+- [x] GCP billing emails cleanup — completed: 2026-04-01 12:30:22, area: 🏠 Life Ops, created: 2026-04-01 12:30:22, velocity: 0d
+- [x] Patti appointment — completed: 2026-04-01 15:57:20, area: 💊 Health & Money, created: 2026-04-01 15:57:20, velocity: 0d
+- [x] Lipoma consult at Premier Surgical — completed: 2026-04-01 15:35:15, area: 💊 Health & Money, created: 2026-04-01 15:35:15, velocity: 0d
+- [x] Pick up Finasteride from Walgreens — completed: 2026-04-01 06:57:32, area: 🏠 Life Ops, created: 2026-03-29 19:31:21, velocity: 3d
+- [x] Install last30days ClawHub skill — completed: 2026-04-01 12:30:21, area: 🚀 Build, created: 2026-04-01 12:30:21, velocity: 0d
+- [x] GitHub private repo opt-out (deadline Apr 24) — completed: 2026-04-01 12:30:20, area: 🚀 Build, created: 2026-04-01 12:30:20, velocity: 0d
+- [x] Things 3 auth token setup (full read/write) — completed: 2026-04-01 13:55:21, area: 🚀 Build, created: 2026-04-01 13:55:21, velocity: 0d
+- [x] GSD agent upgrades — completed: 2026-04-01 12:30:21, area: 🚀 Build, created: 2026-04-01 12:30:21, velocity: 0d
+- [x] Memory consolidation cron setup — completed: 2026-04-01 12:30:21, area: 🚀 Build, created: 2026-04-01 12:30:21, velocity: 0d
+- [x] Fix Gemini search quota (upgrade to paid) — completed: 2026-04-01 12:30:20, area: 🚀 Build, created: 2026-04-01 12:30:20, velocity: 0d
+- [x] Things 3 duplicate cleanup — completed: 2026-04-01 13:55:21, area: 🚀 Build, created: 2026-04-01 13:55:21, velocity: 0d
+- [x] Restart Neo4j (down 4+ days) — completed: 2026-04-01 12:30:20, area: 🚀 Build, created: 2026-04-01 12:30:20, velocity: 0d
+- [x] Capture agent upgrades (4 improvements) — completed: 2026-04-01 12:30:20, area: 🚀 Build, created: 2026-04-01 12:30:20, velocity: 0d
+- [x] task.sh script built and tested — completed: 2026-04-01 14:07:45, area: 🚀 Build, created: 2026-04-01 14:07:45, velocity: 0d
+- [x] Dream cycle memory probe phase — completed: 2026-04-01 12:30:21, area: 🚀 Build, created: 2026-04-01 12:30:21, velocity: 0d
+- [x] 1Password service account setup (headless CLI) — completed: 2026-04-01 13:55:21, area: 🚀 Build, created: 2026-04-01 13:55:21, velocity: 0d
+- [x] Coding agent two-stage review skill — completed: 2026-04-01 12:30:21, area: 🚀 Build, created: 2026-04-01 12:30:21, velocity: 0d
+- [x] AGENTS.md comprehensive review and rewrite — completed: 2026-04-01 12:30:20, area: 🚀 Build, created: 2026-04-01 12:30:20, velocity: 0d
+- [x] Full chat GUID directory — completed: 2026-04-01 12:30:22, area: 🚀 Build, created: 2026-04-01 12:30:22, velocity: 0d
+- [x] Review all dream cycle proposals (30 total) — completed: 2026-04-01 12:30:19, area: 🚀 Build, created: 2026-04-01 12:30:19, velocity: 0d
+- [x] Review dream cycle proposals (7 pending) — completed: 2026-04-01 13:21:48, area: 🚀 Build, created: 2026-03-29 19:31:49, velocity: 3d
+- [x] Reimburse Hannah for Amsterdam flight — completed: 2026-04-01 06:57:58, area: 💊 Health & Money, created: 2026-03-29 19:31:21, velocity: 3d
+- [x] Confirm van pickup with Marshall — completed: 2026-04-01 06:57:41, area: No Area, project: Boston Apr 2-5, created: 2026-03-29 19:41:11, velocity: 3d
+- [x] Pay Hannah back ~ for flight — completed: 2026-04-01 06:57:35, area: No Area, project: Amsterdam May 4-19, created: 2026-03-29 19:41:11, velocity: 3d
+- [x] Review cleaned Obsidian vault — completed: 2026-04-01 08:53:48, area: No Area, created: 2026-03-29 19:54:29, velocity: 3d
+- [x] Review Netflix payment update — verify intentional — completed: 2026-04-01 18:52:33, area: 🏠 Life Ops, created: 2026-03-29 19:32:03, velocity: 3d
+- [x] Meeting with Patti — completed: 2026-04-01 18:59:49, area: 👨‍👧 People, created: 2026-03-29 19:30:59, velocity: 3d
+- [x] Netflix payment updated — completed: 2026-04-01 18:04:54, area: 💊 Health & Money, created: 2026-04-01 18:04:54, velocity: 0d
+- [x] Fix contacts triage inner circle detection — completed: 2026-04-01 21:06:53, area: 🚀 Build, created: 2026-04-01 21:06:53, velocity: 0d
+- [x] Find out who [[Omar Shaheen]] is — completed: 2026-04-01 18:59:53, area: 👨‍👧 People, created: 2026-03-29 19:32:22, velocity: 3d
+- [x] Virtual psychiatry appt — Patricia Reposa — completed: 2026-04-01 16:34:34, area: 💊 Health & Money, created: 2026-03-29 19:30:59, velocity: 3d
+- [x] Knoxville Family Psychiatry — complete patient forms — completed: 2026-04-01 16:34:36, area: 💊 Health & Money, created: 2026-03-29 19:32:22, velocity: 3d
+- [x] Fix Adobe billing — update payment method — completed: 2026-04-01 18:57:04, area: 💊 Health & Money, created: 2026-03-29 19:31:21, velocity: 3d
+- [x] VirtualDJ — update payment or cancel — completed: 2026-04-01 18:54:13, area: No Area, project: Subscription Audit, created: 2026-03-29 19:32:03, velocity: 3d
+- [x] Recraft — update payment or cancel — completed: 2026-04-01 18:53:41, area: No Area, project: Subscription Audit, created: 2026-03-29 19:32:03, velocity: 3d
+- [x] Google One — update payment or cancel — completed: 2026-04-01 18:55:40, area: No Area, project: Subscription Audit, created: 2026-03-29 19:32:03, velocity: 3d
+- [x] Pack for Boston — completed: 2026-04-01 18:59:00, area: No Area, project: Boston Apr 2-5, created: 2026-03-29 19:41:11, velocity: 3d
+- [x] Netflix payment - update card — completed: 2026-04-01 18:51:00, area: No Area, created: 2026-04-01 18:51:00, velocity: 0d

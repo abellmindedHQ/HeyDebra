@@ -107,6 +107,15 @@ Last triaged: 2026-04-06 (morning sweep)
 
 ---
 
+## 🏢 ORNL / Work (Urgent)
+
+- [ ] Follow up with Jay on Wednesday — review Iteright demo + propose app dev pilot as digital transformation foundation // assigned to: Alex Abell, area: 🏢 ORNL, captured: 2026-04-07 18:01, source: email:Iteright Workshop
+- [ ] Secure budget approval for Iteright pilot (explore 2-payment option) + finalize implementation plan with vendor // assigned to: Alex Abell, area: 🏢 ORNL, captured: 2026-04-07 18:01, source: email:Iteright Workshop
+- [ ] Initiate cloud software approval process with cyber governance team for Iteright (coordinate SOC 2 discussion) // assigned to: Alex Abell, area: 🏢 ORNL, captured: 2026-04-07 18:01, source: email:Iteright Workshop
+- [ ] Forward Kim's org outline to Bricks and Kevin (CC Kim) so group leads have same information // assigned to: Alex Abell, area: 🏢 ORNL, captured: 2026-04-07 18:01, source: email:Interim Knowledge GL discussion
+- [ ] Once Kim confirms — consult with Sarah on Web Services rename before announcing reorg // assigned to: Alex Abell, area: 🏢 ORNL, captured: 2026-04-07 18:01, source: email:Interim Knowledge GL discussion
+- [ ] Once Kim updates on HR/Cruise outcome — coordinate reorganization rollout timeline + communications // assigned to: Alex Abell, area: 🏢 ORNL, captured: 2026-04-07 18:01, source: email:Interim Knowledge GL discussion
+
 ## ✅ Completed / No Longer Relevant
 
 - [x] Costco Visa card — intentionally locked by Alex (spending control)

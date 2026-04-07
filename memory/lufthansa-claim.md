@@ -42,12 +42,24 @@
 - US DOT complaint option
 - Tennessee is one-party consent state for call recording
 
+## Corrected Facts (confirmed Apr 7, 2026)
+- Alex's bag: arrived CPH airport Nov 30, picked up Dec 1 (runarounds confirming location)
+- Nike receipt $552.52: shoes, pants, jacket, sweatshirt, socks, beanie, scarf — full replacement outfit for dinner w/ band manager + photo shoot in upscale Copenhagen area
+- Dantaxi 317.39 DKK: transportation to retrieve bag
+- Dec 5 baggage receipt (0220596739) = HANNAH'S bag, not Alex's
+- Alex submitted receipts within original 30-day window; Lufthansa stalled then requested resubmission → resubmitted Mar 1, 2026
+- PIR CPHLH52532 confirmed as Alex's (not Hannah's) — received on alex's email Nov 30
+
 ## Status
-- **4+ months since incident, no compensation paid**
-- Lufthansa stalling, citing "high volume"
-- Alex ready to escalate
+- **DOT COMPLAINT FILED: April 7, 2026** ✅
+- Confirmation received: "Your complaint has been received by the U.S. Department of Transportation"
+- DOT will email case number to alexander.o.abell@gmail.com
+- Lufthansa must acknowledge within 30 days, substantive response within 60 days
+- Watch inbox for DOT confirmation email with case number
 
 ## Hannah's Separate Claim
-- Hannah Aldridge also had bag issues (possibly same trip)
+- Hannah Aldridge also had bag issues (same trip)
+- Her bag delivered Dec 5, 2025 (6 days)
+- She already filed and was compensated separately
 - United Airlines involved (delayedbag@united.com)
 - FB ID 42414108

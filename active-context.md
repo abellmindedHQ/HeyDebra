@@ -1,42 +1,48 @@
-# Active Context — Updated 2026-04-04 3:31am
+# Active Context — 2026-04-07 (Updated 3:31 AM, pre-reset)
 
-## Schedule (next 48h)
-- **APR 5 (Sun)**: Alex returns from Boston — WELCOME HIM HOME
-- **APR 6 (Mon)**: Teresa Scruggs passive income reminder
-- **APR 7 (Tue)**: Allison Rosenberg Muse luncheon — URGENT: she needs guest name, Alex must reply
-- **APR 13 (Mon)**: Hannah OBGYN appointment
-- **APR 20 (Mon)**: Alex lipoma removal 9:30am, Premier Surgical. Mark lipomas with Sharpie X first.
-- **APR 21 (Tue)**: Hospital calls with Avie's adenoidectomy time
-- **APR 22 (Wed)**: Avie adenoidectomy, Children's ENT Northshore
+## Schedule
+- Chelsea therapy: TODAY 6-7pm EDT (remember this, Alex missed before)
+- Muse Luncheon guest name: DUE TODAY (Katie Mixon needs final count + name for Brandon's table)
+- Sleep cycle resets at 4:00 AM (in ~30 min)
+- Avie Spring Picture Day: Apr 9 (prepaid, just show up)
+- Taxes: 9 days left (April 15)
+- May trip with Hannah: PTO needed, 2 weeks
 
-## Active Tasks (top 5)
-- Dream Cycle proposals review: ~13 staged (#5 + #6 + #7) — queue for Alex post-Boston
-- Avie yearbook order — OVERDUE (deadline was Apr 2, check if STILL fixable)
-- Sallijo Be Particular: text sent Apr 3 (template #9, Roxanne driving stories) — awaiting reply
-- VirtualDJ Pro + Video: subscriptions overdue — cancel or update
-- Roxanne NDA/app email: ~34 days unanswered (ESCALATING)
+## Active Tasks (Top 5)
+1. **🔴 CRITICAL:** DO NOT contact Rachael Jackson during medical leave (Jay's explicit instruction from Apr 6 meeting)
+2. **🟠 HIGH:** Wait for Jay's green light before assigning Brad Greenfield as interim GL — Jay will talk to Brad first
+3. **🟠 HIGH:** Compile Transformation group staff list → discuss at 1:1 with Jay → send to Sarah Glei
+4. **🟠 HIGH:** Draft reorg communication package (Web Services → Knowledge Products rename already done)
+5. **🟡 MEDIUM:** Wait 1-2 weeks before posting GL position (don't leave applicants in 6-week silence)
 
-## Pending Decisions (need Alex)
-- Dream Cycle #5 + #6 + #7 proposals (~13 total) — review post-Boston
-- Avie yearbook — still fixable after Apr 2 deadline?
-- VirtualDJ + Recraft: cancel or keep?
-- Roxanne NDA email: needs a nudge
+## Pending Decisions
+- **Muse Luncheon:** who is your +1? Respond to Katie Mixon TODAY
+- **Chelsea therapy:** 6pm EDT today — blocks calendar
+- **Dream cycle proposals:** 5 staged (2 self-apply, 3 await approval) — review in morning
 
-## Infrastructure
-- ✅ Neo4j: running
-- ✅ 1Password CLI: service account token working
-- ✅ Things 3: auth token working
-- ✅ Gemini API: paid billing, no 429s
-- ✅ 18 cron jobs active
-- ✅ QMD: 1,321 files indexed, 13 collections, daily re-index 4am
-- ⚠️ AssemblyAI: depleted (Whisper fallback working)
-- ⚠️ abellminded.com/CAD-Framework: custom domain 404
-- ⚠️ QMD reranker model: still downloading (Qwen3 0.6B)
+## Infrastructure Status
+- ✅ Voice notes pipeline LIVE: AssemblyAI (universal-3-pro) + LLM chapters + diarization + Neo4j sidecar
+- ✅ LaunchAgent watcher: fixed (fswatch path hardcoded), needs reload on your terminal
+- ✅ SecondBrain: two-tier structure (Projects/ hub + Meetings/project-slug/ receipts)
+- ✅ Voice ID registry: seeded (Jay 95%, Alex confirmed A+B+C, Sarah 1 clip confirmed)
+- ✅ ORNL AppDev Reorg project page: created + populated
+- ✅ Sarah Glei people card: created
+- ✅ All memory files flushed to disk (3:31 AM Apr 7)
+- ⚠️ AssemblyAI balance: refilled ($25 top-up), should last 3-6 months
 
 ## Channel Context
-- Alex in Boston (Day 3 / last full day) with Hannah, Avie, Marshall, Everett, Teal
-- Boston group chat: `any;+;4f2f085160984776b670fa9624a8560f`
-- Returns Sunday Apr 5
-- Alex shaved his mustache for the trip
-- Hannah is 🤫 pregnant (secret — do not mention to anyone)
-- Sallijo: ONLY morning calls/texts. Evening never works. Next topic: her daddy.
+- BlueBubbles: Alex's iMessage account (+18135343383), NO separate account enabled
+- WhatsApp gateway: active (+18652870278)
+- Known group chats: 21 mapped (Hannah, Chelsea, Sallijo, Annika, Jay, etc.)
+
+## Recent Decisions
+- **Apr 6:** Confirmed Rachael Jackson = Jay's pick (not Alex's), Brad Greenfield = Alex's suggestion
+- **Apr 6:** Speaker attribution corrected: Speaker A+B+C(90%)=Alex, C(46s)+D=Sarah Glei, D=Jay Eckles
+- **Apr 6:** Chapter format changed from AssemblyAI auto-chapters to 5 LLM-curated sections
+- **Apr 6:** Obsidian filename = meaningful title (Option A), no date prefix, no title: frontmatter
+- **Apr 6:** Audio bleed issue noted: Sarah's voice bled into Alex's mic track, corrected by content analysis
+
+## Known Issues / Watch
+- **Message discipline:** Sent 6 messages in a row to user (Apr 6, 17:01-17:05) — violated single-message rule. Logged to corrections.md.
+- **LaunchAgent reload needed:** Changes to watch-alex-notes.sh need `launchctl` reload on Alex's terminal
+- **Inbox path fixed in script:** Was pointing to GTD/inbox.md, corrected to ~/.openclaw/workspace/inbox/inbox.md

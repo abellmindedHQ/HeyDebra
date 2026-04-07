@@ -374,6 +374,74 @@ def clean_title(audio_path: Path) -> str:
     return stem.title()
 
 
+def generate_llm_title(transcript: dict, audio_path: Path) -> str:
+    """Generate a meaningful meeting title for use as the Obsidian filename.
+    Returns a clean title string (no .md), or empty string if generation fails."""
+    utterances = transcript.get("utterances") or []
+    if not utterances:
+        return ""
+
+    # Build compact transcript snippet (first 3000 chars is enough for title)
+    lines = []
+    prev_speaker = None
+    for u in utterances:
+        speaker = u.get("speaker", "?")
+        text = u.get("text", "").strip()
+        if speaker != prev_speaker:
+            lines.append(f"Speaker {speaker}: {text}")
+            prev_speaker = speaker
+        else:
+            lines.append(text)
+    snippet = "\n".join(lines)[:3000]
+
+    filename_hint = audio_path.stem[:60]
+
+    prompt = f"""Generate a short, meaningful title for this meeting note that will be used as the Obsidian filename.
+
+Rules:
+- Max 60 characters
+- Title case
+- No special characters except spaces, hyphens, and em-dashes
+- Descriptive of the KEY decision or topic (not generic like "Team Meeting")
+- Do NOT include the date
+- Output ONLY the title, nothing else
+
+Filename hint (original recording name): {filename_hint}
+
+Transcript snippet:
+{snippet}"""
+
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    openai_key = os.environ.get("OPENAI_API_KEY", "")
+
+    try:
+        if anthropic_key:
+            resp = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={"x-api-key": anthropic_key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+                json={"model": "claude-haiku-4-5", "max_tokens": 60, "messages": [{"role": "user", "content": prompt}]},
+                timeout=15
+            )
+            title = resp.json()["content"][0]["text"].strip().strip('"').strip("'")
+        elif openai_key:
+            resp = requests.post(
+                "https://api.openai.com/v1/chat/completions",
+                headers={"Authorization": f"Bearer {openai_key}", "Content-Type": "application/json"},
+                json={"model": "gpt-4o-mini", "messages": [{"role": "user", "content": prompt}], "max_tokens": 60},
+                timeout=15
+            )
+            title = resp.json()["choices"][0]["message"]["content"].strip().strip('"').strip("'")
+        else:
+            return ""
+        # Sanitize: remove chars that would break filenames
+        import re
+        title = re.sub(r'[<>:"/\\|?*]', '', title).strip()
+        return title[:80] if title else ""
+    except Exception as e:
+        print(f"[voice-notes] LLM title generation failed: {e}", flush=True)
+        return ""
+
+
 def generate_llm_chapters(utterances: list, title: str) -> str:
     """Generate curated chapters from transcript using Claude API.
     Returns markdown string of chapters, or empty string if generation fails."""
@@ -746,10 +814,17 @@ def process_file(audio_path: Path):
                                        speaker_fingerprints=speaker_fingerprints)
     real_date, _  = extract_real_date(audio_path)
     date_str      = real_date if real_date else now.strftime("%Y-%m-%d")
-    clean_name    = clean_title(audio_path).lower().replace(" ", "-").replace("/", "-")
-    if not clean_name or clean_name == "voice-note":
-        clean_name = audio_path.stem.replace(" ", "-").lower()[:60]
-    note_filename = f"{date_str}-{clean_name}.md"
+
+    # Generate a meaningful title for the filename via LLM
+    # Falls back to clean_title(audio_path) if LLM unavailable
+    llm_title = generate_llm_title(transcript, audio_path)
+    if llm_title:
+        note_filename = f"{llm_title}.md"
+    else:
+        clean_name = clean_title(audio_path).replace("/", "-")
+        if not clean_name or clean_name == "Voice Note":
+            clean_name = audio_path.stem[:80]
+        note_filename = f"{clean_name}.md"
     note_path     = MEETINGS_DIR / note_filename
     note_path.write_text(note_content, encoding="utf-8")
     print(f"[voice-notes] Saved note: {note_path}", flush=True)

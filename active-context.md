@@ -1,48 +1,64 @@
-# Active Context — 2026-04-07 (Updated 3:31 AM, pre-reset)
+# Active Context — April 8, 2026 (Updated 3:32 AM, pre-reset)
 
-## Schedule
-- Chelsea therapy: TODAY 6-7pm EDT (remember this, Alex missed before)
-- Muse Luncheon guest name: DUE TODAY (Katie Mixon needs final count + name for Brandon's table)
-- Sleep cycle resets at 4:00 AM (in ~30 min)
-- Avie Spring Picture Day: Apr 9 (prepaid, just show up)
-- Taxes: 9 days left (April 15)
-- May trip with Hannah: PTO needed, 2 weeks
+## Schedule (This Week)
+- **TODAY:** Chelsea therapy 6-7pm EDT (CRITICAL — don't miss)
+- **TODAY:** Muse Luncheon guest name DUE (Katie Mixon + Allison Rosenberg need answer)
+- Apr 9: Avie Spring Picture Day (prepaid, just show up)
+- Apr 15: Taxes deadline (9 days left)
+- Apr 22: Avie adenoidectomy
 
 ## Active Tasks (Top 5)
-1. **🔴 CRITICAL:** DO NOT contact Rachael Jackson during medical leave (Jay's explicit instruction from Apr 6 meeting)
-2. **🟠 HIGH:** Wait for Jay's green light before assigning Brad Greenfield as interim GL — Jay will talk to Brad first
-3. **🟠 HIGH:** Compile Transformation group staff list → discuss at 1:1 with Jay → send to Sarah Glei
-4. **🟠 HIGH:** Draft reorg communication package (Web Services → Knowledge Products rename already done)
-5. **🟡 MEDIUM:** Wait 1-2 weeks before posting GL position (don't leave applicants in 6-week silence)
+1. **🔴 CRITICAL:** Reply to Katie Mixon + Allison Rosenberg with Muse Luncheon guest name (DUE TODAY)
+2. **🟠 HIGH:** Wait for Jay's green light before assigning Brad Greenfield interim GL
+3. **🟠 HIGH:** Draft reorg communication package (Web Services rename + Transformation Group announcement)
+4. **🟠 HIGH:** Compile Transformation group staff list → 1:1 with Jay → send to Sarah Glei
+5. **🟡 MEDIUM:** Contact enrichment on 970 remaining people (currently slow, needs scoping)
 
 ## Pending Decisions
-- **Muse Luncheon:** who is your +1? Respond to Katie Mixon TODAY
-- **Chelsea therapy:** 6pm EDT today — blocks calendar
-- **Dream cycle proposals:** 5 staged (2 self-apply, 3 await approval) — review in morning
+- **Muse Luncheon +1:** Who are you bringing? Respond ASAP
+- **Dream cycle proposals:** 3 self-apply ready (trivial), 2 high-priority (4-6hrs, fixes solo-messaging structurally) — review tomorrow
+- **Claude Code v2.1.94:** Test this week (regression in instruction-following real, affects delegated coding)
 
 ## Infrastructure Status
-- ✅ Voice notes pipeline LIVE: AssemblyAI (universal-3-pro) + LLM chapters + diarization + Neo4j sidecar
-- ✅ LaunchAgent watcher: fixed (fswatch path hardcoded), needs reload on your terminal
-- ✅ SecondBrain: two-tier structure (Projects/ hub + Meetings/project-slug/ receipts)
-- ✅ Voice ID registry: seeded (Jay 95%, Alex confirmed A+B+C, Sarah 1 clip confirmed)
-- ✅ ORNL AppDev Reorg project page: created + populated
-- ✅ Sarah Glei people card: created
-- ✅ All memory files flushed to disk (3:31 AM Apr 7)
-- ⚠️ AssemblyAI balance: refilled ($25 top-up), should last 3-6 months
+- ✅ Voice notes pipeline: AssemblyAI (universal-3-pro) + Neo4j sidecar
+- ✅ Food inventory tracker: CREATED at ~/.openclaw/workspace/food-inventory.md (ready for receipt scanning)
+- ✅ SecondBrain: two-tier structure (Projects/ + Meetings/)
+- ✅ LaunchAgent watcher: needs reload on terminal after recent changes
+- ⚠️ Memory search down: Gemini embeddings (403 PERMISSION_DENIED), fallback to direct API queries
+- ⚠️ WhatsApp gateway: intermittent reconnects (status 499/408/503), appears stable as of 3:30 AM
 
 ## Channel Context
-- BlueBubbles: Alex's iMessage account (+18135343383), NO separate account enabled
-- WhatsApp gateway: active (+18652870278)
-- Known group chats: 21 mapped (Hannah, Chelsea, Sallijo, Annika, Jay, etc.)
+- BlueBubbles: Alex's iMessage (+18135343383), secure/read-only mode
+- WhatsApp: active (+18652870278 / Debra's Android)
+- Known groups: 21 mapped (Hannah, Chelsea, Sallijo, Annika, Jay, KBUDDS, Family, Boston Group, etc.)
 
-## Recent Decisions
-- **Apr 6:** Confirmed Rachael Jackson = Jay's pick (not Alex's), Brad Greenfield = Alex's suggestion
-- **Apr 6:** Speaker attribution corrected: Speaker A+B+C(90%)=Alex, C(46s)+D=Sarah Glei, D=Jay Eckles
-- **Apr 6:** Chapter format changed from AssemblyAI auto-chapters to 5 LLM-curated sections
-- **Apr 6:** Obsidian filename = meaningful title (Option A), no date prefix, no title: frontmatter
-- **Apr 6:** Audio bleed issue noted: Sarah's voice bled into Alex's mic track, corrected by content analysis
+## Recent Wins
+- 41 items completed this week (1.4d velocity)
+- Voice notes pipeline shipped + tested
+- Dream cycle #9 complete + proposals staged
+- Food inventory system designed + initialized
 
-## Known Issues / Watch
-- **Message discipline:** Sent 6 messages in a row to user (Apr 6, 17:01-17:05) — violated single-message rule. Logged to corrections.md.
-- **LaunchAgent reload needed:** Changes to watch-alex-notes.sh need `launchctl` reload on Alex's terminal
-- **Inbox path fixed in script:** Was pointing to GTD/inbox.md, corrected to ~/.openclaw/workspace/inbox/inbox.md
+## Critical Issues / Watch
+- **Solo-messaging bug:** FLAGGED in dream cycle as CRITICAL (2 incidents: Teresa Apr 6, Omar Mar 28). Needs structural fix: (1) cron pre-approval workflow, (2) PreToolUse message gate hook
+- **Muse Luncheon overdue:** Guest name tags printing TODAY
+- **Roxanne NDA:** 32 days unanswered, blocks her decision on $8K app project
+- **LaunchAgent reload:** Changes to watch-alex-notes.sh require terminal reload
+- **Inbox path:** Recently corrected to ~/.openclaw/workspace/inbox/inbox.md in launchctl plist
+
+## People & Relationships (Recent Context)
+- **Hannah:** May 7-21 tour (Europe), working on budget tracker with color-coded sections + status system
+- **Jay Eckles:** Approved reorg, needs to greenlight Brad interim GL, wants staff list + Sarah Glei notification
+- **Sarah Glei:** ORNL contact (people card created), expecting staff list + org notification from Alex
+- **Roxanne:** Waiting on NDA/app decision email (32 days)
+- **Chelsea:** Therapy TODAY 6-7pm EDT
+
+## Waiting On
+1. Jay's approval to greenlight Brad Greenfield interim GL
+2. Jay's 1:1 to discuss Transformation staff list
+3. Hannah's tour budget tracker finalization
+4. Alex's +1 for Muse Luncheon (need answer TODAY)
+5. Dream cycle proposal approval (structural fixes for solo-messaging)
+
+## Git Status
+- Pending commit: food-inventory.md + memory/2026-04-08.md + active-context.md updates
+- Last push: ~Apr 7 evening (dream cycle files)

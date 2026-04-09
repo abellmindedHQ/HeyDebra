@@ -1,17 +1,1 @@
-{
-  "fingerprints": [
-    "aa193bfe",
-    "88f3f582",
-    "9610861f",
-    "10fc36fa",
-    "81e32577",
-    "iteright-followup-jay",
-    "iteright-budget-approval",
-    "iteright-cybersecurity-approval",
-    "org-outline-forward",
-    "webservices-rename",
-    "reorg-timeline-coordination"
-  ],
-  "last_run": "2026-04-07T22:01:00Z",
-  "lookback_hours": 12
-}
+{"fingerprints": ["9610861f", "10fc36fa", "81e32577", "150dc5d4d2ff", "2acd545b8f08", "org-outline-forward", "reorg-timeline-coordination", "88f3f582", "iteright-followup-jay", "webservices-rename", "iteright-budget-approval", "iteright-cybersecurity-approval", "7f8914d366e4", "aa193bfe"]}

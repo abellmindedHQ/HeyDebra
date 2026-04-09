@@ -1,10 +1,10 @@
-# Active Context — April 8, 2026 (Updated 3:32 AM, pre-reset)
+# Active Context — April 9, 2026 (Updated 8:10 AM, post-reset flush)
 
 ## Schedule (This Week)
-- **TODAY:** Chelsea therapy 6-7pm EDT (CRITICAL — don't miss)
-- **TODAY:** Muse Luncheon guest name DUE (Katie Mixon + Allison Rosenberg need answer)
-- Apr 9: Avie Spring Picture Day (prepaid, just show up)
-- Apr 15: Taxes deadline (9 days left)
+- **TODAY (Apr 9):** Chelsea therapy 6-7pm EDT (CRITICAL — don't miss)
+- **TODAY (Apr 9):** Muse Luncheon guest name LIKELY OVERDUE (Katie Mixon + Allison Rosenberg need answer, check status)
+- **TODAY (Apr 9):** Avie Spring Picture Day (prepaid, confirm time if needed)
+- Apr 15: Taxes deadline (6 days left)
 - Apr 22: Avie adenoidectomy
 
 ## Active Tasks (Top 5)
@@ -53,12 +53,13 @@
 - **Chelsea:** Therapy TODAY 6-7pm EDT
 
 ## Waiting On
-1. Jay's approval to greenlight Brad Greenfield interim GL
-2. Jay's 1:1 to discuss Transformation staff list
-3. Hannah's tour budget tracker finalization
-4. Alex's +1 for Muse Luncheon (need answer TODAY)
-5. Dream cycle proposal approval (structural fixes for solo-messaging)
+1. **Muse Luncheon status check** — guest name may already be due/overdue (check with Alex)
+2. Jay's approval to greenlight Brad Greenfield interim GL
+3. Jay's 1:1 to discuss Transformation staff list
+4. Hannah's tour budget tracker finalization
+5. Dream cycle proposal approval (structural fixes for solo-messaging — 2 high-priority, 4-6 hrs each)
 
 ## Git Status
-- Pending commit: food-inventory.md + memory/2026-04-08.md + active-context.md updates
-- Last push: ~Apr 7 evening (dream cycle files)
+- Pending commit: TOOLS.md, inbox/done.md, inbox/inbox.md, memory/2026-04-08.md + 2026-04-09.md, capture-dedup state
+- Last successful push: Apr 8 evening (dream cycle + food-inventory)
+- Untracked: VisionClaw, projects/mirror-pitch, projects/second-brain (submodule changes)

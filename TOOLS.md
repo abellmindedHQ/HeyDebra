@@ -95,6 +95,7 @@ Things like:
 
 - Server: localhost:1234 (same machine)
 - Group chats: open policy, requireMention for unknown groups
+- ⚠️ **Attachment bug:** I can't automatically see images/files you send. Workaround: when you send media, tell me and I'll fetch manually via BB API
 - Known chats (auto-discovered from BB API, keep updated):
   - Hannah (Alex+Hannah): any;+;chat284576019517930648 | +16158101319
   - Chelsea (Alex+Chelsea): any;+;a96e1f6eaaba404abd15b7b1a1a1cdea | +16159745363

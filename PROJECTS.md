@@ -54,6 +54,26 @@ Active and someday/maybe projects. GTD style.
 - Covers: Neo4j vs Obsidian vs vector DB, staging layer design, voice embeddings, RAG improvements, cost/complexity, Mirror product connections
 - **Next**: Alex reviews report, makes architectural decisions
 
+### ORNL Transformation Group Reorg
+- **Status**: Awaiting Jay Eckles' approval to greenlight Brad Greenfield as interim GL
+- **Scope**: Rename Web Services team → Knowledge Products, formalize Transformation Group within App Dev
+- **Deliverables**: (1) Staff list compiled, (2) Reorg communication drafted, (3) Sarah Glei notification
+- **Blocking**: Jay's 1:1 + greenlight on Brad interim assignment
+- **Next**: Compile staff list, draft communication package, schedule 1:1 with Jay
+
+### Roxanne's App Project (Silicon Systems)
+- **Status**: CRITICAL — 32 days blocked on NDA/app decision email from Alex
+- **Scope**: $8K app dev pitch, Roxanne co-founder coaching business app
+- **Blocking**: NDA execution + Alex decision on scope/timing
+- **Next**: Alex to review + send NDA decision email (high priority this week)
+
+### Food Inventory Tracking System
+- **Status**: Initialized Apr 8, awaiting usage/feedback
+- **Purpose**: Grocery receipt scanning + photo parsing + markdown tracking
+- **Location**: ~/.openclaw/workspace/food-inventory.md
+- **Architecture**: Receipt → photo → OCR/parser → markdown table
+- **Next**: Alex tests with first grocery receipt, feedback on UX/format
+
 ### Automation Suite (18 Cron Jobs)
 - Email GTD: 7am, 12pm, 6pm daily
 - Capture Agent: 7:30am, 2pm, 8pm daily

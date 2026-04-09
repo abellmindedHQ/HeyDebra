@@ -140,3 +140,9 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - 🟡 Draft reorg communication package (web services → knowledge products rename already live, need to tell team)
 - 🟡 Wait 1-2 weeks before posting GL position (don't leave applicants in 6-week silent window)
 - 🟡 Confirm staffing tool request status in Finder (Chris → Josh → Sarah → Natalie approval chain)
+
+## 📧 Captured 2026-04-09 08:04 AM ET
+
+- [ ] Confirm email address for Stagent account setup // due: soon, area: 🏠 Life Ops, source: email:stagent:setup, captured: 2026-04-09 08:04, priority: normal
+- [ ] Zillow tour request pending confirmation for 7508 Twining Dr, Sun Apr 12 at 4pm // due: 2026-04-12, area: 🏠 Life Ops, source: email:zillow:tour-request, captured: 2026-04-09 08:04, priority: normal
+- [ ] Add funds to Avie's LINQ Connect account (balance low) // area: 👨‍👧 People, source: email:linq:balance-alert, captured: 2026-04-09 08:04

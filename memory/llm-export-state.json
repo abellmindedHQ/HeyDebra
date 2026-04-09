@@ -678,7 +678,9 @@
   "last_run": {
     "claude": "2026-03-26",
     "claude-ornl": "2026-03-26",
-    "chatgpt-ornl": "2026-03-31"
+    "chatgpt-ornl": "2026-03-31",
+    "chatgpt": "2026-04-09",
+    "gemini": "2026-04-09"
   },
   "stats": {
     "total_imported": 662,

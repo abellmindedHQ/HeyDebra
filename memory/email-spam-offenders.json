@@ -1,52 +1,119 @@
 {
+  "updated": "2026-04-09T07:56:00-04:00",
   "tracked_senders": {
-    "auto-reply@usps.com": { "count": 4, "last_seen": "2026-04-04", "subjects": ["Expected Delivery", "Expected Delivery on Thursday", "Expected Delivery by Monday", "Expected Delivery by Tuesday"] },
-    "USPSInformeddelivery@email.informeddelivery.usps.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Daily Digest"] },
-    "email@email.monarch.com": { "count": 6, "last_seen": "2026-04-04", "subjects": ["Transactions need review", "You have 2 new updates", "Transactions need review in Monarch"] },
-    "noreply@alerts.parkmobile.io": { "count": 11, "last_seen": "2026-04-03", "subjects": ["parking session started", "parking receipt", "parking session expiring", "about to expire"] },
-    "no-reply@otter.ai": { "count": 10, "last_seen": "2026-04-03", "subjects": ["Meeting Summary for Catch-up Chat", "Meeting Summary for Focus time", "Meeting Summary for Catch-up Chat: Brandon <> Alex"] },
-    "donotreply@parentsquare.com": { "count": 7, "last_seen": "2026-04-03", "subjects": ["Attendance Note Confirmation", "Attendance Report", "Community Budget Meeting", "Yearbook Deadline"] },
-    "patientcommunications@premiersurgical.com": { "count": 2, "last_seen": "2026-04-02", "subjects": ["Patient Satisfaction Survey", "Pre-checkin Notification"] },
-    "play@piano.hellosimply.com": { "count": 3, "last_seen": "2026-04-04", "subjects": ["Weekly highlights from Simply Piano", "New sheet music in PLAY", "Last days to be epic"] },
-    "do-not-reply@audible.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["You've got 2 credits"] },
-    "hello@tailscale.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Should you adopt Tailscale?"] },
-    "no-reply@mailings.ticketmaster.dk": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Din LIVE-guide"] },
-    "globyrecruiterr@gmail.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Globy opportunity"] },
-    "no-reply@kalshi.com": { "count": 3, "last_seen": "2026-04-03", "subjects": ["Welcome to Kalshi", "Application Approved", "Make your first trade"] },
-    "email@email.metropolis.io": { "count": 1, "last_seen": "2026-04-02", "subjects": ["It's handled: parking promo"] },
-    "events@deeplearning.ai": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Agenda announced: AI Dev 26"] },
-    "ericsimons@stackblitz.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["The bet that changed everything"] },
-    "no-reply@picovoice.ai": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Inactive account deletion warning"] },
-    "notification@facebookmail.com": { "count": 2, "last_seen": "2026-04-03", "subjects": ["Your Meta information is ready"] },
-    "notifications@link.com": { "count": 1, "last_seen": "2026-04-02", "subjects": ["Verification code"] },
-    "BestBuyInfo@emailinfo.bestbuy.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["You've earned a $50 certificate"] },
-    "no-reply@is.email.nextdoor.com": { "count": 2, "last_seen": "2026-04-03", "subjects": ["Top post"] },
-    "no-reply@salonultimate.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Easter promo"] },
-    "info@e.alexvindman.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Some numbers you need to see"] },
-    "noreply@robinhood.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Account statement available"] },
-    "haleyformi@substack.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Statistically tied"] },
-    "disneyplus@trx.mail2.disneyplus.com": { "count": 2, "last_seen": "2026-04-03", "subjects": ["New login noticed"] },
-    "thebatch@deeplearning.ai": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Claude Code's Source Leaks"] },
-    "no-reply@equifax.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["New Credit Report Available"] },
-    "DriftwoodDaySpa@getreach.ai": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Book your next appointment"] },
-    "contact@commercialkings.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["AI Drop Creator Major Update"] },
-    "no-reply@em-s.dropbox.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Let's talk about your files"] },
-    "hello@gamma.app": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Free access to Gamma Imagine ends"] },
-    "news@info.ornlfcu.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Smokies debit cards"] },
-    "xfinity@account.xfinity.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Bill statement ready"] },
-    "melizajones1969@gmail.com": { "count": 1, "last_seen": "2026-04-03", "subjects": ["Fresh Ideas for Spring"] },
-    "kevin@app.getdex.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Dex Premium canceled"] },
-    "no_reply@email.apple.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Subscription Confirmed"] },
-    "no-reply@email.claude.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Credit + discounts on extra usage"] },
-    "partners@iemail.moneylion.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Loan offers available"] },
-    "no-reply@wellnessliving.com": { "count": 1, "last_seen": "2026-04-04", "subjects": ["Drop in to Bliss"] }
+    "info@e.alexvindman.com": {
+      "count": 5,
+      "first_seen": "2026-04-02",
+      "last_seen": "2026-04-09",
+      "category": "political_newsletter",
+      "subjects": ["An explanation", "Statistically tied", "My friend, Hector Mujica", "If you knew", "Exhausting"]
+    },
+    "USPSInformeddelivery@email.informeddelivery.usps.com": {
+      "count": 5,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-09",
+      "category": "routine_notification",
+      "subjects": ["Daily Digest", "Daily Digest", "Daily Digest", "Daily Digest", "Daily Digest"]
+    },
+    "haleyformi@substack.com": {
+      "count": 3,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-08",
+      "category": "newsletter",
+      "subjects": ["Events worth stepping", "I'll never stay quiet", "Republicans think they've already won"]
+    },
+    "team@learn.mail.monday.com": {
+      "count": 2,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-07",
+      "category": "promotional",
+      "subjects": ["New AI app from monday.com's ceo", "Using AI for creative thinking"]
+    },
+    "info@piper-communications.com": {
+      "count": 2,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-08",
+      "category": "promotional",
+      "subjects": ["LIVESTREAM: Knox County Mayoral Forum", "LAST CALL! Register for the Knox County Mayoral Forum"]
+    },
+    "no-reply@salonultimate.com": {
+      "count": 2,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-07",
+      "category": "promotional",
+      "subjects": ["Introducing Motion Picture House - Radiohead", "Ready for Sparkle? Ear Piercing"]
+    },
+    "partners@iemail.moneylion.com": {
+      "count": 2,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-08",
+      "category": "promotional",
+      "subjects": ["Funds could hit your account in days!", "Loans for as little as $100"]
+    },
+    "failed-payments@runwayml.com": {
+      "count": 3,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-08",
+      "category": "payment_failure_alert",
+      "severity": "high",
+      "action": "URGENT - fix payment method",
+      "subjects": ["$157.32 payment unsuccessful", "$157.32 payment unsuccessful again", "$157.32 payment unsuccessful"]
+    },
+    "email@email.monarch.com": {
+      "count": 5,
+      "first_seen": "2026-04-03",
+      "last_seen": "2026-04-09",
+      "category": "app_notification",
+      "subjects": ["Transactions need review", "You have 2 new updates", "Transactions need review", "You have 2 new updates", "Transactions need review"]
+    }
   },
   "unsubscribe_candidates": [
-    "noreply@alerts.parkmobile.io",
-    "no-reply@otter.ai",
-    "donotreply@parentsquare.com",
-    "email@email.monarch.com",
-    "no-reply@kalshi.com"
+    {
+      "sender": "info@e.alexvindman.com",
+      "category": "political_newsletter",
+      "reason": "5+ emails in 7 days",
+      "action": "unsubscribe"
+    },
+    {
+      "sender": "haleyformi@substack.com",
+      "category": "newsletter",
+      "reason": "3+ emails, political content",
+      "action": "consider_unsubscribe"
+    },
+    {
+      "sender": "team@learn.mail.monday.com",
+      "category": "promotional",
+      "reason": "duplicate promotional emails",
+      "action": "unsubscribe"
+    },
+    {
+      "sender": "info@piper-communications.com",
+      "category": "promotional",
+      "reason": "2+ event promos in 2 days",
+      "action": "unsubscribe"
+    },
+    {
+      "sender": "no-reply@salonultimate.com",
+      "category": "promotional",
+      "reason": "2+ promotional emails",
+      "action": "unsubscribe"
+    },
+    {
+      "sender": "partners@iemail.moneylion.com",
+      "category": "promotional",
+      "reason": "2+ loan/money offers",
+      "action": "unsubscribe"
+    }
   ],
-  "last_updated": "2026-04-04"
+  "action_required": [
+    {
+      "sender": "failed-payments@runwayml.com",
+      "issue": "Recurring payment failures",
+      "count": 3,
+      "first_failure": "2026-04-05",
+      "last_failure": "2026-04-08",
+      "amount": "$157.32",
+      "action": "Fix payment method on Runway AI account"
+    }
+  ]
 }

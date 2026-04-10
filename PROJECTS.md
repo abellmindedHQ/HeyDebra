@@ -37,6 +37,7 @@ Active and someday/maybe projects. GTD style.
 - Session memory indexing enabled
 - Temporal decay + MMR + hybrid search configured
 - Pre-compaction memory flush enabled
+- End-of-day / pre-4am memory flush pattern actively in use ✅
 - **Next**: Monitor and iterate. Ensure memory bridges sessions consistently.
 
 ### People Intelligence Pipeline
@@ -82,14 +83,17 @@ Active and someday/maybe projects. GTD style.
 - Night Swimming: Sunday 9-10:30pm
 - Weaver: Sunday 11pm
 - Memory Flush: 3:30am x2
-- **Next**: Monitor first full day of crons, verify all working
+- First full production day mostly worked ✅
+- Evening signals captured correctly: Runway payment failures, TurboTax doc follow-up, Dream Cycle #10
+- **Next**: Monitor for misses and verify morning behavior after reset
 - Includes: Capture Agent (3x), Email GTD (3x), GSD Agent (2x), Night Swimming suite (Sun), Dream Cycle (daily 11:30pm), Memory Consolidation (Sun), Sallijo Story Time (every other day 2pm), LinkedIn Cleanup (daily 10am), various reminders
 
 ### Multi-Channel Messaging
 - iMessage (BlueBubbles): LIVE ✅
 - WhatsApp (+18652870278): LIVE ✅
 - RCS/SMS (Google Messages): LIVE ✅ (send working, inbound observer needs verification)
-- **Next**: Verify SMS observer inbound, set up as persistent service
+- Major current weakness: BlueBubbles attachment ingestion is intermittent and still under investigation
+- **Next**: Verify SMS observer inbound, set up as persistent service, finish BB attachment fix
 
 ### Android/RCS Messaging
 - Google Messages skill reviewed and approved (safe to install)

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORNL Application Development — Value Stream Maps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 60px 40px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .section h3 {
+            font-size: 1.3em;
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .section p, .section li {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #555;
+        }
+        .section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        .portfolio-card {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+        .portfolio-card h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        .portfolio-card p {
+            margin: 6px 0;
+            color: #666;
+        }
+        .leader-label {
+            font-weight: 600;
+            color: #764ba2;
+        }
+        .footer {
+            background: #f8f9ff;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover {
+            border-bottom-color: #667eea;
+        }
+        .pyramid-desc {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .download-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .download-link:hover {
+            background: #764ba2;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Application Development</h1>
+            <p>Value Stream Maps & Organizational Structure</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Overview</h2>
+                <p>The Application Development Division is structured around <strong>value-stream portfolios</strong> that align with ORNL's mission and operational needs. This design ensures clarity of purpose, efficient resource allocation, and strategic innovation.</p>
+            </div>
+
+            <div class="pyramid-desc">
+                <strong>🔺 Organizational Pyramid (Top to Bottom):</strong>
+                <ul style="margin-top: 10px;">
+                    <li><strong>Division Director:</strong> Jay (Strategic Direction)</li>
+                    <li><strong>Performance, Innovation & Transformation:</strong> Alex Abell (Modernization, Performance, Innovation)</li>
+                    <li><strong>Three Value-Stream Portfolios:</strong> Run the Business, Accelerate the Mission, Engage the Community</li>
+                    <li><strong>Foundation (Shared Services):</strong> Brooks Herring (Experience & Quality)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Value-Stream Portfolios</h2>
+
+                <div class="portfolio-card">
+                    <h4>1. Run the Business</h4>
+                    <p><em>Laboratory Operations & Institutional Support</em></p>
+                    <p>Ensures the foundational systems that power ORNL's day-to-day operations and institutional efficiency.</p>
+                    <p><span class="leader-label">Group Leader:</span> Kim Smithson</p>
+                    <p><span class="leader-label">Funding:</span> Institutional / Overhead</p>
+                    <p><strong>Programs:</strong> Financial Management, HR & Talent Management, Procurement & Legal, Facilities & Asset Management, Safety, Security & Access</p>
+                </div>
+
+                <div class="portfolio-card">
+                    <h4>2. Accelerate the Mission 🔬</h4>
+                    <p><em>Research & Mission Systems</em></p>
+                    <p>Delivers the digital capabilities that enable, manage, and accelerate ORNL's scientific research lifecycle and compliance.</p>
+                    <p><span class="leader-label">Group Leader:</span> Kevin Sellars</p>
+                    <p><span class="leader-label">Funding:</span> Programmatic mission funding + Lab investment</p>
+                    <p><strong>Programs:</strong> Research Lifecycle Management, Lab & Experiment Management, Research Compliance, Research Data & Tools</p>
+                </div>
+
+                <div class="portfolio-card">
+                    <h4>3. Engage the Community</h4>
+                    <p><em>Digital Experience & Collaboration</em></p>
+                    <p>Connects the lab to its stakeholders through collaboration platforms and digital experiences that enable knowledge sharing and engagement.</p>
+                    <p><span class="leader-label">Group Leader:</span> [New GL Placeholder]</p>
+                    <p><span class="leader-label">Funding:</span> Mixed institutional funding + stakeholder cost-share</p>
+                    <p><strong>Programs:</strong> Knowledge & Content Management, Collaboration & Communications, Stakeholder Services</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Shared Services: Experience & Quality</h2>
+                <p>A center of excellence that ensures every application at ORNL is usable, accessible, and reliable.</p>
+                <p><span class="leader-label">Group Leader:</span> Brooks Herring</p>
+                <p><span class="leader-label">Funding:</span> Pooled across all portfolios</p>
+                <h3>Functions</h3>
+                <ul>
+                    <li><strong>Experience Enablement:</strong> Design systems, usability testing, accessibility standards</li>
+                    <li><strong>Quality Assurance:</strong> Automation frameworks, testing practices, reliability standards</li>
+                </ul>
+                <p style="margin-top: 15px; font-style: italic; color: #666;">A shared enabling function, not a product team — amplifying the impact of limited UX and QA resources across all three portfolios.</p>
+            </div>
+
+            <div class="section">
+                <h2>Strategic Accelerator: Performance, Innovation & Transformation</h2>
+                <p>Drives forward-looking capabilities, modernization, and continuous improvement across all portfolios.</p>
+                <p><span class="leader-label">Group Leader:</span> Alex Abell</p>
+                <h3>Core Functions</h3>
+                <ul>
+                    <li><strong>Transformation & Modernization (Center):</strong> Cloud adoption, DevOps, automation, agile practices</li>
+                    <li><strong>Performance (Left):</strong> Data Architecture, Application Architecture, Goal Measurement & Reporting</li>
+                    <li><strong>Innovation (Right):</strong> AI for Operations, emerging tech evaluation, pilot initiatives</li>
+                </ul>
+                <p style="margin-top: 15px; font-style: italic; color: #666;">Positioned horizontally to fuel innovation and optimization across the entire division while maintaining direct accountability to Jay.</p>
+            </div>
+
+            <div class="section">
+                <h2>How It All Fits Together</h2>
+                <p><strong>Portfolios</strong> deliver core value to the lab's operations, mission, and community.</p>
+                <p><strong>Experience & Quality Group</strong> ensures outcomes are user-centered and reliable.</p>
+                <p><strong>Performance, Innovation & Transformation Group</strong> ensures we are future-ready and continuously improving.</p>
+                <p style="margin-top: 20px; font-weight: 600; color: #667eea;">Together, this structure makes Application Development more than a delivery organization — it becomes a force multiplier for ORNL's mission.</p>
+            </div>
+
+            <div class="section">
+                <h2>Key Documents</h2>
+                <ul>
+                    <li><strong>Restructuring App Dev Teams:</strong> Strategy foundation & operating model</li>
+                    <li><strong>Reorganization & Group Proposal:</strong> Detailed org design with governance</li>
+                    <li><strong>ServiceNow Portfolio Comparison:</strong> Technical portfolio management approaches</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>ORNL Application Development Division — Organizational Strategy</p>
+            <p style="margin-top: 8px; font-size: 0.9em; color: #999;">Created: April 9, 2026 | Status: Ready for Leadership Presentation</p>
+        </div>
+    </div>
+</body>
+</html>

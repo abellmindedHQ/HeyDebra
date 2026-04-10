@@ -19,6 +19,7 @@
 - **Search memory before asking Alex.** If the answer is in memory files, don't make him repeat himself.
 
 ## Key Infrastructure
+- **Primary model: openai/gpt-5.4** (changed Apr 9, was anthropic/claude-sonnet-4-6). Fallback: haiku.
 - 1Password: alex@abellminded.com, Personal vault. Mac password: "Debra's Mac Mini Login"
 - Neo4j: localhost:7474/7687, neo4j/secondbrain2026
 - Obsidian vault: /Users/debra/SecondBrain/
@@ -27,6 +28,7 @@
 - Google Workspace (gog): alexander.o.abell@gmail.com
 - Things 3: CLI via `things`, syncs via Things Cloud. Linear for dev, Things for life.
 - OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
+- **Gemini API:** Subject to 403 PERMISSION_DENIED. Single point of failure — takes down BOTH web_search AND memory_search simultaneously. Need fallback strategy.
 
 ## People
 - **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
@@ -63,6 +65,13 @@
 - VisionClaw / Ray-Ban Meta (needs Xcode build)
 - ChatGPT Re-Import: COMPLETE (346 convos)
 - Google Takeout: downloaded, NOT YET processed
+
+## BB Attachment Bug (Apr 8-9)
+- Attachments detected intermittently (sometimes 0, sometimes correct count)
+- Patched monitor-normalize + channel.runtime with fallback + debug logging
+- Patches WILL BE OVERWRITTEN on npm update — need upstream fix
+- BB webhook registered sniffer on port 18791 in SQLite db
+- Key code locations: extractAttachments() line 562, download logic line 1378-1400, enqueue line 2108
 
 ## ElevenLabs Voice
 - Debra agent: agent_5201kmtfqfv9etgtafvgw16pjpza

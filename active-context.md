@@ -1,65 +1,76 @@
-# Active Context — April 9, 2026 (Updated 8:10 AM, post-reset flush)
+# Active Context — April 10, 2026 (Updated 3:30 AM EDT)
 
-## Schedule (This Week)
-- **TODAY (Apr 9):** Chelsea therapy 6-7pm EDT (CRITICAL — don't miss)
-- **TODAY (Apr 9):** Muse Luncheon guest name LIKELY OVERDUE (Katie Mixon + Allison Rosenberg need answer, check status)
-- **TODAY (Apr 9):** Avie Spring Picture Day (prepaid, confirm time if needed)
-- Apr 15: Taxes deadline (6 days left)
-- Apr 22: Avie adenoidectomy
+## 🔴 BB Attachment Bug — Deep Dive Complete, Not Yet Fixed
+
+**Status:** Root cause narrowed to TWO issues:
+1. `extractAttachments(message)` returns empty array — `message.attachments` exists as a key but contains no data
+2. When attachments DO populate (intermittent — 7 appeared once at 14:05), download code fires but results may not reach session
+
+**What was done Apr 9:**
+- Patched `monitor-normalize-DBiB1PcA.js` line 934 with fallback (`?? payload`)
+- Patched `channel.runtime-BSXlY6sk.js` line 2108 to attach mediaPaths to message before enqueue
+- Added debug logging at line 1357 (baseUrl/password/attachmentCount)
+- Added WARNING logging when message.attachments is undefined vs empty
+- Registered sniffer webhook in BB's SQLite database (port 18791)
+- **Key finding:** `attachmentCount=0` on most sends, but `attachmentCount=7` appeared once — intermittent
+
+**Next step:** Need to understand WHY attachments array is sometimes empty. May be a BB timing issue (webhook fires before attachment processing completes). Check BB server version and webhook dispatch timing.
+
+**Files modified (will be overwritten on `npm update`):**
+- `/opt/homebrew/lib/node_modules/openclaw/dist/monitor-normalize-DBiB1PcA.js`
+- `/opt/homebrew/lib/node_modules/openclaw/dist/channel.runtime-BSXlY6sk.js`
+
+---
+
+## Config Changes Made Apr 9
+
+- **Primary model switched to openai/gpt-5.4** (was anthropic/claude-sonnet-4-6)
+- Fallback: anthropic/claude-haiku-4-5
+- OpenAI auth profile added: openai:default (api_key mode)
+
+---
+
+## Schedule
+
+**TODAY (Apr 10):**
+- Dentist 8:20 AM, East Tennessee Family Dentistry (Deane Hill), (865) 584-8630
+
+**Upcoming:**
+- Hannah ultrasound Mon Apr 13
+- Student Led Conferences Apr 16
+- Lipoma removal Apr 20
+- Avie adenoidectomy Apr 22
+
+---
 
 ## Active Tasks (Top 5)
-1. **🔴 CRITICAL:** Reply to Katie Mixon + Allison Rosenberg with Muse Luncheon guest name (DUE TODAY)
-2. **🟠 HIGH:** Wait for Jay's green light before assigning Brad Greenfield interim GL
-3. **🟠 HIGH:** Draft reorg communication package (Web Services rename + Transformation Group announcement)
-4. **🟠 HIGH:** Compile Transformation group staff list → 1:1 with Jay → send to Sarah Glei
-5. **🟡 MEDIUM:** Contact enrichment on 970 remaining people (currently slow, needs scoping)
 
-## Pending Decisions
-- **Muse Luncheon +1:** Who are you bringing? Respond ASAP
-- **Dream cycle proposals:** 3 self-apply ready (trivial), 2 high-priority (4-6hrs, fixes solo-messaging structurally) — review tomorrow
-- **Claude Code v2.1.94:** Test this week (regression in instruction-following real, affects delegated coding)
+1. **🔴 URGENT:** Roxanne NDA — 34 days stale, $8K decision, she's family
+2. **🔴 URGENT:** ORNL FCU fraud alert — still unresolved
+3. **🟠 HIGH:** Runway AI payment failures (5 emails)
+4. **🟡 MEDIUM:** Google Cloud billing — project suspension risk
+5. **🟡 MEDIUM:** Top up Gemini API credits — web_search + memory_search both DOWN
 
-## Infrastructure Status
-- ✅ Voice notes pipeline: AssemblyAI (universal-3-pro) + Neo4j sidecar
-- ✅ Food inventory tracker: CREATED at ~/.openclaw/workspace/food-inventory.md (ready for receipt scanning)
-- ✅ SecondBrain: two-tier structure (Projects/ + Meetings/)
-- ✅ LaunchAgent watcher: needs reload on terminal after recent changes
-- ⚠️ Memory search down: Gemini embeddings (403 PERMISSION_DENIED), fallback to direct API queries
-- ⚠️ WhatsApp gateway: intermittent reconnects (status 499/408/503), appears stable as of 3:30 AM
+---
 
-## Channel Context
-- BlueBubbles: Alex's iMessage (+18135343383), secure/read-only mode
-- WhatsApp: active (+18652870278 / Debra's Android)
-- Known groups: 21 mapped (Hannah, Chelsea, Sallijo, Annika, Jay, KBUDDS, Family, Boston Group, etc.)
+## Infrastructure
 
-## Recent Wins
-- 41 items completed this week (1.4d velocity)
-- Voice notes pipeline shipped + tested
-- Dream cycle #9 complete + proposals staged
-- Food inventory system designed + initialized
+- Gateway: 2026.4.9, model openai/gpt-5.4
+- Gemini API: **DOWN** (403 PERMISSION_DENIED) — blocks web_search AND memory_search
+- WhatsApp: cycling every 30 min (normal keepalive)
+- BB: localhost:1234, patched webhook handler (debug logging active)
+- Dream Cycle #10: Complete, 8 proposals staged, morning iMessage delivered
 
-## Critical Issues / Watch
-- **Solo-messaging bug:** FLAGGED in dream cycle as CRITICAL (2 incidents: Teresa Apr 6, Omar Mar 28). Needs structural fix: (1) cron pre-approval workflow, (2) PreToolUse message gate hook
-- **Muse Luncheon overdue:** Guest name tags printing TODAY
-- **Roxanne NDA:** 32 days unanswered, blocks her decision on $8K app project
-- **LaunchAgent reload:** Changes to watch-alex-notes.sh require terminal reload
-- **Inbox path:** Recently corrected to ~/.openclaw/workspace/inbox/inbox.md in launchctl plist
+---
 
-## People & Relationships (Recent Context)
-- **Hannah:** May 7-21 tour (Europe), working on budget tracker with color-coded sections + status system
-- **Jay Eckles:** Approved reorg, needs to greenlight Brad interim GL, wants staff list + Sarah Glei notification
-- **Sarah Glei:** ORNL contact (people card created), expecting staff list + org notification from Alex
-- **Roxanne:** Waiting on NDA/app decision email (32 days)
-- **Chelsea:** Therapy TODAY 6-7pm EDT
+## Pending Decisions (Alex)
 
-## Waiting On
-1. **Muse Luncheon status check** — guest name may already be due/overdue (check with Alex)
-2. Jay's approval to greenlight Brad Greenfield interim GL
-3. Jay's 1:1 to discuss Transformation staff list
-4. Hannah's tour budget tracker finalization
-5. Dream cycle proposal approval (structural fixes for solo-messaging — 2 high-priority, 4-6 hrs each)
+- Roxanne NDA approval ($8K)
+- Gemini API key refresh / Google Cloud billing
+- Review 8 dream cycle proposals (13+ total backlog)
+- Muse Luncheon guest name (may be moot now)
 
-## Git Status
-- Pending commit: TOOLS.md, inbox/done.md, inbox/inbox.md, memory/2026-04-08.md + 2026-04-09.md, capture-dedup state
-- Last successful push: Apr 8 evening (dream cycle + food-inventory)
-- Untracked: VisionClaw, projects/mirror-pitch, projects/second-brain (submodule changes)
+---
+
+**Last updated:** 2026-04-10 03:30 AM EDT by Debra
+**Next review:** Morning startup

@@ -146,3 +146,47 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Confirm email address for Stagent account setup // due: soon, area: 🏠 Life Ops, source: email:stagent:setup, captured: 2026-04-09 08:04, priority: normal
 - [ ] Zillow tour request pending confirmation for 7508 Twining Dr, Sun Apr 12 at 4pm // due: 2026-04-12, area: 🏠 Life Ops, source: email:zillow:tour-request, captured: 2026-04-09 08:04, priority: normal
 - [ ] Add funds to Avie's LINQ Connect account (balance low) // area: 👨‍👧 People, source: email:linq:balance-alert, captured: 2026-04-09 08:04
+
+---
+
+## Capture Agent Run — 2026-04-09 08:14 AM
+
+**Scan window:** Past 12 hours (2026-04-08 8:14 PM - 2026-04-09 8:14 AM)
+
+**Sources scanned:**
+- ✅ Email (Gmail, alexander.o.abell@gmail.com): 30 unread messages reviewed
+- ⚠️ iMessage (BlueBubbles): Auth failed (401 Unauthorized) — unable to scan
+- ✅ Calendar (Google Calendar): 6 events reviewed
+- ✅ Drop folder: Empty
+
+**Email findings:**
+- 9 promotional/transactional emails (Dunkin, ElevenLabs, Eventbrite, USPS, etc.)
+- 2 Monarch notifications ("Review transactions", "Budget updates") — **already captured in Things 3**
+- 1 Greenlight card activation notice
+- 1 Mesh daily brief
+- **No new work emails from Jay or Brad Greenfield**
+
+**Calendar findings:**
+- Apr 9: Dentist 8:20 AM (⏰ HAPPENING NOW), Post-surgery check 9:45 AM, Avie School Musical 6 PM — all already tracked in active-context
+- Apr 10: Birthday reminder
+- Apr 13: Hannah's ultrasound
+- **No new appointments detected**
+
+**Heuristic pre-filter results:**
+- 0 items passed quality gate (all promotional, duplicates of existing captures, or too vague)
+- Rejected: "Review transactions" (already in Things 3), birthday greeting, promotional offers
+
+**Classification:**
+- LLM classifier script (scripts/classify-item.py) not yet implemented — using manual heuristic review only
+- Quality over quantity: Better to capture zero than to pollute inbox with duplicates
+
+**Routed to inbox.md:** 0 new items
+**Routed to Things 3:** 0 new items
+**Routed to meeting-insights-archive:** 0 items
+**Dupes skipped:** 1 (Monarch transaction review)
+
+---
+
+**Summary:** All clear. Scanned 30 email candidates + calendar, found no new actionable items. Existing captures (Monarch, calendar events) already in system. BB auth failure — note for next run.
+
+- [ ] Add required documents to TurboTax to continue tax filing // assigned to: Alex, due: 2026-04-14, priority: normal, source: email:TurboTax:turbotax@intuit.com, area: 💊 Health & Money, captured: 2026-04-09 18:09

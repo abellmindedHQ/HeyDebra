@@ -1,72 +1,69 @@
-# Active Context — April 10, 2026 (Updated 3:36 AM EDT)
+# Active Context — April 11, 2026 (Updated 3:30 AM EDT)
 
-## 🔴 BB Attachment Bug — Deep Dive Complete, Still Not Fixed
+## 🔴 HARD DEADLINE: TurboTax Docs Due Apr 14 (Tuesday)
+TurboTax is asking for additional documents. Taxes were filed Apr 8 but this needs follow-up or he's filing an extension. 3 days left.
 
-**Status:** Strongest current theory is intermittent/timing-related webhook attachment population.
+## BB Attachment Bug — Patched, Not Fixed
+- Patches in monitor-normalize + channel.runtime (debug logging, fallback extraction, media path attachment)
+- Intermittent: attachmentCount sometimes 0, sometimes correct
+- Patches WILL BE OVERWRITTEN on npm update
+- Need upstream fix or permanent strategy
+- See: memory/bluebubbles-attachment-bug.md
 
-**What we know:**
-1. `extractAttachments(message)` usually sees an empty array
-2. Attachment data appeared once (`attachmentCount=7`), so the path is not fully dead
-3. OpenClaw dist patches and debug logging are in place, but they live in built files and are not durable
+## Gemini API — DOWN
+- 403 PERMISSION_DENIED on Google Cloud project
+- Blocks BOTH web_search AND memory_search
+- Single point of failure — needs fallback or key refresh
+- Alex hasn't addressed yet
 
-**Most likely next move:** inspect BB webhook timing/version behavior and compare payload variants to see why attachment metadata is sometimes absent when OpenClaw processes the event.
-
-**Patched files (temporary, overwritten on update):**
-- `/opt/homebrew/lib/node_modules/openclaw/dist/monitor-normalize-DBiB1PcA.js`
-- `/opt/homebrew/lib/node_modules/openclaw/dist/channel.runtime-BSXlY6sk.js`
-
----
-
-## Config / Infrastructure State
-
-- Primary model: **openai/gpt-5.4**
-- Fallback: `anthropic/claude-haiku-4-5`
-- Gateway version: `2026.4.9`
-- Gemini API: **DOWN** with `403 PERMISSION_DENIED`
-- `web_search` + `memory_search` degraded/unavailable because of Gemini billing/permissions issue
-- WhatsApp cycling every ~30 min as expected
-- Dream Cycle #10 completed, 8 proposals staged
+## Config
+- Primary model: openai/gpt-5.4 (switched Apr 9)
+- Fallback: anthropic/claude-haiku-4-5
 
 ---
 
 ## Schedule
 
-**This morning (Apr 10):**
-- Dentist 8:20 AM, East Tennessee Family Dentistry (Deane Hill), (865) 584-8630
+**TODAY (Apr 11, Saturday):** Nothing scheduled
 
 **Upcoming:**
+- Zillow tour Sun Apr 12 4pm (needs confirmation)
 - Hannah ultrasound Mon Apr 13
-- Student Led Conferences Apr 16
-- Lipoma removal Apr 20
-- Avie adenoidectomy Apr 22
+- TurboTax docs due Tue Apr 14
+- Student Led Conferences Wed Apr 16
+- Lipoma removal Mon Apr 20
+- Avie adenoidectomy Wed Apr 22
 
 ---
 
 ## Active Tasks (Top 5)
 
-1. **🔴 URGENT:** Roxanne NDA, now 34 days stale, tied to ~$8K decision
-2. **🔴 URGENT:** ORNL FCU fraud alert, still unresolved
-3. **🟠 HIGH:** Runway AI payment failures from evening email triage
-4. **🟡 MEDIUM:** Google Cloud billing / Gemini permissions fix
-5. **🟡 MEDIUM:** Permanent upstream-safe fix for BB attachment handling
+1. **🔴 HARD DEADLINE:** TurboTax additional docs — due Apr 14
+2. **🔴 URGENT:** Roxanne NDA — 35 days stale, $8K decision, family
+3. **🔴 URGENT:** ORNL FCU fraud alert — unresolved
+4. **🟠 HIGH:** Google Cloud billing — project suspended
+5. **🟠 HIGH:** Avie/Charlotte play date — coordinate with Leigh Whelan (+18652504188)
 
 ---
 
-## Pending Decisions (Alex)
-
-- Roxanne NDA approval / response
-- Gemini billing and API access fix
-- Review Dream Cycle proposal backlog
-
----
-
-## Channel Context
-
-- Pre-4am memory flush completed
-- Morning startup should assume continuity from `memory/2026-04-10.md`
-- Biggest live blockers at reset: BB attachments, Gemini outage, Roxanne, ORNL FCU
+## Pending (Alex hasn't responded to)
+- Avie/Charlotte play date coordination (reminded Apr 10)
+- Roxanne NDA (flagged daily since Apr 6)
+- ORNL FCU fraud alert (flagged daily since Apr 8)
+- TurboTax docs (flagged since Apr 9)
+- 13+ dream cycle proposals (backlog from Cycles 8-11)
+- Gemini API key / Google Cloud billing fix
 
 ---
 
-**Last updated:** 2026-04-10 03:36 AM EDT by Debra
+## Infrastructure
+- Gateway: 2026.4.9, openai/gpt-5.4
+- Gemini: DOWN (403)
+- WhatsApp: cycling every 30 min (normal)
+- BB: patched, intermittent attachment detection
+- All crons running normally (email triage, capture agent, GSD reports, dream cycle)
+
+---
+
+**Last updated:** 2026-04-11 03:30 AM EDT by Debra
 **Next review:** Morning startup

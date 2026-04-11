@@ -24,6 +24,8 @@ Last triaged: 2026-04-06 (morning sweep)
 - [ ] Set up Premier Surgical HealtheLife portal (lipoma consult follow-up, invite expires in 90 days) // area: 💊 Health & Money
 - [ ] Determine current 401(k) contribution rate and confirm if ORNL offers a match // area: 💊 Health & Money
 - [ ] Review new Equifax credit report and score (notification received Apr 3) // area: 💪 Health & Money, source: email:equifax.com, captured: 2026-04-03 18:05
+- [ ] Review 4 transactions that need review in Monarch // assigned to: Alex, due: not specified, priority: normal, source: email:📥 Transactions need review in Monarch:Monarch, area: 💊 Health & Money, captured: 2026-04-10 07:30
+- [ ] Review and download the 2025 K-1 for Market Square Ventures Fund I from Carta // assigned to: Alex, due: not specified, priority: normal, source: email:Now available: 2025 K-1s:Carta, area: 💊 Health & Money, captured: 2026-04-10 07:30
 
 ## 💳 Payments & Subscriptions
 
@@ -36,6 +38,8 @@ Last triaged: 2026-04-06 (morning sweep)
 - [ ] Recraft, Google One — update payments or cancel // area: 💳
 - [ ] OpenAI Plus — decide to renew or let expire // area: 💳
 - [ ] Citi payment: Costco Anywhere Visa // area: 💳
+- [ ] Update billing information for DeepLearning.AI subscription after $30 payment failure // assigned to: Alex, due: not specified, priority: normal, source: email:$30.00 payment to DeepLearning.AI was unsuccessful:DeepLearning.AI, area: 💊 Health & Money, captured: 2026-04-10 18:07
+- [ ] Order Sodium Sulfate / Potassium Sulfate / Magnesium Sulfate prescription from Amazon Pharmacy // assigned to: Alex, due: not specified, priority: normal, source: email:Your prescription is now ready to order:Amazon Pharmacy, area: 💊 Health & Money, captured: 2026-04-10 18:07
 
 ## 👨👧 People & Family
 
@@ -70,6 +74,8 @@ Last triaged: 2026-04-06 (morning sweep)
 - [ ] Prepare end-to-end flow mockup of intake/routing process // area: 🏢 ORNL
 - [ ] Reply to OpenClaw GitHub issue // area: 🏢 ORNL
 - [ ] Netlify DNS: update records for 0rnl.dev // area: 🏢 ORNL
+- [ ] Schedule a meeting with Regina and Andrew to align on the intake vision and define core outputs and inputs for each stage // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Initial Intake Discussion:otter.ai, area: 🏢 ORNL, captured: 2026-04-10 07:30
+- [ ] Create a communication plan for the reorganization and transformation team before the May 1 go-live date // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for UX Community of Practice:otter.ai, area: 🏢 ORNL, captured: 2026-04-10 07:30
 
 ## 🚀 Build / Projects
 

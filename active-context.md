@@ -1,4 +1,4 @@
-# Active Context — April 11, 2026 (Updated 3:30 AM EDT)
+# Active Context — April 11, 2026 (Updated 3:32 AM EDT)
 
 ## 🔴 HARD DEADLINE: TurboTax Docs Due Apr 14 (Tuesday)
 TurboTax is asking for additional documents. Taxes were filed Apr 8 but this needs follow-up or he's filing an extension. 3 days left.
@@ -27,7 +27,7 @@ TurboTax is asking for additional documents. Taxes were filed Apr 8 but this nee
 **TODAY (Apr 11, Saturday):** Nothing scheduled
 
 **Upcoming:**
-- Zillow tour Sun Apr 12 4pm (needs confirmation)
+- Zillow tour Sun Apr 12 4pm (likely needs confirmation)
 - Hannah ultrasound Mon Apr 13
 - TurboTax docs due Tue Apr 14
 - Student Led Conferences Wed Apr 16
@@ -39,7 +39,7 @@ TurboTax is asking for additional documents. Taxes were filed Apr 8 but this nee
 ## Active Tasks (Top 5)
 
 1. **🔴 HARD DEADLINE:** TurboTax additional docs — due Apr 14
-2. **🔴 URGENT:** Roxanne NDA — 35 days stale, $8K decision, family
+2. **🔴 URGENT:** Roxanne NDA — still stalled, family + ~$8K decision
 3. **🔴 URGENT:** ORNL FCU fraud alert — unresolved
 4. **🟠 HIGH:** Google Cloud billing — project suspended
 5. **🟠 HIGH:** Avie/Charlotte play date — coordinate with Leigh Whelan (+18652504188)
@@ -65,5 +65,5 @@ TurboTax is asking for additional documents. Taxes were filed Apr 8 but this nee
 
 ---
 
-**Last updated:** 2026-04-11 03:30 AM EDT by Debra
+**Last updated:** 2026-04-11 03:32 AM EDT by Debra
 **Next review:** Morning startup

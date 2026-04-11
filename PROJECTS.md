@@ -63,10 +63,10 @@ Active and someday/maybe projects. GTD style.
 - **Next**: Compile staff list, draft communication package, schedule 1:1 with Jay
 
 ### Roxanne's App Project (Silicon Systems)
-- **Status**: CRITICAL — 32 days blocked on NDA/app decision email from Alex
+- **Status**: CRITICAL — still blocked on NDA/app decision email from Alex, now ~35 days stale
 - **Scope**: $8K app dev pitch, Roxanne co-founder coaching business app
 - **Blocking**: NDA execution + Alex decision on scope/timing
-- **Next**: Alex to review + send NDA decision email (high priority this week)
+- **Next**: Alex to review + send NDA decision email immediately
 
 ### Food Inventory Tracking System
 - **Status**: Initialized Apr 8, awaiting usage/feedback
@@ -83,9 +83,9 @@ Active and someday/maybe projects. GTD style.
 - Night Swimming: Sunday 9-10:30pm
 - Weaver: Sunday 11pm
 - Memory Flush: 3:30am x2
-- First full production day mostly worked ✅
-- Evening signals captured correctly: Runway payment failures, TurboTax doc follow-up, Dream Cycle #10
-- **Next**: Monitor for misses and verify morning behavior after reset
+- Production cron cadence is holding ✅
+- Recent signals captured correctly: Runway payment failures, TurboTax doc follow-up, Dream Cycle outputs, play date reminder
+- **Next**: Keep monitoring for misses and confirm post-reset continuity each morning
 - Includes: Capture Agent (3x), Email GTD (3x), GSD Agent (2x), Night Swimming suite (Sun), Dream Cycle (daily 11:30pm), Memory Consolidation (Sun), Sallijo Story Time (every other day 2pm), LinkedIn Cleanup (daily 10am), various reminders
 
 ### Multi-Channel Messaging

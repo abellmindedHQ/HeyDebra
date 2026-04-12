@@ -63,10 +63,16 @@ Active and someday/maybe projects. GTD style.
 - **Next**: Compile staff list, draft communication package, schedule 1:1 with Jay
 
 ### Roxanne's App Project (Silicon Systems)
-- **Status**: CRITICAL — still blocked on NDA/app decision email from Alex, now ~35 days stale
+- **Status**: CRITICAL — still blocked on NDA/app decision email from Alex, now ~36 days stale
 - **Scope**: $8K app dev pitch, Roxanne co-founder coaching business app
 - **Blocking**: NDA execution + Alex decision on scope/timing
 - **Next**: Alex to review + send NDA decision email immediately
+
+### Tax + Admin Fire Drill
+- **Status**: ACTIVE and urgent
+- **Critical deadline**: TurboTax docs due Tue Apr 14, 2026. Most urgent personal admin item right now.
+- **Also open**: ORNL FCU fraud alert, GitLab password change, Google Cloud billing fix, AI Studio prepaid credits for Gemini
+- **Next**: Confirm whether docs can be uploaded immediately or whether an extension needs to be filed
 
 ### Food Inventory Tracking System
 - **Status**: Initialized Apr 8, awaiting usage/feedback
@@ -137,7 +143,7 @@ Active and someday/maybe projects. GTD style.
 - Web UI: port 3981 (dark theme, live transcripts, call history)
 - Hybrid mode: Twilio hold-detection (~$0.02/min) → ElevenLabs on human detect (~$0.13/min)
 - Lufthansa test calls: 3x (queue 75→61, no human Saturdays)
-- Monday 7am cron for Lufthansa retry: c616beb3
+- Monday 7am cron for Lufthansa retry: c616beb3 (Apr 13 next run)
 - **Next**: Verify Monday call, tune IVR navigation, track success rates
 
 ### AVERY (Avie's AI Sidekick)
@@ -183,6 +189,11 @@ Active and someday/maybe projects. GTD style.
 ### WhatsApp Channel Setup
 - Researched, production-ready in OpenClaw
 - **Next**: Alex scans QR code to link WhatsApp
+
+### Housing / Logistics
+- **Status**: active light-touch follow-up
+- Zillow tour is penciled for Sun Apr 12 at 4pm and still needs confirmation
+- **Next**: Confirm the tour or clear it off the calendar
 
 ## 💭 Someday/Maybe (want to do, no commitment yet)
 

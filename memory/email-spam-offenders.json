@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-10T18:00:00-04:00",
+  "updated": "2026-04-11T18:00:00-04:00",
   "tracked_senders": {
     "info@e.alexvindman.com": {
-      "count": 8,
+      "count": 9,
       "first_seen": "2026-04-02",
-      "last_seen": "2026-04-10",
+      "last_seen": "2026-04-11",
       "category": "political_newsletter",
       "subjects": [
         "An explanation",
@@ -12,7 +12,8 @@
         "My friend, Hector Mujica",
         "If you knew",
         "Exhausting",
-        "If you knew\u2026"
+        "If you knew\u2026",
+        "My decision\u2026"
       ]
     },
     "USPSInformeddelivery@email.informeddelivery.usps.com": {
@@ -29,16 +30,17 @@
       ]
     },
     "haleyformi@substack.com": {
-      "count": 5,
+      "count": 6,
       "first_seen": "2026-04-06",
-      "last_seen": "2026-04-10",
+      "last_seen": "2026-04-11",
       "category": "newsletter",
       "subjects": [
         "Events worth stepping",
         "I'll never stay quiet",
         "Republicans think they've already won",
         "Hell no.",
-        "I\u2019ll never stay quiet in the face of antisemitism"
+        "I\u2019ll never stay quiet in the face of antisemitism",
+        "A love letter to Michigan"
       ]
     },
     "team@learn.mail.monday.com": {
@@ -62,36 +64,40 @@
       ]
     },
     "no-reply@salonultimate.com": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-04-04",
-      "last_seen": "2026-04-07",
+      "last_seen": "2026-04-11",
       "category": "promotional",
       "subjects": [
         "Introducing Motion Picture House - Radiohead",
-        "Ready for Sparkle? Ear Piercing"
+        "Ready for Sparkle? Ear Piercing",
+        "April Showers Bring New Hairstyles! \u2614\ud83c\udf38\u2702\ufe0f"
       ]
     },
     "partners@iemail.moneylion.com": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-04-06",
-      "last_seen": "2026-04-08",
+      "last_seen": "2026-04-11",
       "category": "promotional",
       "subjects": [
         "Funds could hit your account in days!",
-        "Loans for as little as $100"
+        "Loans for as little as $100",
+        "Alexander, need $ to help with bills?"
       ]
     },
     "failed-payments@runwayml.com": {
-      "count": 3,
+      "count": 8,
       "first_seen": "2026-04-05",
-      "last_seen": "2026-04-08",
+      "last_seen": "2026-04-11",
       "category": "payment_failure_alert",
       "severity": "high",
       "action": "URGENT - fix payment method",
       "subjects": [
         "$157.32 payment unsuccessful",
         "$157.32 payment unsuccessful again",
-        "$157.32 payment unsuccessful"
+        "$157.32 payment unsuccessful",
+        "$157.32 payment to Runway AI, Inc. was unsuccessful again",
+        "$157.32 payment to Runway AI, Inc. was unsuccessful"
       ]
     },
     "email@email.monarch.com": {
@@ -225,12 +231,14 @@
       ]
     },
     "monarch <email@email.monarch.com>": {
-      "count": 6,
-      "last_seen": "2026-04-10",
+      "count": 7,
+      "last_seen": "2026-04-11",
       "subjects": [
         "\ud83d\udce5 Transactions need review in Monarch",
         "\u2728 You have 2 new updates in Monarch"
-      ]
+      ],
+      "first_seen": "2026-04-11",
+      "category": "app_notification"
     },
     "turbotax <turbotax@em2.turbotax.intuit.com>": {
       "count": 1,
@@ -382,13 +390,14 @@
       ]
     },
     "venmo@venmo.com": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
+      "last_seen": "2026-04-11",
       "category": "archived_noise",
       "subjects": [
         "Hannah Aldridge commented on a payment between you and Hannah Aldridge",
-        "You paid Marshall goldman $200.00"
+        "You paid Marshall goldman $200.00",
+        "Your March 2026 transaction history"
       ]
     },
     "nest@renewhome.com": {
@@ -656,6 +665,114 @@
       "subjects": [
         "Viewing Accepted for 1416 Myart Lane"
       ]
+    },
+    "team@mail.perplexity.ai": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "app_notification",
+      "subjects": [
+        "You\u2019ve received credits"
+      ]
+    },
+    "contact@e.kamalaharris.com": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "newsletter",
+      "subjects": [
+        "LaMonica McIver"
+      ]
+    },
+    "importantinformation@brf.empowermyretirement.com": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "routine_notification",
+      "subjects": [
+        "Disclosure About Your Retirement Plan"
+      ]
+    },
+    "donotreply+9e0137ff-5aa3-5d48-89fd-ce496e66a697@parentsquare.com": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "school_notification",
+      "subjects": [
+        "ABC Countdown to Summer"
+      ]
+    },
+    "noreply@mail.stagent.com": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "app_notification",
+      "subjects": [
+        "Finish setting up your account with Stagent"
+      ]
+    },
+    "support@updates.greenlight.com": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "promotional",
+      "subjects": [
+        "Alexander, time to activate your card."
+      ]
+    },
+    "website@huggingface.co": {
+      "count": 1,
+      "last_seen": "2026-04-11",
+      "first_seen": "2026-04-11",
+      "category": "security_notice",
+      "subjects": [
+        "New login to your Hugging Face account"
+      ]
+    },
+    "inmail-hit-reply@linkedin.com": {
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "category": "archived_noise",
+      "subjects": [
+        "You're Invited: Exclusive CRO Leadership Opportunity"
+      ]
+    },
+    "noreply@betterhelp.com": {
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "category": "archived_noise",
+      "subjects": [
+        "Journal reminder for April 11, we have a suggestion for you"
+      ]
+    },
+    "no-reply@kalshi.com": {
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "category": "archived_noise",
+      "subjects": [
+        "A quick guide to risk management"
+      ]
+    },
+    "no-reply@legal.spotify.com": {
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "category": "archived_noise",
+      "subjects": [
+        "Have you added your Family plan members?"
+      ]
+    },
+    "uspsinformeddelivery@email.informeddelivery.usps.com": {
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "category": "archived_noise",
+      "subjects": [
+        "Your Daily Digest for Sat, 4/11 is ready to view"
+      ]
     }
   },
   "unsubscribe_candidates": [
@@ -663,13 +780,13 @@
       "sender": "\"alexander abell via otter.ai\" <no-reply@otter.ai>",
       "category": "archived_noise",
       "reason": "5+ archived emails in recent triage history",
-      "action": "unsubscribe"
+      "action": "review"
     },
     {
       "sender": "USPSInformeddelivery@email.informeddelivery.usps.com",
       "category": "routine_notification",
       "reason": "5+ archived emails in recent triage history",
-      "action": "unsubscribe"
+      "action": "review"
     },
     {
       "sender": "email@email.monarch.com",
@@ -691,7 +808,7 @@
     },
     {
       "sender": "monarch <email@email.monarch.com>",
-      "category": "archived_noise",
+      "category": "app_notification",
       "reason": "5+ archived emails in recent triage history",
       "action": "review"
     },
@@ -699,16 +816,16 @@
       "sender": "parkmobile <noreply@alerts.parkmobile.io>",
       "category": "archived_noise",
       "reason": "5+ archived emails in recent triage history",
-      "action": "unsubscribe"
+      "action": "review"
     }
   ],
   "action_required": [
     {
       "sender": "failed-payments@runwayml.com",
       "issue": "Recurring payment failures",
-      "count": 3,
+      "count": 8,
       "first_failure": "2026-04-05",
-      "last_failure": "2026-04-08",
+      "last_failure": "2026-04-11",
       "amount": "$157.32",
       "action": "Fix payment method on Runway AI account"
     }

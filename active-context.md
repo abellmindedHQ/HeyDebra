@@ -1,69 +1,51 @@
-# Active Context — April 11, 2026 (Updated 3:32 AM EDT)
+# Active Context — April 12, 2026 (Updated 3:30 AM EDT)
 
-## 🔴 HARD DEADLINE: TurboTax Docs Due Apr 14 (Tuesday)
-TurboTax is asking for additional documents. Taxes were filed Apr 8 but this needs follow-up or he's filing an extension. 3 days left.
+## 🔴 HARD DEADLINE: TurboTax Docs Due TUESDAY APR 14
+2 days. Upload missing docs or file an extension. Most critical item in the system.
 
-## BB Attachment Bug — Patched, Not Fixed
-- Patches in monitor-normalize + channel.runtime (debug logging, fallback extraction, media path attachment)
-- Intermittent: attachmentCount sometimes 0, sometimes correct
-- Patches WILL BE OVERWRITTEN on npm update
-- Need upstream fix or permanent strategy
-- See: memory/bluebubbles-attachment-bug.md
+## 🔴 Gemini — AI Studio Credits Depleted (NOT billing)
+- Root cause: aistudio.google.com → add prepayment credits (5 min fix)
+- NOT a Google Cloud billing issue (separate problem)
+- Blocks web_search AND memory_search until fixed
+- Alex hasn't addressed
 
-## Gemini API — DOWN
-- 403 PERMISSION_DENIED on Google Cloud project
-- Blocks BOTH web_search AND memory_search
-- Single point of failure — needs fallback or key refresh
-- Alex hasn't addressed yet
+## 📅 TODAY (Apr 12, Sunday)
+- Zillow tour 4pm — NEEDS CONFIRMATION
+- Hannah ultrasound tomorrow Mon Apr 13
 
-## Config
-- Primary model: openai/gpt-5.4 (switched Apr 9)
-- Fallback: anthropic/claude-haiku-4-5
+## Still Overdue
+1. Roxanne NDA — 36 days. $8K. She's your sister.
+2. ORNL FCU fraud alert — 4 days
+3. GitLab password change
+4. Google Cloud billing (project suspended — separate from Gemini)
+5. Avie play date with Charlotte (Leigh Whelan +18652504188)
 
----
-
-## Schedule
-
-**TODAY (Apr 11, Saturday):** Nothing scheduled
-
-**Upcoming:**
-- Zillow tour Sun Apr 12 4pm (likely needs confirmation)
-- Hannah ultrasound Mon Apr 13
-- TurboTax docs due Tue Apr 14
-- Student Led Conferences Wed Apr 16
-- Lipoma removal Mon Apr 20
-- Avie adenoidectomy Wed Apr 22
-
----
-
-## Active Tasks (Top 5)
-
-1. **🔴 HARD DEADLINE:** TurboTax additional docs — due Apr 14
-2. **🔴 URGENT:** Roxanne NDA — still stalled, family + ~$8K decision
-3. **🔴 URGENT:** ORNL FCU fraud alert — unresolved
-4. **🟠 HIGH:** Google Cloud billing — project suspended
-5. **🟠 HIGH:** Avie/Charlotte play date — coordinate with Leigh Whelan (+18652504188)
-
----
-
-## Pending (Alex hasn't responded to)
-- Avie/Charlotte play date coordination (reminded Apr 10)
-- Roxanne NDA (flagged daily since Apr 6)
-- ORNL FCU fraud alert (flagged daily since Apr 8)
-- TurboTax docs (flagged since Apr 9)
-- 13+ dream cycle proposals (backlog from Cycles 8-11)
-- Gemini API key / Google Cloud billing fix
-
----
+## Upcoming
+- Mon Apr 13 — Hannah ultrasound
+- Tue Apr 14 — TurboTax docs DEADLINE
+- Wed Apr 16 — Student Led Conferences
+- Mon Apr 20 — Lipoma removal
+- Wed Apr 22 — Avie adenoidectomy
 
 ## Infrastructure
-- Gateway: 2026.4.9, openai/gpt-5.4
-- Gemini: DOWN (403)
-- WhatsApp: cycling every 30 min (normal)
-- BB: patched, intermittent attachment detection
-- All crons running normally (email triage, capture agent, GSD reports, dream cycle)
+- Model: openai/gpt-5.4 (switched Apr 9)
+- Gemini: DOWN — AI Studio credits (fix: aistudio.google.com)
+- BB: patched (intermittent attachment detection, patches overwritten on npm update)
+- Gateway: 2026.4.9
+- All crons running normally
+
+## Dream Cycle Proposals Pending (18+ total)
+Key actionable ones:
+- Update Claude Code to v2.1.x (fixes 5-min timeout killing slow tasks)
+- Add cron ≠ authorization to AGENTS.md
+- Fix dream cycle delivery format (decision-forcing not passive)
+- Add stale item escalation rule (7+ days → draft the outreach)
+
+## Be Particular (SECRET book project)
+- Attempted to reach Sallijo Apr 11 for story collection — no response
+- Strategy: casual pretext ("heard you have good stories"), long game
 
 ---
 
-**Last updated:** 2026-04-11 03:32 AM EDT by Debra
+**Last updated:** 2026-04-12 03:30 AM EDT by Debra
 **Next review:** Morning startup

@@ -196,3 +196,5 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 **Summary:** All clear. Scanned 30 email candidates + calendar, found no new actionable items. Existing captures (Monarch, calendar events) already in system. BB auth failure — note for next run.
 
 - [ ] Add required documents to TurboTax to continue tax filing // assigned to: Alex, due: 2026-04-14, priority: normal, source: email:TurboTax:turbotax@intuit.com, area: 💊 Health & Money, captured: 2026-04-09 18:09
+- [ ] Update billing information for Runway subscription after payment failure // assigned to: Alex, due: not specified, priority: normal, source: email:Runway AI, Inc.:failed-payments@runwayml.com, area: 💊 Health & Money, captured: 2026-04-11 07:30
+- [ ] Review and renew Porkbun domains tmmhs.org, aleander.music, and aleandermusic.com before auto-renew issues cause outages // assigned to: Alex, due: by May 10, priority: normal, source: email:porkbun.com | Domain Renewal Notice - expiration date approaching in 30 days or less:Porkbun, area: 🏠 Life Ops, captured: 2026-04-11 18:01

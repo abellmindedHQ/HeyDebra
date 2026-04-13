@@ -198,3 +198,9 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Add required documents to TurboTax to continue tax filing // assigned to: Alex, due: 2026-04-14, priority: normal, source: email:TurboTax:turbotax@intuit.com, area: 💊 Health & Money, captured: 2026-04-09 18:09
 - [ ] Update billing information for Runway subscription after payment failure // assigned to: Alex, due: not specified, priority: normal, source: email:Runway AI, Inc.:failed-payments@runwayml.com, area: 💊 Health & Money, captured: 2026-04-11 07:30
 - [ ] Review and renew Porkbun domains tmmhs.org, aleander.music, and aleandermusic.com before auto-renew issues cause outages // assigned to: Alex, due: by May 10, priority: normal, source: email:porkbun.com | Domain Renewal Notice - expiration date approaching in 30 days or less:Porkbun, area: 🏠 Life Ops, captured: 2026-04-11 18:01
+
+
+## 📧 Captured 2026-04-12 07:30 AM ET
+
+- [ ] Verify why the Costco Visa card was unlocked and re-lock it if needed. // assigned to: Alex, due: ASAP, priority: urgent, source: email:A card has been successfully unlocked:citicards, area: 💊 Health & Money, captured: 2026-04-12 07:33
+- [ ] Check Anthropic account and re-enable Claude API access. // assigned to: Alex, due: not specified, priority: normal, source: email:[action needed] Your Claude API access is turned off:anthropic.com, area: 🚀 Build, captured: 2026-04-12 07:33

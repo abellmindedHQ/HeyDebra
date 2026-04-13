@@ -1,132 +1,24 @@
 {
-  "updated": "2026-04-11T18:00:00-04:00",
-  "tracked_senders": {
-    "info@e.alexvindman.com": {
-      "count": 9,
-      "first_seen": "2026-04-02",
-      "last_seen": "2026-04-11",
-      "category": "political_newsletter",
-      "subjects": [
-        "An explanation",
-        "Statistically tied",
-        "My friend, Hector Mujica",
-        "If you knew",
-        "Exhausting",
-        "If you knew\u2026",
-        "My decision\u2026"
-      ]
-    },
-    "USPSInformeddelivery@email.informeddelivery.usps.com": {
-      "count": 5,
-      "first_seen": "2026-04-04",
-      "last_seen": "2026-04-09",
-      "category": "routine_notification",
-      "subjects": [
-        "Daily Digest",
-        "Daily Digest",
-        "Daily Digest",
-        "Daily Digest",
-        "Daily Digest"
-      ]
-    },
-    "haleyformi@substack.com": {
-      "count": 6,
-      "first_seen": "2026-04-06",
-      "last_seen": "2026-04-11",
-      "category": "newsletter",
-      "subjects": [
-        "Events worth stepping",
-        "I'll never stay quiet",
-        "Republicans think they've already won",
-        "Hell no.",
-        "I\u2019ll never stay quiet in the face of antisemitism",
-        "A love letter to Michigan"
-      ]
-    },
-    "team@learn.mail.monday.com": {
-      "count": 3,
-      "first_seen": "2026-04-06",
-      "last_seen": "2026-04-10",
-      "category": "promotional",
-      "subjects": [
-        "New AI app from monday.com's ceo",
-        "Using AI for creative thinking"
-      ]
-    },
-    "info@piper-communications.com": {
-      "count": 2,
-      "first_seen": "2026-04-06",
-      "last_seen": "2026-04-08",
-      "category": "promotional",
-      "subjects": [
-        "LIVESTREAM: Knox County Mayoral Forum",
-        "LAST CALL! Register for the Knox County Mayoral Forum"
-      ]
-    },
-    "no-reply@salonultimate.com": {
-      "count": 3,
-      "first_seen": "2026-04-04",
-      "last_seen": "2026-04-11",
-      "category": "promotional",
-      "subjects": [
-        "Introducing Motion Picture House - Radiohead",
-        "Ready for Sparkle? Ear Piercing",
-        "April Showers Bring New Hairstyles! \u2614\ud83c\udf38\u2702\ufe0f"
-      ]
-    },
-    "partners@iemail.moneylion.com": {
-      "count": 3,
-      "first_seen": "2026-04-06",
-      "last_seen": "2026-04-11",
-      "category": "promotional",
-      "subjects": [
-        "Funds could hit your account in days!",
-        "Loans for as little as $100",
-        "Alexander, need $ to help with bills?"
-      ]
-    },
-    "failed-payments@runwayml.com": {
+  "action_required": [
+    {
+      "action": "Fix payment method on Runway AI account",
+      "amount": "$157.32",
       "count": 8,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-04-11",
-      "category": "payment_failure_alert",
-      "severity": "high",
-      "action": "URGENT - fix payment method",
+      "first_failure": "2026-04-05",
+      "issue": "Recurring payment failures",
+      "last_failure": "2026-04-11",
+      "sender": "failed-payments@runwayml.com"
+    }
+  ],
+  "tracked_senders": {
+    "\"abell, alex\" <abellao@ornl.gov>": {
+      "count": 4,
+      "last_seen": "2026-04-09T18:06:37.758550",
       "subjects": [
-        "$157.32 payment unsuccessful",
-        "$157.32 payment unsuccessful again",
-        "$157.32 payment unsuccessful",
-        "$157.32 payment to Runway AI, Inc. was unsuccessful again",
-        "$157.32 payment to Runway AI, Inc. was unsuccessful"
-      ]
-    },
-    "email@email.monarch.com": {
-      "count": 6,
-      "first_seen": "2026-04-03",
-      "last_seen": "2026-04-10",
-      "category": "app_notification",
-      "subjects": [
-        "Transactions need review",
-        "You have 2 new updates",
-        "Transactions need review",
-        "You have 2 new updates",
-        "Transactions need review",
-        "\ud83d\udce5 Transactions need review in Monarch"
-      ]
-    },
-    "turbotax <turbotax@intuit.com>": {
-      "count": 2,
-      "last_seen": "2026-04-09T18:06:37.758518",
-      "subjects": [
-        "Add docs to continue",
-        "Your TurboTax Live expert sent you a new message"
-      ]
-    },
-    "runway <no-reply@comms.runwayml.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758460",
-      "subjects": [
-        "Seedance 2.0 is here."
+        "Fw: [EXTERNAL] Secure link to log in to Claude.ai |  2026-04-07 09:41:21",
+        "(no subject)",
+        "Fw: Risk Identification \u2013 AC-7 Control Gap (Workstations Enclave / ORNL.gov Domain)",
+        "Colonoscopy / Endoscopy"
       ]
     },
     "\"alexander abell via otter.ai\" <no-reply@otter.ai>": {
@@ -141,27 +33,6 @@
         "Meeting Summary for Focus time"
       ]
     },
-    "capital one <capitalone@notification.capitalone.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758468",
-      "subjects": [
-        "See your latest review from CreditWise"
-      ]
-    },
-    "knox county schools via parentsquare <donotreply+e48d94d9-950c-5e64-b5a5-fb67efeb7b5b@parentsquare.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758471",
-      "subjects": [
-        "Hall Pass Newsletter April 9, 2026"
-      ]
-    },
-    "state farm <statefarmservice@statefarmservice.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758475",
-      "subjects": [
-        "You updated your personal information"
-      ]
-    },
     "\"betterhelp.com\" <noreply@betterhelp.com>": {
       "count": 2,
       "last_seen": "2026-04-10",
@@ -170,18 +41,300 @@
         "Journal reminder for April 10, we have a suggestion for you"
       ]
     },
-    "jobber grants <grants@getjobber.com>": {
+    "\"brick & mortar properties via tenant turner\" <email@ttleadmail.com>": {
+      "category": "archived_noise",
       "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758481",
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "\ud83d\udca1 What would $100,000 unlock in your business?"
+        "Viewing Accepted for 1416 Myart Lane"
       ]
     },
-    "ornl federal credit union <news@info.ornlfcu.com>": {
+    "\"miles & more\" <mail@mailing.milesandmore.com>": {
+      "category": "archived_noise",
       "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758484",
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "Hustle Hard, File Easy. Lock in Your Discount!"
+        "Happy Birthday!"
+      ]
+    },
+    "\"runway ai, inc.\" <upcoming-invoice@runwayml.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758526",
+      "subjects": [
+        "Your Runway AI, Inc. subscription will renew soon"
+      ]
+    },
+    "\"thrizer  help\"@thrizer.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "You have been charged by Chelsea Rothschild"
+      ]
+    },
+    "USPSInformeddelivery@email.informeddelivery.usps.com": {
+      "category": "routine_notification",
+      "count": 5,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-09",
+      "subjects": [
+        "Daily Digest",
+        "Daily Digest",
+        "Daily Digest",
+        "Daily Digest",
+        "Daily Digest"
+      ]
+    },
+    "alex vindman for senate <info@e.alexvindman.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "If you knew\u2026"
+      ]
+    },
+    "allison rosenberg <admin@themuseknoxville.org>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758529",
+      "subjects": [
+        "Muse For All Luncheon - April 7 @ 11:30 AM"
+      ]
+    },
+    "amazon pharmacy <no-reply@pharmacy.amazon.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758502",
+      "subjects": [
+        "We're sorry. Your order has been canceled."
+      ]
+    },
+    "amy at turno <amy@turno.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Behind the Shine is back, Instant Payouts update, and tax tips"
+      ]
+    },
+    "auto-reply@usps.com": {
+      "category": "archived_noise",
+      "count": 2,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "USPS\u00ae Expected Delivery on Friday, April 10, 2026 arriving by 4:10pm 9361289724262906169516",
+        "USPS\u00ae Expected Delivery on Friday, April 10, 2026 Between 9:15am and 1:15pm 9361289724262906169516"
+      ]
+    },
+    "avieabell@gmail.com": {
+      "category": "archived_noise",
+      "count": 3,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Updated invitation: Avie School Musical @ Thu Apr 9, 2026 6pm - 7:30pm (EDT) (avieabell@gmail.com)",
+        "Updated invitation: Avie School Musical @ Thu Apr 9, 2026 6pm - 6:30pm (EDT) (avieabell@gmail.com)"
+      ]
+    },
+    "birthdays@promptemr.com": {
+      "category": "archived_noise",
+      "count": 2,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Happy Birthday from Florida Wellness Medical Group",
+        "Happy Birthday from East Tennessee Spine and Sport (Lenoir City)"
+      ]
+    },
+    "capital one <capitalone@notification.capitalone.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758468",
+      "subjects": [
+        "See your latest review from CreditWise"
+      ]
+    },
+    "carta <no-reply@carta.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758505",
+      "subjects": [
+        "You requested a password reset"
+      ]
+    },
+    "chick-fil-a <info@notifications.chick-fil-a.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Important updates to the Chick-fil-A One\u00ae Terms & Conditions, Chick-fil-A\u2019s Terms and Conditions of Use, and Privacy Policy"
+      ]
+    },
+    "chris hodge <hodge@daysheets.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Welcome to Daysheets"
+      ]
+    },
+    "confirmation@e-confirmation.dominos.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your Domino's Order"
+      ]
+    },
+    "contact@e.kamalaharris.com": {
+      "category": "newsletter",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "LaMonica McIver"
+      ]
+    },
+    "crysta johnson <cjohnson@ornlfcu.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758556",
+      "subjects": [
+        "Mortgage Inquiry"
+      ]
+    },
+    "delta air lines <deltaairlines@t.delta.com>": {
+      "count": 2,
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your eCredit"
+      ]
+    },
+    "dominos@dominosemail.smg.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your Chance to Win a $25 Domino\u2019s e-Gift Card!"
+      ]
+    },
+    "donotreply+6bd8c212-e69b-5973-9304-bedfb2e01178@parentsquare.com": {
+      "count": 3,
+      "last_seen": "2026-04-12",
+      "subjects": [
+        "Musical Performance Pictures",
+        "Pictures/ Highlights",
+        "Second Grade Musical"
+      ]
+    },
+    "donotreply+9e0137ff-5aa3-5d48-89fd-ce496e66a697@parentsquare.com": {
+      "category": "school_notification",
+      "count": 2,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-12",
+      "subjects": [
+        "ABC Countdown to Summer",
+        "ABC Countdown to Summer Daily Themes"
+      ]
+    },
+    "donotreply+9f2a1b8e-7071-594f-a1a9-10232140d0da@parentsquare.com": {
+      "category": "archived_noise",
+      "count": 3,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-12",
+      "subjects": [
+        "Tomorrow's MUSICAL details & T-shirts Information",
+        "2nd Grade Musical Update: Performance Begins Tomorro",
+        "Thank You for Your Support in a Successful Musical"
+      ]
+    },
+    "donotreply+f5b9f81e-1921-53fe-9a8d-027d263dac34@parentsquare.com": {
+      "category": "archived_noise",
+      "count": 5,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-12",
+      "subjects": [
+        "Spring Individual Pictures this Thursday, April 9! Pre-Pay Only",
+        "2nd Grade Musical T-Shirts - Urgent!",
+        "One Book Read City is Coming on Sunday, April 12th",
+        "BHS Dawgathon Carnival this Saturday, April 11th!",
+        "Brief Lockdown at RHES This Morning"
+      ]
+    },
+    "ella@smokymatchmaker.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Happy Birthday! \ud83c\udf89"
+      ]
+    },
+    "email@email.monarch.com": {
+      "category": "app_notification",
+      "count": 8,
+      "first_seen": "2026-04-03",
+      "last_seen": "2026-04-12",
+      "subjects": [
+        "Transactions need review",
+        "You have 2 new updates",
+        "Transactions need review",
+        "You have 2 new updates",
+        "Transactions need review",
+        "\ud83d\udce5 Transactions need review in Monarch",
+        "\ud83d\udcb2 Fun Money budget update in Monarch"
+      ]
+    },
+    "failed-payments@runwayml.com": {
+      "action": "URGENT - fix payment method",
+      "category": "payment_failure_alert",
+      "count": 8,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-11",
+      "severity": "high",
+      "subjects": [
+        "$157.32 payment unsuccessful",
+        "$157.32 payment unsuccessful again",
+        "$157.32 payment unsuccessful",
+        "$157.32 payment to Runway AI, Inc. was unsuccessful again",
+        "$157.32 payment to Runway AI, Inc. was unsuccessful"
+      ]
+    },
+    "haleyformi@substack.com": {
+      "category": "newsletter",
+      "count": 6,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "Events worth stepping",
+        "I'll never stay quiet",
+        "Republicans think they've already won",
+        "Hell no.",
+        "I\u2019ll never stay quiet in the face of antisemitism",
+        "A love letter to Michigan"
+      ]
+    },
+    "hello@tailscale.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Updates to Tailscale\u2019s pricing and packaging"
+      ]
+    },
+    "hi@sudowrite.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "\ud83d\udc9f We're Hiring! (Full-time, Freelance, & Gigs) + What's New"
       ]
     },
     "ifit <keepmoving@m.ifit.com>": {
@@ -191,11 +344,79 @@
         "Come back and run with Rivs!"
       ]
     },
-    "delta air lines <deltaairlines@t.delta.com>": {
+    "importantinformation@brf.empowermyretirement.com": {
+      "category": "routine_notification",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "Disclosure About Your Retirement Plan"
+      ]
+    },
+    "info@e.alexvindman.com": {
+      "category": "political_newsletter",
+      "count": 9,
+      "first_seen": "2026-04-02",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "An explanation",
+        "Statistically tied",
+        "My friend, Hector Mujica",
+        "If you knew",
+        "Exhausting",
+        "If you knew\u2026",
+        "My decision\u2026"
+      ]
+    },
+    "info@piper-communications.com": {
+      "category": "promotional",
       "count": 2,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-08",
+      "subjects": [
+        "LIVESTREAM: Knox County Mayoral Forum",
+        "LAST CALL! Register for the Knox County Mayoral Forum"
+      ]
+    },
+    "info@wasteheadquarters.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
       "last_seen": "2026-04-10",
       "subjects": [
-        "Your eCredit"
+        "Introducing Motion Picture House: Radiohead's KID A MNESIA movie and art installation"
+      ]
+    },
+    "inmail-hit-reply@linkedin.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "You're Invited: Exclusive CRO Leadership Opportunity"
+      ]
+    },
+    "intuit <do_not_reply@intuit.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your Intuit code"
+      ]
+    },
+    "jobber grants <grants@getjobber.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758481",
+      "subjects": [
+        "\ud83d\udca1 What would $100,000 unlock in your business?"
+      ]
+    },
+    "josh avant <notifications@github.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758544",
+      "subjects": [
+        "Re: [openclaw/openclaw] v2026.3.28: CLI validator rejects valid messages.tts.elevenlabs config (Issue #57314)"
       ]
     },
     "katie mixon <katie@themuseknoxville.org>": {
@@ -206,66 +427,207 @@
         "Muse for All Luncheon Details"
       ]
     },
-    "amazon pharmacy <no-reply@pharmacy.amazon.com>": {
+    "kevin from dex <kevin@app.getdex.com>": {
+      "category": "archived_noise",
       "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758502",
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "We're sorry. Your order has been canceled."
+        "Dex Premium has been canceled"
       ]
     },
-    "carta <no-reply@carta.com>": {
+    "kevin@app.getdex.com": {
+      "category": "archived_noise",
       "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758505",
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "You requested a password reset"
+        "Finding time for people \u231b"
       ]
     },
-    "\"abell, alex\" <abellao@ornl.gov>": {
-      "count": 4,
-      "last_seen": "2026-04-09T18:06:37.758550",
+    "knox county schools via parentsquare <donotreply+e48d94d9-950c-5e64-b5a5-fb67efeb7b5b@parentsquare.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758471",
       "subjects": [
-        "Fw: [EXTERNAL] Secure link to log in to Claude.ai |  2026-04-07 09:41:21",
-        "(no subject)",
-        "Fw: Risk Identification \u2013 AC-7 Control Gap (Workstations Enclave / ORNL.gov Domain)",
-        "Colonoscopy / Endoscopy"
+        "Hall Pass Newsletter April 9, 2026"
+      ]
+    },
+    "labcorp patient <labcorppatient@labcorpservicemessage.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your lab test results are ready."
+      ]
+    },
+    "levi from simply <play@piano.hellosimply.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "\ud83c\udfb5 See your weekly highlights from Simply Piano"
+      ]
+    },
+    "linq connect <noreply@linq.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "LINQ Connect: Payment Receipt"
+      ]
+    },
+    "mgm rewards <mgmrewards@ee.mgmresorts.com>": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Baseball Season is Back, Vegas-Style"
+      ]
+    },
+    "minutecliniccare@alerts.cvs.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "A new visit summary is available"
       ]
     },
     "monarch <email@email.monarch.com>": {
+      "category": "app_notification",
       "count": 7,
+      "first_seen": "2026-04-11",
       "last_seen": "2026-04-11",
       "subjects": [
         "\ud83d\udce5 Transactions need review in Monarch",
         "\u2728 You have 2 new updates in Monarch"
-      ],
+      ]
+    },
+    "nest@renewhome.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your Monthly Recap for March"
+      ]
+    },
+    "no-reply@account.canva.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Your Canva invoice"
+      ]
+    },
+    "no-reply@is.email.nextdoor.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "Top post: Took my grandson fishing at Anchor Park in Farragut last night,..."
+      ]
+    },
+    "no-reply@kalshi.com": {
+      "category": "archived_noise",
+      "count": 1,
       "first_seen": "2026-04-11",
-      "category": "app_notification"
-    },
-    "turbotax <turbotax@em2.turbotax.intuit.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758514",
+      "last_seen": "2026-04-11",
       "subjects": [
-        "Action Required: Upload your tax documents by April 8"
+        "A quick guide to risk management"
       ]
     },
-    "turbotax customer service <turbotax@notification.intuit.com>": {
+    "no-reply@legal.spotify.com": {
+      "category": "archived_noise",
       "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758521",
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
       "subjects": [
-        "Confirming you've started your taxes"
+        "Have you added your Family plan members?"
       ]
     },
-    "\"runway ai, inc.\" <upcoming-invoice@runwayml.com>": {
+    "no-reply@mailings.ticketmaster.dk": {
+      "category": "archived_noise",
       "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758526",
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "Your Runway AI, Inc. subscription will renew soon"
+        "Din LIVE-guide \ud83c\udfb6 \ud83c\udfad \ud83c\udfab  AIRTOX FACEOFF, Ternet Ninja Live og meget mere!"
       ]
     },
-    "allison rosenberg <admin@themuseknoxville.org>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758529",
+    "no-reply@salonultimate.com": {
+      "category": "promotional",
+      "count": 3,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-11",
       "subjects": [
-        "Muse For All Luncheon - April 7 @ 11:30 AM"
+        "Introducing Motion Picture House - Radiohead",
+        "Ready for Sparkle? Ear Piercing",
+        "April Showers Bring New Hairstyles! \u2614\ud83c\udf38\u2702\ufe0f"
+      ]
+    },
+    "no_reply@email.apple.com": {
+      "count": 1,
+      "last_seen": "2026-04-12",
+      "subjects": [
+        "Your subscription has been extended"
+      ]
+    },
+    "noreply@betterhelp.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "Journal reminder for April 11, we have a suggestion for you"
+      ]
+    },
+    "noreply@mail.stagent.com": {
+      "category": "app_notification",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "Finish setting up your account with Stagent"
+      ]
+    },
+    "noreply@skool.com": {
+      "category": "archived_noise",
+      "count": 1,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "You don\u2019t need a course"
+      ]
+    },
+    "notify@me.sh": {
+      "category": "archived_noise",
+      "count": 2,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "\u26ab\ufe0f Daily Brief - April 09, 2026",
+        "\u26ab\ufe0f Daily Brief - April 06, 2026"
+      ]
+    },
+    "ornl federal credit union <news@info.ornlfcu.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758484",
+      "subjects": [
+        "Hustle Hard, File Easy. Lock in Your Discount!"
+      ]
+    },
+    "ornl federal credit union <noreply@cardfraudalerts.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758553",
+      "subjects": [
+        "URGENT: Please Verify Recent Account Activity"
       ]
     },
     "parkmobile <noreply@alerts.parkmobile.io>": {
@@ -277,557 +639,217 @@
         "Your parking session has started"
       ]
     },
-    "josh avant <notifications@github.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758544",
+    "partners@iemail.moneylion.com": {
+      "category": "promotional",
+      "count": 3,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-11",
       "subjects": [
-        "Re: [openclaw/openclaw] v2026.3.28: CLI validator rejects valid messages.tts.elevenlabs config (Issue #57314)"
+        "Funds could hit your account in days!",
+        "Loans for as little as $100",
+        "Alexander, need $ to help with bills?"
       ]
     },
-    "ornl federal credit union <noreply@cardfraudalerts.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758553",
-      "subjects": [
-        "URGENT: Please Verify Recent Account Activity"
-      ]
-    },
-    "crysta johnson <cjohnson@ornlfcu.com>": {
-      "count": 1,
-      "last_seen": "2026-04-09T18:06:37.758556",
-      "subjects": [
-        "Mortgage Inquiry"
-      ]
-    },
-    "ella@smokymatchmaker.com": {
+    "rachel@turno.com": {
+      "category": "archived_noise",
       "count": 1,
       "first_seen": "2026-04-10",
       "last_seen": "2026-04-10",
-      "category": "archived_noise",
       "subjects": [
-        "Happy Birthday! \ud83c\udf89"
+        "\u2728 One week until Insurance Essentials: Protect your cleaning business \ud83d\udee1\ufe0f"
       ]
     },
-    "dominos@dominosemail.smg.com": {
+    "runway <no-reply@comms.runwayml.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758460",
+      "subjects": [
+        "Seedance 2.0 is here."
+      ]
+    },
+    "shawn k miller <smiller@vandykmortgage.com>": {
+      "category": "archived_noise",
       "count": 1,
       "first_seen": "2026-04-10",
       "last_seen": "2026-04-10",
-      "category": "archived_noise",
       "subjects": [
-        "Your Chance to Win a $25 Domino\u2019s e-Gift Card!"
+        "Celebrating  you Alexander!"
       ]
     },
-    "hi@sudowrite.com": {
+    "state farm <statefarmservice@statefarmservice.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758475",
+      "subjects": [
+        "You updated your personal information"
+      ]
+    },
+    "support@updates.greenlight.com": {
+      "category": "promotional",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "Alexander, time to activate your card."
+      ]
+    },
+    "team alex vindman <info@e.alexvindman.com>": {
+      "category": "archived_noise",
       "count": 1,
       "first_seen": "2026-04-10",
       "last_seen": "2026-04-10",
-      "category": "archived_noise",
       "subjects": [
-        "\ud83d\udc9f We're Hiring! (Full-time, Freelance, & Gigs) + What's New"
+        "5 days. 5 reasons. $5."
       ]
     },
-    "confirmation@e-confirmation.dominos.com": {
+    "team@learn.mail.monday.com": {
+      "category": "promotional",
+      "count": 3,
+      "first_seen": "2026-04-06",
+      "last_seen": "2026-04-10",
+      "subjects": [
+        "New AI app from monday.com's ceo",
+        "Using AI for creative thinking"
+      ]
+    },
+    "team@mail.perplexity.ai": {
+      "category": "app_notification",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
+      "subjects": [
+        "You\u2019ve received credits"
+      ]
+    },
+    "the eye group <info@marketing.aegvision.com>": {
+      "category": "archived_noise",
       "count": 1,
       "first_seen": "2026-04-10",
       "last_seen": "2026-04-10",
-      "category": "archived_noise",
       "subjects": [
-        "Your Domino's Order"
+        "Happy Birthday, Alexander! We have a gift for you..."
       ]
     },
-    "no-reply@mailings.ticketmaster.dk": {
+    "turbotax <turbotax@em2.turbotax.intuit.com>": {
       "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
+      "last_seen": "2026-04-09T18:06:37.758514",
       "subjects": [
-        "Din LIVE-guide \ud83c\udfb6 \ud83c\udfad \ud83c\udfab  AIRTOX FACEOFF, Ternet Ninja Live og meget mere!"
+        "Action Required: Upload your tax documents by April 8"
       ]
     },
-    "notify@me.sh": {
+    "turbotax <turbotax@intuit.com>": {
       "count": 2,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
+      "last_seen": "2026-04-09T18:06:37.758518",
       "subjects": [
-        "\u26ab\ufe0f Daily Brief - April 09, 2026",
-        "\u26ab\ufe0f Daily Brief - April 06, 2026"
+        "Add docs to continue",
+        "Your TurboTax Live expert sent you a new message"
       ]
     },
-    "noreply@skool.com": {
+    "turbotax customer service <turbotax@notification.intuit.com>": {
+      "count": 1,
+      "last_seen": "2026-04-09T18:06:37.758521",
+      "subjects": [
+        "Confirming you've started your taxes"
+      ]
+    },
+    "usps informed delivery <uspsinformeddelivery@email.informeddelivery.usps.com>": {
+      "category": "archived_noise",
       "count": 1,
       "first_seen": "2026-04-10",
       "last_seen": "2026-04-10",
-      "category": "archived_noise",
       "subjects": [
-        "You don\u2019t need a course"
+        "Your Daily Digest for Fri, 4/10 is ready to view"
       ]
     },
-    "hello@tailscale.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
+    "uspsinformeddelivery@email.informeddelivery.usps.com": {
       "category": "archived_noise",
-      "subjects": [
-        "Updates to Tailscale\u2019s pricing and packaging"
-      ]
-    },
-    "info@wasteheadquarters.com": {
       "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
       "subjects": [
-        "Introducing Motion Picture House: Radiohead's KID A MNESIA movie and art installation"
-      ]
-    },
-    "\"thrizer  help\"@thrizer.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "You have been charged by Chelsea Rothschild"
+        "Your Daily Digest for Sat, 4/11 is ready to view"
       ]
     },
     "venmo@venmo.com": {
+      "category": "archived_noise",
       "count": 3,
       "first_seen": "2026-04-10",
       "last_seen": "2026-04-11",
-      "category": "archived_noise",
       "subjects": [
         "Hannah Aldridge commented on a payment between you and Hannah Aldridge",
         "You paid Marshall goldman $200.00",
         "Your March 2026 transaction history"
       ]
     },
-    "nest@renewhome.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Your Monthly Recap for March"
-      ]
-    },
-    "avieabell@gmail.com": {
-      "count": 3,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Updated invitation: Avie School Musical @ Thu Apr 9, 2026 6pm - 7:30pm (EDT) (avieabell@gmail.com)",
-        "Updated invitation: Avie School Musical @ Thu Apr 9, 2026 6pm - 6:30pm (EDT) (avieabell@gmail.com)"
-      ]
-    },
-    "no-reply@is.email.nextdoor.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Top post: Took my grandson fishing at Anchor Park in Farragut last night,..."
-      ]
-    },
-    "no-reply@account.canva.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Your Canva invoice"
-      ]
-    },
-    "donotreply+9f2a1b8e-7071-594f-a1a9-10232140d0da@parentsquare.com": {
-      "count": 2,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Tomorrow's MUSICAL details & T-shirts Information",
-        "2nd Grade Musical Update: Performance Begins Tomorro"
-      ]
-    },
-    "rachel@turno.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "\u2728 One week until Insurance Essentials: Protect your cleaning business \ud83d\udee1\ufe0f"
-      ]
-    },
-    "kevin@app.getdex.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Finding time for people \u231b"
-      ]
-    },
-    "minutecliniccare@alerts.cvs.com": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "A new visit summary is available"
-      ]
-    },
-    "donotreply+f5b9f81e-1921-53fe-9a8d-027d263dac34@parentsquare.com": {
-      "count": 2,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Spring Individual Pictures this Thursday, April 9! Pre-Pay Only",
-        "2nd Grade Musical T-Shirts - Urgent!"
-      ]
-    },
-    "yourprovider@simplepractice.com": {
-      "count": 3,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "New billing document from Heart Connected Healing, PLLC"
-      ]
-    },
-    "mgm rewards <mgmrewards@ee.mgmresorts.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Baseball Season is Back, Vegas-Style"
-      ]
-    },
-    "amy at turno <amy@turno.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Behind the Shine is back, Instant Payouts update, and tax tips"
-      ]
-    },
-    "youtube <no-reply@youtube.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Euphoria Season 3 premieres this Sunday \ud83d\udc8e"
-      ]
-    },
-    "linq connect <noreply@linq.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "LINQ Connect: Payment Receipt"
-      ]
-    },
-    "the eye group <info@marketing.aegvision.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Happy Birthday, Alexander! We have a gift for you..."
-      ]
-    },
-    "\"miles & more\" <mail@mailing.milesandmore.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Happy Birthday!"
-      ]
-    },
-    "chick-fil-a <info@notifications.chick-fil-a.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Important updates to the Chick-fil-A One\u00ae Terms & Conditions, Chick-fil-A\u2019s Terms and Conditions of Use, and Privacy Policy"
-      ]
-    },
-    "auto-reply@usps.com": {
-      "count": 2,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "USPS\u00ae Expected Delivery on Friday, April 10, 2026 arriving by 4:10pm 9361289724262906169516",
-        "USPS\u00ae Expected Delivery on Friday, April 10, 2026 Between 9:15am and 1:15pm 9361289724262906169516"
-      ]
-    },
-    "birthdays@promptemr.com": {
-      "count": 2,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Happy Birthday from Florida Wellness Medical Group",
-        "Happy Birthday from East Tennessee Spine and Sport (Lenoir City)"
-      ]
-    },
-    "levi from simply <play@piano.hellosimply.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "\ud83c\udfb5 See your weekly highlights from Simply Piano"
-      ]
-    },
-    "shawn k miller <smiller@vandykmortgage.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Celebrating  you Alexander!"
-      ]
-    },
-    "team alex vindman <info@e.alexvindman.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "5 days. 5 reasons. $5."
-      ]
-    },
-    "usps informed delivery <uspsinformeddelivery@email.informeddelivery.usps.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Your Daily Digest for Fri, 4/10 is ready to view"
-      ]
-    },
-    "chris hodge <hodge@daysheets.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Welcome to Daysheets"
-      ]
-    },
-    "alex vindman for senate <info@e.alexvindman.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "If you knew\u2026"
-      ]
-    },
-    "intuit <do_not_reply@intuit.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Your Intuit code"
-      ]
-    },
-    "kevin from dex <kevin@app.getdex.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Dex Premium has been canceled"
-      ]
-    },
-    "labcorp patient <labcorppatient@labcorpservicemessage.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Your lab test results are ready."
-      ]
-    },
-    "\"brick & mortar properties via tenant turner\" <email@ttleadmail.com>": {
-      "count": 1,
-      "first_seen": "2026-04-10",
-      "last_seen": "2026-04-10",
-      "category": "archived_noise",
-      "subjects": [
-        "Viewing Accepted for 1416 Myart Lane"
-      ]
-    },
-    "team@mail.perplexity.ai": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
-      "category": "app_notification",
-      "subjects": [
-        "You\u2019ve received credits"
-      ]
-    },
-    "contact@e.kamalaharris.com": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
-      "category": "newsletter",
-      "subjects": [
-        "LaMonica McIver"
-      ]
-    },
-    "importantinformation@brf.empowermyretirement.com": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
-      "category": "routine_notification",
-      "subjects": [
-        "Disclosure About Your Retirement Plan"
-      ]
-    },
-    "donotreply+9e0137ff-5aa3-5d48-89fd-ce496e66a697@parentsquare.com": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
-      "category": "school_notification",
-      "subjects": [
-        "ABC Countdown to Summer"
-      ]
-    },
-    "noreply@mail.stagent.com": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
-      "category": "app_notification",
-      "subjects": [
-        "Finish setting up your account with Stagent"
-      ]
-    },
-    "support@updates.greenlight.com": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
-      "category": "promotional",
-      "subjects": [
-        "Alexander, time to activate your card."
-      ]
-    },
     "website@huggingface.co": {
-      "count": 1,
-      "last_seen": "2026-04-11",
-      "first_seen": "2026-04-11",
       "category": "security_notice",
+      "count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-04-11",
       "subjects": [
         "New login to your Hugging Face account"
       ]
     },
-    "inmail-hit-reply@linkedin.com": {
-      "count": 1,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-04-11",
+    "yourprovider@simplepractice.com": {
       "category": "archived_noise",
+      "count": 3,
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "You're Invited: Exclusive CRO Leadership Opportunity"
+        "New billing document from Heart Connected Healing, PLLC"
       ]
     },
-    "noreply@betterhelp.com": {
-      "count": 1,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-04-11",
+    "youtube <no-reply@youtube.com>": {
       "category": "archived_noise",
-      "subjects": [
-        "Journal reminder for April 11, we have a suggestion for you"
-      ]
-    },
-    "no-reply@kalshi.com": {
       "count": 1,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-04-11",
-      "category": "archived_noise",
+      "first_seen": "2026-04-10",
+      "last_seen": "2026-04-10",
       "subjects": [
-        "A quick guide to risk management"
-      ]
-    },
-    "no-reply@legal.spotify.com": {
-      "count": 1,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-04-11",
-      "category": "archived_noise",
-      "subjects": [
-        "Have you added your Family plan members?"
-      ]
-    },
-    "uspsinformeddelivery@email.informeddelivery.usps.com": {
-      "count": 1,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-04-11",
-      "category": "archived_noise",
-      "subjects": [
-        "Your Daily Digest for Sat, 4/11 is ready to view"
+        "Euphoria Season 3 premieres this Sunday \ud83d\udc8e"
       ]
     }
   },
   "unsubscribe_candidates": [
     {
-      "sender": "\"alexander abell via otter.ai\" <no-reply@otter.ai>",
+      "action": "review",
       "category": "archived_noise",
       "reason": "5+ archived emails in recent triage history",
-      "action": "review"
+      "sender": "\"alexander abell via otter.ai\" <no-reply@otter.ai>"
     },
     {
-      "sender": "USPSInformeddelivery@email.informeddelivery.usps.com",
+      "action": "review",
       "category": "routine_notification",
       "reason": "5+ archived emails in recent triage history",
-      "action": "review"
+      "sender": "USPSInformeddelivery@email.informeddelivery.usps.com"
     },
     {
-      "sender": "email@email.monarch.com",
+      "action": "review",
       "category": "app_notification",
       "reason": "5+ archived emails in recent triage history",
-      "action": "review"
+      "sender": "email@email.monarch.com"
     },
     {
-      "sender": "haleyformi@substack.com",
+      "action": "unsubscribe",
       "category": "newsletter",
       "reason": "5+ archived emails in recent triage history",
-      "action": "unsubscribe"
+      "sender": "haleyformi@substack.com"
     },
     {
-      "sender": "info@e.alexvindman.com",
+      "action": "unsubscribe",
       "category": "political_newsletter",
       "reason": "5+ archived emails in recent triage history",
-      "action": "unsubscribe"
+      "sender": "info@e.alexvindman.com"
     },
     {
-      "sender": "monarch <email@email.monarch.com>",
+      "action": "review",
       "category": "app_notification",
       "reason": "5+ archived emails in recent triage history",
-      "action": "review"
+      "sender": "monarch <email@email.monarch.com>"
     },
     {
-      "sender": "parkmobile <noreply@alerts.parkmobile.io>",
+      "action": "review",
       "category": "archived_noise",
       "reason": "5+ archived emails in recent triage history",
-      "action": "review"
+      "sender": "parkmobile <noreply@alerts.parkmobile.io>"
     }
   ],
-  "action_required": [
-    {
-      "sender": "failed-payments@runwayml.com",
-      "issue": "Recurring payment failures",
-      "count": 8,
-      "first_failure": "2026-04-05",
-      "last_failure": "2026-04-11",
-      "amount": "$157.32",
-      "action": "Fix payment method on Runway AI account"
-    }
-  ]
+  "updated": "2026-04-11T18:00:00-04:00"
 }

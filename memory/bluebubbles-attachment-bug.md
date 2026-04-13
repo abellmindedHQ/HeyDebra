@@ -1,104 +1,89 @@
 # BlueBubbles Attachment Bug — Diagnostic Report
 
-**Status:** 🔴 BLOCKING — Images/files not appearing in conversation context  
+**Status:** 🔴 CONFIRMED UPSTREAM BUG — Fix on `main` but NOT in any release (as of 2026.4.11)  
 **Date Identified:** 2026-04-09  
-**Severity:** HIGH — Core messaging feature broken  
-**Workaround:** Text-only messages work; use text descriptions for images
+**Updated:** 2026-04-12 (definitive root cause confirmed)  
+**Severity:** HIGH — All inbound iMessage images silently dropped  
+**Workaround:** Polling script (see below) OR wait for next OpenClaw release
 
 ---
 
-## Root Cause (Confirmed)
+## Root Cause (Definitive)
 
-BlueBubbles webhooks ARE being dispatched successfully from the server, but **OpenClaw's webhook parser rejects them as "unable to parse message payload"**.
+**Two stacked bugs:**
 
-### Evidence
-- **BB Server Log:** "[WebhookService] Dispatching event to webhook: http://127.0.0.1:18789/bluebubbles-webhook-debra" ✅
-- **OpenClaw Log:** "[bluebubbles] webhook rejected: unable to parse message payload" ❌
+### Bug 1: `mediaPaths is not defined` (ReferenceError)
+- Present in BB plugin webhook handler (`channel.runtime-BSXlY6sk.js`)
+- Caused every webhook with attachments to crash with `[plugins] plugin http route failed (bluebubbles): ReferenceError: mediaPaths is not defined`
+- **Fixed** by OpenClaw 2026.4.11 update + gateway restart (no longer appears after 11:27 AM Apr 12)
 
-### Technical Details
+### Bug 2: SSRF Guard Blocks Attachment Downloads (THE REAL BLOCKER)
+- After Bug 1 is fixed, messages get through but **media files are never downloaded**
+- The `fetchRemoteMedia()` function applies strict SSRF policy that blocks `127.0.0.1` and all RFC1918 IPs
+- Zero download errors logged — the download simply doesn't execute
+- Agent generates `tool-attachments/image-1-<uuid>.png` references but the file is never written
+- **Error:** `[tools] image failed: Local media file not found: /Users/debra/.openclaw/media/tool-attachments/image-1-*.png`
 
-**Location:** `/opt/homebrew/lib/node_modules/openclaw/dist/channel.runtime-BSXlY6sk.js` (line 2096)
+### Upstream Fix Status
+- **GitHub Issues:** #34749, #26831, #24457, #24948
+- **Fix commits:** `7d9397099b` and `dd41a78` (merged to `main`)
+- **Fix approach:** Auto-allowlist the configured BB `serverUrl` hostname for SSRF policy
+- **NOT in any release** as of 2026.4.11. Monitor releases for inclusion.
 
-**Failure Point:** `normalizeWebhookMessage(payload)` returns `null`
+### Why `allowPrivateNetwork` Config Doesn't Work
+The BB plugin manifest has `configSchema: { type: "object", additionalProperties: false, properties: {} }`. Any custom config keys (including `allowPrivateNetwork`) are **silently rejected** by schema validation. The key was removed from our config on Apr 12.
 
-```javascript
-const message = reaction ? null : normalizeWebhookMessage(payload);
-if (!message && !reaction) {
-    res.statusCode = 400;
-    res.end("invalid payload");
-    console.warn("[bluebubbles] webhook rejected: unable to parse message payload");
-    return true;
-}
+---
+
+## Evidence Timeline (Apr 12)
+
+| Time | Event |
+|------|-------|
+| 10:35–11:27 | `mediaPaths is not defined` errors (Bug 1) |
+| ~11:27 | Gateway restarted; Bug 1 stops |
+| 12:50 | Config hot-reload, BB channel restarts |
+| 12:52–13:13 | `image failed: Local media file not found` (Bug 2 — files never downloaded) |
+
+- `media/tool-attachments/` — empty (files never written)
+- `media/inbound/` — last file from Apr 6 (worked before SSRF regression ~v2026.2.20)
+
+---
+
+## Workaround Options
+
+### Option A: Install Pre-Release (if available)
+```bash
+npm install -g openclaw@next
+openclaw gateway restart
 ```
+The fix is on `main` — a pre-release channel may include it.
 
-**Root Issue:** The `extractMessagePayload()` function in `/opt/homebrew/lib/node_modules/openclaw/dist/monitor-normalize-DBiB1PcA.js` (line 914) cannot find the message structure in BlueBubbles' webhook payload.
+### Option B: BB API Polling Script
+A local script that polls BB API for new attachments and downloads them directly, bypassing OpenClaw's SSRF guard. See `workspace/scripts/bb-attachment-poll.js` (if created).
 
-The function tries to extract from:
-```javascript
-const data = parseRecord(payload.data ?? payload.payload ?? payload.event);
-const message = parseRecord(payload.message ?? data?.message ?? data);
-```
-
-But **BlueBubbles' actual payload structure doesn't match these paths**.
+### Option C: Wait for Next Release
+Monitor https://github.com/openclaw/openclaw/releases for a version that includes commits `7d93970` or `dd41a78`.
 
 ---
 
-## Attempted Workarounds
+## Config State (Clean)
 
-### Approach 1: Message Transformer Proxy ✅ Created
-- Built `/tmp/bb-transformer.js` (Node.js proxy on port 18790)
-- Listens for BB webhooks and transforms them
-- **Status:** Created but **not integrated** (needs BB webhook config update to point to transformer)
-- **Blocker:** Can't modify BB webhook configuration without direct DB access
-
-### Approach 2: OpenClaw Code Patching ❌ Not Feasible
-- Compiled/minified channel runtime not directly editable
-- Would require OpenClaw source rebuild or plugin API (doesn't exist for this layer)
-
-### Approach 3: Verbose Logging ⏳ Pending
-- Attempted to enable debug logging to capture actual BB payload structure
-- **Next step:** Extract raw webhook payload and reverse-engineer BB's structure
+After cleanup on Apr 12:
+- Removed all `allowPrivateNetwork: true` keys (schema-rejected, no effect)
+- Removed `network.dangerouslyAllowPrivateNetwork` (not a real config key)
+- Reverted `serverUrl` to `127.0.0.1` (LAN IP made no difference since SSRF blocks both)
+- `mediaLocalRoots` kept as-is (needed for local file access once downloads work)
 
 ---
 
-## Next Steps (If Time/Priority Permits)
+## Files & References
 
-1. **Capture raw BB payload** 
-   - Intercept webhook at gateway before processing
-   - Log raw JSON to understand BB's structure
-   
-2. **Propose OpenClaw patch**
-   - File issue with OpenClaw team: `monitor-normalize-DBiB1PcA.js` line 914
-   - Submit PR to add BB payload structure support
-   
-3. **Upstream Fix Timeline**
-   - OpenClaw v2026.4.10+ may include a fix
-   - Monitor releases at https://github.com/anthropics/openclaw
+- Config: `~/.openclaw/openclaw.json`
+- Gateway err log: `~/.openclaw/logs/gateway.err.log`
+- Gateway main log: `~/.openclaw/logs/gateway.log`
+- BB Server: `http://127.0.0.1:1234` (Debra), `http://127.0.0.1:1235` (Alex)
+- GitHub: openclaw/openclaw#34749, #26831, #24457
 
 ---
 
-## Impact
-
-- ❌ Image/file attachments not surfacing in conversation context
-- ❌ Screenshots from user not visible to Debra
-- ✅ Text messages work fine
-- ✅ iMessages still being logged (just not displayed in conversation)
-
-## Workaround for User
-
-Until fixed, users must:
-1. Send image + text description ("Here's a screenshot of...")
-2. Or send via alternate channel (email, Slack, etc.) and reference in text
-
----
-
-## Files & Logs
-
-- Transformer proxy: `/tmp/bb-transformer.js`
-- BB Server log: `~/Library/Logs/bluebubbles-server/main.log`
-- OpenClaw log: `/tmp/openclaw/openclaw-2026-04-09.log`
-- Config: `/Users/debra/.openclaw/openclaw.json`
-
----
-
-**Logged by:** Debra | **Time spent:** 90+ minutes | **Resolution:** Pending OpenClaw upstream fix
+**Logged by:** Claude (Cowork session with Alex) | **Time spent:** 3+ hours across sessions | **Resolution:** Awaiting upstream release

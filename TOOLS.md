@@ -28,9 +28,11 @@ Things like:
 
 ### Tailscale
 - Account: alexander.o.abell@gmail.com
-- Mac mini: 100.69.97.27 (debras-mac-mini)
-- iPhone: 100.107.105.126 (iphone172)
-- OpenClaw accessible at: http://debras-mac-mini:18789 from any tailnet device
+- Mac mini: 100.124.139.13 (debras-mac-mini-1)
+- iPhone: 100.107.105.126 (iphone172) — offline since Apr 4
+- Daemon: Homebrew-managed (`brew services start tailscale`), GUI app is just a frontend
+- ⚠️ Gateway bind is currently `loopback` — NOT accessible via tailnet. Change `gateway.bind` to `tailnet` in openclaw.json to expose over tailnet.
+- Old `debras-mac-mini` entry (100.69.97.27) was removed from tailnet admin on Apr 12
 
 ### ⚠️ Claude Code git reset Bug (Learned 2026-03-29)
 - Claude Code v2.1.87 silently runs `git reset --hard origin/main` every ~10 min
@@ -95,7 +97,7 @@ Things like:
 
 - Server: localhost:1234 (same machine)
 - Group chats: open policy, requireMention for unknown groups
-- ⚠️ **Attachment bug:** I can't automatically see images/files you send. Workaround: when you send media, tell me and I'll fetch manually via BB API
+- ⚠️ **Attachment bug (CONFIRMED — awaiting upstream fix):** Inbound iMessage images are silently dropped. Two bugs: (1) `mediaPaths is not defined` ReferenceError — fixed by 2026.4.11 restart. (2) SSRF guard blocks all attachment downloads from localhost/private IPs — fix is on OpenClaw `main` (commits 7d93970, dd41a78) but NOT in any release as of 2026.4.11. The `allowPrivateNetwork` config key does nothing (schema rejects it). Monitor releases or try `openclaw@next`. See memory/bluebubbles-attachment-bug.md for full diagnostic.
 - Known chats (auto-discovered from BB API, keep updated):
   - Hannah (Alex+Hannah): any;+;chat284576019517930648 | +16158101319
   - Chelsea (Alex+Chelsea): any;+;a96e1f6eaaba404abd15b7b1a1a1cdea | +16159745363

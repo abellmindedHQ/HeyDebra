@@ -19,7 +19,7 @@
 - **Search memory before asking Alex.** If the answer is in memory files, don't make him repeat himself.
 
 ## Key Infrastructure
-- **Primary model: openai/gpt-5.4** (changed Apr 9, was anthropic/claude-sonnet-4-6). Fallback: haiku.
+- **Primary model: openrouter/auto** (changed Apr 16, was openai/gpt-5.4). Fallback: haiku.
 - 1Password: alex@abellminded.com, Personal vault. Mac password: "Debra's Mac Mini Login"
 - Neo4j: localhost:7474/7687, neo4j/secondbrain2026
 - Obsidian vault: /Users/debra/SecondBrain/
@@ -29,6 +29,7 @@
 - Things 3: CLI via `things`, syncs via Things Cloud. Linear for dev, Things for life.
 - OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
 - **Gemini API:** Subject to 403 PERMISSION_DENIED. Single point of failure — takes down BOTH web_search AND memory_search simultaneously. Need fallback strategy.
+- **Paperclip AI:** Installed Apr 16. Config at ~/.paperclip/instances/default/config.json. Server: 127.0.0.1:3100. Embedded Postgres on port 54329. LLM provider not yet configured. Start with `npx paperclipai onboard --yes`.
 
 ## People
 - **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
@@ -65,6 +66,7 @@
 - VisionClaw / Ray-Ban Meta (needs Xcode build)
 - ChatGPT Re-Import: COMPLETE (346 convos)
 - Google Takeout: downloaded, NOT YET processed
+- Paperclip AI: installed Apr 16, server running, needs LLM provider config
 
 ## BB Attachment Bug (Apr 8-9)
 - Attachments detected intermittently (sometimes 0, sometimes correct count)
@@ -83,6 +85,9 @@
 - PWFA protections from day one. NO FMLA eligibility.
 - Don't disclose during hiring, disclose after first trimester (~late June)
 - TennCare covers prenatal/delivery. Fort Sanders OBGYN: (865) 524-3208
+
+## People (cont.)
+- **Hannah Aldridge Gmail**: hannahaldridgemusic@gmail.com (security concern raised Apr 16, check for unauthorized access)
 
 ## Pending Action Items (Alex)
 - Adobe subscription: update payment method

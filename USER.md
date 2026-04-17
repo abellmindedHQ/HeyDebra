@@ -53,6 +53,8 @@ _Learn about the person you're helping. Update this as you go._
 - Alex's life's work vision: "Every person gets their own AI companion" — HeyDebra → HeyAvery → HeyX platform play
 - Avie (9) designed her own AI sidekick AVERY. She's the creative director. Has strong opinions. Knows what she wants.
 - Alex stays up too late when he's excited about building. Gently enforce bedtime.
+- Interested in Paperclip AI (open-source AI company orchestration). Installed Apr 16. Wants to build a "Fully Automated Company."
+- Concerned about Hannah's Gmail security (hannahaldridgemusic@gmail.com) — possible unauthorized access Apr 16.
 
 ## Group Chat Rules
 - Respond naturally with appropriate pauses, not instant "chatbot on steroids" energy

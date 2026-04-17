@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-16T22:50:05.249Z",
+  "entries": {
+    "memory:memory/2026-03-29.md:27:59": {
+      "key": "memory:memory/2026-03-29.md:27:59",
+      "path": "memory/2026-03-29.md",
+      "startLine": 27,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "### v0 API — WORKING ✅ - v0 SDK installed, API key from 1Password (\"v0 API Key\") - Key: stored in 1Password, starts with v1:team_bxVTqTm9Bt88TBpOllJinIqR - First test: generated login page with proper Google OAuth button, warm amber theme - Full 9-page design prompt written: projects/holdplease/docs/v0-design-prompt.md - Sent landing page prompt, got 11 files back (hero, navbar, features, stats, etc.) - **v0 ran out of credits** before finishing login + dashboard - v0 plan needs separate upgrade from Vercel Pro - Chat ID: vTUAH0cLA9C, Demo: https://demo-kzmofof2itfxsn784rpy.vusercontent.net ### Cron Cleanup - Deleted 10 stale/disabled one-shot crons (old tests from 3/22-3/27) - 20 jobs rema",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44853609204292294,
+      "maxScore": 0.44853609204292294,
+      "firstRecalledAt": "2026-04-16T14:13:26.127Z",
+      "lastRecalledAt": "2026-04-16T14:13:26.127Z",
+      "queryHashes": [
+        "609d5f817ef3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "team-bxvtqtm9bt88tbpolljiniqr",
+        "9-page",
+        "stale/disabled",
+        "one-shot",
+        "3/22-3/27",
+        "api",
+        "working",
+        "sdk"
+      ]
+    },
+    "memory:memory/2026-03-30.md:182:210": {
+      "key": "memory:memory/2026-03-30.md:182:210",
+      "path": "memory/2026-03-30.md",
+      "startLine": 182,
+      "endLine": 210,
+      "source": "memory",
+      "snippet": "- Created LaunchAgent for OpenClaw Chrome auto-start on boot (com.openclaw.browser.plist) - Cranked up settings: 175/session, 500/day, 1-3s delays, 60 min timeout - 4 daily runs: 10am, 12pm, 2pm, 4pm weekdays - Auto-chain: when batch empties, generate next 200 and keep going - At 700/day potential, ~2 weeks to clear everything - **Lesson**: Chrome 136+ blocks --remote-debugging-port on default user data dir. Always use profile=openclaw ### Voice Notes Pipeline — BUILT - AssemblyAI account set up, API key in DEBRA vault - voice-notes-processor skill created with full pipeline: - process-audio.py (single file) - process-backlog.py (bulk) - watch-folder.py (continuous watcher) - Drop fol",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44850884675979613,
+      "maxScore": 0.44850884675979613,
+      "firstRecalledAt": "2026-04-16T14:13:26.127Z",
+      "lastRecalledAt": "2026-04-16T14:13:26.127Z",
+      "queryHashes": [
+        "609d5f817ef3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "auto-start",
+        "com.openclaw.browser.plist",
+        "175/session",
+        "500/day",
+        "1-3s",
+        "auto-chain",
+        "700/day",
+        "remote-debugging-port"
+      ]
+    },
+    "memory:memory/2026-03-22.md:120:132": {
+      "key": "memory:memory/2026-03-22.md:120:132",
+      "path": "memory/2026-03-22.md",
+      "startLine": 120,
+      "endLine": 132,
+      "source": "memory",
+      "snippet": "- Hannah is a musician (Alex mentioned \"dating a musician\" re: anxiety) - Hannah has great banter energy, tests boundaries playfully (asked me to help hide a body, buy Xanax, spy on Alex) - She appreciated me clarifying I can't hear their convos, only chat logs - She said \"not telling you shit\" after I mentioned having logs - good humor about it - Hannah is getting them on a health kick - cutting Cokes, wanting healthier chip options ## Honeydo List for Alex (from Hannah's photo) 1. Organize tools and roof 2. Email Lufthansa 3. Fix wooden legs on tables 4. Return air freshener 5. Look at May trip time off/dates so Hannah can plan",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48240227103233335,
+      "maxScore": 0.48240227103233335,
+      "firstRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "queryHashes": [
+        "f18d87a031c3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "off/dates",
+        "hannah",
+        "musician",
+        "alex",
+        "mentioned",
+        "dating",
+        "anxiety",
+        "has"
+      ]
+    },
+    "memory:memory/2026-03-30.md:140:166": {
+      "key": "memory:memory/2026-03-30.md:140:166",
+      "path": "memory/2026-03-30.md",
+      "startLine": 140,
+      "endLine": 166,
+      "source": "memory",
+      "snippet": "- Items in DEBRA vault: AssemblyAI API Key, BlueBubbles password, and other essentials - This means no more needing to unlock 1Password desktop app manually! ### Voice Note to Angie - Alex asked me to respond to Angie's group chat with a voice note - **MISTAKE**: Sent to wrong chat (Jay + Alex) instead of (Alex + Angie). Unsent it. - Lesson: Always confirm chat GUID before sending. Angie's chat is d4333767f9534f77ab1356e31263b030 - Angie's number: (865) 335-8853 — wasn't in my contacts, should have looked it up - **Lesson**: ALWAYS look up contacts via gog contacts when I don't have a number ### Mike Shell / Google Messages Bridge - Mike Shell: (865) 742-2288, Android user, King of Search",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47422190606594083,
+      "maxScore": 0.47422190606594083,
+      "firstRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "queryHashes": [
+        "f18d87a031c3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "335-8853",
+        "742-2288",
+        "items",
+        "debra",
+        "vault",
+        "assemblyai",
+        "api",
+        "key"
+      ]
+    },
+    "memory:memory/2026-03-22.md:108:123": {
+      "key": "memory:memory/2026-03-22.md:108:123",
+      "path": "memory/2026-03-22.md",
+      "startLine": 108,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "- Hannah requested removing: berry yogurt cups, Tostitos scoops, overnight oats, shrimp & grits, Eggo minis, Oreo cookie pack (done) - Hannah requested removing Cokes (both regular & zero mini cans), subbing Fresca 12pk (done) - Hannah requested removing Kettle Brand S&V chips, wanted healthier S&V option. Added Harvest Snaps but she wanted actual S&V flavor. Final decision: put Kettle Brand S&V back (PENDING - Kroger rate limited me) - Hannah requested adding limes, wants 3 for the $2 deal (added 1, need 2 more - PENDING) - Kroger rate limited/blocked me after too many rapid requests. Cart showed \"unavailable\" items glitch. Need to retry later. - Final cart state before glitch: ~40 items, ~",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47371369600296015,
+      "maxScore": 0.47371369600296015,
+      "firstRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "queryHashes": [
+        "f18d87a031c3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "limited/blocked",
+        "hannah",
+        "requested",
+        "removing",
+        "berry",
+        "yogurt",
+        "cups",
+        "tostitos"
+      ]
+    },
+    "memory:memory/2026-03-22.md:91:110": {
+      "key": "memory:memory/2026-03-22.md:91:110",
+      "path": "memory/2026-03-22.md",
+      "startLine": 91,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "- Updated SOUL.md with group chat behavior rules. ## Key Configs Changed Today - tools.exec: security=full, ask=off - tools.elevated: enabled, allowFrom bluebubbles+webchat - channels.bluebubbles: serverUrl=localhost:1234, groupPolicy=open, mediaLocalRoots added - agents.defaults.memorySearch: provider=gemini with API key - messages.tts: provider=elevenlabs with voiceId and apiKey - Neo4j password: secondbrain2026 (stored in config, should move to 1Password) ## Kroger Grocery Shopping Session (Evening) - Hannah is Alex's girlfriend. She was in Australia (Melbourne) flying back to LA, ~14hr flight landing ~7am LA time Mon - Hannah's Kroger login: hannah4828@yahoo.com (she shared it in group",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47261547744274135,
+      "maxScore": 0.47261547744274135,
+      "firstRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "queryHashes": [
+        "f18d87a031c3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "tools.exec",
+        "tools.elevated",
+        "channels.bluebubbles",
+        "agents.defaults.memorysearch",
+        "messages.tts",
+        "yahoo.com",
+        "updated"
+      ]
+    },
+    "memory:memory/2026-03-28.md:94:111": {
+      "key": "memory:memory/2026-03-28.md:94:111",
+      "path": "memory/2026-03-28.md",
+      "startLine": 94,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "- **Hannah's mom = Anne.** Hannah's dad was Walt Aldridge (legendary Muscle Shoals songwriter, passed Nov 2025). Anne's birthday is March 29. Alex at Union Ave Books getting a gift. Recommended Muscle Shoals book, Edna Lewis cookbook, or Mary Oliver poetry. - **Roxanne Abell** email found re: NDA + app — Slicon Systems pitching her $8K to build a spiritual guidance app. She wants Alex's tech opinion. 31 days unanswered. Alex needs a moment to process this one. ### David Byrne Instagram DM - Drafted and sent (by Alex manually) a DM to @davidbyrneofficial thanking him for the show - Referenced \"This Must Be the Place\" hitting different with Hannah's pregnancy news - Included link to Hannah's",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46835666000843046,
+      "maxScore": 0.46835666000843046,
+      "firstRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "queryHashes": [
+        "f18d87a031c3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "hannah's",
+        "mom",
+        "anne",
+        "dad",
+        "was",
+        "walt",
+        "aldridge",
+        "legendary"
+      ]
+    }
+  }
+}

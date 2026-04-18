@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T22:50:05.249Z",
+  "updatedAt": "2026-04-18T03:31:45.124Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -217,6 +217,382 @@
         "walt",
         "aldridge",
         "legendary"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1:9": {
+      "key": "memory:memory/2026-04-16.md:1:9",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "# 2026-04-16 Debra Session Log and Memory Flush ## Activity Summary - **Paperclip AI Setup:** Successfully installed Paperclip AI (`npx paperclipai onboard --yes`) and confirmed it's running at `http://127.0.0.1:3100`. Resolved issues with incorrect directory paths and non-responsive processes. Recurring reminder cron set for weekday 9am. - **Hannah's Gmail Security:** Investigated potential unauthorized access to `hannahaldridgemusic@gmail.com`. Provided instructions for Alex/Hannah to check security logs and review recent activity. Image attachment failed, so email address was provided manually. No resolution yet on identifying suspicious activity. - **Password Check:** Searched workspace",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9638284474611282,
+      "maxScore": 0.4985539674758911,
+      "firstRecalledAt": "2026-04-17T12:41:25.781Z",
+      "lastRecalledAt": "2026-04-18T03:31:44.651Z",
+      "queryHashes": [
+        "88ce052b1117",
+        "bcc39411eccf"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "non-responsive",
+        "gmail.com",
+        "alex/hannah",
+        "debra",
+        "log",
+        "flush",
+        "activity"
+      ]
+    },
+    "memory:memory/2026-04-16.md:8:17": {
+      "key": "memory:memory/2026-04-16.md:8:17",
+      "path": "memory/2026-04-16.md",
+      "startLine": 8,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "- **QMD Re-Index:** Completed as scheduled at 4 AM ET on 2026-04-16. Processed updates across 13 collections (People, Projects, Concepts, Reflections, Meetings, Conversations, Debra-memory, Resources). - **Email Triage:** Blocked by `gog` CLI flag issues. Cannot fetch/process Gmail inbox. Reported status and awaiting flag confirmation or workaround. - **Capture Agent:** Ran, but iMessage scan failed due to BB authentication (401 Unauthorized). Email scan yielded no actionable items. Re-run recommended after BB credentials are refreshed. - **WhatsApp Gateway:** Experiencing frequent disconnects (status 499) every ~30 minutes, but auto-reconnecting. ## Key Lessons Learned/Reinforced - **Paper",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.169967781643839,
+      "maxScore": 0.7330012938785273,
+      "firstRecalledAt": "2026-04-17T12:41:25.781Z",
+      "lastRecalledAt": "2026-04-18T03:31:45.124Z",
+      "queryHashes": [
+        "88ce052b1117",
+        "3d9a0696e53b",
+        "bcc39411eccf",
+        "68c4b24be572"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "qmd",
+        "re-index",
+        "debra-memory",
+        "fetch/process",
+        "re-run",
+        "auto-reconnecting",
+        "learned/reinforced"
+      ]
+    },
+    "memory:memory/2026-04-03.md:50:84": {
+      "key": "memory:memory/2026-04-03.md:50:84",
+      "path": "memory/2026-04-03.md",
+      "startLine": 50,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "4. OpenClaw task brain concept (structured task tracking built into agent infra) 5. Home Assistant 2026.4 released 6. Neo4j Aura Agent capability updates 7. CC Skills 2.0 patterns 8. AI compute economics (training/inference cost trends) - 3 reflection issues: process narration still #1 failure, proposal backlog growing, Sallijo scheduling pattern - 5 proposals staged (1 HIGH, 1 MEDIUM, 3 LOW) — ALL need Alex's review post-Boston - Memory verification: 7/8 passed, 1 stale (AssemblyAI credits — still depleted) - No changes auto-applied this cycle. ### FIFA World Cup 2026 Monitor (Apr 2) - Alex wants Atlanta tickets (Mercedes-Benz Stadium) - Last-Minute Sales opened Apr 1, Resale Mar",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4575312286615371,
+      "maxScore": 0.4575312286615371,
+      "firstRecalledAt": "2026-04-17T12:41:29.009Z",
+      "lastRecalledAt": "2026-04-17T12:41:29.009Z",
+      "queryHashes": [
+        "3d9a0696e53b"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "2026.4",
+        "2.0",
+        "training/inference",
+        "post-boston",
+        "7/8",
+        "auto-applied",
+        "mercedes-benz",
+        "last-minute"
+      ]
+    },
+    "memory:memory/2026-03-23.md:1:28": {
+      "key": "memory:memory/2026-03-23.md:1:28",
+      "path": "memory/2026-03-23.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# 2026-03-23 ## Session Continuity Issue (Morning) - Alex texted from iMessage asking about Night Swimming cron results - iMessage session had NO context from last night's TUI session because: - Both use the same `agent:main:main` session key (dmScope: \"main\") - BUT the 4am daily session reset created a fresh session ID - So last night's TUI context was gone from active memory - FIX: Memory files ARE the bridge. Previous-me should have written to daily memory before session ended. - LESSON: Always write important context to memory files, especially before end of day. The session resets, but memory files persist. ## Night Swimming Cron Results (from last night 3/22) All cron jobs ran",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4789362788200378,
+      "maxScore": 0.4789362788200378,
+      "firstRecalledAt": "2026-04-18T03:31:37.728Z",
+      "lastRecalledAt": "2026-04-18T03:31:37.728Z",
+      "queryHashes": [
+        "3ada2ce4d69b"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "previous-me",
+        "3/22",
+        "continuity",
+        "issue",
+        "morning",
+        "alex",
+        "texted",
+        "imessage"
+      ]
+    },
+    "memory:memory/2026-04-09.md:160:181": {
+      "key": "memory:memory/2026-04-09.md:160:181",
+      "path": "memory/2026-04-09.md",
+      "startLine": 160,
+      "endLine": 181,
+      "source": "memory",
+      "snippet": "- Gemini web search confirmed DOWN: 403 PERMISSION_DENIED on Google Cloud project - **Config change:** Switched primary model from anthropic/claude-sonnet-4-6 to openai/gpt-5.4 - Fallback remains anthropic/claude-haiku-4-5 - OpenAI auth profile (openai:default) was auto-detected by doctor - Gateway restarted to apply - Note: existing sessions keep their model; new sessions pick up the change - Alex's evening: Avie musical was at 6pm, Chelsea therapy also at 6pm (conflict flagged in GSD report) - No resolution reported on: ORNL FCU fraud, Roxanne NDA, Muse Luncheon ## Background Systems (Overnight) - Email GTD triage ran at 6:06 PM: 118 emails processed, 38 archived, 5 urgent (Runwa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49039613306522367,
+      "maxScore": 0.49039613306522367,
+      "firstRecalledAt": "2026-04-18T03:31:44.651Z",
+      "lastRecalledAt": "2026-04-18T03:31:44.651Z",
+      "queryHashes": [
+        "bcc39411eccf"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gpt",
+        "openai",
+        "permission-denied",
+        "anthropic/claude-sonnet-4-6",
+        "openai/gpt-5.4",
+        "anthropic/claude-haiku-4-5",
+        "auto-detected"
+      ]
+    },
+    "memory:memory/2026-04-12.md:16:26": {
+      "key": "memory:memory/2026-04-12.md:16:26",
+      "path": "memory/2026-04-12.md",
+      "startLine": 16,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "- HoldPlease Monday 7am Lufthansa retry is still queued for Apr 13. - LLM export processor ran successfully but found no new provider export folders, so there was no Night Swimming conversation ingest tonight. - Current stack state at reset: model openai/gpt-5.4, gateway 2026.4.9, crons healthy, BlueBubbles attachment ingestion still intermittent. - Dream Cycle proposal backlog is still substantial (18+), with notable items around Claude Code update, AGENTS clarification on cron vs authorization, dream cycle delivery format, and escalation for stale items. ## QMD re-index cron - 4:00 AM EDT - Ran `qmd update` across 13 collections, then `qmd embed`. - Update results: people 65 updated, proj",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48653614819049834,
+      "maxScore": 0.48653614819049834,
+      "firstRecalledAt": "2026-04-18T03:31:44.651Z",
+      "lastRecalledAt": "2026-04-18T03:31:44.651Z",
+      "queryHashes": [
+        "bcc39411eccf"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gpt",
+        "openai",
+        "qmd",
+        "openai/gpt-5.4",
+        "2026.4.9",
+        "re-index",
+        "holdplease"
+      ]
+    },
+    "memory:memory/2026-03-24.md:296:326": {
+      "key": "memory:memory/2026-03-24.md:296:326",
+      "path": "memory/2026-03-24.md",
+      "startLine": 296,
+      "endLine": 326,
+      "source": "memory",
+      "snippet": "- TCCHS Class of 2003 confirmed ### Contact Sync to drdebrapepper - drdebrapepper@gmail.com added as test user in Google Cloud Console - gog auth completed for drdebrapepper contacts - Sync subagent timed out before copying contacts, needs retry ### Google Messages / RCS Setup - Google Messages skill installed from ClawHub - Browser paired with Android phone via QR code - SMS webhook server running on port 19888 - SMS observer injected into browser tab - Send works (tested with Pooja), inbound observer needs verification ### Screen Capture Working - screencapture command works (node has Screen Capture permission) - Terminal has Accessibility permission - Can see Mac mini desktop via scree",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48887219130992887,
+      "maxScore": 0.48887219130992887,
+      "firstRecalledAt": "2026-04-18T03:31:44.886Z",
+      "lastRecalledAt": "2026-04-18T03:31:44.886Z",
+      "queryHashes": [
+        "bc83c674a2b5"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "gmail.com",
+        "tcchs",
+        "class",
+        "confirmed",
+        "contact",
+        "sync",
+        "drdebrapepper",
+        "added"
+      ]
+    },
+    "memory:memory/2026-03-25.md:49:77": {
+      "key": "memory:memory/2026-03-25.md:49:77",
+      "path": "memory/2026-03-25.md",
+      "startLine": 49,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "- BB Server bug #773: isAudioMessage=true + private-api produces broken 0-second voice bubbles on macOS Tahoe - OpenClaw issue #16848: auto-TTS pipeline only wires audioAsVoice for Telegram, not BlueBubbles - BB API endpoint: POST /api/v1/message/attachment with isAudioMessage=true + method=apple-script WORKS (plays audio correctly as CAF attachment, not bubble) - afconvert (macOS native) successfully creates proper CAF+opus: `afconvert input.mp3 output.caf -d opus -f caff -b 24000` - ffmpeg CANNOT create CAF+opus (not implemented) - BB upload endpoint works: POST /api/v1/attachment/upload - The fix requires changes in BB server's private-api audio message handler - OpenClaw needs 3 changes:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4867089867591858,
+      "maxScore": 0.4867089867591858,
+      "firstRecalledAt": "2026-04-18T03:31:44.886Z",
+      "lastRecalledAt": "2026-04-18T03:31:44.886Z",
+      "queryHashes": [
+        "bc83c674a2b5"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "private-api",
+        "0-second",
+        "auto-tts",
+        "api/v1/message/attachment",
+        "apple-script",
+        "input.mp3",
+        "output.caf",
+        "api/v1/attachment/upload"
+      ]
+    },
+    "memory:memory/2026-03-24.md:1:40": {
+      "key": "memory:memory/2026-03-24.md:1:40",
+      "path": "memory/2026-03-24.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-03-24 ## Session Start - Fresh session after 4am reset - Memory flush cron fired at 8:11 AM (late — was supposed to fire before reset) - Mac mini restarted at 1:45 AM last night (interrupted Night Swimming crons + pre-reset flush) - All March 23 context preserved in memory/2026-03-23.md ## Morning Infrastructure Work (8:11 AM - 10:18 AM) ### BlueBubbles Fixes - Webhook was pointing to local IP (192.168.4.49) — changed to localhost:18789 - Disabled Cloudflare tunnel (proxy_service set to \"none\") — not needed since BB and OpenClaw are on same machine - BB password: [stored in 1Password] ### Tailscale Setup ✅ - Installed on Mac mini and iPhone - Account: alexander.o.abell@gmail.com -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48491004705429075,
+      "maxScore": 0.48491004705429075,
+      "firstRecalledAt": "2026-04-18T03:31:44.886Z",
+      "lastRecalledAt": "2026-04-18T03:31:44.886Z",
+      "queryHashes": [
+        "bc83c674a2b5"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "pre-reset",
+        "memory/2026-03-23.md",
+        "192.168.4.49",
+        "proxy-service",
+        "alexander.o.abell",
+        "gmail.com",
+        "start",
+        "fresh"
+      ]
+    },
+    "memory:memory/2026-04-16.md:16:37": {
+      "key": "memory:memory/2026-04-16.md:16:37",
+      "path": "memory/2026-04-16.md",
+      "startLine": 16,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "- **Workspace Search:** Be specific with search terms (like \"hca\") and understand git object paths are not secrets. - **Dream Cycle:** Automated self-improvement is capturing key insights and proposing actionable changes for review. Guardrails for outbound communication and payment workflows were reinforced/implemented based on previous incidents. - **CLI Tooling Issues:** Encountered issues with `gog` flags and `pnpm` working directory. Requires environment-specific troubleshooting or workarounds. - **BlueBubbles Authentication:** Requires credential refresh for iMessage scanning to function. ## File Updates - active-context.md: Updated with session summary, Paperclip status, Hannah's Gmai",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7431811767455998,
+      "maxScore": 0.7431811767455998,
+      "firstRecalledAt": "2026-04-18T03:31:45.124Z",
+      "lastRecalledAt": "2026-04-18T03:31:45.124Z",
+      "queryHashes": [
+        "68c4b24be572"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "self-improvement",
+        "reinforced/implemented",
+        "environment-specific",
+        "active-context.md",
+        "specific",
+        "terms",
+        "like",
+        "hca"
+      ]
+    },
+    "memory:memory/2026-03-24.md:107:140": {
+      "key": "memory:memory/2026-03-24.md:107:140",
+      "path": "memory/2026-03-24.md",
+      "startLine": 107,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "- Archived 251 pieces of noise (newsletters, receipts, marketing, old notifications) - Remaining: payment failures, school stuff, personal emails, action items - Need to set up 3x daily cron to maintain ### Google Contacts Audit + Purge (IN PROGRESS) - Total contacts: 7,612 (81% junk LinkedIn/Dex imports) - Purge progress: 7,612 → 6,425 (rate limited by Google API) - Slow purge script needs approval to keep running - Target: get down to ~1,200 real contacts ### ORNL Claude Export Processed ✅ - 316 conversations (Nov 2024 - Mar 2026) - Crown jewels found: KBUDDS strategy (60 msgs), 636-msg ServiceNow PDI build, ADAPT 2026 initiative, Heart Connected Healing brand work - 31 Neo4j nodes creat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45361666977405546,
+      "maxScore": 0.45361666977405546,
+      "firstRecalledAt": "2026-04-18T03:31:45.124Z",
+      "lastRecalledAt": "2026-04-18T03:31:45.124Z",
+      "queryHashes": [
+        "68c4b24be572"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "linkedin/dex",
+        "636-msg",
+        "archived",
+        "pieces",
+        "noise",
+        "newsletters",
+        "receipts",
+        "marketing"
+      ]
+    },
+    "memory:memory/2026-04-01.md:131:154": {
+      "key": "memory:memory/2026-04-01.md:131:154",
+      "path": "memory/2026-04-01.md",
+      "startLine": 131,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "- Image scanning added: vision analysis of image attachments in iMessage for appointment/event extraction - iMessage → calendar auto-creation: detects appointment info and creates calendar events - Auto-archive resolved emails: checks Things 3 completed + session context, archives emails where action is done - Also added to night-swimming-email skill ### Things 3 Issues - Auth token needed for modifying/completing/deleting existing tasks - Currently write-only (can add, can't update) - Alex created Things 3 auth token, stored in Debra vault in 1Password - Items were added without area categories — fixed by re-adding with proper areas but created duplicates - Need auth token to clean up dupe",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45013102591037746,
+      "maxScore": 0.45013102591037746,
+      "firstRecalledAt": "2026-04-18T03:31:45.124Z",
+      "lastRecalledAt": "2026-04-18T03:31:45.124Z",
+      "queryHashes": [
+        "68c4b24be572"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "appointment/event",
+        "auto-creation",
+        "auto-archive",
+        "night-swimming-email",
+        "modifying/completing/deleting",
+        "write-only",
+        "re-adding",
+        "image"
       ]
     }
   }

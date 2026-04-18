@@ -1,12 +1,12 @@
-# PROJECTS.md - Status Update
+# PROJECTS.md
 
-- Be Particular: SECRET narrative project with Sallijo; awaiting outreach; next touchpoint TBD
-- VisionClaw/Ray-Ban Meta: Xcode build pending; check status
-- Night Swimming Cron: ORNL/Drive/Email/ChatGPT processing; running
-- Mirror: Consciousness expansion system; ongoing
-- Second Brain Pipeline v3: Embedding done; indexing pending
-- HeyDebra / HeyAvery: platform play in concept phase
-- Avie AI sidekick: AVERY; creative director; ongoing
-- Google Takeout: downloaded; processing pending
-- Action items: Alex payments and subscriptions review; Lufthansa email
-- Memory flush: End-of-Day reset completed today
+- Paperclip AI: Local server running at 127.0.0.1:3100. Integrated into Fully Automated Company concept. Follow-up every weekday 9am.
+- Google Takeout: Downloaded; processing pending.
+- Be Particular: Secret Sallijo touchpoints under consideration.
+- Dream cycle proposals: 5 staged for Alex review (Apr 16).
+- Hannah Gmail security: monitor for unauthorized access; action advised.
+- Adobe / Google / OpenAI / Citi payments: tracking and action items.
+- Avie: Spring Picture Day and ongoing AI sidekick project (Avery).
+- Paperclip: LLM provider config pending.
+- WhatsApp gateway: disconnect/reconnect rhythm; monitor.
+- ElevenLabs voices: configured for Debra and Avery.

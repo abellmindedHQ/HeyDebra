@@ -1,0 +1,10 @@
+🌙 Dream cycle ran last night
+
+Found 3 interesting things, reflected on 2 issues, proposing 3 changes.
+
+Top finds:
+• Claude Opus 4.7 enables longer runs with better memory and tool use
+• Local-first memory graphs are the future for privacy and performance
+• OpenAI Agents SDK sandboxing reduces risk for long-running tasks
+
+Proposals ready for review when you want em.

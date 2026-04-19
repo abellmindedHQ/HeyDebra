@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-18T03:31:45.124Z",
+  "updatedAt": "2026-04-19T07:30:23.564Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -593,6 +593,192 @@
         "write-only",
         "re-adding",
         "image"
+      ]
+    },
+    "memory:memory/2026-04-01.md:61:87": {
+      "key": "memory:memory/2026-04-01.md:61:87",
+      "path": "memory/2026-04-01.md",
+      "startLine": 61,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "- Read-only Alex iMessage: polling BB API vs webhook? Safety model? - Social DM pipelines: browser automation vs data export vs API? - Where do voice vectors and speaker identification fit? - How does this connect to Mirror's Registry concept? - Linear/Git/Cursor workflow integration - Meeting transcription pipeline (live + post-meeting) ### Feature Backlog (for Linear setup) - **TTS latency + quality optimization**: ElevenLabs voice quality is great but real-time delivery is laggy/disappointing. Need to benchmark alternatives, test streaming options, evaluate local TTS (Piper, Coqui) vs cloud. Track in Linear as a feature optimization. ### Dashboard Vision (for Linear/architecture session",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5061643928289413,
+      "maxScore": 0.5061643928289413,
+      "firstRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "queryHashes": [
+        "76243851281a"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "read-only",
+        "linear/git/cursor",
+        "post-meeting",
+        "real-time",
+        "laggy/disappointing",
+        "linear/architecture",
+        "read",
+        "only"
+      ]
+    },
+    "memory:memory/2026-04-01.md:166:194": {
+      "key": "memory:memory/2026-04-01.md:166:194",
+      "path": "memory/2026-04-01.md",
+      "startLine": 166,
+      "endLine": 194,
+      "source": "memory",
+      "snippet": "- Full transcript saved to SecondBrain/Meetings/2026-04-01-avie-ent-surgery-consult.md ### Alex Financial Context (NEW — important for USER.md) - Costco Visa LOCKED by Alex intentionally — spending discipline issue - Had bankruptcy at age 26 (early-mid 2000s) - Wants to build passive revenue streams - Goals: new car, buy a house, max out retirement savings - Plan: get airline points card (Chase Sapphire or Cap One Venture X), put recurring on it, YNAB as governor - Financial buildout task created for next week (Monarch + YNAB integration) - Monarch alert: Fun Money over by $69K (probably miscategorization) - Multiple overdue payments: VirtualDJ (x2), Netflix, Recraft, YMCA ### Tasks Create",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5052154392004012,
+      "maxScore": 0.5052154392004012,
+      "firstRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "queryHashes": [
+        "76243851281a"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "user.md",
+        "early-mid",
+        "full",
+        "transcript",
+        "saved",
+        "secondbrain",
+        "meetings",
+        "avie"
+      ]
+    },
+    "memory:memory/2026-04-01.md:81:108": {
+      "key": "memory:memory/2026-04-01.md:81:108",
+      "path": "memory/2026-04-01.md",
+      "startLine": 81,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **8:40am**: Avie ENT surgery consult at Children's ENT Northshore (DONE ✅) - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - **7:00pm**: Chelsea therapy (video, He",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5048712641000748,
+      "maxScore": 0.5048712641000748,
+      "firstRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "queryHashes": [
+        "76243851281a"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gpt",
+        "pre-reset",
+        "3/31",
+        "4/1",
+        "re-import",
+        "125/126",
+        "pre",
+        "reset"
+      ]
+    },
+    "memory:memory/2026-04-09.md:1:27": {
+      "key": "memory:memory/2026-04-09.md:1:27",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# April 9, 2026 — Session Log ## Morning (7:55 AM startup) - Gateway came back online after restart from Apr 8 debug logging attempt - 5 background tasks had been interrupted by the restart: 1. Email GTD processing (classified some emails, interrupted mid-run) 2. Email bulk cleanup (identified Runway AI, GitLab, ElevenLabs, Carta, Greenlight, Thrizer as important) 3. Contact sync (lost temp files, needs fresh fetch) 4. Voice memo/BB attachment debugging (was about to read code) 5. Pools research hunt (finished gathering, about to write findings) - LLM export processor completed: 666 conversations total in SecondBrain (Claude 139, Claude ORNL 316, ChatGPT ORNL 211) ## Immediate St",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5041818499565124,
+      "maxScore": 0.5041818499565124,
+      "firstRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "queryHashes": [
+        "76243851281a"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gpt",
+        "mid-run",
+        "memo/bb",
+        "april",
+        "log",
+        "morning",
+        "startup"
+      ]
+    },
+    "memory:memory/2026-04-01.md:1:44": {
+      "key": "memory:memory/2026-04-01.md:1:44",
+      "path": "memory/2026-04-01.md",
+      "startLine": 1,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "# 2026-04-01 — Daily Memory ## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - Chelsea therapy (video, Heart Connected Healing) - Avie pickup (Sallijo handling) ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5030522972345352,
+      "maxScore": 0.5030522972345352,
+      "firstRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "queryHashes": [
+        "76243851281a"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gpt",
+        "pre-reset",
+        "3/31",
+        "4/1",
+        "re-import",
+        "125/126",
+        "pre",
+        "reset"
+      ]
+    },
+    "memory:memory/2026-04-01.md:340:349": {
+      "key": "memory:memory/2026-04-01.md:340:349",
+      "path": "memory/2026-04-01.md",
+      "startLine": 340,
+      "endLine": 349,
+      "source": "memory",
+      "snippet": "- Boston: Thu-Sun (Apr 2-5). Flight 1426, 7:30am departure, boards 6:45am. Hannah 2A, Alex 2B, Avie 2C. All checked in. - Lipoma removal: Apr 20 (Mon), 9:30am, 90 min in-office procedure. Mark lipomas with Sharpie beforehand. - Avie surgery: Apr 22 (Wed), adenoidectomy. Hospital calls Apr 21 with time. On correct calendar (Avie Events & School) with both parents invited. ### Things Still Open Before Boston - VirtualDJ Pro + Video: overdue payments (cancel or update?) - Recraft: payment failed - Roxanne NDA/app email: 32 days unanswered - Leigh text: Avie missing Charlotte's party Apr 3 (Alex in Boston)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5002042472362518,
+      "maxScore": 0.5002042472362518,
+      "firstRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "queryHashes": [
+        "76243851281a"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "thu-sun",
+        "2-5",
+        "in-office",
+        "nda/app",
+        "boston",
+        "thu",
+        "sun",
+        "apr"
       ]
     }
   }

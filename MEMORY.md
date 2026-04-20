@@ -19,7 +19,7 @@
 - **Search memory before asking Alex.** If the answer is in memory files, don't make him repeat himself.
 
 ## Key Infrastructure
-- **Primary model: openrouter/auto** (changed Apr 16, was openai/gpt-5.4). Fallback: haiku.
+- **Primary model: anthropic/claude-opus-4-6** (changed Apr 19, was openrouter/auto). Alex wants Opus for ALL sessions until further notice. Fallback: haiku.
 - 1Password: alex@abellminded.com, Personal vault. Mac password: "Debra's Mac Mini Login"
 - Neo4j: localhost:7474/7687, neo4j/secondbrain2026
 - Obsidian vault: /Users/debra/SecondBrain/

@@ -162,7 +162,7 @@ Things like:
   - `resources` → ~/SecondBrain/Resources (5)
 - Search hierarchy: memory_search (workspace, fast) → qmd (vault-wide, semantic) → Neo4j (graph/relationships)
 - Commands: `qmd search` (BM25 keyword), `qmd vsearch` (semantic), `qmd query` (hybrid+rerank, needs reranker model)
-- Cron: daily re-index at 4am ET
+- Cron: daily re-index at 4am ET (last run: Apr 19, 2432 chunks / 356 docs, 2m53s)
 - Use `-c <collection>` to scope searches to specific collections
 
 ## Why Separate?

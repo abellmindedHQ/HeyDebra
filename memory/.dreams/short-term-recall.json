@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T07:30:23.564Z",
+  "updatedAt": "2026-04-20T03:34:45.723Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -102,18 +102,21 @@
       "endLine": 166,
       "source": "memory",
       "snippet": "- Items in DEBRA vault: AssemblyAI API Key, BlueBubbles password, and other essentials - This means no more needing to unlock 1Password desktop app manually! ### Voice Note to Angie - Alex asked me to respond to Angie's group chat with a voice note - **MISTAKE**: Sent to wrong chat (Jay + Alex) instead of (Alex + Angie). Unsent it. - Lesson: Always confirm chat GUID before sending. Angie's chat is d4333767f9534f77ab1356e31263b030 - Angie's number: (865) 335-8853 — wasn't in my contacts, should have looked it up - **Lesson**: ALWAYS look up contacts via gog contacts when I don't have a number ### Mike Shell / Google Messages Bridge - Mike Shell: (865) 742-2288, Android user, King of Search",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.47422190606594083,
-      "maxScore": 0.47422190606594083,
+      "totalScore": 1.829766261577606,
+      "maxScore": 0.4880170315504074,
       "firstRecalledAt": "2026-04-16T22:50:05.249Z",
-      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
       "queryHashes": [
-        "f18d87a031c3"
+        "f18d87a031c3",
+        "a06cce226670",
+        "3828ceaadf78"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-19"
       ],
       "conceptTags": [
         "335-8853",
@@ -664,15 +667,16 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **8:40am**: Avie ENT surgery consult at Children's ENT Northshore (DONE ✅) - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - **7:00pm**: Chelsea therapy (video, He",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5048712641000748,
-      "maxScore": 0.5048712641000748,
+      "totalScore": 1.2550328807608346,
+      "maxScore": 0.7501616166607599,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
       "queryHashes": [
-        "76243851281a"
+        "76243851281a",
+        "4f8bb40c8c4f"
       ],
       "recallDays": [
         "2026-04-19"
@@ -757,15 +761,19 @@
       "endLine": 349,
       "source": "memory",
       "snippet": "- Boston: Thu-Sun (Apr 2-5). Flight 1426, 7:30am departure, boards 6:45am. Hannah 2A, Alex 2B, Avie 2C. All checked in. - Lipoma removal: Apr 20 (Mon), 9:30am, 90 min in-office procedure. Mark lipomas with Sharpie beforehand. - Avie surgery: Apr 22 (Wed), adenoidectomy. Hospital calls Apr 21 with time. On correct calendar (Avie Events & School) with both parents invited. ### Things Still Open Before Boston - VirtualDJ Pro + Video: overdue payments (cancel or update?) - Recraft: payment failed - Roxanne NDA/app email: 32 days unanswered - Leigh text: Avie missing Charlotte's party Apr 3 (Alex in Boston)",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5002042472362518,
-      "maxScore": 0.5002042472362518,
+      "totalScore": 2.4272311210632322,
+      "maxScore": 0.5106335788965225,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
       "queryHashes": [
-        "76243851281a"
+        "76243851281a",
+        "34860293cdee",
+        "e450c1468ea2",
+        "cc8b9e4e8b0e",
+        "4f8bb40c8c4f"
       ],
       "recallDays": [
         "2026-04-19"
@@ -779,6 +787,726 @@
         "thu",
         "sun",
         "apr"
+      ]
+    },
+    "memory:memory/2026-03-25.md:210:245": {
+      "key": "memory:memory/2026-03-25.md:210:245",
+      "path": "memory/2026-03-25.md",
+      "startLine": 210,
+      "endLine": 245,
+      "source": "memory",
+      "snippet": "- Debra sent voice note of encouragement to Hannah in group chat ### David Byrne Tickets Purchased - Friday March 27, 9pm, Knoxville Civic Auditorium - Orchestra Left, Row G, Seats 205 and 207 (P2 tier) - Alex + Nick Hollensbe ### KBUDDS Group Chat Activated - Marshall Goldman (+18652504862): Allan Jones Aquatic Center Director, UT Athletics - Everett Hirche (+18653060896): Master machinist/fabricator, does metalwork for Scruffy City Hall, Preservation Pub - Chat GUID: any;+;26496e31a52b4d7091da7b17a5a1380d - Sent KBUDDS anthem voice note + comic book cover image - Marshall wants help finishing his comic book ### Jim Biggs Group Chat - Phone: +14153854794 - Chat GUID: any;+;5665413a1cdd49",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4964181959629059,
+      "maxScore": 0.4964181959629059,
+      "firstRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-04-19T14:59:56.863Z",
+      "queryHashes": [
+        "a06cce226670"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "machinist/fabricator",
+        "debra",
+        "sent",
+        "voice",
+        "encouragement",
+        "hannah",
+        "group",
+        "chat"
+      ]
+    },
+    "memory:memory/2026-03-30.md:204:232": {
+      "key": "memory:memory/2026-03-30.md:204:232",
+      "path": "memory/2026-03-30.md",
+      "startLine": 204,
+      "endLine": 232,
+      "source": "memory",
+      "snippet": "- Working on passive income with Nonprofit Champion biz - Partnering with someone using AI tools for lead gen (quizzes etc) - Set bi-weekly reminder cron (1st and 15th of each month at 10am) - Sent message in group thread (Alex + Merle) from Debra ### Apple Notes Export — IN PROGRESS - Alex has 200+ notes with embedded voice files in Apple Notes - Notes are on his iCloud, not accessible from Debra's Mac mini - Apple Shortcuts can't bulk export audio attachments (Apple limitation) - Options presented: A) Add iCloud to Mac mini temporarily, B) privacy.apple.com export, C) manual batch share - Recommended Option A. Waiting for Alex's decision. ### Contact Issues - Marshall Goldman and Everett",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0224946245551108,
+      "maxScore": 0.5271692857146263,
+      "firstRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-04-19T15:00:01.289Z",
+      "queryHashes": [
+        "a06cce226670",
+        "c5c9c4cd61f7"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "bi-weekly",
+        "privacy.apple.com",
+        "working",
+        "passive",
+        "income",
+        "nonprofit",
+        "champion",
+        "biz"
+      ]
+    },
+    "memory:memory/2026-03-24.md:267:304": {
+      "key": "memory:memory/2026-03-24.md:267:304",
+      "path": "memory/2026-03-24.md",
+      "startLine": 267,
+      "endLine": 304,
+      "source": "memory",
+      "snippet": "- Email GTD: 7am, 12pm, 6pm - Capture Agent: 7:30am, 2pm, 8pm - GSD Agent: 8am, 3pm - LinkedIn Cleanup: 10am daily (50/run) - Night Swimming: Sunday 9-10:30pm (contacts, drive, LLM, social) - Weaver: Sunday 11pm - Memory Flush: 3:30am x2 ### Hannah Europe Tour - Laid out both options (May 9-23 vs May 4-18) clean in group chat - Found significantly cheaper flights: potentially $655-850 vs Hannah's $1,865-2,300 - Booking legs separately on Orbitz/Travelocity saves major money ### Chelsea Breathwork - Replied to her breathwork article share, connected it to Mirror ### Pooja Introduction via RCS - Alex created group text (RCS) with Pooja Pendharkar (+13213562000) and Debra - Debra introduced",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49278798103332516,
+      "maxScore": 0.49278798103332516,
+      "firstRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-04-19T14:59:56.863Z",
+      "queryHashes": [
+        "a06cce226670"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "50/run",
+        "9-10",
+        "9-23",
+        "4-18",
+        "655-850",
+        "865-2",
+        "orbitz/travelocity",
+        "email"
+      ]
+    },
+    "memory:memory/2026-03-31.md:63:73": {
+      "key": "memory:memory/2026-03-31.md:63:73",
+      "path": "memory/2026-03-31.md",
+      "startLine": 63,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- Engaged actively with the ChatGPT import work and action item review - Asked good questions about the data quality and accuracy ## Pre-Reset State (3:30am) - All ChatGPT exports fully processed (personal + ORNL) - Voice notes pipeline complete - Google Takeout downloaded but not processed - Neo4j still down, Gemini still 429ing - 30 dream cycle proposals pending Alex review - Session context was manageable this time (no bloat complaints)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4893872648477554,
+      "maxScore": 0.4893872648477554,
+      "firstRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-04-19T14:59:56.863Z",
+      "queryHashes": [
+        "a06cce226670"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gpt",
+        "pre-reset",
+        "engaged",
+        "actively",
+        "the",
+        "chatgpt",
+        "import",
+        "action"
+      ]
+    },
+    "memory:memory/2026-04-01.md:285:303": {
+      "key": "memory:memory/2026-04-01.md:285:303",
+      "path": "memory/2026-04-01.md",
+      "startLine": 285,
+      "endLine": 303,
+      "source": "memory",
+      "snippet": "- **SYSTEM FIX:** built preflight.sh (pulls last 10 messages, shows pending requests, confirms GUID) - Finally completed the photo edit properly at Alex's request (grey+green shirts jacked, orange shirt obese, baby untouched). Used image_generate. Verified output before sending. ### Hannah Thread Incident (WORST ONE) - Sent 8+ narration messages to Alex's iMessage while debugging boarding pass PDFs - Dumped \"blank page\", \"hmm those file sizes\", internal process noise - Then accidentally sent process narration to Hannah's thread too: \"ok wait I totally lied about guessing those seats\" and \"I didn't have the Boston trip in my notes at ALL\" - Alex said \"this saddens me\" and \"the mess\" - Underm",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48878886997699733,
+      "maxScore": 0.48878886997699733,
+      "firstRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-04-19T14:59:56.863Z",
+      "queryHashes": [
+        "a06cce226670"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "preflight.sh",
+        "image-generate",
+        "system",
+        "fix",
+        "built",
+        "pulls",
+        "last",
+        "messages"
+      ]
+    },
+    "memory:memory/2026-03-26.md:34:66": {
+      "key": "memory:memory/2026-03-26.md:34:66",
+      "path": "memory/2026-03-26.md",
+      "startLine": 34,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "- Copied \"I Hired Someone Who Doesn't Exist\" to Obsidian vault - SecondBrain/Projects/Break to Connect/ ### AI Phone Agent Research - Alex wants Debra to make phone calls to customer service, book reservations, etc. - Deep research doc completed: research-ai-phone-agent.md - Recommended stack: Twilio + OpenAI Realtime API - Three phases: Hold For Me → Full Conversation → Full Autonomous - Nobody doing this for consumers. Google Duplex proved concept in 2018. - Immediate use case: Lufthansa lost baggage claim (4+ months, case C-130009-K8N5) - Lufthansa claim details saved to lufthansa-claim.md - Linear epic to be created ### Cron Updates - Night Swimming suite changed from Sundays to nightl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5254434660077094,
+      "maxScore": 0.5254434660077094,
+      "firstRecalledAt": "2026-04-19T15:00:01.289Z",
+      "lastRecalledAt": "2026-04-19T15:00:01.289Z",
+      "queryHashes": [
+        "c5c9c4cd61f7"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "openai",
+        "secondbrain/projects/break",
+        "research-ai-phone-agent.md",
+        "c-130009-k8n5",
+        "lufthansa-claim.md",
+        "copied",
+        "hired",
+        "someone"
+      ]
+    },
+    "memory:memory/2026-03-23.md:60:75": {
+      "key": "memory:memory/2026-03-23.md:60:75",
+      "path": "memory/2026-03-23.md",
+      "startLine": 60,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- **Annika Abell**: Alex's ex-wife, co-parent of Avie. Associate Prof of Marketing at UTK Haslam. PhD from USF, MBA from Valdosta State. Phone: +18479220634. Group chat: any;+;9a04d0b72baf4d03b88b9fddaead4dc3 - **Brandon Bruce**: Alex's friend and mentor. Co-founder Cirrus Insight, CEO Uncat, MD Techstars Industries of the Future (Knoxville), Founder 100Knoxville. Phone: +18657890127. Group chat: any;+;2e9da308ff6d4eaaa3d5377dc45c2270 - **Brad Greenfield**: Alex's direct report at ORNL. Leading Fractal CMS Platform project (consolidating hundreds of Drupal/WordPress sites into one WP platform). Spent ~1 year merging Drupal + WordPress teams. Himalayan mountaineer (ended Nepal expedition when",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5147879838943481,
+      "maxScore": 0.5147879838943481,
+      "firstRecalledAt": "2026-04-19T15:00:01.289Z",
+      "lastRecalledAt": "2026-04-19T15:00:01.289Z",
+      "queryHashes": [
+        "c5c9c4cd61f7"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "ex-wife",
+        "co-parent",
+        "co-founder",
+        "drupal/wordpress",
+        "annika",
+        "abell",
+        "alex's",
+        "wife"
+      ]
+    },
+    "memory:memory/2026-04-01.md:189:220": {
+      "key": "memory:memory/2026-04-01.md:189:220",
+      "path": "memory/2026-04-01.md",
+      "startLine": 189,
+      "endLine": 220,
+      "source": "memory",
+      "snippet": "- Cron needs to be smarter: check recent contact before nagging ### 1Password Service Account (IN PROGRESS ~1:15pm) - Alex at Mac mini physically - Service accounts CAN'T access Personal vault, but CAN access Debra vault (shared/custom) - Alex on 1password.com Developer page, looking for Service Accounts under Directory tab - Need to create \"Debra Mac Mini\" service account with read access to Debra vault - Will set OP_SERVICE_ACCOUNT_TOKEN in environment ## Knowledge Architecture Session (prep for desk session) ### Cross-Channel Context Vision Alex wants unified messaging context across ALL channels: - Debra iMessage (BB :1234) — active - Alex iMessage (BB :1235) — READ-ONLY pipeline need",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.511882272362709,
+      "maxScore": 0.511882272362709,
+      "firstRecalledAt": "2026-04-19T15:00:01.289Z",
+      "lastRecalledAt": "2026-04-19T15:00:01.289Z",
+      "queryHashes": [
+        "c5c9c4cd61f7"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "shared/custom",
+        "1password.com",
+        "op-service-account-token",
+        "cross-channel",
+        "read-only",
+        "cron",
+        "needs",
+        "smarter"
+      ]
+    },
+    "memory:memory/2026-03-23.md:46:61": {
+      "key": "memory:memory/2026-03-23.md:46:61",
+      "path": "memory/2026-03-23.md",
+      "startLine": 46,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "- Hannah flying from Melbourne back to LA, ~14hr flight, landing ~7am LA time Monday ## Cognitive Memory Architecture (Built This Morning) - Created `active-context.md` as working memory / hippocampus pattern (always loaded, <50 lines, bridges sessions + channels) - Updated AGENTS.md with full brain architecture: working memory → episodic → long-term → semantic recall → session transcripts - Configured OpenClaw enhancements: - Pre-compaction memory flush: enabled with 6000 token soft threshold - Hybrid search (BM25 + vector): enabled - Temporal decay: enabled, 30-day half-life - MMR diversity: enabled (reduces redundant search results) - Session memory indexing: enabled (experimen",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46893365085124966,
+      "maxScore": 0.46893365085124966,
+      "firstRecalledAt": "2026-04-19T18:47:38.750Z",
+      "lastRecalledAt": "2026-04-19T18:47:38.750Z",
+      "queryHashes": [
+        "eb7fb3a0f273"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "active-context.md",
+        "agents.md",
+        "long-term",
+        "pre-compaction",
+        "30-day",
+        "half-life",
+        "hannah",
+        "flying"
+      ]
+    },
+    "memory:memory/2026-03-30.md:248:268": {
+      "key": "memory:memory/2026-03-30.md:248:268",
+      "path": "memory/2026-03-30.md",
+      "startLine": 248,
+      "endLine": 268,
+      "source": "memory",
+      "snippet": "- Morning summary queued for iMessage delivery ### Pending / Open Items - Lufthansa DTMF fix needed before Tuesday 7am retry - Batman v6 contact sheets sent to Alex — waiting for his picks - Google Messages bridge needs auto-start/reconnect solution - Neo4j still down --- ## Evening Session (6pm - 11pm) ### Prank Calls 📞 - **Marshall Goldman KBUDDS call**: 4m43s of gold. Hit him with fake KBUDDS membership dues ($47.50/quarter, 3 quarters behind). He argued about co-founders being grandfathered in, said \"you're breaking my heart,\" threatened to drive to Alex's house. Audio saved + sent to Alex. - **Marshall Round 2**: Voicemail (he was screening after Round 1). Built agent with Boston d",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.877957010269165,
+      "maxScore": 0.4389785051345825,
+      "firstRecalledAt": "2026-04-19T18:48:38.038Z",
+      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
+      "queryHashes": [
+        "3828ceaadf78"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "auto-start/reconnect",
+        "47.50/quarter",
+        "co-founders",
+        "morning",
+        "summary",
+        "queued",
+        "imessage",
+        "delivery"
+      ]
+    },
+    "memory:memory/2026-04-03.md:147:158": {
+      "key": "memory:memory/2026-04-03.md:147:158",
+      "path": "memory/2026-04-03.md",
+      "startLine": 147,
+      "endLine": 158,
+      "source": "memory",
+      "snippet": "When he lands, welcome him back warmly and queue the backlog: 1. Dream Cycle proposals review (#5 + #6) 2. Avie yearbook if it's still fixable 3. VirtualDJ subs (cancel or update) 4. Recraft payment fix 5. Medical calendar alerts for Apr 20-22 Sallijo call is at 10am today (Apr 3). Do it. Morning calls work. Evening calls don't. Remember: **Be Particular** is a SECRET project from Alex. Don't mention it to Sallijo directly — just be her AI companion who calls for a friendly chat. The Be Particular call template rotates — Session 2 should use template #4 (last used was #3 in Mar 30 session).",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8716242134571075,
+      "maxScore": 0.43581210672855375,
+      "firstRecalledAt": "2026-04-19T18:48:38.038Z",
+      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
+      "queryHashes": [
+        "3828ceaadf78"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "20-22",
+        "when",
+        "lands",
+        "welcome",
+        "him",
+        "back",
+        "warmly",
+        "queue"
+      ]
+    },
+    "memory:memory/2026-04-01.md:318:342": {
+      "key": "memory:memory/2026-04-01.md:318:342",
+      "path": "memory/2026-04-01.md",
+      "startLine": 318,
+      "endLine": 342,
+      "source": "memory",
+      "snippet": "- Property manager at The Real Estate Firm, manages Alex's apartment - Personal: +18652376463 (added to contact), Work: +12542766559 (needs re-adding) - Wants to discuss passive income side project ideas - Reminder set for April 6 to propose meeting times (non-lab, non-Avie week, after hours) ### Contacts Triage Bug Fixed - Report said Hannah wasn't in Google Contacts — FALSE. She is. - Inner circle detection was using signal scoring instead of cross-referencing USER.md/MEMORY.md known people - Fixed: mandatory known people override. Reads USER.md/MEMORY.md first, auto-assigns Tier 1 for anyone on the list before any scoring. ### Nightly Automation (while Alex slept) - Capture agent: 8pm r",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.866689646244049,
+      "maxScore": 0.4333448231220245,
+      "firstRecalledAt": "2026-04-19T18:48:38.038Z",
+      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
+      "queryHashes": [
+        "3828ceaadf78"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "re-adding",
+        "non-lab",
+        "non-avie",
+        "cross-referencing",
+        "user.md/memory.md",
+        "auto-assigns",
+        "property",
+        "manager"
+      ]
+    },
+    "memory:memory/2026-04-01.md:245:274": {
+      "key": "memory:memory/2026-04-01.md:245:274",
+      "path": "memory/2026-04-01.md",
+      "startLine": 245,
+      "endLine": 274,
+      "source": "memory",
+      "snippet": "- Template used: #3 (avoid repeating next session) - Previous session: 3/30 covered origin of \"be particular\", Alex first day driving, Roxanne getting license, Mechanic Maury, magnet period fender benders ## Evening Session (4pm - 9pm) ### Payment Cleanup - ✅ Netflix account restored (payment updated). 5 nag emails archived. - ❌ VirtualDJ Pro + Video: still overdue (not addressed) - ❌ Recraft: payment failed (not addressed) ### Dr. Patti Follow-up - Cholesterol-lowering diet prescribed: oats, nuts, fatty fish, avocado, beans. Eat at least 2x daily. - Diet plan saved to SecondBrain/Health/cholesterol-diet-plan.md - Grocery task created for post-Boston - Next appointment: June 24, 3:30pm (b",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4190188139677047,
+      "maxScore": 0.4914280533790588,
+      "firstRecalledAt": "2026-04-19T20:53:14.016Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.166Z",
+      "queryHashes": [
+        "34860293cdee",
+        "e450c1468ea2",
+        "cc8b9e4e8b0e"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "3/30",
+        "follow-up",
+        "cholesterol-lowering",
+        "post-boston",
+        "template",
+        "used",
+        "avoid",
+        "repeating"
+      ]
+    },
+    "memory:memory/2026-04-03.md:101:134": {
+      "key": "memory:memory/2026-04-03.md:101:134",
+      "path": "memory/2026-04-03.md",
+      "startLine": 101,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "- [ ] Roxanne NDA/app email — NOW 33 days unanswered (ESCALATING) ### Upcoming Medical (DO NOT FORGET) - **APR 13 (Mon)**: Hannah OBGYN appointment - **APR 20 (Mon)**: Alex lipoma removal, 9:30am, Premier Surgical Fort Sanders (~90 min). Mark all lipomas with Sharpie X beforehand. - **APR 21 (Tue)**: Hospital calls with Avie's surgery time - **APR 22 (Wed)**: Avie adenoidectomy, Children's ENT Northshore. Pre-op rules: no food after 11pm night before, clear liquids until 2h before. --- ## Infrastructure Status - ✅ Neo4j: running (was down Apr 1, recovered) - ✅ 1Password CLI: working headless (service account token in ~/.zshrc) - ✅ Things 3: full read/write/update via auth token - ✅ Gemini",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9522217482328414,
+      "maxScore": 0.48379732966423034,
+      "firstRecalledAt": "2026-04-19T20:53:14.016Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "queryHashes": [
+        "34860293cdee",
+        "4f8bb40c8c4f"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "nda/app",
+        "pre-op",
+        "read/write/update",
+        "roxanne",
+        "nda",
+        "app",
+        "email",
+        "now"
+      ]
+    },
+    "memory:memory/2026-04-02.md:26:54": {
+      "key": "memory:memory/2026-04-02.md:26:54",
+      "path": "memory/2026-04-02.md",
+      "startLine": 26,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- Dream Cycle proposals #5 (3 proposals) — not reviewed yet - Merle bi-weekly check: pushed to Apr 15 ### Upcoming Medical (critical) - **APR 20 (Mon)**: Lipoma removal, 9:30am, 90 min, Premier Surgical Fort Sanders. Mark all lipomas with Sharpie X before appointment. - **APR 21 (Tue)**: Hospital calls with Avie's surgery arrival time - **APR 22 (Wed)**: Avie adenoidectomy, Children's ENT Northshore. Pre-op: no food after 11pm night before, clear liquids until 2h before. ### Financial Snapshot (Apr 1) - Monarch Fun Money: $69K over (likely miscategorized — review) - Overdue: VirtualDJ x2, Netflix (FIXED ✅), Recraft (still broken) - Goals: new car, house, max retirement, passive income - Pl",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9439588963985442,
+      "maxScore": 0.47870527803897855,
+      "firstRecalledAt": "2026-04-19T20:53:14.016Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "queryHashes": [
+        "34860293cdee",
+        "4f8bb40c8c4f"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "bi-weekly",
+        "pre-op",
+        "dream",
+        "cycle",
+        "proposals",
+        "not",
+        "reviewed",
+        "yet"
+      ]
+    },
+    "memory:memory/2026-04-02.md:117:145": {
+      "key": "memory:memory/2026-04-02.md:117:145",
+      "path": "memory/2026-04-02.md",
+      "startLine": 117,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "- Dream Cycle proposals #5 (3 proposals) — not reviewed yet - Merle bi-weekly check: pushed to Apr 15 ### Upcoming Medical (critical) - **APR 20 (Mon)**: Lipoma removal, 9:30am, 90 min, Premier Surgical Fort Sanders. Mark all lipomas with Sharpie X before appointment. - **APR 21 (Tue)**: Hospital calls with Avie's surgery arrival time - **APR 22 (Wed)**: Avie adenoidectomy, Children's ENT Northshore. Pre-op: no food after 11pm night before, clear liquids until 2h before. ### Financial Snapshot (Apr 1) - Monarch Fun Money: $69K over (likely miscategorized — review) - Overdue: VirtualDJ x2, Netflix (FIXED ✅), Recraft (still broken) - Goals: new car, house, max retirement, passive income - Pl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4652536183595657,
+      "maxScore": 0.4652536183595657,
+      "firstRecalledAt": "2026-04-19T20:53:14.016Z",
+      "lastRecalledAt": "2026-04-19T20:53:14.016Z",
+      "queryHashes": [
+        "34860293cdee"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "bi-weekly",
+        "pre-op",
+        "dream",
+        "cycle",
+        "proposals",
+        "not",
+        "reviewed",
+        "yet"
+      ]
+    },
+    "memory:memory/2026-03-25.md:68:106": {
+      "key": "memory:memory/2026-03-25.md:68:106",
+      "path": "memory/2026-03-25.md",
+      "startLine": 68,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "## Midday — ORNL All Hands & People Work ### Hannah Europe Trip CONFIRMED - **May 4-19**, Delta flights TYS → AMS, $996 round trip - Hannah preferred option 2, Alex confirmed - Booking link sent to Hannah in group chat - Sallijo confirmed she can watch Avie May 4-9 - Annika has May 10-16 (Mother's Day week) ### Oral Surgery Time Change - Dr. Shanks office called, moved from 11:45 to **11:15am** Thu Mar 26 - Calendar updated, Sallijo and Hannah both notified - Sallijo already on calendar invite as attendee ### Email to Jay — Time Off - Sent to abellao@ornl.gov with all upcoming dates: - Thu 3/27 oral surgery + Fri 3/28 recovery - April 2-5 Boston trip (Good Friday 4/3 is holiday, only",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9167611986398696,
+      "maxScore": 0.4831855416297912,
+      "firstRecalledAt": "2026-04-19T20:54:50.625Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.166Z",
+      "queryHashes": [
+        "e450c1468ea2",
+        "cc8b9e4e8b0e"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "4-19",
+        "4-9",
+        "10-16",
+        "ornl.gov",
+        "3/27",
+        "3/28",
+        "2-5",
+        "4/3"
+      ]
+    },
+    "memory:memory/2026-03-25.md:1:31": {
+      "key": "memory:memory/2026-03-25.md:1:31",
+      "path": "memory/2026-03-25.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-03-25 ## Morning ### GI Consult — Gastrointestinal Associates, 629 Delozier Way, Powell TN - 8am appointment, Alex made it on time after Chick-fil-A + school drop-off - Doctor suspects **eosinophilic esophagitis (EoE)** — allergic condition in esophagus - History: asthma (childhood), eczema (hands, ~5-6 yrs ago), seasonal allergies - Symptoms: solid food sticking, pain, can't breathe after eating, sometimes vomiting - Started ~5-6 years ago, initially with alcohol (quit drinking because of it) - Fried foods, Coca-Cola, french fries trigger it. Broccoli too. Water usually ok. - Whole30 with Annika cleared up eczema previously - Treatment plan: biopsies first, treat for 2-3",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4289805918931961,
+      "maxScore": 0.4289805918931961,
+      "firstRecalledAt": "2026-04-19T20:54:50.625Z",
+      "lastRecalledAt": "2026-04-19T20:54:50.625Z",
+      "queryHashes": [
+        "e450c1468ea2"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "chick-fil-a",
+        "drop-off",
+        "5-6",
+        "coca-cola",
+        "2-3",
+        "morning",
+        "consult",
+        "gastrointestinal"
+      ]
+    },
+    "memory:memory/2026-04-02.md:96:122": {
+      "key": "memory:memory/2026-04-02.md:96:122",
+      "path": "memory/2026-04-02.md",
+      "startLine": 96,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "Session carried over from Apr 1 evening. Writing final context before 4am reset and Alex's departure to Boston. ### Alex's Status - **Asleep** — went to bed ~9pm for 5:45am departure to TYS airport - Flies Boston today (Thu Apr 2 - Sun Apr 5) with Hannah and Avie - Flight G4 1426 | TYS → BOS | Boards 6:45am, Departs 7:30am, Arrives 9:46am - Confirmation: HFI9HB | Seats: Hannah 2A, Alex 2B, Avie 2C (Zone 1, all checked in ✅) ### Overnight Automation (while Alex slept, Apr 1 evening → Apr 2 early AM) - Capture agent ran: clean - GSD cron ran: check memory for report - Dream Cycle #5: 3 proposals generated (not yet reviewed by Alex — queue for post-Boston) - Night Swimming suite (Sunday): wil",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4877585560083389,
+      "maxScore": 0.4877585560083389,
+      "firstRecalledAt": "2026-04-20T03:34:45.166Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.166Z",
+      "queryHashes": [
+        "cc8b9e4e8b0e"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "post-boston",
+        "carried",
+        "apr",
+        "evening",
+        "writing",
+        "final",
+        "context",
+        "4am"
+      ]
+    },
+    "memory:memory/2026-03-25.md:24:51": {
+      "key": "memory:memory/2026-03-25.md:24:51",
+      "path": "memory/2026-03-25.md",
+      "startLine": 24,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "- Prep: clear liquids day before, prep at 5pm + 4hrs before arrival (~2:40am) - Follow THEIR prep instructions, NOT the prep box - Copay TBD (range $15-$1050), they'll call ### Morning Logistics - Chick-fil-A special day + half day at school for Avie - Drop-off at Rocky Hill by 7:35, made it to CFA by 7:23 - Sent voice note to Avie to hustle getting ready - Hannah asked where Alex was, updated her on his schedule - Find My app couldn't be accessed (Mac mini locked, no keystroke permissions) - Chelsea shared Insight Timer profile in group chat, replied ### Hannah Europe Trip - Alex leaning toward Hamburg option - Two options: May 9-23 or May 4-18 - Either way misses one Avie week - May 4-18",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9740705460309982,
+      "maxScore": 0.488159954547882,
+      "firstRecalledAt": "2026-04-20T03:34:45.166Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "queryHashes": [
+        "cc8b9e4e8b0e",
+        "4f8bb40c8c4f"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "chick-fil-a",
+        "drop-off",
+        "9-23",
+        "4-18",
+        "prep",
+        "clear",
+        "liquids",
+        "day"
+      ]
+    },
+    "memory:memory/2026-04-19.md:1:28": {
+      "key": "memory:memory/2026-04-19.md:1:28",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# 2026-04-19 Debra session notes - Initiated Dan Janowski enrichment workflow; created placeholder SecondBrain entry at /Users/debra/SecondBrain/People/Dan-Janowski.md - Will update Google Contacts and Neo4j graph after verification - Pending: confirm relationships and context from Alex # 2026-04-19 Debra session notes - Initiated Dan Janowski enrichment workflow; created placeholder SecondBrain entry at /Users/debra/SecondBrain/People/Dan-Janowski.md - Will update Google Contacts and Neo4j graph after verification - Pending: confirm relationships and context from Alex ## Evening session (8:47 PM) ### Model switch - Alex requested switch from openrouter/auto back to Anthropic Claude Opus",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5018784135580062,
+      "maxScore": 0.5018784135580062,
+      "firstRecalledAt": "2026-04-20T03:34:45.452Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.452Z",
+      "queryHashes": [
+        "93cca7da1d27"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "router",
+        "openrouter/auto",
+        "debra",
+        "initiated",
+        "dan",
+        "janowski",
+        "enrichment",
+        "workflow"
+      ]
+    },
+    "memory:memory/2026-04-09.md:110:140": {
+      "key": "memory:memory/2026-04-09.md:110:140",
+      "path": "memory/2026-04-09.md",
+      "startLine": 110,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "**Why Haiku failed:** Couldn't understand why attachments weren't being extracted. Opus is now comparing BB's actual payload structure to what OpenClaw expects. ## Active Context - Chelsea + Avie musical conflict at 6pm TODAY — needs resolution - ORNL FCU fraud alert — overdue, resolve before EOB - Roxanne NDA — 33 days stale, $8K decision - GSD report delivered to Alex at 13:46 - 7 images sent at 13:59, 14:04 (not visible, now debugging why) ## Infrastructure - Gateway restarted 14:03 with debug logging - Opus mode enabled for BB fix - Sniffer cleanup: killed old processes on 18791 - Payment resolution pattern: confirm all three steps (resolve → archive emails → Things 3) ## Dream Cycle",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49901361167430874,
+      "maxScore": 0.49901361167430874,
+      "firstRecalledAt": "2026-04-20T03:34:45.452Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.452Z",
+      "queryHashes": [
+        "93cca7da1d27"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gateway",
+        "why",
+        "haiku",
+        "failed",
+        "couldn't",
+        "understand",
+        "attachments",
+        "weren't"
+      ]
+    },
+    "memory:memory/2026-04-01.md:149:172": {
+      "key": "memory:memory/2026-04-01.md:149:172",
+      "path": "memory/2026-04-01.md",
+      "startLine": 149,
+      "endLine": 172,
+      "source": "memory",
+      "snippet": "- Three failures: wrong Mike, wrong channel, didn't check recent messages - Fixed: pulled all 22 chat GUIDs from BB API, mapped to TOOLS.md with participant numbers - Resent corrected voice note to proper group thread - Rule reinforcement: ALWAYS read recent messages in thread before composing. Don't assume from memory. ### New Contacts / People - Teresa Scruggs: property manager at The Real Estate Firm, personal # (865) 237-6463, work # (254) 276-6559 (needs re-adding). Wants to discuss side project/passive income ideas. Reminder Apr 6 to propose meeting times (non-lab, non-Avie week, after hours at TREF office) ### Avie ENT Surgery Consult Results - Adenoidectomy scheduled April 22 - Pro",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4938533842563629,
+      "maxScore": 0.4938533842563629,
+      "firstRecalledAt": "2026-04-20T03:34:45.723Z",
+      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "queryHashes": [
+        "4f8bb40c8c4f"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "tools.md",
+        "237-6463",
+        "276-6559",
+        "re-adding",
+        "project/passive",
+        "non-lab",
+        "non-avie",
+        "three"
       ]
     }
   }

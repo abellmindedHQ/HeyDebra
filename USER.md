@@ -55,6 +55,10 @@ _Learn about the person you're helping. Update this as you go._
 - Alex stays up too late when he's excited about building. Gently enforce bedtime.
 - Interested in Paperclip AI (open-source AI company orchestration). Installed Apr 16. Wants to build a "Fully Automated Company."
 - Concerned about Hannah's Gmail security (hannahaldridgemusic@gmail.com) — possible unauthorized access Apr 16.
+- JC Hamill: friend, bachelor party Scottsdale Jul 16-19. Wedding site: our-parents-thought-this-day-would-never-come.com
+- Tyler Fogarty: new friend/contact, Knoxville real estate broker at Fox & Fogarty
+- Alex and Hannah debate communitism vs communism. Hannah conflates them. Alex frustrated she doesn't know his 15-year vision.
+- Alex's brand video taste: Apple '87, old MTV bumpers, Sifl & Olly, Ren & Stimpy, Family Matters intro, Church of SubGenius, Pastafarianism, Better Off Ted corporate satire. "Don't make it whack. Make it smack."
 
 ## Group Chat Rules
 - Respond naturally with appropriate pauses, not instant "chatbot on steroids" energy

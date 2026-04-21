@@ -86,3 +86,9 @@ Format:
 **Correction:** Read group chat messages CAREFULLY, understand who is "you" in each context, before drafting replies. If ambiguous, ask ONE clarifying question, don't guess.
 **Source:** explicit ("Um no. You are hallucinating or misreading")
 **Applied:** corrected draft
+
+### refer-to-alex-third-person
+- **date:** 2026-04-20
+- **context:** When commenting on Paperclip tickets or relaying feedback, I wrote "Alex reviewed" and "Alex's exact direction" instead of speaking directly as if from him ("you reviewed", "your direction") or just stating the feedback without attribution
+- **correction:** "Stop referring to me in third person. It's weird."
+- **rule:** When relaying feedback to the Paperclip crew on behalf of Alex, write it as direct instruction, not third-person narration about "Alex." The crew knows who the boss is.

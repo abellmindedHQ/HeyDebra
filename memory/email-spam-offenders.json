@@ -1,34 +1,34 @@
 {
-  "last_updated": "2026-04-19",
+  "last_updated": "2026-04-20",
   "tracked_senders": {
     "fandango@movies.fandango.com": {
-      "count": 6,
-      "last_seen": "2026-04-18",
+      "count": 8,
+      "last_seen": "2026-04-20",
       "subjects": ["Get Tickets", "First Reviews", "Special Deal", "How did you like", "Promo Code", "Purchase Confirmation"]
     },
     "info@e.alexvindman.com": {
-      "count": 7,
-      "last_seen": "2026-04-19",
-      "subjects": ["Duty and service", "Wall Street Journal", "Tulsi Gabbard", "A massive defeat", "Democracy", "This guy", "Hear us out"]
+      "count": 8,
+      "last_seen": "2026-04-20",
+      "subjects": ["Duty and service", "Wall Street Journal", "Tulsi Gabbard", "A massive defeat", "Democracy", "This guy", "Hear us out", "Florida is a one-point race"]
     },
     "noreply@betterhelp.com": {
-      "count": 6,
-      "last_seen": "2026-04-19",
+      "count": 7,
+      "last_seen": "2026-04-20",
       "subjects": ["Journal reminder (daily)"]
     },
     "email@email.monarch.com": {
-      "count": 6,
-      "last_seen": "2026-04-17",
+      "count": 7,
+      "last_seen": "2026-04-20",
       "subjects": ["Transactions need review", "You have 2 new updates"]
     },
     "USPSInformeddelivery@email.informeddelivery.usps.com": {
-      "count": 5,
-      "last_seen": "2026-04-19",
+      "count": 6,
+      "last_seen": "2026-04-20",
       "subjects": ["Your Daily Digest"]
     },
     "listingupdates@flexmail.flexmls.com": {
-      "count": 6,
-      "last_seen": "2026-04-19",
+      "count": 8,
+      "last_seen": "2026-04-20",
       "subjects": ["Listings for Alex Abel", "Listings for Alex Abel!"]
     },
     "AmericanExpress@welcome.americanexpress.com": {
@@ -37,9 +37,34 @@
       "subjects": ["Enrollment confirmations", "Card delivery", "Benefits", "AutoPay", "Send & Split"]
     },
     "no-reply@is.email.nextdoor.com": {
-      "count": 3,
-      "last_seen": "2026-04-19",
+      "count": 4,
+      "last_seen": "2026-04-20",
       "subjects": ["Top post"]
+    },
+    "no-reply@otter.ai": {
+      "count": 4,
+      "last_seen": "2026-04-20",
+      "subjects": ["Meeting Summary for Finance 1:1", "Meeting Summary for AI Automation", "Meeting Summary for ITSD Project Intake"]
+    },
+    "USAA.customer.service@omem.usaa.com": {
+      "count": 1,
+      "last_seen": "2026-04-20",
+      "subjects": ["Financial Readiness Review"]
+    },
+    "contact@e.kamalaharris.com": {
+      "count": 1,
+      "last_seen": "2026-04-20",
+      "subjects": ["We're paying the price"]
+    },
+    "no-reply@salonultimate.com": {
+      "count": 1,
+      "last_seen": "2026-04-20",
+      "subjects": ["Glam Day Has Arrived"]
+    },
+    "noreply@e.fitbit.com": {
+      "count": 1,
+      "last_seen": "2026-04-20",
+      "subjects": ["Take action by May 19"]
     }
   },
   "unsubscribe_candidates": [
@@ -47,6 +72,9 @@
     "info@e.alexvindman.com",
     "noreply@betterhelp.com",
     "email@email.monarch.com",
-    "listingupdates@flexmail.flexmls.com"
+    "listingupdates@flexmail.flexmls.com",
+    "AmericanExpress@welcome.americanexpress.com",
+    "USPSInformeddelivery@email.informeddelivery.usps.com",
+    "no-reply@otter.ai"
   ]
 }

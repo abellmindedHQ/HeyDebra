@@ -204,3 +204,22 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 
 - [ ] Verify why the Costco Visa card was unlocked and re-lock it if needed. // assigned to: Alex, due: ASAP, priority: urgent, source: email:A card has been successfully unlocked:citicards, area: 💊 Health & Money, captured: 2026-04-12 07:33
 - [ ] Check Anthropic account and re-enable Claude API access. // assigned to: Alex, due: not specified, priority: normal, source: email:[action needed] Your Claude API access is turned off:anthropic.com, area: 🚀 Build, captured: 2026-04-12 07:33
+
+
+## 📧 Captured 2026-04-20 07:30 AM ET
+
+- [ ] Fix Notion payment failure — update billing info to restore access // assigned to: Alex, due: ASAP, priority: urgent, source: email:Payment failure for Notion:billing@mail.notion.so, area: 🚀 Build, captured: 2026-04-20 07:30
+- [ ] Decide on Supabase TourSpec project (unpause or let it go) before it gets paused permanently // assigned to: Alex, due: within days, priority: normal, source: email:Your Supabase Project TourSpec is going to be paused:supabase.com, area: 🚀 Build, captured: 2026-04-20 07:30
+- [ ] Fill out Rocky Hill parent input form (being resent today by Principal Holt) // assigned to: Alex, due: 2026-04-20, priority: normal, source: email:ParentSquare:Rocky Hill Elementary, area: 👨‍👧 People, captured: 2026-04-20 07:30
+
+
+## 📥 Captured 2026-04-20 06:11 PM ET
+
+- [ ] Secure lunchpool.io Google account (blocked sign-in attempt, check activity and change password) // assigned to: Alex, due: ASAP, priority: urgent, source: email:Critical security alert for alex@lunchpool.io:Google, area: 🚀 Build, captured: 2026-04-20 18:11
+- [ ] Review Verizon 401(k) distribution notification and take action if needed // assigned to: Alex, due: 2026-06-18, priority: normal, source: email:distribution notification:Fidelity/Verizon 401k, area: 💊 Health & Money, captured: 2026-04-20 18:11
+- [ ] Enroll Avie for YMCA inservice childcare on May 5 (spaces limited, $17-20/day, form link in email from Tonya Creed) // assigned to: Alex, due: ASAP, priority: urgent, source: email:Inservice May 5 Enrollment:YMCA, area: 👨‍👧 People, captured: 2026-04-20 18:11
+- [ ] Sign up for Premier Surgical HealtheLife patient portal (invite link in email, expires in 90 days) // assigned to: Alex, due: within 90 days, priority: normal, source: email:Premier Surgical HealtheLife:IQHealth, area: 💊 Health & Money, captured: 2026-04-20 18:11
+- [ ] Draft tech fee reassessment proposal (Elastic + shared services) and present to Josh before broader distribution // assigned to: Alex, due: not specified, priority: normal, source: email:Otter Finance 1:1 with Josh and Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11
+- [ ] Build SQL budget dashboard replicating Josh's subcontract/labor overspend view for Jay // assigned to: Alex, due: not specified, priority: normal, source: email:Otter Finance 1:1 with Josh and Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11
+- [ ] Reconcile EDRM spending figures (Josh's report vs new dashboard) at Wednesday meeting // assigned to: Alex, due: 2026-04-22, priority: normal, source: email:Otter Finance 1:1 with Josh and Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11
+- [ ] Organize AI intake stakeholder roundtable with Pam, Dan, and John to define unified intake strategy // assigned to: Alex, due: not specified, priority: normal, source: email:Otter AI Automation Brainstorm:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11

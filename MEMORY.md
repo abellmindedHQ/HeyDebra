@@ -14,6 +14,9 @@
 - ALWAYS verify restaurants still exist before recommending. Check hours.
 - NEVER commit API keys/tokens/passwords to git. Use .env + 1Password.
 - BB webhook: use 127.0.0.1 not localhost. BB needs restart after gateway restarts.
+- **Twilio US SMS requires A2P 10DLC registration** (error 30034). Unregistered numbers get blocked. Use Google Messages browser automation as bridge.
+- **Paperclip agents only check their own tickets.** Post feedback on sub-tickets, not just parent. Change status to trigger re-evaluation.
+- **Abellminded brand mark**: ANY A (any weight/case/style) with ONE eye in the counter. Not just Cooper serif. Eye must be visible at displayed size.
 - **Payment resolution = full loop.** When ANY payment is resolved: (1) resolve it, (2) search Gmail and archive all related emails, (3) mark done in Things 3. All three, every time, no exceptions.
 - **Commit + push + Linear, every time.** Don't wait to be asked.
 - **Search memory before asking Alex.** If the answer is in memory files, don't make him repeat himself.
@@ -51,6 +54,8 @@
 - **Mike Shell**: ORNL "King of Search" 👑, co-built SEEK. +18657422288
 - **Merle Benny**: accountability partner, author *Sparkle!*. +19735107652
 - **Pooja Pendharkar**: close friend, former Lunchpool co-founder. +13213562000
+- **Tyler Fogarty**: Fox & Fogarty RE broker, Knoxville. +18654146145. Also photographer.
+- **JC Hamill**: Web Programmer at Jackson Spalding, friend of Alex. +14044412849. Marrying Dana, bachelor party Scottsdale Jul 16-19.
 
 ## Product Architecture (Abellminded)
 - **Mirror**: consciousness expansion system. Johari Window + HeartMath + biometric + conversational AI. Components: Sentinel, Silvering, SecondBrain, Mirror Mirror, Looking Glass, Registry.
@@ -59,6 +64,8 @@
 - **HeyDebra**: AI assistant playbook on OpenClaw.
 
 ## Active Projects
+- **ABE-35 Brand Identity Kit** (Paperclip all-hands, overnight build Apr 20-21, round 3 in progress)
+- **ABE-32 Logo Identity** (Recoleta + A-Eye mark locked in. Any A + one eye = the mark)
 - Second Brain Pipeline v3 (8-stream capture)
 - Mirror product (needs brand/product architecture)
 - Night Swimming cron suite (email, drive, contacts, ChatGPT processing)
@@ -66,7 +73,7 @@
 - VisionClaw / Ray-Ban Meta (needs Xcode build)
 - ChatGPT Re-Import: COMPLETE (346 convos)
 - Google Takeout: downloaded, NOT YET processed
-- Paperclip AI: installed Apr 16, server running, needs LLM provider config
+- Paperclip AI: running at 127.0.0.1:3100, 7 agents active
 
 ## BB Attachment Bug (Apr 8-9)
 - Attachments detected intermittently (sometimes 0, sometimes correct count)

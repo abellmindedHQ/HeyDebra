@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T03:34:45.723Z",
+  "updatedAt": "2026-04-21T01:22:13.102Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -71,18 +71,22 @@
       "endLine": 132,
       "source": "memory",
       "snippet": "- Hannah is a musician (Alex mentioned \"dating a musician\" re: anxiety) - Hannah has great banter energy, tests boundaries playfully (asked me to help hide a body, buy Xanax, spy on Alex) - She appreciated me clarifying I can't hear their convos, only chat logs - She said \"not telling you shit\" after I mentioned having logs - good humor about it - Hannah is getting them on a health kick - cutting Cokes, wanting healthier chip options ## Honeydo List for Alex (from Hannah's photo) 1. Organize tools and roof 2. Email Lufthansa 3. Fix wooden legs on tables 4. Return air freshener 5. Look at May trip time off/dates so Hannah can plan",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.48240227103233335,
-      "maxScore": 0.48240227103233335,
+      "totalScore": 1.9104158043861388,
+      "maxScore": 0.5026884496212005,
       "firstRecalledAt": "2026-04-16T22:50:05.249Z",
-      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-20T21:52:11.093Z",
       "queryHashes": [
-        "f18d87a031c3"
+        "f18d87a031c3",
+        "2094c3d5c5a7",
+        "03ea499f04f0",
+        "2362584b0124"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-20"
       ],
       "conceptTags": [
         "off/dates",
@@ -102,21 +106,23 @@
       "endLine": 166,
       "source": "memory",
       "snippet": "- Items in DEBRA vault: AssemblyAI API Key, BlueBubbles password, and other essentials - This means no more needing to unlock 1Password desktop app manually! ### Voice Note to Angie - Alex asked me to respond to Angie's group chat with a voice note - **MISTAKE**: Sent to wrong chat (Jay + Alex) instead of (Alex + Angie). Unsent it. - Lesson: Always confirm chat GUID before sending. Angie's chat is d4333767f9534f77ab1356e31263b030 - Angie's number: (865) 335-8853 — wasn't in my contacts, should have looked it up - **Lesson**: ALWAYS look up contacts via gog contacts when I don't have a number ### Mike Shell / Google Messages Bridge - Mike Shell: (865) 742-2288, Android user, King of Search",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.829766261577606,
+      "totalScore": 2.2944395929574966,
       "maxScore": 0.4880170315504074,
       "firstRecalledAt": "2026-04-16T22:50:05.249Z",
-      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
+      "lastRecalledAt": "2026-04-20T21:52:06.621Z",
       "queryHashes": [
         "f18d87a031c3",
         "a06cce226670",
-        "3828ceaadf78"
+        "3828ceaadf78",
+        "44172a5b20e0"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "335-8853",
@@ -136,18 +142,20 @@
       "endLine": 123,
       "source": "memory",
       "snippet": "- Hannah requested removing: berry yogurt cups, Tostitos scoops, overnight oats, shrimp & grits, Eggo minis, Oreo cookie pack (done) - Hannah requested removing Cokes (both regular & zero mini cans), subbing Fresca 12pk (done) - Hannah requested removing Kettle Brand S&V chips, wanted healthier S&V option. Added Harvest Snaps but she wanted actual S&V flavor. Final decision: put Kettle Brand S&V back (PENDING - Kroger rate limited me) - Hannah requested adding limes, wants 3 for the $2 deal (added 1, need 2 more - PENDING) - Kroger rate limited/blocked me after too many rapid requests. Cart showed \"unavailable\" items glitch. Need to retry later. - Final cart state before glitch: ~40 items, ~",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.47371369600296015,
-      "maxScore": 0.47371369600296015,
+      "totalScore": 0.9766199827194213,
+      "maxScore": 0.5029062867164612,
       "firstRecalledAt": "2026-04-16T22:50:05.249Z",
-      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-20T21:26:54.353Z",
       "queryHashes": [
-        "f18d87a031c3"
+        "f18d87a031c3",
+        "03ea499f04f0"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-20"
       ],
       "conceptTags": [
         "limited/blocked",
@@ -167,18 +175,20 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "- Updated SOUL.md with group chat behavior rules. ## Key Configs Changed Today - tools.exec: security=full, ask=off - tools.elevated: enabled, allowFrom bluebubbles+webchat - channels.bluebubbles: serverUrl=localhost:1234, groupPolicy=open, mediaLocalRoots added - agents.defaults.memorySearch: provider=gemini with API key - messages.tts: provider=elevenlabs with voiceId and apiKey - Neo4j password: secondbrain2026 (stored in config, should move to 1Password) ## Kroger Grocery Shopping Session (Evening) - Hannah is Alex's girlfriend. She was in Australia (Melbourne) flying back to LA, ~14hr flight landing ~7am LA time Mon - Hannah's Kroger login: hannah4828@yahoo.com (she shared it in group",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.47261547744274135,
-      "maxScore": 0.47261547744274135,
+      "totalScore": 0.950126552581787,
+      "maxScore": 0.47751107513904567,
       "firstRecalledAt": "2026-04-16T22:50:05.249Z",
-      "lastRecalledAt": "2026-04-16T22:50:05.249Z",
+      "lastRecalledAt": "2026-04-20T21:26:45.209Z",
       "queryHashes": [
-        "f18d87a031c3"
+        "f18d87a031c3",
+        "2094c3d5c5a7"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-20"
       ],
       "conceptTags": [
         "soul.md",
@@ -229,19 +239,21 @@
       "endLine": 9,
       "source": "memory",
       "snippet": "# 2026-04-16 Debra Session Log and Memory Flush ## Activity Summary - **Paperclip AI Setup:** Successfully installed Paperclip AI (`npx paperclipai onboard --yes`) and confirmed it's running at `http://127.0.0.1:3100`. Resolved issues with incorrect directory paths and non-responsive processes. Recurring reminder cron set for weekday 9am. - **Hannah's Gmail Security:** Investigated potential unauthorized access to `hannahaldridgemusic@gmail.com`. Provided instructions for Alex/Hannah to check security logs and review recent activity. Image attachment failed, so email address was provided manually. No resolution yet on identifying suspicious activity. - **Password Check:** Searched workspace",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9638284474611282,
+      "totalScore": 1.4236807405948637,
       "maxScore": 0.4985539674758911,
       "firstRecalledAt": "2026-04-17T12:41:25.781Z",
-      "lastRecalledAt": "2026-04-18T03:31:44.651Z",
+      "lastRecalledAt": "2026-04-20T11:08:35.374Z",
       "queryHashes": [
         "88ce052b1117",
-        "bcc39411eccf"
+        "bcc39411eccf",
+        "4166b09bcc17"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-20"
       ],
       "conceptTags": [
         "127.0.0.1",
@@ -261,21 +273,23 @@
       "endLine": 17,
       "source": "memory",
       "snippet": "- **QMD Re-Index:** Completed as scheduled at 4 AM ET on 2026-04-16. Processed updates across 13 collections (People, Projects, Concepts, Reflections, Meetings, Conversations, Debra-memory, Resources). - **Email Triage:** Blocked by `gog` CLI flag issues. Cannot fetch/process Gmail inbox. Reported status and awaiting flag confirmation or workaround. - **Capture Agent:** Ran, but iMessage scan failed due to BB authentication (401 Unauthorized). Email scan yielded no actionable items. Re-run recommended after BB credentials are refreshed. - **WhatsApp Gateway:** Experiencing frequent disconnects (status 499) every ~30 minutes, but auto-reconnecting. ## Key Lessons Learned/Reinforced - **Paper",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.169967781643839,
+      "totalScore": 2.63352998111722,
       "maxScore": 0.7330012938785273,
       "firstRecalledAt": "2026-04-17T12:41:25.781Z",
-      "lastRecalledAt": "2026-04-18T03:31:45.124Z",
+      "lastRecalledAt": "2026-04-20T11:08:35.374Z",
       "queryHashes": [
         "88ce052b1117",
         "3d9a0696e53b",
         "bcc39411eccf",
-        "68c4b24be572"
+        "68c4b24be572",
+        "4166b09bcc17"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-20"
       ],
       "conceptTags": [
         "gateway",
@@ -419,18 +433,20 @@
       "endLine": 326,
       "source": "memory",
       "snippet": "- TCCHS Class of 2003 confirmed ### Contact Sync to drdebrapepper - drdebrapepper@gmail.com added as test user in Google Cloud Console - gog auth completed for drdebrapepper contacts - Sync subagent timed out before copying contacts, needs retry ### Google Messages / RCS Setup - Google Messages skill installed from ClawHub - Browser paired with Android phone via QR code - SMS webhook server running on port 19888 - SMS observer injected into browser tab - Send works (tested with Pooja), inbound observer needs verification ### Screen Capture Working - screencapture command works (node has Screen Capture permission) - Terminal has Accessibility permission - Can see Mac mini desktop via scree",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.48887219130992887,
+      "totalScore": 0.9670324385166167,
       "maxScore": 0.48887219130992887,
       "firstRecalledAt": "2026-04-18T03:31:44.886Z",
-      "lastRecalledAt": "2026-04-18T03:31:44.886Z",
+      "lastRecalledAt": "2026-04-20T22:58:34.464Z",
       "queryHashes": [
-        "bc83c674a2b5"
+        "bc83c674a2b5",
+        "8da9cc9c98d0"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-20"
       ],
       "conceptTags": [
         "gmail.com",
@@ -983,18 +999,22 @@
       "endLine": 75,
       "source": "memory",
       "snippet": "- **Annika Abell**: Alex's ex-wife, co-parent of Avie. Associate Prof of Marketing at UTK Haslam. PhD from USF, MBA from Valdosta State. Phone: +18479220634. Group chat: any;+;9a04d0b72baf4d03b88b9fddaead4dc3 - **Brandon Bruce**: Alex's friend and mentor. Co-founder Cirrus Insight, CEO Uncat, MD Techstars Industries of the Future (Knoxville), Founder 100Knoxville. Phone: +18657890127. Group chat: any;+;2e9da308ff6d4eaaa3d5377dc45c2270 - **Brad Greenfield**: Alex's direct report at ORNL. Leading Fractal CMS Platform project (consolidating hundreds of Drupal/WordPress sites into one WP platform). Spent ~1 year merging Drupal + WordPress teams. Himalayan mountaineer (ended Nepal expedition when",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5147879838943481,
+      "totalScore": 1.8887186288833617,
       "maxScore": 0.5147879838943481,
       "firstRecalledAt": "2026-04-19T15:00:01.289Z",
-      "lastRecalledAt": "2026-04-19T15:00:01.289Z",
+      "lastRecalledAt": "2026-04-20T22:58:41.725Z",
       "queryHashes": [
-        "c5c9c4cd61f7"
+        "c5c9c4cd61f7",
+        "44172a5b20e0",
+        "2362584b0124",
+        "e2a2fb31c5b4"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "ex-wife",
@@ -1138,18 +1158,20 @@
       "endLine": 342,
       "source": "memory",
       "snippet": "- Property manager at The Real Estate Firm, manages Alex's apartment - Personal: +18652376463 (added to contact), Work: +12542766559 (needs re-adding) - Wants to discuss passive income side project ideas - Reminder set for April 6 to propose meeting times (non-lab, non-Avie week, after hours) ### Contacts Triage Bug Fixed - Report said Hannah wasn't in Google Contacts — FALSE. She is. - Inner circle detection was using signal scoring instead of cross-referencing USER.md/MEMORY.md known people - Fixed: mandatory known people override. Reads USER.md/MEMORY.md first, auto-assigns Tier 1 for anyone on the list before any scoring. ### Nightly Automation (while Alex slept) - Capture agent: 8pm r",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.866689646244049,
-      "maxScore": 0.4333448231220245,
+      "totalScore": 1.307533013820648,
+      "maxScore": 0.4408433675765991,
       "firstRecalledAt": "2026-04-19T18:48:38.038Z",
-      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
+      "lastRecalledAt": "2026-04-20T21:39:15.339Z",
       "queryHashes": [
-        "3828ceaadf78"
+        "3828ceaadf78",
+        "f06e6e372a3a"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "re-adding",
@@ -1297,19 +1319,21 @@
       "endLine": 106,
       "source": "memory",
       "snippet": "## Midday — ORNL All Hands & People Work ### Hannah Europe Trip CONFIRMED - **May 4-19**, Delta flights TYS → AMS, $996 round trip - Hannah preferred option 2, Alex confirmed - Booking link sent to Hannah in group chat - Sallijo confirmed she can watch Avie May 4-9 - Annika has May 10-16 (Mother's Day week) ### Oral Surgery Time Change - Dr. Shanks office called, moved from 11:45 to **11:15am** Thu Mar 26 - Calendar updated, Sallijo and Hannah both notified - Sallijo already on calendar invite as attendee ### Email to Jay — Time Off - Sent to abellao@ornl.gov with all upcoming dates: - Thu 3/27 oral surgery + Fri 3/28 recovery - April 2-5 Boston trip (Good Friday 4/3 is holiday, only",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9167611986398696,
+      "totalScore": 1.3485045999288559,
       "maxScore": 0.4831855416297912,
       "firstRecalledAt": "2026-04-19T20:54:50.625Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.166Z",
+      "lastRecalledAt": "2026-04-21T01:22:13.102Z",
       "queryHashes": [
         "e450c1468ea2",
-        "cc8b9e4e8b0e"
+        "cc8b9e4e8b0e",
+        "e155b9dc2838"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "4-19",
@@ -1507,6 +1531,451 @@
         "non-lab",
         "non-avie",
         "three"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:22": {
+      "key": "memory:memory/2026-04-18.md:1:22",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "End-of-Day Memory Flush — 2026-04-18 03:30 America/New_York What happened today (summary): - System reset at 4am. Prepared context for next session and saved important items. - Paperclip AI installed and running on localhost:3100 as part of the Fully Automated Company plan. Recurring follow-up reminder set for weekdays at 9am. - Gmail security: checked Hannah's account security concern; guidance provided to check activity at myaccount.google.com/security. No resolution yet. - Be Particular: awaiting next Sallijo touchpoint (SECRET) noted for follow-up when allowed. - Payments: Adobe, VirtualDJ, Recraft, Google One, OpenAI Plus, Citi all tracked for updates. Next actions include updating pay",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4614830046892166,
+      "maxScore": 0.4614830046892166,
+      "firstRecalledAt": "2026-04-20T11:08:35.374Z",
+      "lastRecalledAt": "2026-04-20T11:08:35.374Z",
+      "queryHashes": [
+        "4166b09bcc17"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "openai",
+        "end-of-day",
+        "america/new-york",
+        "follow-up",
+        "myaccount.google.com/security",
+        "end",
+        "day",
+        "flush"
+      ]
+    },
+    "memory:memory/2026-04-20.md:39:53": {
+      "key": "memory:memory/2026-04-20.md:39:53",
+      "path": "memory/2026-04-20.md",
+      "startLine": 39,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "- Phase 4 proposals: 6 proposals generated (3 high, 3 medium) — staged for Alex review - Message consolidation pattern hit 3x threshold → promoted ## Corrections Captured (Apr 19) - ask-too-many-questions: execute on clear instructions, stop over-clarifying - report-without-verifying: always check URLs/outputs before saying \"done\" - message-fragmentation: ONE message per response (repeat +1) - misread-chat-before-drafting: read carefully, understand context before drafting ## Infrastructure State - Gateway: 2026.4.19-beta.2 | model: anthropic/claude-opus-4-6 - BB: localhost:1234 | WhatsApp images working post-update - Paperclip: 127.0.0.1:3100 | ABE-28 active - WhatsApp: cycling disconnect",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9401447862386703,
+      "maxScore": 0.4805549323558807,
+      "firstRecalledAt": "2026-04-20T11:08:35.374Z",
+      "lastRecalledAt": "2026-04-20T11:08:40.979Z",
+      "queryHashes": [
+        "4166b09bcc17",
+        "1b154ed18698"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "gateway",
+        "ask-too-many-questions",
+        "over-clarifying",
+        "report-without-verifying",
+        "urls/outputs",
+        "message-fragmentation",
+        "misread-chat-before-drafting",
+        "2026.4.19-beta.2"
+      ]
+    },
+    "memory:memory/2026-03-24.md:54:68": {
+      "key": "memory:memory/2026-03-24.md:54:68",
+      "path": "memory/2026-03-24.md",
+      "startLine": 54,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "- **Jessica DiPietro** (née Hurst): Met Alex right after separation from Annika, pre-divorce finalization. She was engaged, fiancé cheated, had a daughter with him but never married. Alex told her first night they should just be friends. Became an intense on/off situationship. First woman other than Annika to meet Avie (before Hannah). Just got married ~2 weeks ago (March 13, 2026). 13,291 Instagram DMs. Profile completed by Sonnet subagent — she's a Licensed Professional Counselor (Rise and Bloom Counseling, TN). - **Brooks**: Alex's work friend at ORNL. Boss of the designer/researcher who are matrixed to Alex's SEEK project. Need full last name and people-intel profile. ## Mirror — Produc",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.8288085043430329,
+      "maxScore": 0.4793822795152664,
+      "firstRecalledAt": "2026-04-20T11:08:40.979Z",
+      "lastRecalledAt": "2026-04-20T22:58:41.725Z",
+      "queryHashes": [
+        "1b154ed18698",
+        "0b6d67d6e35c",
+        "2362584b0124",
+        "e2a2fb31c5b4"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "pre-divorce",
+        "on/off",
+        "designer/researcher",
+        "people-intel",
+        "jessica",
+        "dipietro",
+        "née",
+        "hurst"
+      ]
+    },
+    "memory:memory/2026-03-24.md:64:89": {
+      "key": "memory:memory/2026-03-24.md:64:89",
+      "path": "memory/2026-03-24.md",
+      "startLine": 64,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "## Domain Architecture (Emerging) - **abellminded.com** — umbrella brand, the living brain map, portfolio - **abellminded.dev** — could host public documentation, technical docs, API docs - **Mirror** — self-reflection/self-actualization product - **SecondBrain** — personal knowledge capture system (also pitched as product to Pooja) - **HeyDebra** — the AI assistant framework (built on OpenClaw) ## iMazing / Private Texts - Alex wants ongoing record of ALL private texts for context - iMazing can do full iPhone backup including SMS/iMessage history - Would give massive context similar to social media exports - This is a capture stream for the SecondBrain pipeline ## ORNL Infrastructure Cont",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9543258935213088,
+      "maxScore": 0.4775003522634506,
+      "firstRecalledAt": "2026-04-20T11:08:40.979Z",
+      "lastRecalledAt": "2026-04-20T11:08:41.269Z",
+      "queryHashes": [
+        "1b154ed18698",
+        "0b6d67d6e35c"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "backup",
+        "abellminded.com",
+        "abellminded.dev",
+        "sms/imessage",
+        "domain",
+        "architecture",
+        "emerging",
+        "umbrella"
+      ]
+    },
+    "memory:memory/2026-04-19.md:25:42": {
+      "key": "memory:memory/2026-04-19.md:25:42",
+      "path": "memory/2026-04-19.md",
+      "startLine": 25,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- Deployed hannah-conversation.html and abellminded-brand-printable.html to Vercel - Brand printable is a scaffold only; Alex said he'll read BRAND.md directly. Parked. - Working public URL: https://state-kohl.vercel.app/abellminded-brand-printable.html - Created Paperclip ticket ABE-28 for Kit Ballard: \"Abellminded Identity, Phase One: Mood Board\" (High priority, Tuesday EOD deadline) - BRAND.md written and seeded by Alex + Claude today. Kit owns it going forward. ### Dan Janowski enrichment (IN PROGRESS) - Dan is AI for Operations Program Lead at ORNL - Has a meeting with Alex Friday Apr 25, 9am: \"Demo automated SDLC with Dan Janowski (Team Lead Intro)\" - SecondBrain entry created at /Use",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9698945105075836,
+      "maxScore": 0.5199307501316071,
+      "firstRecalledAt": "2026-04-20T11:08:40.979Z",
+      "lastRecalledAt": "2026-04-20T21:26:54.353Z",
+      "queryHashes": [
+        "1b154ed18698",
+        "0b6d67d6e35c",
+        "2094c3d5c5a7",
+        "03ea499f04f0"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "hannah-conversation.html",
+        "abellminded-brand-printable.html",
+        "brand.md",
+        "abe-28",
+        "deployed",
+        "hannah",
+        "conversation.html",
+        "abellminded"
+      ]
+    },
+    "memory:memory/2026-03-27.md:62:90": {
+      "key": "memory:memory/2026-03-27.md:62:90",
+      "path": "memory/2026-03-27.md",
+      "startLine": 62,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "- Dark luxury #080808 + #FF0080 neon pink + Bebas Neue typography - Deployed to debra.abellminded.com - Commit: d44936b ### abellminded.com Brain Map Redesign ✅ - Built with web-designer plugin (from GitHub MickeyAlton33/web-designer-plugin) - Plugin installed at .github/plugin/ in abellminded project - D3.js force-directed graph as hero — 7 nodes, draggable, click to expand - Hot pink scanline sweep, custom cursor, Bebas Neue, zero blue-purple - Deployed to abellminded.vercel.app - Local: /Users/debra/.openclaw/workspace/projects/abellminded/index.html ### abellminded.com Architecture Decision (in progress) - Five audiences: Collaborator, Hiring Manager, Employee, User, CLIENT (most impor",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.472949805855751,
+      "maxScore": 0.472949805855751,
+      "firstRecalledAt": "2026-04-20T11:08:41.269Z",
+      "lastRecalledAt": "2026-04-20T11:08:41.269Z",
+      "queryHashes": [
+        "0b6d67d6e35c"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "debra.abellminded.com",
+        "abellminded.com",
+        "web-designer",
+        "github/plugin",
+        "d3.js",
+        "force-directed",
+        "blue-purple",
+        "abellminded.vercel.app"
+      ]
+    },
+    "memory:memory/2026-03-25.md:236:264": {
+      "key": "memory:memory/2026-03-25.md:236:264",
+      "path": "memory/2026-03-25.md",
+      "startLine": 236,
+      "endLine": 264,
+      "source": "memory",
+      "snippet": "- 4 images generated: hero editorial, chaos-to-order, knowledge graph, 2am creation moment - Ready to publish on \"Break to Connect\" newsletter ### HeyDebra Product Site — LIVE - https://heydebra-site.vercel.app - React + Vite + Tailwind + Framer Motion - WCAG AA compliant (QA agent verified) - Real Debra voice clip playing on \"Hear Debra\" button - Needs custom domain setup: debra.abellminded.com ### Lessons Learned Today - Internal system notes can leak into outbound messages (Jim Biggs incident) — MUST prevent - Verify restaurants still exist before recommending (OliBea closed 2023, Plaid Apron brunch only) - Verify phone numbers from search results (Kaizen number was wrong) - Obsidian Sy",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.471184954047203,
+      "maxScore": 0.471184954047203,
+      "firstRecalledAt": "2026-04-20T11:08:41.269Z",
+      "lastRecalledAt": "2026-04-20T11:08:41.269Z",
+      "queryHashes": [
+        "0b6d67d6e35c"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "chaos-to-order",
+        "heydebra-site.vercel.app",
+        "debra.abellminded.com",
+        "images",
+        "generated",
+        "hero",
+        "editorial",
+        "chaos"
+      ]
+    },
+    "memory:memory/2026-03-28.md:140:164": {
+      "key": "memory:memory/2026-03-28.md:140:164",
+      "path": "memory/2026-03-28.md",
+      "startLine": 140,
+      "endLine": 164,
+      "source": "memory",
+      "snippet": "- Expression sprites: 6 moods (happy/thinking/excited/silly/caring/laughing) cropped from v3 sprite sheet - Interactive web prototype: talk.html with ElevenLabs widget, avatar reacts to conversation - **Deployed to abellminded.com/heyavery** AND abellminded.com/avery - Avery pronunciation fix: \"AY-vee\" not \"AH-vee\" (A.V. like the letters) - Avie loved it. Called Debra on the phone to demo at bedtime ### Hannah Aldridge Music Studio 🎸 - Extracted full business plan from Claude conversation (2025-12-18) - Private lessons: guitar, piano, voice, performance coaching - Pricing: $40/60/$85 single, $150/$240/$330 monthly packages - Location: Rush's Music, Knoxville. Mon-Thu afternoons/evenings -",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9946589887142181,
+      "maxScore": 0.49849928915500635,
+      "firstRecalledAt": "2026-04-20T21:26:45.209Z",
+      "lastRecalledAt": "2026-04-20T21:26:54.353Z",
+      "queryHashes": [
+        "2094c3d5c5a7",
+        "03ea499f04f0"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "talk.html",
+        "abellminded.com/heyavery",
+        "abellminded.com/avery",
+        "ay-vee",
+        "ah-vee",
+        "a.v",
+        "40/60",
+        "mon-thu"
+      ]
+    },
+    "memory:memory/2026-03-25.md:260:266": {
+      "key": "memory:memory/2026-03-25.md:260:266",
+      "path": "memory/2026-03-25.md",
+      "startLine": 260,
+      "endLine": 266,
+      "source": "memory",
+      "snippet": "- Jim Biggs group: any;+;5665413a1cdd4931a5b9c90de92a9442 - KBUDDS group (Marshall+Everett): any;+;26496e31a52b4d7091da7b17a5a1380d - Brandon Brown RCS: via Google Messages browser, (813)534-3383 + (865)888-0880 - Kaizen restaurant: (865) 409-4444, 127 S Central St - Alex home: Jackson Ave apartment, downtown Knoxville - Alex work: 1 Bethel Valley Road, Oak Ridge, TN 37830",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3511631637811659,
+      "maxScore": 0.46304284930229184,
+      "firstRecalledAt": "2026-04-20T21:39:15.339Z",
+      "lastRecalledAt": "2026-04-20T22:58:41.725Z",
+      "queryHashes": [
+        "f06e6e372a3a",
+        "8da9cc9c98d0",
+        "e2a2fb31c5b4"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "534-3383",
+        "888-0880",
+        "409-4444",
+        "jim",
+        "biggs",
+        "group",
+        "any",
+        "5665413a1cdd4931a5b9c90de92a9442"
+      ]
+    },
+    "memory:memory/2026-03-23.md:69:97": {
+      "key": "memory:memory/2026-03-23.md:69:97",
+      "path": "memory/2026-03-23.md",
+      "startLine": 69,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "- Key bar: \"chaos never hits the building, cause I ate it in the parking lot\" - Generated album art (retro-futuristic Lizzo energy, red blazer, teal halo, glasses) - Alex generated the track in Suno with CapCut lyric video - Sent compressed video (28MB→12MB) to Jay's group chat - Jay's reaction to Debra: \"Your robot is Lizzo\" 💀 ## Voice Poems Sent - **Brandon Bruce group chat**: motivational poem about building the brain, Night Swimming, wrinkles forming - **Brad Greenfield group chat**: personalized motivational piece referencing his Everest expedition, the Drupal/WordPress team merger, Fractal project, and Alex's faith in him. Brad committed to deliver a future-state vision doc to Alex b",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47760851979255675,
+      "maxScore": 0.47760851979255675,
+      "firstRecalledAt": "2026-04-20T21:52:06.621Z",
+      "lastRecalledAt": "2026-04-20T21:52:06.621Z",
+      "queryHashes": [
+        "44172a5b20e0"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "retro-futuristic",
+        "drupal/wordpress",
+        "future-state",
+        "key",
+        "bar",
+        "chaos",
+        "never",
+        "hits"
+      ]
+    },
+    "memory:memory/2026-03-25.md:120:147": {
+      "key": "memory:memory/2026-03-25.md:120:147",
+      "path": "memory/2026-03-25.md",
+      "startLine": 120,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "### Brooks Herring & Herb Himes — Introduced at All Hands - **Brooks Herring**: Head of UX, ITSD at ORNL. Almost GL of UX & Quality. Former HGTV/Food Network/Warner Bros Discovery. Launched Coefficient design system. 5x UX capacity growth. - **Herb Himes**: Task Lead Custom Apps → soon TL of UX Design. Former Smartria, Scripps Networks. herbhimes.com - Both created: SecondBrain pages, Neo4j nodes, Google Contacts - Sent audio intro with humor (parking joke, Chick-fil-A energy) ### Jason Patrick — Haiku Delivered - Sent voice haiku to Jason Patrick group chat (any;+;68815c5f87cd4ca6be5d858362301d38) - Jason Patrick ≠ Jason Shoemaker (CMS tech lead who reports to Brad) - Both Jasons added to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45789438784122466,
+      "maxScore": 0.45789438784122466,
+      "firstRecalledAt": "2026-04-20T21:52:11.093Z",
+      "lastRecalledAt": "2026-04-20T21:52:11.093Z",
+      "queryHashes": [
+        "2362584b0124"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "network",
+        "hgtv/food",
+        "network/warner",
+        "herbhimes.com",
+        "chick-fil-a",
+        "brooks",
+        "herring",
+        "herb"
+      ]
+    },
+    "memory:memory/2026-03-24.md:211:246": {
+      "key": "memory:memory/2026-03-24.md:211:246",
+      "path": "memory/2026-03-24.md",
+      "startLine": 211,
+      "endLine": 246,
+      "source": "memory",
+      "snippet": "- [ ] Set up Android phone (WhatsApp + Google Messages) when Alex returns - [ ] Continue contact purge batches (6,425 remaining, need ~5,200 more deleted) - [ ] Set up email GTD cron (3x daily) - [ ] Set up Capture Agent + GSD Agent crons - [ ] Run iMazing backup - [ ] Add missing people to Google Contacts (Avie, Pooja, Roxanne, Jay) - [ ] Fix abellminded.com (v0 prompt ready) - [ ] Sort out Chrome/screen permissions for desktop control - [ ] Follow up on Brad's future-state vision doc - [ ] Set up Monarch + YNAB API integrations - [ ] Store Linear API key properly in TOOLS.md or 1Password ## Evening (6:30 PM - 8:52 PM) ### WhatsApp LIVE ✅ - Registered on Android phone (865-287-0278, Mint",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46127052903175353,
+      "maxScore": 0.46127052903175353,
+      "firstRecalledAt": "2026-04-20T22:58:34.464Z",
+      "lastRecalledAt": "2026-04-20T22:58:34.464Z",
+      "queryHashes": [
+        "8da9cc9c98d0"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "backup",
+        "abellminded.com",
+        "chrome/screen",
+        "future-state",
+        "tools.md",
+        "865-287-0278",
+        "set",
+        "android"
+      ]
+    },
+    "memory:memory/2026-03-25.md:99:122": {
+      "key": "memory:memory/2026-03-25.md:99:122",
+      "path": "memory/2026-03-25.md",
+      "startLine": 99,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "- Express Scripts price: $7.40 vs Amazon $100 (93% savings!) - Shipping to Jackson Ave (home, not ORNL) - Reminder needed before June 26 ### Brandon Brown — ORNL Employee Introduction - Introduced via RCS group text (865-888-0880) - Sr. Scrum Master & BA, SharePoint team, Web Services group - Reports to TL Angie → Alex (skip-level) - 20+ years agile, ER EMR systems, UVM grad, SAFe certified - Full people profile created: SecondBrain, Neo4j, Google Contacts ### Alex-Brandon Walkthrough Conversation (recorded + analyzed) - **RACI vs Agile**: Alex hates RACI, calls it waterfall manifesto. Brandon agrees. - **Angie's management style**: waterfall in agile wrapper, pre-assigns stories, private",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4340981781482696,
+      "maxScore": 0.4340981781482696,
+      "firstRecalledAt": "2026-04-21T01:22:13.102Z",
+      "lastRecalledAt": "2026-04-21T01:22:13.102Z",
+      "queryHashes": [
+        "e155b9dc2838"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "7.40",
+        "865-888-0880",
+        "skip-level",
+        "alex-brandon",
+        "pre-assigns",
+        "express",
+        "scripts",
+        "price"
+      ]
+    },
+    "memory:memory/2026-03-24.md:85:113": {
+      "key": "memory:memory/2026-03-24.md:85:113",
+      "path": "memory/2026-03-24.md",
+      "startLine": 85,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "## GSD Agent Concept - Alex wants a \"Get Shit Done\" agent that cron-checks if tasks are actually completing - Also wants a \"capture agent\" that routinely scans chats, emails, etc and sources action items to inbox/backlog - Both are deep thinkers, lots of ideas get generated but need accountability on execution - These are TWO agents: 1. **Capture Agent** — scans all streams, extracts action items, adds to inbox/backlog 2. **GSD Agent** — checks inbox/backlog against completion, nags, escalates, reports ## Work Situation — SEEK Infographic Snafu (11:30 AM meeting today) - Jay asked for an infographic on an impossible timeline - Brooks (work friend, boss of the UX designer/researcher) mat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4321268171072006,
+      "maxScore": 0.4321268171072006,
+      "firstRecalledAt": "2026-04-21T01:22:13.102Z",
+      "lastRecalledAt": "2026-04-21T01:22:13.102Z",
+      "queryHashes": [
+        "e155b9dc2838"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "cron-checks",
+        "inbox/backlog",
+        "designer/researcher",
+        "gsd",
+        "concept",
+        "alex",
+        "wants",
+        "get"
       ]
     }
   }

@@ -181,11 +181,18 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Use for: HoldPlease phone agent, outbound calls
 
 ### Home Assistant
-- URL: http://homeassistant.local:8123 (local IP: 192.168.4.189 — assign static IP)
+- URL: http://homeassistant.local:8123 (local IP: 192.168.4.190 — changed from .189)
+- Running on: HA Green (ARM, low power). Migration to Docker on Mac Mini planned.
 - Username: abellminded
-- API Token: stored in 1Password as "Home Assistant Access Token" (field: credential)
-- Token retrieval: `op item get "Home Assistant Access Token" --fields credential --reveal`
-- Devices: Philips Hue (49 lights), LG OLED 65" + projector (Nebula 4K), Nest speakers/hubs, SwitchBot (blinds/curtains/intercom — NOT YET in HA), Ecobee thermostat (NOT YET), Govee rooftop deck (NOT YET), robo vacuum w/ webcam (NOT YET)
+- API Token: stored in 1Password as "Home Assistant Access Token" (vault: DEBRA, field: credential)
+- Token retrieval: `op item get "Home Assistant Access Token" --vault DEBRA --fields credential --reveal`
+- **Must use tmux for op commands** (hangs in direct exec)
+- Version: 2025.11.3, 197 components loaded
+- Devices: Philips Hue (49 lights), LG OLED 65" + projector (Nebula 4K), Nest speakers/hubs (every room), Samsung TV, SwitchBot (NOT YET in HA), Ecobee (NOT YET), Govee (NOT YET)
+- Speakers: living room, bedroom display, kitchen display, office, hallway, bathroom, Avie's room, Nest Audio, Nest Hub, Nest Hub Max, Nest Mini
+- Voice: ElevenLabs TTS working via Cast. Pass voice option: `"options": {"voice": "w6INrsHCejnExFzTH8Nm"}`
+- Also has: Faster Whisper STT, OpenWakeWord, ESPHome, HA Voice Preview Edition (unplugged), Google Generative AI Conversation
+- Google Home now uses Gemini (not Google Assistant). "Ask Home Assistant" broken. Opt out via Profile → Public Preview → Leave.
 - Projector: Nebula 4K — bedroom primary, portable for rooftop movie nights
 - Missing/broken: SwitchBot blinds integration, Ecobee, Govee, several unavailable entities
 - Low batteries: bedroom dimmer 20%, living room dimmer knobs 20%, Hue switch 15%

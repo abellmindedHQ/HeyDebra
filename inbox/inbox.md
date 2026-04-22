@@ -216,6 +216,12 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 ## 📥 Captured 2026-04-20 06:11 PM ET
 
 - [ ] Secure lunchpool.io Google account (blocked sign-in attempt, check activity and change password) // assigned to: Alex, due: ASAP, priority: urgent, source: email:Critical security alert for alex@lunchpool.io:Google, area: 🚀 Build, captured: 2026-04-20 18:11
+
+
+## 📧 Captured 2026-04-21 07:30 AM ET
+
+- [ ] Review and accept updated permissions for Claude GitHub App (installed on Alex's account, requesting new permissions) // assigned to: Alex, due: soon, priority: normal, source: email:[GitHub] Claude is requesting updated permissions:GitHub, area: 🚀 Build, captured: 2026-04-21 07:30
+- [ ] Brief Regina and Andrew on Iteright pilot engagement and demand management tool integration options (from ITSD Project Intake meeting Apr 20) // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ITSD Project Intake:otter.ai, area: 🏢 ORNL, captured: 2026-04-21 07:30
 - [ ] Review Verizon 401(k) distribution notification and take action if needed // assigned to: Alex, due: 2026-06-18, priority: normal, source: email:distribution notification:Fidelity/Verizon 401k, area: 💊 Health & Money, captured: 2026-04-20 18:11
 - [ ] Enroll Avie for YMCA inservice childcare on May 5 (spaces limited, $17-20/day, form link in email from Tonya Creed) // assigned to: Alex, due: ASAP, priority: urgent, source: email:Inservice May 5 Enrollment:YMCA, area: 👨‍👧 People, captured: 2026-04-20 18:11
 - [ ] Sign up for Premier Surgical HealtheLife patient portal (invite link in email, expires in 90 days) // assigned to: Alex, due: within 90 days, priority: normal, source: email:Premier Surgical HealtheLife:IQHealth, area: 💊 Health & Money, captured: 2026-04-20 18:11
@@ -223,3 +229,11 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Build SQL budget dashboard replicating Josh's subcontract/labor overspend view for Jay // assigned to: Alex, due: not specified, priority: normal, source: email:Otter Finance 1:1 with Josh and Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11
 - [ ] Reconcile EDRM spending figures (Josh's report vs new dashboard) at Wednesday meeting // assigned to: Alex, due: 2026-04-22, priority: normal, source: email:Otter Finance 1:1 with Josh and Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11
 - [ ] Organize AI intake stakeholder roundtable with Pam, Dan, and John to define unified intake strategy // assigned to: Alex, due: not specified, priority: normal, source: email:Otter AI Automation Brainstorm:otter.ai, area: 🏢 ORNL, captured: 2026-04-20 18:11
+
+
+## 📥 Captured 2026-04-21 06:06 PM ET
+
+- [ ] Attend Avie's Historical Wax Museum presentation on Friday Apr 25 (front patio, arrive ready; costume optional but encouraged). ⚠️ Avie has adenoidectomy Wed Apr 22 — confirm she'll be recovered in time // assigned to: Alex, due: 2026-04-25, priority: normal, source: email:Wax Museum and Items for ABC countdown:ParentSquare (Rebecca Henderson), area: 👨‍👧 People, captured: 2026-04-21 18:06
+- [ ] Resolve AudioTheme subscription payment failure (order #28987) — update payment method or pay manually before retry // assigned to: Alex, due: ASAP, priority: normal, source: email:Automatic payment failed for 28987:AudioTheme, area: 💳 Payments, captured: 2026-04-21 18:06
+- [ ] Rework X203 budget/outflow dashboard to incorporate sold-services work and reflect current spending (from Drupal Scrum meeting Apr 21) // assigned to: Alex, due: not specified, priority: normal, source: email:Drupal Scrum meeting summary:otter.ai, area: 🏢 ORNL, captured: 2026-04-21 18:06
+- [ ] Schedule 90-min transformation planning meeting for Friday evening with relevant stakeholders (from Drupal Scrum Apr 21) // assigned to: Alex, due: 2026-04-25, priority: normal, source: email:Drupal Scrum meeting summary:otter.ai, area: 🏢 ORNL, captured: 2026-04-21 18:06

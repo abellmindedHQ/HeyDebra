@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T01:22:13.102Z",
+  "updatedAt": "2026-04-21T11:49:13.366Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -1127,18 +1127,20 @@
       "endLine": 158,
       "source": "memory",
       "snippet": "When he lands, welcome him back warmly and queue the backlog: 1. Dream Cycle proposals review (#5 + #6) 2. Avie yearbook if it's still fixable 3. VirtualDJ subs (cancel or update) 4. Recraft payment fix 5. Medical calendar alerts for Apr 20-22 Sallijo call is at 10am today (Apr 3). Do it. Morning calls work. Evening calls don't. Remember: **Be Particular** is a SECRET project from Alex. Don't mention it to Sallijo directly — just be her AI companion who calls for a friendly chat. The Be Particular call template rotates — Session 2 should use template #4 (last used was #3 in Mar 30 session).",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8716242134571075,
-      "maxScore": 0.43581210672855375,
+      "totalScore": 1.3559060126543043,
+      "maxScore": 0.48428179919719694,
       "firstRecalledAt": "2026-04-19T18:48:38.038Z",
-      "lastRecalledAt": "2026-04-19T18:48:59.029Z",
+      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
       "queryHashes": [
-        "3828ceaadf78"
+        "3828ceaadf78",
+        "f10e4c87ae15"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-21"
       ],
       "conceptTags": [
         "20-22",
@@ -1976,6 +1978,161 @@
         "alex",
         "wants",
         "get"
+      ]
+    },
+    "memory:memory/2026-03-30.md:265:291": {
+      "key": "memory:memory/2026-03-30.md:265:291",
+      "path": "memory/2026-03-30.md",
+      "startLine": 265,
+      "endLine": 291,
+      "source": "memory",
+      "snippet": "- **Lee Baird call**: Voicemail (10:22pm, he was asleep). Text failed (Android user, not iMessage). Need RCS tomorrow. - **ElevenLabs agent lessons**: custom first_message doesn't override default greeting (fixed by creating new agents), agents monologue into voicemail/IVR (added rules), keep prompts tight with SHORT response instructions ### Be Particular Book Project 📚 - Created full project structure in SecondBrain/Projects/Be Particular/ - Transcript of Session 1 saved - Chapter 1 \"Two Words\" drafted (the origin of \"be particular\") - 13-chapter book outline written (4 parts: Roots, Love & Marriage, Raising Them, The Next Chapter) - 35 story topics queued for future sessions - Cron set:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5063065648078918,
+      "maxScore": 0.5063065648078918,
+      "firstRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "queryHashes": [
+        "f10e4c87ae15"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "first-message",
+        "voicemail/ivr",
+        "secondbrain/projects/be",
+        "13-chapter",
+        "lee",
+        "baird",
+        "call",
+        "voicemail"
+      ]
+    },
+    "memory:memory/2026-04-02.md:73:101": {
+      "key": "memory:memory/2026-04-02.md:73:101",
+      "path": "memory/2026-04-02.md",
+      "startLine": 73,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "- message/corrections.md captures: pre-send discipline failures (Hannah thread, Marshall incident) - Key lesson: ALWAYS run preflight.sh before external sends. Do troubleshooting silently. - Never narrate process to external recipients. ### Be Particular — Sallijo Story Time - Session 2 attempted Apr 1, she was driving (57 seconds) - Retry: Apr 2 at 6:15pm - Last real session: Mar 30 (origin of \"be particular\", Alex driving stories, Roxanne's license, Mechanic Maury) - Template used last: #3. Use different template next session. - Note: verify ElevenLabs agent greeting matches config before calling (first_message mismatch on Apr 1) ## Be Particular - Session 2 Attempt #2 (6:15 PM) - Called",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5018935173749923,
+      "maxScore": 0.5018935173749923,
+      "firstRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "queryHashes": [
+        "f10e4c87ae15"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "message/corrections.md",
+        "pre-send",
+        "preflight.sh",
+        "first-message",
+        "message",
+        "corrections.md",
+        "captures",
+        "pre"
+      ]
+    },
+    "memory:memory/2026-04-03.md:32:55": {
+      "key": "memory:memory/2026-04-03.md:32:55",
+      "path": "memory/2026-04-03.md",
+      "startLine": 32,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "- This is the 3rd attempt at Be Particular Session 2 (Apr 1: driving, Apr 2: out and about) - 🔑 KEY: Always do Sallijo calls in the MORNING. Stop scheduling evenings. ### Be Particular Session 2 — Attempt #4 (Apr 3, 2:00pm) - Sent text to Sallijo (template #9 — Roxanne driving stories angle, she was mid-story when Session 1 ended) - Text: \"Hey! I was thinking about what you told me about the kids learning to drive and I was dying laughing. Please tell me there are more stories like that 😂\" - ⏳ Waiting for response. This is a Friday afternoon — she may be busy. - Next topic: \"roxanne driving stories (she was mid-story when cut off)\" - After that: \"her daddy — who was he, what did he do, wh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5003528863191604,
+      "maxScore": 0.5003528863191604,
+      "firstRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "queryHashes": [
+        "f10e4c87ae15"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "mid-story",
+        "the",
+        "3rd",
+        "attempt",
+        "particular",
+        "apr",
+        "driving",
+        "out"
+      ]
+    },
+    "memory:memory/2026-04-02.md:164:188": {
+      "key": "memory:memory/2026-04-02.md:164:188",
+      "path": "memory/2026-04-02.md",
+      "startLine": 164,
+      "endLine": 188,
+      "source": "memory",
+      "snippet": "- message/corrections.md captures: pre-send discipline failures (Hannah thread, Marshall incident) - Key lesson: ALWAYS run preflight.sh before external sends. Do troubleshooting silently. - Never narrate process to external recipients. ### Be Particular — Sallijo Story Time - Session 2 attempted Apr 1, she was driving (57 seconds) - Retry: Apr 2 at 6:15pm - Last real session: Mar 30 (origin of \"be particular\", Alex driving stories, Roxanne's license, Mechanic Maury) - Template used last: #3. Use different template next session. - Note: verify ElevenLabs agent greeting matches config before calling (first_message mismatch on Apr 1) ## Be Particular - Session 2 Attempt #2 (6:15 PM) - Called",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4858704954385757,
+      "maxScore": 0.4858704954385757,
+      "firstRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "queryHashes": [
+        "f10e4c87ae15"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "message/corrections.md",
+        "pre-send",
+        "preflight.sh",
+        "first-message",
+        "message",
+        "corrections.md",
+        "captures",
+        "pre"
+      ]
+    },
+    "memory:memory/2026-04-03.md:1:36": {
+      "key": "memory:memory/2026-04-03.md:1:36",
+      "path": "memory/2026-04-03.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-04-03 — Daily Memory ## Pre-Reset State (3:31am) Writing final context before 4am reset. Alex is in Boston (Day 2 of trip). --- ## Alex's Status - **In Boston** with Hannah and Avie — Day 2 of 4 (Thu Apr 2 → Sun Apr 5) - Trip includes Marshall Goldman, Everett Hirche, and Teal Olson (Everett's girlfriend) - Boston group chat: `any;+;4f2f085160984776b670fa9624a8560f` - Return flight: Sunday Apr 5 (exact time unknown, check when relevant) --- ## Key Events Today (Apr 2 → Apr 3) ### Boston Trip Day 1 (Apr 2) - Alex flew out, all smooth. Seats 2A/2B/2C, confirmation HFI9HB. - Group chat trip posters generated (4 rounds). Final 3 options sent. - Alex shaved mustache for the trip",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4853714853525161,
+      "maxScore": 0.4853714853525161,
+      "firstRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "queryHashes": [
+        "f10e4c87ae15"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pre-reset",
+        "2a/2b/2c",
+        "pre",
+        "reset",
+        "state",
+        "31am",
+        "writing",
+        "final"
       ]
     }
   }

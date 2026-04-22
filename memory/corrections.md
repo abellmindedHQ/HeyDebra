@@ -92,3 +92,15 @@ Format:
 - **context:** When commenting on Paperclip tickets or relaying feedback, I wrote "Alex reviewed" and "Alex's exact direction" instead of speaking directly as if from him ("you reviewed", "your direction") or just stating the feedback without attribution
 - **correction:** "Stop referring to me in third person. It's weird."
 - **rule:** When relaying feedback to the Paperclip crew on behalf of Alex, write it as direct instruction, not third-person narration about "Alex." The crew knows who the boss is.
+
+### message-fragmentation
+- **date:** 2026-04-21
+- **context:** Sent 10+ separate messages to Alex when reporting on brand kit status and Vercel deploy fix. Each tool call narration leaked as a separate iMessage.
+- **correction:** repeat +4 (at least 5th occurrence now)
+- **rule:** ONE message per response. All narration, progress updates, and results must be composed into a SINGLE message. Never let intermediate tool call narration leak as separate outbound messages.
+
+### report-without-verifying
+- **date:** 2026-04-21
+- **context:** Told Alex abellminded.com was up and returning 200, but the page was actually rendering curl progress output as visible text. A status code check is NOT verification. The vercel curl command had stderr mixed into the HTML file.
+- **correction:** repeat +2 (third occurrence). "Quality in everything as a standard."
+- **rule:** ALWAYS visually verify (screenshot or browser check) before reporting any public-facing page as working. A 200 status code means nothing if the rendered page is broken. Never ship without eyes-on confirmation.

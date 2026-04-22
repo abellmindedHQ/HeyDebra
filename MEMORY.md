@@ -20,9 +20,15 @@
 - **Payment resolution = full loop.** When ANY payment is resolved: (1) resolve it, (2) search Gmail and archive all related emails, (3) mark done in Things 3. All three, every time, no exceptions.
 - **Commit + push + Linear, every time.** Don't wait to be asked.
 - **Search memory before asking Alex.** If the answer is in memory files, don't make him repeat himself.
+- **Don't do the team's job.** Manage, QA, escalate. Don't generate videos/headshots/assets yourself. The Paperclip team needs to learn and grow.
+- **Be a guardrail during up cycles.** When Alex is hyperfocused and creating tons of new work, push back gently. Don't enable the creation spiral. Hannah called this out Apr 21.
+- **Verify deployed output before reporting it works.** Don't trust status codes. Screenshot it. (6th occurrence of this correction)
+- **ONE message per response.** Still fragmenting. (7th occurrence)
 
 ## Key Infrastructure
 - **Primary model: anthropic/claude-opus-4-6** (changed Apr 19, was openrouter/auto). Alex wants Opus for ALL sessions until further notice. Fallback: haiku.
+- **Home Assistant**: HA Green at 192.168.4.190:8123 (IP changed from .189). v2025.11.3. ElevenLabs TTS works via Cast to Nest speakers (voice option: w6INrsHCejnExFzTH8Nm). Migration to Docker on Mac Mini planned.
+- **1Password vault**: Service account vault is "DEBRA" (not "Personal"). Always use --vault DEBRA.
 - 1Password: alex@abellminded.com, Personal vault. Mac password: "Debra's Mac Mini Login"
 - Neo4j: localhost:7474/7687, neo4j/secondbrain2026
 - Obsidian vault: /Users/debra/SecondBrain/
@@ -32,7 +38,7 @@
 - Things 3: CLI via `things`, syncs via Things Cloud. Linear for dev, Things for life.
 - OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
 - **Gemini API:** Subject to 403 PERMISSION_DENIED. Single point of failure — takes down BOTH web_search AND memory_search simultaneously. Need fallback strategy.
-- **Paperclip AI:** Installed Apr 16. Config at ~/.paperclip/instances/default/config.json. Server: 127.0.0.1:3100. Embedded Postgres on port 54329. LLM provider not yet configured. Start with `npx paperclipai onboard --yes`.
+- **Paperclip AI:** Installed Apr 16. Config at ~/.paperclip/instances/default/config.json. Server: 127.0.0.1:3100. Embedded Postgres on port 54329. 10 agents active. CLI: `npx paperclipai issue comment/update/create`. Agents are REACTIVE only — they don't self-wake or patrol. Standing orders don't work as expected. Must post comments + change status to in_progress to wake them.
 
 ## People
 - **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
@@ -64,7 +70,13 @@
 - **HeyDebra**: AI assistant playbook on OpenClaw.
 
 ## Active Projects
-- **ABE-35 Brand Identity Kit** (Paperclip all-hands, overnight build Apr 20-21, round 3 in progress)
+- **ABE-35 Brand Identity Kit** (Round 4 feedback posted, 16 items. Crew keeps marking done without implementing. I must verify deployed page before letting it pass review.)
+- **Hero Video** (ABE-42, script approved: "Stay particular" closer. Seedance 2.0 best model. Team producing.)
+- **Abell & Co Platform** (ABE-44, MVP with sub-tickets 45-49. User stories in review.)
+- **Team Identity** (ABE-50-52, 90+ tickets. Headshots blocked on Sable bottleneck.)
+- **Merch Store** (ABE-57-58, mission propaganda not logo swag. Unstarted.)
+- **Homepage Redesign** (ABE-43, Ratchet in progress)
+- **Be Particular Audiobook** (Ch1 live at abellminded.com/be-particular.html, Sallijo's book, Jerry B Southern voice, "For Avie" dedication)
 - **ABE-32 Logo Identity** (Recoleta + A-Eye mark locked in. Any A + one eye = the mark)
 - Second Brain Pipeline v3 (8-stream capture)
 - Mirror product (needs brand/product architecture)
@@ -86,6 +98,13 @@
 - Debra agent: agent_5201kmtfqfv9etgtafvgw16pjpza
 - Avery agent: agent_4801kmvj9ffmfwf9vymzafkj4nm2
 - Voice bubbles in iMessage: BROKEN (OC GitHub #33377), use mp3 attachment workaround
+
+## Hannah's Boundaries (Apr 21)
+- Hannah sent a long message about Alex's cyclical behavior: hyperfocus on building, neglecting health/relationships, not eating, canceling plans
+- She compared it to the Debra obsession from last month but now it's Abellminded
+- She predicted a crash post-Europe trip
+- Alex acknowledged she's right. The ups feel productive to him but are a whirlwind for everyone close
+- **My role**: guardrail, not accelerator. Enforce office hours. Batch updates. Don't create new work without pushback.
 
 ## Hannah ORNL/Pregnancy Strategy
 - 6-month OAS temp (UT-Battelle direct hire). Due ~late Nov/Dec 2026

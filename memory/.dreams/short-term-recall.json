@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T11:49:13.366Z",
+  "updatedAt": "2026-04-22T07:33:29.685Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -683,19 +683,21 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **8:40am**: Avie ENT surgery consult at Children's ENT Northshore (DONE ✅) - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - **7:00pm**: Chelsea therapy (video, He",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2550328807608346,
+      "totalScore": 1.7765118973032692,
       "maxScore": 0.7501616166607599,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
       "queryHashes": [
         "76243851281a",
-        "4f8bb40c8c4f"
+        "4f8bb40c8c4f",
+        "b084f49bbbf1"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-22"
       ],
       "conceptTags": [
         "gpt",
@@ -715,18 +717,20 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# April 9, 2026 — Session Log ## Morning (7:55 AM startup) - Gateway came back online after restart from Apr 8 debug logging attempt - 5 background tasks had been interrupted by the restart: 1. Email GTD processing (classified some emails, interrupted mid-run) 2. Email bulk cleanup (identified Runway AI, GitLab, ElevenLabs, Carta, Greenlight, Thrizer as important) 3. Contact sync (lost temp files, needs fresh fetch) 4. Voice memo/BB attachment debugging (was about to read code) 5. Pools research hunt (finished gathering, about to write findings) - LLM export processor completed: 666 conversations total in SecondBrain (Claude 139, Claude ORNL 316, ChatGPT ORNL 211) ## Immediate St",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5041818499565124,
-      "maxScore": 0.5041818499565124,
+      "totalScore": 1.033184142410755,
+      "maxScore": 0.5290022924542427,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
       "queryHashes": [
-        "76243851281a"
+        "76243851281a",
+        "b084f49bbbf1"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-22"
       ],
       "conceptTags": [
         "gateway",
@@ -1386,18 +1390,20 @@
       "endLine": 122,
       "source": "memory",
       "snippet": "Session carried over from Apr 1 evening. Writing final context before 4am reset and Alex's departure to Boston. ### Alex's Status - **Asleep** — went to bed ~9pm for 5:45am departure to TYS airport - Flies Boston today (Thu Apr 2 - Sun Apr 5) with Hannah and Avie - Flight G4 1426 | TYS → BOS | Boards 6:45am, Departs 7:30am, Arrives 9:46am - Confirmation: HFI9HB | Seats: Hannah 2A, Alex 2B, Avie 2C (Zone 1, all checked in ✅) ### Overnight Automation (while Alex slept, Apr 1 evening → Apr 2 early AM) - Capture agent ran: clean - GSD cron ran: check memory for report - Dream Cycle #5: 3 proposals generated (not yet reviewed by Alex — queue for post-Boston) - Night Swimming suite (Sunday): wil",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4877585560083389,
-      "maxScore": 0.4877585560083389,
+      "totalScore": 1.0051632553339005,
+      "maxScore": 0.5174046993255615,
       "firstRecalledAt": "2026-04-20T03:34:45.166Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.166Z",
+      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
       "queryHashes": [
-        "cc8b9e4e8b0e"
+        "cc8b9e4e8b0e",
+        "b084f49bbbf1"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-22"
       ],
       "conceptTags": [
         "post-boston",
@@ -2133,6 +2139,99 @@
         "31am",
         "writing",
         "final"
+      ]
+    },
+    "memory:memory/2026-04-10.md:1:22": {
+      "key": "memory:memory/2026-04-10.md:1:22",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# April 10, 2026 — Session Log ## Summary Quiet day. Alex didn't engage directly. All crons ran normally. No direct conversations. ## Morning Crons (All ran successfully) - **Email triage (7:04 AM):** 100 emails processed, 35 archived, 65 kept. 8 urgent (Google Cloud billing suspended, GitLab security, Google security alert, ElevenLabs/HuggingFace logins, Workspace storage grace period expired). 11 action items. 8 payment flags (5x Runway failures still sitting). - **Capture agent (7:38 AM):** 4 new actionable items captured and routed to inbox + Things 3: 1. Review 4 Monarch transactions 2. Download 2025 K-1 from Carta (Market Square Ventures Fund I) 3. Schedule meeting with Regina",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5240024387836456,
+      "maxScore": 0.5240024387836456,
+      "firstRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "queryHashes": [
+        "b084f49bbbf1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "elevenlabs/huggingface",
+        "k-1",
+        "april",
+        "log",
+        "summary",
+        "quiet",
+        "day",
+        "alex"
+      ]
+    },
+    "memory:memory/2026-04-07.md:98:134": {
+      "key": "memory:memory/2026-04-07.md:98:134",
+      "path": "memory/2026-04-07.md",
+      "startLine": 98,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "- ✅ Neo4j, QMD, 1Password, Things 3 running - ✅ Voice pipeline: diarization + chapters + Neo4j sidecar - ✅ SecondBrain: two-tier (Projects hub + Meetings/project-slug receipts) - ⚠️ LaunchAgent: reload needed on terminal for watch-alex-notes.sh updates - ⚠️ AssemblyAI: $25 top-up refreshed, 3-6 month runway ## Personal Context - Hannah: still pregnant (keeping secret, due ~early Sept) - Avie: Spring Picture Day Apr 9 (prepaid) - Boston trip with Hannah: PTO needed, 2 weeks pending - Taxes: 9 days (April 15 deadline) - Merle Benny: bi-weekly reminder cron set (last catch-up June/July 2025) ## Corrections Logged (Apr 6) - Message discipline: 6 messages in a row (violated single-message rule)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5187074035406113,
+      "maxScore": 0.5187074035406113,
+      "firstRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "queryHashes": [
+        "b084f49bbbf1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "qmd",
+        "two-tier",
+        "meetings/project-slug",
+        "watch-alex-notes.sh",
+        "top-up",
+        "3-6",
+        "bi-weekly",
+        "catch-up"
+      ]
+    },
+    "memory:memory/2026-04-07.md:23:59": {
+      "key": "memory:memory/2026-04-07.md:23:59",
+      "path": "memory/2026-04-07.md",
+      "startLine": 23,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- Avie yearbook missed Apr 2 deadline (escalation failure) **Memory accuracy:** 8/8 probes passed (87.5%, high confidence) ## Work Context - ORNL reorg: Web Services → Knowledge Products rename complete - Voice notes infrastructure: live + working (AssemblyAI universal-3-pro) - Sarah Glei: voice ID confirmed, meeting notes being captured - Jay Eckles: 1:1 completed Apr 6, full context captured to SecondBrain ## Infrastructure Status - ✅ All 18 crons operational - ✅ Neo4j, QMD, 1Password, Things 3 running - ✅ Voice pipeline: diarization + chapters + Neo4j sidecar - ✅ SecondBrain: two-tier (Projects hub + Meetings/project-slug receipts) - ⚠️ LaunchAgent: reload needed on terminal for watch-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5180692881345749,
+      "maxScore": 0.5180692881345749,
+      "firstRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "queryHashes": [
+        "b084f49bbbf1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "qmd",
+        "8/8",
+        "87.5",
+        "universal-3-pro",
+        "two-tier",
+        "meetings/project-slug",
+        "avie",
+        "yearbook"
       ]
     }
   }

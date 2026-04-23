@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-22T07:33:29.685Z",
+  "updatedAt": "2026-04-22T11:52:41.992Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -1677,21 +1677,23 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- Deployed hannah-conversation.html and abellminded-brand-printable.html to Vercel - Brand printable is a scaffold only; Alex said he'll read BRAND.md directly. Parked. - Working public URL: https://state-kohl.vercel.app/abellminded-brand-printable.html - Created Paperclip ticket ABE-28 for Kit Ballard: \"Abellminded Identity, Phase One: Mood Board\" (High priority, Tuesday EOD deadline) - BRAND.md written and seeded by Alex + Claude today. Kit owns it going forward. ### Dan Janowski enrichment (IN PROGRESS) - Dan is AI for Operations Program Lead at ORNL - Has a meeting with Alex Friday Apr 25, 9am: \"Demo automated SDLC with Dan Janowski (Team Lead Intro)\" - SecondBrain entry created at /Use",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9698945105075836,
+      "totalScore": 2.4670424461364746,
       "maxScore": 0.5199307501316071,
       "firstRecalledAt": "2026-04-20T11:08:40.979Z",
-      "lastRecalledAt": "2026-04-20T21:26:54.353Z",
+      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
       "queryHashes": [
         "1b154ed18698",
         "0b6d67d6e35c",
         "2094c3d5c5a7",
-        "03ea499f04f0"
+        "03ea499f04f0",
+        "fad34aedb1b9"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22"
       ],
       "conceptTags": [
         "hannah-conversation.html",
@@ -2232,6 +2234,161 @@
         "meetings/project-slug",
         "avie",
         "yearbook"
+      ]
+    },
+    "memory:memory/2026-04-21.md:18:35": {
+      "key": "memory:memory/2026-04-21.md:18:35",
+      "path": "memory/2026-04-21.md",
+      "startLine": 18,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "- **Round 3 feedback posted 2am**: Bring back soul + people imagery + textures as backgrounds + interactivity + fix all brand violations - **Video brief added 2am**: Hero video at top. Vibe: Apple '87 + old MTV + Sifl & Olly + Ren & Stimpy + Family Matters intro + Church of SubGenius + Better Off Ted corporate satire. Steve tasked with video hire. - Deployed to: https://platform-zeta-eight.vercel.app/identity (needs to be abellminded.com/identity) - Build fix: ESLint errors in page.tsx (unused Placeholder component, JSX comments) — fixed manually before deploy ## ABE-32: Logo Identity — Continued - Multiple QA rounds. Typos (\"ABOLMINDEA\"), eye floating outside A, mixed caps, Nick face with",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5226778298616409,
+      "maxScore": 0.5226778298616409,
+      "firstRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "queryHashes": [
+        "fad34aedb1b9"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "abellminded.com/identity",
+        "page.tsx",
+        "abe-32",
+        "round",
+        "feedback",
+        "posted",
+        "2am",
+        "bring"
+      ]
+    },
+    "memory:memory/2026-04-21.md:260:275": {
+      "key": "memory:memory/2026-04-21.md:260:275",
+      "path": "memory/2026-04-21.md",
+      "startLine": 260,
+      "endLine": 275,
+      "source": "memory",
+      "snippet": "- **Round 1 delivered ~midnight**: QA passed but Alex reviewed at 1am and found it too text-heavy, flat, reads like markdown. No imagery, no interactivity, no soul. - **Round 2**: Overcorrected — stripped too much copy, lost personality. Some A marks missing eyes (brand violation). Hero mark eye too small. - **Round 3 feedback posted 2am**: Bring back soul + people imagery + textures as backgrounds + interactivity + fix all brand violations - **Video brief added 2am**: Hero video at top. Vibe: Apple '87 + old MTV + Sifl & Olly + Ren & Stimpy + Family Matters intro + Church of SubGenius + Better Off Ted corporate satire. Steve tasked with video hire. - Deployed to: https://platform-zeta-eight",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5204469501972199,
+      "maxScore": 0.5204469501972199,
+      "firstRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "queryHashes": [
+        "fad34aedb1b9"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "text-heavy",
+        "platform-zeta-eight",
+        "round",
+        "delivered",
+        "midnight",
+        "passed",
+        "but",
+        "alex"
+      ]
+    },
+    "memory:memory/2026-04-21.md:244:262": {
+      "key": "memory:memory/2026-04-21.md:244:262",
+      "path": "memory/2026-04-21.md",
+      "startLine": 244,
+      "endLine": 262,
+      "source": "memory",
+      "snippet": "- ABE-32 (logo identity) already locked in Apr 20, just needs status updated to done # 2026-04-21 (Tuesday early AM — pre-reset flush) ## QMD Re-Index (4:00 AM cron) - **Update:** 13 collections scanned. 9 new files, 341 updated, 1103 unchanged, 0 removed. 340 orphaned hashes cleaned. - Notable: reflections +4 new, 186 updated; debra-memory +5 new; meetings 47 updated; people 65 updated - **Embed:** 2,506 chunks from 359 documents embedded in 2m 59s (embeddinggemma model) - GTD collection empty (expected — moved to workspace/inbox) - All collections healthy ✓ ## Summary Massive day. Alex was highly engaged from 7am to 2am. Major brand identity work, new contacts, green bubble texting res",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5001498818397522,
+      "maxScore": 0.5001498818397522,
+      "firstRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "queryHashes": [
+        "fad34aedb1b9"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "embedding",
+        "qmd",
+        "abe-32",
+        "pre-reset",
+        "re-index",
+        "debra-memory",
+        "workspace/inbox",
+        "abe"
+      ]
+    },
+    "memory:memory/2026-04-21.md:86:107": {
+      "key": "memory:memory/2026-04-21.md:86:107",
+      "path": "memory/2026-04-21.md",
+      "startLine": 86,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "- Big ask: page should be a MANIFESTO with guidelines woven in, not a spec sheet. Quote interstitials with Vonnegut/Bukowski/Hegel/Edwin Abbott Abbott on Nickelodeon/retrofuture backgrounds - Posted feedback to ABE-35, ABE-36, ABE-39, ABE-41. All moved to in_progress. - Addendum: brand kit becomes SOURCE OF TRUTH for all future work ## Vercel Domain Fix (5:50 AM) - abellminded.com/identity was 404ing because abellminded.com redirects to www.abellminded.com (different Vercel project) - Added vercel.json with rewrites to the \"website\" project to proxy /identity and /brand assets to platform-zeta-eight.vercel.app - Both abellminded.com/identity and www.abellminded.com/identity now return 200",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49872409403324125,
+      "maxScore": 0.49872409403324125,
+      "firstRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "queryHashes": [
+        "fad34aedb1b9"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "vonnegut/bukowski/hegel/edwin",
+        "nickelodeon/retrofuture",
+        "abe-35",
+        "abe-36",
+        "abe-39",
+        "abe-41",
+        "in-progress",
+        "abellminded.com/identity"
+      ]
+    },
+    "memory:memory/2026-04-21.md:329:350": {
+      "key": "memory:memory/2026-04-21.md:329:350",
+      "path": "memory/2026-04-21.md",
+      "startLine": 329,
+      "endLine": 350,
+      "source": "memory",
+      "snippet": "- 7 design issues (worn paper not shown, motif table not showcase, usage boxes not examples, Rockwell/Retrofuture no logo, Abell & Co principle direction question, downloads should be inline) - Big ask: page should be a MANIFESTO with guidelines woven in, not a spec sheet. Quote interstitials with Vonnegut/Bukowski/Hegel/Edwin Abbott Abbott on Nickelodeon/retrofuture backgrounds - Posted feedback to ABE-35, ABE-36, ABE-39, ABE-41. All moved to in_progress. - Addendum: brand kit becomes SOURCE OF TRUTH for all future work ## Vercel Domain Fix (5:50 AM) - abellminded.com/identity was 404ing because abellminded.com redirects to www.abellminded.com (different Vercel project) - Added vercel.json",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4977371722459793,
+      "maxScore": 0.4977371722459793,
+      "firstRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "queryHashes": [
+        "fad34aedb1b9"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "rockwell/retrofuture",
+        "vonnegut/bukowski/hegel/edwin",
+        "nickelodeon/retrofuture",
+        "abe-35",
+        "abe-36",
+        "abe-39",
+        "abe-41",
+        "in-progress"
       ]
     }
   }

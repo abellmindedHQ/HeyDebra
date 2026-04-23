@@ -237,3 +237,9 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Resolve AudioTheme subscription payment failure (order #28987) — update payment method or pay manually before retry // assigned to: Alex, due: ASAP, priority: normal, source: email:Automatic payment failed for 28987:AudioTheme, area: 💳 Payments, captured: 2026-04-21 18:06
 - [ ] Rework X203 budget/outflow dashboard to incorporate sold-services work and reflect current spending (from Drupal Scrum meeting Apr 21) // assigned to: Alex, due: not specified, priority: normal, source: email:Drupal Scrum meeting summary:otter.ai, area: 🏢 ORNL, captured: 2026-04-21 18:06
 - [ ] Schedule 90-min transformation planning meeting for Friday evening with relevant stakeholders (from Drupal Scrum Apr 21) // assigned to: Alex, due: 2026-04-25, priority: normal, source: email:Drupal Scrum meeting summary:otter.ai, area: 🏢 ORNL, captured: 2026-04-21 18:06
+
+
+## 📥 Captured 2026-04-22 06:09 PM ET
+
+- [ ] Process Lufthansa $552.52 clothing reimbursement (Case C-533379-G6W1) via payment link in email, AND find/submit Dec 1, 2025 taxi receipt for additional reimbursement // assigned to: Alex, due: ASAP, priority: urgent, source: email:Lufthansa Case C-533379-G6W1:customer.relations@information.lufthansa.com, area: 💊 Health & Money, captured: 2026-04-22 18:09
+- [ ] Explain Avie's absence (Apr 22) on ParentSquare — she had adenoidectomy surgery today. Link: https://psqr.io/pRv4K9RwCx // assigned to: Alex, due: today, priority: normal, source: email:Avie Abell's Attendance Report:ParentSquare, area: 👨‍👧 People, captured: 2026-04-22 18:09

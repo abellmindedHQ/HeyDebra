@@ -95,7 +95,7 @@ Things like:
 
 ### BlueBubbles
 
-- Server: localhost:1234 (same machine)
+- Server: localhost:1235 (same machine)
 - Group chats: open policy, requireMention for unknown groups
 - ⚠️ **Attachment bug (CONFIRMED — awaiting upstream fix):** Inbound iMessage images are silently dropped. Two bugs: (1) `mediaPaths is not defined` ReferenceError — fixed by 2026.4.11 restart. (2) SSRF guard blocks all attachment downloads from localhost/private IPs — fix is on OpenClaw `main` (commits 7d93970, dd41a78) but NOT in any release as of 2026.4.11. The `allowPrivateNetwork` config key does nothing (schema rejects it). Monitor releases or try `openclaw@next`. See memory/bluebubbles-attachment-bug.md for full diagnostic.
 - Known chats (auto-discovered from BB API, keep updated):

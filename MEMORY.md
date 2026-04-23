@@ -39,6 +39,7 @@
 - OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
 - **Gemini API:** Subject to 403 PERMISSION_DENIED. Single point of failure — takes down BOTH web_search AND memory_search simultaneously. Need fallback strategy.
 - **Paperclip AI:** Installed Apr 16. Config at ~/.paperclip/instances/default/config.json. Server: 127.0.0.1:3100. Embedded Postgres on port 54329. 10 agents active. CLI: `npx paperclipai issue comment/update/create`. Agents are REACTIVE only — they don't self-wake or patrol. Standing orders don't work as expected. Must post comments + change status to in_progress to wake them.
+- **Paperclip Team (Abellminded):** Steve McGoober (Coordinator), Sable Voss (CDO), Ratchet Varma (CTO), Kit Ballard (CWO), Maren Lys (CPO/Philosophy), Wren Kowalski (CQO), Cass Meridian (CRO), Pax Holloway (CPO/Product), Devi Sato (CHRO), Ren Otieno (CIO)
 
 ## People
 - **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
@@ -87,12 +88,9 @@
 - Google Takeout: downloaded, NOT YET processed
 - Paperclip AI: running at 127.0.0.1:3100, 7 agents active
 
-## BB Attachment Bug (Apr 8-9)
-- Attachments detected intermittently (sometimes 0, sometimes correct count)
-- Patched monitor-normalize + channel.runtime with fallback + debug logging
-- Patches WILL BE OVERWRITTEN on npm update — need upstream fix
-- BB webhook registered sniffer on port 18791 in SQLite db
-- Key code locations: extractAttachments() line 562, download logic line 1378-1400, enqueue line 2108
+## BB Attachment Bug (RESOLVED — Apr 19)
+- Fixed in OpenClaw 2026.4.19-beta.2. WhatsApp images confirmed working.
+- iMessage attachments still need upstream BB fix for SSRF guard on localhost/private IPs.
 
 ## ElevenLabs Voice
 - Debra agent: agent_5201kmtfqfv9etgtafvgw16pjpza

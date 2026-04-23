@@ -24,6 +24,8 @@
 - **Be a guardrail during up cycles.** When Alex is hyperfocused and creating tons of new work, push back gently. Don't enable the creation spiral. Hannah called this out Apr 21.
 - **Verify deployed output before reporting it works.** Don't trust status codes. Screenshot it. (6th occurrence of this correction)
 - **ONE message per response.** Still fragmenting. (7th occurrence)
+- **When Alex names a tool for a creative task, he means use that tool for the whole thing.** "Use nanobanana" = generate the entire ad with that tool, not just one component. Don't assume he means a font or a sub-step.
+- **Verify Paperclip "done" tickets actually completed their work.** ABE-85 was marked done but the skill install never succeeded (403 permissions). Check logs, not just status.
 
 ## Key Infrastructure
 - **Primary model: anthropic/claude-opus-4-6** (changed Apr 19, was openrouter/auto). Alex wants Opus for ALL sessions until further notice. Fallback: haiku.

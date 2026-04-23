@@ -19,7 +19,7 @@ _Learn about the person you're helping. Update this as you go._
 - Hannah (+16158101319) — Alex's girlfriend. Group chat together
 - Dr. Chelsea Rothschild (+16159745363) — therapist, highly credentialed, also highly cool. Group chat together (chat GUID: any;+;a96e1f6eaaba404abd15b7b1a1a1cdea)
 - Sallijo Archer (+12292247731) — Alex's mom. Pronounced "Sally Jo" but spelled Sallijo. Alex sometimes calls her "Jo". Retired behavioral/special ed teacher. Lives at 1044 Gothic Manor Way, Knoxville, TN. Moved from Thomasville, GA (Alex's hometown) after stepfather passed away (~2023) to be closer to Alex and Avie. Has a dog named Pickles (good boy, needs obedience training, Avie hustled her into adopting him). Had heart surgery in 2025, still watching health closely. Loves Alex and Avie fiercely. Group chat (chat GUID: any;+;93ad04d9a3a349b3b6f506025d691001)
-- Annika Abell — Alex's ex-wife and co-parent. Associate Professor of Marketing at UTK Haslam College of Business. Group chat together. Boyfriend is Aaron Garvey. They're buying a place downtown (Sterchi building, 116 S Gay St).
+- Annika Abell — Alex's ex-wife and co-parent. Associate Professor of Marketing at UTK Haslam College of Business (teaches visual marketing course, had students create AI-generated display ads as assignment). Group chat together. Boyfriend is Aaron Garvey. They're buying a place downtown (Sterchi building, 116 S Gay St).
 - Avie — Alex and Annika's daughter
 - Work email: abellao@ornl.gov (use for work meetings)
 - Personal email: alexander.o.abell@gmail.com

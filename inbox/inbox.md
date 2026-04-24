@@ -243,3 +243,11 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 
 - [ ] Process Lufthansa $552.52 clothing reimbursement (Case C-533379-G6W1) via payment link in email, AND find/submit Dec 1, 2025 taxi receipt for additional reimbursement // assigned to: Alex, due: ASAP, priority: urgent, source: email:Lufthansa Case C-533379-G6W1:customer.relations@information.lufthansa.com, area: 💊 Health & Money, captured: 2026-04-22 18:09
 - [ ] Explain Avie's absence (Apr 22) on ParentSquare — she had adenoidectomy surgery today. Link: https://psqr.io/pRv4K9RwCx // assigned to: Alex, due: today, priority: normal, source: email:Avie Abell's Attendance Report:ParentSquare, area: 👨‍👧 People, captured: 2026-04-22 18:09
+
+
+## 📥 Captured 2026-04-23 06:13 PM ET
+
+- [ ] Verify ORNL FCU fraud alert: Ideogram AI $20 charge on debit card ending 1904 (Case #229439541). One attempt declined, one approved. Confirm if legitimate via email link or call 833-213-1853 // assigned to: Alex, due: ASAP, priority: urgent, source: email:URGENT: Please Verify Recent Account Activity:ORNL FCU, area: 💊 Health & Money, captured: 2026-04-23 18:13
+- [ ] Finalize simplified finance data model (using finance cubes) and share with team for budgeting and analysis // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Indirect Budget Reform - Shaping FY27 Structure:otter.ai, area: 🏢 ORNL, captured: 2026-04-23 18:13
+- [ ] Schedule working session with Jason Patrick to review budgeting/finance docs line by line (Josh Hill joining as needed) to align on cost estimates // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Indirect Budget Reform - Shaping FY27 Structure:otter.ai, area: 🏢 ORNL, captured: 2026-04-23 18:13
+- [ ] Send outstanding budget/finance questions to team via new group chat (finance or budget reform channel) for async discussion // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Indirect Budget Reform - Shaping FY27 Structure:otter.ai, area: 🏢 ORNL, captured: 2026-04-23 18:13

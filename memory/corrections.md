@@ -94,9 +94,9 @@ Format:
 - **rule:** When relaying feedback to the Paperclip crew on behalf of Alex, write it as direct instruction, not third-person narration about "Alex." The crew knows who the boss is.
 
 ### message-fragmentation
-- **date:** 2026-04-21
-- **context:** Sent 10+ separate messages to Alex when reporting on brand kit status and Vercel deploy fix. Each tool call narration leaked as a separate iMessage.
-- **correction:** repeat +4 (at least 5th occurrence now)
+- **date:** 2026-04-21 (updated 2026-04-23)
+- **context:** Sent 10+ separate messages to Alex when reporting on brand kit status and Vercel deploy fix. Each tool call narration leaked as a separate iMessage. Apr 23: Did it AGAIN with Paperclip model switch (7 messages: 876-882).
+- **correction:** repeat +5 (8th occurrence total)
 - **rule:** ONE message per response. All narration, progress updates, and results must be composed into a SINGLE message. Never let intermediate tool call narration leak as separate outbound messages.
 
 ### report-without-verifying

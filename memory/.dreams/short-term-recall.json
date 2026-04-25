@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-22T11:52:41.992Z",
+  "updatedAt": "2026-04-25T03:31:26.053Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -683,21 +683,23 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **8:40am**: Avie ENT surgery consult at Children's ENT Northshore (DONE ✅) - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - **7:00pm**: Chelsea therapy (video, He",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7765118973032692,
+      "totalScore": 2.517676076533086,
       "maxScore": 0.7501616166607599,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
       "queryHashes": [
         "76243851281a",
         "4f8bb40c8c4f",
-        "b084f49bbbf1"
+        "b084f49bbbf1",
+        "9ff582453052"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gpt",
@@ -781,22 +783,26 @@
       "endLine": 349,
       "source": "memory",
       "snippet": "- Boston: Thu-Sun (Apr 2-5). Flight 1426, 7:30am departure, boards 6:45am. Hannah 2A, Alex 2B, Avie 2C. All checked in. - Lipoma removal: Apr 20 (Mon), 9:30am, 90 min in-office procedure. Mark lipomas with Sharpie beforehand. - Avie surgery: Apr 22 (Wed), adenoidectomy. Hospital calls Apr 21 with time. On correct calendar (Avie Events & School) with both parents invited. ### Things Still Open Before Boston - VirtualDJ Pro + Video: overdue payments (cancel or update?) - Recraft: payment failed - Roxanne NDA/app email: 32 days unanswered - Leigh text: Avie missing Charlotte's party Apr 3 (Alex in Boston)",
-      "recallCount": 5,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4272311210632322,
+      "totalScore": 3.852337941527366,
       "maxScore": 0.5106335788965225,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
       "queryHashes": [
         "76243851281a",
         "34860293cdee",
         "e450c1468ea2",
         "cc8b9e4e8b0e",
-        "4f8bb40c8c4f"
+        "4f8bb40c8c4f",
+        "aa841e5b2343",
+        "5bff8928db90",
+        "9ff582453052"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-24"
       ],
       "conceptTags": [
         "thu-sun",
@@ -1197,20 +1203,23 @@
       "endLine": 274,
       "source": "memory",
       "snippet": "- Template used: #3 (avoid repeating next session) - Previous session: 3/30 covered origin of \"be particular\", Alex first day driving, Roxanne getting license, Mechanic Maury, magnet period fender benders ## Evening Session (4pm - 9pm) ### Payment Cleanup - ✅ Netflix account restored (payment updated). 5 nag emails archived. - ❌ VirtualDJ Pro + Video: still overdue (not addressed) - ❌ Recraft: payment failed (not addressed) ### Dr. Patti Follow-up - Cholesterol-lowering diet prescribed: oats, nuts, fatty fish, avocado, beans. Eat at least 2x daily. - Diet plan saved to SecondBrain/Health/cholesterol-diet-plan.md - Grocery task created for post-Boston - Next appointment: June 24, 3:30pm (b",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4190188139677047,
+      "totalScore": 2.3563245624303817,
       "maxScore": 0.4914280533790588,
       "firstRecalledAt": "2026-04-19T20:53:14.016Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.166Z",
+      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
       "queryHashes": [
         "34860293cdee",
         "e450c1468ea2",
-        "cc8b9e4e8b0e"
+        "cc8b9e4e8b0e",
+        "aa841e5b2343",
+        "4711b25e78eb"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-24"
       ],
       "conceptTags": [
         "3/30",
@@ -1325,21 +1334,23 @@
       "endLine": 106,
       "source": "memory",
       "snippet": "## Midday — ORNL All Hands & People Work ### Hannah Europe Trip CONFIRMED - **May 4-19**, Delta flights TYS → AMS, $996 round trip - Hannah preferred option 2, Alex confirmed - Booking link sent to Hannah in group chat - Sallijo confirmed she can watch Avie May 4-9 - Annika has May 10-16 (Mother's Day week) ### Oral Surgery Time Change - Dr. Shanks office called, moved from 11:45 to **11:15am** Thu Mar 26 - Calendar updated, Sallijo and Hannah both notified - Sallijo already on calendar invite as attendee ### Email to Jay — Time Off - Sent to abellao@ornl.gov with all upcoming dates: - Thu 3/27 oral surgery + Fri 3/28 recovery - April 2-5 Boston trip (Good Friday 4/3 is holiday, only",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.3485045999288559,
+      "totalScore": 1.8100357741117477,
       "maxScore": 0.4831855416297912,
       "firstRecalledAt": "2026-04-19T20:54:50.625Z",
-      "lastRecalledAt": "2026-04-21T01:22:13.102Z",
+      "lastRecalledAt": "2026-04-24T18:09:09.048Z",
       "queryHashes": [
         "e450c1468ea2",
         "cc8b9e4e8b0e",
-        "e155b9dc2838"
+        "e155b9dc2838",
+        "114dddcd0232"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-24"
       ],
       "conceptTags": [
         "4-19",
@@ -1359,18 +1370,23 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-03-25 ## Morning ### GI Consult — Gastrointestinal Associates, 629 Delozier Way, Powell TN - 8am appointment, Alex made it on time after Chick-fil-A + school drop-off - Doctor suspects **eosinophilic esophagitis (EoE)** — allergic condition in esophagus - History: asthma (childhood), eczema (hands, ~5-6 yrs ago), seasonal allergies - Symptoms: solid food sticking, pain, can't breathe after eating, sometimes vomiting - Started ~5-6 years ago, initially with alcohol (quit drinking because of it) - Fried foods, Coca-Cola, french fries trigger it. Broccoli too. Water usually ok. - Whole30 with Annika cleared up eczema previously - Treatment plan: biopsies first, treat for 2-3",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4289805918931961,
-      "maxScore": 0.4289805918931961,
+      "totalScore": 2.236604532599449,
+      "maxScore": 0.45782350003719324,
       "firstRecalledAt": "2026-04-19T20:54:50.625Z",
-      "lastRecalledAt": "2026-04-19T20:54:50.625Z",
+      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
       "queryHashes": [
-        "e450c1468ea2"
+        "e450c1468ea2",
+        "422359323936",
+        "b1114e1a4c6d",
+        "aa841e5b2343",
+        "4711b25e78eb"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-24"
       ],
       "conceptTags": [
         "chick-fil-a",
@@ -1423,19 +1439,22 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "- Prep: clear liquids day before, prep at 5pm + 4hrs before arrival (~2:40am) - Follow THEIR prep instructions, NOT the prep box - Copay TBD (range $15-$1050), they'll call ### Morning Logistics - Chick-fil-A special day + half day at school for Avie - Drop-off at Rocky Hill by 7:35, made it to CFA by 7:23 - Sent voice note to Avie to hustle getting ready - Hannah asked where Alex was, updated her on his schedule - Find My app couldn't be accessed (Mac mini locked, no keystroke permissions) - Chelsea shared Insight Timer profile in group chat, replied ### Hannah Europe Trip - Alex leaning toward Hamburg option - Two options: May 9-23 or May 4-18 - Either way misses one Avie week - May 4-18",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9740705460309982,
+      "totalScore": 1.864850968122482,
       "maxScore": 0.488159954547882,
       "firstRecalledAt": "2026-04-20T03:34:45.166Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
       "queryHashes": [
         "cc8b9e4e8b0e",
-        "4f8bb40c8c4f"
+        "4f8bb40c8c4f",
+        "aa841e5b2343",
+        "4711b25e78eb"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-24"
       ],
       "conceptTags": [
         "chick-fil-a",
@@ -1517,18 +1536,20 @@
       "endLine": 172,
       "source": "memory",
       "snippet": "- Three failures: wrong Mike, wrong channel, didn't check recent messages - Fixed: pulled all 22 chat GUIDs from BB API, mapped to TOOLS.md with participant numbers - Resent corrected voice note to proper group thread - Rule reinforcement: ALWAYS read recent messages in thread before composing. Don't assume from memory. ### New Contacts / People - Teresa Scruggs: property manager at The Real Estate Firm, personal # (865) 237-6463, work # (254) 276-6559 (needs re-adding). Wants to discuss side project/passive income ideas. Reminder Apr 6 to propose meeting times (non-lab, non-Avie week, after hours at TREF office) ### Avie ENT Surgery Consult Results - Adenoidectomy scheduled April 22 - Pro",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4938533842563629,
-      "maxScore": 0.4938533842563629,
+      "totalScore": 1.270685663495583,
+      "maxScore": 0.7768322792392202,
       "firstRecalledAt": "2026-04-20T03:34:45.723Z",
-      "lastRecalledAt": "2026-04-20T03:34:45.723Z",
+      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
       "queryHashes": [
-        "4f8bb40c8c4f"
+        "4f8bb40c8c4f",
+        "9ff582453052"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-24"
       ],
       "conceptTags": [
         "tools.md",
@@ -1677,23 +1698,25 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- Deployed hannah-conversation.html and abellminded-brand-printable.html to Vercel - Brand printable is a scaffold only; Alex said he'll read BRAND.md directly. Parked. - Working public URL: https://state-kohl.vercel.app/abellminded-brand-printable.html - Created Paperclip ticket ABE-28 for Kit Ballard: \"Abellminded Identity, Phase One: Mood Board\" (High priority, Tuesday EOD deadline) - BRAND.md written and seeded by Alex + Claude today. Kit owns it going forward. ### Dan Janowski enrichment (IN PROGRESS) - Dan is AI for Operations Program Lead at ORNL - Has a meeting with Alex Friday Apr 25, 9am: \"Demo automated SDLC with Dan Janowski (Team Lead Intro)\" - SecondBrain entry created at /Use",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4670424461364746,
-      "maxScore": 0.5199307501316071,
+      "totalScore": 3.0071610644459725,
+      "maxScore": 0.5401186183094978,
       "firstRecalledAt": "2026-04-20T11:08:40.979Z",
-      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-24T14:03:04.499Z",
       "queryHashes": [
         "1b154ed18698",
         "0b6d67d6e35c",
         "2094c3d5c5a7",
         "03ea499f04f0",
-        "fad34aedb1b9"
+        "fad34aedb1b9",
+        "23b09fb45bcc"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "hannah-conversation.html",
@@ -1713,18 +1736,20 @@
       "endLine": 90,
       "source": "memory",
       "snippet": "- Dark luxury #080808 + #FF0080 neon pink + Bebas Neue typography - Deployed to debra.abellminded.com - Commit: d44936b ### abellminded.com Brain Map Redesign ✅ - Built with web-designer plugin (from GitHub MickeyAlton33/web-designer-plugin) - Plugin installed at .github/plugin/ in abellminded project - D3.js force-directed graph as hero — 7 nodes, draggable, click to expand - Hot pink scanline sweep, custom cursor, Bebas Neue, zero blue-purple - Deployed to abellminded.vercel.app - Local: /Users/debra/.openclaw/workspace/projects/abellminded/index.html ### abellminded.com Architecture Decision (in progress) - Five audiences: Collaborator, Hiring Manager, Employee, User, CLIENT (most impor",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.472949805855751,
-      "maxScore": 0.472949805855751,
+      "totalScore": 1.0133923530578612,
+      "maxScore": 0.5404425472021103,
       "firstRecalledAt": "2026-04-20T11:08:41.269Z",
-      "lastRecalledAt": "2026-04-20T11:08:41.269Z",
+      "lastRecalledAt": "2026-04-24T14:03:04.499Z",
       "queryHashes": [
-        "0b6d67d6e35c"
+        "0b6d67d6e35c",
+        "23b09fb45bcc"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-24"
       ],
       "conceptTags": [
         "debra.abellminded.com",
@@ -1807,20 +1832,22 @@
       "endLine": 266,
       "source": "memory",
       "snippet": "- Jim Biggs group: any;+;5665413a1cdd4931a5b9c90de92a9442 - KBUDDS group (Marshall+Everett): any;+;26496e31a52b4d7091da7b17a5a1380d - Brandon Brown RCS: via Google Messages browser, (813)534-3383 + (865)888-0880 - Kaizen restaurant: (865) 409-4444, 127 S Central St - Alex home: Jackson Ave apartment, downtown Knoxville - Alex work: 1 Bethel Valley Road, Oak Ridge, TN 37830",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.3511631637811659,
+      "totalScore": 1.8010934382677075,
       "maxScore": 0.46304284930229184,
       "firstRecalledAt": "2026-04-20T21:39:15.339Z",
-      "lastRecalledAt": "2026-04-20T22:58:41.725Z",
+      "lastRecalledAt": "2026-04-24T18:08:00.241Z",
       "queryHashes": [
         "f06e6e372a3a",
         "8da9cc9c98d0",
-        "e2a2fb31c5b4"
+        "e2a2fb31c5b4",
+        "422359323936"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-24"
       ],
       "conceptTags": [
         "534-3383",
@@ -1933,18 +1960,20 @@
       "endLine": 122,
       "source": "memory",
       "snippet": "- Express Scripts price: $7.40 vs Amazon $100 (93% savings!) - Shipping to Jackson Ave (home, not ORNL) - Reminder needed before June 26 ### Brandon Brown — ORNL Employee Introduction - Introduced via RCS group text (865-888-0880) - Sr. Scrum Master & BA, SharePoint team, Web Services group - Reports to TL Angie → Alex (skip-level) - 20+ years agile, ER EMR systems, UVM grad, SAFe certified - Full people profile created: SecondBrain, Neo4j, Google Contacts ### Alex-Brandon Walkthrough Conversation (recorded + analyzed) - **RACI vs Agile**: Alex hates RACI, calls it waterfall manifesto. Brandon agrees. - **Angie's management style**: waterfall in agile wrapper, pre-assigns stories, private",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4340981781482696,
+      "totalScore": 0.8539499104022978,
       "maxScore": 0.4340981781482696,
       "firstRecalledAt": "2026-04-21T01:22:13.102Z",
-      "lastRecalledAt": "2026-04-21T01:22:13.102Z",
+      "lastRecalledAt": "2026-04-24T18:08:00.716Z",
       "queryHashes": [
-        "e155b9dc2838"
+        "e155b9dc2838",
+        "b1114e1a4c6d"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-24"
       ],
       "conceptTags": [
         "7.40",
@@ -2243,18 +2272,20 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "- **Round 3 feedback posted 2am**: Bring back soul + people imagery + textures as backgrounds + interactivity + fix all brand violations - **Video brief added 2am**: Hero video at top. Vibe: Apple '87 + old MTV + Sifl & Olly + Ren & Stimpy + Family Matters intro + Church of SubGenius + Better Off Ted corporate satire. Steve tasked with video hire. - Deployed to: https://platform-zeta-eight.vercel.app/identity (needs to be abellminded.com/identity) - Build fix: ESLint errors in page.tsx (unused Placeholder component, JSX comments) — fixed manually before deploy ## ABE-32: Logo Identity — Continued - Multiple QA rounds. Typos (\"ABOLMINDEA\"), eye floating outside A, mixed caps, Nick face with",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5226778298616409,
-      "maxScore": 0.5226778298616409,
+      "totalScore": 1.0507501736283302,
+      "maxScore": 0.5280723437666892,
       "firstRecalledAt": "2026-04-22T11:52:41.992Z",
-      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-24T14:03:26.896Z",
       "queryHashes": [
-        "fad34aedb1b9"
+        "fad34aedb1b9",
+        "bd1c7e757504"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "abellminded.com/identity",
@@ -2336,18 +2367,21 @@
       "endLine": 107,
       "source": "memory",
       "snippet": "- Big ask: page should be a MANIFESTO with guidelines woven in, not a spec sheet. Quote interstitials with Vonnegut/Bukowski/Hegel/Edwin Abbott Abbott on Nickelodeon/retrofuture backgrounds - Posted feedback to ABE-35, ABE-36, ABE-39, ABE-41. All moved to in_progress. - Addendum: brand kit becomes SOURCE OF TRUTH for all future work ## Vercel Domain Fix (5:50 AM) - abellminded.com/identity was 404ing because abellminded.com redirects to www.abellminded.com (different Vercel project) - Added vercel.json with rewrites to the \"website\" project to proxy /identity and /brand assets to platform-zeta-eight.vercel.app - Both abellminded.com/identity and www.abellminded.com/identity now return 200",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49872409403324125,
-      "maxScore": 0.49872409403324125,
+      "totalScore": 1.5509884566068648,
+      "maxScore": 0.5363814562559127,
       "firstRecalledAt": "2026-04-22T11:52:41.992Z",
-      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
       "queryHashes": [
-        "fad34aedb1b9"
+        "fad34aedb1b9",
+        "bd1c7e757504",
+        "fc308dbc37e3"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "vonnegut/bukowski/hegel/edwin",
@@ -2367,18 +2401,21 @@
       "endLine": 350,
       "source": "memory",
       "snippet": "- 7 design issues (worn paper not shown, motif table not showcase, usage boxes not examples, Rockwell/Retrofuture no logo, Abell & Co principle direction question, downloads should be inline) - Big ask: page should be a MANIFESTO with guidelines woven in, not a spec sheet. Quote interstitials with Vonnegut/Bukowski/Hegel/Edwin Abbott Abbott on Nickelodeon/retrofuture backgrounds - Posted feedback to ABE-35, ABE-36, ABE-39, ABE-41. All moved to in_progress. - Addendum: brand kit becomes SOURCE OF TRUTH for all future work ## Vercel Domain Fix (5:50 AM) - abellminded.com/identity was 404ing because abellminded.com redirects to www.abellminded.com (different Vercel project) - Added vercel.json",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4977371722459793,
-      "maxScore": 0.4977371722459793,
+      "totalScore": 1.5507882684469223,
+      "maxScore": 0.5382464855909347,
       "firstRecalledAt": "2026-04-22T11:52:41.992Z",
-      "lastRecalledAt": "2026-04-22T11:52:41.992Z",
+      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
       "queryHashes": [
-        "fad34aedb1b9"
+        "fad34aedb1b9",
+        "bd1c7e757504",
+        "fc308dbc37e3"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "rockwell/retrofuture",
@@ -2389,6 +2426,757 @@
         "abe-39",
         "abe-41",
         "in-progress"
+      ]
+    },
+    "memory:memory/2026-04-21.md:632:654": {
+      "key": "memory:memory/2026-04-21.md:632:654",
+      "path": "memory/2026-04-21.md",
+      "startLine": 632,
+      "endLine": 654,
+      "source": "memory",
+      "snippet": "- Fixed dedication: \"grandmother\" → \"Nana\" - Removed stray \"F\" character - Redeployed to abellminded.com/be-particular.html ### Paperclip Video Production - Generated 5 video scenes myself using video_generate tool (workshop, wall of A's, brand IRL, MTV glitch, lockup) - Stitched together with voiceover using ffmpeg → 14-second rough cut sent to Alex - **Problems**: AI video tools can't generate the A-Eye mark. Every A comes out as a normal letter. - Seedance 2.0 (fal/bytedance) identified as best quality model - **Approved voiceover script**: \"They built the machines to replace you. We built ours to work for you. Big difference. Every A in our name has an eye in it. Not decoration. Surveil",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0710221767425536,
+      "maxScore": 0.540988203883171,
+      "firstRecalledAt": "2026-04-24T14:03:04.499Z",
+      "lastRecalledAt": "2026-04-24T14:03:26.896Z",
+      "queryHashes": [
+        "23b09fb45bcc",
+        "bd1c7e757504"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "video-generate",
+        "14-second",
+        "a-eye",
+        "2.0",
+        "fal/bytedance",
+        "fixed",
+        "dedication",
+        "grandmother"
+      ]
+    },
+    "memory:memory/2026-04-21.md:564:592": {
+      "key": "memory:memory/2026-04-21.md:564:592",
+      "path": "memory/2026-04-21.md",
+      "startLine": 564,
+      "endLine": 592,
+      "source": "memory",
+      "snippet": "- ABE-65 skills audit done - ABE-59, ABE-60 video research done **In progress:** - ABE-35 brand kit in review - ABE-43 homepage redesign (Ratchet building) - ABE-42 hero video (Sable art direction, run queued) - ABE-90 video prompting research (Cass) - ABE-56 data governance in review - ABE-46 user stories in review **Blocked/stalled:** - 10 headshot tasks (ABE-68 + batch) at todo, no active runs despite Sable having skill - ABE-50/51 team identity + Steve MVP blocked on headshots - ABE-57 merch + ABE-44 Abell & Co MVP not started - ABE-86/87 retry skill install cancelled Sent brief update to Alex via iMessage. Headshot queue is the main bottleneck. ## Hero Video Cron (11:11 PM) - `hero-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5391144126653671,
+      "maxScore": 0.5391144126653671,
+      "firstRecalledAt": "2026-04-24T14:03:04.499Z",
+      "lastRecalledAt": "2026-04-24T14:03:04.499Z",
+      "queryHashes": [
+        "23b09fb45bcc"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "abe-65",
+        "abe-59",
+        "abe-60",
+        "abe-35",
+        "abe-43",
+        "abe-42",
+        "abe-90",
+        "abe-56"
+      ]
+    },
+    "memory:memory/2026-04-21.md:366:396": {
+      "key": "memory:memory/2026-04-21.md:366:396",
+      "path": "memory/2026-04-21.md",
+      "startLine": 366,
+      "endLine": 396,
+      "source": "memory",
+      "snippet": "## New Tickets — Team Identity (6:35 AM) - **ABE-50**: Team Identity (parent, Devi owns) - **ABE-51**: Steve McGoober MVP Profile + LinkedIn message to Alex (proof of concept) - **ABE-52**: Abellminded LinkedIn Company Page - **ABE-53**: Agent Skills Audit ## Key Decisions - All hires route through Steve McGoober (coordinator) - Every agent gets: headshot (cyclops eye), bio, Google Workspace email, LinkedIn page - Abellminded LinkedIn company page to be created - Blockers should escalate: Agent → Steve → Debra → Alex - Team should work through blockers together first before escalating ## Pax Holloway — Correction - Pax was created directly. Alex clarified: new hires should go through Steve",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0645915806293487,
+      "maxScore": 0.5355706900358199,
+      "firstRecalledAt": "2026-04-24T14:03:04.499Z",
+      "lastRecalledAt": "2026-04-24T14:03:26.896Z",
+      "queryHashes": [
+        "23b09fb45bcc",
+        "bd1c7e757504"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "abe-50",
+        "abe-51",
+        "abe-52",
+        "abe-53",
+        "new",
+        "tickets",
+        "team",
+        "identity"
+      ]
+    },
+    "memory:memory/2026-04-21.md:124:155": {
+      "key": "memory:memory/2026-04-21.md:124:155",
+      "path": "memory/2026-04-21.md",
+      "startLine": 124,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "- **ABE-51**: Steve McGoober MVP Profile + LinkedIn message to Alex (proof of concept) - **ABE-52**: Abellminded LinkedIn Company Page - **ABE-53**: Agent Skills Audit ## Key Decisions - All hires route through Steve McGoober (coordinator) - Every agent gets: headshot (cyclops eye), bio, Google Workspace email, LinkedIn page - Abellminded LinkedIn company page to be created - Blockers should escalate: Agent → Steve → Debra → Alex - Team should work through blockers together first before escalating ## Pax Holloway — Correction - Pax was created directly. Alex clarified: new hires should go through Steve. Noted for future. - Steve has been briefed on both Pax and Devi as new reports. ## Hom",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5282017901539802,
+      "maxScore": 0.5282017901539802,
+      "firstRecalledAt": "2026-04-24T14:03:26.896Z",
+      "lastRecalledAt": "2026-04-24T14:03:26.896Z",
+      "queryHashes": [
+        "bd1c7e757504"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "abe-51",
+        "abe-52",
+        "abe-53",
+        "abe",
+        "steve",
+        "mcgoober",
+        "mvp",
+        "profile"
+      ]
+    },
+    "memory:memory/2026-04-21.md:521:546": {
+      "key": "memory:memory/2026-04-21.md:521:546",
+      "path": "memory/2026-04-21.md",
+      "startLine": 521,
+      "endLine": 546,
+      "source": "memory",
+      "snippet": "- **Shipped:** ABE-38 (philosophy/voice), ABE-37 (color system), ABE-40 (research) - **In review (stale):** ABE-42 (hero video, since 6:23 AM), ABE-32 (logo pass, since 2:36 AM) - **Blocked/frozen (no active runs since ~10:45 AM):** ABE-35 brand kit + sub-tasks (36, 41, 39), ABE-50/51/52 team identity, ABE-44/46 Abell & Co MVP, ABE-54 site uptime, ABE-56 data governance - **Not started:** ABE-43 homepage, ABE-57 merch, ABE-55 bolt.diy - Sent Alex iMessage summary, asked if he wants me to poke agents - BB API curl was timing out on sends (ping OK), used message tool instead ## Paperclip Team Progress Check (1:55 PM) - **ABE-36** (Phase 2 visual assets): in_progress, Sable Voss actively runni",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.509739825129509,
+      "maxScore": 0.509739825129509,
+      "firstRecalledAt": "2026-04-24T14:03:36.115Z",
+      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
+      "queryHashes": [
+        "fc308dbc37e3"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "abe-38",
+        "philosophy/voice",
+        "abe-37",
+        "abe-40",
+        "abe-42",
+        "abe-32",
+        "blocked/frozen",
+        "abe-35"
+      ]
+    },
+    "memory:memory/2026-04-21.md:484:507": {
+      "key": "memory:memory/2026-04-21.md:484:507",
+      "path": "memory/2026-04-21.md",
+      "startLine": 484,
+      "endLine": 507,
+      "source": "memory",
+      "snippet": "- Alex confirmed the ElevenLabs \"Chrome on Windows\" login was him from his work computer. Not a threat. - Alex wants cover to look \"insanely human\" and like it would jump out at Barnes & Noble. Current version still has AI look. Needs Sable or real designer for final pass. ## ABE-42 Hero Videos Sent to Alex (8:15 AM) - 4 hero video drafts found in deploy/review/ABE-35/ - v1: MTV Workshop, v2: Letterpress, v3: Shop Sign, v4: 1950s Desk - All 5.6 seconds, 720p, h264 - Sent all 4 via BB attachment for Alex to review - ABE-32 (logo identity) already locked in Apr 20, just needs status updated to done ## Corrections Captured (Morning Session) - **report-without-verifying**: Told Alex abellminde",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5067545264959336,
+      "maxScore": 0.5067545264959336,
+      "firstRecalledAt": "2026-04-24T14:03:36.115Z",
+      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
+      "queryHashes": [
+        "fc308dbc37e3"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "abe-42",
+        "deploy/review/abe-35",
+        "5.6",
+        "abe-32",
+        "report-without-verifying",
+        "alex",
+        "confirmed",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-22.md:25:55": {
+      "key": "memory:memory/2026-04-22.md:25:55",
+      "path": "memory/2026-04-22.md",
+      "startLine": 25,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "### In Review (Awaiting Alex): - **ABE-35** Brand Identity Kit — THE BIG ONE - **ABE-46** Abell & Co User Stories — in_review - **ABE-56** Data Governance Framework — in_review (Ren) - **ABE-27** HOV Lozenge Logos — in_review - **ABE-32** Logo + Identity Pass — in_review - **ABE-7** Phase 8 umbrella build — in_review ### Blocked / Stuck: - **ABE-50** Team Identity (headshots) — `blocked`. 9 headshot tasks (ABE-68, 76-84) are `todo` with `startedAt` timestamps but NO active runs. Sable's skill was installed but headshots aren't executing. - **ABE-51** Steve MVP LinkedIn Profile — `blocked` on headshots - **ABE-52** LinkedIn Company Page — `blocked` on headshots - **ABE-75** Steve Coordinator",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5063095271587371,
+      "maxScore": 0.5063095271587371,
+      "firstRecalledAt": "2026-04-24T14:03:36.115Z",
+      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
+      "queryHashes": [
+        "fc308dbc37e3"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "abe-35",
+        "abe-46",
+        "in-review",
+        "abe-56",
+        "abe-27",
+        "abe-32",
+        "abe-7",
+        "abe-50"
+      ]
+    },
+    "memory:memory/2026-04-19.md:91:103": {
+      "key": "memory:memory/2026-04-19.md:91:103",
+      "path": "memory/2026-04-19.md",
+      "startLine": 91,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "- **9:00 AM**: Alex must call Premier Surgical (865-524-3208) to reschedule lipoma removal. Script: \"feeling under the weather\" - **Dream cycle morning summary**: queued for delivery via iMessage when Alex wakes up - **Dan Janowski enrichment**: still incomplete. Google Contacts + Neo4j pending. Must finish before Friday 9am meeting. - **ABE-28 Kit mood board**: due Tuesday EOD - **Avie pre-op**: no food after 11pm Tuesday night. Hospital calls Tuesday with arrival time. ### Week overview (from Alex's calendar screenshots) - Mon: Reschedule surgery call 9am, ITSD Intake 10am, AI Brainstorm 11am, Finance 1:1 3pm - Tue: ORNL.GOV Demo 8:30am, Focus time, IAM Modernization 3pm. Hospital calls w",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.8233743846416473,
+      "maxScore": 0.4753478705883026,
+      "firstRecalledAt": "2026-04-24T18:08:00.241Z",
+      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
+      "queryHashes": [
+        "422359323936",
+        "114dddcd0232",
+        "aa841e5b2343",
+        "4711b25e78eb"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "865-524-3208",
+        "abe-28",
+        "pre-op",
+        "ornl.gov",
+        "alex",
+        "must",
+        "call",
+        "premier"
+      ]
+    },
+    "memory:memory/2026-03-26.md:125:152": {
+      "key": "memory:memory/2026-03-26.md:125:152",
+      "path": "memory/2026-03-26.md",
+      "startLine": 125,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "- She called herself an ex-girlfriend (previously recorded as friend from Valdosta) - Debra sent thoughtful response: acknowledged her feelings, explained Alex is doing real self-work, introduced her because he values her as a friend, slipped in abellminded.com/debra link gracefully - Alex approved the response (\"felt good\") ### HoldPlease — BUILT FROM SCRATCH IN ONE EVENING 🎉 - **Concept to working phone calls in ~3 hours on surgery day** - Full Node.js project at projects/holdplease/ - Tech: Twilio + OpenAI Whisper + ElevenLabs TTS #### Twilio Account - Trial account created: REDACTED_TWILIO_TRIAL_SID (trial, drdebrapepper browser) - Alex had a SECOND upgraded account: REDACTED_TWILIO_S",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4407199919223785,
+      "maxScore": 0.4407199919223785,
+      "firstRecalledAt": "2026-04-24T18:08:00.241Z",
+      "lastRecalledAt": "2026-04-24T18:08:00.241Z",
+      "queryHashes": [
+        "422359323936"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "openai",
+        "ex-girlfriend",
+        "self-work",
+        "abellminded.com/debra",
+        "node.js",
+        "projects/holdplease",
+        "redacted-twilio-trial-sid",
+        "redacted-twilio-s"
+      ]
+    },
+    "memory:memory/2026-03-30.md:161:186": {
+      "key": "memory:memory/2026-03-30.md:161:186",
+      "path": "memory/2026-03-30.md",
+      "startLine": 161,
+      "endLine": 186,
+      "source": "memory",
+      "snippet": "- PWFA protections from day one (reasonable accommodations guaranteed) - Pregnancy Discrimination Act fully applies (UT-Battelle 5000+ employees) - NO FMLA eligibility (needs 12 months + 1,250 hours) - Strategy: Don't disclose during hiring, disclose after first trimester (~late June) - 6-month term likely ends before delivery - TennCare covers prenatal/delivery independently - Sent full advice to Hannah in group chat ### OB/GYN for Hannah - Fort Sanders OBGYN: (865) 524-3208 — April 13 appointment (earliest available, set up last week) - UT Medical Center OB/GYN: (865) 305-8787 — April 27 earliest - Tennova Women's Health: (865) 647-3450 - Planned Parenthood Knoxville: 1-866-711-1717 (phys",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8690638870000839,
+      "maxScore": 0.43798609673976896,
+      "firstRecalledAt": "2026-04-24T18:08:00.716Z",
+      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
+      "queryHashes": [
+        "b1114e1a4c6d",
+        "4711b25e78eb"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "ut-battelle",
+        "6-month",
+        "prenatal/delivery",
+        "ob/gyn",
+        "524-3208",
+        "305-8787",
+        "647-3450",
+        "1-866-711-1717"
+      ]
+    },
+    "memory:memory/2026-03-25.md:185:218": {
+      "key": "memory:memory/2026-03-25.md:185:218",
+      "path": "memory/2026-03-25.md",
+      "startLine": 185,
+      "endLine": 218,
+      "source": "memory",
+      "snippet": "- Alex owes Hannah: walk + dinner date. NO SCREENS. - Debra stays quiet unless urgent ### Tomorrow's Surgery Day Agenda (post-recovery) - iMazing first backup (iPhone + USB) - Configure Android phone stay-awake (ABE-96) - Test voice memo patches with Mac unlocked - Privacy/security conversation about text access scope ## Key People Updates - **Aaron Garvey**: Annika's boyfriend, buying Sterchi building downtown with her - **Brandon Brown**: +18658880880, ORNL Web Services, reports to Angie → Alex - **Brooks Herring**: ORNL Head of UX, former HGTV/Food Network/WBD - **Herb Himes**: ORNL Task Lead → TL UX Design, former Scripps/Smartria - **Jason Patrick**: +18657769277, ORNL colleague, at I",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8674274593591689,
+      "maxScore": 0.4395734786987304,
+      "firstRecalledAt": "2026-04-24T18:08:00.716Z",
+      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
+      "queryHashes": [
+        "b1114e1a4c6d",
+        "4711b25e78eb"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "backup",
+        "network",
+        "post-recovery",
+        "stay-awake",
+        "abe-96",
+        "privacy/security",
+        "hgtv/food",
+        "network/wbd"
+      ]
+    },
+    "memory:memory/2026-04-20.md:95:118": {
+      "key": "memory:memory/2026-04-20.md:95:118",
+      "path": "memory/2026-04-20.md",
+      "startLine": 95,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "All items from 2026-04-19.md remain active. Key carryovers: ### CRITICAL MORNING ACTIONS (Mon Apr 20) 1. **8:45 AM reminder**: Alex must call Premier Surgical (865-524-3208) at 9am to reschedule lipoma removal. Script: \"feeling under the weather.\" 2. **Send dream cycle summary to Alex via iMessage** — 6 proposals queued for review (3 high, 3 medium priority) 3. **Dan Janowski enrichment**: Google Contacts + Neo4j still incomplete. Must finish before Friday 9am SDLC demo meeting. ### Week Schedule (Mon Apr 20 - Fri Apr 24) - **Mon**: Sallijo picks up Avie → brings to Alex. Alex has her Mon night. Reschedule lipoma call 9am. ITSD Intake 10am, AI Brainstorm 11am, Finance 1:1 3pm. - **Tue**: S",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4565646052360534,
+      "maxScore": 0.4565646052360534,
+      "firstRecalledAt": "2026-04-24T18:09:09.048Z",
+      "lastRecalledAt": "2026-04-24T18:09:09.048Z",
+      "queryHashes": [
+        "114dddcd0232"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "865-524-3208",
+        "all",
+        "items",
+        "remain",
+        "active",
+        "key",
+        "carryovers",
+        "critical"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:22": {
+      "key": "memory:memory/2026-04-20.md:1:22",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# 2026-04-20 (Sunday night → Monday early AM) ## Summary Quiet day. No direct Alex interaction in this session window. Primary activity was the dream cycle (completed 11:30 PM Apr 19) and end-of-day memory flush (3:34 AM Apr 20). ## Carried Forward from Apr 19 All items from 2026-04-19.md remain active. Key carryovers: ### CRITICAL MORNING ACTIONS (Mon Apr 20) 1. **8:45 AM reminder**: Alex must call Premier Surgical (865-524-3208) at 9am to reschedule lipoma removal. Script: \"feeling under the weather.\" 2. **Send dream cycle summary to Alex via iMessage** — 6 proposals queued for review (3 high, 3 medium priority) 3. **Dan Janowski enrichment**: Google Contacts + Neo4j still incomplete. M",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4520426392555236,
+      "maxScore": 0.4520426392555236,
+      "firstRecalledAt": "2026-04-24T18:09:09.048Z",
+      "lastRecalledAt": "2026-04-24T18:09:09.048Z",
+      "queryHashes": [
+        "114dddcd0232"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "end-of-day",
+        "865-524-3208",
+        "sunday",
+        "night",
+        "monday",
+        "early",
+        "summary",
+        "quiet"
+      ]
+    },
+    "memory:memory/2026-04-06.md:20:43": {
+      "key": "memory:memory/2026-04-06.md:20:43",
+      "path": "memory/2026-04-06.md",
+      "startLine": 20,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "- Jay will talk to Brad first, then give Alex green light to assign - Critical rule: DO NOT contact Rachael during medical leave (Jay explicit) - Posting delayed 1-2 weeks (don't leave applicants in silence for 6 weeks) - Interim compensated via SPA, not merit bump - Alex will compile Transformation group staff list, discuss with Jay, send to Sarah Glei ## Technical Decisions 1. **AssemblyAI model:** `universal-2` → `universal-3-pro` (best available as of Apr 2026) 2. **Auto-chapters:** Disabled. LLM generation (Claude Haiku) now produces curated 3-6 chapters 3. **LLM title generation:** New function generates meaningful filename from transcript 4. **Voice ID registry:** Added `voice-id-reg",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4480966001749038,
+      "maxScore": 0.4480966001749038,
+      "firstRecalledAt": "2026-04-24T18:09:09.048Z",
+      "lastRecalledAt": "2026-04-24T18:09:09.048Z",
+      "queryHashes": [
+        "114dddcd0232"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "1-2",
+        "universal-2",
+        "universal-3-pro",
+        "auto-chapters",
+        "3-6",
+        "voice-id-reg",
+        "jay",
+        "will"
+      ]
+    },
+    "memory:memory/2026-04-23.md:47:71": {
+      "key": "memory:memory/2026-04-23.md:47:71",
+      "path": "memory/2026-04-23.md",
+      "startLine": 47,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "- Switched 4 from Sonnet to Opus: Devi Sato, Pax Holloway, Ren Otieno, Wren Kowalski - Used Paperclip REST API (PATCH /api/agents/:id) since CLI has no update command - Alex confirmed with \"Love that good stuff\" — happy with it - **Mistake**: I narrated every step as separate iMessage fragments (7 messages: 876-882). ONE message rule violated again. 8th occurrence. ### Cron Activity - **Email triage** (7:03 AM): 86 emails processed, 21 archived. 12 urgent (payment failures + legal invoices). Payment method audit still needed. - **Capture agent** (7:30 AM): Clean scan. 0 new items. Battelle $10K paycheck hit. Household budget $698 over. - **GSD report** (8:01 AM): Staged but I didn't send it",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5148936688899993,
+      "maxScore": 0.5148936688899993,
+      "firstRecalledAt": "2026-04-25T03:31:25.065Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.065Z",
+      "queryHashes": [
+        "87089cc03c9e"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "api/agents",
+        "876-882",
+        "switched",
+        "sonnet",
+        "opus",
+        "devi",
+        "sato",
+        "pax"
+      ]
+    },
+    "memory:memory/2026-04-23.md:19:52": {
+      "key": "memory:memory/2026-04-23.md:19:52",
+      "path": "memory/2026-04-23.md",
+      "startLine": 19,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "3. **Florida filing: May 1** (next week) ### Staged / Pending - Dream cycle morning message with 3 proposals ready to send when Alex surfaces - ABE-91 gap analysis results should be checked - Sable skill install needs manual Paperclip permissions fix ### Carry-Forward Context - Hannah boundary message: be guardrail, not accelerator - 8 unresolved payment failures (Notion, DeepLearning.AI, Runway, GCP, Anthropic, AudioTheme, Costco Visa) - Egerton McAfee invoice: 3rd notice - Roxanne NDA: 53+ days unanswered - LEGO ad files at ~/.openclaw/workspace/lego-ad/ ## QMD Re-Index (4:00 AM cron) - **Update:** 13 collections scanned - 8 new files (3 reflections, 5 debra-memory) - 340 updated, 1",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5097720563411713,
+      "maxScore": 0.5097720563411713,
+      "firstRecalledAt": "2026-04-25T03:31:25.065Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.065Z",
+      "queryHashes": [
+        "87089cc03c9e"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "qmd",
+        "abe-91",
+        "carry-forward",
+        "deeplearning.ai",
+        "openclaw/workspace/lego-ad",
+        "re-index",
+        "debra-memory",
+        "florida"
+      ]
+    },
+    "memory:memory/2026-04-23.md:65:79": {
+      "key": "memory:memory/2026-04-23.md:65:79",
+      "path": "memory/2026-04-23.md",
+      "startLine": 65,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "- **Amsterdam PTO: Apr 25** (FRIDAY) — must request from Jay - **Annika in St Pete Apr 24-27** — Avie is with Alex starting today - **Avie Wax Museum: Apr 25** — just had surgery Apr 22, recovery question - Dan Janowski demo, Jay 1:1, Core Analytics, Brooks alignment on calendar - TSA PreCheck: Sat Apr 25, 1pm (Hannah accepted invite) ## Dream Cycle #17 (11:30 PM) - Phase 1: 10 findings. Top stories: Claude Mythos unauthorized access via third-party breach, Opus 4.7 vuln rate confirmed at 52% (stay on 4.6), OC 2026.4.22 ships Active Memory plugin + per-group systemPrompts, Neo4j agent-memory library is near-perfect fit for our architecture. - Phase 2: 5 issues. 0 NEW corrections (best stret",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4757600545883178,
+      "maxScore": 0.4757600545883178,
+      "firstRecalledAt": "2026-04-25T03:31:25.546Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.546Z",
+      "queryHashes": [
+        "5bff8928db90"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "24-27",
+        "third-party",
+        "4.7",
+        "4.6",
+        "2026.4.22",
+        "per-group",
+        "agent-memory",
+        "near-perfect"
+      ]
+    },
+    "memory:memory/2026-04-24.md:77:89": {
+      "key": "memory:memory/2026-04-24.md:77:89",
+      "path": "memory/2026-04-24.md",
+      "startLine": 77,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "- 5 overdue items: FCU fraud alert, Muse RSVP (17d), Egerton McAfee (3rd notice), Roxanne NDA (55d), ORNL V&V (25d) - 8 stale payment failures (12-26 days old) - Critical deadlines: Amsterdam PTO (today!), reorg comm plan (May 1), Florida filing (May 1) - Weekend: Avie Wax Museum (Apr 25), TSA PreCheck (Apr 26), YMCA enrollment **Top 3 flagged:** 1. Verify ORNL FCU fraud charge 2. Tell Jay about Amsterdam PTO 3. Confirm Avie recovered for Wax Museum **BB note:** Port 1235 (Alex's account) send endpoint times out. Port 1234 (Debra's) works with `method: private-api`. Apple-script method also times out. **Things 3 note:** Only 2 upcoming items, ~45 anytime items. inbox.md has 80+ items — vas",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47118553817272185,
+      "maxScore": 0.47118553817272185,
+      "firstRecalledAt": "2026-04-25T03:31:25.546Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.546Z",
+      "queryHashes": [
+        "5bff8928db90"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "12-26",
+        "private-api",
+        "apple-script",
+        "inbox.md",
+        "overdue",
+        "items",
+        "fcu",
+        "fraud"
+      ]
+    },
+    "memory:memory/2026-04-24.md:22:57": {
+      "key": "memory:memory/2026-04-24.md:22:57",
+      "path": "memory/2026-04-24.md",
+      "startLine": 22,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "### Deadlines Status 1. **GitHub private repo opt-out: Apr 24 (TODAY)** — ⚠️ UNKNOWN if Alex did this. Was flagged as 5-min task in GSD. HIGH RISK of being missed. 2. **Amsterdam PTO request: Apr 25 (TOMORROW)** — Must ask Jay during 1:1. Trip is May 4. 3. **TSA PreCheck: Sat Apr 26, 1pm** — Hannah accepted invite. Don't miss. 4. **Avie with Alex: Apr 24-27** — Annika in St Pete. Avie coverage confirmed via calendar. 5. **Avie Wax Museum: Apr 25** — surgery was Apr 22, recovery question still open. 6. **Florida filing: May 1** — 1 week out. ### Calendar (Thu Apr 24 — TODAY) - Dan Janowski demo - Jay 1:1 (PERFECT time for Amsterdam PTO request) - Core Analytics meeting - Brooks alignment mee",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4677279740571975,
+      "maxScore": 0.4677279740571975,
+      "firstRecalledAt": "2026-04-25T03:31:25.546Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.546Z",
+      "queryHashes": [
+        "5bff8928db90"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "opt-out",
+        "5-min",
+        "24-27",
+        "deadlines",
+        "status",
+        "github",
+        "private",
+        "repo"
+      ]
+    },
+    "memory:memory/2026-03-26.md:84:112": {
+      "key": "memory:memory/2026-03-26.md:84:112",
+      "path": "memory/2026-03-26.md",
+      "startLine": 84,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "### Europe Trip Flights (Confirmation: HSZI7N) - **May 4**: TYS→ATL (DL1729, 5:54pm→6:58pm) → ATL→AMS (DL0074, 7:45pm→10:30am+1) - **May 5**: AMS→HAM (DL9277, 1:00pm→2:05pm) - **May 18**: AMS→ATL (DL0075, 1:20pm→4:55pm) → ATL→TYS (DL5203, 7:28pm→8:28pm) - Cost: $1,150 ($100 more than original quote but same flights as Hannah) - Hannah covering the extra $100 - No bag included. Hannah booked on her Delta Amex which gives 1 free bag, hoping it covers Alex too - They're flying together on all legs ### Weekend Plan (from Hannah) - **Friday 3/27**: Alex goes to David Byrne concert, Hannah watches Avie - **Saturday 3/28**: Avie has birthday party for friend Charlotte. Hannah in Nashville. Need a",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46576101481914517,
+      "maxScore": 0.46576101481914517,
+      "firstRecalledAt": "2026-04-25T03:31:25.546Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.546Z",
+      "queryHashes": [
+        "5bff8928db90"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "3/27",
+        "3/28",
+        "europe",
+        "trip",
+        "flights",
+        "confirmation",
+        "hszi7n",
+        "may"
+      ]
+    },
+    "memory:memory/2026-04-02.md:204:228": {
+      "key": "memory:memory/2026-04-02.md:204:228",
+      "path": "memory/2026-04-02.md",
+      "startLine": 204,
+      "endLine": 228,
+      "source": "memory",
+      "snippet": "- Round 3: added Avie but wrong hair (she has short bob cut, blue eyes, light brown hair) - Round 4: correct Avie, no mustache on Alex (he shaved for the trip), proper couple pairings - **Key correction:** Alex + Hannah are a couple, Everett + Teal are a couple, Marshall is SOLO. Do NOT pair Marshall with Teal in images. - **Avie appearance:** short bob haircut, blue eyes, light brown hair. Age 9. - **Alex shaved his mustache** for this trip. - Final 3 poster options sent to group with funny descriptions ### Daytime (Boston) - Alex asked about **Tony's Clam Shop** — recommended whole belly fried clams - GSD reports sent at 8am and 4:30pm - Email triage ran twice (7am and noon): 56",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4647576957941055,
+      "maxScore": 0.4647576957941055,
+      "firstRecalledAt": "2026-04-25T03:31:25.546Z",
+      "lastRecalledAt": "2026-04-25T03:31:25.546Z",
+      "queryHashes": [
+        "5bff8928db90"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "round",
+        "added",
+        "avie",
+        "but",
+        "wrong",
+        "hair",
+        "she",
+        "has"
+      ]
+    },
+    "memory:memory/2026-04-04.md:77:116": {
+      "key": "memory:memory/2026-04-04.md:77:116",
+      "path": "memory/2026-04-04.md",
+      "startLine": 77,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "- [ ] Amazon package pickup - [ ] Carta Q1 docs review - [ ] Kalshi account setup - [ ] Meta data export (ready to process) - [ ] Teresa Scruggs meeting (passive income) — reminder Apr 6 - [ ] Roxanne NDA/app email — NOW ~34 days unanswered (ESCALATING) ### Upcoming Medical (DO NOT FORGET) - **APR 13 (Mon)**: Hannah OBGYN appointment - **APR 20 (Mon)**: Alex lipoma removal, 9:30am, Premier Surgical Fort Sanders (~90 min). Mark all lipomas with Sharpie X beforehand. - **APR 21 (Tue)**: Hospital calls with Avie's surgery time - **APR 22 (Wed)**: Avie adenoidectomy, Children's ENT Northshore. Pre-op: no food after 11pm night before, clear liquids until 2h before. --- ## Infrastructure Status",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7466679298037366,
+      "maxScore": 0.7466679298037366,
+      "firstRecalledAt": "2026-04-25T03:31:26.053Z",
+      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
+      "queryHashes": [
+        "9ff582453052"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "nda/app",
+        "pre-op",
+        "amazon",
+        "package",
+        "pickup",
+        "carta",
+        "docs",
+        "review"
+      ]
+    },
+    "memory:memory/2026-04-20.md:17:44": {
+      "key": "memory:memory/2026-04-20.md:17:44",
+      "path": "memory/2026-04-20.md",
+      "startLine": 17,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "- **Wed**: Avie adenoidectomy 9am (9546 S Northshore Dr). Alex + Annika at hospital. Hannah NOT going. After surgery, Alex brings Avie to Sallijo's to recover. Jay 1:1 1pm (maybe keep). - **Thu**: ITSD Leadership Dev 9-11am, Budget Reform 11am. Avie recovering at Sallijo's. - **Fri**: Dan Janowski SDLC demo 9am, Core Analytics noon. Annika in St Pete. ### Pending Payments/Subscriptions - DeepLearning.AI: payment failing - Runway AI: $157/mo failing (cancel or fix?) - GCP billing: SUSPENDED (could affect OpenClaw/Firebase) - Anthropic API: access turned off - Citi Visa payment due ### Open Tasks - ABE-28 Kit mood board: due Tuesday EOD - Inbox purge: 70+ items, last triaged Apr 6 - Roxanne",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4959684610366821,
+      "maxScore": 0.4959684610366821,
+      "firstRecalledAt": "2026-04-25T03:31:26.053Z",
+      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
+      "queryHashes": [
+        "9ff582453052"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "9-11am",
+        "payments/subscriptions",
+        "deeplearning.ai",
+        "157/mo",
+        "openclaw/firebase",
+        "abe-28",
+        "wed",
+        "avie"
+      ]
+    },
+    "memory:memory/2026-04-19.md:75:94": {
+      "key": "memory:memory/2026-04-19.md:75:94",
+      "path": "memory/2026-04-19.md",
+      "startLine": 75,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "- Alex sent clarifying message to Family group chat (Alex+Hannah+Sallijo) - **FINAL PLAN for the week:** - Mon + Tue: Sallijo picks Avie up from school and BRINGS HER TO ALEX. Alex has her both nights. - Wed: Alex + Annika take Avie to adenoidectomy. After surgery, Alex brings Avie to Sallijo's to recover. - Post-surgery: Avie recovers at Sallijo's place. - **I made errors drafting**: initially suggested Sallijo keep Avie overnight Mon+Tue (wrong), included pre-op rules for Sallijo when Alex had Avie Tue night (wrong). Alex corrected me twice. Lesson: READ THE CHAT CAREFULLY before drafting. - Hannah is NOT going to surgery. Alex + Annika will go. - Hannah said \"I'll let you decide if",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4902608871459961,
+      "maxScore": 0.4902608871459961,
+      "firstRecalledAt": "2026-04-25T03:31:26.053Z",
+      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
+      "queryHashes": [
+        "9ff582453052"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "post-surgery",
+        "pre-op",
+        "alex",
+        "sent",
+        "clarifying",
+        "message",
+        "family",
+        "group"
       ]
     }
   }

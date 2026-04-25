@@ -26,6 +26,8 @@
 - **ONE message per response.** Still fragmenting. (7th occurrence)
 - **When Alex names a tool for a creative task, he means use that tool for the whole thing.** "Use nanobanana" = generate the entire ad with that tool, not just one component. Don't assume he means a font or a sub-step.
 - **Verify Paperclip "done" tickets actually completed their work.** ABE-85 was marked done but the skill install never succeeded (403 permissions). Check logs, not just status.
+- **Paperclip agents can get stuck with runs perpetually "queued".** Ratchet's adapter (claude_local) stopped executing Apr 22 but status still shows "running". Heartbeat kicks don't fix it. Force-restart or debug the adapter subprocess.
+- **Paperclip CLI needs context profile set.** Without `npx paperclipai context set --company-id <id> --api-base <url>`, every command fails with "Company ID is required." Set once per instance.
 
 ## Key Infrastructure
 - **Primary model: anthropic/claude-opus-4-6** (changed Apr 19, was openrouter/auto). Alex wants Opus for ALL sessions until further notice. Fallback: haiku.
@@ -114,6 +116,13 @@
 
 ## People (cont.)
 - **Hannah Aldridge Gmail**: hannahaldridgemusic@gmail.com (security concern raised Apr 16, check for unauthorized access)
+
+## Medical
+- **Covenant Health Echocardiogram**: NEEDS RESCHEDULING. Call (865) 374-4000, ask for Amelia. Fort Sanders Regional Medical Center. Original appt Apr 10 7am, cancelled for work emergency. Estimated $125. Bring medication list.
+- **Dr. Patti** (cholesterol follow-up): June 24, 3:30pm
+- **GI (EGD + Colonoscopy)**: June 26, 6:40am, Dow Springs. Driver needed.
+- **Premier Surgical** (lipoma removal): was Apr 20, needs rescheduling (called to cancel Apr 19)
+- **Knoxville Family Psychiatry**: patient forms incomplete
 
 ## Pending Action Items (Alex)
 - Adobe subscription: update payment method

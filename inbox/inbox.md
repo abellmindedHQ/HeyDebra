@@ -251,3 +251,24 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Finalize simplified finance data model (using finance cubes) and share with team for budgeting and analysis // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Indirect Budget Reform - Shaping FY27 Structure:otter.ai, area: 🏢 ORNL, captured: 2026-04-23 18:13
 - [ ] Schedule working session with Jason Patrick to review budgeting/finance docs line by line (Josh Hill joining as needed) to align on cost estimates // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Indirect Budget Reform - Shaping FY27 Structure:otter.ai, area: 🏢 ORNL, captured: 2026-04-23 18:13
 - [ ] Send outstanding budget/finance questions to team via new group chat (finance or budget reform channel) for async discussion // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Indirect Budget Reform - Shaping FY27 Structure:otter.ai, area: 🏢 ORNL, captured: 2026-04-23 18:13
+
+
+## 📥 Captured 2026-04-24 07:30 AM ET
+
+- [ ] Vote in Netflix Inc. 2026 Annual Meeting via Robinhood (owned NFLX as of Apr 6 record date) // assigned to: Alex, due: 2026-06-03, priority: normal, source: email:Vote in the Netflix Inc. Annual Meeting:Robinhood, area: 💊 Health & Money, captured: 2026-04-24 07:30
+- [ ] Confirm WHOIS data for spectorlive.com (ICANN annual verification via SiteGround/Tucows, domain expires Aug 24 2026) // assigned to: Alex, due: soon, priority: normal, source: email:WHOIS Data Confirmation for spectorlive.com:SiteGround, area: 🏠 Life Ops, captured: 2026-04-24 07:30
+
+
+## 📥 Captured 2026-04-24 06:12 PM ET
+
+### From: Alex and Jay Weekly 1:1 (Apr 24, 2.5h meeting)
+
+- [ ] Synthesize app inventory + value-stream mapping into concise artifact tying PIM/Prime Contract goals to business capabilities, and share with Jay // assigned to: Alex, due: 2026-04-24 (EOD), priority: urgent, source: email:Meeting Summary for Alex and Jay Weekly 1:1:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
+- [ ] Share dimensions and governance artifact (ownership, inventory, DORA metrics, UX, operational health, financials) with analytics/UX group for review // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Alex and Jay Weekly 1:1:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
+- [ ] Read Brooks Herring's email about UX budget overruns and use it to inform Monday's budget analysis and breakdown // assigned to: Alex, due: 2026-04-28 (Mon), priority: normal, source: email:Meeting Summary for Alex and Jay Weekly 1:1:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
+
+### From: Demo automated SDLC with Dan Janowski (Apr 24, 1.25h meeting)
+
+- [ ] Coordinate with Melissa to schedule Part 2 automated SDLC demo next week, focused on a real-world legacy application // assigned to: Alex, due: next week, priority: normal, source: email:Meeting Summary for Demo automated SDLC:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
+- [ ] Schedule follow-up governance and culture discussion on AI-assisted dev (SQA, security, staffing changes) with team leads and leadership // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Demo automated SDLC:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
+- [ ] Have team member pull SRS entries for legacy apps (e.g. Team Web) and confirm with business owners which app to use for AI-dev demo // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Demo automated SDLC:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12

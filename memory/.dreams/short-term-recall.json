@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-25T23:37:03.266Z",
+  "updatedAt": "2026-04-26T07:34:40.396Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -683,23 +683,25 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **8:40am**: Avie ENT surgery consult at Children's ENT Northshore (DONE ✅) - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - **7:00pm**: Chelsea therapy (video, He",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.517676076533086,
+      "totalScore": 3.047159219028241,
       "maxScore": 0.7501616166607599,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-25T03:31:26.053Z",
+      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
       "queryHashes": [
         "76243851281a",
         "4f8bb40c8c4f",
         "b084f49bbbf1",
-        "9ff582453052"
+        "9ff582453052",
+        "fdbfd4605808"
       ],
       "recallDays": [
         "2026-04-19",
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ],
       "conceptTags": [
         "gpt",
@@ -752,18 +754,20 @@
       "endLine": 44,
       "source": "memory",
       "snippet": "# 2026-04-01 — Daily Memory ## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - Chelsea therapy (video, Heart Connected Healing) - Avie pickup (Sallijo handling) ###",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5030522972345352,
-      "maxScore": 0.5030522972345352,
+      "totalScore": 1.0326263546943664,
+      "maxScore": 0.5295740574598312,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
       "queryHashes": [
-        "76243851281a"
+        "76243851281a",
+        "fdbfd4605808"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-26"
       ],
       "conceptTags": [
         "gpt",
@@ -2791,18 +2795,20 @@
       "endLine": 118,
       "source": "memory",
       "snippet": "All items from 2026-04-19.md remain active. Key carryovers: ### CRITICAL MORNING ACTIONS (Mon Apr 20) 1. **8:45 AM reminder**: Alex must call Premier Surgical (865-524-3208) at 9am to reschedule lipoma removal. Script: \"feeling under the weather.\" 2. **Send dream cycle summary to Alex via iMessage** — 6 proposals queued for review (3 high, 3 medium priority) 3. **Dan Janowski enrichment**: Google Contacts + Neo4j still incomplete. Must finish before Friday 9am SDLC demo meeting. ### Week Schedule (Mon Apr 20 - Fri Apr 24) - **Mon**: Sallijo picks up Avie → brings to Alex. Alex has her Mon night. Reschedule lipoma call 9am. ITSD Intake 10am, AI Brainstorm 11am, Finance 1:1 3pm. - **Tue**: S",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4565646052360534,
-      "maxScore": 0.4565646052360534,
+      "totalScore": 0.9949250578880309,
+      "maxScore": 0.5383604526519775,
       "firstRecalledAt": "2026-04-24T18:09:09.048Z",
-      "lastRecalledAt": "2026-04-24T18:09:09.048Z",
+      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
       "queryHashes": [
-        "114dddcd0232"
+        "114dddcd0232",
+        "fdbfd4605808"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ],
       "conceptTags": [
         "865-524-3208",
@@ -3340,6 +3346,68 @@
         "29/mo",
         "ekg/echocard",
         "ratchet's"
+      ]
+    },
+    "memory:memory/2026-04-25.md:1:35": {
+      "key": "memory:memory/2026-04-25.md:1:35",
+      "path": "memory/2026-04-25.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 2026-04-25 — Daily Log (Saturday) ## Pre-Reset Flush (3:34 AM) Quiet night. No Alex interaction since Apr 24 ~11 PM audio clip. Only cron activity. ### What Happened Today (Apr 25, pre-4am) - **Zero direct messages from Alex.** Last interaction was Apr 24 at 10:55 PM (audio transcription request, no follow-up). - EOD memory flush cron running (this session). - Dream cycle #18 morning summary still staged for delivery after 8 AM. ### Critical Today — Sat Apr 25 1. **Avie Wax Museum — TODAY.** She's 3 days post-adenoidectomy. Recovery status unknown. Alex has custody (Apr 24-27). 2. **Deliver dream cycle #18 summary** via iMessage after 8 AM. 3. **Abellminded demo pages** — Paperclip stu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5411070212721825,
+      "maxScore": 0.5411070212721825,
+      "firstRecalledAt": "2026-04-26T07:34:40.396Z",
+      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
+      "queryHashes": [
+        "fdbfd4605808"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "pre-reset",
+        "pre-4am",
+        "follow-up",
+        "post-adenoidectomy",
+        "24-27",
+        "log",
+        "saturday",
+        "pre"
+      ]
+    },
+    "memory:memory/2026-04-24.md:22:58": {
+      "key": "memory:memory/2026-04-24.md:22:58",
+      "path": "memory/2026-04-24.md",
+      "startLine": 22,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "### Deadlines Status 1. **GitHub private repo opt-out: Apr 24 (TODAY)** — ⚠️ UNKNOWN if Alex did this. Was flagged as 5-min task in GSD. HIGH RISK of being missed. 2. **Amsterdam PTO request: Apr 25 (TOMORROW)** — Must ask Jay during 1:1. Trip is May 4. 3. **TSA PreCheck: Sat Apr 26, 1pm** — Hannah accepted invite. Don't miss. 4. **Avie with Alex: Apr 24-27** — Annika in St Pete. Avie coverage confirmed via calendar. 5. **Avie Wax Museum: Apr 25** — surgery was Apr 22, recovery question still open. 6. **Florida filing: May 1** — 1 week out. ### Calendar (Thu Apr 24 — TODAY) - Dan Janowski demo - Jay 1:1 (PERFECT time for Amsterdam PTO request) - Core Analytics meeting - Brooks alignment mee",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5330376297235488,
+      "maxScore": 0.5330376297235488,
+      "firstRecalledAt": "2026-04-26T07:34:40.396Z",
+      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
+      "queryHashes": [
+        "fdbfd4605808"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "opt-out",
+        "5-min",
+        "24-27",
+        "deadlines",
+        "status",
+        "github",
+        "private",
+        "repo"
       ]
     }
   }

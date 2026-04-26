@@ -26,8 +26,10 @@
 - **ONE message per response.** Still fragmenting. (7th occurrence)
 - **When Alex names a tool for a creative task, he means use that tool for the whole thing.** "Use nanobanana" = generate the entire ad with that tool, not just one component. Don't assume he means a font or a sub-step.
 - **Verify Paperclip "done" tickets actually completed their work.** ABE-85 was marked done but the skill install never succeeded (403 permissions). Check logs, not just status.
-- **Paperclip agents can get stuck with runs perpetually "queued".** Ratchet's adapter (claude_local) stopped executing Apr 22 but status still shows "running". Heartbeat kicks don't fix it. Force-restart or debug the adapter subprocess.
+- **Paperclip agents can get stuck with runs perpetually "queued".** Root cause (confirmed Apr 25): Claude Code shell pipes (curl PATCH calls) hang mid-execution, creating zombie processes that block agent slots. New runs queue but can't start. Fix: `kill -9` the stuck claude/curl/zsh processes, Paperclip auto-respawns fresh workers. Health monitor cron runs every 6h to catch this.
 - **Paperclip CLI needs context profile set.** Without `npx paperclipai context set --company-id <id> --api-base <url>`, every command fails with "Company ID is required." Set once per instance.
+- **Paperclip agents won't deploy without a git remote.** They commit locally but never push if no remote is configured. Always verify `git remote -v` in agent workspaces.
+- **Don't QA the bots' output.** That's Wren's (CQO) job. Let the chain work. Debra manages, doesn't babysit.
 
 ## Key Infrastructure
 - **Primary model: anthropic/claude-opus-4-6** (changed Apr 19, was openrouter/auto). Alex wants Opus for ALL sessions until further notice. Fallback: haiku.
@@ -43,7 +45,7 @@
 - OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
 - **Gemini API:** Subject to 403 PERMISSION_DENIED. Single point of failure — takes down BOTH web_search AND memory_search simultaneously. Need fallback strategy.
 - **Paperclip AI:** Installed Apr 16. Config at ~/.paperclip/instances/default/config.json. Server: 127.0.0.1:3100. Embedded Postgres on port 54329. 10 agents active. CLI: `npx paperclipai issue comment/update/create`. Agents are REACTIVE only — they don't self-wake or patrol. Standing orders don't work as expected. Must post comments + change status to in_progress to wake them.
-- **Paperclip Team (Abellminded):** Steve McGoober (Coordinator), Sable Voss (CDO), Ratchet Varma (CTO), Kit Ballard (CWO), Maren Lys (CPO/Philosophy), Wren Kowalski (CQO), Cass Meridian (CRO), Pax Holloway (CPO/Product), Devi Sato (CHRO), Ren Otieno (CIO)
+- **Paperclip Team (Abellminded):** Steve McGoober (Coordinator), Sable Voss (CDO), Ratchet Varma (CTO), Kit Ballard (CWO), Maren Lys (CPO/Philosophy), Wren Kowalski (CQO), Cass Meridian (CRO), Pax Holloway (CPO/Product), Devi Sato (CHRO), Ren Otieno (CIO), **Luma Vidal (CVO, hired Apr 25)**
 
 ## People
 - **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
@@ -83,6 +85,8 @@
 - **Homepage Redesign** (ABE-43, Ratchet in progress)
 - **Be Particular Audiobook** (Ch1 live at abellminded.com/be-particular.html, Sallijo's book, Jerry B Southern voice, "For Avie" dedication)
 - **ABE-32 Logo Identity** (Recoleta + A-Eye mark locked in. Any A + one eye = the mark)
+- **TourSpec** (NEW — Hannah's touring logistics MVP. Day sheets, advancing tracker, venue DB, financials, asset portal. Target: May 4 tour. GitHub repo TBD — Alex said he has one but hasn't shared link.)
+- **abellminded-platform repo** (github.com/alex-abell/abellminded-platform, private. Has homepage, consulting, shop, admin, brand identity. Needs Vercel connection to deploy.)
 - Second Brain Pipeline v3 (8-stream capture)
 - Mirror product (needs brand/product architecture)
 - Night Swimming cron suite (email, drive, contacts, ChatGPT processing)

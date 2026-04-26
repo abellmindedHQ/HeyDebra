@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-24",
+  "last_updated": "2026-04-25",
   "tracked_senders": {
     "fandango@movies.fandango.com": {
       "count": 10,
@@ -7,38 +7,38 @@
       "subjects": ["Get Tickets", "First Reviews", "Special Deal", "How did you like", "Promo Code", "Purchase Confirmation", "Don't Miss MICHAEL", "Your Friday Movie Premiere"]
     },
     "info@e.alexvindman.com": {
-      "count": 12,
-      "last_seen": "2026-04-24",
-      "subjects": ["Duty and service", "Wall Street Journal", "Tulsi Gabbard", "A massive defeat", "Democracy", "This guy", "Hear us out", "Florida is a one-point race", "A humble ask", "If everyone reading this donated just $10", "I just filed", "Pummeled"]
+      "count": 13,
+      "last_seen": "2026-04-25",
+      "subjects": ["Duty and service", "Wall Street Journal", "Tulsi Gabbard", "A massive defeat", "Democracy", "This guy", "Hear us out", "Florida is a one-point race", "A humble ask", "If everyone reading this donated just $10", "I just filed", "Pummeled", "The toughest fight of my life"]
     },
     "noreply@betterhelp.com": {
-      "count": 11,
-      "last_seen": "2026-04-24",
+      "count": 12,
+      "last_seen": "2026-04-25",
       "subjects": ["Journal reminder (daily)"]
     },
     "email@email.monarch.com": {
-      "count": 18,
-      "last_seen": "2026-04-24",
+      "count": 22,
+      "last_seen": "2026-04-25",
       "subjects": ["Transactions need review", "You have 2 new updates", "You have 4 new updates"]
     },
     "USPSInformeddelivery@email.informeddelivery.usps.com": {
-      "count": 9,
-      "last_seen": "2026-04-23",
+      "count": 10,
+      "last_seen": "2026-04-25",
       "subjects": ["Your Daily Digest"]
     },
     "listingupdates@flexmail.flexmls.com": {
-      "count": 31,
-      "last_seen": "2026-04-24",
+      "count": 35,
+      "last_seen": "2026-04-25",
       "subjects": ["Listings for Alex Abel", "Listings for Alex Abel!"]
     },
     "AmericanExpress@welcome.americanexpress.com": {
-      "count": 12,
-      "last_seen": "2026-04-17",
-      "subjects": ["Enrollment confirmations", "Card delivery", "Benefits", "AutoPay", "Send & Split"]
+      "count": 13,
+      "last_seen": "2026-04-25",
+      "subjects": ["Enrollment confirmations", "Card delivery", "Benefits", "AutoPay", "Send & Split", "Cash Advance PIN"]
     },
     "no-reply@is.email.nextdoor.com": {
-      "count": 6,
-      "last_seen": "2026-04-23",
+      "count": 7,
+      "last_seen": "2026-04-25",
       "subjects": ["Top post"]
     },
     "no-reply@otter.ai": {
@@ -52,94 +52,29 @@
       "subjects": ["Account safety tips", "We've updated our Robinhood Crypto Customer Agreement", "Vote in the Netflix Annual Meeting"]
     },
     "contact@e.marypeltola.com": {
-      "count": 4,
-      "last_seen": "2026-04-24",
-      "subjects": ["The most strategic donation", "risky", "Our latest poll", "Please don't click away"]
+      "count": 5,
+      "last_seen": "2026-04-25",
+      "subjects": ["The most strategic donation", "risky", "Our latest poll", "Please don't click away", "Here are the facts"]
     },
-    "haleyformi@substack.com": {
+    "noreply@ecobee.com": {
       "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Trump sold us out"]
+      "last_seen": "2026-04-25",
+      "subjects": ["HomeKit Set Point Out of Range"]
     },
-    "mgmrewards@ee.mgmresorts.com": {
+    "noreply@email.openai.com": {
       "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Baseball Season is Back"]
+      "last_seen": "2026-04-25",
+      "subjects": ["Introducing GPT-5.5"]
     },
-    "kevin@app.getdex.com": {
+    "googleone-noreply@google.com": {
       "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["New: Use Dex within ChatGPT"]
+      "last_seen": "2026-04-25",
+      "subjects": ["50% off YouTube Premium"]
     },
-    "no-reply@comms.runwayml.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Last call: AIF Submissions"]
-    },
-    "news@updates.ubisoft.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Update to Your Ubisoft Account"]
-    },
-    "info@communication.spherexx.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Church + Henley Special"]
-    },
-    "noreply@feedbackemail.americanexpress.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Provide your feedback"]
-    },
-    "thebatch@deeplearning.ai": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["GLM 5.1 Thinks Strategically"]
-    },
-    "rewards@e-rewards.dominos.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["FREE Parmesan Bread Bites"]
-    },
-    "no-reply@salonultimate.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Spring Into Style"]
-    },
-    "hello@updates.monarch.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Meet Monarch Plus"]
-    },
-    "cole.reply@formspree.io": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["What's a Honeypot (and Why it Works)"]
-    },
-    "marketing@plans.eventbrite.com": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Events worth stepping outside for."]
-    },
-    "hello@gamma.app": {
-      "count": 1,
-      "last_seen": "2026-04-24",
-      "subjects": ["Alexander, you haven't seen this Gamma before"]
-    },
-    "USAA.customer.service@omem.usaa.com": {
-      "count": 2,
-      "last_seen": "2026-04-22",
-      "subjects": ["Financial Readiness Review", "Stay Protected with Spring Maintenance"]
-    },
-    "hello@m.plex.tv": {
-      "count": 1,
-      "last_seen": "2026-04-21",
-      "subjects": ["See what's trending with friends and fans this week"]
-    },
-    "ant.wilson@supabase.com": {
-      "count": 2,
-      "last_seen": "2026-04-21",
-      "subjects": ["Your Supabase Project TourSpec has been paused"]
+    "sales@audiotheme.com": {
+      "count": 3,
+      "last_seen": "2026-04-25",
+      "subjects": ["Automatic payment failed for 28987"]
     },
     "failed-payments+acct_1RHZepJKh2G7HNV5@stripe.com": {
       "count": 4,
@@ -151,45 +86,45 @@
       "last_seen": "2026-04-12",
       "subjects": ["$157.32 payment to Runway AI, Inc. was unsuccessful again"]
     },
-    "keepmoving@m.ifit.com": {
+    "USAA.customer.service@omem.usaa.com": {
       "count": 2,
       "last_seen": "2026-04-22",
-      "subjects": ["Oops - our mistake!", "This is your chance to explore the world."]
-    },
-    "hello@deeplearning.ai": {
-      "count": 1,
-      "last_seen": "2026-04-22",
-      "subjects": ["Stop ignoring multimodal data"]
-    },
-    "hello@diangelolaw.com": {
-      "count": 1,
-      "last_seen": "2026-04-23",
-      "subjects": ["A quick way to check if your contract still works"]
-    },
-    "billing@mail.notion.so": {
-      "count": 1,
-      "last_seen": "2026-04-23",
-      "subjects": ["Need help with your Notion plan?"]
+      "subjects": ["Financial Readiness Review", "Stay Protected with Spring Maintenance"]
     },
     "workspace-noreply@google.com": {
       "count": 2,
       "last_seen": "2026-04-23",
       "subjects": ["Product Update", "Pooled storage grace period expired"]
     },
+    "no_reply@email.apple.com": {
+      "count": 3,
+      "last_seen": "2026-04-18",
+      "subjects": ["Your Subscription is Expiring"]
+    },
+    "hello@diangelolaw.com": {
+      "count": 2,
+      "last_seen": "2026-04-25",
+      "subjects": ["A quick way to check if your contract still works", "Avoid penalties—your Florida filing is due May 1"]
+    },
     "team@user.hostinger.com": {
-      "count": 1,
-      "last_seen": "2026-04-23",
-      "subjects": ["Claim your free domain"]
+      "count": 2,
+      "last_seen": "2026-04-25",
+      "subjects": ["Claim your free domain", "Your subscription renews soon"]
     },
-    "auto-reply@usps.com": {
-      "count": 4,
-      "last_seen": "2026-04-23",
-      "subjects": ["Expected Delivery"]
-    },
-    "DeltaAirLines@o.delta.com": {
+    "rottentomatoes@movies.rottentomatoes.com": {
       "count": 1,
-      "last_seen": "2026-04-23",
-      "subjects": ["Reminder To Check Your Travel Documents"]
+      "last_seen": "2026-04-25",
+      "subjects": ["'Michael' First Reviews"]
+    },
+    "no-reply@wellnessliving.com": {
+      "count": 1,
+      "last_seen": "2026-04-25",
+      "subjects": ["Join us for Ecstatic Dance tonight at 7pm"]
+    },
+    "no-reply@salonultimate.com": {
+      "count": 1,
+      "last_seen": "2026-04-25",
+      "subjects": ["Today We Celebrate Our Sharkey's Stylists!"]
     }
   },
   "unsubscribe_candidates": [
@@ -202,9 +137,7 @@
     "USPSInformeddelivery@email.informeddelivery.usps.com",
     "no-reply@otter.ai",
     "no-reply@is.email.nextdoor.com",
-    "auto-reply@usps.com",
-    "keepmoving@m.ifit.com",
-    "noreply@robinhood.com",
-    "contact@e.marypeltola.com"
+    "contact@e.marypeltola.com",
+    "no_reply@email.apple.com"
   ]
 }

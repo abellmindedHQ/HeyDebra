@@ -272,3 +272,13 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Coordinate with Melissa to schedule Part 2 automated SDLC demo next week, focused on a real-world legacy application // assigned to: Alex, due: next week, priority: normal, source: email:Meeting Summary for Demo automated SDLC:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
 - [ ] Schedule follow-up governance and culture discussion on AI-assisted dev (SQA, security, staffing changes) with team leads and leadership // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Demo automated SDLC:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
 - [ ] Have team member pull SRS entries for legacy apps (e.g. Team Web) and confirm with business owners which app to use for AI-dev demo // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Demo automated SDLC:otter.ai, area: 🏢 ORNL, captured: 2026-04-24 18:12
+
+
+## 📥 Captured 2026-04-25 07:30 AM ET
+
+- [ ] Verify Experian alert: new account added to credit file (likely new American Express card, Cash Advance PIN email also received). Confirm it's legitimate and not unauthorized. // assigned to: Alex, due: ASAP, priority: urgent, source: email:Heads up Alexander new account added to Experian credit file:Experian, area: 💊 Health & Money, captured: 2026-04-25 07:30
+
+
+## 📥 Captured 2026-04-25 06:05 PM ET
+
+- [ ] Update Midjourney billing info (AmEx ending 5534 declined twice for $32.78 subscription) // assigned to: Alex, due: ASAP, priority: urgent, source: email:payment unsuccessful again:Midjourney/Stripe, area: 💊 Health & Money, captured: 2026-04-25 18:05

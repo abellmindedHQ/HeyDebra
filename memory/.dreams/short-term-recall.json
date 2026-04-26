@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-25T03:31:26.053Z",
+  "updatedAt": "2026-04-25T23:37:03.266Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -1406,20 +1406,22 @@
       "endLine": 122,
       "source": "memory",
       "snippet": "Session carried over from Apr 1 evening. Writing final context before 4am reset and Alex's departure to Boston. ### Alex's Status - **Asleep** — went to bed ~9pm for 5:45am departure to TYS airport - Flies Boston today (Thu Apr 2 - Sun Apr 5) with Hannah and Avie - Flight G4 1426 | TYS → BOS | Boards 6:45am, Departs 7:30am, Arrives 9:46am - Confirmation: HFI9HB | Seats: Hannah 2A, Alex 2B, Avie 2C (Zone 1, all checked in ✅) ### Overnight Automation (while Alex slept, Apr 1 evening → Apr 2 early AM) - Capture agent ran: clean - GSD cron ran: check memory for report - Dream Cycle #5: 3 proposals generated (not yet reviewed by Alex — queue for post-Boston) - Night Swimming suite (Sunday): wil",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.0051632553339005,
+      "totalScore": 1.3990781664848329,
       "maxScore": 0.5174046993255615,
       "firstRecalledAt": "2026-04-20T03:34:45.166Z",
-      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-04-25T16:33:28.088Z",
       "queryHashes": [
         "cc8b9e4e8b0e",
-        "b084f49bbbf1"
+        "b084f49bbbf1",
+        "3fc09b18f5e4"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-25"
       ],
       "conceptTags": [
         "post-boston",
@@ -1800,19 +1802,21 @@
       "endLine": 164,
       "source": "memory",
       "snippet": "- Expression sprites: 6 moods (happy/thinking/excited/silly/caring/laughing) cropped from v3 sprite sheet - Interactive web prototype: talk.html with ElevenLabs widget, avatar reacts to conversation - **Deployed to abellminded.com/heyavery** AND abellminded.com/avery - Avery pronunciation fix: \"AY-vee\" not \"AH-vee\" (A.V. like the letters) - Avie loved it. Called Debra on the phone to demo at bedtime ### Hannah Aldridge Music Studio 🎸 - Extracted full business plan from Claude conversation (2025-12-18) - Private lessons: guitar, piano, voice, performance coaching - Pricing: $40/60/$85 single, $150/$240/$330 monthly packages - Location: Rush's Music, Knoxville. Mon-Thu afternoons/evenings -",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9946589887142181,
+      "totalScore": 1.4702483743429182,
       "maxScore": 0.49849928915500635,
       "firstRecalledAt": "2026-04-20T21:26:45.209Z",
-      "lastRecalledAt": "2026-04-20T21:26:54.353Z",
+      "lastRecalledAt": "2026-04-25T17:17:00.837Z",
       "queryHashes": [
         "2094c3d5c5a7",
-        "03ea499f04f0"
+        "03ea499f04f0",
+        "5d117151c078"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-25"
       ],
       "conceptTags": [
         "talk.html",
@@ -1832,22 +1836,24 @@
       "endLine": 266,
       "source": "memory",
       "snippet": "- Jim Biggs group: any;+;5665413a1cdd4931a5b9c90de92a9442 - KBUDDS group (Marshall+Everett): any;+;26496e31a52b4d7091da7b17a5a1380d - Brandon Brown RCS: via Google Messages browser, (813)534-3383 + (865)888-0880 - Kaizen restaurant: (865) 409-4444, 127 S Central St - Alex home: Jackson Ave apartment, downtown Knoxville - Alex work: 1 Bethel Valley Road, Oak Ridge, TN 37830",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.8010934382677075,
+      "totalScore": 2.2020879507064817,
       "maxScore": 0.46304284930229184,
       "firstRecalledAt": "2026-04-20T21:39:15.339Z",
-      "lastRecalledAt": "2026-04-24T18:08:00.241Z",
+      "lastRecalledAt": "2026-04-25T16:33:28.088Z",
       "queryHashes": [
         "f06e6e372a3a",
         "8da9cc9c98d0",
         "e2a2fb31c5b4",
-        "422359323936"
+        "422359323936",
+        "3fc09b18f5e4"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "534-3383",
@@ -2561,18 +2567,20 @@
       "endLine": 546,
       "source": "memory",
       "snippet": "- **Shipped:** ABE-38 (philosophy/voice), ABE-37 (color system), ABE-40 (research) - **In review (stale):** ABE-42 (hero video, since 6:23 AM), ABE-32 (logo pass, since 2:36 AM) - **Blocked/frozen (no active runs since ~10:45 AM):** ABE-35 brand kit + sub-tasks (36, 41, 39), ABE-50/51/52 team identity, ABE-44/46 Abell & Co MVP, ABE-54 site uptime, ABE-56 data governance - **Not started:** ABE-43 homepage, ABE-57 merch, ABE-55 bolt.diy - Sent Alex iMessage summary, asked if he wants me to poke agents - BB API curl was timing out on sends (ping OK), used message tool instead ## Paperclip Team Progress Check (1:55 PM) - **ABE-36** (Phase 2 visual assets): in_progress, Sable Voss actively runni",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.509739825129509,
+      "totalScore": 1.0110604405403136,
       "maxScore": 0.509739825129509,
       "firstRecalledAt": "2026-04-24T14:03:36.115Z",
-      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
+      "lastRecalledAt": "2026-04-25T23:37:03.266Z",
       "queryHashes": [
-        "fc308dbc37e3"
+        "fc308dbc37e3",
+        "ba037b8396b8"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "abe-38",
@@ -3177,6 +3185,161 @@
         "message",
         "family",
         "group"
+      ]
+    },
+    "memory:memory/2026-04-25.md:84:94": {
+      "key": "memory:memory/2026-04-25.md:84:94",
+      "path": "memory/2026-04-25.md",
+      "startLine": 84,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "1. TSA PreCheck TODAY 1pm 2. Avie Wax Museum today (3 days post-adenoidectomy) 3. Verify Experian + ORNL FCU fraud alerts ### Self-Applied Changes (last 12h) - 6c5cc87: EOD flush 2026-04-25: daily log + active context handoff - 9a409b5: EOD flush Apr 24: Alex interactions, active-context update, MEMORY.md medical section ### BB Note - AppleScript send method hangs/times out. Private-api method works. Use `'method': 'private-api'` for sends going forward.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4287010461091995,
+      "maxScore": 0.4287010461091995,
+      "firstRecalledAt": "2026-04-25T16:33:28.088Z",
+      "lastRecalledAt": "2026-04-25T16:33:28.088Z",
+      "queryHashes": [
+        "3fc09b18f5e4"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "post-adenoidectomy",
+        "self-applied",
+        "active-context",
+        "memory.md",
+        "hangs/times",
+        "private-api",
+        "tsa",
+        "precheck"
+      ]
+    },
+    "memory:memory/2026-04-02.md:1:31": {
+      "key": "memory:memory/2026-04-02.md:1:31",
+      "path": "memory/2026-04-02.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-04-02 — Daily Memory ## Pre-Reset State (3:34am) Session carried over from Apr 1 evening. Writing final context before 4am reset and Alex's departure to Boston. ### Alex's Status - **Asleep** — went to bed ~9pm for 5:45am departure to TYS airport - Flies Boston today (Thu Apr 2 - Sun Apr 5) with Hannah and Avie - Flight G4 1426 | TYS → BOS | Boards 6:45am, Departs 7:30am, Arrives 9:46am - Confirmation: HFI9HB | Seats: Hannah 2A, Alex 2B, Avie 2C (Zone 1, all checked in ✅) ### Overnight Automation (while Alex slept, Apr 1 evening → Apr 2 early AM) - Capture agent ran: clean - GSD cron ran: check memory for report - Dream Cycle #5: 3 proposals generated (not yet reviewed by Alex — q",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4009586095809936,
+      "maxScore": 0.4009586095809936,
+      "firstRecalledAt": "2026-04-25T16:33:28.088Z",
+      "lastRecalledAt": "2026-04-25T16:33:28.088Z",
+      "queryHashes": [
+        "3fc09b18f5e4"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "pre-reset",
+        "pre",
+        "reset",
+        "state",
+        "34am",
+        "carried",
+        "apr",
+        "evening"
+      ]
+    },
+    "memory:memory/2026-04-25.md:57:92": {
+      "key": "memory:memory/2026-04-25.md:57:92",
+      "path": "memory/2026-04-25.md",
+      "startLine": 57,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "- Amsterdam PTO still unclear. Escalate Monday if not confirmed by then. - Hannah boundary rule: be guardrail, not accelerator. Weekend = family time. ## QMD Re-Index (4:00 AM cron) - **Update:** 13 collections scanned - 8 new files (3 reflections, 5 debra-memory) - 340 updated, 1137 unchanged, 0 removed - 335 orphaned content hashes cleaned up - **Embed:** 2,480 chunks from 348 documents in 2m 57s - Model: embeddinggemma - GTD collection still empty (moved to workspace/inbox/) - Otter collection empty - All collections healthy ✓ ## GSD Report — 8:00 AM (Cron) ### Report Summary - **Wins:** 0 completions. Velocity stalled 17+ days. - **Overdue:** 10+ items (Jay artifact PROMISED,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3971538662910461,
+      "maxScore": 0.3971538662910461,
+      "firstRecalledAt": "2026-04-25T16:33:28.088Z",
+      "lastRecalledAt": "2026-04-25T16:33:28.088Z",
+      "queryHashes": [
+        "3fc09b18f5e4"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "embedding",
+        "qmd",
+        "re-index",
+        "debra-memory",
+        "workspace/inbox",
+        "amsterdam",
+        "pto",
+        "still"
+      ]
+    },
+    "memory:memory/2026-04-24.md:50:77": {
+      "key": "memory:memory/2026-04-24.md:50:77",
+      "path": "memory/2026-04-24.md",
+      "startLine": 50,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "### Infrastructure - Gateway: 2026.4.19-beta.2 | model: anthropic/claude-opus-4-6 - BB: localhost:1234 (stable) - Paperclip: 127.0.0.1:3100 | 10 agents, all Opus 4.6 (switched Apr 23) - HA: 192.168.4.190:8123 - WhatsApp: cycling disconnects (~30min), auto-reconnects — normal ## Alex Interactions (10:02 AM - 10:55 PM) Alex surfaced after ~2 days of silence. Multiple requests throughout the day. ### Paperclip / Abellminded Pages (10:02 AM) - Alex asked to get the robots to push up new versions of abellminded.com and Abell & Co pages for a demo - Investigation found ALL key tickets were stalled: - **ABE-43** (Homepage Redesign): backlog, Ratchet's run queued since Apr 22, never started -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7743525994614191,
+      "maxScore": 0.7743525994614191,
+      "firstRecalledAt": "2026-04-25T23:37:03.266Z",
+      "lastRecalledAt": "2026-04-25T23:37:03.266Z",
+      "queryHashes": [
+        "ba037b8396b8"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.4.19-beta.2",
+        "anthropic/claude-opus-4-6",
+        "127.0.0.1",
+        "4.6",
+        "192.168.4.190",
+        "auto-reconnects",
+        "abellminded.com"
+      ]
+    },
+    "memory:memory/2026-04-24.md:73:96": {
+      "key": "memory:memory/2026-04-24.md:73:96",
+      "path": "memory/2026-04-24.md",
+      "startLine": 73,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "- Ratchet's last heartbeat was Apr 22. Runs stay in \"queued\" and never execute. Adapter (claude_local) appears broken. - **Status at follow-up (10:26 AM):** Still stuck. Runs queued, not starting. Adapter issue suspected. - Gave Alex 2 options: build it myself or debug Paperclip. No response on which path. - **Current state of deployed pages:** - www.abellminded.com — old \"Alex Abell\" landing page - platform-zeta-eight.vercel.app — newer Next.js build with brand identity page, nav to /identity and /consulting - Abell & Co consulting page doesn't exist yet - Also discovered 2 pending board approvals: CVO hire request + Shopify Basic ($29/mo) for merch ### Covenant Health EKG/Echocard",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5189148515462875,
+      "maxScore": 0.5189148515462875,
+      "firstRecalledAt": "2026-04-25T23:37:03.266Z",
+      "lastRecalledAt": "2026-04-25T23:37:03.266Z",
+      "queryHashes": [
+        "ba037b8396b8"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "claude-local",
+        "follow-up",
+        "www.abellminded.com",
+        "platform-zeta-eight.vercel.app",
+        "next.js",
+        "29/mo",
+        "ekg/echocard",
+        "ratchet's"
       ]
     }
   }

@@ -52,3 +52,43 @@ Items completed in Things 3, logged by the GSD completion debrief system.
 - [x] Netflix payment - update card — completed: 2026-04-01 18:51:00, area: No Area, created: 2026-04-01 18:51:00, velocity: 0d
 - [x] Boston Trip Apr 2-5 — completed: 2026-04-06 09:14:28, area: No Area, project: Boston Apr 2-5, created: 2026-03-29 19:30:58, velocity: 8d
 - [x] DO YOUR TAXES 🚨 (deadline April 15) — completed: 2026-04-08 01:43:26, area: No Area, created: 2026-04-01 07:52:46, velocity: 7d
+- [x] Verify why the Costco Visa card was unlocked and re-lock it if needed. — completed: 2026-04-20 05:52:53, area: 💊 Health & Money, created: 2026-04-12 07:33:34, velocity: 8d
+- [x] Update billing information for Runway subscription after payment failure — completed: 2026-04-20 05:53:04, area: 💊 Health & Money, created: 2026-04-11 07:31:34, velocity: 9d
+- [x] Review and download 2025 Market Square Ventures Fund I K-1 — completed: 2026-04-20 05:53:14, area: 💊 Health & Money, created: 2026-04-10 07:37:46, velocity: 10d
+- [x] Review 4 Monarch transactions — completed: 2026-04-20 05:53:17, area: 💊 Health & Money, created: 2026-04-10 07:37:46, velocity: 10d
+- [x] Brandon Bruce Muse for All luncheon — RSVP — completed: 2026-04-23 06:15:36, area: 👨‍👧 People, created: 2026-03-29 19:31:21, velocity: 25d
+- [x] Check Anthropic account and re-enable Claude API access. — completed: 2026-04-23 06:12:59, area: 🚀 Build, created: 2026-04-12 07:33:58, velocity: 11d
+- [x] Schedule intake vision meeting with Regina and Andrew — completed: 2026-04-20 05:54:08, area: 🏢 ORNL, created: 2026-04-10 07:37:46, velocity: 10d
+- [x] Roxanne NDA/app email — 32 days unanswered — completed: 2026-04-23 06:15:41, area: 👨‍👧 People, created: 2026-03-29 19:31:21, velocity: 25d
+- [x] Design ADK / Claudia collaboration — AI guidelines and documentation — completed: 2026-04-23 06:14:15, area: 🏢 ORNL, created: 2026-03-29 19:31:34, velocity: 25d
+- [x] Email Lufthansa — Hannah's honeydo list — completed: 2026-04-20 05:52:19, area: 🏠 Life Ops, created: 2026-03-29 19:32:22, velocity: 22d
+- [x] ORNL team showcase meeting — follow up with Brad Greenfield — completed: 2026-04-23 06:14:54, area: 🏢 ORNL, created: 2026-03-29 19:31:34, velocity: 25d
+- [x] Accept updated Claude GitHub app permissions — completed: 2026-04-23 06:13:37, area: 🚀 Build, created: 2026-03-29 19:32:03, velocity: 25d
+- [x] Download X/Twitter data export — completed: 2026-04-20 05:52:13, area: 🏠 Life Ops, created: 2026-03-29 19:32:22, velocity: 22d
+- [x] Download LinkedIn data archive — completed: 2026-04-20 05:52:09, area: 🏠 Life Ops, created: 2026-03-29 19:32:22, velocity: 22d
+- [x] Netlify DNS — update records for 0rnl.dev — completed: 2026-04-23 06:13:13, area: 🚀 Build, created: 2026-03-29 19:32:22, velocity: 25d
+- [x] Envato $39 PayPal charge — verify expected — completed: 2026-04-20 05:53:39, area: 💊 Health & Money, created: 2026-03-29 19:32:03, velocity: 22d
+- [x] Coefficient Context Options — share Figma Make and v0 experiments — completed: 2026-04-23 06:14:32, area: 🏢 ORNL, created: 2026-03-29 19:31:34, velocity: 25d
+- [x] Reconnect Capital One to Venmo — completed: 2026-04-20 05:53:44, area: 💊 Health & Money, created: 2026-03-29 19:31:21, velocity: 22d
+- [x] Fix Apple Pay Lost Mode — completed: 2026-04-20 05:53:46, area: 💊 Health & Money, created: 2026-03-29 19:31:21, velocity: 22d
+- [x] Review 5 pending Monarch transactions — completed: 2026-04-20 05:53:24, area: 💊 Health & Money, created: 2026-03-29 19:32:03, velocity: 22d
+- [x] Book time with Alex Brodsky — Calendly — completed: 2026-04-23 06:14:39, area: 🏢 ORNL, created: 2026-03-29 19:32:22, velocity: 25d
+- [x] ORNL Budget meeting / V&V Discussion — completed: 2026-04-23 06:15:20, area: 🏢 ORNL, created: 2026-03-29 19:30:59, velocity: 25d
+- [x] Labcorp lab results review — completed: 2026-04-20 05:53:38, area: 💊 Health & Money, created: 2026-03-29 19:31:21, velocity: 22d
+- [x] Grocery run: cholesterol-lowering staples (oats, salmon, almonds, avocados, beans) — completed: 2026-04-20 05:53:19, area: 💊 Health & Money, created: 2026-04-01 15:57:20, velocity: 19d
+- [x] Mark lipomas with Sharpie X (prep for tomorrow's procedure) — completed: 2026-04-23 06:12:30, area: 💊 Health & Money, created: 2026-04-01 15:35:01, velocity: 22d
+- [x] 🏥 Lipoma removal procedure — Premier Surgical — completed: 2026-04-23 06:12:25, area: 💊 Health & Money, created: 2026-04-01 15:35:00, velocity: 22d
+- [x] ORNL Isaac compute roadmap — verify if real — completed: 2026-04-23 06:15:15, area: 🏢 ORNL, created: 2026-03-29 19:30:59, velocity: 25d
+- [x] Register for GI patient portal — completed: 2026-04-20 05:53:32, area: 💊 Health & Money, created: 2026-03-29 19:31:21, velocity: 22d
+- [x] Batman Killed the Ghost — v4 stick figure frames — completed: 2026-04-20 05:53:58, area: No Area, project: Batman Killed the Ghost, created: 2026-03-29 19:31:49, velocity: 22d
+- [x] OpenAI Plus — decide renew or let expire — completed: 2026-04-23 06:12:45, area: No Area, project: Subscription Audit, created: 2026-03-29 19:32:03, velocity: 25d
+- [x] Cricut Access — decide keep or cancel — completed: 2026-04-23 06:12:46, area: No Area, project: Subscription Audit, created: 2026-03-29 19:32:03, velocity: 25d
+- [x] GitHub private repo opt-out — deadline April 24 — completed: 2026-04-23 06:12:51, area: 🚀 Build, created: 2026-03-29 19:32:03, velocity: 25d
+- [x] Amsterdam trip May 4-19 — figure out PTO — completed: 2026-04-23 06:12:11, area: No Area, project: Amsterdam May 4-19, created: 2026-03-29 19:32:21, velocity: 25d
+- [x] SwitchBot API token from Alex — for HA integration — completed: 2026-04-23 06:13:38, area: 🚀 Build, created: 2026-03-29 19:32:22, velocity: 25d
+- [x] Avie report card — review at Rocky Hill portal — completed: 2026-04-23 06:15:39, area: 👨‍👧 People, created: 2026-03-29 19:32:22, velocity: 25d
+- [x] Download Meta data export — completed: 2026-04-20 05:52:15, area: 🏠 Life Ops, created: 2026-03-29 19:32:22, velocity: 22d
+- [x] 🏥 Avie Surgery Day — Adenoidectomy — completed: 2026-04-23 06:11:52, area: No Area, created: 2026-04-01 09:07:37, velocity: 22d
+- [x] Stock up for Avie's surgery recovery (Apr 22) — completed: 2026-04-23 06:11:54, area: No Area, created: 2026-04-01 09:07:37, velocity: 22d
+- [x] Test item — completed: 2026-04-23 06:17:52, area: No Area, created: 2026-04-09 08:06:29, velocity: 14d
+- [x] Add documents to TurboTax — completed: 2026-04-20 05:51:46, area: No Area, created: 2026-04-09 18:09:29, velocity: 11d

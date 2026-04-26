@@ -9,7 +9,7 @@ Active Context — Session Handoff (2026-04-25 03:34 AM, pre-reset flush)
 ### Must-Do
 1. **Avie Wax Museum — TODAY.** 3 days post-adenoidectomy. Check with Alex if she's well enough.
 2. **Deliver dream cycle #18 summary** via iMessage after 8 AM. Files in memory/dream-cycle/2026-04-24-*.md.
-3. **TSA PreCheck — TOMORROW (Sun Apr 26) 1pm.** Hannah accepted. Remind Alex Saturday evening.
+3. **TSA PreCheck — TODAY (Sat Apr 25) 1pm.** Calendar confirmed. Hannah accepted. ⚠️ Was incorrectly noted as Sun Apr 26 — it's TODAY.
 
 ### Follow Up (when Alex surfaces)
 4. **Abellminded demo pages** — Paperclip robots stuck. Ratchet's adapter broken since Apr 22. Alex hasn't decided: I build it or we debug Paperclip. Ask again.

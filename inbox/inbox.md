@@ -282,3 +282,16 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 ## 📥 Captured 2026-04-25 06:05 PM ET
 
 - [ ] Update Midjourney billing info (AmEx ending 5534 declined twice for $32.78 subscription) // assigned to: Alex, due: ASAP, priority: urgent, source: email:payment unsuccessful again:Midjourney/Stripe, area: 💊 Health & Money, captured: 2026-04-25 18:05
+
+
+## 📥 Captured 2026-04-26 07:30 AM ET
+
+- [ ] Review USAA Automobile Policy 7101 Cancellation document — verify this was intentional and not a coverage lapse // assigned to: Alex, due: ASAP, priority: urgent, source: email:You Have a New USAA Document:USAA, area: 💊 Health & Money, captured: 2026-04-26 07:30
+- [ ] Pay KUB bill (statement now available as of Apr 25) // assigned to: Alex, due: soon, priority: normal, source: email:Your KUB bill is now available:KUB, area: 💊 Health & Money, captured: 2026-04-26 07:30
+- [ ] Update payment info for Cricut Access subscription (action required to keep subscription active) // assigned to: Alex, due: soon, priority: normal, source: email:Action Required to Keep Your Cricut Access Subscription:Cricut, area: 💳 Payments, captured: 2026-04-26 07:30
+- [ ] Verify Facebook login alert — new device login near Knoxville on Chrome/macOS (Apr 25). Likely OpenClaw browser automation but confirm // assigned to: Alex, due: soon, priority: normal, source: email:Did you just log in near Knoxville:Facebook, area: 🏠 Life Ops, captured: 2026-04-26 07:30
+
+
+## 📥 Captured 2026-04-26 06:08 PM ET
+
+- [ ] Decide whether to keep or cancel Hostinger Business Web Hosting for aleandermusic.com before $143.88/yr auto-renew charges on May 9 // assigned to: Alex, due: 2026-05-09, priority: normal, source: email:Your services auto-renew soon:Hostinger, area: 💳 Payments, captured: 2026-04-26 18:08

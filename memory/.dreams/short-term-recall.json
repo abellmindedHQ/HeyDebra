@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T07:34:40.396Z",
+  "updatedAt": "2026-04-27T03:31:49.795Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -71,22 +71,24 @@
       "endLine": 132,
       "source": "memory",
       "snippet": "- Hannah is a musician (Alex mentioned \"dating a musician\" re: anxiety) - Hannah has great banter energy, tests boundaries playfully (asked me to help hide a body, buy Xanax, spy on Alex) - She appreciated me clarifying I can't hear their convos, only chat logs - She said \"not telling you shit\" after I mentioned having logs - good humor about it - Hannah is getting them on a health kick - cutting Cokes, wanting healthier chip options ## Honeydo List for Alex (from Hannah's photo) 1. Organize tools and roof 2. Email Lufthansa 3. Fix wooden legs on tables 4. Return air freshener 5. Look at May trip time off/dates so Hannah can plan",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9104158043861388,
+      "totalScore": 2.385665687918663,
       "maxScore": 0.5026884496212005,
       "firstRecalledAt": "2026-04-16T22:50:05.249Z",
-      "lastRecalledAt": "2026-04-20T21:52:11.093Z",
+      "lastRecalledAt": "2026-04-27T03:31:46.070Z",
       "queryHashes": [
         "f18d87a031c3",
         "2094c3d5c5a7",
         "03ea499f04f0",
-        "2362584b0124"
+        "2362584b0124",
+        "82f6031d37bf"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-26"
       ],
       "conceptTags": [
         "off/dates",
@@ -2571,20 +2573,22 @@
       "endLine": 546,
       "source": "memory",
       "snippet": "- **Shipped:** ABE-38 (philosophy/voice), ABE-37 (color system), ABE-40 (research) - **In review (stale):** ABE-42 (hero video, since 6:23 AM), ABE-32 (logo pass, since 2:36 AM) - **Blocked/frozen (no active runs since ~10:45 AM):** ABE-35 brand kit + sub-tasks (36, 41, 39), ABE-50/51/52 team identity, ABE-44/46 Abell & Co MVP, ABE-54 site uptime, ABE-56 data governance - **Not started:** ABE-43 homepage, ABE-57 merch, ABE-55 bolt.diy - Sent Alex iMessage summary, asked if he wants me to poke agents - BB API curl was timing out on sends (ping OK), used message tool instead ## Paperclip Team Progress Check (1:55 PM) - **ABE-36** (Phase 2 visual assets): in_progress, Sable Voss actively runni",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.0110604405403136,
-      "maxScore": 0.509739825129509,
+      "totalScore": 1.5254393279552458,
+      "maxScore": 0.5143788874149322,
       "firstRecalledAt": "2026-04-24T14:03:36.115Z",
-      "lastRecalledAt": "2026-04-25T23:37:03.266Z",
+      "lastRecalledAt": "2026-04-27T03:31:49.795Z",
       "queryHashes": [
         "fc308dbc37e3",
-        "ba037b8396b8"
+        "ba037b8396b8",
+        "e51c726892ae"
       ],
       "recallDays": [
         "2026-04-24",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ],
       "conceptTags": [
         "abe-38",
@@ -3386,15 +3390,16 @@
       "endLine": 58,
       "source": "memory",
       "snippet": "### Deadlines Status 1. **GitHub private repo opt-out: Apr 24 (TODAY)** — ⚠️ UNKNOWN if Alex did this. Was flagged as 5-min task in GSD. HIGH RISK of being missed. 2. **Amsterdam PTO request: Apr 25 (TOMORROW)** — Must ask Jay during 1:1. Trip is May 4. 3. **TSA PreCheck: Sat Apr 26, 1pm** — Hannah accepted invite. Don't miss. 4. **Avie with Alex: Apr 24-27** — Annika in St Pete. Avie coverage confirmed via calendar. 5. **Avie Wax Museum: Apr 25** — surgery was Apr 22, recovery question still open. 6. **Florida filing: May 1** — 1 week out. ### Calendar (Thu Apr 24 — TODAY) - Dan Janowski demo - Jay 1:1 (PERFECT time for Amsterdam PTO request) - Core Analytics meeting - Brooks alignment mee",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5330376297235488,
-      "maxScore": 0.5330376297235488,
+      "totalScore": 1.281391002940947,
+      "maxScore": 0.7483533732173981,
       "firstRecalledAt": "2026-04-26T07:34:40.396Z",
-      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
+      "lastRecalledAt": "2026-04-27T03:31:46.648Z",
       "queryHashes": [
-        "fdbfd4605808"
+        "fdbfd4605808",
+        "968b07f16d35"
       ],
       "recallDays": [
         "2026-04-26"
@@ -3408,6 +3413,100 @@
         "github",
         "private",
         "repo"
+      ]
+    },
+    "memory:memory/2026-04-25.md:84:111": {
+      "key": "memory:memory/2026-04-25.md:84:111",
+      "path": "memory/2026-04-25.md",
+      "startLine": 84,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "1. TSA PreCheck TODAY 1pm 2. Avie Wax Museum today (3 days post-adenoidectomy) 3. Verify Experian + ORNL FCU fraud alerts ### Self-Applied Changes (last 12h) - 6c5cc87: EOD flush 2026-04-25: daily log + active context handoff - 9a409b5: EOD flush Apr 24: Alex interactions, active-context update, MEMORY.md medical section ### BB Note - AppleScript send method hangs/times out. Private-api method works. Use `'method': 'private-api'` for sends going forward. ## Alex Interactions (12:30 PM - 10:00 PM) ### TSA PreCheck (12:30 PM - 12:40 PM, iMessage) - Alex asked where TSA PreCheck was. Memory didn't have location. - Searched Gmail, found confirmation: **Office Depot, 7111 Kingston Pike, Knoxv",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7512898421353639,
+      "maxScore": 0.7512898421353639,
+      "firstRecalledAt": "2026-04-27T03:31:46.070Z",
+      "lastRecalledAt": "2026-04-27T03:31:46.070Z",
+      "queryHashes": [
+        "82f6031d37bf"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "post-adenoidectomy",
+        "self-applied",
+        "active-context",
+        "memory.md",
+        "hangs/times",
+        "private-api",
+        "tsa",
+        "precheck"
+      ]
+    },
+    "memory:memory/2026-04-25.md:107:129": {
+      "key": "memory:memory/2026-04-25.md:107:129",
+      "path": "memory/2026-04-25.md",
+      "startLine": 107,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "- MVP scope identified: day sheet generator, advancing tracker, venue database, financial dashboard, asset portal - Alex mentioned GitHub repo but it's not in his account. Asked for repo link, never got it. - **NEW PROJECT: TourSpec** - MVP needed by May 4 tour date (9 days) ### Paperclip Revive (7:36 PM - 10:00 PM, TUI) - Alex asked about Paperclip status. Full diagnostic: - Server healthy but agents frozen 8+ days. Last real activity Apr 17. - Root cause: 4 zombie Claude Code processes from Tue/Wed with stuck curl PATCH pipes blocking agent slots - New heartbeat runs queued but never started because old runs occupied slots - **Fix:** Killed 4 zombie Claude Code processes + stuck cur",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4647703796625137,
+      "maxScore": 0.4647703796625137,
+      "firstRecalledAt": "2026-04-27T03:31:46.070Z",
+      "lastRecalledAt": "2026-04-27T03:31:46.070Z",
+      "queryHashes": [
+        "82f6031d37bf"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "tue/wed",
+        "mvp",
+        "scope",
+        "identified",
+        "day",
+        "sheet",
+        "generator",
+        "advancing"
+      ]
+    },
+    "memory:memory/2026-04-26.md:22:46": {
+      "key": "memory:memory/2026-04-26.md:22:46",
+      "path": "memory/2026-04-26.md",
+      "startLine": 22,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "- **Amsterdam trip: May 4** (8 days). PTO status with Jay UNKNOWN. - **JC bachelor party Scottsdale: Jul 16-19** ### Overdue / Stale (carried from Apr 25) - 8+ payment failures (Notion, DeepLearning.AI, Runway $157, GCP, Anthropic, AudioTheme, Costco Visa, YMCA, Midjourney) - Egerton McAfee legal invoice: 3rd notice - Roxanne NDA: 57+ days - Lufthansa $552 reimbursement - GitHub private repo opt-out: Apr 24 deadline PASSED (unknown if completed) - ORNL FCU fraud ($20 Ideogram AI) + Experian new account alert — unverified - Jay artifact (app inventory + value-stream synthesis) — overdue since Thu Apr 24 ### Paperclip Status (revived Apr 25) - Root cause of 8-day stall: zombie Claude Code pr",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.5503890578039106,
+      "maxScore": 0.7786907950179078,
+      "firstRecalledAt": "2026-04-27T03:31:46.648Z",
+      "lastRecalledAt": "2026-04-27T03:31:49.795Z",
+      "queryHashes": [
+        "968b07f16d35",
+        "e51c726892ae"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "16-19",
+        "deeplearning.ai",
+        "opt-out",
+        "value-stream",
+        "8-day",
+        "amsterdam",
+        "trip",
+        "may"
       ]
     }
   }

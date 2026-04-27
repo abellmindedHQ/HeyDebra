@@ -1,130 +1,263 @@
 {
-  "last_updated": "2026-04-25",
+  "last_updated": "2026-04-26",
   "tracked_senders": {
     "fandango@movies.fandango.com": {
       "count": 10,
       "last_seen": "2026-04-24",
-      "subjects": ["Get Tickets", "First Reviews", "Special Deal", "How did you like", "Promo Code", "Purchase Confirmation", "Don't Miss MICHAEL", "Your Friday Movie Premiere"]
+      "subjects": [
+        "Get Tickets",
+        "First Reviews",
+        "Special Deal",
+        "How did you like",
+        "Promo Code",
+        "Purchase Confirmation",
+        "Don't Miss MICHAEL",
+        "Your Friday Movie Premiere"
+      ]
     },
     "info@e.alexvindman.com": {
-      "count": 13,
-      "last_seen": "2026-04-25",
-      "subjects": ["Duty and service", "Wall Street Journal", "Tulsi Gabbard", "A massive defeat", "Democracy", "This guy", "Hear us out", "Florida is a one-point race", "A humble ask", "If everyone reading this donated just $10", "I just filed", "Pummeled", "The toughest fight of my life"]
+      "count": 14,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Duty and service",
+        "Wall Street Journal",
+        "Tulsi Gabbard",
+        "A massive defeat",
+        "Democracy",
+        "This guy",
+        "Hear us out",
+        "Florida is a one-point race",
+        "A humble ask",
+        "If everyone reading this donated just $10",
+        "I just filed",
+        "Pummeled",
+        "The toughest fight of my life"
+      ]
     },
     "noreply@betterhelp.com": {
-      "count": 12,
-      "last_seen": "2026-04-25",
-      "subjects": ["Journal reminder (daily)"]
+      "count": 13,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Journal reminder (daily)"
+      ]
     },
     "email@email.monarch.com": {
-      "count": 22,
-      "last_seen": "2026-04-25",
-      "subjects": ["Transactions need review", "You have 2 new updates", "You have 4 new updates"]
+      "count": 24,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Transactions need review",
+        "You have 2 new updates",
+        "You have 4 new updates"
+      ]
     },
     "USPSInformeddelivery@email.informeddelivery.usps.com": {
       "count": 10,
       "last_seen": "2026-04-25",
-      "subjects": ["Your Daily Digest"]
+      "subjects": [
+        "Your Daily Digest"
+      ]
     },
     "listingupdates@flexmail.flexmls.com": {
-      "count": 35,
-      "last_seen": "2026-04-25",
-      "subjects": ["Listings for Alex Abel", "Listings for Alex Abel!"]
+      "count": 38,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Listings for Alex Abel",
+        "Listings for Alex Abel!"
+      ]
     },
     "AmericanExpress@welcome.americanexpress.com": {
       "count": 13,
       "last_seen": "2026-04-25",
-      "subjects": ["Enrollment confirmations", "Card delivery", "Benefits", "AutoPay", "Send & Split", "Cash Advance PIN"]
+      "subjects": [
+        "Enrollment confirmations",
+        "Card delivery",
+        "Benefits",
+        "AutoPay",
+        "Send & Split",
+        "Cash Advance PIN"
+      ]
     },
     "no-reply@is.email.nextdoor.com": {
-      "count": 7,
-      "last_seen": "2026-04-25",
-      "subjects": ["Top post"]
+      "count": 9,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Top post"
+      ]
     },
     "no-reply@otter.ai": {
       "count": 13,
       "last_seen": "2026-04-24",
-      "subjects": ["Meeting Summary for Drupal Scrum", "Meeting Summary for Focus time", "Meeting Summary for Avie Surgery", "Meeting Summary for AppDev Indirect Budget Reform", "Meeting Summary for Alex and Jay Weekly 1:1", "Meeting Summary for Demo automated SDLC"]
+      "subjects": [
+        "Meeting Summary for Drupal Scrum",
+        "Meeting Summary for Focus time",
+        "Meeting Summary for Avie Surgery",
+        "Meeting Summary for AppDev Indirect Budget Reform",
+        "Meeting Summary for Alex and Jay Weekly 1:1",
+        "Meeting Summary for Demo automated SDLC"
+      ]
     },
     "noreply@robinhood.com": {
       "count": 3,
       "last_seen": "2026-04-24",
-      "subjects": ["Account safety tips", "We've updated our Robinhood Crypto Customer Agreement", "Vote in the Netflix Annual Meeting"]
+      "subjects": [
+        "Account safety tips",
+        "We've updated our Robinhood Crypto Customer Agreement",
+        "Vote in the Netflix Annual Meeting"
+      ]
     },
     "contact@e.marypeltola.com": {
-      "count": 5,
-      "last_seen": "2026-04-25",
-      "subjects": ["The most strategic donation", "risky", "Our latest poll", "Please don't click away", "Here are the facts"]
+      "count": 6,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "The most strategic donation",
+        "risky",
+        "Our latest poll",
+        "Please don't click away",
+        "Here are the facts"
+      ]
     },
     "noreply@ecobee.com": {
       "count": 1,
       "last_seen": "2026-04-25",
-      "subjects": ["HomeKit Set Point Out of Range"]
+      "subjects": [
+        "HomeKit Set Point Out of Range"
+      ]
     },
     "noreply@email.openai.com": {
       "count": 1,
       "last_seen": "2026-04-25",
-      "subjects": ["Introducing GPT-5.5"]
+      "subjects": [
+        "Introducing GPT-5.5"
+      ]
     },
     "googleone-noreply@google.com": {
       "count": 1,
       "last_seen": "2026-04-25",
-      "subjects": ["50% off YouTube Premium"]
+      "subjects": [
+        "50% off YouTube Premium"
+      ]
     },
     "sales@audiotheme.com": {
-      "count": 3,
-      "last_seen": "2026-04-25",
-      "subjects": ["Automatic payment failed for 28987"]
+      "count": 4,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Automatic payment failed for 28987"
+      ]
     },
     "failed-payments+acct_1RHZepJKh2G7HNV5@stripe.com": {
       "count": 4,
       "last_seen": "2026-04-13",
-      "subjects": ["$30.00 payment to DeepLearning.AI was unsuccessful"]
+      "subjects": [
+        "$30.00 payment to DeepLearning.AI was unsuccessful"
+      ]
     },
     "failed-payments@runwayml.com": {
       "count": 3,
       "last_seen": "2026-04-12",
-      "subjects": ["$157.32 payment to Runway AI, Inc. was unsuccessful again"]
+      "subjects": [
+        "$157.32 payment to Runway AI, Inc. was unsuccessful again"
+      ]
     },
-    "USAA.customer.service@omem.usaa.com": {
+    "notifications@thrizer.com": {
       "count": 2,
-      "last_seen": "2026-04-22",
-      "subjects": ["Financial Readiness Review", "Stay Protected with Spring Maintenance"]
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Your claim has been reimbursed"
+      ]
+    },
+    "notifications@github.com": {
+      "count": 6,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Tourspec PR #3-#7 vercel[bot]"
+      ]
+    },
+    "USAA.Customer.Service@mailcenter.usaa.com": {
+      "count": 1,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "You Have a New USAA Document"
+      ]
     },
     "workspace-noreply@google.com": {
-      "count": 2,
-      "last_seen": "2026-04-23",
-      "subjects": ["Product Update", "Pooled storage grace period expired"]
+      "count": 3,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Product Update",
+        "Pooled storage grace period expired"
+      ]
     },
     "no_reply@email.apple.com": {
       "count": 3,
       "last_seen": "2026-04-18",
-      "subjects": ["Your Subscription is Expiring"]
+      "subjects": [
+        "Your Subscription is Expiring"
+      ]
     },
     "hello@diangelolaw.com": {
       "count": 2,
       "last_seen": "2026-04-25",
-      "subjects": ["A quick way to check if your contract still works", "Avoid penalties—your Florida filing is due May 1"]
+      "subjects": [
+        "A quick way to check if your contract still works",
+        "Avoid penalties\u2014your Florida filing is due May 1"
+      ]
     },
     "team@user.hostinger.com": {
       "count": 2,
       "last_seen": "2026-04-25",
-      "subjects": ["Claim your free domain", "Your subscription renews soon"]
+      "subjects": [
+        "Claim your free domain",
+        "Your subscription renews soon"
+      ]
     },
     "rottentomatoes@movies.rottentomatoes.com": {
       "count": 1,
       "last_seen": "2026-04-25",
-      "subjects": ["'Michael' First Reviews"]
+      "subjects": [
+        "'Michael' First Reviews"
+      ]
     },
     "no-reply@wellnessliving.com": {
       "count": 1,
       "last_seen": "2026-04-25",
-      "subjects": ["Join us for Ecstatic Dance tonight at 7pm"]
+      "subjects": [
+        "Join us for Ecstatic Dance tonight at 7pm"
+      ]
     },
     "no-reply@salonultimate.com": {
       "count": 1,
       "last_seen": "2026-04-25",
-      "subjects": ["Today We Celebrate Our Sharkey's Stylists!"]
+      "subjects": [
+        "Today We Celebrate Our Sharkey's Stylists!"
+      ]
+    },
+    "noreply@info.wise.com": {
+      "count": 1,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Earn interest on as little as 1 USD"
+      ]
+    },
+    "kevin@app.getdex.com": {
+      "count": 1,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "What did we even talk about?"
+      ]
+    },
+    "haleyformi@substack.com": {
+      "count": 1,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "For unions. For workers. For Michigan."
+      ]
+    },
+    "notifications@welcome.bandsintown.com": {
+      "count": 1,
+      "last_seen": "2026-04-26",
+      "subjects": [
+        "Bandsintown concert notifications"
+      ]
     }
   },
   "unsubscribe_candidates": [
@@ -132,12 +265,12 @@
     "info@e.alexvindman.com",
     "noreply@betterhelp.com",
     "email@email.monarch.com",
+    "USPSInformeddelivery@email.informeddelivery.usps.com",
     "listingupdates@flexmail.flexmls.com",
     "AmericanExpress@welcome.americanexpress.com",
-    "USPSInformeddelivery@email.informeddelivery.usps.com",
-    "no-reply@otter.ai",
     "no-reply@is.email.nextdoor.com",
+    "no-reply@otter.ai",
     "contact@e.marypeltola.com",
-    "no_reply@email.apple.com"
+    "notifications@github.com"
   ]
 }

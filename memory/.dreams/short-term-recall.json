@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-27T03:31:49.795Z",
+  "updatedAt": "2026-04-27T07:34:05.311Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -2160,18 +2160,20 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-04-03 — Daily Memory ## Pre-Reset State (3:31am) Writing final context before 4am reset. Alex is in Boston (Day 2 of trip). --- ## Alex's Status - **In Boston** with Hannah and Avie — Day 2 of 4 (Thu Apr 2 → Sun Apr 5) - Trip includes Marshall Goldman, Everett Hirche, and Teal Olson (Everett's girlfriend) - Boston group chat: `any;+;4f2f085160984776b670fa9624a8560f` - Return flight: Sunday Apr 5 (exact time unknown, check when relevant) --- ## Key Events Today (Apr 2 → Apr 3) ### Boston Trip Day 1 (Apr 2) - Alex flew out, all smooth. Seats 2A/2B/2C, confirmation HFI9HB. - Group chat trip posters generated (4 rounds). Final 3 options sent. - Alex shaved mustache for the trip",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4853714853525161,
-      "maxScore": 0.4853714853525161,
+      "totalScore": 0.9760507732629775,
+      "maxScore": 0.4906792879104614,
       "firstRecalledAt": "2026-04-21T11:49:13.366Z",
-      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-04-27T07:34:05.311Z",
       "queryHashes": [
-        "f10e4c87ae15"
+        "f10e4c87ae15",
+        "bc83a13f23ab"
       ],
       "recallDays": [
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-27"
       ],
       "conceptTags": [
         "pre-reset",
@@ -2956,18 +2958,20 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "- **Amsterdam PTO: Apr 25** (FRIDAY) — must request from Jay - **Annika in St Pete Apr 24-27** — Avie is with Alex starting today - **Avie Wax Museum: Apr 25** — just had surgery Apr 22, recovery question - Dan Janowski demo, Jay 1:1, Core Analytics, Brooks alignment on calendar - TSA PreCheck: Sat Apr 25, 1pm (Hannah accepted invite) ## Dream Cycle #17 (11:30 PM) - Phase 1: 10 findings. Top stories: Claude Mythos unauthorized access via third-party breach, Opus 4.7 vuln rate confirmed at 52% (stay on 4.6), OC 2026.4.22 ships Active Memory plugin + per-group systemPrompts, Neo4j agent-memory library is near-perfect fit for our architecture. - Phase 2: 5 issues. 0 NEW corrections (best stret",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4757600545883178,
-      "maxScore": 0.4757600545883178,
+      "totalScore": 0.9694902509450911,
+      "maxScore": 0.49373019635677334,
       "firstRecalledAt": "2026-04-25T03:31:25.546Z",
-      "lastRecalledAt": "2026-04-25T03:31:25.546Z",
+      "lastRecalledAt": "2026-04-27T07:34:05.311Z",
       "queryHashes": [
-        "5bff8928db90"
+        "5bff8928db90",
+        "bc83a13f23ab"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-27"
       ],
       "conceptTags": [
         "24-27",
@@ -3359,18 +3363,20 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 2026-04-25 — Daily Log (Saturday) ## Pre-Reset Flush (3:34 AM) Quiet night. No Alex interaction since Apr 24 ~11 PM audio clip. Only cron activity. ### What Happened Today (Apr 25, pre-4am) - **Zero direct messages from Alex.** Last interaction was Apr 24 at 10:55 PM (audio transcription request, no follow-up). - EOD memory flush cron running (this session). - Dream cycle #18 morning summary still staged for delivery after 8 AM. ### Critical Today — Sat Apr 25 1. **Avie Wax Museum — TODAY.** She's 3 days post-adenoidectomy. Recovery status unknown. Alex has custody (Apr 24-27). 2. **Deliver dream cycle #18 summary** via iMessage after 8 AM. 3. **Abellminded demo pages** — Paperclip stu",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5411070212721825,
+      "totalScore": 1.0317157968878745,
       "maxScore": 0.5411070212721825,
       "firstRecalledAt": "2026-04-26T07:34:40.396Z",
-      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
+      "lastRecalledAt": "2026-04-27T07:34:05.311Z",
       "queryHashes": [
-        "fdbfd4605808"
+        "fdbfd4605808",
+        "bc83a13f23ab"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "pre-reset",
@@ -3390,19 +3396,21 @@
       "endLine": 58,
       "source": "memory",
       "snippet": "### Deadlines Status 1. **GitHub private repo opt-out: Apr 24 (TODAY)** — ⚠️ UNKNOWN if Alex did this. Was flagged as 5-min task in GSD. HIGH RISK of being missed. 2. **Amsterdam PTO request: Apr 25 (TOMORROW)** — Must ask Jay during 1:1. Trip is May 4. 3. **TSA PreCheck: Sat Apr 26, 1pm** — Hannah accepted invite. Don't miss. 4. **Avie with Alex: Apr 24-27** — Annika in St Pete. Avie coverage confirmed via calendar. 5. **Avie Wax Museum: Apr 25** — surgery was Apr 22, recovery question still open. 6. **Florida filing: May 1** — 1 week out. ### Calendar (Thu Apr 24 — TODAY) - Dan Janowski demo - Jay 1:1 (PERFECT time for Amsterdam PTO request) - Core Analytics meeting - Brooks alignment mee",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.281391002940947,
+      "totalScore": 1.7777429841039718,
       "maxScore": 0.7483533732173981,
       "firstRecalledAt": "2026-04-26T07:34:40.396Z",
-      "lastRecalledAt": "2026-04-27T03:31:46.648Z",
+      "lastRecalledAt": "2026-04-27T07:34:05.311Z",
       "queryHashes": [
         "fdbfd4605808",
-        "968b07f16d35"
+        "968b07f16d35",
+        "bc83a13f23ab"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "opt-out",

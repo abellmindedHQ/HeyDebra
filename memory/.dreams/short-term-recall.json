@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-27T07:34:05.311Z",
+  "updatedAt": "2026-04-28T03:31:59.290Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -3515,6 +3515,68 @@
         "amsterdam",
         "trip",
         "may"
+      ]
+    },
+    "memory:memory/2026-03-30.md:310:321": {
+      "key": "memory:memory/2026-03-30.md:310:321",
+      "path": "memory/2026-03-30.md",
+      "startLine": 310,
+      "endLine": 321,
+      "source": "memory",
+      "snippet": "### Dream Cycle #3 - 7 findings, 6 reflections, 7 proposals (22 total pending) - Top: pre-send recipient verification gate (3 wrong-chat incidents in 8 days) - Gemini search quota still hitting 429s ### Key Lessons - ElevenLabs dynamic_variables first_message does NOT override agent default greeting. Must create new agents. - ElevenLabs agents will talk to voicemail and IVR systems forever unless told not to. Always add explicit voicemail rules. - Keep agent prompts focused on SHORT responses and LISTENING - gog CLI doesn't export all contact fields (phone, notes, org may be missing). Need Google People API or iCloud for full data. - 850 area code = Tallahassee, FL",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5172318816184998,
+      "maxScore": 0.5172318816184998,
+      "firstRecalledAt": "2026-04-28T03:31:59.290Z",
+      "lastRecalledAt": "2026-04-28T03:31:59.290Z",
+      "queryHashes": [
+        "b483fa620f01"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "pre-send",
+        "wrong-chat",
+        "dynamic-variables",
+        "first-message",
+        "dream",
+        "cycle",
+        "findings",
+        "reflections"
+      ]
+    },
+    "memory:memory/2026-04-25.md:147:164": {
+      "key": "memory:memory/2026-04-25.md:147:164",
+      "path": "memory/2026-04-25.md",
+      "startLine": 147,
+      "endLine": 164,
+      "source": "memory",
+      "snippet": "- 12 urgent (fraud alerts, payment failures, security alerts) - 6+ payment failures (card problem needs billing sweep) - 18 action items, 20+ personal - Top offenders: Flexmls (35), Monarch (22), Alex Vindman (13), Otter.ai (13) ## Capture Agent (6:05 PM, cron) - 30 emails scanned, 5 candidates, 1 new item (Midjourney billing failure) - TSA PreCheck submitted, Facebook login near Knoxville, Netflix price increase (all FYI) ## Dream Cycle #19 (11:30 PM) - Phase 1: 10 findings. Top: Anthropic post-mortem confirms Claude Code degradation was harness bugs (not model regression), OC 2026.4.24 released, verification-as-bottleneck consensus, Neo4j Aura Agent GA. - Phase 2: 0 new corrections (5+ d",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5116929322481155,
+      "maxScore": 0.5116929322481155,
+      "firstRecalledAt": "2026-04-28T03:31:59.290Z",
+      "lastRecalledAt": "2026-04-28T03:31:59.290Z",
+      "queryHashes": [
+        "b483fa620f01"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "otter.ai",
+        "post-mortem",
+        "2026.4.24",
+        "verification-as-bottleneck",
+        "urgent",
+        "fraud",
+        "alerts",
+        "payment"
       ]
     }
   }

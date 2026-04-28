@@ -295,3 +295,16 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 ## 📥 Captured 2026-04-26 06:08 PM ET
 
 - [ ] Decide whether to keep or cancel Hostinger Business Web Hosting for aleandermusic.com before $143.88/yr auto-renew charges on May 9 // assigned to: Alex, due: 2026-05-09, priority: normal, source: email:Your services auto-renew soon:Hostinger, area: 💳 Payments, captured: 2026-04-26 18:08
+
+
+## 📥 Captured 2026-04-27 07:30 AM ET
+
+- [ ] Update Suno billing info (Visa ending 7068 declined twice for €9.83 subscription) or cancel if no longer needed // assigned to: Alex, due: ASAP, priority: normal, source: email:€9.83 payment to Suno was unsuccessful again:Suno, area: 💳 Payments, captured: 2026-04-27 07:30
+
+
+## 📥 Captured 2026-04-27 06:12 PM ET
+
+- [ ] Update HomeZada billing info (credit card declined for $189/yr Deluxe subscription renewal) or cancel if no longer needed // assigned to: Alex, due: ASAP, priority: normal, source: email:We had a problem billing your credit card:HomeZada, area: 💳 Payments, captured: 2026-04-27 18:12
+- [ ] Download Avie's Rocky Hill progress report from Aspen Family Portal before it expires (full site only, not mobile) // assigned to: Alex, due: 2026-05-11, priority: normal, source: email:Rocky Hill Student Progress Reports:aspen@knoxschools.org, area: 👨‍👧 People, captured: 2026-04-27 18:12
+- [ ] Sign and return Avie's Rodeo waiver to homeroom teacher (waivers come home May 1, event May 15 during school hours) // assigned to: Alex, due: 2026-05-15, priority: normal, source: email:Rodeo is Coming on Friday May 15th:ParentSquare, area: 👨‍👧 People, captured: 2026-04-27 18:12
+- [ ] Connect with Black Duck team on-site this week to validate SCA and Seeker fit into ORNL CI/CD pipelines, identify POC scope and gather action points from both teams // assigned to: Alex, due: this week, priority: normal, source: email:Meeting Summary ORNL Cyber Black Duck Introduction:otter.ai, area: 🏢 ORNL, captured: 2026-04-27 18:12

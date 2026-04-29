@@ -308,3 +308,54 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Download Avie's Rocky Hill progress report from Aspen Family Portal before it expires (full site only, not mobile) // assigned to: Alex, due: 2026-05-11, priority: normal, source: email:Rocky Hill Student Progress Reports:aspen@knoxschools.org, area: 👨‍👧 People, captured: 2026-04-27 18:12
 - [ ] Sign and return Avie's Rodeo waiver to homeroom teacher (waivers come home May 1, event May 15 during school hours) // assigned to: Alex, due: 2026-05-15, priority: normal, source: email:Rodeo is Coming on Friday May 15th:ParentSquare, area: 👨‍👧 People, captured: 2026-04-27 18:12
 - [ ] Connect with Black Duck team on-site this week to validate SCA and Seeker fit into ORNL CI/CD pipelines, identify POC scope and gather action points from both teams // assigned to: Alex, due: this week, priority: normal, source: email:Meeting Summary ORNL Cyber Black Duck Introduction:otter.ai, area: 🏢 ORNL, captured: 2026-04-27 18:12
+
+
+## 📥 Captured 2026-04-28 07:30 AM ET
+
+- [ ] Join Chelsea therapy video appointment tomorrow Wed Apr 29 at 7:00 PM ET (calendar event created, link: video.simplepractice.com) // assigned to: Alex, due: 2026-04-29 7:00 PM, priority: normal, source: email:Video appointment reminder:Heart Connected Healing/SimplePractice, area: 👨‍👧 People, captured: 2026-04-28 07:30
+
+
+## 📥 Captured 2026-04-28 06:08 PM ET
+
+### From: AppDev Leadership Meeting (Apr 28, 49 min, in person)
+
+- [ ] Follow up with Kim (after vacation) to clarify whether Mike Johnston should be assigned to Identity or Access team // assigned to: Alex, due: when Kim returns, priority: normal, source: email:AppDev Leadership Meeting:otter.ai, area: 🏢 ORNL, captured: 2026-04-28 18:08
+- [ ] Create visual reorg plan (Gantt chart or Planner view) to complement the HBA Excel spreadsheet for reorganization rollout // assigned to: Alex, due: not specified, priority: normal, source: email:AppDev Leadership Meeting:otter.ai, area: 🏢 ORNL, captured: 2026-04-28 18:08
+
+### From: Alex/Brooks Funding & Product Alignment (Apr 28, 43 min)
+
+- [ ] Schedule recurring weekly meeting with Brooks Herring for funding strategy and transformation alignment // assigned to: Alex, due: this week, priority: normal, source: email:Alex/Brooks Funding and Product & Transformation Alignment:otter.ai, area: 🏢 ORNL, captured: 2026-04-28 18:08
+
+### From: Calendar / School
+
+- [ ] Coordinate Avie coverage May 31 - Jun 3 (Annika in NYC for young scholars conference, 4 days) // assigned to: Alex, due: before 2026-05-31, priority: normal, source: email:avieabell calendar invite:Annika NYC, area: 👨‍👧 People, captured: 2026-04-28 18:08
+- [ ] Check and respond to new message in Knoxville Family Psychiatry patient portal // assigned to: Alex, due: soon, priority: normal, source: email:You have a new message in the patient portal:KFP/AdvancedMD, area: 💊 Health & Money, captured: 2026-04-28 18:08
+- [ ] Register Avie for mini talent show if interested (sing, dance, instrument, or creative act). Google form: https://forms.gle/8e7aUKKo1qMfpxdB7. Class dates: May 11-19 (exact date depends on teacher). // assigned to: Alex, due: before 2026-05-11, priority: low, source: email:Mini Talent Show:ParentSquare/Hayan Song, area: 👨‍👧 People, captured: 2026-04-28 18:08
+
+---
+
+📥 **Capture Agent Run — 2026-04-28 07:30 AM ET**
+
+**Scan window:** Past 12 hours (2026-04-27 7:30 PM – 2026-04-28 7:30 AM)
+
+**Sources scanned:**
+- ✅ Email (Gmail): 25 unread messages reviewed
+- ✅ iMessage (BlueBubbles): 3 priority chats checked (Hannah, Annika, Jay) — no activity in window
+- ✅ Calendar: 20 events reviewed (Apr 28–May 1)
+- ✅ Drop folder: Empty
+
+**Classification results:**
+- Heuristic rejected: 23 (promotional, informational, duplicates of existing captures)
+- Actionable items: 1
+- Dupes skipped: 3 (AudioTheme invoice, Black Duck meeting, Rodeo May 15)
+- Calendar events created: 1 (Chelsea therapy Wed Apr 29 7pm)
+
+**Routed:**
+- inbox.md: 1 new item
+- Calendar: 1 event created
+- Meeting insights archive: 0 (Drupal Scrum Apr 27 was DISC personality discussion, no concrete deliverables)
+
+**Notes:**
+- Avie is with Annika this week (Apr 27–May 4)
+- Monarch detected new AmEx recurring (ending 4373) — confirms existing Experian new account alert from Apr 25
+- Today's ORNL calendar: Iteright call w/ Alex Brodsky 11am, Lunch & Learn 11am, SHIELD 11:30am, AppDev Leadership 1pm, IAM Modernization 2:30pm, Architecture Checkins 3:15pm, Alex/Brooks Funding 4pm

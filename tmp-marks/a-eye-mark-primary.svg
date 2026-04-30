@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" width="400" height="440">
+  <!-- ABELLMINDED A-Eye Mark — Primary (Uppercase, Ink on Bone) -->
+  <!-- Cooper-style rounded serif A with eye hidden in counter -->
+  <rect width="400" height="440" fill="#F5F0EB"/>
+  <g transform="translate(200,220)">
+    <!-- A body -->
+    <path d="
+      M 0,-180
+      C 20,-180 40,-170 55,-150
+      L 140,100
+      C 148,118 155,130 160,140
+      C 168,155 165,170 145,175
+      C 130,178 115,175 108,165
+      L 85,110
+      L 80,100
+      L -80,100
+      L -85,110
+      L -108,165
+      C -115,175 -130,178 -145,175
+      C -165,170 -168,155 -160,140
+      C -155,130 -148,118 -140,100
+      L -55,-150
+      C -40,-170 -20,-180 0,-180
+      Z
+    " fill="#1B1F23"/>
+    <!-- Counter (negative space triangle) -->
+    <path d="
+      M 0,-80
+      L -50,65
+      C -48,72 -40,78 -30,80
+      L 0,80
+      L 30,80
+      C 40,78 48,72 50,65
+      Z
+    " fill="#F5F0EB"/>
+    <!-- Eye shape inside counter -->
+    <g transform="translate(0,20)">
+      <!-- Eye white (almond shape) -->
+      <ellipse cx="0" cy="0" rx="35" ry="18" fill="#F5F0EB" stroke="#1B1F23" stroke-width="3"/>
+      <!-- Iris -->
+      <circle cx="2" cy="0" r="12" fill="#1B1F23"/>
+      <!-- Pupil -->
+      <circle cx="4" cy="-2" r="5" fill="#F5F0EB"/>
+    </g>
+    <!-- Crossbar gap (rounded notch at base) -->
+    <path d="
+      M -12,100
+      C -12,88 -6,82 0,82
+      C 6,82 12,88 12,100
+    " fill="#F5F0EB"/>
+    <!-- Ball terminal serifs at feet -->
+    <circle cx="-120" cy="155" r="28" fill="#1B1F23"/>
+    <circle cx="120" cy="155" r="28" fill="#1B1F23"/>
+  </g>
+</svg>

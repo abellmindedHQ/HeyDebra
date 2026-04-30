@@ -359,3 +359,28 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - Avie is with Annika this week (Apr 27–May 4)
 - Monarch detected new AmEx recurring (ending 4373) — confirms existing Experian new account alert from Apr 25
 - Today's ORNL calendar: Iteright call w/ Alex Brodsky 11am, Lunch & Learn 11am, SHIELD 11:30am, AppDev Leadership 1pm, IAM Modernization 2:30pm, Architecture Checkins 3:15pm, Alex/Brooks Funding 4pm
+
+
+## 📥 Captured 2026-04-29 07:30 AM ET
+
+- [ ] Pay Express Scripts / Evernorth pharmacy balance (reminder email received Apr 29) // assigned to: Alex, due: soon, priority: normal, source: email:Remember to Pay Your Balance:Express Scripts by Evernorth, area: 💊 Health & Money, captured: 2026-04-29 07:30
+
+**Resolved:** Suno Pro billing (€9.83) — payment successful Apr 28, receipt #2668-5359-5614. Previous "Update Suno billing info" item can be marked done.
+
+
+## 📥 Captured 2026-04-29 06:09 PM ET
+
+### From: AppDev Leadership #2 Q&A with Jay (Apr 29, 1h10m meeting)
+
+- [ ] Add Pam to the AppDev Leadership Q&A meeting invite list for future sessions // assigned to: Alex, due: soon, priority: normal, source: email:Meeting Summary for AppDev Leadership #2 Q&A with Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-29 18:09
+- [ ] Share current budget report and related budget info with team leads so they can see group-level budget and trends // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for AppDev Leadership #2 Q&A with Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-29 18:09
+- [ ] Verify March budget report was distributed to all intended recipients and forward to anyone who missed it // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for AppDev Leadership #2 Q&A with Jay:otter.ai, area: 🏢 ORNL, captured: 2026-04-29 18:09
+
+### From: Prototyping Kit Ideas w/ Anthony Caccese (Apr 29, 1h1m meeting)
+
+- [ ] Self-host Bolt DIY prototype on the transformation site as a test for AI-enabled prototyping // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Prototyping Kit Ideas:otter.ai, area: 🏢 ORNL, captured: 2026-04-29 18:09
+- [ ] Draft guidance on how to use Figma Make, including a simple definition of what a prototype is for ORNL // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for Prototyping Kit Ideas:otter.ai, area: 🏢 ORNL, captured: 2026-04-29 18:09
+
+### From: ParentSquare
+
+- [ ] Order Avie's 2026-27 school supplies via EPI (school code ROC126, deadline June 14) // assigned to: Alex, due: 2026-06-14, priority: low, source: email:Ordering RHES School Supplies for 26-27:ParentSquare/Tina Holt, area: 👨‍👧 People, captured: 2026-04-29 18:09

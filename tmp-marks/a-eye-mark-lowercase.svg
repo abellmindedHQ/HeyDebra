@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" width="400" height="440">
+  <!-- ABELLMINDED A-Eye Mark — Lowercase variant (Ink on Bone) -->
+  <!-- Lowercase 'a' with eye hidden in counter -->
+  <rect width="400" height="440" fill="#F5F0EB"/>
+  <g transform="translate(200,230)">
+    <!-- Lowercase a body: bowl + stem -->
+    <!-- Bowl (left side, circular) -->
+    <path d="
+      M 60,-90
+      C 60,-140 20,-160 -20,-160
+      C -70,-160 -100,-130 -100,-80
+      C -100,-30 -70,0 -20,0
+      C 20,0 50,-15 60,-40
+      Z
+    " fill="#1B1F23"/>
+    <!-- Inner counter of bowl -->
+    <path d="
+      M 30,-85
+      C 30,-120 10,-130 -15,-130
+      C -45,-130 -65,-110 -65,-80
+      C -65,-50 -45,-30 -15,-30
+      C 10,-30 30,-45 30,-60
+      Z
+    " fill="#F5F0EB"/>
+    <!-- Eye inside lowercase counter -->
+    <g transform="translate(-15,-78)">
+      <ellipse cx="0" cy="0" rx="28" ry="14" fill="#F5F0EB" stroke="#1B1F23" stroke-width="2.5"/>
+      <circle cx="2" cy="0" r="9" fill="#1B1F23"/>
+      <circle cx="3.5" cy="-1.5" r="3.5" fill="#F5F0EB"/>
+    </g>
+    <!-- Vertical stem (right side) -->
+    <rect x="48" y="-160" width="32" height="230" rx="16" fill="#1B1F23"/>
+    <!-- Ball terminal at base of stem -->
+    <circle cx="64" cy="80" r="24" fill="#1B1F23"/>
+  </g>
+</svg>

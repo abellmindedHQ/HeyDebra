@@ -92,3 +92,4 @@ Items completed in Things 3, logged by the GSD completion debrief system.
 - [x] Stock up for Avie's surgery recovery (Apr 22) — completed: 2026-04-23 06:11:54, area: No Area, created: 2026-04-01 09:07:37, velocity: 22d
 - [x] Test item — completed: 2026-04-23 06:17:52, area: No Area, created: 2026-04-09 08:06:29, velocity: 14d
 - [x] Add documents to TurboTax — completed: 2026-04-20 05:51:46, area: No Area, created: 2026-04-09 18:09:29, velocity: 11d
+- [x] Connect with Black Duck team on-site for SCA/Seeker validation + POC — completed: 2026-04-28 07:56:07, area: No Area, created: 2026-04-27 18:15:20, velocity: 1d

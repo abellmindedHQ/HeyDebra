@@ -1,50 +1,35 @@
-Active Context — Session Handoff (2026-04-29 03:32 AM, pre-reset flush)
+# Active Context — Updated 2026-04-30 3:30 AM
 
-- Timezone: America/New_York
-- Session resets at 4am. This is the handoff note for next-you.
-- Context sources: memory/2026-04-29.md, memory/2026-04-28.md, memory/2026-04-27.md, MEMORY.md
+## Schedule
+- Chelsea therapy: was 7pm Wed Apr 29 (video call)
+- Amsterdam trip: May 4 (ORNL foreign travel NOT submitted, PTO unclear)
+- Reorg comms plan: due May 1 (2 days, promised to Jay, no draft seen)
+- JC bachelor party: Scottsdale Jul 16-19
+- Dr. Patti cholesterol: Jun 24 3:30pm
+- GI (EGD + Colonoscopy): Jun 26 6:40am
 
-## ⚠️ ALEX SILENT 5 DAYS (since Sat Apr 25 ~10 PM)
+## Active Tasks (Top 5)
+1. **Abellminded.com LIVE** — redesigned homepage deployed, Alex reviewing. May want further tweaks.
+2. **Reorg comms plan** — due May 1, OVERDUE territory. Jay is waiting.
+3. **Amsterdam foreign travel** — trip May 4, ORNL submission not filed
+4. **Payment crisis** — 15+ services failing (card expired/replaced). Needs bulk billing update.
+5. **Jay artifact** — app inventory + value-stream mapping, 5 days overdue
 
-Longest silence since Debra came online. No response to GSD reports, dream cycle summaries, or any flags. When he surfaces, DON'T overwhelm. Lead with the 2-3 most critical time-bombs.
-
-## 🔴 CRITICAL (deadlines in days)
-1. **Reorg comms plan — May 1** (2 days). Work deliverable for Jay. Status unknown.
-2. **Florida filing — May 1** (2 days). Needs action.
-3. **Amsterdam trip — May 4** (5 days). PTO with Jay UNKNOWN. Critical.
-4. **TourSpec MVP — May 4** (5 days). No repo link. Can't start.
-5. **USAA auto policy** — cancellation risk. No action taken.
-
-## Deliver When Alex Surfaces
-- **Dream cycle digest** — DC #19-22 summaries all unread. Combine into one brief message.
-- **Deprecation alert** — Claude 4.0 EOL June 15 (DC #22).
-- **Vercel + abellminded-platform** — repo exists, not deployed.
-
-## Overdue (aging, embarrassing)
-- Jay artifact (app inventory) — overdue 5 days
-- 8+ payment failures — 22+ days
-- Egerton McAfee legal invoice: 3rd notice
-- Lufthansa $552 reimbursement
-- Roxanne NDA: 60+ days
-- ORNL FCU fraud + Experian
-- Covenant Health echo: (865) 374-4000
-- Things 3: EMPTY. inbox.md untriaged since Apr 6.
-
-## ⚠️ Check on Wake
-- Dream cycle cron: DC #23 did NOT fire tonight. Verify cron config.
-- GSD report should fire at 8 AM Wed.
-- Paperclip health monitor: verify it ran.
-
-## PAPERCLIP STATUS
-- 11 agents. Server healthy. All idle.
-- Git remote: alex-abell/abellminded-platform. Needs Vercel.
+## Pending Decisions
+- Alex needs to review abellminded.com redesign and give feedback
+- Logo: approved mustard+plum lockup (#10, palette-b1). Text wordmark in header/footer for now.
+- Which payment failures to prioritize vs let lapse
 
 ## Infrastructure
 - Gateway: 2026.4.19-beta.2 | model: anthropic/claude-opus-4-6
 - BB: localhost:1234 (stable)
-- Paperclip: 127.0.0.1:3100 | 11 agents
-- HA: 192.168.4.190:8123
-- WhatsApp: cycling disconnects (~30min), normal
+- WhatsApp: cycling disconnects (~30min), auto-reconnects — normal
+- Vercel: abellminded.com now points to "platform" project (prj_Q6Bb87T2DywPVeRVVdJsskU8Ncyb)
+- Old "website" project (prj_ShaVYPGu4SZfgvKabI622zeVqPvF) no longer has domain
+- GitHub: alex-abell/abellminded-platform has latest code
 
-## Hannah's Boundary (ALWAYS carry forward)
-- Be guardrail, not accelerator. Enforce office hours. Batch updates. Don't create new work.
+## Channel Context
+- Alex surfaced after 5 days silence on Apr 29
+- Asked for IMPACT framework (found it), website launch, logo feedback, full redesign
+- Was active ~12:48 PM to ~11:51 PM. Night owl mode.
+- No response yet to the redesigned site going live

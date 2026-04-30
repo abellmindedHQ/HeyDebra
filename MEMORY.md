@@ -25,6 +25,8 @@
 - **Verify deployed output before reporting it works.** Don't trust status codes. Screenshot it. (6th occurrence of this correction)
 - **ONE message per response.** Still fragmenting. (7th occurrence)
 - **When Alex names a tool for a creative task, he means use that tool for the whole thing.** "Use nanobanana" = generate the entire ad with that tool, not just one component. Don't assume he means a font or a sub-step.
+- **Vercel deploy fails if commit author email doesn't match a GitHub account.** Error shows as vague "Unexpected error. Please try again later." Always amend commit author to Alex's email (alexander.o.abell@gmail.com) before pushing to repos connected to Vercel.
+- **Alex HATES the bot-generated A-eye SVG marks.** Never use a-eye-mark-primary.svg or a-eye-mark-inverted.svg. Approved mark: mustard+plum lockup (palette-b1-mustard-plum-lockup.webp). For web, use text wordmark "Abellminded" in Fraunces 700.
 - **Verify Paperclip "done" tickets actually completed their work.** ABE-85 was marked done but the skill install never succeeded (403 permissions). Check logs, not just status.
 - **Paperclip agents can get stuck with runs perpetually "queued".** Root cause (confirmed Apr 25): Claude Code shell pipes (curl PATCH calls) hang mid-execution, creating zombie processes that block agent slots. New runs queue but can't start. Fix: `kill -9` the stuck claude/curl/zsh processes, Paperclip auto-respawns fresh workers. Health monitor cron runs every 6h to catch this.
 - **Paperclip CLI needs context profile set.** Without `npx paperclipai context set --company-id <id> --api-base <url>`, every command fails with "Company ID is required." Set once per instance.
@@ -77,6 +79,7 @@
 - **HeyDebra**: AI assistant playbook on OpenClaw.
 
 ## Active Projects
+- **Abellminded.com** — LIVE. Redesigned homepage deployed Apr 29. Next.js on Vercel "platform" project (prj_Q6Bb87T2DywPVeRVVdJsskU8Ncyb). Domain moved from "website" project. GitHub: alex-abell/abellminded-platform.
 - **ABE-35 Brand Identity Kit** (Round 4 feedback posted, 16 items. Crew keeps marking done without implementing. I must verify deployed page before letting it pass review.)
 - **Hero Video** (ABE-42, script approved: "Stay particular" closer. Seedance 2.0 best model. Team producing.)
 - **Abell & Co Platform** (ABE-44, MVP with sub-tickets 45-49. User stories in review.)
@@ -86,7 +89,7 @@
 - **Be Particular Audiobook** (Ch1 live at abellminded.com/be-particular.html, Sallijo's book, Jerry B Southern voice, "For Avie" dedication)
 - **ABE-32 Logo Identity** (Recoleta + A-Eye mark locked in. Any A + one eye = the mark)
 - **TourSpec** (NEW — Hannah's touring logistics MVP. Day sheets, advancing tracker, venue DB, financials, asset portal. Target: May 4 tour. GitHub repo TBD — Alex said he has one but hasn't shared link.)
-- **abellminded-platform repo** (github.com/alex-abell/abellminded-platform, private. Has homepage, consulting, shop, admin, brand identity. Needs Vercel connection to deploy.)
+- **abellminded-platform repo** (github.com/alex-abell/abellminded-platform, private. Homepage redesigned Apr 29. Live at abellminded.com via Vercel "platform" project. Supabase/Shopify/admin stripped. Pages: /, /identity, /consulting, /shop (coming soon), /start.)
 - Second Brain Pipeline v3 (8-stream capture)
 - Mirror product (needs brand/product architecture)
 - Night Swimming cron suite (email, drive, contacts, ChatGPT processing)

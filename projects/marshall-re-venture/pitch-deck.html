@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUARRY — Knoxville Capital Collective</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #0d1b2a;
+  --dark-blue: #1b2838;
+  --gold: #c9a84c;
+  --gold-light: #d4b85a;
+  --warm-white: #f5f0eb;
+  --cool-gray: #8892a0;
+  --slide-bg-1: #0d1b2a;
+  --slide-bg-2: #111d2e;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--navy);
+  color: var(--warm-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== SLIDE BASE ===== */
+.slide {
+  min-height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 80px;
+}
+
+.slide-inner {
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+/* ===== WORDMARK ===== */
+.wordmark {
+  position: fixed;
+  top: 32px;
+  left: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--gold);
+  opacity: 0.5;
+  z-index: 100;
+  text-transform: uppercase;
+}
+
+/* ===== SLIDE COUNTER ===== */
+.slide-number {
+  position: absolute;
+  bottom: 32px;
+  right: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--cool-gray);
+  opacity: 0.4;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.section-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.slide-title {
+  font-size: clamp(36px, 4vw, 54px);
+  color: var(--warm-white);
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+
+.slide-subtitle {
+  font-size: clamp(18px, 1.8vw, 22px);
+  color: var(--cool-gray);
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 32px 0;
+}
+
+.gold-line-short {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin: 20px 0;
+}
+
+/* ===== BACKGROUND PATTERNS ===== */
+.bg-pattern {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at 70% 50%, rgba(27, 40, 56, 0.8) 0%, var(--navy) 70%);
+}
+
+.bg-gradient-left {
+  background: radial-gradient(ellipse at 20% 40%, rgba(27, 40, 56, 0.6) 0%, var(--navy) 65%);
+}
+
+.bg-gradient-center {
+  background: radial-gradient(ellipse at 50% 50%, rgba(27, 40, 56, 0.5) 0%, var(--navy) 60%);
+}
+
+.bg-gold-accent::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  opacity: 0.15;
+}
+
+/* ===== FADE-IN ANIMATION ===== */
+.fade-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-element.delay-1 { transition-delay: 0.15s; }
+.fade-element.delay-2 { transition-delay: 0.3s; }
+.fade-element.delay-3 { transition-delay: 0.45s; }
+.fade-element.delay-4 { transition-delay: 0.6s; }
+.fade-element.delay-5 { transition-delay: 0.75s; }
+
+/* ===== SLIDE 1: TITLE ===== */
+.title-slide {
+  background: var(--navy);
+  text-align: center;
+  flex-direction: column;
+}
+
+.title-slide .bg-pattern {
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(201, 168, 76, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(27, 40, 56, 0.5) 0%, var(--navy) 70%);
+}
+
+.title-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(72px, 10vw, 140px);
+  font-weight: 900;
+  letter-spacing: 18px;
+  color: var(--warm-white);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.title-collective {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 48px;
+}
+
+.title-tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 2.5vw, 30px);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--cool-gray);
+  margin-bottom: 48px;
+}
+
+.title-est {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  color: var(--cool-gray);
+  opacity: 0.5;
+}
+
+.title-divider {
+  width: 80px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 48px;
+  opacity: 0.6;
+}
+
+/* ===== SLIDE 2: THE PROBLEM ===== */
+.problem-stat {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.problem-stat-label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cool-gray);
+  margin-bottom: 40px;
+}
+
+.problem-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-style: italic;
+  color: var(--warm-white);
+  line-height: 1.5;
+  border-left: 3px solid var(--gold);
+  padding-left: 28px;
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+/* ===== SLIDE 4: MARKET STATS ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.stat-card {
+  background: rgba(27, 40, 56, 0.4);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  border-radius: 4px;
+  padding: 32px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--cool-gray);
+  line-height: 1.5;
+}
+
+/* ===== SLIDE 5: STRATEGY ===== */
+.strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 40px;
+}
+
+.strategy-column {
+  background: rgba(27, 40, 56, 0.3);
+  border: 1px solid rgba(201, 168, 76, 0.08);
+  border-top: 2px solid var(--gold);
+  padding: 36px;
+  border-radius: 0 0 4px 4px;
+}
+
+.strategy-column h3 {
+  font-size: 22px;
+  color: var(--warm-white);
+  margin-bottom: 24px;
+}
+
+.strategy-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.strategy-column ul li {
+  font-size: 14px;
+  color: var(--cool-gray);
+  line-height: 1.7;
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.strategy-column ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* ===== SLIDE 6: PIPELINE ===== */
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.pipeline-card {
+  background: rgba(27, 40, 56, 0.4);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  border-radius: 4px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.pipeline-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  transform: translateY(-2px);
+}
+
+.pipeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.pipeline-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(201, 168, 76, 0.12);
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  line-height: 1;
+}
+
+.pipeline-type {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.pipeline-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--warm-white);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.pipeline-location {
+  font-size: 13px;
+  color: var(--cool-gray);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.pipeline-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.1);
+  padding: 4px 12px;
+  border-radius: 2px;
+}
+
+/* ===== SLIDE 7: STRUCTURE ===== */
+.structure-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.structure-item {
+  text-align: center;
+  padding: 28px 16px;
+  background: rgba(27, 40, 56, 0.3);
+  border: 1px solid rgba(201, 168, 76, 0.08);
+  border-radius: 4px;
+}
+
+.structure-value {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.structure-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cool-gray);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* ===== SLIDE 8: WATERFALL ===== */
+.waterfall-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+  margin-top: 48px;
+  padding: 0 20px;
+  height: 360px;
+}
+
+.waterfall-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 220px;
+  position: relative;
+}
+
+.waterfall-bar {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+  transition: all 0.6s ease;
+}
+
+.waterfall-step:nth-child(1) .waterfall-bar {
+  height: 100px;
+  background: linear-gradient(to top, rgba(201, 168, 76, 0.15), rgba(201, 168, 76, 0.25));
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-bottom: none;
+}
+
+.waterfall-step:nth-child(2) .waterfall-bar {
+  height: 180px;
+  background: linear-gradient(to top, rgba(201, 168, 76, 0.25), rgba(201, 168, 76, 0.4));
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-bottom: none;
+}
+
+.waterfall-step:nth-child(3) .waterfall-bar {
+  height: 250px;
+  background: linear-gradient(to top, rgba(201, 168, 76, 0.4), rgba(201, 168, 76, 0.55));
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-bottom: none;
+}
+
+.waterfall-step:nth-child(4) .waterfall-bar {
+  height: 320px;
+  background: linear-gradient(to top, rgba(201, 168, 76, 0.55), rgba(201, 168, 76, 0.75));
+  border: 1px solid rgba(201, 168, 76, 0.5);
+  border-bottom: none;
+}
+
+.waterfall-label-top {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--warm-white);
+  text-align: center;
+  padding: 12px 8px;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+}
+
+.waterfall-label-bottom {
+  text-align: center;
+  padding: 16px 8px 0;
+}
+
+.waterfall-label-bottom .step-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.waterfall-label-bottom .step-desc {
+  font-size: 13px;
+  color: var(--cool-gray);
+  line-height: 1.5;
+}
+
+.waterfall-baseline {
+  width: 100%;
+  max-width: 920px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+/* ===== SLIDE 9: LEADERSHIP ===== */
+.leader-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.leader-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(27, 40, 56, 0.6));
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leader-avatar .initials {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--gold);
+  opacity: 0.6;
+}
+
+.leader-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--warm-white);
+  margin-bottom: 4px;
+}
+
+.leader-role {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.leader-bio {
+  list-style: none;
+  padding: 0;
+}
+
+.leader-bio li {
+  font-size: 15px;
+  color: var(--cool-gray);
+  line-height: 1.7;
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.leader-bio li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.tbd-card {
+  margin-top: 40px;
+  padding: 32px;
+  background: rgba(27, 40, 56, 0.3);
+  border: 1px dashed rgba(201, 168, 76, 0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.tbd-card p {
+  font-size: 14px;
+  color: var(--cool-gray);
+  font-style: italic;
+}
+
+/* ===== SLIDE 10: WHY QUARRY (NARRATIVE) ===== */
+.narrative-text {
+  max-width: 700px;
+}
+
+.narrative-text p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 400;
+  color: var(--warm-white);
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.narrative-text p:last-child {
+  margin-bottom: 0;
+}
+
+.narrative-text .highlight {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.narrative-closer {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* ===== SLIDE 11: RISK ===== */
+.risk-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+  max-width: 700px;
+}
+
+.risk-list li {
+  font-size: 15px;
+  color: var(--cool-gray);
+  line-height: 1.7;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(136, 146, 160, 0.1);
+  padding-left: 28px;
+  position: relative;
+}
+
+.risk-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--cool-gray);
+  opacity: 0.4;
+}
+
+.risk-disclaimer {
+  margin-top: 32px;
+  font-size: 12px;
+  color: var(--cool-gray);
+  opacity: 0.5;
+  font-style: italic;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* ===== SLIDE 12: NEXT STEPS ===== */
+.cta-slide {
+  text-align: center;
+}
+
+.cta-tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 56px;
+  line-height: 1.2;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 560px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+
+.cta-item {
+  padding: 20px 24px;
+  background: rgba(27, 40, 56, 0.4);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  border-radius: 4px;
+}
+
+.cta-item-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.cta-item-value {
+  font-size: 16px;
+  color: var(--warm-white);
+  font-weight: 500;
+}
+
+.cta-contact-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--warm-white);
+  margin-bottom: 8px;
+}
+
+.cta-contact-details {
+  font-size: 14px;
+  color: var(--cool-gray);
+  line-height: 1.8;
+}
+
+.cta-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 32px auto;
+  opacity: 0.4;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  html { scroll-snap-type: none; }
+  .slide {
+    page-break-after: always;
+    page-break-inside: avoid;
+    min-height: 100vh;
+  }
+  .wordmark { position: absolute; }
+  .fade-element { opacity: 1 !important; transform: none !important; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .slide { padding: 40px 32px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .strategy-grid { grid-template-columns: 1fr; }
+  .pipeline-grid { grid-template-columns: 1fr; gap: 20px; }
+  .structure-grid { grid-template-columns: repeat(2, 1fr); }
+  .waterfall-container { flex-direction: column; height: auto; align-items: stretch; }
+  .waterfall-step { flex-direction: row; max-width: 100%; }
+  .waterfall-bar { height: 60px !important; border-radius: 4px; border: 1px solid rgba(201,168,76,0.2) !important; width: 100%; }
+  .waterfall-label-top { position: static; padding: 0; text-align: left; }
+  .waterfall-label-bottom { text-align: left; }
+  .leader-card { grid-template-columns: 1fr; }
+  .leader-avatar { width: 120px; height: 120px; }
+  .leader-avatar .initials { font-size: 40px; }
+  .cta-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .slide { padding: 32px 20px; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .structure-grid { grid-template-columns: 1fr; }
+  .wordmark { font-size: 11px; top: 20px; left: 20px; }
+}
+
+/* ===== SUBTLE MARBLE TEXTURE (CSS ONLY) ===== */
+.marble-texture::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 80px,
+      rgba(201, 168, 76, 0.01) 80px,
+      rgba(201, 168, 76, 0.01) 82px
+    ),
+    repeating-linear-gradient(
+      -30deg,
+      transparent,
+      transparent 120px,
+      rgba(245, 240, 235, 0.008) 120px,
+      rgba(245, 240, 235, 0.008) 121px
+    );
+  z-index: 0;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<!-- WORDMARK -->
+<div class="wordmark">QUARRY</div>
+
+<!-- ===================== SLIDE 1: TITLE ===================== -->
+<section class="slide title-slide marble-texture" id="slide-1">
+  <div class="bg-pattern" style="background: radial-gradient(ellipse at 50% 45%, rgba(201,168,76,0.04) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(27,40,56,0.5) 0%, #0d1b2a 70%);"></div>
+  <div class="slide-inner" style="text-align: center;">
+    <div class="fade-element">
+      <div class="title-logo">QUARRY</div>
+    </div>
+    <div class="fade-element delay-1">
+      <div class="title-collective">Knoxville Capital Collective</div>
+    </div>
+    <div class="fade-element delay-2">
+      <div class="title-divider"></div>
+    </div>
+    <div class="fade-element delay-3">
+      <div class="title-tagline">"Built from the bedrock."</div>
+    </div>
+    <div class="fade-element delay-4">
+      <div class="title-est">EST. 2026</div>
+    </div>
+  </div>
+  <div class="slide-number">01 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 2: THE PROBLEM ===================== -->
+<section class="slide" id="slide-2">
+  <div class="bg-pattern bg-gradient-radial bg-gold-accent"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">The Problem</span>
+    <h2 class="slide-title fade-element delay-1">Local wealth<br>leaves Knoxville.</h2>
+    <div class="gold-line fade-element delay-2"></div>
+    <p class="slide-subtitle fade-element delay-3">
+      Institutional investors extract value from Tennessee communities and send returns to New York, Boston, San Francisco. Billions in Knoxville real estate are owned by out-of-state capital.
+    </p>
+    <div class="problem-quote fade-element delay-4">
+      The people who live here, build here, and spend here don't own what they built.
+    </div>
+  </div>
+  <div class="slide-number">02 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 3: THE THESIS ===================== -->
+<section class="slide" id="slide-3">
+  <div class="bg-pattern bg-gradient-left"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">The Thesis</span>
+    <h2 class="slide-title fade-element delay-1">Keep Knoxville money<br>in Knoxville.</h2>
+    <div class="gold-line fade-element delay-2"></div>
+    <p class="slide-subtitle fade-element delay-3" style="margin-bottom: 20px;">
+      Pool local capital. Acquire income-producing real estate in greater Knoxville and East Tennessee. Build wealth collectively.
+    </p>
+    <p class="slide-subtitle fade-element delay-4" style="color: var(--warm-white); font-weight: 500;">
+      Grocery-anchored retail + workforce multifamily = recession-proof, cash-flowing, appreciating assets.
+    </p>
+  </div>
+  <div class="slide-number">03 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 4: WHY KNOXVILLE ===================== -->
+<section class="slide" id="slide-4">
+  <div class="bg-pattern bg-gradient-center"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Market Opportunity</span>
+    <h2 class="slide-title fade-element delay-1">Why Knoxville. Why now.</h2>
+    <div class="stats-grid">
+      <div class="stat-card fade-element delay-1">
+        <div class="stat-number">23K</div>
+        <div class="stat-label">Multifamily unit undersupply<br>in the Knoxville metro</div>
+      </div>
+      <div class="stat-card fade-element delay-2">
+        <div class="stat-number">#5</div>
+        <div class="stat-label">Emerging multifamily market<br>nationally (Multi-Housing News)</div>
+      </div>
+      <div class="stat-card fade-element delay-2">
+        <div class="stat-number">96%</div>
+        <div class="stat-label">Occupancy rate with 1.8%<br>employment growth</div>
+      </div>
+      <div class="stat-card fade-element delay-3">
+        <div class="stat-number">+15.2%</div>
+        <div class="stat-label">Population growth<br>projected by 2040</div>
+      </div>
+      <div class="stat-card fade-element delay-3">
+        <div class="stat-number">UT + ORNL</div>
+        <div class="stat-label">Stable employment anchors<br>with federal investment</div>
+      </div>
+      <div class="stat-card fade-element delay-4">
+        <div class="stat-number">Costco</div>
+        <div class="stat-label">Maryville/Alcoa corridor<br>infrastructure acceleration</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-number">04 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 5: THE STRATEGY ===================== -->
+<section class="slide" id="slide-5">
+  <div class="bg-pattern bg-gradient-radial"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">The Strategy</span>
+    <h2 class="slide-title fade-element delay-1">Two asset classes.<br>One philosophy.</h2>
+    <div class="strategy-grid">
+      <div class="strategy-column fade-element delay-2">
+        <h3>Grocery-Anchored Retail</h3>
+        <ul>
+          <li>Essential services = recession-proof (positive NOI during 2008 <em>and</em> COVID)</li>
+          <li>Long-term leases (10-20 years), NNN structures</li>
+          <li>Cap rates 6.4-6.8%, CBRE's #1 retail pick for the next decade</li>
+          <li>Limited new supply protects existing centers</li>
+        </ul>
+      </div>
+      <div class="strategy-column fade-element delay-3">
+        <h3>Workforce Multifamily</h3>
+        <ul>
+          <li>Structural undersupply = pricing power</li>
+          <li>Price per unit ~$135K (value territory)</li>
+          <li>Strong rent growth with population influx</li>
+          <li>Multiple exit strategies (hold, refi, sell)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="slide-number">05 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 6: PIPELINE ===================== -->
+<section class="slide" id="slide-6">
+  <div class="bg-pattern bg-gradient-left bg-gold-accent"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Current Pipeline</span>
+    <h2 class="slide-title fade-element delay-1">5 properties under contract.</h2>
+    <div class="pipeline-grid">
+      <div class="pipeline-card fade-element delay-2">
+        <div class="pipeline-number">01</div>
+        <div class="pipeline-type">Grocery-Anchored Retail</div>
+        <div class="pipeline-name">Western Plaza</div>
+        <div class="pipeline-location">Sequoyah Hills, Knoxville<br>Anchored by The Fresh Market + CVS. Premium demographics.</div>
+        <div class="pipeline-status">Under Contract</div>
+      </div>
+      <div class="pipeline-card fade-element delay-3">
+        <div class="pipeline-number">02</div>
+        <div class="pipeline-type">Workforce Multifamily</div>
+        <div class="pipeline-name">Maryville/Alcoa Portfolio</div>
+        <div class="pipeline-location">3 properties in the Maryville/Alcoa growth corridor. Costco catalyst driving appreciation.</div>
+        <div class="pipeline-status">Under Contract</div>
+      </div>
+      <div class="pipeline-card fade-element delay-4">
+        <div class="pipeline-number">03</div>
+        <div class="pipeline-type">Retail Center</div>
+        <div class="pipeline-name">Strategic Diversification</div>
+        <div class="pipeline-location">Thousand Oaks, CA<br>West Coast retail exposure for portfolio balance.</div>
+        <div class="pipeline-status">Under Contract</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-number">06 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 7: THE STRUCTURE ===================== -->
+<section class="slide" id="slide-7">
+  <div class="bg-pattern bg-gradient-center"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Investment Structure</span>
+    <h2 class="slide-title fade-element delay-1">Built for alignment.</h2>
+    <div class="structure-grid">
+      <div class="structure-item fade-element delay-1">
+        <div class="structure-value">LLC</div>
+        <div class="structure-label">Separate entity<br>per deal</div>
+      </div>
+      <div class="structure-item fade-element delay-2">
+        <div class="structure-value">$50K</div>
+        <div class="structure-label">Minimum<br>LP investment</div>
+      </div>
+      <div class="structure-item fade-element delay-2">
+        <div class="structure-value">$500K</div>
+        <div class="structure-label">GP Seat</div>
+      </div>
+      <div class="structure-item fade-element delay-3">
+        <div class="structure-value">8%</div>
+        <div class="structure-label">Preferred return<br>to LPs first</div>
+      </div>
+      <div class="structure-item fade-element delay-3">
+        <div class="structure-value">70/30</div>
+        <div class="structure-label">LP / GP split<br>above preferred</div>
+      </div>
+      <div class="structure-item fade-element delay-4">
+        <div class="structure-value">5-7 yr</div>
+        <div class="structure-label">Target<br>hold period</div>
+      </div>
+      <div class="structure-item fade-element delay-4">
+        <div class="structure-value">15-20%</div>
+        <div class="structure-label">Target IRR</div>
+      </div>
+      <div class="structure-item fade-element delay-5">
+        <div class="structure-value">1.8-2.2x</div>
+        <div class="structure-label">Target equity<br>multiple</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-number">07 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 8: WATERFALL ===================== -->
+<section class="slide" id="slide-8">
+  <div class="bg-pattern bg-gradient-radial"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Fund Economics</span>
+    <h2 class="slide-title fade-element delay-1">Distribution waterfall.</h2>
+    <p class="slide-subtitle fade-element delay-2" style="margin-bottom: 12px;">LPs eat first. Always.</p>
+    <div class="waterfall-container fade-element delay-3">
+      <div class="waterfall-step">
+        <div class="waterfall-bar">
+          <div class="waterfall-label-top">Return of Capital</div>
+        </div>
+        <div class="waterfall-label-bottom">
+          <div class="step-num">Step 1</div>
+          <div class="step-desc">Full return of invested capital to all partners</div>
+        </div>
+      </div>
+      <div class="waterfall-step">
+        <div class="waterfall-bar">
+          <div class="waterfall-label-top">8% Preferred</div>
+        </div>
+        <div class="waterfall-label-bottom">
+          <div class="step-num">Step 2</div>
+          <div class="step-desc">8% preferred return paid to LPs before GP participation</div>
+        </div>
+      </div>
+      <div class="waterfall-step">
+        <div class="waterfall-bar">
+          <div class="waterfall-label-top">GP Catch-Up</div>
+        </div>
+        <div class="waterfall-label-bottom">
+          <div class="step-num">Step 3</div>
+          <div class="step-desc">GP catches up to equalize promote above hurdle</div>
+        </div>
+      </div>
+      <div class="waterfall-step">
+        <div class="waterfall-bar">
+          <div class="waterfall-label-top">70 / 30</div>
+        </div>
+        <div class="waterfall-label-bottom">
+          <div class="step-num">Step 4</div>
+          <div class="step-desc">Remaining profits split 70% LP / 30% GP</div>
+        </div>
+      </div>
+    </div>
+    <div class="waterfall-baseline fade-element delay-4"></div>
+  </div>
+  <div class="slide-number">08 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 9: LEADERSHIP ===================== -->
+<section class="slide" id="slide-9">
+  <div class="bg-pattern bg-gradient-left"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Leadership</span>
+    <h2 class="slide-title fade-element delay-1">The team behind the stone.</h2>
+    <div class="leader-card fade-element delay-2">
+      <div class="leader-avatar">
+        <span class="initials">MG</span>
+      </div>
+      <div>
+        <div class="leader-name">Marshall Goldman</div>
+        <div class="leader-role">Managing Partner</div>
+        <ul class="leader-bio">
+          <li>Director, Allan Jones Aquatic Center, University of Tennessee Athletics</li>
+          <li>Deep roots in Knoxville business, university, and civic communities</li>
+          <li>Extensive network across East Tennessee business leaders, high-net-worth individuals, and institutional contacts</li>
+          <li>KBUDDS founding member (Knoxville Brotherhood)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tbd-card fade-element delay-3">
+      <p>Operating Partner / Co-GP — To Be Announced</p>
+    </div>
+  </div>
+  <div class="slide-number">09 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 10: WHY QUARRY ===================== -->
+<section class="slide marble-texture" id="slide-10">
+  <div class="bg-pattern" style="background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.03) 0%, transparent 40%), radial-gradient(ellipse at 50% 50%, rgba(27,40,56,0.5) 0%, #0d1b2a 70%);"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Why QUARRY</span>
+    <div class="narrative-text">
+      <p class="fade-element delay-1">Tennessee marble built the <span class="highlight">Lincoln Memorial</span>. The <span class="highlight">National Gallery of Art</span>. <span class="highlight">Grand Central Station</span>.</p>
+      <p class="fade-element delay-2">The stone was always here. Someone had to see it, extract it, and build something that lasts.</p>
+      <p class="fade-element delay-3">That's what we do with capital. Knoxville's wealth is already here. We quarry it. We shape it. We build something <span class="highlight">permanent</span>.</p>
+      <div class="gold-line fade-element delay-4"></div>
+      <div class="narrative-closer fade-element delay-5">Not a fund. A foundation.</div>
+    </div>
+  </div>
+  <div class="slide-number">10 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 11: RISK FACTORS ===================== -->
+<section class="slide" id="slide-11">
+  <div class="bg-pattern bg-gradient-center"></div>
+  <div class="slide-inner">
+    <span class="section-label fade-element">Risk Factors</span>
+    <h2 class="slide-title fade-element delay-1">Transparency first.</h2>
+    <ul class="risk-list">
+      <li class="fade-element delay-2">Real estate values can decline</li>
+      <li class="fade-element delay-2">Returns are not guaranteed</li>
+      <li class="fade-element delay-3">Illiquid investment with a 5-7 year target hold period</li>
+      <li class="fade-element delay-3">Interest rate risk affects financing costs and returns</li>
+      <li class="fade-element delay-4">Geographic concentration in the Knoxville metropolitan area</li>
+      <li class="fade-element delay-4">Past performance does not predict future results</li>
+      <li class="fade-element delay-5">This is a Reg D 506(b) offering and is not registered with the SEC</li>
+    </ul>
+    <p class="risk-disclaimer fade-element delay-5">This presentation does not constitute an offer to sell or a solicitation of an offer to buy any securities. Any such offering will be made only pursuant to a Private Placement Memorandum and related subscription documents.</p>
+  </div>
+  <div class="slide-number">11 / 12</div>
+</section>
+
+<!-- ===================== SLIDE 12: NEXT STEPS ===================== -->
+<section class="slide cta-slide marble-texture" id="slide-12">
+  <div class="bg-pattern" style="background: radial-gradient(ellipse at 50% 40%, rgba(201,168,76,0.05) 0%, transparent 45%), radial-gradient(ellipse at 50% 50%, rgba(27,40,56,0.5) 0%, #0d1b2a 70%);"></div>
+  <div class="slide-inner" style="text-align: center;">
+    <div class="fade-element">
+      <div class="cta-tagline">"The stone is here.<br>Let's build."</div>
+    </div>
+    <div class="cta-divider fade-element delay-1"></div>
+    <div class="fade-element delay-2">
+      <div class="cta-contact-name">Marshall Goldman</div>
+      <div class="cta-contact-details">Managing Partner, QUARRY</div>
+    </div>
+    <div class="cta-grid fade-element delay-3">
+      <div class="cta-item">
+        <div class="cta-item-label">Minimum</div>
+        <div class="cta-item-value">$50,000</div>
+      </div>
+      <div class="cta-item">
+        <div class="cta-item-label">Structure</div>
+        <div class="cta-item-value">Reg D 506(b)</div>
+      </div>
+      <div class="cta-item">
+        <div class="cta-item-label">Email</div>
+        <div class="cta-item-value" style="color: var(--cool-gray); font-style: italic;">TBD</div>
+      </div>
+      <div class="cta-item">
+        <div class="cta-item-label">Phone</div>
+        <div class="cta-item-value" style="color: var(--cool-gray); font-style: italic;">TBD</div>
+      </div>
+    </div>
+    <div class="fade-element delay-4" style="margin-top: 24px;">
+      <div class="title-est">QUARRY &middot; KNOXVILLE CAPITAL COLLECTIVE &middot; EST. 2026</div>
+    </div>
+  </div>
+  <div class="slide-number">12 / 12</div>
+</section>
+
+<script>
+// ===== INTERSECTION OBSERVER FOR FADE-IN =====
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  document.querySelectorAll('.fade-element').forEach(el => observer.observe(el));
+
+  // ===== KEYBOARD NAVIGATION =====
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
+      e.preventDefault();
+      currentSlide = Math.min(currentSlide + 1, slides.length - 1);
+      slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      currentSlide = Math.max(currentSlide - 1, 0);
+      slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  // Track current slide on scroll
+  const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        currentSlide = Array.from(slides).indexOf(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  slides.forEach(slide => slideObserver.observe(slide));
+});
+</script>
+</body>
+</html>

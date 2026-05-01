@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T03:32:43.168Z",
+  "updatedAt": "2026-04-30T23:42:27.610Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -828,18 +828,20 @@
       "endLine": 245,
       "source": "memory",
       "snippet": "- Debra sent voice note of encouragement to Hannah in group chat ### David Byrne Tickets Purchased - Friday March 27, 9pm, Knoxville Civic Auditorium - Orchestra Left, Row G, Seats 205 and 207 (P2 tier) - Alex + Nick Hollensbe ### KBUDDS Group Chat Activated - Marshall Goldman (+18652504862): Allan Jones Aquatic Center Director, UT Athletics - Everett Hirche (+18653060896): Master machinist/fabricator, does metalwork for Scruffy City Hall, Preservation Pub - Chat GUID: any;+;26496e31a52b4d7091da7b17a5a1380d - Sent KBUDDS anthem voice note + comic book cover image - Marshall wants help finishing his comic book ### Jim Biggs Group Chat - Phone: +14153854794 - Chat GUID: any;+;5665413a1cdd49",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4964181959629059,
+      "totalScore": 0.9409882843494415,
       "maxScore": 0.4964181959629059,
       "firstRecalledAt": "2026-04-19T14:59:56.863Z",
-      "lastRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-04-30T23:42:27.610Z",
       "queryHashes": [
-        "a06cce226670"
+        "a06cce226670",
+        "585a55848a94"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-30"
       ],
       "conceptTags": [
         "machinist/fabricator",
@@ -1844,24 +1846,26 @@
       "endLine": 266,
       "source": "memory",
       "snippet": "- Jim Biggs group: any;+;5665413a1cdd4931a5b9c90de92a9442 - KBUDDS group (Marshall+Everett): any;+;26496e31a52b4d7091da7b17a5a1380d - Brandon Brown RCS: via Google Messages browser, (813)534-3383 + (865)888-0880 - Kaizen restaurant: (865) 409-4444, 127 S Central St - Alex home: Jackson Ave apartment, downtown Knoxville - Alex work: 1 Bethel Valley Road, Oak Ridge, TN 37830",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.2020879507064817,
+      "totalScore": 2.64464059472084,
       "maxScore": 0.46304284930229184,
       "firstRecalledAt": "2026-04-20T21:39:15.339Z",
-      "lastRecalledAt": "2026-04-25T16:33:28.088Z",
+      "lastRecalledAt": "2026-04-30T23:42:27.610Z",
       "queryHashes": [
         "f06e6e372a3a",
         "8da9cc9c98d0",
         "e2a2fb31c5b4",
         "422359323936",
-        "3fc09b18f5e4"
+        "3fc09b18f5e4",
+        "585a55848a94"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-24",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-30"
       ],
       "conceptTags": [
         "534-3383",
@@ -1912,18 +1916,20 @@
       "endLine": 147,
       "source": "memory",
       "snippet": "### Brooks Herring & Herb Himes — Introduced at All Hands - **Brooks Herring**: Head of UX, ITSD at ORNL. Almost GL of UX & Quality. Former HGTV/Food Network/Warner Bros Discovery. Launched Coefficient design system. 5x UX capacity growth. - **Herb Himes**: Task Lead Custom Apps → soon TL of UX Design. Former Smartria, Scripps Networks. herbhimes.com - Both created: SecondBrain pages, Neo4j nodes, Google Contacts - Sent audio intro with humor (parking joke, Chick-fil-A energy) ### Jason Patrick — Haiku Delivered - Sent voice haiku to Jason Patrick group chat (any;+;68815c5f87cd4ca6be5d858362301d38) - Jason Patrick ≠ Jason Shoemaker (CMS tech lead who reports to Brad) - Both Jasons added to",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.45789438784122466,
+      "totalScore": 0.8989650219678879,
       "maxScore": 0.45789438784122466,
       "firstRecalledAt": "2026-04-20T21:52:11.093Z",
-      "lastRecalledAt": "2026-04-20T21:52:11.093Z",
+      "lastRecalledAt": "2026-04-30T23:42:27.610Z",
       "queryHashes": [
-        "2362584b0124"
+        "2362584b0124",
+        "585a55848a94"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-30"
       ],
       "conceptTags": [
         "network",
@@ -2383,21 +2389,23 @@
       "endLine": 107,
       "source": "memory",
       "snippet": "- Big ask: page should be a MANIFESTO with guidelines woven in, not a spec sheet. Quote interstitials with Vonnegut/Bukowski/Hegel/Edwin Abbott Abbott on Nickelodeon/retrofuture backgrounds - Posted feedback to ABE-35, ABE-36, ABE-39, ABE-41. All moved to in_progress. - Addendum: brand kit becomes SOURCE OF TRUTH for all future work ## Vercel Domain Fix (5:50 AM) - abellminded.com/identity was 404ing because abellminded.com redirects to www.abellminded.com (different Vercel project) - Added vercel.json with rewrites to the \"website\" project to proxy /identity and /brand assets to platform-zeta-eight.vercel.app - Both abellminded.com/identity and www.abellminded.com/identity now return 200",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5509884566068648,
+      "totalScore": 2.068552058935165,
       "maxScore": 0.5363814562559127,
       "firstRecalledAt": "2026-04-22T11:52:41.992Z",
-      "lastRecalledAt": "2026-04-24T14:03:36.115Z",
+      "lastRecalledAt": "2026-04-30T08:41:14.558Z",
       "queryHashes": [
         "fad34aedb1b9",
         "bd1c7e757504",
-        "fc308dbc37e3"
+        "fc308dbc37e3",
+        "cd6d6d0cff5a"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-30"
       ],
       "conceptTags": [
         "vonnegut/bukowski/hegel/edwin",
@@ -3781,6 +3789,99 @@
         "reset",
         "flush",
         "day"
+      ]
+    },
+    "memory:memory/2026-04-29.md:114:129": {
+      "key": "memory:memory/2026-04-29.md:114:129",
+      "path": "memory/2026-04-29.md",
+      "startLine": 114,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "- Alex picked #10: mustard + plum lockup (palette-b1-mustard-plum-lockup.webp) — Cooper Black style A with eye, goldenrod on deep plum ### Full Homepage Redesign - Alex wanted it to feel like a real company, not a brand asset deck - \"Full of life, full of love, chock full of purpose\" - Generated 5 custom images via Gemini image gen: hero-team, craft-work, vision-illustration, founder-focus, workspace-flatlay - Complete page rewrite: 8 sections (hero, mission, services, philosophy, work, CTA, footer) - Text wordmark \"Abellminded\" in Fraunces 700 (no SVG mark) - Deployed to abellminded.com successfully at ~11:51 PM ### Key Decisions - Logo: mustard+plum lockup is the approved mark - Homepage",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5281227558851241,
+      "maxScore": 0.5281227558851241,
+      "firstRecalledAt": "2026-04-30T08:41:14.558Z",
+      "lastRecalledAt": "2026-04-30T08:41:14.558Z",
+      "queryHashes": [
+        "cd6d6d0cff5a"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "hero-team",
+        "craft-work",
+        "vision-illustration",
+        "founder-focus",
+        "workspace-flatlay",
+        "abellminded.com",
+        "alex",
+        "picked"
+      ]
+    },
+    "memory:memory/2026-03-27.md:87:107": {
+      "key": "memory:memory/2026-03-27.md:87:107",
+      "path": "memory/2026-03-27.md",
+      "startLine": 87,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "- Core positioning: \"I help people with something awesome use technology to share their superpowers with more people\" - Official tagline: \"You already have the superpower. I find it. Technology amplifies it.\" - Revenue urgency: Baby on the way + Hannah + Avie = needs real recurring side income - Consulting can generate revenue in WEEKS vs months/years for products - Concept doc: /Users/debra/.openclaw/workspace/projects/abellminded/consulting-concept.md - 3-tier offer: Superpower Session ($500) → Amplify Retainer ($3k/mo) → Embedded Transformation ($8-15k/mo) - Freemium funnel: free AI analysis → upsell to paid session - 90-day launch plan included, starts with 5 sessions at $250 for testimo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5209161281585694,
+      "maxScore": 0.5209161281585694,
+      "firstRecalledAt": "2026-04-30T08:41:14.558Z",
+      "lastRecalledAt": "2026-04-30T08:41:14.558Z",
+      "queryHashes": [
+        "cd6d6d0cff5a"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "months/years",
+        "users/debra",
+        "3-tier",
+        "3k/mo",
+        "8-15k/mo",
+        "90-day",
+        "core",
+        "positioning"
+      ]
+    },
+    "memory:memory/2026-04-30.md:111:133": {
+      "key": "memory:memory/2026-04-30.md:111:133",
+      "path": "memory/2026-04-30.md",
+      "startLine": 111,
+      "endLine": 133,
+      "source": "memory",
+      "snippet": "2. Pay Egerton McAfee ($100, 3rd notice) — 30 seconds on ClientPay 3. Do 30min subscription triage — cancel what you don't use, update card on the rest ### ⚠️ FLAGS - Amsterdam May 4 (4 days). Foreign travel submitted but PTO approval unconfirmed. - Inbox: 100+ items, last triaged Apr 6. Needs cleanup. ### 📤 Delivery - iMessage send FAILED — BlueBubbles hanging on send (port 1235 accepts connection, never returns response). BB infrastructure issue. Report logged here instead. ## Marshall Goldman RE Venture (7:29 PM) - Marshall is starting a real estate investment syndication fund - \"Building Knoxville Collective\" (working name), LLC structure - $50K minimum LP investment, $500K gets GP b",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46909501552581784,
+      "maxScore": 0.46909501552581784,
+      "firstRecalledAt": "2026-04-30T23:42:27.610Z",
+      "lastRecalledAt": "2026-04-30T23:42:27.610Z",
+      "queryHashes": [
+        "585a55848a94"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "pay",
+        "egerton",
+        "mcafee",
+        "3rd",
+        "notice",
+        "seconds",
+        "clientpay",
+        "30min"
       ]
     }
   }

@@ -1,33 +1,46 @@
-# Active Context — Updated 2026-04-30 3:33 AM
+# Active Context — Updated 2026-05-01 3:30 AM
 
 ## Schedule
-- **Reorg comms plan: DUE MAY 1 (TOMORROW)** — promised to Jay, no draft exists
-- Amsterdam trip: May 4 (ORNL foreign travel NOT submitted, PTO unclear)
-- JC bachelor party: Scottsdale Jul 16-19
+- **Reorg comms plan: DUE TODAY MAY 1** — Alex acknowledged, said "finish today or tomorrow"
+- Amsterdam trip: May 4 — foreign travel FILED ✅, PTO CONFIRMED ✅
+- Echocardiogram: May 26 2pm (rescheduled, on calendar)
 - Dr. Patti cholesterol: Jun 24 3:30pm
 - GI (EGD + Colonoscopy): Jun 26 6:40am
 
 ## Active Tasks (Top 5)
-1. **Reorg comms plan** — DUE TOMORROW May 1. Jay is waiting. No draft. HIGHEST PRIORITY.
-2. **Amsterdam foreign travel** — trip May 4, ORNL submission not filed, PTO unconfirmed
-3. **Abellminded.com review** — redesigned homepage deployed Apr 29 ~11:51 PM. Awaiting Alex feedback.
-4. **Payment crisis** — 15+ services failing (card expired/replaced). 23+ days aging.
-5. **Jay artifact** — app inventory + value-stream mapping, 6+ days overdue
+1. **Reorg comms plan** — DUE TODAY May 1. Jay waiting. Alex aware, no draft yet.
+2. **Egerton McAfee payment** — $100, 3rd notice, ClientPay
+3. **Subscription audit** — full assessment of failed + ongoing subs (in Things 3)
+4. **QUARRY pitch deck** — deployed to marshall-re-venture.vercel.app, awaiting Alex review
+5. **Abellminded.com** — full rewrite deployed ~5:10 AM Apr 30, awaiting feedback
 
 ## Pending Decisions
-- Alex needs to review abellminded.com redesign and give feedback
-- Logo: approved mustard+plum lockup (#10, palette-b1). Text wordmark in header/footer.
-- Which payment failures to prioritize vs let lapse
+- QUARRY: any changes before sharing with Marshall?
+- Abellminded.com: any tweaks after brand audit rewrite?
+- Knoxville Family Psychiatry: when to complete patient forms?
+- Cancel Ideogram subscription (in Things 3 for today)
 
 ## Infrastructure
 - Gateway: 2026.4.19-beta.2 | model: anthropic/claude-opus-4-6
-- BB: localhost:1234 (stable)
-- WhatsApp: cycling disconnects (~30min), auto-reconnects — normal
-- Vercel: abellminded.com on "platform" project (prj_Q6Bb87T2DywPVeRVVdJsskU8Ncyb)
-- GitHub: alex-abell/abellminded-platform has latest code
+- BB: localhost:1234 — send endpoint was HANGING Apr 30 afternoon (receive works)
+- **Paperclip: SHUT DOWN** (Alex's order Apr 30). Data at ~/.paperclip/instances/default/
+- HA: 192.168.4.190:8123
+- WhatsApp: cycling disconnects (~30min), normal
+- OC: 10+ releases behind (2026.4.29 is latest, we're on 2026.4.19-beta.2)
 
 ## Channel Context
-- Alex was active Apr 29 ~12:48 PM to ~11:51 PM (website redesign session)
-- Broke 5-day silence to work on IMPACT framework + abellminded.com redesign
-- No response yet to the redesigned site going live
-- Night owl mode — was up past midnight. Don't pile on when he surfaces.
+- Alex had a huge day Apr 30: brand audit 4:40 AM → GSD triage 9:37 AM → Hannah argument 4 PM → QUARRY pitch 7:40 PM
+- Emotional day. Hannah setting hard boundaries about dysregulation behavior. Don't pile on.
+- Dream Cycle #25 ran. 7 proposals queued. Morning summary queued for GSD delivery.
+- BB send may need restart before morning GSD report can deliver.
+
+## Resolved Apr 30
+- Amsterdam: filed + PTO confirmed ✅
+- USAA: Annika's car, no gap ✅
+- ORNL FCU fraud: legit Ideogram (cancel sub) ✅
+- Experian: legit new Amex ✅
+- Lufthansa reimbursement: DONE ✅
+- Roxanne NDA: DEAD ✅
+- Paperclip: shut down ✅
+- Abellminded.com: rewrite deployed ✅
+- QUARRY deck: built + deployed ✅

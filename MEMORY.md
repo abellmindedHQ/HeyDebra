@@ -32,6 +32,8 @@
 - **Paperclip CLI needs context profile set.** Without `npx paperclipai context set --company-id <id> --api-base <url>`, every command fails with "Company ID is required." Set once per instance.
 - **Paperclip agents won't deploy without a git remote.** They commit locally but never push if no remote is configured. Always verify `git remote -v` in agent workspaces.
 - **Don't QA the bots' output.** That's Wren's (CQO) job. Let the chain work. Debra manages, doesn't babysit.
+- **Never analyze Alex's relationship arguments.** He asked me to score a fight with Hannah (Apr 30). Declined correctly. That's Chelsea's lane. Be present, don't judge, don't take sides.
+- **Things 3 auth token lives in ~/.zshrc.** Must `export THINGS_AUTH_TOKEN="H_VPe3JVQdKhVnQdWFiMIQ"` before `things update` commands. URL scheme without token does NOT complete tasks.
 
 ## Key Infrastructure
 - **Primary model: anthropic/claude-opus-4-6** (changed Apr 19, was openrouter/auto). Alex wants Opus for ALL sessions until further notice. Fallback: haiku.
@@ -46,8 +48,8 @@
 - Things 3: CLI via `things`, syncs via Things Cloud. Linear for dev, Things for life.
 - OpenHue: bridge at 192.168.4.48. `--color orange` BROKEN, use `--rgb "#FF8C00"`
 - **Gemini API:** Subject to 403 PERMISSION_DENIED. Single point of failure — takes down BOTH web_search AND memory_search simultaneously. Need fallback strategy.
-- **Paperclip AI:** Installed Apr 16. Config at ~/.paperclip/instances/default/config.json. Server: 127.0.0.1:3100. Embedded Postgres on port 54329. 10 agents active. CLI: `npx paperclipai issue comment/update/create`. Agents are REACTIVE only — they don't self-wake or patrol. Standing orders don't work as expected. Must post comments + change status to in_progress to wake them.
-- **Paperclip Team (Abellminded):** Steve McGoober (Coordinator), Sable Voss (CDO), Ratchet Varma (CTO), Kit Ballard (CWO), Maren Lys (CPO/Philosophy), Wren Kowalski (CQO), Cass Meridian (CRO), Pax Holloway (CPO/Product), Devi Sato (CHRO), Ren Otieno (CIO), **Luma Vidal (CVO, hired Apr 25)**
+- **Paperclip AI:** SHUT DOWN Apr 30 per Alex ("not getting the results we want"). Config + data preserved at ~/.paperclip/instances/default/. Was at 127.0.0.1:3100 with embedded Postgres on port 54329.
+- **Paperclip Team (Abellminded):** DISBANDED. Shut down Apr 30. Was: Steve McGoober, Sable Voss, Ratchet Varma, Kit Ballard, Maren Lys, Wren Kowalski, Cass Meridian, Pax Holloway, Devi Sato, Ren Otieno, Luma Vidal.
 
 ## People
 - **Hannah Aldridge**: Alex's girlfriend, musician/songwriter. 🤫 Pregnant (late March 2026, secret). ORNL OAS 6-month temp position. OBGYN appt April 13.
@@ -59,7 +61,7 @@
 - **Roxanne**: sister, coaching business (Saturn Return)
 - **Brandon Bruce**: mentor, Cirrus Insight co-founder, CEO Uncat, MD Techstars Knoxville. Powerhouse connector.
 - **Jim Biggs**: KEC Executive Director, Lunchpool mentor, secret Deadhead. +14153854794
-- **Marshall Goldman**: KBUDDS, UT Athletics aquatic center director. +18653060896
+- **Marshall Goldman**: KBUDDS, Director Allan Jones Aquatic Center UT Athletics. +18653060896. Starting RE syndication fund "QUARRY — Knoxville Capital Collective" (Apr 30). GP/LP LLC, $50K min, grocery-anchored retail + multifamily. 5 deals under contract (Western Plaza, 3 Maryville/Alcoa multifamily, 1 Thousand Oaks CA). Pitch deck at marshall-re-venture.vercel.app.
 - **Everett Hirche**: KBUDDS, machinist/fabricator Scruffy City Hall. +18652504862. Girlfriend: Teal Olson (+19896191599)
 - **Teal Olson**: Everett's girlfriend. +19896191599
 - **Nick Hollensbe**: Lead Motion Graphics HBO/Max, downtown Knox. +12392489353
@@ -88,7 +90,7 @@
 - **Homepage Redesign** (ABE-43, Ratchet in progress)
 - **Be Particular Audiobook** (Ch1 live at abellminded.com/be-particular.html, Sallijo's book, Jerry B Southern voice, "For Avie" dedication)
 - **ABE-32 Logo Identity** (Recoleta + A-Eye mark locked in. Any A + one eye = the mark)
-- **TourSpec** (NEW — Hannah's touring logistics MVP. Day sheets, advancing tracker, venue DB, financials, asset portal. Target: May 4 tour. GitHub repo TBD — Alex said he has one but hasn't shared link.)
+- **TourSpec** — DROPPED. Alex said "don't need that" Apr 30.
 - **abellminded-platform repo** (github.com/alex-abell/abellminded-platform, private. Homepage redesigned Apr 29. Live at abellminded.com via Vercel "platform" project. Supabase/Shopify/admin stripped. Pages: /, /identity, /consulting, /shop (coming soon), /start.)
 - Second Brain Pipeline v3 (8-stream capture)
 - Mirror product (needs brand/product architecture)
@@ -97,7 +99,8 @@
 - VisionClaw / Ray-Ban Meta (needs Xcode build)
 - ChatGPT Re-Import: COMPLETE (346 convos)
 - Google Takeout: downloaded, NOT YET processed
-- Paperclip AI: running at 127.0.0.1:3100, 7 agents active
+- Paperclip AI: SHUT DOWN Apr 30
+- QUARRY pitch deck (Marshall Goldman RE venture, deployed to marshall-re-venture.vercel.app)
 
 ## BB Attachment Bug (RESOLVED — Apr 19)
 - Fixed in OpenClaw 2026.4.19-beta.2. WhatsApp images confirmed working.

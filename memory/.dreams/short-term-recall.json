@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T23:42:27.610Z",
+  "updatedAt": "2026-05-01T07:33:25.764Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -623,18 +623,20 @@
       "endLine": 87,
       "source": "memory",
       "snippet": "- Read-only Alex iMessage: polling BB API vs webhook? Safety model? - Social DM pipelines: browser automation vs data export vs API? - Where do voice vectors and speaker identification fit? - How does this connect to Mirror's Registry concept? - Linear/Git/Cursor workflow integration - Meeting transcription pipeline (live + post-meeting) ### Feature Backlog (for Linear setup) - **TTS latency + quality optimization**: ElevenLabs voice quality is great but real-time delivery is laggy/disappointing. Need to benchmark alternatives, test streaming options, evaluate local TTS (Piper, Coqui) vs cloud. Track in Linear as a feature optimization. ### Dashboard Vision (for Linear/architecture session",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5061643928289413,
+      "totalScore": 1.0106186538934707,
       "maxScore": 0.5061643928289413,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-19T07:30:23.564Z",
+      "lastRecalledAt": "2026-05-01T07:33:25.764Z",
       "queryHashes": [
-        "76243851281a"
+        "76243851281a",
+        "14b510d8aad4"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-05-01"
       ],
       "conceptTags": [
         "read-only",
@@ -685,25 +687,27 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "## Pre-Reset State (3:32am, session carried over from 3/31) Session ran from ~5:09pm 3/31 through 3:32am 4/1. All major work documented in 2026-03-31.md. ### Completed Today (technically after midnight) - Night Swimming suite ran: Capture Agent, Contacts Triage, Drive Audit, LLM Export, Weaver, Dream Cycle #4 - ChatGPT ORNL re-import fully completed (211 convos) - Voice notes pipeline fully completed (125/126, 1 corrupted) - Active context and memory files updated pre-reset ### Alex's Schedule — Wednesday April 1 - **8:40am**: Avie ENT surgery consult at Children's ENT Northshore (DONE ✅) - **2:30pm**: Lipoma consult - **3:30pm**: Patti appointment - **7:00pm**: Chelsea therapy (video, He",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.047159219028241,
+      "totalScore": 3.547893226386792,
       "maxScore": 0.7501616166607599,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-26T07:34:40.396Z",
+      "lastRecalledAt": "2026-05-01T07:33:25.764Z",
       "queryHashes": [
         "76243851281a",
         "4f8bb40c8c4f",
         "b084f49bbbf1",
         "9ff582453052",
-        "fdbfd4605808"
+        "fdbfd4605808",
+        "14b510d8aad4"
       ],
       "recallDays": [
         "2026-04-19",
         "2026-04-22",
         "2026-04-24",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-05-01"
       ],
       "conceptTags": [
         "gpt",
@@ -723,20 +727,22 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# April 9, 2026 — Session Log ## Morning (7:55 AM startup) - Gateway came back online after restart from Apr 8 debug logging attempt - 5 background tasks had been interrupted by the restart: 1. Email GTD processing (classified some emails, interrupted mid-run) 2. Email bulk cleanup (identified Runway AI, GitLab, ElevenLabs, Carta, Greenlight, Thrizer as important) 3. Contact sync (lost temp files, needs fresh fetch) 4. Voice memo/BB attachment debugging (was about to read code) 5. Pools research hunt (finished gathering, about to write findings) - LLM export processor completed: 666 conversations total in SecondBrain (Claude 139, Claude ORNL 316, ChatGPT ORNL 211) ## Immediate St",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.033184142410755,
+      "totalScore": 1.5421209201216697,
       "maxScore": 0.5290022924542427,
       "firstRecalledAt": "2026-04-19T07:30:23.564Z",
-      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-05-01T07:33:25.764Z",
       "queryHashes": [
         "76243851281a",
-        "b084f49bbbf1"
+        "b084f49bbbf1",
+        "14b510d8aad4"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-05-01"
       ],
       "conceptTags": [
         "gateway",
@@ -1052,18 +1058,20 @@
       "endLine": 220,
       "source": "memory",
       "snippet": "- Cron needs to be smarter: check recent contact before nagging ### 1Password Service Account (IN PROGRESS ~1:15pm) - Alex at Mac mini physically - Service accounts CAN'T access Personal vault, but CAN access Debra vault (shared/custom) - Alex on 1password.com Developer page, looking for Service Accounts under Directory tab - Need to create \"Debra Mac Mini\" service account with read access to Debra vault - Will set OP_SERVICE_ACCOUNT_TOKEN in environment ## Knowledge Architecture Session (prep for desk session) ### Cross-Channel Context Vision Alex wants unified messaging context across ALL channels: - Debra iMessage (BB :1234) — active - Alex iMessage (BB :1235) — READ-ONLY pipeline need",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.511882272362709,
+      "totalScore": 1.0115986496210096,
       "maxScore": 0.511882272362709,
       "firstRecalledAt": "2026-04-19T15:00:01.289Z",
-      "lastRecalledAt": "2026-04-19T15:00:01.289Z",
+      "lastRecalledAt": "2026-05-01T07:33:25.764Z",
       "queryHashes": [
-        "c5c9c4cd61f7"
+        "c5c9c4cd61f7",
+        "14b510d8aad4"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-05-01"
       ],
       "conceptTags": [
         "shared/custom",
@@ -2201,18 +2209,20 @@
       "endLine": 22,
       "source": "memory",
       "snippet": "# April 10, 2026 — Session Log ## Summary Quiet day. Alex didn't engage directly. All crons ran normally. No direct conversations. ## Morning Crons (All ran successfully) - **Email triage (7:04 AM):** 100 emails processed, 35 archived, 65 kept. 8 urgent (Google Cloud billing suspended, GitLab security, Google security alert, ElevenLabs/HuggingFace logins, Workspace storage grace period expired). 11 action items. 8 payment flags (5x Runway failures still sitting). - **Capture agent (7:38 AM):** 4 new actionable items captured and routed to inbox + Things 3: 1. Review 4 Monarch transactions 2. Download 2025 K-1 from Carta (Market Square Ventures Fund I) 3. Schedule meeting with Regina",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5240024387836456,
+      "totalScore": 1.0307928681373597,
       "maxScore": 0.5240024387836456,
       "firstRecalledAt": "2026-04-22T07:33:29.685Z",
-      "lastRecalledAt": "2026-04-22T07:33:29.685Z",
+      "lastRecalledAt": "2026-05-01T07:33:25.764Z",
       "queryHashes": [
-        "b084f49bbbf1"
+        "b084f49bbbf1",
+        "14b510d8aad4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-05-01"
       ],
       "conceptTags": [
         "elevenlabs/huggingface",

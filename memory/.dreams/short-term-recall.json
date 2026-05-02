@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-01T07:33:25.764Z",
+  "updatedAt": "2026-05-02T07:33:48.571Z",
   "entries": {
     "memory:memory/2026-03-29.md:27:59": {
       "key": "memory:memory/2026-03-29.md:27:59",
@@ -899,18 +899,20 @@
       "endLine": 304,
       "source": "memory",
       "snippet": "- Email GTD: 7am, 12pm, 6pm - Capture Agent: 7:30am, 2pm, 8pm - GSD Agent: 8am, 3pm - LinkedIn Cleanup: 10am daily (50/run) - Night Swimming: Sunday 9-10:30pm (contacts, drive, LLM, social) - Weaver: Sunday 11pm - Memory Flush: 3:30am x2 ### Hannah Europe Tour - Laid out both options (May 9-23 vs May 4-18) clean in group chat - Found significantly cheaper flights: potentially $655-850 vs Hannah's $1,865-2,300 - Booking legs separately on Orbitz/Travelocity saves major money ### Chelsea Breathwork - Replied to her breathwork article share, connected it to Mirror ### Pooja Introduction via RCS - Alex created group text (RCS) with Pooja Pendharkar (+13213562000) and Debra - Debra introduced",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49278798103332516,
-      "maxScore": 0.49278798103332516,
+      "totalScore": 1.0039005011320115,
+      "maxScore": 0.5111125200986862,
       "firstRecalledAt": "2026-04-19T14:59:56.863Z",
-      "lastRecalledAt": "2026-04-19T14:59:56.863Z",
+      "lastRecalledAt": "2026-05-02T07:33:48.571Z",
       "queryHashes": [
-        "a06cce226670"
+        "a06cce226670",
+        "77c8f80ff1da"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-05-02"
       ],
       "conceptTags": [
         "50/run",
@@ -1457,22 +1459,24 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "- Prep: clear liquids day before, prep at 5pm + 4hrs before arrival (~2:40am) - Follow THEIR prep instructions, NOT the prep box - Copay TBD (range $15-$1050), they'll call ### Morning Logistics - Chick-fil-A special day + half day at school for Avie - Drop-off at Rocky Hill by 7:35, made it to CFA by 7:23 - Sent voice note to Avie to hustle getting ready - Hannah asked where Alex was, updated her on his schedule - Find My app couldn't be accessed (Mac mini locked, no keystroke permissions) - Chelsea shared Insight Timer profile in group chat, replied ### Hannah Europe Trip - Alex leaning toward Hamburg option - Two options: May 9-23 or May 4-18 - Either way misses one Avie week - May 4-18",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.864850968122482,
-      "maxScore": 0.488159954547882,
+      "totalScore": 2.3755453377962112,
+      "maxScore": 0.5106943696737289,
       "firstRecalledAt": "2026-04-20T03:34:45.166Z",
-      "lastRecalledAt": "2026-04-24T18:09:18.171Z",
+      "lastRecalledAt": "2026-05-02T07:33:48.571Z",
       "queryHashes": [
         "cc8b9e4e8b0e",
         "4f8bb40c8c4f",
         "aa841e5b2343",
-        "4711b25e78eb"
+        "4711b25e78eb",
+        "77c8f80ff1da"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-05-02"
       ],
       "conceptTags": [
         "chick-fil-a",
@@ -2083,18 +2087,20 @@
       "endLine": 101,
       "source": "memory",
       "snippet": "- message/corrections.md captures: pre-send discipline failures (Hannah thread, Marshall incident) - Key lesson: ALWAYS run preflight.sh before external sends. Do troubleshooting silently. - Never narrate process to external recipients. ### Be Particular — Sallijo Story Time - Session 2 attempted Apr 1, she was driving (57 seconds) - Retry: Apr 2 at 6:15pm - Last real session: Mar 30 (origin of \"be particular\", Alex driving stories, Roxanne's license, Mechanic Maury) - Template used last: #3. Use different template next session. - Note: verify ElevenLabs agent greeting matches config before calling (first_message mismatch on Apr 1) ## Be Particular - Session 2 Attempt #2 (6:15 PM) - Called",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5018935173749923,
-      "maxScore": 0.5018935173749923,
+      "totalScore": 1.0151634633541107,
+      "maxScore": 0.5132699459791183,
       "firstRecalledAt": "2026-04-21T11:49:13.366Z",
-      "lastRecalledAt": "2026-04-21T11:49:13.366Z",
+      "lastRecalledAt": "2026-05-02T07:33:48.571Z",
       "queryHashes": [
-        "f10e4c87ae15"
+        "f10e4c87ae15",
+        "77c8f80ff1da"
       ],
       "recallDays": [
-        "2026-04-21"
+        "2026-04-21",
+        "2026-05-02"
       ],
       "conceptTags": [
         "message/corrections.md",
@@ -3892,6 +3898,68 @@
         "seconds",
         "clientpay",
         "30min"
+      ]
+    },
+    "memory:memory/2026-05-01.md:20:46": {
+      "key": "memory:memory/2026-05-01.md:20:46",
+      "path": "memory/2026-05-01.md",
+      "startLine": 20,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "- **Hannah situation is active.** She's setting hard boundaries about Alex's dysregulation behavior. He asked me to analyze an argument recording Apr 30; I correctly declined. Chelsea is the right resource. - **Be a guardrail, not an accelerator.** Don't pile on with new work. It was an emotionally heavy day Apr 30. - Alex went to bed sometime after 7:50 PM. May be well-rested for once. ### Stale/Overdue Items (aging) - 15+ payment failures (24+ days): Adobe, VirtualDJ, Recraft, Google One, OpenAI Plus, Citi, Midjourney, Notion, DeepLearning.AI, HomeZada, AudioTheme, Cricut, etc. - Knoxville Family Psychiatry: patient forms incomplete - Jay artifact (app inventory + value-stream mapping): 7",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5182079762220383,
+      "maxScore": 0.5182079762220383,
+      "firstRecalledAt": "2026-05-02T07:33:48.571Z",
+      "lastRecalledAt": "2026-05-02T07:33:48.571Z",
+      "queryHashes": [
+        "77c8f80ff1da"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "openai",
+        "well-rested",
+        "stale/overdue",
+        "deeplearning.ai",
+        "value-stream",
+        "hannah",
+        "situation",
+        "active"
+      ]
+    },
+    "memory:memory/2026-05-01.md:1:23": {
+      "key": "memory:memory/2026-05-01.md:1:23",
+      "path": "memory/2026-05-01.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "# 2026-05-01 — Daily Log (Friday) ## Pre-Reset Flush (3:33 AM) **No Alex interaction overnight.** Last activity was ~7:50 PM Apr 30 (QUARRY pitch deck deploy). Quiet night. Only this memory flush cron ran. ### Carry-Forward from Apr 30 (CRITICAL) 1. **🔴 Reorg comms plan — DUE TODAY May 1.** Jay is waiting. Alex said \"finish today or tomorrow\" during Apr 30 GSD triage. No draft exists. This is #1 priority. 2. **Amsterdam trip — May 4 (3 days out).** Foreign travel filed ✅. PTO confirmed ✅. Ready to go. 3. **Egerton McAfee payment** — $100, 3rd notice, ClientPay. Quick win. 4. **Subscription audit** — Alex wants a full assessment of all failed/ongoing subscriptions. Task in Things 3. 5. *",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5115768373012543,
+      "maxScore": 0.5115768373012543,
+      "firstRecalledAt": "2026-05-02T07:33:48.571Z",
+      "lastRecalledAt": "2026-05-02T07:33:48.571Z",
+      "queryHashes": [
+        "77c8f80ff1da"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "pre-reset",
+        "carry-forward",
+        "failed/ongoing",
+        "log",
+        "friday",
+        "pre",
+        "reset",
+        "flush"
       ]
     }
   }

@@ -391,3 +391,23 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Renew Atlassian API token labeled "ServiceNow" before it expires May 7 (visit id.atlassian.com/manage-profile/security/api-tokens, create new token, update ServiceNow integration, revoke old one) // assigned to: Alex, due: 2026-05-07, priority: normal, source: email:Your API Token is about to expire:Atlassian, area: 🏢 ORNL, captured: 2026-04-30 07:30
 
 **Resolved:** Thrizer therapy claim SDNSYA3GR6 (Apr 6 session) approved and reimbursed $78.05 on Apr 30.
+
+
+## 📥 Captured 2026-05-01 07:30 AM ET
+
+- [ ] Review MinuteClinic test result on CVS health dashboard (notification received Apr 30) // assigned to: Alex, due: ASAP, priority: normal, source: email:View your test result:MinuteClinic/CVS, area: 💊 Health & Money, captured: 2026-05-01 07:30
+
+### From: FY26 ECC DRP Table Top Exercise (Apr 30, 47 min meeting)
+
+- [ ] Evaluate JIRA and Confluence as primary PM/documentation tool (on-prem vs cloud), discuss pros/cons with team, and report back with recommendation // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for FY26 ECC DRP Table Top Exercise:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 07:30
+- [ ] Talk with Alicia to get status and timeline on ISD website project, identify blockers, and help move it forward // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for FY26 ECC DRP Table Top Exercise:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 07:30
+- [ ] Direct Elena (research lead) to coordinate communication channels survey and related research with comms team // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for FY26 ECC DRP Table Top Exercise:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 07:30
+
+
+## 📥 Captured 2026-05-01 06:11 PM ET
+
+### From: ORNL & ITeright Integrations (May 1, 1.5h meeting)
+
+- [ ] Export live ServiceNow demand and project records (including demand form fields) from the developer instance and send to ITeright team for pilot/integration work // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ORNL & ITeright Integrations:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 18:11
+- [ ] Send screenshots and PowerPoint showing current ServiceNow demand form and BRM pain points to ITeright team // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ORNL & ITeright Integrations:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 18:11
+- [ ] Send sample status-report spreadsheets (including Jay's version) used for PMO Power BI dashboards to ITeright team // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ORNL & ITeright Integrations:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 18:11

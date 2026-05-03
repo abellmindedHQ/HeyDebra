@@ -411,3 +411,45 @@ Source: voice-notes:AppDev-Reorg-Interim-GL.m4a (18m)
 - [ ] Export live ServiceNow demand and project records (including demand form fields) from the developer instance and send to ITeright team for pilot/integration work // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ORNL & ITeright Integrations:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 18:11
 - [ ] Send screenshots and PowerPoint showing current ServiceNow demand form and BRM pain points to ITeright team // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ORNL & ITeright Integrations:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 18:11
 - [ ] Send sample status-report spreadsheets (including Jay's version) used for PMO Power BI dashboards to ITeright team // assigned to: Alex, due: not specified, priority: normal, source: email:Meeting Summary for ORNL & ITeright Integrations:otter.ai, area: 🏢 ORNL, captured: 2026-05-01 18:11
+
+
+## 📥 Captured 2026-05-02 07:30 AM ET
+
+- [ ] Verify Hannah's Google security alert: new Mac sign-in on hannahaldridge1209@gmail.com (May 2). Confirm with Hannah this was her, not unauthorized access // assigned to: Alex, due: today, priority: urgent, source: email:Security alert for hannahaldridge1209:Google, area: 👨‍👧 People, captured: 2026-05-02 07:30
+- [ ] Check if Avie wants to do Music Class Mini Talent Show (sing/dance/instrument). Fill out Google Form if yes. Class dates May 11-19 depending on teacher // assigned to: Alex, due: 2026-05-09, priority: normal, source: email:Music Class Mini Talent Show:ParentSquare/Mrs. Song, area: 👨‍👧 People, captured: 2026-05-02 07:30
+- [ ] Review 2 flagged transactions in Monarch // assigned to: Alex, due: today, priority: low, source: email:Transactions need review:Monarch, area: 💊 Health & Money, captured: 2026-05-02 07:30
+- [ ] Europe trip prep: flight TYS→ATL→AMS is Sunday May 4. Pack, confirm travel docs (passport), check-in when available, verify Hamburg connection // assigned to: Alex, due: 2026-05-03, priority: urgent, source: email:Your TYS>HAM Trip Details:Delta + calendar:Flight to ATL, area: 🏠 Life Ops, captured: 2026-05-02 07:30
+
+
+## 📥 Captured 2026-05-02 06:14 PM ET
+
+- [ ] Reply to Paweł Borkowski (me@pawel.io) re: flat.social rebuild — he saw Alex join the waitlist, asking how he's doing and if still in the area. Personal/networking catch-up // assigned to: Alex, due: not specified, priority: low, source: email:hello from brazil:pawel.io, area: 👨‍👧 People, captured: 2026-05-02 18:14
+
+---
+
+📥 **Capture Agent Run — 2026-05-02 06:14 PM ET**
+
+**Scan window:** Past 12 hours (2026-05-02 6:14 AM – 6:14 PM)
+
+**Sources scanned:**
+- ✅ Email (Gmail): 13 unread messages reviewed
+- ✅ iMessage (BlueBubbles): 5 priority chats checked (Hannah, Annika, Jay, Marshall, Family) — minimal activity
+- ✅ Calendar: 15 events reviewed (May 1–5)
+- ✅ Drop folder: Empty
+
+**Classification results:**
+- Heuristic rejected: 11 (promotional, transactional, political newsletters, automated MLS alerts)
+- iMessage rejected: 1 (Marshall consulting banter — future intent, no concrete deliverable)
+- Actionable items: 1
+- Dupes skipped: 0
+
+**Routed:**
+- inbox.md: 1 new item (Paweł Borkowski reply)
+- Things 3: 0 (low priority, no deadline)
+- Meeting insights archive: 0
+- Calendar events created: 0
+
+**Notes:**
+- Alex departs for Europe tomorrow (May 4). Trip prep item already captured this morning.
+- Avie transitions to Alex's custody May 4-11.
+- Marshall expressed interest in AI consulting venture (not actionable yet, but noted for memory).
